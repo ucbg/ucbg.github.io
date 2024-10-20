@@ -4717,6 +4717,19 @@
 									
     <iframe class="game-iframe lazyload" data-src="https://ucbg.github.io/doodle-jump/" width="1280" height="720" scrolling="none" frameborder="0" allowfullscreen></iframe>
 
+    <div class="bt-fullscreen text-center"><button class="btn btn-primary btn-full" type="button" onclick="openFullscreen();">FullScreen</button></div>
+    <script>
+        var elem = document.getElementById("game-iframe");
+        function openFullscreen() {
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) { /* Safari */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE11 */
+                elem.msRequestFullscreen();
+            }
+        }
+    </script>
 
                 				</div>
                                 <div class="px-lg-3">
