@@ -15,7 +15,7 @@ function loadGoogleAnalytics(id) {
 window.addEventListener("load", function() {
   if (navigator.webdriver) {
       console.log('Bot Browser');
-      loadGoogleAnalytics("G-T445XL67R6");
+      loadGoogleAnalytics("G-ZV6ZQ5BY4B");
   } else {
       console.log('Human Browser');
       loadGoogleAnalytics("G-T445XL67R6");
