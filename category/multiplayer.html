@@ -156,18 +156,53 @@
             </form>
             <ul class="navbar-nav mb-2 mb-lg-0 fw-semibold align-items-xl-center ms-xl-auto">
                 <li class="nav-item">
-                    <a href="#game" class="nav-link" data-bs-tooltip="tooltip" data-bs-placement="bottom">
-                        <svg width="16" height="16" fill="currentColor">
-                            <use xlink:href="/assets/sprite/sprite.svg#game"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    449 / 477
-                    
+                    Online Users: <span id="online-users">0</span>
                 </li>
             </ul>
-        </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", () => {
+    const onlineUsersElement = document.getElementById("online-users");
+
+    function getOnlineUsers() {
+        const now = new Date();
+        const currentHour = now.getHours();
+
+        // Saat aralıklarına göre kullanıcı sayıları
+        let users;
+        if (currentHour >= 7 && currentHour < 15) {
+            // Sabah 7 ile öğlen 15 arasında
+            const start = 5548;
+            const end = 250080;
+            const progress = (currentHour - 7) / (15 - 7);
+            users = Math.round(start + progress * (end - start));
+        } else if (currentHour >= 15 && currentHour < 24) {
+            // Öğlen 15 ile gece 24 arasında
+            const start = 250080;
+            const end = 10080;
+            const progress = (currentHour - 15) / (24 - 15);
+            users = Math.round(start - progress * (start - end));
+        } else {
+            // Gece 24 ile sabah 7 arasında
+            const start = 10080;
+            const end = 5564;
+            const progress = currentHour / 7;
+            users = Math.round(start - progress * (start - end));
+        }
+
+        return users;
+    }
+
+    function updateOnlineUsers() {
+        const users = getOnlineUsers();
+        onlineUsersElement.textContent = users.toLocaleString(); // Sayıyı formatla
+    }
+
+    // Kullanıcı sayısını her dakika güncelle
+    updateOnlineUsers();
+    setInterval(updateOnlineUsers, 60000); // 60 saniyede bir çalıştır
+});
+
+            </script>        </div>
     </div>
 </nav>
 
@@ -4592,7 +4627,7 @@
             <div class="col-lg-4 col-md-5 col-12">
                 <div class="fs-xs text-muted">
                     Copyright © 2024 Unblocked Cool Browser Games (UCBG). All rights reserved.<br>
-                    Just play Games / AI ROYALE
+                    Play Beyond Limits / OurHero Games
                 </div>
             </div>
             <!-- Links -->
