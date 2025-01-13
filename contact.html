@@ -163,10 +163,53 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    449 / 477
-                    
+                    Online Users: <span id="online-users">0</span>
                 </li>
             </ul>
+            <script>
+                document.addEventListener("DOMContentLoaded", () => {
+    const onlineUsersElement = document.getElementById("online-users");
+
+    function getOnlineUsers() {
+        const now = new Date();
+        const currentHour = now.getHours();
+
+        // Saat aralıklarına göre kullanıcı sayıları
+        let users;
+        if (currentHour >= 7 && currentHour < 15) {
+            // Sabah 7 ile öğlen 15 arasında
+            const start = 554;
+            const end = 25000;
+            const progress = (currentHour - 7) / (15 - 7);
+            users = Math.round(start + progress * (end - start));
+        } else if (currentHour >= 15 && currentHour < 24) {
+            // Öğlen 15 ile gece 24 arasında
+            const start = 25000;
+            const end = 1000;
+            const progress = (currentHour - 15) / (24 - 15);
+            users = Math.round(start - progress * (start - end));
+        } else {
+            // Gece 24 ile sabah 7 arasında
+            const start = 1000;
+            const end = 554;
+            const progress = currentHour / 7;
+            users = Math.round(start - progress * (start - end));
+        }
+
+        return users;
+    }
+
+    function updateOnlineUsers() {
+        const users = getOnlineUsers();
+        onlineUsersElement.textContent = users.toLocaleString(); // Sayıyı formatla
+    }
+
+    // Kullanıcı sayısını her dakika güncelle
+    updateOnlineUsers();
+    setInterval(updateOnlineUsers, 60000); // 60 saniyede bir çalıştır
+});
+
+            </script>
         </div>
     </div>
 </nav>
