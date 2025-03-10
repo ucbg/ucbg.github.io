@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Reklam kodu (large card içinde)
     const adHTML = `
-        <a  class="card large">
+        
           <div class="card-body">
             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7321073664976914"
                 crossorigin="anonymous"></script>
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
           </div>
-        </a>
+        
       `;
 
     // Kartları oluştur
