@@ -33,7 +33,6 @@ async function fetchJson(url) {
     return null;
   }
 }
-
 function getDomain() {
   return window.location.origin.replace(/https?:\/\//, "");
 }
@@ -49,13 +48,20 @@ async function generateHash(text1, text2, domain) {
     .substring(0, 16);
 }
 
-// Geçerli hash değerlerinin listesi
-const validHashes = [
-  "19a8a8ffcefe6162",
-  "63e7208c2ddc1f1d",
-  "7f8e2a1c4b6d3f9a",
-  "abcdef1234567890", // Buraya ek hashler ekleyebilirsin
-];
+// Fetch valid hash values from a JSON file
+async function fetchValidHashes() {
+  try {
+    let response = await fetch("/data-json/validHashes.json");
+    if (response.ok) {
+      return await response.json();
+    } else {
+      throw new Error("Failed to fetch valid hashes");
+    }
+  } catch (error) {
+    console.error(error);
+    return [];
+  }
+}
 
 async function checkAccess() {
   let json1 = await fetchJson("/data-json/auth1.json");
@@ -70,13 +76,12 @@ async function checkAccess() {
 
   let expectedHash = await generateHash(json1.text, json2.text, domain);
 
-  if (!validHashes.includes(expectedHash)) {
-    console.log("Geçersiz Hash");
-    document.body.innerHTML = "<h1>Erişim Engellendi</h1>";
+  let validHashes = await fetchValidHashes();
 
+  if (!validHashes.includes(expectedHash)) {
     setTimeout(function () {
       window.location.href = "https://ucbg.github.io";
-    }, 1000);
+    }, 500);
   } else {
     console.log("Erişim Onaylandı");
   }
