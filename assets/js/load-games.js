@@ -43,7 +43,23 @@ document.addEventListener("DOMContentLoaded", async () => {
     // Aşağı ok simgesini ekleyelim
     const scrollArrow = document.createElement("div");
     scrollArrow.innerHTML = "&#x2193;";
-    scrollArrow.style.cssText = "position:fixed; bottom:20px; right:50%; font-size:2rem; cursor:pointer; opacity:0.8;";
+    scrollArrow.style.cssText = `
+      position: fixed;
+      bottom: 20px;
+      right: 50%;
+      font-size: 2rem;
+      cursor: pointer;
+      opacity: 0.8;
+      border: 1px solid rgb(138 138 138);
+      border-radius: 50%; /* Yuvarlak yapmak için */
+      width: 50px; /* Yükseklik ve genişlik eşit olmalı */
+      height: 50px; /* Yükseklik ve genişlik eşit olmalı */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white; /* Arka plan rengi */
+    `;
+
     document.body.appendChild(scrollArrow);
 
     // Google Ads script yükleme
