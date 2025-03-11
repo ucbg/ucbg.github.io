@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     function handleScroll() {
-      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 430) {
         loadMoreCards();
       }
       revealCards();
