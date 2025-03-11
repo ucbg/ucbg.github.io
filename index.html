@@ -131,7 +131,33 @@
         transform: translateY(0);
         }
 
-        /* load spinner */
+        /* scroll arrow */
+        @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0); /* Başlangıç ve bitiş durumu */
+      }
+      50% {
+        transform: translateY(-10px); /* Zıplama noktası */
+      }
+    }
+
+    .scroll-arrow {
+      position: fixed;
+      bottom: 220px;
+      right: 3%;
+      font-size: 2rem;
+      cursor: pointer;
+      opacity: 0.8;
+      border: 1px solid rgb(138, 138, 138);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      animation: bounce 2s ease-in-out infinite; /* 1 saniye zıplama, 1 saniye durma */
+    }
         
 
     </style>
