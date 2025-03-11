@@ -23,7 +23,6 @@ window.addEventListener("load", function () {
     loadGoogleAnalytics("G-T445XL67R6");
   }
 });
-
 async function fetchJson(url) {
   try {
     let response = await fetch(url);
@@ -39,25 +38,47 @@ function getDomain() {
   return window.location.origin.replace(/https?:\/\//, "");
 }
 
-function generateHash(text1, text2, domain) {
-  let combined = text1 + text2 + domain;
-  return btoa(combined).substring(0, 16); // Basit bir hash üretimi (Base64 ve kesme işlemi)
+async function generateHash(text1, text2, domain) {
+  const encoder = new TextEncoder();
+  const data = encoder.encode(text1 + text2 + domain);
+  const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  return hashArray
+    .map((byte) => byte.toString(16).padStart(2, "0"))
+    .join("")
+    .substring(0, 16);
 }
+
+// Geçerli hash değerlerinin listesi
+const validHashes = [
+  "19a8a8ffcefe6162",
+  "63e7208c2ddc1f1d",
+  "7f8e2a1c4b6d3f9a",
+  "abcdef1234567890", // Buraya ek hashler ekleyebilirsin
+];
 
 async function checkAccess() {
   let json1 = await fetchJson("/data-json/auth1.json");
   let json2 = await fetchJson("/data-json/auth2.json");
+
   if (!json1 || !json2) {
     document.body.innerHTML = "<h1>Erişim Engellendi</h1>";
     return;
   }
 
   let domain = getDomain();
-  let expectedHash = generateHash(json1.text, json2.text, domain);
-  let validHash = "ÖNCEDEN_BELİRLENMİŞ_HASH"; // Önceden belirlenmiş doğru hash değeri
 
-  if (expectedHash !== validHash) {
+  let expectedHash = await generateHash(json1.text, json2.text, domain);
+
+  if (!validHashes.includes(expectedHash)) {
+    console.log("Geçersiz Hash");
     document.body.innerHTML = "<h1>Erişim Engellendi</h1>";
+
+    setTimeout(function () {
+      window.location.href = "https://ucbg.github.io";
+    }, 1000);
+  } else {
+    console.log("Erişim Onaylandı");
   }
 }
 
