@@ -38,30 +38,40 @@ document.addEventListener("DOMContentLoaded", async () => {
     const games = await response.json();
     const cardContainer = document.querySelector(".card-masonry");
     let loadedIndex = 0;
-    const batchSize = 50;
+    const batchSize = 40;
+
+    // Ensure Google Ads script is loaded
+    if (!window.adsbygoogle) {
+      const script = document.createElement("script");
+      script.async = true;
+      script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+      document.head.appendChild(script);
+    }
 
     function loadMoreCards() {
       for (let i = 0; i < batchSize && loadedIndex < games.length; i++, loadedIndex++) {
         const game = games[loadedIndex];
 
         if ((loadedIndex + 1) % 20 === 0) {
-          cardContainer.insertAdjacentHTML(
-            "beforeend",
-            `<a class="card large">
-            <ins class="adsbygoogle" style="display:inline-block; width:260px; height:260px" data-ad-client="ca-pub-7321073664976914" data-ad-slot="1811365994"></ins>
-          </a>`
-          );
+          // Create and insert ad
+          const adElement = document.createElement("a");
+          adElement.classList.add("card", "large");
+          adElement.innerHTML = `<ins class="adsbygoogle" style="display:inline-block; width:260px; height:260px" data-ad-client="ca-pub-7321073664976914" data-ad-slot="1811365994"></ins>`;
+          cardContainer.appendChild(adElement);
+
+          // Reinitialize the ad
+          (window.adsbygoogle = window.adsbygoogle || []).push({});
         } else {
           const isLarge = loadedIndex % 12 === 0 || Math.random() < 0.3;
           cardContainer.insertAdjacentHTML(
             "beforeend",
             `<a href="${game.url}" class="card${isLarge ? " large" : ""}">
-            <picture>
-              <source data-srcset="${game.image}" type="image/png" class="img-fluid" />
-              <img data-src="${game.image}" alt="${game.title}" class="lazyload img-fluid" width="500" height="500" />
-            </picture>
-            <div class="card-body"><h3>${game.title}</h3></div>
-          </a>`
+              <picture>
+                <source data-srcset="${game.image}" type="image/png" class="img-fluid" />
+                <img data-src="${game.image}" alt="${game.title}" class="lazyload img-fluid" width="500" height="500" />
+              </picture>
+              <div class="card-body"><h3>${game.title}</h3></div>
+            </a>`
           );
         }
       }
@@ -70,7 +80,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     function handleScroll() {
-      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 430) {
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 600) {
         loadMoreCards();
       }
       revealCards();
