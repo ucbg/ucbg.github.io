@@ -40,7 +40,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     let loadedIndex = 0;
     const batchSize = 40;
 
-    // Ensure Google Ads script is loaded
+    // Aşağı ok simgesini ekleyelim
+    const scrollArrow = document.createElement("div");
+    scrollArrow.innerHTML = "&#x2193;";
+    scrollArrow.style.cssText = "position:fixed; bottom:20px; right:50%; font-size:2rem; cursor:pointer; opacity:0.8;";
+    document.body.appendChild(scrollArrow);
+
+    // Google Ads script yükleme
     if (!window.adsbygoogle) {
       const script = document.createElement("script");
       script.async = true;
@@ -53,13 +59,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         const game = games[loadedIndex];
 
         if ((loadedIndex + 1) % 20 === 0) {
-          // Create and insert ad
+          // Reklam ekle
           const adElement = document.createElement("a");
           adElement.classList.add("card", "large");
           adElement.innerHTML = `<ins class="adsbygoogle" style="display:inline-block; width:260px; height:260px" data-ad-client="ca-pub-7321073664976914" data-ad-slot="1811365994"></ins>`;
           cardContainer.appendChild(adElement);
-
-          // Reinitialize the ad
           (window.adsbygoogle = window.adsbygoogle || []).push({});
         } else {
           const isLarge = loadedIndex % 12 === 0 || Math.random() < 0.3;
@@ -77,6 +81,11 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
       if (window.LazyLoad) new LazyLoad({ elements_selector: ".lazyload" });
       revealCards();
+
+      // Tüm oyunlar yüklendiğinde oku kaldır
+      if (loadedIndex >= games.length) {
+        scrollArrow.remove();
+      }
     }
 
     function handleScroll() {
@@ -98,6 +107,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("load", revealCards);
     loadMoreCards();
+
+    // Aşağı oka tıklanınca sayfanın en altına kaydır
+    scrollArrow.addEventListener("click", () => {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+    });
   } catch (error) {
     console.error("Games yüklenirken hata oluştu:", error);
   }
