@@ -87,6 +87,38 @@
         color: white;
         font-size: 14px;
       }
+
+      /* video player start */
+      .card-video-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 1;
+      }
+
+      .card:hover .card-video-container {
+        opacity: 1;
+      }
+
+      .card-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .card {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .card:hover .card-img {
+        opacity: 0;
+      }
+      /* video player end */
     </style>
   </head>
 
@@ -203,458 +235,550 @@
     <div class="layout-section">
       <div class="container-fluid">
         <div class="card-masonry">
-          <a href="/category/car.html" class="card card-collection">
-            <div class="card-collection-body" style="background-color: #deb87a">
-              <div class="card-img">
-                <picture>
-                  <source
-                    data-srcset="/assets/upload/UCBGgames/madalin-stunt-cars-3.png"
-                    type="image/png"
-                    class="rounded-3 img-fluid"
-                    srcset="/assets/upload/UCBGgames/madalin-stunt-cars-3.png"
-                  />
-                  <img
-                    data-src="/assets/upload/UCBGgames/madalin-stunt-cars-3.png"
-                    alt="CAR GAMES"
-                    class="lazyload rounded-3 img-fluid"
-                    width="500"
-                    height="500"
-                  />
-                </picture>
-              </div>
-              <div class="card-text">
-                <h4>CAR GAMES</h4>
-                <div class="fs-xs text-white-50 mt-2">35 game avaliable</div>
-              </div>
-            </div>
-          </a>
+            <a href="/category/car.html" class="card card-collection">
+                <div class="card-collection-body" style="background-color: #deb87a">
+                  <div class="card-video-container">
+                    <video class="card-video" muted loop preload="none" poster="/assets/upload/UCBGgames/madalin-stunt-cars-3.png">
+                      <source src="/assets/video/car-group-611x343_30fps.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="card-img">
+                    <picture>
+                      <source
+                        data-srcset="/assets/upload/UCBGgames/madalin-stunt-cars-3.png"
+                        type="image/png"
+                        class="rounded-3 img-fluid"
+                        srcset="/assets/upload/UCBGgames/madalin-stunt-cars-3.png"
+                      />
+                      <img
+                        data-src="/assets/upload/UCBGgames/madalin-stunt-cars-3.png"
+                        alt="CAR GAMES"
+                        class="lazyload rounded-3 img-fluid"
+                        width="500"
+                        height="500"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card-text">
+                    <h4>CAR GAMES</h4>
+                    <div class="fs-xs text-white-50 mt-2">35 game avaliable</div>
+                  </div>
+                </div>
+            </a>
 
-          <a href="/category/clicker.html" class="card card-collection">
-            <div class="card-collection-body" style="background-color: #80fcaa">
-              <div class="card-img">
-                <picture>
-                  <source
-                    data-srcset="/assets/upload/UCBGgames/idle-restaurants.png"
-                    type="image/png"
-                    class="rounded-3 img-fluid"
-                    srcset="/assets/upload/UCBGgames/idle-restaurants.png"
-                  />
-                  <img
-                    data-src="/assets/upload/UCBGgames/idle-restaurants.png"
-                    alt="CLICKER GAMES"
-                    class="lazyload rounded-3 img-fluid"
-                    width="500"
-                    height="500"
-                  />
-                </picture>
-              </div>
-              <div class="card-text">
-                <h4>CLICKER GAMES</h4>
-                <div class="fs-xs text-white-50 mt-2">24 game avaliable</div>
-              </div>
-            </div>
-          </a>
+            <a href="/category/clicker.html" class="card card-collection">
+                <div class="card-collection-body" style="background-color: #80fcaa">
+                  <div class="card-video-container">
+                    <video class="card-video" muted loop preload="none" poster="/assets/upload/UCBGgames/idle-restaurants.png">
+                      <source src="/assets/video/clicker-groups-611x343_30fps.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="card-img">
+                    <picture>
+                      <source
+                        data-srcset="/assets/upload/UCBGgames/idle-restaurants.png"
+                        type="image/png"
+                        class="rounded-3 img-fluid"
+                        srcset="/assets/upload/UCBGgames/idle-restaurants.png"
+                      />
+                      <img
+                        data-src="/assets/upload/UCBGgames/idle-restaurants.png"
+                        alt="CLICKER GAMES"
+                        class="lazyload rounded-3 img-fluid"
+                        width="500"
+                        height="500"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card-text">
+                    <h4>CLICKER GAMES</h4>
+                    <div class="fs-xs text-white-50 mt-2">24 game avaliable</div>
+                  </div>
+                </div>
+              </a>
 
-          <a href="/category/io.html" class="card card-collection">
-            <div class="card-collection-body" style="background-color: #c2e4fc">
-              <div class="card-img">
-                <picture>
-                  <source
-                    data-srcset="/assets/upload/UCBGgames/agarpaper-io.png"
-                    type="image/png"
-                    class="rounded-3 img-fluid"
-                    srcset="/assets/upload/UCBGgames/agarpaper-io.png"
-                  />
-                  <img
-                    data-src="/assets/upload/UCBGgames/agarpaper-io.png"
-                    alt=".IO GAMES"
-                    class="lazyload rounded-3 img-fluid"
-                    width="500"
-                    height="500"
-                  />
-                </picture>
-              </div>
-              <div class="card-text">
-                <h4>.IO GAMES</h4>
-                <div class="fs-xs text-white-50 mt-2">39 game avaliable</div>
-              </div>
-            </div>
-          </a>
+              <a href="/category/io.html" class="card card-collection">
+                <div class="card-collection-body" style="background-color: #c2e4fc">
+                  <div class="card-video-container">
+                    <video class="card-video" muted loop preload="none" poster="/assets/upload/UCBGgames/agarpaper-io.png">
+                      <source src="/assets/video/iogames-group-landscape-611x343_30fps.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="card-img">
+                    <picture>
+                      <source
+                        data-srcset="/assets/upload/UCBGgames/agarpaper-io.png"
+                        type="image/png"
+                        class="rounded-3 img-fluid"
+                        srcset="/assets/upload/UCBGgames/agarpaper-io.png"
+                      />
+                      <img
+                        data-src="/assets/upload/UCBGgames/agarpaper-io.png"
+                        alt=".IO GAMES"
+                        class="lazyload rounded-3 img-fluid"
+                        width="500"
+                        height="500"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card-text">
+                    <h4>.IO GAMES</h4>
+                    <div class="fs-xs text-white-50 mt-2">39 game avaliable</div>
+                  </div>
+                </div>
+              </a>
 
-          <a href="/category/parkour.html" class="card card-collection">
-            <div class="card-collection-body" style="background-color: #1f7278">
-              <div class="card-img">
-                <picture>
-                  <source
-                    data-srcset="/assets/upload/UCBGgames/gswitch-3.png"
-                    type="image/png"
-                    class="rounded-3 img-fluid"
-                    srcset="/assets/upload/UCBGgames/gswitch-3.png"
-                  />
-                  <img
-                    data-src="/assets/upload/UCBGgames/gswitch-3.png"
-                    alt="PARKOUR GAMES"
-                    class="lazyload rounded-3 img-fluid"
-                    width="500"
-                    height="500"
-                  />
-                </picture>
-              </div>
-              <div class="card-text">
-                <h4>PARKOUR GAMES</h4>
-                <div class="fs-xs text-white-50 mt-2">59 game avaliable</div>
-              </div>
-            </div>
-          </a>
+              <a href="/category/parkour.html" class="card card-collection">
+                <div class="card-collection-body" style="background-color: #1f7278">
+                  <div class="card-video-container">
+                    <video class="card-video" muted loop preload="none" poster="/assets/upload/UCBGgames/gswitch-3.png">
+                      <source src="/assets/video/parkour-group-landscape-611x343_30fps.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="card-img">
+                    <picture>
+                      <source
+                        data-srcset="/assets/upload/UCBGgames/gswitch-3.png"
+                        type="image/png"
+                        class="rounded-3 img-fluid"
+                        srcset="/assets/upload/UCBGgames/gswitch-3.png"
+                      />
+                      <img
+                        data-src="/assets/upload/UCBGgames/gswitch-3.png"
+                        alt="PARKOUR GAMES"
+                        class="lazyload rounded-3 img-fluid"
+                        width="500"
+                        height="500"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card-text">
+                    <h4>PARKOUR GAMES</h4>
+                    <div class="fs-xs text-white-50 mt-2">59 game avaliable</div>
+                  </div>
+                </div>
+              </a>
 
-          <a href="/category/platform.html" class="card card-collection">
-            <div class="card-collection-body" style="background-color: #ffb2be">
-              <div class="card-img">
-                <picture>
-                  <source
-                    data-srcset="/assets/upload/UCBGgames/super-mario-64.png"
-                    type="image/png"
-                    class="rounded-3 img-fluid"
-                    srcset="/assets/upload/UCBGgames/super-mario-64.png"
-                  />
-                  <img
-                    data-src="/assets/upload/UCBGgames/super-mario-64.png"
-                    alt="PLATFORM GAMES"
-                    class="lazyload rounded-3 img-fluid"
-                    width="500"
-                    height="500"
-                  />
-                </picture>
-              </div>
-              <div class="card-text">
-                <h4>PLATFORM GAMES</h4>
-                <div class="fs-xs text-white-50 mt-2">33 game avaliable</div>
-              </div>
-            </div>
-          </a>
+              <a href="/category/platform.html" class="card card-collection">
+                <div class="card-collection-body" style="background-color: #ffb2be">
+                  <div class="card-video-container">
+                    <video class="card-video" muted loop preload="none" poster="/assets/upload/UCBGgames/super-mario-64.png">
+                      <source src="/assets/video/platform-group-landscape-611x343_30fps.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="card-img">
+                    <picture>
+                      <source
+                        data-srcset="/assets/upload/UCBGgames/super-mario-64.png"
+                        type="image/png"
+                        class="rounded-3 img-fluid"
+                        srcset="/assets/upload/UCBGgames/super-mario-64.png"
+                      />
+                      <img
+                        data-src="/assets/upload/UCBGgames/super-mario-64.png"
+                        alt="PLATFORM GAMES"
+                        class="lazyload rounded-3 img-fluid"
+                        width="500"
+                        height="500"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card-text">
+                    <h4>PLATFORM GAMES</h4>
+                    <div class="fs-xs text-white-50 mt-2">33 game avaliable</div>
+                  </div>
+                </div>
+              </a>
 
-          <a href="/category/running.html" class="card card-collection">
-            <div class="card-collection-body" style="background-color: #e5e8ae">
-              <div class="card-img">
-                <picture>
-                  <source
-                    data-srcset="/assets/upload/UCBGgames/subway-surfers-zurich.png"
-                    type="image/png"
-                    class="rounded-3 img-fluid"
-                    srcset="/assets/upload/UCBGgames/subway-surfers-zurich.png"
-                  />
-                  <img
-                    data-src="/assets/upload/UCBGgames/subway-surfers-zurich.png"
-                    alt="RUNNING GAMES"
-                    class="lazyload rounded-3 img-fluid"
-                    width="500"
-                    height="500"
-                  />
-                </picture>
-              </div>
-              <div class="card-text">
-                <h4>RUNNING GAMES</h4>
-                <div class="fs-xs text-white-50 mt-2">30 game avaliable</div>
-              </div>
-            </div>
-          </a>
+              <a href="/category/running.html" class="card card-collection">
+                <div class="card-collection-body" style="background-color: #e5e8ae">
+                  <div class="card-video-container">
+                    <video class="card-video" muted loop preload="none" poster="/assets/upload/UCBGgames/subway-surfers-zurich.png">
+                      <source src="/assets/video/running-group-landscape-611x343_30fps.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="card-img">
+                    <picture>
+                      <source
+                        data-srcset="/assets/upload/UCBGgames/subway-surfers-zurich.png"
+                        type="image/png"
+                        class="rounded-3 img-fluid"
+                        srcset="/assets/upload/UCBGgames/subway-surfers-zurich.png"
+                      />
+                      <img
+                        data-src="/assets/upload/UCBGgames/subway-surfers-zurich.png"
+                        alt="RUNNING GAMES"
+                        class="lazyload rounded-3 img-fluid"
+                        width="500"
+                        height="500"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card-text">
+                    <h4>RUNNING GAMES</h4>
+                    <div class="fs-xs text-white-50 mt-2">30 game avaliable</div>
+                  </div>
+                </div>
+              </a>
 
-          <a href="/category/shooting.html" class="card card-collection">
-            <div class="card-collection-body" style="background-color: #1f7278">
-              <div class="card-img">
-                <picture>
-                  <source
-                    data-srcset="/assets/upload/UCBGgames/lurkers-io.png"
-                    type="image/png"
-                    class="rounded-3 img-fluid"
-                    srcset="/assets/upload/UCBGgames/lurkers-io.png"
-                  />
-                  <img
-                    data-src="/assets/upload/UCBGgames/lurkers-io.png"
-                    alt="SHOOTING GAMES"
-                    class="lazyload rounded-3 img-fluid"
-                    width="500"
-                    height="500"
-                  />
-                </picture>
-              </div>
-              <div class="card-text">
-                <h4>SHOOTING GAMES</h4>
-                <div class="fs-xs text-white-50 mt-2">45 game avaliable</div>
-              </div>
-            </div>
-          </a>
+              <a href="/category/shooting.html" class="card card-collection">
+                <div class="card-collection-body" style="background-color: #1f7278">
+                  <div class="card-video-container">
+                    <video class="card-video" muted loop preload="none" poster="/assets/upload/UCBGgames/lurkers-io.png">
+                      <source src="/assets/video/shooting-group-landscape-611x343_30fps.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="card-img">
+                    <picture>
+                      <source
+                        data-srcset="/assets/upload/UCBGgames/lurkers-io.png"
+                        type="image/png"
+                        class="rounded-3 img-fluid"
+                        srcset="/assets/upload/UCBGgames/lurkers-io.png"
+                      />
+                      <img
+                        data-src="/assets/upload/UCBGgames/lurkers-io.png"
+                        alt="SHOOTING GAMES"
+                        class="lazyload rounded-3 img-fluid"
+                        width="500"
+                        height="500"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card-text">
+                    <h4>SHOOTING GAMES</h4>
+                    <div class="fs-xs text-white-50 mt-2">45 game avaliable</div>
+                  </div>
+                </div>
+              </a>
 
-          <a href="/category/soccer.html" class="card card-collection">
-            <div class="card-collection-body" style="background-color: #1f7278">
-              <div class="card-img">
-                <picture>
-                  <source
-                    data-srcset="/assets/upload/UCBGgames/super-liquid-soccer.png"
-                    type="image/png"
-                    class="rounded-3 img-fluid"
-                    srcset="/assets/upload/UCBGgames/super-liquid-soccer.png"
-                  />
-                  <img
-                    data-src="/assets/upload/UCBGgames/super-liquid-soccer.png"
-                    alt="SOCCER GAMES"
-                    class="lazyload rounded-3 img-fluid"
-                    width="500"
-                    height="500"
-                  />
-                </picture>
-              </div>
-              <div class="card-text">
-                <h4>SOCCER GAMES</h4>
-                <div class="fs-xs text-white-50 mt-2">18 game avaliable</div>
-              </div>
-            </div>
-          </a>
+              <a href="/category/soccer.html" class="card card-collection">
+                <div class="card-collection-body" style="background-color: #1f7278">
+                  <div class="card-video-container">
+                    <video class="card-video" muted loop preload="none" poster="/assets/upload/UCBGgames/super-liquid-soccer.png">
+                      <source src="/assets/video/soccer-group-landscape-611x343_30fps.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="card-img">
+                    <picture>
+                      <source
+                        data-srcset="/assets/upload/UCBGgames/super-liquid-soccer.png"
+                        type="image/png"
+                        class="rounded-3 img-fluid"
+                        srcset="/assets/upload/UCBGgames/super-liquid-soccer.png"
+                      />
+                      <img
+                        data-src="/assets/upload/UCBGgames/super-liquid-soccer.png"
+                        alt="SOCCER GAMES"
+                        class="lazyload rounded-3 img-fluid"
+                        width="500"
+                        height="500"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card-text">
+                    <h4>SOCCER GAMES</h4>
+                    <div class="fs-xs text-white-50 mt-2">18 game avaliable</div>
+                  </div>
+                </div>
+              </a>
 
-          <a href="/category/stickman.html" class="card card-collection">
-            <div class="card-collection-body" style="background-color: #ccbcbc">
-              <div class="card-img">
-                <picture>
-                  <source
-                    data-srcset="/assets/upload/UCBGgames/stick-defenders.png"
-                    type="image/png"
-                    class="rounded-3 img-fluid"
-                    srcset="/assets/upload/UCBGgames/stick-defenders.png"
-                  />
-                  <img
-                    data-src="/assets/upload/UCBGgames/stick-defenders.png"
-                    alt="STICKMAN GAMES"
-                    class="lazyload rounded-3 img-fluid"
-                    width="500"
-                    height="500"
-                  />
-                </picture>
-              </div>
-              <div class="card-text">
-                <h4>STICKMAN GAMES</h4>
-                <div class="fs-xs text-white-50 mt-2">17 game avaliable</div>
-              </div>
-            </div>
-          </a>
+              <a href="/category/stickman.html" class="card card-collection">
+                <div class="card-collection-body" style="background-color: #ccbcbc">
+                  <div class="card-video-container">
+                    <video class="card-video" muted loop preload="none" poster="/assets/upload/UCBGgames/stick-defenders.png">
+                      <source src="/assets/video/stickman-group-611x343_30fps.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="card-img">
+                    <picture>
+                      <source
+                        data-srcset="/assets/upload/UCBGgames/stick-defenders.png"
+                        type="image/png"
+                        class="rounded-3 img-fluid"
+                        srcset="/assets/upload/UCBGgames/stick-defenders.png"
+                      />
+                      <img
+                        data-src="/assets/upload/UCBGgames/stick-defenders.png"
+                        alt="STICKMAN GAMES"
+                        class="lazyload rounded-3 img-fluid"
+                        width="500"
+                        height="500"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card-text">
+                    <h4>STICKMAN GAMES</h4>
+                    <div class="fs-xs text-white-50 mt-2">17 game avaliable</div>
+                  </div>
+                </div>
+              </a>
 
-          <a href="/category/two-player.html" class="card card-collection">
-            <div class="card-collection-body" style="background-color: #c7fccc">
-              <div class="card-img">
-                <picture>
-                  <source
-                    data-srcset="/assets/upload/UCBGgames/basket-random.png"
-                    type="image/png"
-                    class="rounded-3 img-fluid"
-                    srcset="/assets/upload/UCBGgames/basket-random.png"
-                  />
-                  <img
-                    data-src="/assets/upload/UCBGgames/basket-random.png"
-                    alt="TWO PLAYER GAMES"
-                    class="lazyload rounded-3 img-fluid"
-                    width="500"
-                    height="500"
-                  />
-                </picture>
-              </div>
-              <div class="card-text">
-                <h4>TWO PLAYER GAMES</h4>
-                <div class="fs-xs text-white-50 mt-2">30 game avaliable</div>
-              </div>
-            </div>
-          </a>
+              <a href="/category/two-player.html" class="card card-collection">
+                <div class="card-collection-body" style="background-color: #c7fccc">
+                  <div class="card-video-container">
+                    <video class="card-video" muted loop preload="none" poster="/assets/upload/UCBGgames/basket-random.png">
+                      <source src="/assets/video/2-player-group-landscape-611x343_30fps.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="card-img">
+                    <picture>
+                      <source
+                        data-srcset="/assets/upload/UCBGgames/basket-random.png"
+                        type="image/png"
+                        class="rounded-3 img-fluid"
+                        srcset="/assets/upload/UCBGgames/basket-random.png"
+                      />
+                      <img
+                        data-src="/assets/upload/UCBGgames/basket-random.png"
+                        alt="TWO PLAYER GAMES"
+                        class="lazyload rounded-3 img-fluid"
+                        width="500"
+                        height="500"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card-text">
+                    <h4>TWO PLAYER GAMES</h4>
+                    <div class="fs-xs text-white-50 mt-2">30 game avaliable</div>
+                  </div>
+                </div>
+              </a>
 
-          <a href="/category/fighting.html" class="card card-collection">
-            <div class="card-collection-body" style="background-color: #deb87a">
-              <div class="card-img">
-                <picture>
-                  <source
-                    data-srcset="/assets/upload/busqueda/amazing-rope-vice-spider-vegas.png"
-                    type="image/png"
-                    class="rounded-3 img-fluid"
-                    srcset="/assets/upload/busqueda/amazing-rope-vice-spider-vegas.png"
-                  />
-                  <img
-                    data-src="/assets/upload/busqueda/amazing-rope-vice-spider-vegas.png"
-                    alt="FIGHTING GAMES"
-                    class="lazyload rounded-3 img-fluid"
-                    width="500"
-                    height="500"
-                  />
-                </picture>
-              </div>
-              <div class="card-text">
-                <h4>FIGHTING GAMES</h4>
-                <div class="fs-xs text-white-50 mt-2">8 game avaliable</div>
-              </div>
-            </div>
-          </a>
+              <a href="/category/fighting.html" class="card card-collection">
+                <div class="card-collection-body" style="background-color: #deb87a">
+                  <div class="card-video-container">
+                    <video class="card-video" muted loop preload="none" poster="/assets/upload/busqueda/amazing-rope-vice-spider-vegas.png">
+                      <source src="/assets/video/fighting-group-landscape-611x343_30fps.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="card-img">
+                    <picture>
+                      <source
+                        data-srcset="/assets/upload/busqueda/amazing-rope-vice-spider-vegas.png"
+                        type="image/png"
+                        class="rounded-3 img-fluid"
+                        srcset="/assets/upload/busqueda/amazing-rope-vice-spider-vegas.png"
+                      />
+                      <img
+                        data-src="/assets/upload/busqueda/amazing-rope-vice-spider-vegas.png"
+                        alt="FIGHTING GAMES"
+                        class="lazyload rounded-3 img-fluid"
+                        width="500"
+                        height="500"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card-text">
+                    <h4>FIGHTING GAMES</h4>
+                    <div class="fs-xs text-white-50 mt-2">8 game avaliable</div>
+                  </div>
+                </div>
+              </a>
 
-          <a href="/category/kids.html" class="card card-collection">
-            <div class="card-collection-body" style="background-color: #80fcaa">
-              <div class="card-img">
-                <picture>
-                  <source
-                    data-srcset="/assets/upload/busqueda/suika.png"
-                    type="image/png"
-                    class="rounded-3 img-fluid"
-                    srcset="/assets/upload/busqueda/suika.png"
-                  />
-                  <img data-src="/assets/upload/busqueda/suika.png" alt="KIDS GAMES" class="lazyload rounded-3 img-fluid" width="500" height="500" />
-                </picture>
-              </div>
-              <div class="card-text">
-                <h4>KIDS GAMES</h4>
-                <div class="fs-xs text-white-50 mt-2">11 game avaliable</div>
-              </div>
-            </div>
-          </a>
+              <a href="/category/kids.html" class="card card-collection">
+                <div class="card-collection-body" style="background-color: #80fcaa">
+                  <div class="card-video-container">
+                    <video class="card-video" muted loop preload="none" poster="/assets/upload/busqueda/suika.png">
+                      <source src="/assets/video/kids-group-landscape-611x343_30fps.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="card-img">
+                    <picture>
+                      <source
+                        data-srcset="/assets/upload/busqueda/suika.png"
+                        type="image/png"
+                        class="rounded-3 img-fluid"
+                        srcset="/assets/upload/busqueda/suika.png"
+                      />
+                      <img data-src="/assets/upload/busqueda/suika.png" alt="KIDS GAMES" class="lazyload rounded-3 img-fluid" width="500" height="500" />
+                    </picture>
+                  </div>
+                  <div class="card-text">
+                    <h4>KIDS GAMES</h4>
+                    <div class="fs-xs text-white-50 mt-2">11 game avaliable</div>
+                  </div>
+                </div>
+              </a>
 
-          <a href="/category/multiplayer.html" class="card card-collection">
-            <div class="card-collection-body" style="background-color: #c2e4fc">
-              <div class="card-img">
-                <picture>
-                  <source
-                    data-srcset="/assets/upload/busqueda/uno.png"
-                    type="image/png"
-                    class="rounded-3 img-fluid"
-                    srcset="/assets/upload/busqueda/uno.png"
-                  />
-                  <img
-                    data-src="/assets/upload/busqueda/uno.png"
-                    alt="MULTIPLAYER GAMES"
-                    class="lazyload rounded-3 img-fluid"
-                    width="500"
-                    height="500"
-                  />
-                </picture>
-              </div>
-              <div class="card-text">
-                <h4>MULTIPLAYER GAMES</h4>
-                <div class="fs-xs text-white-50 mt-2">6 game avaliable</div>
-              </div>
-            </div>
-          </a>
+              <a href="/category/multiplayer.html" class="card card-collection">
+                <div class="card-collection-body" style="background-color: #c2e4fc">
+                  <div class="card-video-container">
+                    <video class="card-video" muted loop preload="none" poster="/assets/upload/busqueda/uno.png">
+                      <source src="/assets/video/multiplayer-group-landscape-611x343_30fps.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="card-img">
+                    <picture>
+                      <source
+                        data-srcset="/assets/upload/busqueda/uno.png"
+                        type="image/png"
+                        class="rounded-3 img-fluid"
+                        srcset="/assets/upload/busqueda/uno.png"
+                      />
+                      <img
+                        data-src="/assets/upload/busqueda/uno.png"
+                        alt="MULTIPLAYER GAMES"
+                        class="lazyload rounded-3 img-fluid"
+                        width="500"
+                        height="500"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card-text">
+                    <h4>MULTIPLAYER GAMES</h4>
+                    <div class="fs-xs text-white-50 mt-2">6 game avaliable</div>
+                  </div>
+                </div>
+              </a>
 
-          <a href="/category/puzzle.html" class="card card-collection">
-            <div class="card-collection-body" style="background-color: #1f7278">
-              <div class="card-img">
-                <picture>
-                  <source
-                    data-srcset="/assets/upload/busqueda/push-the-box.png"
-                    type="image/png"
-                    class="rounded-3 img-fluid"
-                    srcset="/assets/upload/busqueda/push-the-box.png"
-                  />
-                  <img
-                    data-src="/assets/upload/busqueda/push-the-box.png"
-                    alt="PUZZLE GAMES"
-                    class="lazyload rounded-3 img-fluid"
-                    width="500"
-                    height="500"
-                  />
-                </picture>
-              </div>
-              <div class="card-text">
-                <h4>PUZZLE GAMES</h4>
-                <div class="fs-xs text-white-50 mt-2">3 game avaliable</div>
-              </div>
-            </div>
-          </a>
+              <a href="/category/puzzle.html" class="card card-collection">
+                <div class="card-collection-body" style="background-color: #1f7278">
+                  <div class="card-video-container">
+                    <video class="card-video" muted loop preload="none" poster="/assets/upload/busqueda/push-the-box.png">
+                      <source src="/assets/video/puzzle-group-landscape-611x343_30fps.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="card-img">
+                    <picture>
+                      <source
+                        data-srcset="/assets/upload/busqueda/push-the-box.png"
+                        type="image/png"
+                        class="rounded-3 img-fluid"
+                        srcset="/assets/upload/busqueda/push-the-box.png"
+                      />
+                      <img
+                        data-src="/assets/upload/busqueda/push-the-box.png"
+                        alt="PUZZLE GAMES"
+                        class="lazyload rounded-3 img-fluid"
+                        width="500"
+                        height="500"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card-text">
+                    <h4>PUZZLE GAMES</h4>
+                    <div class="fs-xs text-white-50 mt-2">3 game avaliable</div>
+                  </div>
+                </div>
+              </a>
 
-          <a href="/category/racing.html" class="card card-collection">
-            <div class="card-collection-body" style="background-color: #ffb2be">
-              <div class="card-img">
-                <picture>
-                  <source
-                    data-srcset="/assets/upload/busqueda/moto-x3m4-winter.png"
-                    type="image/png"
-                    class="rounded-3 img-fluid"
-                    srcset="/assets/upload/busqueda/moto-x3m4-winter.png"
-                  />
-                  <img
-                    data-src="/assets/upload/busqueda/moto-x3m4-winter.png"
-                    alt="RACING GAMES"
-                    class="lazyload rounded-3 img-fluid"
-                    width="500"
-                    height="500"
-                  />
-                </picture>
-              </div>
-              <div class="card-text">
-                <h4>RACING GAMES</h4>
-                <div class="fs-xs text-white-50 mt-2">8 game avaliable</div>
-              </div>
-            </div>
-          </a>
+              <a href="/category/racing.html" class="card card-collection">
+                <div class="card-collection-body" style="background-color: #ffb2be">
+                  <div class="card-video-container">
+                    <video class="card-video" muted loop preload="none" poster="/assets/upload/busqueda/moto-x3m4-winter.png">
+                      <source src="/assets/video/racing-group-landscape-611x343_30fps.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="card-img">
+                    <picture>
+                      <source
+                        data-srcset="/assets/upload/busqueda/moto-x3m4-winter.png"
+                        type="image/png"
+                        class="rounded-3 img-fluid"
+                        srcset="/assets/upload/busqueda/moto-x3m4-winter.png"
+                      />
+                      <img
+                        data-src="/assets/upload/busqueda/moto-x3m4-winter.png"
+                        alt="RACING GAMES"
+                        class="lazyload rounded-3 img-fluid"
+                        width="500"
+                        height="500"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card-text">
+                    <h4>RACING GAMES</h4>
+                    <div class="fs-xs text-white-50 mt-2">8 game avaliable</div>
+                  </div>
+                </div>
+              </a>
 
-          <a href="/category/school.html" class="card card-collection">
-            <div class="card-collection-body" style="background-color: #e5e8ae">
-              <div class="card-img">
-                <picture>
-                  <source
-                    data-srcset="/assets/upload/busqueda/time-shooter-3.png"
-                    type="image/png"
-                    class="rounded-3 img-fluid"
-                    srcset="/assets/upload/busqueda/time-shooter-3.png"
-                  />
-                  <img
-                    data-src="/assets/upload/busqueda/time-shooter-3.png"
-                    alt="SCHOOL GAMES"
-                    class="lazyload rounded-3 img-fluid"
-                    width="500"
-                    height="500"
-                  />
-                </picture>
-              </div>
-              <div class="card-text">
-                <h4>SCHOOL GAMES</h4>
-                <div class="fs-xs text-white-50 mt-2">8 game avaliable</div>
-              </div>
-            </div>
-          </a>
+              <a href="/category/school.html" class="card card-collection">
+                <div class="card-collection-body" style="background-color: #e5e8ae">
+                  <div class="card-video-container">
+                    <video class="card-video" muted loop preload="none" poster="/assets/upload/busqueda/time-shooter-3.png">
+                      <source src="/assets/video/school-group-landscape-611x343_30fps.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="card-img">
+                    <picture>
+                      <source
+                        data-srcset="/assets/upload/busqueda/time-shooter-3.png"
+                        type="image/png"
+                        class="rounded-3 img-fluid"
+                        srcset="/assets/upload/busqueda/time-shooter-3.png"
+                      />
+                      <img
+                        data-src="/assets/upload/busqueda/time-shooter-3.png"
+                        alt="SCHOOL GAMES"
+                        class="lazyload rounded-3 img-fluid"
+                        width="500"
+                        height="500"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card-text">
+                    <h4>SCHOOL GAMES</h4>
+                    <div class="fs-xs text-white-50 mt-2">8 game avaliable</div>
+                  </div>
+                </div>
+              </a>
 
-          <a href="/category/skill.html" class="card card-collection">
-            <div class="card-collection-body" style="background-color: #1f7278">
-              <div class="card-img">
-                <picture>
-                  <source
-                    data-srcset="/assets/upload/busqueda/geometry-dash-2.png"
-                    type="image/png"
-                    class="rounded-3 img-fluid"
-                    srcset="/assets/upload/busqueda/geometry-dash-2.png"
-                  />
-                  <img
-                    data-src="/assets/upload/busqueda/geometry-dash-2.png"
-                    alt="SKILL GAMES"
-                    class="lazyload rounded-3 img-fluid"
-                    width="500"
-                    height="500"
-                  />
-                </picture>
-              </div>
-              <div class="card-text">
-                <h4>SKILL GAMES</h4>
-                <div class="fs-xs text-white-50 mt-2">7 game avaliable</div>
-              </div>
-            </div>
-          </a>
+              <a href="/category/skill.html" class="card card-collection">
+                <div class="card-collection-body" style="background-color: #1f7278">
+                  <div class="card-video-container">
+                    <video class="card-video" muted loop preload="none" poster="/assets/upload/busqueda/geometry-dash-2.png">
+                      <source src="/assets/video/skill-group-landscape-611x343_30fps.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="card-img">
+                    <picture>
+                      <source
+                        data-srcset="/assets/upload/busqueda/geometry-dash-2.png"
+                        type="image/png"
+                        class="rounded-3 img-fluid"
+                        srcset="/assets/upload/busqueda/geometry-dash-2.png"
+                      />
+                      <img
+                        data-src="/assets/upload/busqueda/geometry-dash-2.png"
+                        alt="SKILL GAMES"
+                        class="lazyload rounded-3 img-fluid"
+                        width="500"
+                        height="500"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card-text">
+                    <h4>SKILL GAMES</h4>
+                    <div class="fs-xs text-white-50 mt-2">7 game avaliable</div>
+                  </div>
+                </div>
+              </a>
 
           <a href="/game/18-wheeler-truck-parking-ez.html" class="card large">
-            <picture>
-              <source
-                data-srcset="/assets/upload/busqueda/18-wheeler-truck-parking-ez.png"
-                type="image/png"
-                class="img-fluid"
-                srcset="/assets/upload/busqueda/18-wheeler-truck-parking-ez.png"
-              />
-              <img
-                data-src="/assets/upload/busqueda/18-wheeler-truck-parking-ez.png"
-                alt="18 WHEELER TRUCK PARKING"
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
+            <div class="card-video-container">
+              <video class="card-video" muted loop preload="none" poster="/assets/upload/busqueda/18-wheeler-truck-parking-ez.png">
+                <source src="/assets/video/18-wheeler-truck-parking-ez-landscape-611x343_30fps.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="card-img">
+              <picture>
+                <source
+                  data-srcset="/assets/upload/busqueda/18-wheeler-truck-parking-ez.png"
+                  type="image/png"
+                  class="img-fluid"
+                  srcset="/assets/upload/busqueda/18-wheeler-truck-parking-ez.png"
+                />
+                <img
+                  data-src="/assets/upload/busqueda/18-wheeler-truck-parking-ez.png"
+                  alt="18 WHEELER TRUCK PARKING"
+                  class="lazyload img-fluid"
+                  width="500"
+                  height="500"
+                />
+              </picture>
+            </div>
             <div class="card-body">
               <h3>18 WHEELER TRUCK PARKING</h3>
             </div>
@@ -1651,5 +1775,22 @@
         document.getElementById("search").focus();
       });
     </script>
+        <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.card').forEach(card => {
+          const video = card.querySelector('video');
+          if (video) {
+            card.addEventListener('mouseenter', () => {
+              video.play();
+            });
+            card.addEventListener('mouseleave', () => {
+              video.pause();
+              video.currentTime = 0;
+            });
+          }
+        });
+      });
+    </script>
+  </body>
   </body>
 </html>
