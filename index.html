@@ -43,123 +43,6 @@
         }
       });
     </script>
-    <style type="text/css">
-      :root {
-        --theme-color: #300a8a;
-        --xp-color: #4d8ef7;
-      }
-
-      .social-button {
-        display: inline-block;
-        margin: 10px;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .social-button img {
-        width: 20px;
-        height: 20px;
-        transition: transform 0.3s ease-in-out;
-        border: 1px black;
-      }
-
-      .social-button:hover img {
-        transform: scale(1.1);
-      }
-
-      .social-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .social-button:hover .social-overlay {
-        opacity: 1;
-      }
-
-      .social-icon {
-        color: white;
-        font-size: 14px;
-      }
-
-      /* video player start */
-      .card-video-container {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        z-index: 1;
-      }
-
-      .card:hover .card-video-container {
-        opacity: 1;
-      }
-
-      .card-video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      .card {
-        position: relative;
-        overflow: hidden;
-      }
-
-      .card:hover .card-img {
-        opacity: 0;
-      }
-      /* video player end */
-      /* lazy load */
-      .card {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.5s ease, transform 0.5s ease;
-      }
-
-      .card.visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      /* scroll arrow */
-      @keyframes bounce {
-        0%,
-        100% {
-          transform: translateY(0); /* Başlangıç ve bitiş durumu */
-        }
-        50% {
-          transform: translateY(-10px); /* Zıplama noktası */
-        }
-      }
-
-      .scroll-arrow {
-        position: fixed;
-        bottom: 220px;
-        right: 3%;
-        font-size: 2rem;
-        cursor: pointer;
-        opacity: 0.8;
-        border: 1px solid rgb(138, 138, 138);
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        animation: bounce 2s ease-in-out infinite; /* 1 saniye zıplama, 1 saniye durma */
-      }
-    </style>
   </head>
 
   <body class="min-vh-100 layout d-flex flex-column">
@@ -274,7 +157,7 @@
 
     <div class="layout-section">
       <div class="container-fluid">
-        <div class="card-masonry">
+        <div class="card-masonry index-page-games-list">
           <a href="/category/car.html" class="card card-collection visible visible">
             <div class="card-collection-body" style="background-color: #deb87a">
               <div class="card-video-container">
@@ -1813,22 +1696,6 @@
     <script>
       document.addEventListener("DOMContentLoaded", function (event) {
         document.getElementById("search").focus();
-      });
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll(".card").forEach((card) => {
-          const video = card.querySelector("video");
-          if (video) {
-            card.addEventListener("mouseenter", () => {
-              video.play();
-            });
-            card.addEventListener("mouseleave", () => {
-              video.pause();
-              video.currentTime = 0;
-            });
-          }
-        });
       });
     </script>
   </body>

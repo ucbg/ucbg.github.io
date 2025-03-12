@@ -1,4 +1,19 @@
+function revealInitialCards() {
+  const cards = document.querySelectorAll(".card");
+  cards.forEach((card, index) => {
+    setTimeout(() => {
+      card.classList.add("visible");
+    }, index * 30); // Her kart için 100ms gecikme ekleniyor
+  });
+}
+
+// Sayfa yüklendiğinde sadece 1 kez çalıştır
+document.addEventListener("DOMContentLoaded", revealInitialCards);
+
 document.addEventListener("DOMContentLoaded", async () => {
+  const cardContainer = document.querySelector(".index-page-games-list");
+  if (!cardContainer) return; // Eğer öğe yoksa kod çalışmasın
+
   try {
     async function fetchJson(url) {
       try {
@@ -36,7 +51,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const response = await fetch("/data-json/games.json");
     const games = await response.json();
-    const cardContainer = document.querySelector(".card-masonry");
     let loadedIndex = 0;
     const batchSize = 40;
 
@@ -112,6 +126,70 @@ document.addEventListener("DOMContentLoaded", async () => {
     // Aşağı oka tıklanınca sayfanın en altına kaydır
     scrollArrow.addEventListener("click", () => {
       window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+    });
+  } catch (error) {
+    console.error("Games yüklenirken hata oluştu:", error);
+  }
+});
+
+document.addEventListener("DOMContentLoaded", async () => {
+  const cardContainer = document.querySelector(".w-lg-300.right-side-games");
+  if (!cardContainer) return; // Eğer öğe yoksa kod çalışmasın
+
+  try {
+    // JSON verisini çekme fonksiyonu
+    async function fetchJson(url) {
+      try {
+        let response = await fetch(url);
+        if (!response.ok) throw new Error("JSON yüklenemedi");
+        return await response.json();
+      } catch (error) {
+        console.error("Hata:", error);
+        return null;
+      }
+    }
+
+    // Oyunları yükle ve rastgele seç
+    const response = await fetch("/data-json/games.json");
+    const games = await response.json();
+
+    // Oyunları rastgele seçmek için yardımcı fonksiyon
+    function getRandomGames(games, count) {
+      let shuffled = games.sort(() => Math.random() - 0.5); // Oyunları karıştır
+      return shuffled.slice(0, count); // İlk 'count' kadar oyun al
+    }
+
+    const selectedGames = getRandomGames(games, 20);
+
+    // Reklam kartı ekle
+    const adElement = document.createElement("a");
+    adElement.classList.add("card", "large");
+    adElement.innerHTML = `<ins class="adsbygoogle" style="display:inline-block; width:260px; height:260px" data-ad-client="ca-pub-7321073664976914" data-ad-slot="1811365994"></ins>`;
+    cardContainer.appendChild(adElement);
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
+
+    // Seçilen oyunları ekle
+    selectedGames.forEach((game) => {
+      const card = document.createElement("a");
+      card.href = game.url;
+      card.classList.add("card");
+      card.innerHTML = `
+        <picture>
+          <source data-srcset="${game.image}" type="image/png" class="img-fluid" />
+          <img data-src="${game.image}" alt="${game.title}" class="lazyload img-fluid" width="500" height="500" />
+        </picture>
+        <div class="card-body"><h3>${game.title}</h3></div>
+      `;
+      cardContainer.appendChild(card);
+    });
+
+    // Lazy loading başlatma
+    if (window.LazyLoad) new LazyLoad({ elements_selector: ".lazyload" });
+
+    // Kartları görünür yapma
+    const cards = document.querySelectorAll(".card");
+    cards.forEach((card) => {
+      card.classList.add("visible");
     });
   } catch (error) {
     console.error("Games yüklenirken hata oluştu:", error);
