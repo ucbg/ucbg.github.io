@@ -24134,3 +24134,108 @@ strong {
   background-color: white;
   animation: bounce 2s ease-in-out infinite; /* 1 saniye zıplama, 1 saniye durma */
 }
+
+/* yana kayan recent  */
+
+/* Recently Played Games Başlığı için stil */
+.recent-played-header {
+  position: relative; /* İçerik pozisyonunu ayarla */
+  width: 100%; /* Genişliği tam kapla */
+  height: 70px; /* Yükseklik sabit kalacak */
+  background-color: #333; /* Koyu gri arka plan */
+  border-radius: 8px; /* Yuvarlak köşeler */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  color: white; /* Metin rengi beyaz */
+  text-decoration: none; /* Alt çizgi kaldır */
+  display: flex; /* İçerikleri düzenli hale getir */
+  align-items: center; /* Dikey hizalama */
+  justify-content: space-between; /* İçerikleri aralarında boşluk bırakarak dağıt */
+  padding: 0 10px; /* Yan boşluklar */
+  cursor: default; /* Üzerine tıklanamaz */
+  pointer-events: none; /* Tıklanmayı engelle */
+}
+
+.recent-played-header .card-body {
+  display: flex; /* İçerikleri yan yana sırala */
+  align-items: center; /* Dikey hizalama */
+  justify-content: space-between; /* İçerikleri aralarında boşluk bırakarak dağıt */
+  width: 100%; /* Genişliği tam kapla */
+}
+
+.recent-played-header h2 {
+  font-size: 16px; /* Yazı boyutu */
+  font-weight: bold; /* Kalın yazı */
+  margin: 0; /* Margin sıfırla */
+  white-space: nowrap; /* Metnin alt satıra geçmesini engelle */
+  color: wheat;
+}
+
+.recent-played-header .arrow-icon {
+  font-size: 20px; /* Ok simgesi boyutu */
+  color: white; /* Ok simgesi rengi (beyaz) */
+  transition: transform 0.3s ease; /* Tıklanınca animasyon ekle */
+  color: wheat;
+}
+
+.recent-played-header .arrow-icon:hover {
+  transform: translateX(5px); /* Fare üzerine gelince oku sağa kaydır */
+}
+
+/* Yeni kapsayıcı sınıfı için stil */
+.masonry-horizontal-scroll {
+  display: flex; /* Flexbox ile elemanları yan yana sırala */
+  flex-wrap: nowrap; /* Elemanların alt satıra geçmesini engelle */
+  overflow-x: auto; /* Yatay kaydırma ekle */
+  gap: 10px; /* Elemanlar arasında boşluk bırak */
+  padding: 10px; /* İçerik çevresinde boşluk */
+  scrollbar-width: thin; /* Tarayıcı kaydırma çubuğu kalınlığı */
+  scrollbar-color: #ddd transparent; /* Kaydırma çubuğu rengi */
+  white-space: nowrap; /* İçeriklerin alt satıra geçmesini engelle */
+}
+
+/* Her bir kart için stil */
+.masonry-horizontal-scroll .card {
+  position: relative; /* Alt elemanların pozisyonunu ayarlamak için */
+  width: 200px; /* Her bir kartın genişliği */
+  height: 70px; /* Yükseklik sabit kalacak */
+  flex-shrink: 0; /* Kartların daralmamasını sağla */
+  border-radius: 8px; /* Yuvarlak köşeler */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  text-decoration: none; /* Bağlantı alt çizgisini kaldır */
+  color: white; /* Metin rengi beyaz */
+  overflow: hidden; /* Taşan içerikleri gizle */
+}
+
+/* Arka plan resmi için stil */
+.masonry-horizontal-scroll .card picture img {
+  position: absolute; /* Resmi mutlak pozisyonda yerleştir */
+  top: 0;
+  left: 0;
+  width: 100%; /* Tüm alanı kapla */
+  height: 100%; /* Tüm alanı kapla */
+  object-fit: cover; /* Resmi kapla */
+  z-index: -1; /* Arkaplan olarak yerleştir */
+  filter: brightness(0.7); /* Resmi biraz koyulaştır */
+}
+
+/* Kart içeriği için stil */
+.masonry-horizontal-scroll .card .card-body {
+  position: relative; /* İçerik pozisyonunu ayarla */
+  display: flex; /* İçerikleri düzenli hale getir */
+  align-items: center; /* Dikey hizalama */
+  justify-content: center; /* Yatay hizalama */
+  height: 100%; /* Kartın tam yüksekliğini kapla */
+  z-index: 1; /* Metni ön planda tut */
+  
+}
+
+/* Başlık için stil */
+.masonry-horizontal-scroll .card h3 {
+  font-size: 16px; /* Yazı boyutu */
+  margin: 0; /* Margin sıfırla */
+  text-align: center; /* Metni ortala */
+  white-space: nowrap; /* Metnin alt satıra geçmesini engelle */
+  overflow: hidden; /* Taşan metni gizle */
+  text-overflow: ellipsis; /* Taşan metni "..." ile göster */
+  color: wheat;
+}
