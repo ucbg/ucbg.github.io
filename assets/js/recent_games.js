@@ -67,7 +67,7 @@ async function showRecentGames() {
     headerCard.className = "recent-played-header card visible";
     headerCard.innerHTML = `
         <div class="card-body">
-          <h2>Recently Played Games</h2>
+          <h2>Recently Played</h2>
           <span class="arrow-icon">→</span>
         </div>
       `;

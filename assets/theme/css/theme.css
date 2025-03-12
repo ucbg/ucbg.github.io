@@ -24167,14 +24167,13 @@ strong {
   font-weight: bold; /* Kalın yazı */
   margin: 0; /* Margin sıfırla */
   white-space: nowrap; /* Metnin alt satıra geçmesini engelle */
-  color: wheat;
+  color: white;
 }
 
 .recent-played-header .arrow-icon {
   font-size: 20px; /* Ok simgesi boyutu */
   color: white; /* Ok simgesi rengi (beyaz) */
   transition: transform 0.3s ease; /* Tıklanınca animasyon ekle */
-  color: wheat;
 }
 
 .recent-played-header .arrow-icon:hover {
@@ -24226,7 +24225,6 @@ strong {
   justify-content: center; /* Yatay hizalama */
   height: 100%; /* Kartın tam yüksekliğini kapla */
   z-index: 1; /* Metni ön planda tut */
-  
 }
 
 /* Başlık için stil */
@@ -24237,5 +24235,5 @@ strong {
   white-space: nowrap; /* Metnin alt satıra geçmesini engelle */
   overflow: hidden; /* Taşan metni gizle */
   text-overflow: ellipsis; /* Taşan metni "..." ile göster */
-  color: wheat;
+  color: white;
 }
