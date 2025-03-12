@@ -51,7 +51,7 @@ async function showRecentGames() {
 
   // Eğer oyun listesi boşsa, mesaj göster
   if (gamesList.length === 0) {
-    recentContainer.innerHTML += "<p>Henüz oyun oynanmadı.</p>";
+    recentContainer.innerHTML += "";
     return;
   }
 
