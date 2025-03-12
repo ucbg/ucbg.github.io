@@ -3,7 +3,7 @@ function revealInitialCards() {
   cards.forEach((card, index) => {
     setTimeout(() => {
       card.classList.add("visible");
-    }, index * 30); // Her kart için 100ms gecikme ekleniyor
+    }, index * 3); // Her kart için 100ms gecikme ekleniyor
   });
 }
 
@@ -132,6 +132,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 });
 
+// sag menu
 document.addEventListener("DOMContentLoaded", async () => {
   const cardContainer = document.querySelector(".w-lg-300.right-side-games");
   if (!cardContainer) return; // Eğer öğe yoksa kod çalışmasın
@@ -193,5 +194,29 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   } catch (error) {
     console.error("Games yüklenirken hata oluştu:", error);
+  }
+});
+
+// sol menu
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.querySelector(".w-lg-300.lef-side-games.card-masonry");
+
+  if (container) {
+    let items = Array.from(container.querySelectorAll("a.card-collection"));
+
+    // Rastgele sıralama
+    items.sort(() => Math.random() - 0.5);
+
+    // Yeni sıraya göre öğeleri tekrar ekleme
+    items.forEach((item) => container.appendChild(item));
+
+    // Görünürlük ayarı: İlk 11'i göster, diğerlerini gizle
+    items.forEach((item, index) => {
+      if (index < 12) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
   }
 });
