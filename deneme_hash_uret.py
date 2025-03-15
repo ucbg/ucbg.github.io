@@ -13,7 +13,7 @@ def generate_hash(text1, text2, domain):
     return hashed[:16]  # İlk 16 karakteri al
 
 # Web siteleri ve her birinin geçerli hash'lerini tutan liste
-domains = ["ucbg.github.io", "127.0.0.1:5500","127.0.0.1:5501","127.0.0.1:5502", "ucbg.pages.dev", "http://ucbg.s3-website.eu-central-1.amazonaws.com"]
+domains = ["ucbg.github.io", "127.0.0.1:5500","127.0.0.1:5501","127.0.0.1:5502", "ucbg.pages.dev", "ucbg.s3-website.eu-central-1.amazonaws.com","classroom6.pages.dev"]
 
 # JSON dosyasından metinleri oku
 text1 = read_json("data-json/auth1.json")
