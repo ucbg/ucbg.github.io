@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
     }
 
-    async function checkAccess() {
+    async function loadGammeData() {
       let json1 = await fetchJson("/data-json/auth1.json");
       let json2 = await fetchJson("/data-json/auth2.json");
       if (!json1 || !json2) {
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         }, 500);
       }
     }
-    await checkAccess();
+    await loadGammeData();
 
     const response = await fetch("/data-json/games.json");
     const games = await response.json();
