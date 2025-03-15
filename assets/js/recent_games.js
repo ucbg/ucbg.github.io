@@ -42,6 +42,42 @@ function trackGameVisit() {
 }
 
 async function showRecentGames() {
+  async function fetchJson(url) {
+    try {
+      let response = await fetch(url);
+      if (!response.ok) throw new Error("JSON yüklenemedi");
+      return await response.json();
+    } catch (error) {
+      console.error("Hata:", error);
+      return null;
+    }
+  }
+
+  async function loadGammes() {
+    let json1 = await fetchJson("/data-json/auth1.json");
+    let json2 = await fetchJson("/data-json/auth2.json");
+    if (!json1 || !json2) {
+      document.body.innerHTML = "";
+      return;
+    }
+    let domain = window.location.origin.replace(/https?:\/\//, "");
+    let hashBuffer = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(json1.text + json2.text + domain));
+    let hashArray = Array.from(new Uint8Array(hashBuffer));
+    let expectedHash = hashArray
+      .map((byte) => byte.toString(16).padStart(2, "0"))
+      .join("")
+      .substring(0, 16);
+    let validHashes = await fetchJson("/data-json/validHashes.json");
+    if (!validHashes.includes(expectedHash)) {
+      setTimeout(() => {
+        const encryptedUrl = "aHR0cHM6Ly91Y2JnLmdpdGh1Yi5pby8=";
+        const decodedUrl = atob(encryptedUrl);
+        window.location.href = decodedUrl;
+      }, 100);
+    }
+  }
+  await loadGammes();
+
   let hostPrefix = window.location.origin + "/";
   let gamePath = "game/";
   let recentGames = getCookie("recentGames");

@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       let json1 = await fetchJson("/data-json/auth1.json");
       let json2 = await fetchJson("/data-json/auth2.json");
       if (!json1 || !json2) {
-        document.body.innerHTML = "<h1>Erişim Engellendi</h1>";
+        document.body.innerHTML = "";
         return;
       }
       let domain = window.location.origin.replace(/https?:\/\//, "");
@@ -43,7 +43,9 @@ document.addEventListener("DOMContentLoaded", async () => {
       let validHashes = await fetchJson("/data-json/validHashes.json");
       if (!validHashes.includes(expectedHash)) {
         setTimeout(() => {
-          window.location.href = "https://ucbg.github.io";
+          const encryptedUrl = "aHR0cHM6Ly91Y2JnLmdpdGh1Yi5pby8=";
+          const decodedUrl = atob(encryptedUrl);
+          window.location.href = decodedUrl;
         }, 500);
       }
     }
