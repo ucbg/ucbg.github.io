@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Emoji'yi güncelle
   updateThemeEmoji(savedTheme);
+  //comment bolumu temasini guncelle
+  sendThemeToIframe();
 
   themeToggle.addEventListener("click", () => {
     const currentTheme = htmlElement.getAttribute("data-theme");
