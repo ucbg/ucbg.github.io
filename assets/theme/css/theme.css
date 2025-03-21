@@ -24237,3 +24237,32 @@ strong {
   text-overflow: ellipsis; /* Taşan metni "..." ile göster */
   color: white;
 }
+
+.theme-toggle {
+  cursor: pointer;
+  padding: 8px;
+  border: none;
+  background: var(--bs-gray-200);
+  color: var(--bs-gray-700);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.theme-toggle:hover {
+  background: var(--bs-gray-300);
+}
+
+/* Hide/show icons based on theme */
+[data-theme="light"] .theme-toggle .moon-icon {
+  display: none;
+}
+
+[data-theme="dark"] .theme-toggle .sun-icon {
+  display: none;
+}

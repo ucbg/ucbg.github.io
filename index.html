@@ -23,6 +23,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
     <script src="/assets/js/load-games.js"></script>
     <script src="/assets/js/recent_games.js"></script>
+    <script src="/assets/js/theme.js"></script>
     <script type="text/javascript">
       var Base = "/";
       var Assets = "/assets";
@@ -104,7 +105,14 @@
               />
             </div>
           </form>
+
           <ul class="navbar-nav mb-2 mb-lg-0 fw-semibold align-items-xl-center ms-xl-auto">
+            <li class="nav-item">
+              <button class="theme-toggle" aria-label="Toggle theme">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+              </button>
+            </li>
             <li class="nav-item">Online Users: <span id="online-users">0</span></li>
           </ul>
           <script>
