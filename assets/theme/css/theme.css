@@ -24266,3 +24266,71 @@ strong {
 [data-theme="dark"] .theme-toggle .sun-icon {
   display: none;
 }
+
+/*alt bant*/
+/* Bant tasarımı */
+.game-controls {
+  background-color: #333; /* Koyu arka plan */
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.game-controls button {
+  padding: 0px;
+  color: #fff;
+  border: none;
+  background-color: #555;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.game-controls button i {
+  font-size: 20px; /* Fullscreen simgesinin boyutu */
+}
+
+.game-controls .btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+/* Server butonlarının stili */
+.game-controls .server-btn {
+  padding: 10px 20px;
+  background-color: #444; /* Koyu arka plan */
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.game-controls .server-btn.active {
+  background-color: #007bff; /* Aktif server için mavi renk */
+}
+
+.game-controls .server-btn:hover {
+  background-color: #555; /* Hover efekti */
+}
+
+/* Geriye doğru sıralama ve buton simgeleri */
+.game-controls .btn-group button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #444;
+  font-size: 18px;
+  color: white;
+  border-radius: 50%;
+}
+
+.game-controls .btn-group button.active {
+  background-color: #007bff;
+}

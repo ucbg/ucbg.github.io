@@ -694,13 +694,53 @@
 				</div>
 
 
-                                <div class="ratio ratio-16x9 overflow-hidden rounded-3 mb-4 game-ratio">
+                                <div class="ratio ratio-16x9 overflow-hidden game-ratio" style="border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
 									
     <iframe class="game-iframe lazyload" data-src="https://gameinclassroom.github.io/gun-mayhem-2/" width="1280" height="720" scrolling="none" frameborder="0" allowfullscreen></iframe>
 
 
                 				</div>
-                                <div class="bt-fullscreen text-center"><button class="btn btn-primary btn-full" type="button" onclick="openFullscreen();">FullScreen</button></div>
+                               <div class="game-controls text-center rounded-bottom-3 mb-4" style="border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem;">
+
+                         Servers
+                            <div id="server-buttons" class="btn-group"></div> 
+                            <button class="btn btn-square  btn-ghost rounded-circle dropdown-toggle" onclick="openFullscreen();">
+                              <svg width="16" height="16" fill="currentColor">
+                                  <use xlink:href="/assets/sprite/sprite.svg#fullscreen"></use>
+                              </svg>
+                          </button>
+                          <div class="dropdown mx-1 py-1" data-bs-tooltip="tooltip" data-bs-placement="top" title="Share">
+                              <button class="btn btn-square btn-ghost rounded-circle dropdown-toggle" type="button" id="shareDropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                  <svg width="14" height="14" fill="currentColor">
+                                      <use xlink:href="/assets/sprite/sprite.svg#share"></use>
+                                  </svg>
+                              </button>
+                              <div class="dropdown-menu border-0 bg-transparent mt-3 p-0" aria-labelledby="shareDropdown">
+                                  <div class="d-flex align-items-center">
+                                      <button class="btn btn-square rounded-circle bg-facebook text-white mx-1 btn-share" data-type="facebook" data-title="TIME SHOOTER 2" data-sef="https://ucbg.github.io/game/time-shooter-2">
+                                          <svg width="16" height="16" fill="currentColor">
+                                              <use xlink:href="/assets/sprite/sprite.svg#facebook"></use>
+                                          </svg>
+                                      </button>
+                                      <button class="btn btn-square rounded-circle bg-twitter text-white mx-1 btn-share" data-type="twitter" data-title="TIME SHOOTER 2" data-sef="https://ucbg.github.io/game/time-shooter-2">
+                                          <svg width="16" height="16" fill="currentColor">
+                                              <use xlink:href="/assets/sprite/sprite.svg#twitter"></use>
+                                          </svg>
+                                      </button>
+                                      <button class="btn btn-square rounded-circle bg-whatsapp text-white mx-1 btn-share" data-type="whatsapp" data-title="TIME SHOOTER 2" data-sef="https://ucbg.github.io/game/time-shooter-2">
+                                          <svg width="16" height="16" fill="currentColor">
+                                              <use xlink:href="/assets/sprite/sprite.svg#whatsapp"></use>
+                                          </svg>
+                                      </button>
+                                      <button class="btn btn-square rounded-circle bg-telegram text-white mx-1 btn-share" data-type="telegram" data-title="TIME SHOOTER 2" data-sef="https://ucbg.github.io/game/time-shooter-2">
+                                          <svg width="16" height="16" fill="currentColor">
+                                              <use xlink:href="/assets/sprite/sprite.svg#telegram"></use>
+                                          </svg>
+                                      </button>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
     
                                 <div class="px-lg-3">
                     <div class="row">
@@ -717,44 +757,7 @@
                         <div class="col-lg-auto text-xl-end">
                             <div class="w-lg-300">
                                 <div class="mb-2 d-flex align-items-center justify-content-lg-end flex-nowrap">
-                                    <div class="dropdown mx-1 py-1" data-bs-tooltip="tooltip" data-bs-placement="top" title="Share">
-                                        <button class="btn btn-square btn-ghost rounded-circle dropdown-toggle" type="button" id="shareDropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                                            <svg width="14" height="14" fill="currentColor">
-                                                <use xlink:href="/assets/sprite/sprite.svg#share"></use>
-                                            </svg>
-                                        </button>
-                                        <div class="dropdown-menu border-0 bg-transparent mt-3 p-0" aria-labelledby="shareDropdown">
-                                            <div class="d-flex align-items-center">
-                                                <button class="btn btn-square rounded-circle bg-facebook text-white mx-1 btn-share" data-type="facebook" data-title="TIME SHOOTER 2" data-sef="https://ucbg.github.io/game/time-shooter-2">
-                                                    <svg width="16" height="16" fill="currentColor">
-                                                        <use xlink:href="/assets/sprite/sprite.svg#facebook"></use>
-                                                    </svg>
-                                                </button>
-                                                <button class="btn btn-square rounded-circle bg-twitter text-white mx-1 btn-share" data-type="twitter" data-title="TIME SHOOTER 2" data-sef="https://ucbg.github.io/game/time-shooter-2">
-                                                    <svg width="16" height="16" fill="currentColor">
-                                                        <use xlink:href="/assets/sprite/sprite.svg#twitter"></use>
-                                                    </svg>
-                                                </button>
-                                                <button class="btn btn-square rounded-circle bg-whatsapp text-white mx-1 btn-share" data-type="whatsapp" data-title="TIME SHOOTER 2" data-sef="https://ucbg.github.io/game/time-shooter-2">
-                                                    <svg width="16" height="16" fill="currentColor">
-                                                        <use xlink:href="/assets/sprite/sprite.svg#whatsapp"></use>
-                                                    </svg>
-                                                </button>
-                                                <button class="btn btn-square rounded-circle bg-telegram text-white mx-1 btn-share" data-type="telegram" data-title="TIME SHOOTER 2" data-sef="https://ucbg.github.io/game/time-shooter-2">
-                                                    <svg width="16" height="16" fill="currentColor">
-                                                        <use xlink:href="/assets/sprite/sprite.svg#telegram"></use>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown mx-1 py-1" data-bs-tooltip="tooltip" data-bs-placement="top" title="" data-bs-original-title="Fullscreen">
-                                        <button class="btn btn-square btn-fullscreen btn-ghost rounded-circle dropdown-toggle">
-                                            <svg width="16" height="16" fill="currentColor">
-                                                <use xlink:href="/assets/sprite/sprite.svg#fullscreen"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
+                                    
                                                                         <div class="w-lg-200 ms-4">
                                         <div class="fs-sm">
                                             
