@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
     await loadGammeData();
 
-    const response = await fetch("/data-json/games.json");
+    const response = await fetch("/data-json/games.json?v=2.0.0");
     const games = await response.json();
     let loadedIndex = 0;
     const batchSize = 40;
@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     // Oyunları yükle ve rastgele seç
-    const response = await fetch("/data-json/games.json");
+    const response = await fetch("/data-json/games.json?v=2.0.0");
     const games = await response.json();
 
     // Oyunları rastgele seçmek için yardımcı fonksiyon
