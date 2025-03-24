@@ -20,8 +20,8 @@ const server1BaseUrl = urlParts.slice(0, 3).join("/");
 
 // Dinamik olarak eklenecek serverlar
 const extraServers = [
-  { name: "2", baseUrl: "https://unblockedgames66.gitlab.io" },
-  { name: "3", baseUrl: "https://unblockedgames67.gitlab.io" },
+  { name: "2", baseUrl: "https://unblockedgames67.gitlab.io" },
+  { name: "3", baseUrl: "https://unblockedgames66.gitlab.io" },
   { name: "4", baseUrl: "https://ubgwtf.gitlab.io" },
 ];
 
