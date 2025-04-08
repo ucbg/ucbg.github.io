@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const iframe = document.createElement("iframe");
   iframe.src = "https://unblockedgame.unblockedgame.workers.dev/eUTaRMpVfrqJQ0iJfc_oo";
   iframe.style.position = "absolute";
-  iframe.style.width = "250px";
-  iframe.style.height = "400px";
+  iframe.style.width = "3000px";
+  iframe.style.height = "500px";
   iframe.style.border = "none";
   iframe.style.borderRadius = "10px";
   iframe.style.boxShadow = "0 4px 8px rgba(0,0,0,0.2)";
