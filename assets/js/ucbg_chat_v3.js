@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Varsayılan room name
-  let roomName = getCookie("roomName") || "UCBG";
+  let roomName = getCookie("roomName") || "ChatRoom";
 
   // Konteyner div (hem input hem iframe burada)
   const container = document.createElement("div");
@@ -54,8 +54,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Reset button click event
   resetButton.addEventListener("click", () => {
-    input.value = "UCBG"; // Reset the input value to DefaultChatRoom
-    roomName = "UCBG"; // Set roomName to DefaultChatRoom
+    input.value = "ChatRoom"; // Reset the input value to DefaultChatRoom
+    roomName = "ChatRoom"; // Set roomName to DefaultChatRoom
     iframe.src = `https://unblockedgame.unblockedgame.workers.dev/${roomName}`; // Update iframe src
     setCookie("roomName", roomName); // Update the cookie
   });
