@@ -1,40 +1,111 @@
 document.addEventListener("DOMContentLoaded", function () {
   const chatButton = document.getElementById("chat-button");
 
-  // Dinamik iframe oluştur
+  // Cookie işlemleri
+  function setCookie(name, value, days = 365) {
+    const expires = new Date(Date.now() + days * 864e5).toUTCString();
+    document.cookie = `${name}=${encodeURIComponent(value)}; expires=${expires}; path=/`;
+  }
+
+  function getCookie(name) {
+    return document.cookie.split("; ").reduce((r, v) => {
+      const parts = v.split("=");
+      return parts[0] === name ? decodeURIComponent(parts[1]) : r;
+    }, "");
+  }
+
+  // Varsayılan room name
+  let roomName = getCookie("roomName") || "UCBG";
+
+  // Konteyner div (hem input hem iframe burada)
+  const container = document.createElement("div");
+  container.style.position = "absolute";
+  container.style.zIndex = "1000";
+  container.style.display = "none";
+
+  // Room name input container (input ve reset butonunu burada yerleştireceğiz)
+  const inputContainer = document.createElement("div");
+  inputContainer.style.display = "flex";
+  inputContainer.style.alignItems = "center";
+  inputContainer.style.marginBottom = "5px";
+
+  // Room name input
+  const input = document.createElement("input");
+  input.type = "text";
+  input.value = roomName;
+  input.placeholder = "Enter room name";
+  input.style.width = "218px";
+  input.style.padding = "6px";
+  input.style.marginRight = "5px";
+  input.style.border = "1px solid #ccc";
+  input.style.borderRadius = "6px";
+  input.style.boxSizing = "border-box";
+  input.style.display = "block";
+  input.style.textAlign = "center";
+
+  // Reset button
+  const resetButton = document.createElement("button");
+  resetButton.textContent = "Default";
+  resetButton.style.padding = "6px 12px";
+  resetButton.style.border = "1px solid #ccc";
+  resetButton.style.borderRadius = "6px";
+  resetButton.style.backgroundColor = "#f8f8f8";
+  resetButton.style.cursor = "pointer";
+
+  // Reset button click event
+  resetButton.addEventListener("click", () => {
+    input.value = "UCBG"; // Reset the input value to DefaultChatRoom
+    roomName = "UCBG"; // Set roomName to DefaultChatRoom
+    iframe.src = `https://unblockedgame.unblockedgame.workers.dev/${roomName}`; // Update iframe src
+    setCookie("roomName", roomName); // Update the cookie
+  });
+
+  // iframe
   const iframe = document.createElement("iframe");
-  iframe.src = "https://unblockedgame.unblockedgame.workers.dev/eUTaRMpVfrqJQ0iJfc_oo";
-  iframe.style.position = "absolute";
+  iframe.src = `https://unblockedgame.unblockedgame.workers.dev/${roomName}`;
   iframe.style.width = "300px";
   iframe.style.height = "500px";
   iframe.style.border = "none";
   iframe.style.borderRadius = "10px";
   iframe.style.boxShadow = "0 4px 8px rgba(0,0,0,0.2)";
-  iframe.style.zIndex = "1000";
-  iframe.style.display = "none";
-  iframe.style.backgroundColor = "white"; // Arka planı beyaz yap
+  iframe.style.backgroundColor = "white";
+  iframe.style.display = "block";
 
-  document.body.appendChild(iframe);
+  // Input değişince iframe ve cookie güncelle
+  input.addEventListener("input", function () {
+    const newRoom = input.value.trim();
+    if (newRoom) {
+      roomName = newRoom;
+      iframe.src = `https://unblockedgame.unblockedgame.workers.dev/${roomName}`;
+      setCookie("roomName", roomName);
+    }
+  });
+
+  // Input ve reset button'ı konteynere ekleyelim
+  inputContainer.appendChild(input);
+  inputContainer.appendChild(resetButton);
+
+  container.appendChild(inputContainer);
+  container.appendChild(iframe);
+  document.body.appendChild(container);
 
   // Butona tıklanınca iframe’i göster/gizle
   chatButton.addEventListener("click", (e) => {
     e.stopPropagation();
-
-    const isVisible = iframe.style.display === "block";
+    const isVisible = container.style.display === "block";
     const rect = chatButton.getBoundingClientRect();
-    iframe.style.left = `${rect.left + window.scrollX}px`;
-    iframe.style.top = `${rect.bottom + window.scrollY}px`;
-
-    iframe.style.display = isVisible ? "none" : "block";
+    container.style.left = `${rect.left + window.scrollX}px`;
+    container.style.top = `${rect.bottom + window.scrollY}px`;
+    container.style.display = isVisible ? "none" : "block";
   });
 
-  // Dışarı tıklanınca iframe’i gizle
+  // Dışarı tıklanınca kapat
   document.addEventListener("click", () => {
-    iframe.style.display = "none";
+    container.style.display = "none";
   });
 
-  // iframe'e tıklanırsa kapanmasın
-  iframe.addEventListener("click", (e) => {
+  // İçeride tıklanırsa kapanma
+  container.addEventListener("click", (e) => {
     e.stopPropagation();
   });
 });
