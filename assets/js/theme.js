@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Emoji'yi güncelle
   updateThemeEmoji(savedTheme);
 
-  // Iframe için yeni kontrol mekanizması
+  // Iframe için kontrol mekanizması
   let iframeCheckAttempts = 0;
   const maxAttempts = 20; // Maksimum 20 deneme (20 saniye)
 
@@ -32,6 +32,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 1000);
   };
 
+  // Yorum iframe'i yüklendiğinde doğrudan temayı gönder
+  const iframe = document.getElementById("cmtx_iframe");
+  if (iframe) {
+    iframe.addEventListener("load", () => {
+      checkAndSendTheme();
+    });
+  }
+
+  // Zamanlamaya karşı yedek kontrol
   initIframeTheme();
 
   themeToggle.addEventListener("click", () => {
@@ -42,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("theme", newTheme);
 
     updateThemeEmoji(newTheme);
-    checkAndSendTheme(); // Tema değiştiğinde direkt kontrol et
+    checkAndSendTheme(); // Tema değiştiğinde direkt gönder
   });
 
   function updateThemeEmoji(theme) {
