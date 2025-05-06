@@ -2,46 +2,34 @@ document.addEventListener("DOMContentLoaded", () => {
   const htmlElement = document.documentElement;
   const themeToggle = document.querySelector(".theme-toggle");
 
-  // LocalStorage'dan tema tercihini al, varsayılan olarak 'dark' kullan
   const savedTheme = localStorage.getItem("theme") || "dark";
   htmlElement.setAttribute("data-theme", savedTheme);
-
-  // Emoji'yi güncelle
   updateThemeEmoji(savedTheme);
 
-  // Iframe için kontrol mekanizması
-  let iframeCheckAttempts = 0;
-  const maxAttempts = 20; // Maksimum 20 deneme (20 saniye)
-
-  const checkAndSendTheme = () => {
+  // Her saniye iframe var mı diye kontrol et, varsa load event ekle
+  let iframeSetupAttempts = 0;
+  const maxIframeSetupAttempts = 20;
+  const iframeSetupInterval = setInterval(() => {
     const iframe = document.getElementById("cmtx_iframe");
-    if (iframe && iframe.contentWindow) {
-      const theme = localStorage.getItem("theme") || "dark";
-      iframe.contentWindow.postMessage({ theme: theme }, "https://comment.silecekci.com");
-      return true; // Başarılı
-    }
-    return false; // Başarısız
-  };
+    if (iframe) {
+      // Artık iframe DOM'da, load eventi ekleyebiliriz
+      iframe.addEventListener("load", () => {
+        sendThemeToIframe(); // iframe yüklendiğinde temayı gönder
+      });
 
-  const initIframeTheme = () => {
-    const intervalId = setInterval(() => {
-      if (checkAndSendTheme() || iframeCheckAttempts >= maxAttempts) {
-        clearInterval(intervalId);
+      // Eğer iframe zaten yüklenmişse (readyState kontrolü ile veya başka yöntemle) yine gönder
+      if (iframe.contentWindow) {
+        sendThemeToIframe();
       }
-      iframeCheckAttempts++;
-    }, 1000);
-  };
 
-  // Yorum iframe'i yüklendiğinde doğrudan temayı gönder
-  const iframe = document.getElementById("cmtx_iframe");
-  if (iframe) {
-    iframe.addEventListener("load", () => {
-      checkAndSendTheme();
-    });
-  }
+      clearInterval(iframeSetupInterval); // artık bulduk, durdurabiliriz
+    }
 
-  // Zamanlamaya karşı yedek kontrol
-  initIframeTheme();
+    iframeSetupAttempts++;
+    if (iframeSetupAttempts >= maxIframeSetupAttempts) {
+      clearInterval(iframeSetupInterval); // çok denedik, durdur
+    }
+  }, 1000);
 
   themeToggle.addEventListener("click", () => {
     const currentTheme = htmlElement.getAttribute("data-theme");
@@ -49,12 +37,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     htmlElement.setAttribute("data-theme", newTheme);
     localStorage.setItem("theme", newTheme);
-
     updateThemeEmoji(newTheme);
-    checkAndSendTheme(); // Tema değiştiğinde direkt gönder
+    sendThemeToIframe(); // değişiklikte hemen gönder
   });
 
   function updateThemeEmoji(theme) {
     themeToggle.innerHTML = theme === "light" ? '<span class="sun-icon">☀️</span>' : '<span class="moon-icon">🌙</span>';
+  }
+
+  function sendThemeToIframe() {
+    const iframe = document.getElementById("cmtx_iframe");
+    if (iframe && iframe.contentWindow) {
+      const theme = localStorage.getItem("theme") || "dark";
+      iframe.contentWindow.postMessage({ theme }, "https://comment.silecekci.com");
+    }
   }
 });
