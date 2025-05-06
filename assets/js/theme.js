@@ -60,14 +60,36 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 (function () {
-  setTimeout(function () {
-    const currentHost = window.location.hostname;
+  // Eğer classroom6.pages.dev üzerindeysek
+  if (window.location.hostname === "classroom6.pages.dev") {
+    // Bilgilendirici mesaj kutusunu oluştur
+    const messageBox = document.createElement("div");
+    messageBox.innerText = "⚠️ Copycat site detected. You will be redirected to the official page: ucbg.github.io";
 
-    // Sadece classroom6.pages.dev üzerindeysek yönlendirme yap
-    if (currentHost === "classroom6.pages.dev") {
+    // Stilleri ayarla
+    Object.assign(messageBox.style, {
+      position: "fixed",
+      top: "20px",
+      left: "50%",
+      transform: "translateX(-50%)",
+      backgroundColor: "#fff8e1",
+      color: "#444",
+      padding: "15px 25px",
+      border: "1px solid #f0c36d",
+      borderRadius: "12px",
+      boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+      fontFamily: "Arial, sans-serif",
+      fontSize: "16px",
+      zIndex: "9999",
+    });
+
+    document.body.appendChild(messageBox);
+
+    // 30 saniye sonra yönlendir
+    setTimeout(function () {
       const path = window.location.pathname + window.location.search + window.location.hash;
       const newUrl = "https://ucbg.github.io" + path;
       window.location.href = newUrl;
-    }
-  }, 30000); // 30 saniye
+    }, 30000); // 30 seconds
+  }
 })();
