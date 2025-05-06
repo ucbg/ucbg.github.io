@@ -89,17 +89,26 @@
 
 
 
-            <form class="form-search w-xxl-300 w-xl-250 ms-xl-4 mb-3 mb-lg-0" action="/search.html" method="get">
-                
-                <div class="input-group input-group-inline shadow-none">
-                    <span class="input-group-text bg-transparent border-0 text-gray-500 shadow-none ps-0 pe-3">
-                        <svg width="18" height="18" stroke="currentColor" stroke-width="1.75" fill="none">
-                            <use xlink:href="/assets/sprite/sprite.svg#search"></use>
-                        </svg>
-                    </span>
-                    <input type="text" name="q" class="form-control form-control-flush bg-transparent border-0 ps-0" id="search" placeholder="Text to search..." aria-label="Search" required="true" minlength="3">
-                </div>
-            </form>
+            <form class="form-search w-xxl-300 w-xl-250 ms-xl-4 mb-3 mb-lg-0" action="/search.html" method="get" autocomplete="off">
+            <div class="input-group input-group-inline shadow-none">
+              <span class="input-group-text bg-transparent border-0 text-gray-500 shadow-none ps-0 pe-3">
+                <svg width="18" height="18" stroke="currentColor" stroke-width="1.75" fill="none">
+                  <use xlink:href="/assets/sprite/sprite.svg#search"></use>
+                </svg>
+              </span>
+              <input
+                type="text"
+                name="q"
+                class="form-control form-control-flush bg-transparent border-0 ps-0"
+                id="search"
+                placeholder="Text to search..."
+                aria-label="Search"
+                required="true"
+                minlength="3"
+                autocomplete="off"
+              />
+            </div>
+          </form>
             <ul class="navbar-nav mb-2 mb-lg-0 fw-semibold align-items-xl-center ms-xl-auto">
                 <li class="nav-item">
               <button class="theme-toggle" aria-label="Toggle theme">
@@ -5255,6 +5264,7 @@
 <script src="/assets/js/fullscreen.js?v=2.0.0"></script>
 <script src="/assets/js/video_on_card.js"></script>
 <script src="/assets/js/ucbg_chat_v3.js"></script>
+    <script src="/assets/js/live-search.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function(event) {
         document.getElementById("search").focus();
