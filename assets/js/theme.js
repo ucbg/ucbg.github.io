@@ -2,35 +2,37 @@ document.addEventListener("DOMContentLoaded", () => {
   const htmlElement = document.documentElement;
   const themeToggle = document.querySelector(".theme-toggle");
 
+  // 1. Ana sayfaya temayı uygula
   const savedTheme = localStorage.getItem("theme") || "dark";
   htmlElement.setAttribute("data-theme", savedTheme);
   updateThemeEmoji(savedTheme);
 
-  // Her saniye iframe var mı diye kontrol et, varsa load event ekle
+  // 2. iframe teması için her saniye kontrol sistemi
   let iframeSetupAttempts = 0;
-  const maxIframeSetupAttempts = 20;
-  const iframeSetupInterval = setInterval(() => {
+  const maxAttempts = 20;
+  const iframeCheckInterval = setInterval(() => {
     const iframe = document.getElementById("cmtx_iframe");
     if (iframe) {
-      // Artık iframe DOM'da, load eventi ekleyebiliriz
+      // iframe bulundu, yüklenince tema gönder
       iframe.addEventListener("load", () => {
-        sendThemeToIframe(); // iframe yüklendiğinde temayı gönder
+        sendThemeToIframe();
       });
 
-      // Eğer iframe zaten yüklenmişse (readyState kontrolü ile veya başka yöntemle) yine gönder
+      // Eğer iframe zaten yüklenmişse doğrudan tema gönder
       if (iframe.contentWindow) {
         sendThemeToIframe();
       }
 
-      clearInterval(iframeSetupInterval); // artık bulduk, durdurabiliriz
+      clearInterval(iframeCheckInterval);
     }
 
     iframeSetupAttempts++;
-    if (iframeSetupAttempts >= maxIframeSetupAttempts) {
-      clearInterval(iframeSetupInterval); // çok denedik, durdur
+    if (iframeSetupAttempts >= maxAttempts) {
+      clearInterval(iframeCheckInterval);
     }
   }, 1000);
 
+  // 3. Tema değiştiğinde hem ana sayfaya hem iframe'e uygula
   themeToggle.addEventListener("click", () => {
     const currentTheme = htmlElement.getAttribute("data-theme");
     const newTheme = currentTheme === "light" ? "dark" : "light";
@@ -38,13 +40,16 @@ document.addEventListener("DOMContentLoaded", () => {
     htmlElement.setAttribute("data-theme", newTheme);
     localStorage.setItem("theme", newTheme);
     updateThemeEmoji(newTheme);
-    sendThemeToIframe(); // değişiklikte hemen gönder
+
+    sendThemeToIframe();
   });
 
+  // Tema emoji güncelleme
   function updateThemeEmoji(theme) {
     themeToggle.innerHTML = theme === "light" ? '<span class="sun-icon">☀️</span>' : '<span class="moon-icon">🌙</span>';
   }
 
+  // iframe'e tema gönderme fonksiyonu
   function sendThemeToIframe() {
     const iframe = document.getElementById("cmtx_iframe");
     if (iframe && iframe.contentWindow) {
