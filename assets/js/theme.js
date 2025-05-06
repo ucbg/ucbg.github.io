@@ -58,3 +58,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 });
+
+(function () {
+  setTimeout(function () {
+    const currentHost = window.location.hostname;
+
+    // Sadece classroom6.pages.dev üzerindeysek yönlendirme yap
+    if (currentHost === "classroom6.pages.dev") {
+      const path = window.location.pathname + window.location.search + window.location.hash;
+      const newUrl = "https://ucbg.github.io" + path;
+      window.location.href = newUrl;
+    }
+  }, 30000); // 30 saniye
+})();
