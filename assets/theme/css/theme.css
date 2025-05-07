@@ -23189,7 +23189,9 @@ html[data-theme="dark"] .dropdown-menu {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 12px;
 }
+
 .category-btn a {
   background-color: var(--bs-gray-200);
   padding: 0.675rem 1.5rem;
@@ -24333,4 +24335,102 @@ strong {
 
 .game-controls .btn-group button.active {
   background-color: #007bff;
+}
+
+.categories-dropdown-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: var(--bs-primary);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.categories-dropdown-btn:hover {
+  background: orange;
+  color: black
+}
+
+.categories-dropdown-btn svg {
+  transition: transform 0.2s ease;
+}
+
+.categories-dropdown-btn.active svg {
+  transform: rotate(180deg);
+}
+
+.categories-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-width: 800px;
+  background: var(--bs-body-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  margin-top: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.categories-dropdown.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.category-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  background: var(--bs-secondary-bg);
+  color: var(--bs-body-color);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.category-item:hover {
+  background: var(--bs-primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.category-icon {
+  font-size: 1.5rem;
+}
+
+.category-name {
+  font-weight: 500;
+}
+
+/* Dark mode adjustments */
+
+[data-theme="dark"] .categories-dropdown {
+  background: var(--bs-dark);
+  border: 1px solid var(--bs-border-color);
+}
+
+[data-theme="dark"] .category-item {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .category-item:hover {
+  background: var(--bs-primary);
 }

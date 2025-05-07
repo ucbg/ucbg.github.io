@@ -82,8 +82,84 @@
         </button>
         <div class="collapse navbar-collapse" id="navbar">
           <div class="category-btn">
-            <a href="/category/new.html">New</a>
-            <a href="/category/trending.html">Trending</a>
+            <button class="categories-dropdown-btn" id="categoriesBtn">
+              <span>Categories</span>
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="categories-dropdown" id="categoriesDropdown">
+              <div class="categories-grid">
+                <a href="/category/car.html" class="category-item">
+                  <span class="category-icon">🚗</span>
+                  <span class="category-name">Car Games</span>
+                </a>
+                <a href="/category/clicker.html" class="category-item">
+                  <span class="category-icon">🖱️</span>
+                  <span class="category-name">Clicker Games</span>
+                </a>
+                <a href="/category/io.html" class="category-item">
+                  <span class="category-icon">🌐</span>
+                  <span class="category-name">.IO Games</span>
+                </a>
+                <a href="/category/parkour.html" class="category-item">
+                  <span class="category-icon">🏃</span>
+                  <span class="category-name">Parkour Games</span>
+                </a>
+                <a href="/category/platform.html" class="category-item">
+                  <span class="category-icon">🎮</span>
+                  <span class="category-name">Platform Games</span>
+                </a>
+                <a href="/category/running.html" class="category-item">
+                  <span class="category-icon">🏃‍♂️</span>
+                  <span class="category-name">Running Games</span>
+                </a>
+                <a href="/category/shooting.html" class="category-item">
+                  <span class="category-icon">🎯</span>
+                  <span class="category-name">Shooting Games</span>
+                </a>
+                <a href="/category/soccer.html" class="category-item">
+                  <span class="category-icon">⚽</span>
+                  <span class="category-name">Soccer Games</span>
+                </a>
+                <a href="/category/stickman.html" class="category-item">
+                  <span class="category-icon">🧍</span>
+                  <span class="category-name">Stickman Games</span>
+                </a>
+                <a href="/category/two-player.html" class="category-item">
+                  <span class="category-icon">👥</span>
+                  <span class="category-name">Two Player Games</span>
+                </a>
+                <a href="/category/fighting.html" class="category-item">
+                  <span class="category-icon">🥊</span>
+                  <span class="category-name">Fighting Games</span>
+                </a>
+                <a href="/category/kids.html" class="category-item">
+                  <span class="category-icon">👶</span>
+                  <span class="category-name">Kids Games</span>
+                </a>
+                <a href="/category/multiplayer.html" class="category-item">
+                  <span class="category-icon">🎮</span>
+                  <span class="category-name">Multiplayer Games</span>
+                </a>
+                <a href="/category/puzzle.html" class="category-item">
+                  <span class="category-icon">🧩</span>
+                  <span class="category-name">Puzzle Games</span>
+                </a>
+                <a href="/category/racing.html" class="category-item">
+                  <span class="category-icon">🏎️</span>
+                  <span class="category-name">Racing Games</span>
+                </a>
+                <a href="/category/school.html" class="category-item">
+                  <span class="category-icon">🏫</span>
+                  <span class="category-name">School Games</span>
+                </a>
+                <a href="/category/skill.html" class="category-item">
+                  <span class="category-icon">🎯</span>
+                  <span class="category-name">Skill Games</span>
+                </a>
+              </div>
+            </div>
             <a href="javascript:void(0);" id="chat-button">Chat</a>
           </div>
 
@@ -1622,7 +1698,7 @@
 
         <p>
           🔓 These games are usually lightweight, browser-based, and require no downloads or special software, making them easy to play on school
-          computers, Chromebooks, or mobile devices. Since they don’t need high-end graphics or installations, students can enjoy smooth gameplay
+          computers, Chromebooks, or mobile devices. Since they don't need high-end graphics or installations, students can enjoy smooth gameplay
           without slowing down their systems. ⚡🎯
         </p>
 
@@ -1636,20 +1712,20 @@
         <p>
           🧠 In addition to providing entertainment during free periods or study breaks, many <strong>unblocked school games</strong> can also be used
           as learning tools. Some games incorporate math challenges, vocabulary exercises, history trivia, or coding puzzles, making them both
-          engaging and beneficial for students. Whether it’s a multiplayer strategy game that encourages teamwork or a word-based puzzle that enhances
+          engaging and beneficial for students. Whether it's a multiplayer strategy game that encourages teamwork or a word-based puzzle that enhances
           language skills, these games offer an interactive way to boost learning. 📖🎲
         </p>
 
         <p>
           🌟 One of the biggest advantages of <strong>playing unblocked games at school</strong> is accessibility. Since these games run directly in
-          web browsers, students don’t need to worry about downloads, updates, or compatibility issues. Many websites hosting unblocked games ensure
+          web browsers, students don't need to worry about downloads, updates, or compatibility issues. Many websites hosting unblocked games ensure
           that content is safe, age-appropriate, and free from harmful ads or malware, providing a secure gaming experience. 🔥🔒
         </p>
 
         <p>
           🎈 Whether students want a quick mental break, a way to unwind during recess, or an interactive way to reinforce classroom lessons,
           <strong>unblocked games for school</strong> offer an exciting and accessible solution. With a wide range of genres, from racing and
-          adventure to puzzles and educational games, there’s something for everyone to enjoy—without breaking school rules! 🚗🏆🧑‍🏫
+          adventure to puzzles and educational games, there's something for everyone to enjoy—without breaking school rules! 🚗🏆🧑‍🏫
         </p>
       </div>
     </div>
@@ -1712,6 +1788,43 @@
     <script>
       document.addEventListener("DOMContentLoaded", function (event) {
         document.getElementById("search").focus();
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const categoriesBtn = document.getElementById("categoriesBtn");
+        const categoriesDropdown = document.getElementById("categoriesDropdown");
+
+        // Toggle dropdown
+        categoriesBtn.addEventListener("click", function (e) {
+          e.stopPropagation();
+          categoriesBtn.classList.toggle("active");
+          categoriesDropdown.classList.toggle("active");
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener("click", function (e) {
+          if (!categoriesDropdown.contains(e.target) && !categoriesBtn.contains(e.target)) {
+            categoriesBtn.classList.remove("active");
+            categoriesDropdown.classList.remove("active");
+          }
+        });
+
+        // Close dropdown when pressing Escape
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") {
+            categoriesBtn.classList.remove("active");
+            categoriesDropdown.classList.remove("active");
+          }
+        });
+
+        // Close dropdown when window is resized
+        window.addEventListener("resize", function () {
+          if (window.innerWidth <= 768) {
+            categoriesBtn.classList.remove("active");
+            categoriesDropdown.classList.remove("active");
+          }
+        });
       });
     </script>
   </body>
