@@ -16,7 +16,7 @@
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/Inter-Bold.woff2?v=3.19" crossorigin="anonymous" />
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/Inter-ExtraBold.woff2?v=3.19" crossorigin="anonymous" />
 
-    <link rel="preload" as="style" href="/assets/theme/css/theme.css?v=2.0.0" />
+    <link rel="preload" as="style" href="/assets/theme/css/theme.css?v=2.0.2" />
     <link rel="preload" as="script" href="/assets/theme/js/jquery.min.js?v=1.0.0" />
     <link media="all" rel="stylesheet" href="/assets/theme/css/theme.css?v=2.0.0" type="text/css" />
     <link rel="shortcut icon" href="/assets/static/favicon.svg?v=1.0.0" />
@@ -127,8 +127,84 @@
         </button>
         <div class="collapse navbar-collapse" id="navbar">
           <div class="category-btn">
-            <a href="/category/new.html">New</a>
-            <a href="/category/trending.html">Trending</a>
+            <button class="categories-dropdown-btn" id="categoriesBtn">
+              <span>Categories</span>
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="categories-dropdown" id="categoriesDropdown">
+              <div class="categories-grid">
+                <a href="/category/car.html" class="category-item">
+                  <span class="category-icon">🚗</span>
+                  <span class="category-name">Car Games</span>
+                </a>
+                <a href="/category/clicker.html" class="category-item">
+                  <span class="category-icon">🖱️</span>
+                  <span class="category-name">Clicker Games</span>
+                </a>
+                <a href="/category/io.html" class="category-item">
+                  <span class="category-icon">🌐</span>
+                  <span class="category-name">.IO Games</span>
+                </a>
+                <a href="/category/parkour.html" class="category-item">
+                  <span class="category-icon">🏃</span>
+                  <span class="category-name">Parkour Games</span>
+                </a>
+                <a href="/category/platform.html" class="category-item">
+                  <span class="category-icon">🎮</span>
+                  <span class="category-name">Platform Games</span>
+                </a>
+                <a href="/category/running.html" class="category-item">
+                  <span class="category-icon">🏃‍♂️</span>
+                  <span class="category-name">Running Games</span>
+                </a>
+                <a href="/category/shooting.html" class="category-item">
+                  <span class="category-icon">🎯</span>
+                  <span class="category-name">Shooting Games</span>
+                </a>
+                <a href="/category/soccer.html" class="category-item">
+                  <span class="category-icon">⚽</span>
+                  <span class="category-name">Soccer Games</span>
+                </a>
+                <a href="/category/stickman.html" class="category-item">
+                  <span class="category-icon">🧍</span>
+                  <span class="category-name">Stickman Games</span>
+                </a>
+                <a href="/category/two-player.html" class="category-item">
+                  <span class="category-icon">👥</span>
+                  <span class="category-name">Two Player Games</span>
+                </a>
+                <a href="/category/fighting.html" class="category-item">
+                  <span class="category-icon">🥊</span>
+                  <span class="category-name">Fighting Games</span>
+                </a>
+                <a href="/category/kids.html" class="category-item">
+                  <span class="category-icon">👶</span>
+                  <span class="category-name">Kids Games</span>
+                </a>
+                <a href="/category/multiplayer.html" class="category-item">
+                  <span class="category-icon">🎮</span>
+                  <span class="category-name">Multiplayer Games</span>
+                </a>
+                <a href="/category/puzzle.html" class="category-item">
+                  <span class="category-icon">🧩</span>
+                  <span class="category-name">Puzzle Games</span>
+                </a>
+                <a href="/category/racing.html" class="category-item">
+                  <span class="category-icon">🏎️</span>
+                  <span class="category-name">Racing Games</span>
+                </a>
+                <a href="/category/school.html" class="category-item">
+                  <span class="category-icon">🏫</span>
+                  <span class="category-name">School Games</span>
+                </a>
+                <a href="/category/skill.html" class="category-item">
+                  <span class="category-icon">🎯</span>
+                  <span class="category-name">Skill Games</span>
+                </a>
+              </div>
+            </div>
             <a href="javascript:void(0);" id="chat-button">Chat</a>
           </div>
 
