@@ -12,7 +12,16 @@ document.addEventListener("DOMContentLoaded", revealInitialCards);
 
 document.addEventListener("DOMContentLoaded", async () => {
   const cardContainer = document.querySelector(".index-page-games-list");
-  if (!cardContainer) return; // Eğer öğe yoksa kod çalışmasın
+  if (!cardContainer) return;
+
+  // Filtreleri al
+  const filterAttr = cardContainer.getAttribute("data-filter");
+  const filters = filterAttr
+    ? filterAttr
+        .toLowerCase()
+        .split(",")
+        .map((f) => f.trim())
+    : null;
 
   try {
     async function fetchJson(url) {
@@ -49,21 +58,32 @@ document.addEventListener("DOMContentLoaded", async () => {
         }, 500);
       }
     }
+
     await loadGammeData();
 
     const response = await fetch("/data-json/games.json?v=2.0.0");
-    const games = await response.json();
+    const allGames = await response.json();
+
+    // Filtre uygula
+    const games = filters
+      ? allGames.filter((game) => {
+          if (!game.groups) return false;
+          const gameGroups = game.groups
+            .toLowerCase()
+            .split(",")
+            .map((g) => g.trim());
+          return filters.some((filter) => gameGroups.includes(filter));
+        })
+      : allGames;
+
     let loadedIndex = 0;
     const batchSize = 40;
 
-    // Aşağı ok simgesini ekleyelim
     const scrollArrow = document.createElement("div");
     scrollArrow.innerHTML = "&#x2193;";
-    scrollArrow.classList.add("scroll-arrow"); // CSS sınıfını ekliyoruz
-
+    scrollArrow.classList.add("scroll-arrow");
     document.body.appendChild(scrollArrow);
 
-    // Google Ads script yükleme
     if (!window.adsbygoogle) {
       const script = document.createElement("script");
       script.async = true;
@@ -76,7 +96,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         const game = games[loadedIndex];
 
         if ((loadedIndex + 1) % 20 === 0) {
-          // Reklam ekle
           const adElement = document.createElement("a");
           adElement.classList.add("card", "large");
           adElement.innerHTML = `<ins class="adsbygoogle" style="display:inline-block; width:260px; height:260px" data-ad-client="ca-pub-7321073664976914" data-ad-slot="1811365994"></ins>`;
@@ -99,7 +118,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (window.LazyLoad) new LazyLoad({ elements_selector: ".lazyload" });
       revealCards();
 
-      // Tüm oyunlar yüklendiğinde oku kaldır
       if (loadedIndex >= games.length) {
         scrollArrow.remove();
       }
@@ -125,7 +143,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     window.addEventListener("load", revealCards);
     loadMoreCards();
 
-    // Aşağı oka tıklanınca sayfanın en altına kaydır
     scrollArrow.addEventListener("click", () => {
       window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
     });

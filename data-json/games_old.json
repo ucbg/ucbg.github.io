@@ -6,7 +6,7 @@
     "image": "/assets/upload/UCBGgames/10-minutes-till-dawn.png",
     "video": "",
     "description": "",
-    "groups": "survival, shooter, roguelike"
+    "groups": "action, adventure"
   },
   {
     "slug": "1010-color-match",
@@ -15,7 +15,7 @@
     "image": "/assets/upload/UCBGgames/1010-color-match.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, strategy"
+    "groups": "action, adventure"
   },
   {
     "slug": "1v1-lol",
@@ -24,7 +24,7 @@
     "image": "/assets/upload/UCBGgames/1v1-lol.png",
     "video": "",
     "description": "",
-    "groups": "battle-royale, shooter, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "2048-fusion",
@@ -33,7 +33,7 @@
     "image": "/assets/upload/UCBGgames/2048-fusion.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, strategy"
+    "groups": "action, adventure"
   },
   {
     "slug": "2048",
@@ -42,7 +42,7 @@
     "image": "/assets/upload/UCBGgames/2048.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, strategy"
+    "groups": "action, adventure"
   },
   {
     "slug": "3-pandas-in-japan",
@@ -51,7 +51,7 @@
     "image": "/assets/upload/UCBGgames/3-pandas-in-japan.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, adventure"
+    "groups": "action, adventure"
   },
   {
     "slug": "3d-bowling",
@@ -60,7 +60,7 @@
     "image": "/assets/upload/UCBGgames/3d-bowling.png",
     "video": "",
     "description": "",
-    "groups": "sports, simulation"
+    "groups": "action, adventure"
   },
   {
     "slug": "3d-free-kick",
@@ -69,7 +69,7 @@
     "image": "/assets/upload/UCBGgames/3d-free-kick.png",
     "video": "",
     "description": "",
-    "groups": "sports, soccer"
+    "groups": "action, adventure"
   },
   {
     "slug": "99-balls",
@@ -78,7 +78,7 @@
     "image": "/assets/upload/UCBGgames/99-balls.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "a-dance-of-fire-and-ice",
@@ -87,7 +87,7 @@
     "image": "/assets/upload/UCBGgames/a-dance-of-fire-and-ice.png",
     "video": "",
     "description": "",
-    "groups": "rhythm, music"
+    "groups": "action, adventure"
   },
   {
     "slug": "achievement-unlocked",
@@ -96,7 +96,7 @@
     "image": "/assets/upload/UCBGgames/achievement-unlocked.png",
     "video": "",
     "description": "",
-    "groups": "platformer, comedy"
+    "groups": "action, adventure"
   },
   {
     "slug": "adam-and-eve-5-part-2",
@@ -105,7 +105,7 @@
     "image": "/assets/upload/UCBGgames/adam-and-eve-5-part-2.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, adventure"
+    "groups": "action, adventure"
   },
   {
     "slug": "adam-and-eve-5-part-one",
@@ -114,7 +114,7 @@
     "image": "/assets/upload/UCBGgames/adam-and-eve-5-part-one.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, adventure"
+    "groups": "action, adventure"
   },
   {
     "slug": "adam-and-eve-6",
@@ -123,7 +123,7 @@
     "image": "/assets/upload/UCBGgames/adam-and-eve-6.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, adventure"
+    "groups": "action, adventure"
   },
   {
     "slug": "adam-and-eve-7",
@@ -132,7 +132,7 @@
     "image": "/assets/upload/UCBGgames/adam-and-eve-7.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, adventure"
+    "groups": "action, adventure"
   },
   {
     "slug": "4X4-drive-offroad",
@@ -141,7 +141,7 @@
     "image": "/assets/upload/UCBGgames/4X4-DRIVE-OFFROAD.png",
     "video": "",
     "description": "",
-    "groups": "racing, simulation"
+    "groups": "action, race"
   },
   {
     "slug": "adventure-drivers",
@@ -150,7 +150,7 @@
     "image": "/assets/upload/UCBGgames/adventure-drivers.png",
     "video": "",
     "description": "",
-    "groups": "racing, adventure"
+    "groups": "action, adventure"
   },
   {
     "slug": "agarpaper-io",
@@ -159,7 +159,7 @@
     "image": "/assets/upload/UCBGgames/agarpaper-io.png",
     "video": "",
     "description": "",
-    "groups": "io, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "alien-hominid",
@@ -168,7 +168,7 @@
     "image": "/assets/upload/UCBGgames/alien-hominid.png",
     "video": "",
     "description": "",
-    "groups": "shooter, platformer"
+    "groups": "action, adventure"
   },
   {
     "slug": "amazing-strange-rope-police",
@@ -177,7 +177,7 @@
     "image": "/assets/upload/UCBGgames/amazing-strange-rope-police.png",
     "video": "",
     "description": "",
-    "groups": "physics, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "amidst-the-sky",
@@ -186,7 +186,7 @@
     "image": "/assets/upload/UCBGgames/amidst-the-sky.png",
     "video": "",
     "description": "",
-    "groups": "platformer, adventure"
+    "groups": "action, adventure"
   },
   {
     "slug": "amogus-io",
@@ -195,7 +195,7 @@
     "image": "/assets/upload/UCBGgames/amogus-io.png",
     "video": "",
     "description": "",
-    "groups": "io, multiplayer, social-deduction"
+    "groups": "action, adventure"
   },
   {
     "slug": "among-us",
@@ -204,7 +204,7 @@
     "image": "/assets/upload/UCBGgames/among-us.png",
     "video": "",
     "description": "",
-    "groups": "social-deduction, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "angry-gran-run",
@@ -213,7 +213,7 @@
     "image": "/assets/upload/UCBGgames/angry-gran-run.png",
     "video": "",
     "description": "",
-    "groups": "runner, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "apple-shooter",
@@ -222,7 +222,7 @@
     "image": "/assets/upload/UCBGgames/apple-shooter.png",
     "video": "",
     "description": "",
-    "groups": "shooter, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "aquapark-io",
@@ -231,7 +231,7 @@
     "image": "/assets/upload/UCBGgames/aquapark-io.png",
     "video": "",
     "description": "",
-    "groups": "io, multiplayer, racing"
+    "groups": "action, adventure"
   },
   {
     "slug": "arcane-archer",
@@ -240,7 +240,7 @@
     "image": "/assets/upload/UCBGgames/arcane-archer.png",
     "video": "",
     "description": "",
-    "groups": "archery, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "archery-world-tour",
@@ -249,7 +249,7 @@
     "image": "/assets/upload/UCBGgames/archery-world-tour.png",
     "video": "",
     "description": "",
-    "groups": "archery, sports"
+    "groups": "action, adventure"
   },
   {
     "slug": "arras-io",
@@ -258,7 +258,7 @@
     "image": "/assets/upload/UCBGgames/arras-io.png",
     "video": "",
     "description": "",
-    "groups": "io, shooter, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "aspiring-artist",
@@ -267,7 +267,7 @@
     "image": "/assets/upload/UCBGgames/aspiring-artist.png",
     "video": "",
     "description": "",
-    "groups": "art, simulation"
+    "groups": "action, adventure"
   },
   {
     "slug": "awesome-tanks-2",
@@ -276,7 +276,7 @@
     "image": "/assets/upload/UCBGgames/awesome-tanks-2.png",
     "video": "",
     "description": "",
-    "groups": "shooter, tank"
+    "groups": "action, adventure"
   },
   {
     "slug": "backflipper",
@@ -285,7 +285,7 @@
     "image": "/assets/upload/UCBGgames/backflipper.png",
     "video": "",
     "description": "",
-    "groups": "physics, stunt"
+    "groups": "action, adventure"
   },
   {
     "slug": "backrooms-2d",
@@ -294,7 +294,7 @@
     "image": "/assets/upload/UCBGgames/backrooms-2d.png",
     "video": "",
     "description": "",
-    "groups": "horror, adventure"
+    "groups": "action, adventure"
   },
   {
     "slug": "backrooms",
@@ -303,7 +303,7 @@
     "image": "/assets/upload/UCBGgames/backrooms.png",
     "video": "",
     "description": "",
-    "groups": "horror, adventure"
+    "groups": "action, adventure"
   },
   {
     "slug": "bacon-may-die",
@@ -312,7 +312,7 @@
     "image": "/assets/upload/UCBGgames/bacon-may-die.png",
     "video": "",
     "description": "",
-    "groups": "platformer, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "bad-egg-io",
@@ -321,7 +321,7 @@
     "image": "/assets/upload/UCBGgames/bad-egg-io.png",
     "video": "",
     "description": "",
-    "groups": "io, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "bad-ice-cream-2",
@@ -330,7 +330,7 @@
     "image": "/assets/upload/UCBGgames/bad-ice-cream-2.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, maze"
+    "groups": "action, adventure"
   },
   {
     "slug": "bad-ice-cream-3",
@@ -339,7 +339,7 @@
     "image": "/assets/upload/UCBGgames/bad-ice-cream-3.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, maze"
+    "groups": "action, adventure"
   },
   {
     "slug": "baldis-basics-field-trip",
@@ -348,7 +348,7 @@
     "image": "/assets/upload/UCBGgames/baldis-basics-field-trip.png",
     "video": "",
     "description": "",
-    "groups": "horror, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "baldis-basics",
@@ -357,7 +357,7 @@
     "image": "/assets/upload/UCBGgames/baldis-basics.png",
     "video": "",
     "description": "",
-    "groups": "horror, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "ball-sort-halloween",
@@ -366,7 +366,7 @@
     "image": "/assets/upload/UCBGgames/ball-sort-halloween.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, sorting"
+    "groups": "action, adventure"
   },
   {
     "slug": "ball-sort-soccer",
@@ -375,7 +375,7 @@
     "image": "/assets/upload/UCBGgames/ball-sort-soccer.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, sorting"
+    "groups": "action, adventure"
   },
   {
     "slug": "ballistic",
@@ -384,7 +384,7 @@
     "image": "/assets/upload/UCBGgames/ballistic.png",
     "video": "",
     "description": "",
-    "groups": "physics, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "basket-and-ball",
@@ -393,7 +393,7 @@
     "image": "/assets/upload/UCBGgames/basket-and-ball.png",
     "video": "",
     "description": "",
-    "groups": "basketball, sports"
+    "groups": "action, adventure"
   },
   {
     "slug": "basket-bros-io",
@@ -402,7 +402,7 @@
     "image": "/assets/upload/UCBGgames/basket-bros-io.png",
     "video": "",
     "description": "",
-    "groups": "io, basketball, sports"
+    "groups": "action, adventure"
   },
   {
     "slug": "basket-random",
@@ -411,7 +411,7 @@
     "image": "/assets/upload/UCBGgames/basket-random.png",
     "video": "",
     "description": "",
-    "groups": "basketball, sports"
+    "groups": "action, adventure"
   },
   {
     "slug": "basketball-legends",
@@ -420,7 +420,7 @@
     "image": "/assets/upload/UCBGgames/basketball-legends.png",
     "video": "",
     "description": "",
-    "groups": "basketball, sports"
+    "groups": "action, adventure"
   },
   {
     "slug": "basketball-stars",
@@ -429,7 +429,7 @@
     "image": "/assets/upload/UCBGgames/basketball-stars.png",
     "video": "",
     "description": "",
-    "groups": "basketball, sports"
+    "groups": "action, adventure"
   },
   {
     "slug": "battledudes-io",
@@ -438,7 +438,7 @@
     "image": "/assets/upload/UCBGgames/battledudes-io.png",
     "video": "",
     "description": "",
-    "groups": "io, shooter, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "betrayal-io",
@@ -447,7 +447,7 @@
     "image": "/assets/upload/UCBGgames/betrayal-io.png",
     "video": "",
     "description": "",
-    "groups": "io, multiplayer, social-deduction"
+    "groups": "action, adventure"
   },
   {
     "slug": "big-tower-tiny-square",
@@ -456,7 +456,7 @@
     "image": "/assets/upload/UCBGgames/big-tower-tiny-square.png",
     "video": "",
     "description": "",
-    "groups": "platformer, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "biker-street",
@@ -465,7 +465,7 @@
     "image": "/assets/upload/UCBGgames/biker-street.png",
     "video": "",
     "description": "",
-    "groups": "racing, bike"
+    "groups": "action, adventure"
   },
   {
     "slug": "bitlife",
@@ -474,7 +474,7 @@
     "image": "/assets/upload/UCBGgames/bitlife.png",
     "video": "",
     "description": "",
-    "groups": "life-simulation, text-based"
+    "groups": "action, adventure"
   },
   {
     "slug": "block-tanks",
@@ -483,7 +483,7 @@
     "image": "/assets/upload/UCBGgames/block-tanks.png",
     "video": "",
     "description": "",
-    "groups": "shooter, tank"
+    "groups": "action, adventure"
   },
   {
     "slug": "block-world",
@@ -492,7 +492,7 @@
     "image": "/assets/upload/UCBGgames/block-world.png",
     "video": "",
     "description": "",
-    "groups": "sandbox, building"
+    "groups": "action, adventure"
   },
   {
     "slug": "blockpost",
@@ -501,7 +501,7 @@
     "image": "/assets/upload/UCBGgames/blockpost.png",
     "video": "",
     "description": "",
-    "groups": "shooter, fps"
+    "groups": "action, adventure"
   },
   {
     "slug": "blocky-snakes",
@@ -510,7 +510,7 @@
     "image": "/assets/upload/UCBGgames/blocky-snakes.png",
     "video": "",
     "description": "",
-    "groups": "io, snake"
+    "groups": "action, adventure"
   },
   {
     "slug": "bloomgi-bloom",
@@ -519,7 +519,7 @@
     "image": "/assets/upload/UCBGgames/bloomgi-bloom.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, platformer"
+    "groups": "action, adventure"
   },
   {
     "slug": "bloons-td-2",
@@ -528,7 +528,7 @@
     "image": "/assets/upload/UCBGgames/bloons-td-2.png",
     "video": "",
     "description": "",
-    "groups": "tower-defense, strategy"
+    "groups": "action, adventure"
   },
   {
     "slug": "bloons-td4",
@@ -537,7 +537,7 @@
     "image": "/assets/upload/UCBGgames/bloons-td4.png",
     "video": "",
     "description": "",
-    "groups": "tower-defense, strategy"
+    "groups": "action, adventure"
   },
   {
     "slug": "bloxd-io",
@@ -546,7 +546,7 @@
     "image": "/assets/upload/UCBGgames/bloxd-io.png",
     "video": "",
     "description": "",
-    "groups": "io, sandbox"
+    "groups": "action, adventure"
   },
   {
     "slug": "bloxorz",
@@ -555,7 +555,7 @@
     "image": "/assets/upload/UCBGgames/bloxorz.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "blumgi-rocket",
@@ -564,7 +564,7 @@
     "image": "/assets/upload/UCBGgames/blumgi-rocket.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "blumgi-slime",
@@ -573,7 +573,7 @@
     "image": "/assets/upload/UCBGgames/blumgi-slime.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "bob-the-robber-2",
@@ -582,7 +582,7 @@
     "image": "/assets/upload/UCBGgames/bob-the-robber-2.png",
     "video": "",
     "description": "",
-    "groups": "stealth, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "booblehead-soccer",
@@ -591,7 +591,7 @@
     "image": "/assets/upload/UCBGgames/booblehead-soccer.png",
     "video": "",
     "description": "",
-    "groups": "soccer, sports"
+    "groups": "action, adventure"
   },
   {
     "slug": "bottle-flip-3d",
@@ -600,7 +600,7 @@
     "image": "/assets/upload/UCBGgames/bottle-flip-3d.png",
     "video": "",
     "description": "",
-    "groups": "physics, simulation"
+    "groups": "action, adventure"
   },
   {
     "slug": "bouncy-woods",
@@ -609,7 +609,7 @@
     "image": "/assets/upload/UCBGgames/bouncy-woods.png",
     "video": "",
     "description": "",
-    "groups": "platformer, runner"
+    "groups": "action, adventure"
   },
   {
     "slug": "boxing-physics-2",
@@ -618,7 +618,7 @@
     "image": "/assets/upload/UCBGgames/boxing-physics-2.png",
     "video": "",
     "description": "",
-    "groups": "boxing, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "boxing-random",
@@ -627,7 +627,7 @@
     "image": "/assets/upload/UCBGgames/boxing-random.png",
     "video": "",
     "description": "",
-    "groups": "boxing, sports"
+    "groups": "action, adventure"
   },
   {
     "slug": "braains-io",
@@ -636,7 +636,7 @@
     "image": "/assets/upload/UCBGgames/braains-io.png",
     "video": "",
     "description": "",
-    "groups": "io, zombie, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "breaking-the-bank",
@@ -645,7 +645,7 @@
     "image": "/assets/upload/UCBGgames/breaking-the-bank.png",
     "video": "",
     "description": "",
-    "groups": "stealth, heist"
+    "groups": "action, adventure"
   },
   {
     "slug": "browserfps-com",
@@ -654,7 +654,7 @@
     "image": "/assets/upload/UCBGgames/browserfps-com.png",
     "video": "",
     "description": "",
-    "groups": "shooter, fps"
+    "groups": "action, adventure"
   },
   {
     "slug": "bubble-pop-adventures",
@@ -663,7 +663,7 @@
     "image": "/assets/upload/UCBGgames/bubble-pop-adventures.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, bubble-shooter"
+    "groups": "action, adventure"
   },
   {
     "slug": "bullet-force",
@@ -672,7 +672,7 @@
     "image": "/assets/upload/UCBGgames/bullet-force.png",
     "video": "",
     "description": "",
-    "groups": "shooter, fps"
+    "groups": "action, adventure"
   },
   {
     "slug": "bullet-party-2",
@@ -681,7 +681,7 @@
     "image": "/assets/upload/UCBGgames/bullet-party-2.png",
     "video": "",
     "description": "",
-    "groups": "shooter, fps"
+    "groups": "action, adventure"
   },
   {
     "slug": "burger-clicker",
@@ -690,7 +690,7 @@
     "image": "/assets/upload/UCBGgames/burger-clicker.png",
     "video": "",
     "description": "",
-    "groups": "clicker, idle"
+    "groups": "action, adventure"
   },
   {
     "slug": "burrito-bison-launcha-libre",
@@ -699,7 +699,7 @@
     "image": "/assets/upload/UCBGgames/burrito-bison-launcha-libre.png",
     "video": "",
     "description": "",
-    "groups": "launcher, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "candy-crush-saga",
@@ -708,7 +708,7 @@
     "image": "/assets/upload/UCBGgames/candy-crush-saga.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, match-3"
+    "groups": "action, adventure"
   },
   {
     "slug": "cannon-basketball-4",
@@ -717,7 +717,7 @@
     "image": "/assets/upload/UCBGgames/cannon-basketball-4.png",
     "video": "",
     "description": "",
-    "groups": "basketball, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "car-rush",
@@ -726,7 +726,7 @@
     "image": "/assets/upload/UCBGgames/car-rush.png",
     "video": "",
     "description": "",
-    "groups": "racing, driving"
+    "groups": "action, adventure"
   },
   {
     "slug": "cars-simulator",
@@ -735,7 +735,7 @@
     "image": "/assets/upload/UCBGgames/cars-simulator.png",
     "video": "",
     "description": "",
-    "groups": "racing, simulation"
+    "groups": "action, adventure"
   },
   {
     "slug": "case-clicker",
@@ -744,7 +744,7 @@
     "image": "/assets/upload/UCBGgames/case-clicker.png",
     "video": "",
     "description": "",
-    "groups": "clicker, idle"
+    "groups": "action, adventure"
   },
   {
     "slug": "checkers",
@@ -753,7 +753,7 @@
     "image": "/assets/upload/UCBGgames/checkers.png",
     "video": "",
     "description": "",
-    "groups": "board-game, strategy"
+    "groups": "action, adventure"
   },
   {
     "slug": "chicken-merge",
@@ -762,7 +762,7 @@
     "image": "/assets/upload/UCBGgames/chicken-merge.png",
     "video": "",
     "description": "",
-    "groups": "merge, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "choppy-orc",
@@ -771,7 +771,7 @@
     "image": "/assets/upload/UCBGgames/choppy-orc.png",
     "video": "",
     "description": "",
-    "groups": "action, platformer"
+    "groups": "action, adventure"
   },
   {
     "slug": "circlo0",
@@ -780,7 +780,7 @@
     "image": "/assets/upload/UCBGgames/circlo0.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "city-coach-bus-sim",
@@ -789,7 +789,7 @@
     "image": "/assets/upload/UCBGgames/city-coach-bus-sim.png",
     "video": "",
     "description": "",
-    "groups": "simulation, driving"
+    "groups": "action, adventure"
   },
   {
     "slug": "clicker-heroes",
@@ -798,7 +798,7 @@
     "image": "/assets/upload/UCBGgames/clicker-heroes.png",
     "video": "",
     "description": "",
-    "groups": "clicker, idle"
+    "groups": "action, adventure"
   },
   {
     "slug": "climb-over-it",
@@ -807,7 +807,7 @@
     "image": "/assets/upload/UCBGgames/climb-over-it.png",
     "video": "",
     "description": "",
-    "groups": "platformer, difficult"
+    "groups": "action, adventure"
   },
   {
     "slug": "connect-3",
@@ -816,7 +816,7 @@
     "image": "/assets/upload/UCBGgames/connect-3.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, match-3"
+    "groups": "action, adventure"
   },
   {
     "slug": "cookie-clicker",
@@ -825,7 +825,7 @@
     "image": "/assets/upload/UCBGgames/cookie-clicker.png",
     "video": "",
     "description": "",
-    "groups": "clicker, idle"
+    "groups": "action, adventure"
   },
   {
     "slug": "craftmine",
@@ -834,7 +834,7 @@
     "image": "/assets/upload/UCBGgames/craftmine.png",
     "video": "",
     "description": "",
-    "groups": "sandbox, building"
+    "groups": "action, adventure"
   },
   {
     "slug": "crazy-cars",
@@ -843,7 +843,7 @@
     "image": "/assets/upload/UCBGgames/crazy-cars.png",
     "video": "",
     "description": "",
-    "groups": "racing, driving"
+    "groups": "action, adventure"
   },
   {
     "slug": "crazy-tunel-3d",
@@ -852,7 +852,7 @@
     "image": "/assets/upload/UCBGgames/crazy-tunel-3d.png",
     "video": "",
     "description": "",
-    "groups": "racing, driving"
+    "groups": "action, adventure"
   },
   {
     "slug": "creative-kill-chamber",
@@ -861,7 +861,7 @@
     "image": "/assets/upload/UCBGgames/creative-kill-chamber.png",
     "video": "",
     "description": "",
-    "groups": "platformer, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "crossy-road",
@@ -870,7 +870,7 @@
     "image": "/assets/upload/UCBGgames/crossy-road.png",
     "video": "",
     "description": "",
-    "groups": "arcade, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "cubeshot-io",
@@ -879,7 +879,7 @@
     "image": "/assets/upload/UCBGgames/cubeshot-io.png",
     "video": "",
     "description": "",
-    "groups": "io, shooter"
+    "groups": "action, adventure"
   },
   {
     "slug": "cupcakes-2048",
@@ -888,7 +888,7 @@
     "image": "/assets/upload/UCBGgames/cupcakes-2048.png",
     "video": "",
     "description": "",
-    "groups": "puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "cut-the-rope",
@@ -897,7 +897,7 @@
     "image": "/assets/upload/UCBGgames/cut-the-rope.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "dark-ninja",
@@ -906,7 +906,7 @@
     "image": "/assets/upload/UCBGgames/dark-ninja.png",
     "video": "",
     "description": "",
-    "groups": "platformer, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "dashcraft-io",
@@ -915,7 +915,7 @@
     "image": "/assets/upload/UCBGgames/dashcraft-io.png",
     "video": "",
     "description": "",
-    "groups": "io, platformer"
+    "groups": "action, adventure"
   },
   {
     "slug": "dead-again",
@@ -924,7 +924,7 @@
     "image": "/assets/upload/UCBGgames/dead-again.png",
     "video": "",
     "description": "",
-    "groups": "horror, survival"
+    "groups": "action, adventure"
   },
   {
     "slug": "deadshot-io",
@@ -933,7 +933,7 @@
     "image": "/assets/upload/UCBGgames/deadshot-io.png",
     "video": "",
     "description": "",
-    "groups": "io, shooter"
+    "groups": "action, adventure"
   },
   {
     "slug": "deal-or-no-deal",
@@ -942,7 +942,7 @@
     "image": "/assets/upload/UCBGgames/deal-or-no-deal.png",
     "video": "",
     "description": "",
-    "groups": "game-show, luck"
+    "groups": "action, adventure"
   },
   {
     "slug": "death-run-3d",
@@ -951,7 +951,7 @@
     "image": "/assets/upload/UCBGgames/death-run-3d.png",
     "video": "",
     "description": "",
-    "groups": "runner, obstacle-course"
+    "groups": "action, adventure"
   },
   {
     "slug": "deathcar-io",
@@ -960,7 +960,7 @@
     "image": "/assets/upload/UCBGgames/deathcar-io.png",
     "video": "",
     "description": "",
-    "groups": "io, racing"
+    "groups": "action, adventure"
   },
   {
     "slug": "diebrary",
@@ -969,7 +969,7 @@
     "image": "/assets/upload/UCBGgames/diebrary.png",
     "video": "",
     "description": "",
-    "groups": "horror, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "dino-chrome-io",
@@ -978,7 +978,7 @@
     "image": "/assets/upload/UCBGgames/dino-chrome-io.png",
     "video": "",
     "description": "",
-    "groups": "io, runner"
+    "groups": "action, adventure"
   },
   {
     "slug": "dinosaurs-merge-master",
@@ -987,7 +987,7 @@
     "image": "/assets/upload/UCBGgames/dinosaurs-merge-master.png",
     "video": "",
     "description": "",
-    "groups": "merge, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "dogeminer",
@@ -996,7 +996,7 @@
     "image": "/assets/upload/UCBGgames/dogeminer.png",
     "video": "",
     "description": "",
-    "groups": "clicker, mining"
+    "groups": "action, adventure"
   },
   {
     "slug": "doodle-jump",
@@ -1005,7 +1005,7 @@
     "image": "/assets/upload/UCBGgames/doodle-jump.png",
     "video": "",
     "description": "",
-    "groups": "platformer, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "down-the-hill",
@@ -1014,7 +1014,7 @@
     "image": "/assets/upload/UCBGgames/down-the-hill.png",
     "video": "",
     "description": "",
-    "groups": "racing, downhill"
+    "groups": "action, adventure"
   },
   {
     "slug": "dreadhead-parkour",
@@ -1023,7 +1023,7 @@
     "image": "/assets/upload/UCBGgames/dreadhead-parkour.png",
     "video": "",
     "description": "",
-    "groups": "parkour, platformer"
+    "groups": "action, adventure"
   },
   {
     "slug": "drift-boss",
@@ -1032,7 +1032,7 @@
     "image": "/assets/upload/UCBGgames/drift-boss.png",
     "video": "",
     "description": "",
-    "groups": "racing, drifting"
+    "groups": "action, adventure"
   },
   {
     "slug": "drift-hunters",
@@ -1041,7 +1041,7 @@
     "image": "/assets/upload/UCBGgames/drift-hunters.png",
     "video": "",
     "description": "",
-    "groups": "racing, drifting"
+    "groups": "action, adventure"
   },
   {
     "slug": "drive-mad",
@@ -1050,7 +1050,7 @@
     "image": "/assets/upload/UCBGgames/drive-mad.png",
     "video": "",
     "description": "",
-    "groups": "racing, stunt"
+    "groups": "action, adventure"
   },
   {
     "slug": "duke-dashington-remastered",
@@ -1059,7 +1059,7 @@
     "image": "/assets/upload/UCBGgames/duke-dashington-remastered.png",
     "video": "",
     "description": "",
-    "groups": "platformer, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "dunkers-2",
@@ -1068,7 +1068,7 @@
     "image": "/assets/upload/UCBGgames/dunkers-2.png",
     "video": "",
     "description": "",
-    "groups": "basketball, sports"
+    "groups": "action, adventure"
   },
   {
     "slug": "eggy-car",
@@ -1077,7 +1077,7 @@
     "image": "/assets/upload/UCBGgames/eggy-car.png",
     "video": "",
     "description": "",
-    "groups": "racing, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "elastic-man",
@@ -1086,7 +1086,7 @@
     "image": "/assets/upload/UCBGgames/elastic-man.png",
     "video": "",
     "description": "",
-    "groups": "physics, platformer"
+    "groups": "action, adventure"
   },
   {
     "slug": "electron-dash",
@@ -1095,7 +1095,7 @@
     "image": "/assets/upload/UCBGgames/electron-dash.png",
     "video": "",
     "description": "",
-    "groups": "runner, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "endless-tunnel",
@@ -1104,7 +1104,7 @@
     "image": "/assets/upload/UCBGgames/endless-tunnel.png",
     "video": "",
     "description": "",
-    "groups": "runner, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "endless-war-3",
@@ -1113,7 +1113,7 @@
     "image": "/assets/upload/UCBGgames/endless-war-3.png",
     "video": "",
     "description": "",
-    "groups": "shooter, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "eparkour-io",
@@ -1122,7 +1122,7 @@
     "image": "/assets/upload/UCBGgames/eparkour-io.png",
     "video": "",
     "description": "",
-    "groups": "io, parkour"
+    "groups": "action, adventure"
   },
   {
     "slug": "ev-io",
@@ -1131,7 +1131,7 @@
     "image": "/assets/upload/UCBGgames/ev-io.png",
     "video": "",
     "description": "",
-    "groups": "io, racing"
+    "groups": "action, adventure"
   },
   {
     "slug": "fall-guys-ultimate-knockout",
@@ -1140,7 +1140,7 @@
     "image": "/assets/upload/UCBGgames/fall-guys-ultimate-knockout.png",
     "video": "",
     "description": "",
-    "groups": "battle-royale, party"
+    "groups": "action, adventure"
   },
   {
     "slug": "farm-match-seasons",
@@ -1149,7 +1149,7 @@
     "image": "/assets/upload/UCBGgames/farm-match-seasons.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, match-3"
+    "groups": "action, adventure"
   },
   {
     "slug": "ferge-io",
@@ -1158,7 +1158,7 @@
     "image": "/assets/upload/UCBGgames/ferge-io.png",
     "video": "",
     "description": "",
-    "groups": "io, shooter"
+    "groups": "action, adventure"
   },
   {
     "slug": "fightz-io",
@@ -1167,7 +1167,7 @@
     "image": "/assets/upload/UCBGgames/fightz-io.png",
     "video": "",
     "description": "",
-    "groups": "io, fighting"
+    "groups": "action, adventure"
   },
   {
     "slug": "fire-truck-rescue",
@@ -1176,7 +1176,7 @@
     "image": "/assets/upload/UCBGgames/fire-truck-rescue.png",
     "video": "",
     "description": "",
-    "groups": "simulation, driving"
+    "groups": "action, adventure"
   },
   {
     "slug": "fireboy-and-watergirl-6",
@@ -1185,7 +1185,7 @@
     "image": "/assets/upload/UCBGgames/fireboy-and-watergirl-6.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, platformer"
+    "groups": "action, adventure"
   },
   {
     "slug": "fireboy-and-watergirl-forest-temple",
@@ -1194,7 +1194,7 @@
     "image": "/assets/upload/UCBGgames/fireboy-and-watergirl-forest-temple.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, platformer"
+    "groups": "action, adventure"
   },
   {
     "slug": "fishing-and-lines",
@@ -1203,7 +1203,7 @@
     "image": "/assets/upload/UCBGgames/fishing-and-lines.png",
     "video": "",
     "description": "",
-    "groups": "fishing, simulation"
+    "groups": "action, adventure"
   },
   {
     "slug": "fishing-frenzy",
@@ -1212,7 +1212,7 @@
     "image": "/assets/upload/UCBGgames/fishing-frenzy.png",
     "video": "",
     "description": "",
-    "groups": "fishing, simulation"
+    "groups": "action, adventure"
   },
   {
     "slug": "five-nights-at-freddies-2",
@@ -1221,7 +1221,7 @@
     "image": "/assets/upload/UCBGgames/five-nights-at-freddies-2.png",
     "video": "",
     "description": "",
-    "groups": "horror, survival"
+    "groups": "action, adventure"
   },
   {
     "slug": "five-nights-at-freddys-3",
@@ -1230,7 +1230,7 @@
     "image": "/assets/upload/UCBGgames/five-nights-at-freddys-3.png",
     "video": "",
     "description": "",
-    "groups": "horror, survival"
+    "groups": "action, adventure"
   },
   {
     "slug": "flappy-bird",
@@ -1239,7 +1239,7 @@
     "image": "/assets/upload/UCBGgames/flappy-bird.png",
     "video": "",
     "description": "",
-    "groups": "arcade, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "fnaf-4",
@@ -1248,7 +1248,7 @@
     "image": "/assets/upload/UCBGgames/fnaf-4.png",
     "video": "",
     "description": "",
-    "groups": "horror, survival"
+    "groups": "action, adventure"
   },
   {
     "slug": "fnaf-shooter",
@@ -1257,7 +1257,7 @@
     "image": "/assets/upload/UCBGgames/fnaf-shooter.png",
     "video": "",
     "description": "",
-    "groups": "shooter, horror"
+    "groups": "action, adventure"
   },
   {
     "slug": "fnaf-web",
@@ -1266,7 +1266,7 @@
     "image": "/assets/upload/UCBGgames/fnaf-web.png",
     "video": "",
     "description": "",
-    "groups": "horror, survival"
+    "groups": "action, adventure"
   },
   {
     "slug": "fnf-online",
@@ -1275,7 +1275,7 @@
     "image": "/assets/upload/UCBGgames/fnf-online.png",
     "video": "",
     "description": "",
-    "groups": "rhythm, music"
+    "groups": "action, adventure"
   },
   {
     "slug": "football-run",
@@ -1284,7 +1284,7 @@
     "image": "/assets/upload/UCBGgames/football-run.png",
     "video": "",
     "description": "",
-    "groups": "runner, football"
+    "groups": "action, adventure"
   },
   {
     "slug": "football-strike",
@@ -1293,7 +1293,7 @@
     "image": "/assets/upload/UCBGgames/football-strike.png",
     "video": "",
     "description": "",
-    "groups": "football, sports"
+    "groups": "action, adventure"
   },
   {
     "slug": "fortnite-made-in-china",
@@ -1302,7 +1302,7 @@
     "image": "/assets/upload/UCBGgames/fortnite-made-in-china.png",
     "video": "",
     "description": "",
-    "groups": "battle-royale, shooter"
+    "groups": "action, adventure"
   },
   {
     "slug": "funny-shooter-3d",
@@ -1311,7 +1311,7 @@
     "image": "/assets/upload/UCBGgames/funny-shooter-3d.png",
     "video": "",
     "description": "",
-    "groups": "shooter, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "gartic-io",
@@ -1320,7 +1320,7 @@
     "image": "/assets/upload/UCBGgames/gartic-io.png",
     "video": "",
     "description": "",
-    "groups": "drawing, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "gartic-phone-io",
@@ -1329,7 +1329,7 @@
     "image": "/assets/upload/UCBGgames/gartic-phone-io.png",
     "video": "",
     "description": "",
-    "groups": "drawing, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "geodash-2",
@@ -1338,7 +1338,7 @@
     "image": "/assets/upload/UCBGgames/geodash-2.png",
     "video": "",
     "description": "",
-    "groups": "platformer, runner"
+    "groups": "action, adventure"
   },
   {
     "slug": "geometry-dash",
@@ -1347,7 +1347,7 @@
     "image": "/assets/upload/UCBGgames/geometry-dash.png",
     "video": "",
     "description": "",
-    "groups": "platformer, rhythm"
+    "groups": "action, adventure"
   },
   {
     "slug": "geometry-monster-shell-shockers",
@@ -1356,7 +1356,7 @@
     "image": "/assets/upload/UCBGgames/geometry-monster-shell-shockers.png",
     "video": "",
     "description": "",
-    "groups": "shooter, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "get-on-top",
@@ -1365,7 +1365,7 @@
     "image": "/assets/upload/UCBGgames/get-on-top.png",
     "video": "",
     "description": "",
-    "groups": "fighting, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "getaway-shootout",
@@ -1374,7 +1374,7 @@
     "image": "/assets/upload/UCBGgames/getaway-shootout.png",
     "video": "",
     "description": "",
-    "groups": "shooter, platformer"
+    "groups": "action, adventure"
   },
   {
     "slug": "getting-over-it",
@@ -1383,7 +1383,7 @@
     "image": "/assets/upload/UCBGgames/getting-over-it.png",
     "video": "",
     "description": "",
-    "groups": "platformer, difficult"
+    "groups": "action, adventure"
   },
   {
     "slug": "gigga-io",
@@ -1392,7 +1392,7 @@
     "image": "/assets/upload/UCBGgames/gigga-io.png",
     "video": "",
     "description": "",
-    "groups": "io, shooter"
+    "groups": "action, adventure"
   },
   {
     "slug": "gobdun",
@@ -1401,7 +1401,7 @@
     "image": "/assets/upload/UCBGgames/gobdun.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "gold-digger-frvr",
@@ -1410,7 +1410,7 @@
     "image": "/assets/upload/UCBGgames/gold-digger-frvr.png",
     "video": "",
     "description": "",
-    "groups": "mining, idle"
+    "groups": "action, adventure"
   },
   {
     "slug": "grand-vegas-simulator",
@@ -1419,7 +1419,7 @@
     "image": "/assets/upload/UCBGgames/grand-vegas-simulator.png",
     "video": "",
     "description": "",
-    "groups": "simulation, driving"
+    "groups": "action, adventure"
   },
   {
     "slug": "granny",
@@ -1428,7 +1428,7 @@
     "image": "/assets/upload/UCBGgames/granny.png",
     "video": "",
     "description": "",
-    "groups": "horror, survival"
+    "groups": "action, adventure"
   },
   {
     "slug": "gravity-soccer",
@@ -1437,7 +1437,7 @@
     "image": "/assets/upload/UCBGgames/gravity-soccer.png",
     "video": "",
     "description": "",
-    "groups": "soccer, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "grindcraft-remastered",
@@ -1446,7 +1446,7 @@
     "image": "/assets/upload/UCBGgames/grindcraft-remastered.png",
     "video": "",
     "description": "",
-    "groups": "crafting, idle"
+    "groups": "action, adventure"
   },
   {
     "slug": "gswitch-2",
@@ -1455,7 +1455,7 @@
     "image": "/assets/upload/UCBGgames/gswitch-2.png",
     "video": "",
     "description": "",
-    "groups": "platformer, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "gswitch-3",
@@ -1464,7 +1464,7 @@
     "image": "/assets/upload/UCBGgames/gswitch-3.png",
     "video": "",
     "description": "",
-    "groups": "platformer, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "gswitch-4",
@@ -1473,7 +1473,7 @@
     "image": "/assets/upload/UCBGgames/gswitch-4.png",
     "video": "",
     "description": "",
-    "groups": "platformer, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "gswitch",
@@ -1482,7 +1482,7 @@
     "image": "/assets/upload/UCBGgames/gswitch.png",
     "video": "",
     "description": "",
-    "groups": "platformer, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "gulper-io",
@@ -1491,7 +1491,7 @@
     "image": "/assets/upload/UCBGgames/gulper-io.png",
     "video": "",
     "description": "",
-    "groups": "io, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "gun-mayhem-2",
@@ -1500,7 +1500,7 @@
     "image": "/assets/upload/UCBGgames/gun-mayhem-2.png",
     "video": "",
     "description": "",
-    "groups": "shooter, platformer"
+    "groups": "action, adventure"
   },
   {
     "slug": "gun-mayhem-redux",
@@ -1509,7 +1509,7 @@
     "image": "/assets/upload/UCBGgames/gun-mayhem-redux.png",
     "video": "",
     "description": "",
-    "groups": "shooter, platformer"
+    "groups": "action, adventure"
   },
   {
     "slug": "gun-spin",
@@ -1518,7 +1518,7 @@
     "image": "/assets/upload/UCBGgames/gun-spin.png",
     "video": "",
     "description": "",
-    "groups": "shooter, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "hammer-2",
@@ -1527,7 +1527,7 @@
     "image": "/assets/upload/UCBGgames/hammer-2.png",
     "video": "",
     "description": "",
-    "groups": "fighting, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "hanger-2",
@@ -1536,7 +1536,7 @@
     "image": "/assets/upload/UCBGgames/hanger-2.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "hanger",
@@ -1545,7 +1545,7 @@
     "image": "/assets/upload/UCBGgames/hanger.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "happy-fishing",
@@ -1554,7 +1554,7 @@
     "image": "/assets/upload/UCBGgames/happy-fishing.png",
     "video": "",
     "description": "",
-    "groups": "fishing, simulation"
+    "groups": "action, adventure"
   },
   {
     "slug": "happy-wheels",
@@ -1563,7 +1563,7 @@
     "image": "/assets/upload/UCBGgames/happy-wheels.png",
     "video": "",
     "description": "",
-    "groups": "physics, platformer"
+    "groups": "action, adventure"
   },
   {
     "slug": "head-soccer-2023",
@@ -1572,7 +1572,7 @@
     "image": "/assets/upload/UCBGgames/head-soccer-2023.png",
     "video": "",
     "description": "",
-    "groups": "soccer, sports"
+    "groups": "action, adventure"
   },
   {
     "slug": "hexanaut-io",
@@ -1581,7 +1581,7 @@
     "image": "/assets/upload/UCBGgames/hexanaut-io.png",
     "video": "",
     "description": "",
-    "groups": "io, strategy"
+    "groups": "action, adventure"
   },
   {
     "slug": "hide-and-smash",
@@ -1590,7 +1590,7 @@
     "image": "/assets/upload/UCBGgames/hide-and-smash.png",
     "video": "",
     "description": "",
-    "groups": "fighting, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "hill-climb-racing-2",
@@ -1599,7 +1599,7 @@
     "image": "/assets/upload/UCBGgames/hill-climb-racing-2.png",
     "video": "",
     "description": "",
-    "groups": "racing, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "hole-io",
@@ -1608,7 +1608,7 @@
     "image": "/assets/upload/UCBGgames/hole-io.png",
     "video": "",
     "description": "",
-    "groups": "io, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "hop-and-pop-it",
@@ -1617,7 +1617,7 @@
     "image": "/assets/upload/UCBGgames/hop-and-pop-it.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, bubble-shooter"
+    "groups": "action, adventure"
   },
   {
     "slug": "house-of-hazards",
@@ -1626,7 +1626,7 @@
     "image": "/assets/upload/UCBGgames/house-of-hazards.png",
     "video": "",
     "description": "",
-    "groups": "party, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "icy-purple-head-2",
@@ -1635,7 +1635,7 @@
     "image": "/assets/upload/UCBGgames/icy-purple-head-2.png",
     "video": "",
     "description": "",
-    "groups": "platformer, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "icy-purple-head-3",
@@ -1644,7 +1644,7 @@
     "image": "/assets/upload/UCBGgames/icy-purple-head-3.png",
     "video": "",
     "description": "",
-    "groups": "platformer, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "idle-breakout",
@@ -1653,7 +1653,7 @@
     "image": "/assets/upload/UCBGgames/idle-breakout.png",
     "video": "",
     "description": "",
-    "groups": "idle, breakout"
+    "groups": "action, adventure"
   },
   {
     "slug": "idle-light-city",
@@ -1662,7 +1662,7 @@
     "image": "/assets/upload/UCBGgames/idle-light-city.png",
     "video": "",
     "description": "",
-    "groups": "idle, city-builder"
+    "groups": "action, adventure"
   },
   {
     "slug": "idle-mining-empire",
@@ -1671,7 +1671,7 @@
     "image": "/assets/upload/UCBGgames/idle-mining-empire.png",
     "video": "",
     "description": "",
-    "groups": "idle, mining"
+    "groups": "action, adventure"
   },
   {
     "slug": "idle-restaurants",
@@ -1680,7 +1680,7 @@
     "image": "/assets/upload/UCBGgames/idle-restaurants.png",
     "video": "",
     "description": "",
-    "groups": "idle, restaurant"
+    "groups": "action, adventure"
   },
   {
     "slug": "idle-tree-city",
@@ -1689,7 +1689,7 @@
     "image": "/assets/upload/UCBGgames/idle-tree-city.png",
     "video": "",
     "description": "",
-    "groups": "idle, city-builder"
+    "groups": "action, adventure"
   },
   {
     "slug": "impossible-monster-truck",
@@ -1698,7 +1698,7 @@
     "image": "/assets/upload/UCBGgames/impossible-monster-truck.png",
     "video": "",
     "description": "",
-    "groups": "racing, stunt"
+    "groups": "action, adventure"
   },
   {
     "slug": "indian-truck",
@@ -1707,7 +1707,7 @@
     "image": "/assets/upload/UCBGgames/indian-truck.png",
     "video": "",
     "description": "",
-    "groups": "simulation, driving"
+    "groups": "action, adventure"
   },
   {
     "slug": "infinite-soccer",
@@ -1716,7 +1716,7 @@
     "image": "/assets/upload/UCBGgames/infinite-soccer.png",
     "video": "",
     "description": "",
-    "groups": "soccer, sports"
+    "groups": "action, adventure"
   },
   {
     "slug": "iron-snout",
@@ -1725,7 +1725,7 @@
     "image": "/assets/upload/UCBGgames/iron-snout.png",
     "video": "",
     "description": "",
-    "groups": "fighting, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "jelly-truck",
@@ -1734,7 +1734,7 @@
     "image": "/assets/upload/UCBGgames/jelly-truck.png",
     "video": "",
     "description": "",
-    "groups": "racing, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "jetpack-joyride",
@@ -1743,7 +1743,7 @@
     "image": "/assets/upload/UCBGgames/jetpack-joyride.png",
     "video": "",
     "description": "",
-    "groups": "runner, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "jewels-blitz-5",
@@ -1752,7 +1752,7 @@
     "image": "/assets/upload/UCBGgames/jewels-blitz-5.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, match-3"
+    "groups": "action, adventure"
   },
   {
     "slug": "johnny-trigger",
@@ -1761,7 +1761,7 @@
     "image": "/assets/upload/UCBGgames/johnny-trigger.png",
     "video": "",
     "description": "",
-    "groups": "shooter, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "johnny-upgrade",
@@ -1770,7 +1770,7 @@
     "image": "/assets/upload/UCBGgames/johnny-upgrade.png",
     "video": "",
     "description": "",
-    "groups": "platformer, shooter"
+    "groups": "action, adventure"
   },
   {
     "slug": "johny-revenge",
@@ -1779,7 +1779,7 @@
     "image": "/assets/upload/UCBGgames/johny-revenge.png",
     "video": "",
     "description": "",
-    "groups": "shooter, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "johny-trigger",
@@ -1788,7 +1788,7 @@
     "image": "/assets/upload/UCBGgames/johny-trigger.png",
     "video": "",
     "description": "",
-    "groups": "shooter, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "jungle-td",
@@ -1797,7 +1797,7 @@
     "image": "/assets/upload/UCBGgames/jungle-td.png",
     "video": "",
     "description": "",
-    "groups": "tower-defense, strategy"
+    "groups": "action, adventure"
   },
   {
     "slug": "just-fall-lol",
@@ -1806,7 +1806,7 @@
     "image": "/assets/upload/UCBGgames/just-fall-lol.png",
     "video": "",
     "description": "",
-    "groups": "party, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "kart-fight-io",
@@ -1815,7 +1815,7 @@
     "image": "/assets/upload/UCBGgames/kart-fight-io.png",
     "video": "",
     "description": "",
-    "groups": "io, racing"
+    "groups": "action, adventure"
   },
   {
     "slug": "kirka-io",
@@ -1824,7 +1824,7 @@
     "image": "/assets/upload/UCBGgames/kirka-io.png",
     "video": "",
     "description": "",
-    "groups": "io, shooter"
+    "groups": "action, adventure"
   },
   {
     "slug": "knight-hero-adventure-rpg",
@@ -1833,7 +1833,7 @@
     "image": "/assets/upload/UCBGgames/knight-hero-adventure-rpg.png",
     "video": "",
     "description": "",
-    "groups": "rpg, adventure"
+    "groups": "action, adventure"
   },
   {
     "slug": "krunker-io",
@@ -1842,7 +1842,7 @@
     "image": "/assets/upload/UCBGgames/krunker-io.png",
     "video": "",
     "description": "",
-    "groups": "io, shooter, fps"
+    "groups": "action, adventure"
   },
   {
     "slug": "leader-strike",
@@ -1851,7 +1851,7 @@
     "image": "/assets/upload/UCBGgames/leader-strike.png",
     "video": "",
     "description": "",
-    "groups": "shooter, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "learn-to-fly",
@@ -1860,7 +1860,7 @@
     "image": "/assets/upload/UCBGgames/learn-to-fly.png",
     "video": "",
     "description": "",
-    "groups": "physics, launcher"
+    "groups": "action, adventure"
   },
   {
     "slug": "lol-shot-io",
@@ -1869,7 +1869,7 @@
     "image": "/assets/upload/UCBGgames/lol-shot-io.png",
     "video": "",
     "description": "",
-    "groups": "io, shooter"
+    "groups": "action, adventure"
   },
   {
     "slug": "lolbeans-io",
@@ -1878,7 +1878,7 @@
     "image": "/assets/upload/UCBGgames/lolbeans-io.png",
     "video": "",
     "description": "",
-    "groups": "io, party"
+    "groups": "action, adventure"
   },
   {
     "slug": "lurkers-io",
@@ -1887,7 +1887,7 @@
     "image": "/assets/upload/UCBGgames/lurkers-io.png",
     "video": "",
     "description": "",
-    "groups": "io, shooter"
+    "groups": "action, adventure"
   },
   {
     "slug": "mad-gunz",
@@ -1896,7 +1896,7 @@
     "image": "/assets/upload/UCBGgames/mad-gunz.png",
     "video": "",
     "description": "",
-    "groups": "shooter, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "mad-shark",
@@ -1905,7 +1905,7 @@
     "image": "/assets/upload/UCBGgames/mad-shark.png",
     "video": "",
     "description": "",
-    "groups": "shooter, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "mad-truck-challenge",
@@ -1914,7 +1914,7 @@
     "image": "/assets/upload/UCBGgames/mad-truck-challenge.png",
     "video": "",
     "description": "",
-    "groups": "racing, stunt"
+    "groups": "action, adventure"
   },
   {
     "slug": "madalin-cars-multiplayer",
@@ -1923,7 +1923,7 @@
     "image": "/assets/upload/UCBGgames/madalin-cars-multiplayer.png",
     "video": "",
     "description": "",
-    "groups": "racing, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "madalin-stunt-cars-2",
@@ -1932,7 +1932,7 @@
     "image": "/assets/upload/UCBGgames/madalin-stunt-cars-2.png",
     "video": "",
     "description": "",
-    "groups": "racing, stunt"
+    "groups": "action, adventure"
   },
   {
     "slug": "madalin-stunt-cars-3",
@@ -1941,7 +1941,7 @@
     "image": "/assets/upload/UCBGgames/madalin-stunt-cars-3.png",
     "video": "",
     "description": "",
-    "groups": "racing, stunt"
+    "groups": "action, adventure"
   },
   {
     "slug": "marbles-sorting",
@@ -1950,7 +1950,7 @@
     "image": "/assets/upload/UCBGgames/marbles-sorting.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, sorting"
+    "groups": "action, adventure"
   },
   {
     "slug": "masked-forces",
@@ -1959,7 +1959,7 @@
     "image": "/assets/upload/UCBGgames/masked-forces.png",
     "video": "",
     "description": "",
-    "groups": "shooter, fps"
+    "groups": "action, adventure"
   },
   {
     "slug": "merc-zone",
@@ -1968,7 +1968,7 @@
     "image": "/assets/upload/UCBGgames/merc-zone.png",
     "video": "",
     "description": "",
-    "groups": "shooter, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "merge-harvest",
@@ -1977,7 +1977,7 @@
     "image": "/assets/upload/UCBGgames/merge-harvest.png",
     "video": "",
     "description": "",
-    "groups": "merge, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "merge-round-racers",
@@ -1986,7 +1986,7 @@
     "image": "/assets/upload/UCBGgames/merge-round-racers.png",
     "video": "",
     "description": "",
-    "groups": "merge, racing"
+    "groups": "action, adventure"
   },
   {
     "slug": "minecraft-case-simulator",
@@ -1995,7 +1995,7 @@
     "image": "/assets/upload/UCBGgames/minecraft-case-simulator.png",
     "video": "",
     "description": "",
-    "groups": "simulation, crafting"
+    "groups": "action, adventure"
   },
   {
     "slug": "minecraft-classic",
@@ -2004,7 +2004,7 @@
     "image": "/assets/upload/UCBGgames/minecraft-classic.png",
     "video": "",
     "description": "",
-    "groups": "sandbox, building"
+    "groups": "action, adventure"
   },
   {
     "slug": "money-movers-2",
@@ -2013,7 +2013,7 @@
     "image": "/assets/upload/UCBGgames/money-movers-2.png",
     "video": "",
     "description": "",
-    "groups": "heist, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "money-movers-guard-duty",
@@ -2022,7 +2022,7 @@
     "image": "/assets/upload/UCBGgames/money-movers-guard-duty.png",
     "video": "",
     "description": "",
-    "groups": "heist, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "money-movers",
@@ -2031,7 +2031,7 @@
     "image": "/assets/upload/UCBGgames/money-movers.png",
     "video": "",
     "description": "",
-    "groups": "heist, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "money-roller",
@@ -2040,7 +2040,7 @@
     "image": "/assets/upload/UCBGgames/money-roller.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "monkey-mart",
@@ -2049,7 +2049,7 @@
     "image": "/assets/upload/UCBGgames/monkey-mart.png",
     "video": "",
     "description": "",
-    "groups": "management, simulation"
+    "groups": "action, adventure"
   },
   {
     "slug": "monster-truck-vs-zombie",
@@ -2058,7 +2058,7 @@
     "image": "/assets/upload/UCBGgames/monster-truck-vs-zombie.png",
     "video": "",
     "description": "",
-    "groups": "racing, zombie"
+    "groups": "action, adventure"
   },
   {
     "slug": "moomoo-io-sandbox",
@@ -2067,7 +2067,7 @@
     "image": "/assets/upload/UCBGgames/moomoo-io-sandbox.png",
     "video": "",
     "description": "",
-    "groups": "io, sandbox"
+    "groups": "action, adventure"
   },
   {
     "slug": "moto-maniac-3",
@@ -2076,7 +2076,7 @@
     "image": "/assets/upload/UCBGgames/moto-maniac-3.png",
     "video": "",
     "description": "",
-    "groups": "racing, bike"
+    "groups": "action, adventure"
   },
   {
     "slug": "moto-x3m-spooky-land",
@@ -2085,7 +2085,7 @@
     "image": "/assets/upload/UCBGgames/moto-x3m-spooky-land.png",
     "video": "",
     "description": "",
-    "groups": "racing, bike"
+    "groups": "action, adventure"
   },
   {
     "slug": "moto-x3m-winter",
@@ -2094,7 +2094,7 @@
     "image": "/assets/upload/UCBGgames/moto-x3m-winter.png",
     "video": "",
     "description": "",
-    "groups": "racing, bike"
+    "groups": "action, adventure"
   },
   {
     "slug": "moto-x3m",
@@ -2103,7 +2103,7 @@
     "image": "/assets/upload/UCBGgames/moto-x3m.png",
     "video": "",
     "description": "",
-    "groups": "racing, bike"
+    "groups": "action, adventure"
   },
   {
     "slug": "moto3xm-pool-party",
@@ -2112,7 +2112,7 @@
     "image": "/assets/upload/UCBGgames/moto3xm-pool-party.png",
     "video": "",
     "description": "",
-    "groups": "racing, bike"
+    "groups": "action, adventure"
   },
   {
     "slug": "mr-bullet",
@@ -2121,7 +2121,7 @@
     "image": "/assets/upload/UCBGgames/mr-bullet.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "mutazone",
@@ -2130,7 +2130,7 @@
     "image": "/assets/upload/UCBGgames/mutazone.png",
     "video": "",
     "description": "",
-    "groups": "shooter, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "ninja-cat-exploit",
@@ -2139,7 +2139,7 @@
     "image": "/assets/upload/UCBGgames/ninja-cat-exploit.png",
     "video": "",
     "description": "",
-    "groups": "platformer, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "noob-steve-parkour",
@@ -2148,7 +2148,7 @@
     "image": "/assets/upload/UCBGgames/noob-steve-parkour.png",
     "video": "",
     "description": "",
-    "groups": "parkour, platformer"
+    "groups": "action, adventure"
   },
   {
     "slug": "offroad-ultimate",
@@ -2157,7 +2157,7 @@
     "image": "/assets/upload/UCBGgames/offroad-ultimate.png",
     "video": "",
     "description": "",
-    "groups": "racing, offroad"
+    "groups": "action, adventure"
   },
   {
     "slug": "only-up-2",
@@ -2166,7 +2166,7 @@
     "image": "/assets/upload/UCBGgames/only-up-2.png",
     "video": "",
     "description": "",
-    "groups": "platformer, climbing"
+    "groups": "action, adventure"
   },
   {
     "slug": "only-up-3d-parkour",
@@ -2175,7 +2175,7 @@
     "image": "/assets/upload/UCBGgames/only-up-3d-parkour.png",
     "video": "",
     "description": "",
-    "groups": "parkour, platformer"
+    "groups": "action, adventure"
   },
   {
     "slug": "ovo-2-144-version",
@@ -2184,7 +2184,7 @@
     "image": "/assets/upload/UCBGgames/ovo-2-144-version.png",
     "video": "",
     "description": "",
-    "groups": "platformer, parkour"
+    "groups": "action, adventure"
   },
   {
     "slug": "ovo-3-dimensions",
@@ -2193,7 +2193,7 @@
     "image": "/assets/upload/UCBGgames/ovo-3-dimensions.png",
     "video": "",
     "description": "",
-    "groups": "platformer, parkour"
+    "groups": "action, adventure"
   },
   {
     "slug": "ovo",
@@ -2202,7 +2202,7 @@
     "image": "/assets/upload/UCBGgames/ovo.png",
     "video": "",
     "description": "",
-    "groups": "platformer, parkour"
+    "groups": "action, adventure"
   },
   {
     "slug": "pacman-remake",
@@ -2211,7 +2211,7 @@
     "image": "/assets/upload/UCBGgames/pacman-remake.png",
     "video": "",
     "description": "",
-    "groups": "arcade, maze"
+    "groups": "action, adventure"
   },
   {
     "slug": "papas-burgeria",
@@ -2220,7 +2220,7 @@
     "image": "/assets/upload/UCBGgames/papas-burgeria.png",
     "video": "",
     "description": "",
-    "groups": "cooking, time-management"
+    "groups": "action, adventure"
   },
   {
     "slug": "papas-freezeria",
@@ -2229,7 +2229,7 @@
     "image": "/assets/upload/UCBGgames/papas-freezeria.png",
     "video": "",
     "description": "",
-    "groups": "cooking, time-management"
+    "groups": "action, adventure"
   },
   {
     "slug": "papas-pizzaria",
@@ -2238,7 +2238,7 @@
     "image": "/assets/upload/UCBGgames/papas-pizzaria.png",
     "video": "",
     "description": "",
-    "groups": "cooking, time-management"
+    "groups": "action, adventure"
   },
   {
     "slug": "paper-2-io",
@@ -2247,7 +2247,7 @@
     "image": "/assets/upload/UCBGgames/paper-2-io.png",
     "video": "",
     "description": "",
-    "groups": "io, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "park-out",
@@ -2256,7 +2256,7 @@
     "image": "/assets/upload/UCBGgames/park-out.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, parking"
+    "groups": "action, adventure"
   },
   {
     "slug": "parking-fury-2",
@@ -2265,7 +2265,7 @@
     "image": "/assets/upload/UCBGgames/parking-fury-2.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, parking"
+    "groups": "action, adventure"
   },
   {
     "slug": "parking-fury-3",
@@ -2274,7 +2274,7 @@
     "image": "/assets/upload/UCBGgames/parking-fury-3.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, parking"
+    "groups": "action, adventure"
   },
   {
     "slug": "parking-fury",
@@ -2283,7 +2283,7 @@
     "image": "/assets/upload/UCBGgames/parking-fury.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, parking"
+    "groups": "action, adventure"
   },
   {
     "slug": "parkour-race",
@@ -2292,7 +2292,7 @@
     "image": "/assets/upload/UCBGgames/parkour-race.png",
     "video": "",
     "description": "",
-    "groups": "parkour, racing"
+    "groups": "action, adventure"
   },
   {
     "slug": "penalty-kick",
@@ -2301,7 +2301,7 @@
     "image": "/assets/upload/UCBGgames/penalty-kick.png",
     "video": "",
     "description": "",
-    "groups": "soccer, sports"
+    "groups": "action, adventure"
   },
   {
     "slug": "penalty-shooters-2",
@@ -2310,7 +2310,7 @@
     "image": "/assets/upload/UCBGgames/penalty-shooters-2.png",
     "video": "",
     "description": "",
-    "groups": "soccer, sports"
+    "groups": "action, adventure"
   },
   {
     "slug": "penalty-shooters-3",
@@ -2319,7 +2319,7 @@
     "image": "/assets/upload/UCBGgames/penalty-shooters-3.png",
     "video": "",
     "description": "",
-    "groups": "soccer, sports"
+    "groups": "action, adventure"
   },
   {
     "slug": "petz-lol",
@@ -2328,7 +2328,7 @@
     "image": "/assets/upload/UCBGgames/petz-lol.png",
     "video": "",
     "description": "",
-    "groups": "virtual-pet, simulation"
+    "groups": "action, adventure"
   },
   {
     "slug": "pixel-gun-3d",
@@ -2337,7 +2337,7 @@
     "image": "/assets/upload/UCBGgames/pixel-gun-3d.png",
     "video": "",
     "description": "",
-    "groups": "shooter, fps"
+    "groups": "action, adventure"
   },
   {
     "slug": "pixel-smash-duel",
@@ -2346,7 +2346,7 @@
     "image": "/assets/upload/UCBGgames/pixel-smash-duel.png",
     "video": "",
     "description": "",
-    "groups": "fighting, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "pizza-tower",
@@ -2355,7 +2355,7 @@
     "image": "/assets/upload/UCBGgames/pizza-tower.png",
     "video": "",
     "description": "",
-    "groups": "platformer, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "poop-clicker-3",
@@ -2364,7 +2364,7 @@
     "image": "/assets/upload/UCBGgames/poop-clicker-3.png",
     "video": "",
     "description": "",
-    "groups": "clicker, idle"
+    "groups": "action, adventure"
   },
   {
     "slug": "pou",
@@ -2373,7 +2373,7 @@
     "image": "/assets/upload/UCBGgames/pou.png",
     "video": "",
     "description": "",
-    "groups": "virtual-pet, simulation"
+    "groups": "action, adventure"
   },
   {
     "slug": "president-simulator",
@@ -2382,7 +2382,7 @@
     "image": "/assets/upload/UCBGgames/president-simulator.png",
     "video": "",
     "description": "",
-    "groups": "simulation, politics"
+    "groups": "action, adventure"
   },
   {
     "slug": "pudding-monsters",
@@ -2391,7 +2391,7 @@
     "image": "/assets/upload/UCBGgames/pudding-monsters.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, strategy"
+    "groups": "action, adventure"
   },
   {
     "slug": "push-the-box-3d",
@@ -2400,7 +2400,7 @@
     "image": "/assets/upload/UCBGgames/push-the-box-3d.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, sokoban"
+    "groups": "action, adventure"
   },
   {
     "slug": "rabbit-samurai-2",
@@ -2409,7 +2409,7 @@
     "image": "/assets/upload/UCBGgames/rabbit-samurai-2.png",
     "video": "",
     "description": "",
-    "groups": "platformer, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "raft-wars-2",
@@ -2418,7 +2418,7 @@
     "image": "/assets/upload/UCBGgames/raft-wars-2.png",
     "video": "",
     "description": "",
-    "groups": "shooter, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "raft-wars",
@@ -2427,7 +2427,7 @@
     "image": "/assets/upload/UCBGgames/raft-wars.png",
     "video": "",
     "description": "",
-    "groups": "shooter, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "raft-warz-2",
@@ -2436,7 +2436,7 @@
     "image": "/assets/upload/UCBGgames/raft-warz-2.png",
     "video": "",
     "description": "",
-    "groups": "shooter, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "rainbow-parkour-kogama",
@@ -2445,7 +2445,7 @@
     "image": "/assets/upload/UCBGgames/rainbow-parkour-kogama.png",
     "video": "",
     "description": "",
-    "groups": "parkour, platformer"
+    "groups": "action, adventure"
   },
   {
     "slug": "real-flying-truck",
@@ -2454,7 +2454,7 @@
     "image": "/assets/upload/UCBGgames/real-flying-truck.png",
     "video": "",
     "description": "",
-    "groups": "simulation, flying"
+    "groups": "action, adventure"
   },
   {
     "slug": "real-garbage-truck",
@@ -2463,7 +2463,7 @@
     "image": "/assets/upload/UCBGgames/real-garbage-truck.png",
     "video": "",
     "description": "",
-    "groups": "simulation, driving"
+    "groups": "action, adventure"
   },
   {
     "slug": "recoil",
@@ -2472,7 +2472,7 @@
     "image": "/assets/upload/UCBGgames/recoil.png",
     "video": "",
     "description": "",
-    "groups": "shooter, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "red-driver-5",
@@ -2481,7 +2481,7 @@
     "image": "/assets/upload/UCBGgames/red-driver-5.png",
     "video": "",
     "description": "",
-    "groups": "racing, driving"
+    "groups": "action, adventure"
   },
   {
     "slug": "repuls",
@@ -2490,7 +2490,7 @@
     "image": "/assets/upload/UCBGgames/repuls.png",
     "video": "",
     "description": "",
-    "groups": "shooter, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "retro-bowl",
@@ -2499,7 +2499,7 @@
     "image": "/assets/upload/UCBGgames/retro-bowl.png",
     "video": "",
     "description": "",
-    "groups": "football, sports"
+    "groups": "action, adventure"
   },
   {
     "slug": "riddle-school-5",
@@ -2508,7 +2508,7 @@
     "image": "/assets/upload/UCBGgames/riddle-school-5.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, adventure"
+    "groups": "action, adventure"
   },
   {
     "slug": "riddle-transfer-2",
@@ -2517,7 +2517,7 @@
     "image": "/assets/upload/UCBGgames/riddle-transfer-2.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, adventure"
+    "groups": "action, adventure"
   },
   {
     "slug": "rise-of-neon-square",
@@ -2526,7 +2526,7 @@
     "image": "/assets/upload/UCBGgames/rise-of-neon-square.png",
     "video": "",
     "description": "",
-    "groups": "platformer, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "roblox",
@@ -2535,7 +2535,7 @@
     "image": "/assets/upload/UCBGgames/roblox.png",
     "video": "",
     "description": "",
-    "groups": "sandbox, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "rocket-league",
@@ -2544,7 +2544,7 @@
     "image": "/assets/upload/UCBGgames/rocket-league.png",
     "video": "",
     "description": "",
-    "groups": "soccer, racing"
+    "groups": "action, adventure"
   },
   {
     "slug": "rolling-ball-3d",
@@ -2553,7 +2553,7 @@
     "image": "/assets/upload/UCBGgames/rolling-ball-3d.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "rolly-vortex-ball",
@@ -2562,7 +2562,7 @@
     "image": "/assets/upload/UCBGgames/rolly-vortex-ball.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "rooftop-snipers-2",
@@ -2571,7 +2571,7 @@
     "image": "/assets/upload/UCBGgames/rooftop-snipers-2.png",
     "video": "",
     "description": "",
-    "groups": "shooter, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "rooftop-snipers",
@@ -2580,7 +2580,7 @@
     "image": "/assets/upload/UCBGgames/rooftop-snipers.png",
     "video": "",
     "description": "",
-    "groups": "shooter, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "roper",
@@ -2589,7 +2589,7 @@
     "image": "/assets/upload/UCBGgames/roper.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "royale-dudes",
@@ -2598,7 +2598,7 @@
     "image": "/assets/upload/UCBGgames/royale-dudes.png",
     "video": "",
     "description": "",
-    "groups": "battle-royale, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "run-3",
@@ -2607,7 +2607,7 @@
     "image": "/assets/upload/UCBGgames/run-3.png",
     "video": "",
     "description": "",
-    "groups": "runner, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "running-fred",
@@ -2616,7 +2616,7 @@
     "image": "/assets/upload/UCBGgames/running-fred.png",
     "video": "",
     "description": "",
-    "groups": "runner, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "sandstrike-io",
@@ -2625,7 +2625,7 @@
     "image": "/assets/upload/UCBGgames/sandstrike-io.png",
     "video": "",
     "description": "",
-    "groups": "io, shooter"
+    "groups": "action, adventure"
   },
   {
     "slug": "sausage-flip",
@@ -2634,7 +2634,7 @@
     "image": "/assets/upload/UCBGgames/sausage-flip.png",
     "video": "",
     "description": "",
-    "groups": "physics, platformer"
+    "groups": "action, adventure"
   },
   {
     "slug": "save-the-doge",
@@ -2643,7 +2643,7 @@
     "image": "/assets/upload/UCBGgames/save-the-doge.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "scenexe-io",
@@ -2652,7 +2652,7 @@
     "image": "/assets/upload/UCBGgames/scenexe-io.png",
     "video": "",
     "description": "",
-    "groups": "io, shooter"
+    "groups": "action, adventure"
   },
   {
     "slug": "scrap-metal-3-infernal-trap",
@@ -2661,7 +2661,7 @@
     "image": "/assets/upload/UCBGgames/scrap-metal-3-infernal-trap.png",
     "video": "",
     "description": "",
-    "groups": "racing, stunt"
+    "groups": "action, adventure"
   },
   {
     "slug": "shell-shockers-io",
@@ -2670,7 +2670,7 @@
     "image": "/assets/upload/UCBGgames/shell-shockers-io.png",
     "video": "",
     "description": "",
-    "groups": "io, shooter"
+    "groups": "action, adventure"
   },
   {
     "slug": "ships-3d",
@@ -2679,7 +2679,7 @@
     "image": "/assets/upload/UCBGgames/ships-3d.png",
     "video": "",
     "description": "",
-    "groups": "simulation, driving"
+    "groups": "action, adventure"
   },
   {
     "slug": "short-ride",
@@ -2688,7 +2688,7 @@
     "image": "/assets/upload/UCBGgames/short-ride.png",
     "video": "",
     "description": "",
-    "groups": "racing, driving"
+    "groups": "action, adventure"
   },
   {
     "slug": "skibidi-toilet-attack",
@@ -2697,7 +2697,7 @@
     "image": "/assets/upload/UCBGgames/skibidi-toilet-attack.png",
     "video": "",
     "description": "",
-    "groups": "shooter, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "skibidi-toilet-rampage",
@@ -2706,7 +2706,7 @@
     "image": "/assets/upload/UCBGgames/skibidi-toilet-rampage.png",
     "video": "",
     "description": "",
-    "groups": "shooter, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "skiing-fred",
@@ -2715,7 +2715,7 @@
     "image": "/assets/upload/UCBGgames/skiing-fred.png",
     "video": "",
     "description": "",
-    "groups": "runner, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "skillfite-io",
@@ -2724,7 +2724,7 @@
     "image": "/assets/upload/UCBGgames/skillfite-io.png",
     "video": "",
     "description": "",
-    "groups": "io, fighting"
+    "groups": "action, adventure"
   },
   {
     "slug": "skyblock",
@@ -2733,7 +2733,7 @@
     "image": "/assets/upload/UCBGgames/skyblock.png",
     "video": "",
     "description": "",
-    "groups": "sandbox, survival"
+    "groups": "action, adventure"
   },
   {
     "slug": "slime-rush-td",
@@ -2742,7 +2742,7 @@
     "image": "/assets/upload/UCBGgames/slime-rush-td.png",
     "video": "",
     "description": "",
-    "groups": "tower-defense, strategy"
+    "groups": "action, adventure"
   },
   {
     "slug": "slope-2-players",
@@ -2751,7 +2751,7 @@
     "image": "/assets/upload/UCBGgames/slope-2-players.png",
     "video": "",
     "description": "",
-    "groups": "racing, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "slope-ball",
@@ -2760,7 +2760,7 @@
     "image": "/assets/upload/UCBGgames/slope-ball.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "slope",
@@ -2769,7 +2769,7 @@
     "image": "/assets/upload/UCBGgames/slope.png",
     "video": "",
     "description": "",
-    "groups": "racing, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "small-world-cup",
@@ -2778,7 +2778,7 @@
     "image": "/assets/upload/UCBGgames/small-world-cup.png",
     "video": "",
     "description": "",
-    "groups": "soccer, sports"
+    "groups": "action, adventure"
   },
   {
     "slug": "smash-karts-io",
@@ -2787,7 +2787,7 @@
     "image": "/assets/upload/UCBGgames/smash-karts-io.png",
     "video": "",
     "description": "",
-    "groups": "io, racing"
+    "groups": "action, adventure"
   },
   {
     "slug": "snail-bob-fantasy-story",
@@ -2796,7 +2796,7 @@
     "image": "/assets/upload/UCBGgames/snail-bob-fantasy-story.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, adventure"
+    "groups": "action, adventure"
   },
   {
     "slug": "snail-bob-island-story",
@@ -2805,7 +2805,7 @@
     "image": "/assets/upload/UCBGgames/snail-bob-island-story.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, adventure"
+    "groups": "action, adventure"
   },
   {
     "slug": "snail-bob-love-story",
@@ -2814,7 +2814,7 @@
     "image": "/assets/upload/UCBGgames/snail-bob-love-story.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, adventure"
+    "groups": "action, adventure"
   },
   {
     "slug": "snail-bob-winter-story",
@@ -2823,7 +2823,7 @@
     "image": "/assets/upload/UCBGgames/snail-bob-winter-story.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, adventure"
+    "groups": "action, adventure"
   },
   {
     "slug": "snake-io",
@@ -2832,7 +2832,7 @@
     "image": "/assets/upload/UCBGgames/snake-io.png",
     "video": "",
     "description": "",
-    "groups": "io, snake"
+    "groups": "action, adventure"
   },
   {
     "slug": "snay-io-agario",
@@ -2841,7 +2841,7 @@
     "image": "/assets/upload/UCBGgames/snay-io-agario.png",
     "video": "",
     "description": "",
-    "groups": "io, agar"
+    "groups": "action, adventure"
   },
   {
     "slug": "sniper-shot-bullet-time",
@@ -2850,7 +2850,7 @@
     "image": "/assets/upload/UCBGgames/sniper-shot-bullet-time.png",
     "video": "",
     "description": "",
-    "groups": "shooter, sniper"
+    "groups": "action, adventure"
   },
   {
     "slug": "snipey-io",
@@ -2859,7 +2859,7 @@
     "image": "/assets/upload/UCBGgames/snipey-io.png",
     "video": "",
     "description": "",
-    "groups": "io, shooter"
+    "groups": "action, adventure"
   },
   {
     "slug": "snow-battle-io",
@@ -2868,7 +2868,7 @@
     "image": "/assets/upload/UCBGgames/snow-battle-io.png",
     "video": "",
     "description": "",
-    "groups": "io, shooter"
+    "groups": "action, adventure"
   },
   {
     "slug": "snow-rider-3d",
@@ -2877,7 +2877,7 @@
     "image": "/assets/upload/UCBGgames/snow-rider-3d.png",
     "video": "",
     "description": "",
-    "groups": "racing, snow"
+    "groups": "action, adventure"
   },
   {
     "slug": "soccer-heads",
@@ -2886,7 +2886,7 @@
     "image": "/assets/upload/UCBGgames/soccer-heads.png",
     "video": "",
     "description": "",
-    "groups": "soccer, sports"
+    "groups": "action, adventure"
   },
   {
     "slug": "soccer-random",
@@ -2895,7 +2895,7 @@
     "image": "/assets/upload/UCBGgames/soccer-random.png",
     "video": "",
     "description": "",
-    "groups": "soccer, sports"
+    "groups": "action, adventure"
   },
   {
     "slug": "soccer-skills-euro-cup-2021",
@@ -2904,7 +2904,7 @@
     "image": "/assets/upload/UCBGgames/soccer-skills-euro-cup-2021.png",
     "video": "",
     "description": "",
-    "groups": "soccer, sports"
+    "groups": "action, adventure"
   },
   {
     "slug": "sonic-the-hedgehog-remastered",
@@ -2913,7 +2913,7 @@
     "image": "/assets/upload/UCBGgames/sonic-the-hedgehog-remastered.png",
     "video": "",
     "description": "",
-    "groups": "platformer, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "spider-solitaire",
@@ -2922,7 +2922,7 @@
     "image": "/assets/upload/UCBGgames/spider-solitaire.png",
     "video": "",
     "description": "",
-    "groups": "card, solitaire"
+    "groups": "action, adventure"
   },
   {
     "slug": "sprinter",
@@ -2931,7 +2931,7 @@
     "image": "/assets/upload/UCBGgames/sprinter.png",
     "video": "",
     "description": "",
-    "groups": "runner, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "stabfish-2",
@@ -2940,7 +2940,7 @@
     "image": "/assets/upload/UCBGgames/stabfish-2.png",
     "video": "",
     "description": "",
-    "groups": "shooter, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "stabfish-io",
@@ -2949,7 +2949,7 @@
     "image": "/assets/upload/UCBGgames/stabfish-io.png",
     "video": "",
     "description": "",
-    "groups": "io, shooter, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "stack-bump-3d",
@@ -2958,7 +2958,7 @@
     "image": "/assets/upload/UCBGgames/stack-bump-3d.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "starblast-io",
@@ -2967,7 +2967,7 @@
     "image": "/assets/upload/UCBGgames/starblast-io.png",
     "video": "",
     "description": "",
-    "groups": "io, space, shooter"
+    "groups": "action, adventure"
   },
   {
     "slug": "stealing-the-diamond",
@@ -2976,7 +2976,7 @@
     "image": "/assets/upload/UCBGgames/stealing-the-diamond.png",
     "video": "",
     "description": "",
-    "groups": "stealth, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "stick-archers-battle",
@@ -2985,7 +2985,7 @@
     "image": "/assets/upload/UCBGgames/stick-archers-battle.png",
     "video": "",
     "description": "",
-    "groups": "archery, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "stick-defenders",
@@ -2994,7 +2994,7 @@
     "image": "/assets/upload/UCBGgames/stick-defenders.png",
     "video": "",
     "description": "",
-    "groups": "tower-defense, strategy"
+    "groups": "action, adventure"
   },
   {
     "slug": "stick-duel-battle",
@@ -3003,7 +3003,7 @@
     "image": "/assets/upload/UCBGgames/stick-duel-battle.png",
     "video": "",
     "description": "",
-    "groups": "fighting, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "stick-merge",
@@ -3012,7 +3012,7 @@
     "image": "/assets/upload/UCBGgames/stick-merge.png",
     "video": "",
     "description": "",
-    "groups": "merge, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "stickbattle-lol",
@@ -3021,7 +3021,7 @@
     "image": "/assets/upload/UCBGgames/stickbattle-lol.png",
     "video": "",
     "description": "",
-    "groups": "fighting, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "stickman-boost-2",
@@ -3030,7 +3030,7 @@
     "image": "/assets/upload/UCBGgames/stickman-boost-2.png",
     "video": "",
     "description": "",
-    "groups": "platformer, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "stickman-boost",
@@ -3039,7 +3039,7 @@
     "image": "/assets/upload/UCBGgames/stickman-boost.png",
     "video": "",
     "description": "",
-    "groups": "platformer, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "stickman-hook",
@@ -3048,7 +3048,7 @@
     "image": "/assets/upload/UCBGgames/stickman-hook.png",
     "video": "",
     "description": "",
-    "groups": "platformer, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "subway-princess-runner",
@@ -3057,7 +3057,7 @@
     "image": "/assets/upload/UCBGgames/subway-princess-runner.png",
     "video": "",
     "description": "",
-    "groups": "runner, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "subway-runner",
@@ -3066,7 +3066,7 @@
     "image": "/assets/upload/UCBGgames/subway-runner.png",
     "video": "",
     "description": "",
-    "groups": "runner, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "subway-surfers-bali",
@@ -3075,7 +3075,7 @@
     "image": "/assets/upload/UCBGgames/subway-surfers-bali.png",
     "video": "",
     "description": "",
-    "groups": "runner, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "subway-surfers-hawaii",
@@ -3084,7 +3084,7 @@
     "image": "/assets/upload/UCBGgames/subway-surfers-hawaii.png",
     "video": "",
     "description": "",
-    "groups": "runner, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "subway-surfers-new-york",
@@ -3093,7 +3093,7 @@
     "image": "/assets/upload/UCBGgames/subway-surfers-new-york.png",
     "video": "",
     "description": "",
-    "groups": "runner, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "subway-surfers-san-francisco",
@@ -3102,7 +3102,7 @@
     "image": "/assets/upload/UCBGgames/subway-surfers-san-francisco.png",
     "video": "",
     "description": "",
-    "groups": "runner, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "subway-surfers-zurich",
@@ -3111,7 +3111,7 @@
     "image": "/assets/upload/UCBGgames/subway-surfers-zurich.png",
     "video": "",
     "description": "",
-    "groups": "runner, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "subway-surfers",
@@ -3120,7 +3120,7 @@
     "image": "/assets/upload/UCBGgames/subway-surfers.png",
     "video": "",
     "description": "",
-    "groups": "runner, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "sugar-shock-io",
@@ -3129,7 +3129,7 @@
     "image": "/assets/upload/UCBGgames/sugar-shock-io.png",
     "video": "",
     "description": "",
-    "groups": "io, shooter"
+    "groups": "action, adventure"
   },
   {
     "slug": "suika-game",
@@ -3138,7 +3138,7 @@
     "image": "/assets/upload/UCBGgames/suika-game.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, fruit-merger"
+    "groups": "action, adventure"
   },
   {
     "slug": "super-falling-fred",
@@ -3147,7 +3147,7 @@
     "image": "/assets/upload/UCBGgames/super-falling-fred.png",
     "video": "",
     "description": "",
-    "groups": "runner, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "super-fowlst",
@@ -3156,7 +3156,7 @@
     "image": "/assets/upload/UCBGgames/super-fowlst.png",
     "video": "",
     "description": "",
-    "groups": "platformer, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "super-hexbee-merger",
@@ -3165,7 +3165,7 @@
     "image": "/assets/upload/UCBGgames/super-hexbee-merger.png",
     "video": "",
     "description": "",
-    "groups": "merge, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "super-liquid-soccer",
@@ -3174,7 +3174,7 @@
     "image": "/assets/upload/UCBGgames/super-liquid-soccer.png",
     "video": "",
     "description": "",
-    "groups": "soccer, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "super-mario-64",
@@ -3183,7 +3183,7 @@
     "image": "/assets/upload/UCBGgames/super-mario-64.png",
     "video": "",
     "description": "",
-    "groups": "platformer, adventure"
+    "groups": "action, adventure"
   },
   {
     "slug": "super-mario-bros",
@@ -3192,7 +3192,7 @@
     "image": "/assets/upload/UCBGgames/super-mario-bros.png",
     "video": "",
     "description": "",
-    "groups": "platformer, adventure"
+    "groups": "action, adventure"
   },
   {
     "slug": "superhot",
@@ -3201,7 +3201,7 @@
     "image": "/assets/upload/UCBGgames/superhot.png",
     "video": "",
     "description": "",
-    "groups": "shooter, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "surviv-io",
@@ -3210,7 +3210,7 @@
     "image": "/assets/upload/UCBGgames/surviv-io.png",
     "video": "",
     "description": "",
-    "groups": "io, battle-royale"
+    "groups": "action, adventure"
   },
   {
     "slug": "survivor-in-rainbow-monster",
@@ -3219,7 +3219,7 @@
     "image": "/assets/upload/UCBGgames/survivor-in-rainbow-monster.png",
     "video": "",
     "description": "",
-    "groups": "horror, survival"
+    "groups": "action, adventure"
   },
   {
     "slug": "table-tennis-ultimate-tournament",
@@ -3228,7 +3228,7 @@
     "image": "/assets/upload/UCBGgames/table-tennis-ultimate-tournament.png",
     "video": "",
     "description": "",
-    "groups": "sports, ping-pong"
+    "groups": "action, adventure"
   },
   {
     "slug": "taming-io",
@@ -3237,7 +3237,7 @@
     "image": "/assets/upload/UCBGgames/taming-io.png",
     "video": "",
     "description": "",
-    "groups": "io, survival"
+    "groups": "action, adventure"
   },
   {
     "slug": "tank-trouble-2",
@@ -3246,7 +3246,7 @@
     "image": "/assets/upload/UCBGgames/tank-trouble-2.png",
     "video": "",
     "description": "",
-    "groups": "tank, shooter"
+    "groups": "action, adventure"
   },
   {
     "slug": "tank-trouble",
@@ -3255,7 +3255,7 @@
     "image": "/assets/upload/UCBGgames/tank-trouble.png",
     "video": "",
     "description": "",
-    "groups": "tank, shooter"
+    "groups": "action, adventure"
   },
   {
     "slug": "tanuki-sunset",
@@ -3264,7 +3264,7 @@
     "image": "/assets/upload/UCBGgames/tanuki-sunset.png",
     "video": "",
     "description": "",
-    "groups": "racing, skateboarding"
+    "groups": "action, adventure"
   },
   {
     "slug": "tap-tap-shots",
@@ -3273,7 +3273,7 @@
     "image": "/assets/upload/UCBGgames/tap-tap-shots.png",
     "video": "",
     "description": "",
-    "groups": "basketball, sports"
+    "groups": "action, adventure"
   },
   {
     "slug": "temple-run-2",
@@ -3282,7 +3282,7 @@
     "image": "/assets/upload/UCBGgames/temple-run-2.png",
     "video": "",
     "description": "",
-    "groups": "runner, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "the-backrooms",
@@ -3291,7 +3291,7 @@
     "image": "/assets/upload/UCBGgames/the-backrooms.png",
     "video": "",
     "description": "",
-    "groups": "horror, exploration"
+    "groups": "action, adventure"
   },
   {
     "slug": "the-bowling-club",
@@ -3300,7 +3300,7 @@
     "image": "/assets/upload/UCBGgames/the-bowling-club.png",
     "video": "",
     "description": "",
-    "groups": "sports, bowling"
+    "groups": "action, adventure"
   },
   {
     "slug": "the-final-earth-2",
@@ -3309,7 +3309,7 @@
     "image": "/assets/upload/UCBGgames/the-final-earth-2.png",
     "video": "",
     "description": "",
-    "groups": "strategy, city-builder"
+    "groups": "action, adventure"
   },
   {
     "slug": "the-final-earth",
@@ -3318,7 +3318,7 @@
     "image": "/assets/upload/UCBGgames/the-final-earth.png",
     "video": "",
     "description": "",
-    "groups": "strategy, city-builder"
+    "groups": "action, adventure"
   },
   {
     "slug": "the-fish-master",
@@ -3327,7 +3327,7 @@
     "image": "/assets/upload/UCBGgames/the-fish-master.png",
     "video": "",
     "description": "",
-    "groups": "fishing, simulation"
+    "groups": "action, adventure"
   },
   {
     "slug": "the-heist",
@@ -3336,7 +3336,7 @@
     "image": "/assets/upload/UCBGgames/the-heist.png",
     "video": "",
     "description": "",
-    "groups": "stealth, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "the-impossible-quiz-2",
@@ -3345,7 +3345,7 @@
     "image": "/assets/upload/UCBGgames/the-impossible-quiz-2.png",
     "video": "",
     "description": "",
-    "groups": "trivia, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "the-impossible-quiz",
@@ -3354,7 +3354,7 @@
     "image": "/assets/upload/UCBGgames/the-impossible-quiz.png",
     "video": "",
     "description": "",
-    "groups": "trivia, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "there-is-no-game",
@@ -3363,7 +3363,7 @@
     "image": "/assets/upload/UCBGgames/there-is-no-game.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, meta"
+    "groups": "action, adventure"
   },
   {
     "slug": "timber-man",
@@ -3372,7 +3372,7 @@
     "image": "/assets/upload/UCBGgames/timber-man.png",
     "video": "",
     "description": "",
-    "groups": "arcade, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "time-shooter-2",
@@ -3381,7 +3381,7 @@
     "image": "/assets/upload/UCBGgames/time-shooter-2.png",
     "video": "",
     "description": "",
-    "groups": "shooter, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "time-shooter-3-swat",
@@ -3390,7 +3390,7 @@
     "image": "/assets/upload/UCBGgames/time-shooter-3-swat.png",
     "video": "",
     "description": "",
-    "groups": "shooter, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "tiny-fishing",
@@ -3399,7 +3399,7 @@
     "image": "/assets/upload/UCBGgames/tiny-fishing.png",
     "video": "",
     "description": "",
-    "groups": "fishing, simulation"
+    "groups": "action, adventure"
   },
   {
     "slug": "tomb-runner",
@@ -3408,7 +3408,7 @@
     "image": "/assets/upload/UCBGgames/tomb-runner.png",
     "video": "",
     "description": "",
-    "groups": "runner, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "tower-crash-3d",
@@ -3417,7 +3417,7 @@
     "image": "/assets/upload/UCBGgames/tower-crash-3d.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "tower-defense-2d",
@@ -3426,7 +3426,7 @@
     "image": "/assets/upload/UCBGgames/tower-defense-2d.png",
     "video": "",
     "description": "",
-    "groups": "tower-defense, strategy"
+    "groups": "action, adventure"
   },
   {
     "slug": "traffic-control",
@@ -3435,7 +3435,7 @@
     "image": "/assets/upload/UCBGgames/traffic-control.png",
     "video": "",
     "description": "",
-    "groups": "simulation, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "traffic-run",
@@ -3444,7 +3444,7 @@
     "image": "/assets/upload/UCBGgames/traffic-run.png",
     "video": "",
     "description": "",
-    "groups": "runner, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "trafficmania",
@@ -3453,7 +3453,7 @@
     "image": "/assets/upload/UCBGgames/trafficmania.png",
     "video": "",
     "description": "",
-    "groups": "simulation, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "tribals-io",
@@ -3462,7 +3462,7 @@
     "image": "/assets/upload/UCBGgames/tribals-io.png",
     "video": "",
     "description": "",
-    "groups": "io, strategy"
+    "groups": "action, adventure"
   },
   {
     "slug": "tricksplit",
@@ -3471,7 +3471,7 @@
     "image": "/assets/upload/UCBGgames/tricksplit.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "tube-clicker",
@@ -3480,7 +3480,7 @@
     "image": "/assets/upload/UCBGgames/tube-clicker.png",
     "video": "",
     "description": "",
-    "groups": "clicker, idle"
+    "groups": "action, adventure"
   },
   {
     "slug": "tube-jumpers",
@@ -3489,7 +3489,7 @@
     "image": "/assets/upload/UCBGgames/tube-jumpers.png",
     "video": "",
     "description": "",
-    "groups": "platformer, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "tunnel-rush-2",
@@ -3498,7 +3498,7 @@
     "image": "/assets/upload/UCBGgames/tunnel-rush-2.png",
     "video": "",
     "description": "",
-    "groups": "runner, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "tunnel-rush",
@@ -3507,7 +3507,7 @@
     "image": "/assets/upload/UCBGgames/tunnel-rush.png",
     "video": "",
     "description": "",
-    "groups": "runner, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "turn-turn",
@@ -3516,7 +3516,7 @@
     "image": "/assets/upload/UCBGgames/turn-turn.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, strategy"
+    "groups": "action, adventure"
   },
   {
     "slug": "two-ball-3d",
@@ -3525,7 +3525,7 @@
     "image": "/assets/upload/UCBGgames/two-ball-3d.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "two-tunnel-3d",
@@ -3534,7 +3534,7 @@
     "image": "/assets/upload/UCBGgames/two-tunnel-3d.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, maze"
+    "groups": "action, adventure"
   },
   {
     "slug": "uno-4-colors-multiplayer",
@@ -3543,7 +3543,7 @@
     "image": "/assets/upload/UCBGgames/uno-4-colors-multiplayer.png",
     "video": "",
     "description": "",
-    "groups": "card, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "venge-io",
@@ -3552,7 +3552,7 @@
     "image": "/assets/upload/UCBGgames/venge-io.png",
     "video": "",
     "description": "",
-    "groups": "io, shooter"
+    "groups": "action, adventure"
   },
   {
     "slug": "vex-3",
@@ -3561,7 +3561,7 @@
     "image": "/assets/upload/UCBGgames/vex-3.png",
     "video": "",
     "description": "",
-    "groups": "platformer, obstacle-course"
+    "groups": "action, adventure"
   },
   {
     "slug": "vex-4",
@@ -3570,7 +3570,7 @@
     "image": "/assets/upload/UCBGgames/vex-4.png",
     "video": "",
     "description": "",
-    "groups": "platformer, obstacle-course"
+    "groups": "action, adventure"
   },
   {
     "slug": "vex-5",
@@ -3579,7 +3579,7 @@
     "image": "/assets/upload/UCBGgames/vex-5.png",
     "video": "",
     "description": "",
-    "groups": "platformer, obstacle-course"
+    "groups": "action, adventure"
   },
   {
     "slug": "vex-6",
@@ -3588,7 +3588,7 @@
     "image": "/assets/upload/UCBGgames/vex-6.png",
     "video": "",
     "description": "",
-    "groups": "platformer, obstacle-course"
+    "groups": "action, adventure"
   },
   {
     "slug": "vex-7",
@@ -3597,7 +3597,7 @@
     "image": "/assets/upload/UCBGgames/vex-7.png",
     "video": "",
     "description": "",
-    "groups": "platformer, obstacle-course"
+    "groups": "action, adventure"
   },
   {
     "slug": "vex-8",
@@ -3606,7 +3606,7 @@
     "image": "/assets/upload/UCBGgames/vex-8.png",
     "video": "",
     "description": "",
-    "groups": "platformer, obstacle-course"
+    "groups": "action, adventure"
   },
   {
     "slug": "volley-random",
@@ -3615,7 +3615,7 @@
     "image": "/assets/upload/UCBGgames/volley-random.png",
     "video": "",
     "description": "",
-    "groups": "volleyball, sports"
+    "groups": "action, adventure"
   },
   {
     "slug": "voxiom-io",
@@ -3624,7 +3624,7 @@
     "image": "/assets/upload/UCBGgames/voxiom-io.png",
     "video": "",
     "description": "",
-    "groups": "io, shooter"
+    "groups": "action, adventure"
   },
   {
     "slug": "war-brokers-io",
@@ -3633,7 +3633,7 @@
     "image": "/assets/upload/UCBGgames/war-brokers-io.png",
     "video": "",
     "description": "",
-    "groups": "io, shooter"
+    "groups": "action, adventure"
   },
   {
     "slug": "wheelie-bike",
@@ -3642,7 +3642,7 @@
     "image": "/assets/upload/UCBGgames/wheelie-bike.png",
     "video": "",
     "description": "",
-    "groups": "racing, bike"
+    "groups": "action, adventure"
   },
   {
     "slug": "wheely-2",
@@ -3651,7 +3651,7 @@
     "image": "/assets/upload/UCBGgames/wheely-2.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, point-and-click"
+    "groups": "action, adventure"
   },
   {
     "slug": "wheely-3",
@@ -3660,7 +3660,7 @@
     "image": "/assets/upload/UCBGgames/wheely-3.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, point-and-click"
+    "groups": "action, adventure"
   },
   {
     "slug": "wheely-4-time-travel",
@@ -3669,7 +3669,7 @@
     "image": "/assets/upload/UCBGgames/wheely-4-time-travel.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, point-and-click"
+    "groups": "action, adventure"
   },
   {
     "slug": "wheely-5",
@@ -3678,7 +3678,7 @@
     "image": "/assets/upload/UCBGgames/wheely-5.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, point-and-click"
+    "groups": "action, adventure"
   },
   {
     "slug": "wheely-6-fairytale",
@@ -3687,7 +3687,7 @@
     "image": "/assets/upload/UCBGgames/wheely-6-fairytale.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, point-and-click"
+    "groups": "action, adventure"
   },
   {
     "slug": "wheely-7-detective",
@@ -3696,7 +3696,7 @@
     "image": "/assets/upload/UCBGgames/wheely-7-detective.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, point-and-click"
+    "groups": "action, adventure"
   },
   {
     "slug": "wizard-mike",
@@ -3705,7 +3705,7 @@
     "image": "/assets/upload/UCBGgames/wizard-mike.png",
     "video": "",
     "description": "",
-    "groups": "platformer, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "word-slide",
@@ -3714,7 +3714,7 @@
     "image": "/assets/upload/UCBGgames/word-slide.png",
     "video": "",
     "description": "",
-    "groups": "word, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "wordle-infinite",
@@ -3723,7 +3723,7 @@
     "image": "/assets/upload/UCBGgames/wordle-infinite.png",
     "video": "",
     "description": "",
-    "groups": "word, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "worlds-hardest-game-2",
@@ -3732,7 +3732,7 @@
     "image": "/assets/upload/UCBGgames/worlds-hardest-game-2.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, difficult"
+    "groups": "action, adventure"
   },
   {
     "slug": "worlds-hardest-game",
@@ -3741,7 +3741,7 @@
     "image": "/assets/upload/UCBGgames/worlds-hardest-game.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, difficult"
+    "groups": "action, adventure"
   },
   {
     "slug": "wormate-io",
@@ -3750,7 +3750,7 @@
     "image": "/assets/upload/UCBGgames/wormate-io.png",
     "video": "",
     "description": "",
-    "groups": "io, snake"
+    "groups": "action, adventure"
   },
   {
     "slug": "wrestle-bros-io",
@@ -3759,7 +3759,7 @@
     "image": "/assets/upload/UCBGgames/wrestle-bros-io.png",
     "video": "",
     "description": "",
-    "groups": "io, fighting"
+    "groups": "action, adventure"
   },
   {
     "slug": "x-trial-racing",
@@ -3768,7 +3768,7 @@
     "image": "/assets/upload/UCBGgames/x-trial-racing.png",
     "video": "",
     "description": "",
-    "groups": "racing, bike"
+    "groups": "action, adventure"
   },
   {
     "slug": "yohoho-io",
@@ -3777,7 +3777,7 @@
     "image": "/assets/upload/UCBGgames/yohoho-io.png",
     "video": "",
     "description": "",
-    "groups": "io, pirate"
+    "groups": "action, adventure"
   },
   {
     "slug": "zombie-shooter-2d",
@@ -3786,7 +3786,7 @@
     "image": "/assets/upload/UCBGgames/zombie-shooter-2d.png",
     "video": "",
     "description": "",
-    "groups": "shooter, zombie"
+    "groups": "action, adventure"
   },
   {
     "slug": "zombocalypse-shooter",
@@ -3795,7 +3795,7 @@
     "image": "/assets/upload/UCBGgames/zombocalypse-shooter.png",
     "video": "",
     "description": "",
-    "groups": "shooter, zombie"
+    "groups": "action, adventure"
   },
   {
     "slug": "zombs-royale-io",
@@ -3804,7 +3804,7 @@
     "image": "/assets/upload/UCBGgames/zombs-royale-io.png",
     "video": "",
     "description": "",
-    "groups": "io, battle-royale"
+    "groups": "action, adventure"
   },
   {
     "slug": "zuck-vs-musk-techbro-beatdown",
@@ -3813,7 +3813,7 @@
     "image": "/assets/upload/UCBGgames/zuck-vs-musk-techbro-beatdown.png",
     "video": "",
     "description": "",
-    "groups": "fighting, satire"
+    "groups": "action, adventure"
   },
   {
     "slug": "18-wheeler-truck-parking-ez",
@@ -3822,7 +3822,7 @@
     "image": "/assets/upload/busqueda/18-wheeler-truck-parking-ez.png",
     "video": "",
     "description": "",
-    "groups": "simulation, driving"
+    "groups": "action, adventure"
   },
   {
     "slug": "18-wheeler-truck-parking-2",
@@ -3831,7 +3831,7 @@
     "image": "/assets/upload/busqueda/18-wheeler-truck-parking-2.png",
     "video": "",
     "description": "",
-    "groups": "simulation, driving"
+    "groups": "action, adventure"
   },
   {
     "slug": "18-wheeler-driving-sim",
@@ -3840,7 +3840,7 @@
     "image": "/assets/upload/busqueda/18-wheeler-driving-sim.png",
     "video": "",
     "description": "",
-    "groups": "simulation, driving"
+    "groups": "action, adventure"
   },
   {
     "slug": "18-wheeler-cargo-simulator",
@@ -3849,7 +3849,7 @@
     "image": "/assets/upload/busqueda/18-wheeler-cargo-simulator.png",
     "video": "",
     "description": "",
-    "groups": "simulation, driving"
+    "groups": "action, adventure"
   },
   {
     "slug": "18-wheeler-cargo-simulator-2",
@@ -3858,8 +3858,9 @@
     "image": "/assets/upload/busqueda/18-wheeler-cargo-simulator-2.png",
     "video": "",
     "description": "",
-    "groups": "simulation, driving"
+    "groups": "action, adventure"
   },
+
   {
     "slug": "a-small-world-cup",
     "url": "/game/a-small-world-cup.html",
@@ -3867,7 +3868,7 @@
     "image": "/assets/upload/busqueda/a-small-world-cup.png",
     "video": "",
     "description": "",
-    "groups": "soccer, sports"
+    "groups": "action, adventure"
   },
   {
     "slug": "amazing-rope-vice-spider-vegas",
@@ -3876,7 +3877,7 @@
     "image": "/assets/upload/busqueda/amazing-rope-vice-spider-vegas.png",
     "video": "",
     "description": "",
-    "groups": "physics, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "block-the-pig",
@@ -3885,7 +3886,7 @@
     "image": "/assets/upload/busqueda/block-the-pig.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, strategy"
+    "groups": "action, adventure"
   },
   {
     "slug": "blumgi-bloom",
@@ -3894,7 +3895,7 @@
     "image": "/assets/upload/busqueda/blumgi-bloom.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, platformer"
+    "groups": "action, adventure"
   },
   {
     "slug": "booblehead-soccer-royale",
@@ -3903,7 +3904,7 @@
     "image": "/assets/upload/busqueda/booblehead-soccer-royale.png",
     "video": "",
     "description": "",
-    "groups": "soccer, sports"
+    "groups": "action, adventure"
   },
   {
     "slug": "boxing-phsyics-2",
@@ -3912,7 +3913,7 @@
     "image": "/assets/upload/busqueda/boxing-phsyics-2.png",
     "video": "",
     "description": "",
-    "groups": "boxing, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "burrito-bison",
@@ -3921,7 +3922,7 @@
     "image": "/assets/upload/busqueda/burrito-bison.png",
     "video": "",
     "description": "",
-    "groups": "launcher, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "falling-fred",
@@ -3930,7 +3931,7 @@
     "image": "/assets/upload/busqueda/falling-fred.png",
     "video": "",
     "description": "",
-    "groups": "runner, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "flip-bottle",
@@ -3939,7 +3940,7 @@
     "image": "/assets/upload/busqueda/flip-bottle.png",
     "video": "",
     "description": "",
-    "groups": "physics, simulation"
+    "groups": "action, adventure"
   },
   {
     "slug": "fnaf-2",
@@ -3948,7 +3949,7 @@
     "image": "/assets/upload/busqueda/fnaf-2.png",
     "video": "",
     "description": "",
-    "groups": "horror, survival"
+    "groups": "action, adventure"
   },
   {
     "slug": "fred-running",
@@ -3957,7 +3958,7 @@
     "image": "/assets/upload/busqueda/fred-running.png",
     "video": "",
     "description": "",
-    "groups": "runner, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "free-kick-classic",
@@ -3966,7 +3967,7 @@
     "image": "/assets/upload/busqueda/free-kick-classic.png",
     "video": "",
     "description": "",
-    "groups": "soccer, sports"
+    "groups": "action, adventure"
   },
   {
     "slug": "funny-shooter-destroy-all",
@@ -3975,7 +3976,7 @@
     "image": "/assets/upload/busqueda/funny-shooter-destroy-all.png",
     "video": "",
     "description": "",
-    "groups": "shooter, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "geodash",
@@ -3984,7 +3985,7 @@
     "image": "/assets/upload/busqueda/geodash.png",
     "video": "",
     "description": "",
-    "groups": "platformer, runner"
+    "groups": "action, adventure"
   },
   {
     "slug": "geometry-dash-2",
@@ -3993,7 +3994,7 @@
     "image": "/assets/upload/busqueda/geometry-dash-2.png",
     "video": "",
     "description": "",
-    "groups": "platformer, rhythm"
+    "groups": "action, adventure"
   },
   {
     "slug": "hammer-2-reloaded",
@@ -4002,7 +4003,7 @@
     "image": "/assets/upload/busqueda/hammer-2-reloaded.png",
     "video": "",
     "description": "",
-    "groups": "fighting, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "hexbee-merger",
@@ -4011,7 +4012,7 @@
     "image": "/assets/upload/busqueda/hexbee-merger.png",
     "video": "",
     "description": "",
-    "groups": "merge, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "idle-restaurants-tycoon",
@@ -4020,7 +4021,7 @@
     "image": "/assets/upload/busqueda/idle-restaurants-tycoon.png",
     "video": "",
     "description": "",
-    "groups": "idle, restaurant"
+    "groups": "action, adventure"
   },
   {
     "slug": "jetpack-joyride-browser",
@@ -4029,7 +4030,7 @@
     "image": "/assets/upload/busqueda/jetpack-joyride-browser.png",
     "video": "",
     "description": "",
-    "groups": "runner, endless"
+    "groups": "action, adventure"
   },
   {
     "slug": "johnny-revenge",
@@ -4038,7 +4039,7 @@
     "image": "/assets/upload/busqueda/johnny-revenge.png",
     "video": "",
     "description": "",
-    "groups": "shooter, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "jungle-tower-defense",
@@ -4047,7 +4048,7 @@
     "image": "/assets/upload/busqueda/jungle-tower-defense.png",
     "video": "",
     "description": "",
-    "groups": "tower-defense, strategy"
+    "groups": "action, adventure"
   },
   {
     "slug": "knight-hero-adventure",
@@ -4056,7 +4057,7 @@
     "image": "/assets/upload/busqueda/knight-hero-adventure.png",
     "video": "",
     "description": "",
-    "groups": "rpg, adventure"
+    "groups": "action, adventure"
   },
   {
     "slug": "money-movers-3",
@@ -4065,7 +4066,7 @@
     "image": "/assets/upload/busqueda/money-movers-3.png",
     "video": "",
     "description": "",
-    "groups": "heist, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "money-rush",
@@ -4074,7 +4075,7 @@
     "image": "/assets/upload/busqueda/money-rush.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, physics"
+    "groups": "action, adventure"
   },
   {
     "slug": "moto-x3m-3-pool-party",
@@ -4083,7 +4084,7 @@
     "image": "/assets/upload/busqueda/moto-x3m-3-pool-party.png",
     "video": "",
     "description": "",
-    "groups": "racing, bike"
+    "groups": "action, adventure"
   },
   {
     "slug": "moto-x3m-6-spooky-land",
@@ -4092,7 +4093,7 @@
     "image": "/assets/upload/busqueda/moto-x3m-6-spooky-land.png",
     "video": "",
     "description": "",
-    "groups": "racing, bike"
+    "groups": "action, adventure"
   },
   {
     "slug": "moto-x3m-two",
@@ -4101,7 +4102,7 @@
     "image": "/assets/upload/busqueda/moto-x3m-two.png",
     "video": "",
     "description": "",
-    "groups": "racing, bike"
+    "groups": "action, adventure"
   },
   {
     "slug": "moto-x3m4-winter",
@@ -4110,7 +4111,7 @@
     "image": "/assets/upload/busqueda/moto-x3m4-winter.png",
     "video": "",
     "description": "",
-    "groups": "racing, bike"
+    "groups": "action, adventure"
   },
   {
     "slug": "noob-steve",
@@ -4119,7 +4120,7 @@
     "image": "/assets/upload/busqueda/noob-steve.png",
     "video": "",
     "description": "",
-    "groups": "parkour, platformer"
+    "groups": "action, adventure"
   },
   {
     "slug": "only-up",
@@ -4128,7 +4129,7 @@
     "image": "/assets/upload/busqueda/only-up.png",
     "video": "",
     "description": "",
-    "groups": "platformer, climbing"
+    "groups": "action, adventure"
   },
   {
     "slug": "ovo-3",
@@ -4137,7 +4138,7 @@
     "image": "/assets/upload/busqueda/ovo-3.png",
     "video": "",
     "description": "",
-    "groups": "platformer, parkour"
+    "groups": "action, adventure"
   },
   {
     "slug": "penalty-kick-online",
@@ -4146,7 +4147,7 @@
     "image": "/assets/upload/busqueda/penalty-kick-online.png",
     "video": "",
     "description": "",
-    "groups": "soccer, sports"
+    "groups": "action, adventure"
   },
   {
     "slug": "pixel-gun-apocalypse-2",
@@ -4155,7 +4156,7 @@
     "image": "/assets/upload/busqueda/pixel-gun-apocalypse-2.png",
     "video": "",
     "description": "",
-    "groups": "shooter, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "push-the-box",
@@ -4164,7 +4165,7 @@
     "image": "/assets/upload/busqueda/push-the-box.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, sokoban"
+    "groups": "action, adventure"
   },
   {
     "slug": "royale-dudes-io",
@@ -4173,7 +4174,7 @@
     "image": "/assets/upload/busqueda/royale-dudes-io.png",
     "video": "",
     "description": "",
-    "groups": "io, battle-royale"
+    "groups": "action, adventure"
   },
   {
     "slug": "sausage-flipping",
@@ -4182,7 +4183,7 @@
     "image": "/assets/upload/busqueda/sausage-flipping.png",
     "video": "",
     "description": "",
-    "groups": "physics, platformer"
+    "groups": "action, adventure"
   },
   {
     "slug": "scrap-metal-infernal",
@@ -4191,7 +4192,7 @@
     "image": "/assets/upload/busqueda/scrap-metal-infernal.png",
     "video": "",
     "description": "",
-    "groups": "racing, stunt"
+    "groups": "action, adventure"
   },
   {
     "slug": "shell-shockers",
@@ -4200,7 +4201,7 @@
     "image": "/assets/upload/busqueda/shell-shockers.png",
     "video": "",
     "description": "",
-    "groups": "shooter, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "slope-two-players-multiplayer",
@@ -4209,7 +4210,7 @@
     "image": "/assets/upload/busqueda/slope-two-players-multiplayer.png",
     "video": "",
     "description": "",
-    "groups": "racing, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "smash-karts",
@@ -4218,7 +4219,7 @@
     "image": "/assets/upload/busqueda/smash-karts.png",
     "video": "",
     "description": "",
-    "groups": "racing, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "snail-bob-5",
@@ -4227,7 +4228,7 @@
     "image": "/assets/upload/busqueda/snail-bob-5.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, adventure"
+    "groups": "action, adventure"
   },
   {
     "slug": "snail-bob-8",
@@ -4236,7 +4237,7 @@
     "image": "/assets/upload/busqueda/snail-bob-8.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, adventure"
+    "groups": "action, adventure"
   },
   {
     "slug": "sniper-shot",
@@ -4245,7 +4246,7 @@
     "image": "/assets/upload/busqueda/sniper-shot.png",
     "video": "",
     "description": "",
-    "groups": "shooter, sniper"
+    "groups": "action, adventure"
   },
   {
     "slug": "soccer-skills-euro",
@@ -4254,7 +4255,7 @@
     "image": "/assets/upload/busqueda/soccer-skills-euro.png",
     "video": "",
     "description": "",
-    "groups": "soccer, sports"
+    "groups": "action, adventure"
   },
   {
     "slug": "suika",
@@ -4263,7 +4264,7 @@
     "image": "/assets/upload/busqueda/suika.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, fruit-merger"
+    "groups": "action, adventure"
   },
   {
     "slug": "tetris",
@@ -4272,7 +4273,7 @@
     "image": "/assets/upload/busqueda/tetris.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, classic"
+    "groups": "action, adventure"
   },
   {
     "slug": "the-backrooms-3d",
@@ -4281,7 +4282,7 @@
     "image": "/assets/upload/busqueda/the-backrooms-3d.png",
     "video": "",
     "description": "",
-    "groups": "horror, exploration"
+    "groups": "action, adventure"
   },
   {
     "slug": "time-shooter-3",
@@ -4290,7 +4291,7 @@
     "image": "/assets/upload/busqueda/time-shooter-3.png",
     "video": "",
     "description": "",
-    "groups": "shooter, action"
+    "groups": "action, adventure"
   },
   {
     "slug": "tricksplit-io",
@@ -4299,7 +4300,7 @@
     "image": "/assets/upload/busqueda/tricksplit-io.png",
     "video": "",
     "description": "",
-    "groups": "io, puzzle"
+    "groups": "action, adventure"
   },
   {
     "slug": "ultimate-offroad-simulator",
@@ -4308,7 +4309,7 @@
     "image": "/assets/upload/busqueda/ultimate-offroad-simulator.png",
     "video": "",
     "description": "",
-    "groups": "racing, offroad"
+    "groups": "action, adventure"
   },
   {
     "slug": "uno",
@@ -4317,7 +4318,7 @@
     "image": "/assets/upload/busqueda/uno.png",
     "video": "",
     "description": "",
-    "groups": "card, multiplayer"
+    "groups": "action, adventure"
   },
   {
     "slug": "wheely-8-aliens",
@@ -4326,7 +4327,7 @@
     "image": "/assets/upload/busqueda/wheely-8-aliens.png",
     "video": "",
     "description": "",
-    "groups": "puzzle, point-and-click"
+    "groups": "action, adventure"
   },
   {
     "slug": "wordle-plus",
@@ -4335,6 +4336,6 @@
     "image": "/assets/upload/busqueda/wordle-plus.png",
     "video": "",
     "description": "",
-    "groups": "word, puzzle"
+    "groups": "action, adventure"
   }
 ]
