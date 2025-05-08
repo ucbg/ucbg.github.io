@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
     e.stopPropagation();
     const isVisible = container.style.display === "block";
     const rect = chatButton.getBoundingClientRect();
-    container.style.left = `${rect.left + window.scrollX}px`;
+    container.style.right = `10px`;
     container.style.top = `${rect.bottom + window.scrollY}px`;
     container.style.display = isVisible ? "none" : "block";
   });

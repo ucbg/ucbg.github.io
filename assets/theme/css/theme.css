@@ -24252,7 +24252,7 @@ strong {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 10px;
+  margin: 0 5px;
   font-size: 20px;
 }
 
@@ -24353,7 +24353,7 @@ strong {
 
 .categories-dropdown-btn:hover {
   background: orange;
-  color: black
+  color: black;
 }
 
 .categories-dropdown-btn svg {
@@ -24434,3 +24434,31 @@ strong {
 [data-theme="dark"] .category-item:hover {
   background: var(--bs-primary);
 }
+
+.theme-toggle img {
+  height: 40px;
+}
+
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  width: 200px;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px;
+  border-radius: 5px;
+  transition: opacity 0.3s;
+}
+
+.theme-toggle:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+

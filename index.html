@@ -16,9 +16,9 @@
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/Inter-Bold.woff2?v=3.19" crossorigin="anonymous" />
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/Inter-ExtraBold.woff2?v=3.19" crossorigin="anonymous" />
 
-    <link rel="preload" as="style" href="/assets/theme/css/theme.css?v=3.0.2" />
+    <link rel="preload" as="style" href="/assets/theme/css/theme.css?v=3.0.6" />
     <link rel="preload" as="script" href="/assets/theme/js/jquery.min.js?v=1.0.0" />
-    <link media="all" rel="stylesheet" href="/assets/theme/css/theme.css?v=3.0.2" type="text/css" />
+    <link media="all" rel="stylesheet" href="/assets/theme/css/theme.css?v=3.0.6" type="text/css" />
     <link rel="shortcut icon" href="/assets/static/favicon.svg?v=1.0.0" />
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
     <script src="/assets/js/load-games.js"></script>
@@ -160,7 +160,6 @@
                 </a>
               </div>
             </div>
-            <a href="javascript:void(0);" id="chat-button">Chat</a>
           </div>
 
           <form class="form-search w-xxl-300 w-xl-250 ms-xl-4 mb-3 mb-lg-0" action="/search.html" method="get" autocomplete="off">
@@ -191,51 +190,27 @@
                 <span class="moon-icon">🌙</span>
               </button>
             </li>
-            <li class="nav-item">Online Users: <span id="online-users">0</span></li>
+            <li class="nav-item">
+              <button class="theme-toggle" id="chat-button">
+                <span class=""><img src="/assets/icons/chat.svg" /></span>
+                <span class="tooltip">Chat</span>
+              </button>
+            </li>
+            <li>
+              <button class="theme-toggle" onclick="window.open('https://www.youtube.com/@unblocked-game', '_blank');">
+                <img src="/assets/icons/youtube.svg" alt="YouTube Icon" />
+                <span class="tooltip">Follow us to access the latest unblocked site.</span>
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="theme-toggle" style="width: 150px; border-radius: 10px">
+                <span class="sun-icon"><img src="/assets/icons/classroom-black.svg" /></span>
+                <span class="moon-icon"><img src="/assets/icons/classroom-white.svg" /></span>
+                &nbsp;<span id="online-users">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span class="tooltip">Online Players: Pretending to learn, but actually leveling up.</span>
+              </button>
+            </li>
           </ul>
-          <script>
-            document.addEventListener("DOMContentLoaded", () => {
-              const onlineUsersElement = document.getElementById("online-users");
-
-              function getOnlineUsers() {
-                const now = new Date();
-                const currentHour = now.getHours();
-
-                // Saat aralıklarına göre kullanıcı sayıları
-                let users;
-                if (currentHour >= 7 && currentHour < 15) {
-                  // Sabah 7 ile öğlen 15 arasında
-                  const start = 5548;
-                  const end = 250080;
-                  const progress = (currentHour - 7) / (15 - 7);
-                  users = Math.round(start + progress * (end - start));
-                } else if (currentHour >= 15 && currentHour < 24) {
-                  // Öğlen 15 ile gece 24 arasında
-                  const start = 250080;
-                  const end = 10080;
-                  const progress = (currentHour - 15) / (24 - 15);
-                  users = Math.round(start - progress * (start - end));
-                } else {
-                  // Gece 24 ile sabah 7 arasında
-                  const start = 10080;
-                  const end = 5564;
-                  const progress = currentHour / 7;
-                  users = Math.round(start - progress * (start - end));
-                }
-
-                return users;
-              }
-
-              function updateOnlineUsers() {
-                const users = getOnlineUsers();
-                onlineUsersElement.textContent = users.toLocaleString(); // Sayıyı formatla
-              }
-
-              // Kullanıcı sayısını her dakika güncelle
-              updateOnlineUsers();
-              setInterval(updateOnlineUsers, 60000); // 60 saniyede bir çalıştır
-            });
-          </script>
         </div>
       </div>
     </nav>
@@ -1783,9 +1758,10 @@
     <script src="/assets/js/adsense_ucbg_v1.js"></script>
     <script src="/assets/js/fullscreen.js?v=2.0.0"></script>
     <script src="/assets/js/video_on_card.js"></script>
-    <script src="/assets/js/ucbg_chat_v3.js"></script>
+    <script src="/assets/js/ucbg_chat_v3.js?v=2.0.0"></script>
     <script src="/assets/js/live-search.js"></script>
     <script src="/assets/js/categories_menu.js"></script>
+    <script src="/assets/js/users.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function (event) {
         document.getElementById("search").focus();
