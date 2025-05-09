@@ -276,7 +276,7 @@
     "image": "/assets/upload/UCBGgames/awesome-tanks-2.png",
     "video": "",
     "description": "",
-    "groups": "shooter, tank"
+    "groups": "shooter, tank, bonus"
   },
   {
     "slug": "backflipper",
