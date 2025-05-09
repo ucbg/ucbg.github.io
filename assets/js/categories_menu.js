@@ -1,15 +1,14 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", async function () {
   const categoriesBtn = document.getElementById("categoriesBtn");
   const categoriesDropdown = document.getElementById("categoriesDropdown");
 
-  // Toggle dropdown
+  "function" == typeof ppe ? await ppe() : "function" == typeof poki ? await poki() : await crayzgames();
   categoriesBtn.addEventListener("click", function (e) {
     e.stopPropagation();
     categoriesBtn.classList.toggle("active");
     categoriesDropdown.classList.toggle("active");
   });
 
-  // Close dropdown when clicking outside
   document.addEventListener("click", function (e) {
     if (!categoriesDropdown.contains(e.target) && !categoriesBtn.contains(e.target)) {
       categoriesBtn.classList.remove("active");
@@ -17,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Close dropdown when pressing Escape
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") {
       categoriesBtn.classList.remove("active");

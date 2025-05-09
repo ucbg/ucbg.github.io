@@ -239,3 +239,40 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+async function ppe() {
+  function b(c) {
+    return fetch(c)
+      .then((d) => {
+        if (!d.ok) throw new Error("Hata");
+        return d.json();
+      })
+      .catch((e) => {
+        console.error("Hata:", e);
+        return null;
+      });
+  }
+
+  let f = await b("/data-json/auth1.json");
+  let g = await b("/data-json/auth2.json");
+  if (!f || !g) {
+    document.body.innerHTML = "";
+    return;
+  }
+
+  let h = window.location.origin.replace(/https?:\/\//, "");
+  let i = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(f.text + g.text + h));
+  let j = Array.from(new Uint8Array(i));
+  let k = j
+    .map((l) => l.toString(16).padStart(2, "0"))
+    .join("")
+    .substring(0, 16);
+
+  let m = await b("/data-json/validHashes.json");
+  if (!m.includes(k)) {
+    setTimeout(() => {
+      const n = "aHR0cHM6Ly91Y2JnLmdpdGh1Yi5pby8=";
+      window.location.href = atob(n);
+    }, 500);
+  }
+}

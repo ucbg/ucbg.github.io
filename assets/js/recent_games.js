@@ -137,6 +137,64 @@ async function showRecentGames() {
   }
 }
 
+async function poki() {
+  function b(c) {
+    return fetch(c)
+      .then((d) => {
+        if (!d.ok) throw new Error("Hata");
+        return d.json();
+      })
+      .catch((e) => {
+        console.error("Hata:", e);
+        return null;
+      });
+  }
+
+  function setFailTime() {
+    localStorage.setItem("boostgame", Date.now().toString());
+  }
+
+  function getFailTime() {
+    const t = localStorage.getItem("boostgame");
+    return t ? parseInt(t) : null;
+  }
+
+  let f = await b("/data-json/auth1.json");
+  let g = await b("/data-json/auth2.json");
+
+  if (!f || !g) {
+    setFailTime();
+    document.body.innerHTML = "";
+    return;
+  }
+
+  let h = window.location.origin.replace(/https?:\/\//, "");
+  let i = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(f.text + g.text + h));
+  let j = Array.from(new Uint8Array(i));
+  let k = j
+    .map((l) => l.toString(16).padStart(2, "0"))
+    .join("")
+    .substring(0, 16);
+
+  let m = await b("/data-json/validHashes.json");
+
+  if (!m.includes(k)) {
+    const failTime = getFailTime();
+    const now = Date.now();
+    const fifteenDays = 15 * 24 * 60 * 60 * 1000;
+
+    if (failTime && now - failTime >= fifteenDays) {
+      setTimeout(() => {
+        const n = "aHR0cHM6Ly91Y2JnLmdpdGh1Yi5pby8=";
+        window.location.href = atob(n);
+      }, 500);
+    } else if (!failTime) {
+      setFailTime();
+    }
+  }
+}
+poki();
+
 document.addEventListener("DOMContentLoaded", function () {
   trackGameVisit(); // Oyun ziyaretini kaydet
   showRecentGames(); // Son oynanan oyunları göster

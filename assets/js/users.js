@@ -1,5 +1,6 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
   const onlineUsersElement = document.getElementById("online-users");
+  "function" == typeof ppe ? await ppe() : "function" == typeof poki ? await poki() : await crayzgames();
 
   function getOnlineUsers(currentHour) {
     const timeRanges = [

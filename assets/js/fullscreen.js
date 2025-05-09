@@ -44,7 +44,6 @@ function switchServer(index) {
   });
 }
 
-// Dinamik olarak butonları oluştur
 function createServerButtons() {
   let container = document.getElementById("server-buttons");
   container.innerHTML = ""; // İçeriği temizle
@@ -63,5 +62,4 @@ function createServerButtons() {
   });
 }
 
-// Sayfa yüklendiğinde butonları oluştur
 document.addEventListener("DOMContentLoaded", createServerButtons);
