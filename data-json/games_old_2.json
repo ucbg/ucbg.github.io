@@ -5,8 +5,8 @@
     "title": "10 MINUTES TILL DAWN",
     "image": "/assets/upload/UCBGgames/10-minutes-till-dawn.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Survive a relentless 10-minute onslaught of monsters in this fast-paced action roguelike. Collect upgrades and fend off waves of enemies before dawn arrives.",
+    "groups": "survival, shooter, roguelike"
   },
   {
     "slug": "1010-color-match",
@@ -14,8 +14,8 @@
     "title": "1010 COLOR MATCH",
     "image": "/assets/upload/UCBGgames/1010-color-match.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Addictive tile-matching puzzle game with colorful blocks. Strategize to clear the board in this simple yet challenging brain teaser.",
+    "groups": "puzzle, strategy"
   },
   {
     "slug": "1v1-lol",
@@ -23,8 +23,8 @@
     "title": "1v1 LOL",
     "image": "/assets/upload/UCBGgames/1v1-lol.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Competitive 3D shooter with building mechanics. Battle opponents in fast-paced 1v1 matches that test aim, strategy, and quick edits.",
+    "groups": "battle-royale, shooter, multiplayer"
   },
   {
     "slug": "2048-fusion",
@@ -32,8 +32,8 @@
     "title": "2048 FUSION",
     "image": "/assets/upload/UCBGgames/2048-fusion.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Innovative twist on the classic 2048 game. Merge matching numbers with new power-ups and strategic gameplay elements.",
+    "groups": "puzzle, strategy"
   },
   {
     "slug": "2048",
@@ -41,8 +41,8 @@
     "title": "2048",
     "image": "/assets/upload/UCBGgames/2048.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "The iconic sliding puzzle game where you combine tiles to reach 2048. Simple rules, endless strategy - how high can you score?",
+    "groups": "puzzle, strategy"
   },
   {
     "slug": "3-pandas-in-japan",
@@ -50,8 +50,8 @@
     "title": "3 PANDAS IN JAPAN",
     "image": "/assets/upload/UCBGgames/3-pandas-in-japan.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Charming point-and-click adventure featuring three pandas exploring Japan. Solve puzzles and uncover secrets in this cute story-driven game.",
+    "groups": "puzzle, adventure"
   },
   {
     "slug": "3d-bowling",
@@ -59,8 +59,8 @@
     "title": "3D BOWLING",
     "image": "/assets/upload/UCBGgames/3d-bowling.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Realistic 3D bowling simulation with physics-based gameplay. Perfect your strike in this authentic alley experience.",
+    "groups": "sports, simulation"
   },
   {
     "slug": "3d-free-kick",
@@ -68,8 +68,8 @@
     "title": "3D FREE KICK",
     "image": "/assets/upload/UCBGgames/3d-free-kick.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Test your soccer skills in this 3D free kick challenge. Curve the ball around walls and beat the keeper with precise shots.",
+    "groups": "sports, soccer"
   },
   {
     "slug": "99-balls",
@@ -77,8 +77,8 @@
     "title": "99 BALLS",
     "image": "/assets/upload/UCBGgames/99-balls.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Addictive bubble shooter with 99 challenging levels. Pop colorful balls by matching colors in this physics-based puzzle game.",
+    "groups": "puzzle, physics"
   },
   {
     "slug": "a-dance-of-fire-and-ice",
@@ -86,8 +86,8 @@
     "title": "A Dance of Fire and Ice",
     "image": "/assets/upload/UCBGgames/a-dance-of-fire-and-ice.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Rhythm game where you control two orbiting planets to the beat. Features mesmerizing music and increasingly complex patterns.",
+    "groups": "rhythm, music"
   },
   {
     "slug": "achievement-unlocked",
@@ -95,8 +95,8 @@
     "title": "ACHIEVEMENT UNLOCKED",
     "image": "/assets/upload/UCBGgames/achievement-unlocked.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Meta game that parodies achievement systems. Complete absurd objectives in this humorous take on game design.",
+    "groups": "platformer, comedy"
   },
   {
     "slug": "adam-and-eve-5-part-2",
@@ -104,8 +104,8 @@
     "title": "ADAM AND EVE 5 PART 2",
     "image": "/assets/upload/UCBGgames/adam-and-eve-5-part-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Continuation of the popular puzzle series. Help Adam reunite with Eve through clever problem-solving and item combinations.",
+    "groups": "puzzle, adventure"
   },
   {
     "slug": "adam-and-eve-5-part-one",
@@ -113,8 +113,8 @@
     "title": "ADAM AND EVE 5 PART ONE",
     "image": "/assets/upload/UCBGgames/adam-and-eve-5-part-one.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "First part of the fifth installment in the Adam and Eve puzzle series. Navigate prehistoric challenges to find your partner.",
+    "groups": "puzzle, adventure"
   },
   {
     "slug": "adam-and-eve-6",
@@ -122,8 +122,8 @@
     "title": "ADAM AND EVE 6",
     "image": "/assets/upload/UCBGgames/adam-and-eve-6.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Latest chapter in the beloved puzzle adventure series. New environments, creative challenges, and charming visuals.",
+    "groups": "puzzle, adventure"
   },
   {
     "slug": "adam-and-eve-7",
@@ -131,8 +131,8 @@
     "title": "ADAM AND EVE 7",
     "image": "/assets/upload/UCBGgames/adam-and-eve-7.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Brand new installment of the classic puzzle franchise. Innovative mechanics continue the prehistoric love story.",
+    "groups": "puzzle, adventure"
   },
   {
     "slug": "4X4-drive-offroad",
@@ -140,8 +140,8 @@
     "title": "4X4 DRIVE OFFROAD",
     "image": "/assets/upload/UCBGgames/4X4-DRIVE-OFFROAD.png",
     "video": "",
-    "description": "",
-    "groups": "action, race"
+    "description": "Off-road driving simulator with realistic physics. Conquer challenging terrain in powerful 4x4 vehicles.",
+    "groups": "racing, simulation"
   },
   {
     "slug": "adventure-drivers",
@@ -149,8 +149,8 @@
     "title": "ADVENTURE DRIVERS",
     "image": "/assets/upload/UCBGgames/adventure-drivers.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Arcade racing game with stunt elements. Perform flips and tricks while racing through dynamic courses.",
+    "groups": "racing, adventure"
   },
   {
     "slug": "agarpaper-io",
@@ -158,8 +158,8 @@
     "title": "AGARPAPER io",
     "image": "/assets/upload/UCBGgames/agarpaper-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Unique .io game combining papercraft aesthetics with competitive gameplay. Grow your creation while outmaneuvering opponents.",
+    "groups": "io, multiplayer"
   },
   {
     "slug": "alien-hominid",
@@ -167,8 +167,8 @@
     "title": "ALIEN HOMINID",
     "image": "/assets/upload/UCBGgames/alien-hominid.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Classic run-and-gun shooter featuring a yellow alien battling government agents. Packed with humor and intense action.",
+    "groups": "shooter, platformer"
   },
   {
     "slug": "amazing-strange-rope-police",
@@ -176,8 +176,8 @@
     "title": "AMAZING STRANGE ROPE POLICE",
     "image": "/assets/upload/UCBGgames/amazing-strange-rope-police.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Bizarre physics-based game where you play as a rope-wielding officer. Unique mechanics create hilarious situations.",
+    "groups": "physics, puzzle"
   },
   {
     "slug": "amidst-the-sky",
@@ -185,8 +185,8 @@
     "title": "AMIDST THE SKY",
     "image": "/assets/upload/UCBGgames/amidst-the-sky.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Serene floating island exploration game. Build and expand your sky kingdom while discovering secrets in the clouds.",
+    "groups": "platformer, adventure"
   },
   {
     "slug": "amogus-io",
@@ -194,8 +194,8 @@
     "title": "AMOGUS io",
     "image": "/assets/upload/UCBGgames/amogus-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Among Us-inspired .io game with social deduction elements. Complete tasks while identifying impostors in real-time.",
+    "groups": "io, multiplayer, social-deduction"
   },
   {
     "slug": "among-us",
@@ -203,8 +203,8 @@
     "title": "AMONG US",
     "image": "/assets/upload/UCBGgames/among-us.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Popular multiplayer social deduction game. Work together on a spaceship while uncovering the impostors among the crew.",
+    "groups": "social-deduction, multiplayer"
   },
   {
     "slug": "angry-gran-run",
@@ -212,8 +212,8 @@
     "title": "ANGRY GRAN RUN",
     "image": "/assets/upload/UCBGgames/angry-gran-run.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Hilarious endless runner featuring an angry grandma. Dodge obstacles and collect coins in this mobile-style browser game.",
+    "groups": "runner, endless"
   },
   {
     "slug": "apple-shooter",
@@ -221,8 +221,8 @@
     "title": "APPLE SHOOTER",
     "image": "/assets/upload/UCBGgames/apple-shooter.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Physics-based archery game. Shoot apples with precise angle and power calculations to hit targets.",
+    "groups": "shooter, physics"
   },
   {
     "slug": "aquapark-io",
@@ -230,8 +230,8 @@
     "title": "AQUAPARK io",
     "image": "/assets/upload/UCBGgames/aquapark-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Multiplayer water slide racing game. Compete against others down colorful, twisting slides in this fun .io experience.",
+    "groups": "io, multiplayer, racing"
   },
   {
     "slug": "arcane-archer",
@@ -239,8 +239,8 @@
     "title": "ARCANE ARCHER",
     "image": "/assets/upload/UCBGgames/arcane-archer.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Fantasy archery game with magical abilities. Upgrade your bow and master special shots through challenging levels.",
+    "groups": "archery, physics"
   },
   {
     "slug": "archery-world-tour",
@@ -248,8 +248,8 @@
     "title": "ARCHERY WORLD TOUR",
     "image": "/assets/upload/UCBGgames/archery-world-tour.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Global archery competition simulator. Travel to famous locations and prove your skills against international opponents.",
+    "groups": "archery, sports"
   },
   {
     "slug": "arras-io",
@@ -257,8 +257,8 @@
     "title": "ARRAS io",
     "image": "/assets/upload/UCBGgames/arras-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Advanced diep.io-style multiplayer tank game. Customize your vehicle and dominate the battlefield with various upgrade paths.",
+    "groups": "io, shooter, multiplayer"
   },
   {
     "slug": "aspiring-artist",
@@ -266,8 +266,8 @@
     "title": "ASPIRING ARTIST",
     "image": "/assets/upload/UCBGgames/aspiring-artist.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Creative drawing game where you complete art challenges. Progress from beginner to master artist through various exercises.",
+    "groups": "art, simulation"
   },
   {
     "slug": "awesome-tanks-2",
@@ -275,8 +275,8 @@
     "title": "AWESOME TANKS 2",
     "image": "/assets/upload/UCBGgames/awesome-tanks-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Action-packed tank battle sequel. Destroy enemies across diverse maps with upgraded weapons and armor.",
+    "groups": "shooter, tank, bonus"
   },
   {
     "slug": "backflipper",
@@ -284,8 +284,8 @@
     "title": "Backflipper",
     "image": "/assets/upload/UCBGgames/backflipper.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Physics-based stunt game. Perform perfect backflips with realistic momentum and landing mechanics.",
+    "groups": "physics, stunt"
   },
   {
     "slug": "backrooms-2d",
@@ -293,8 +293,8 @@
     "title": "BACKROOMS 2D",
     "image": "/assets/upload/UCBGgames/backrooms-2d.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "2D horror exploration in the infamous Backrooms. Escape the endless yellow corridors while avoiding entities.",
+    "groups": "horror, adventure"
   },
   {
     "slug": "backrooms",
@@ -302,8 +302,8 @@
     "title": "BACKROOMS",
     "image": "/assets/upload/UCBGgames/backrooms.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "First-person horror experience in the liminal Backrooms space. Atmospheric exploration with psychological terror elements.",
+    "groups": "horror, adventure"
   },
   {
     "slug": "bacon-may-die",
@@ -311,8 +311,8 @@
     "title": "BACON MAY DIE",
     "image": "/assets/upload/UCBGgames/bacon-may-die.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Wacky action game starring a bacon strip hero. Fight through absurd levels with exaggerated combat mechanics.",
+    "groups": "platformer, action"
   },
   {
     "slug": "bad-egg-io",
@@ -320,8 +320,8 @@
     "title": "BAD EGG io",
     "image": "/assets/upload/UCBGgames/bad-egg-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Multiplayer .io game where you play as a rolling egg. Bump others off platforms while growing larger.",
+    "groups": "io, multiplayer"
   },
   {
     "slug": "bad-ice-cream-2",
@@ -329,8 +329,8 @@
     "title": "BAD ICE CREAM 2",
     "image": "/assets/upload/UCBGgames/bad-ice-cream-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Sequel to the popular cooperative puzzle game. Team up to carve ice paths and collect fruit while avoiding enemies.",
+    "groups": "puzzle, maze"
   },
   {
     "slug": "bad-ice-cream-3",
@@ -338,8 +338,8 @@
     "title": "BAD ICE CREAM 3",
     "image": "/assets/upload/UCBGgames/bad-ice-cream-3.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Latest installment of the ice-carving puzzle series. New levels, power-ups, and cooperative gameplay challenges.",
+    "groups": "puzzle, maze"
   },
   {
     "slug": "baldis-basics-field-trip",
@@ -347,8 +347,8 @@
     "title": "BALDI'S BASICS FIELD TRIP",
     "image": "/assets/upload/UCBGgames/baldis-basics-field-trip.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Expanded version of the surreal horror education game. Collect notebooks while escaping Baldi on a school trip.",
+    "groups": "horror, puzzle"
   },
   {
     "slug": "baldis-basics",
@@ -356,8 +356,8 @@
     "title": "BALDI'S BASICS",
     "image": "/assets/upload/UCBGgames/baldis-basics.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Surreal horror parody of 90s educational games. Solve math problems while avoiding the terrifying teacher Baldi.",
+    "groups": "horror, puzzle"
   },
   {
     "slug": "ball-sort-halloween",
@@ -365,8 +365,8 @@
     "title": "BALL SORT HALLOWEEN",
     "image": "/assets/upload/UCBGgames/ball-sort-halloween.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Spooky-themed color sorting puzzle. Organize colored balls into matching tubes with Halloween-inspired visuals.",
+    "groups": "puzzle, sorting"
   },
   {
     "slug": "ball-sort-soccer",
@@ -374,8 +374,8 @@
     "title": "BALL SORT SOCCER",
     "image": "/assets/upload/UCBGgames/ball-sort-soccer.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Sports-themed ball sorting challenge. Arrange soccer balls by color in this logical puzzle game.",
+    "groups": "puzzle, sorting"
   },
   {
     "slug": "ballistic",
@@ -383,8 +383,8 @@
     "title": "BALLISTIC",
     "image": "/assets/upload/UCBGgames/ballistic.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Physics-based projectile game. Calculate angles and power to hit targets across challenging obstacle courses.",
+    "groups": "physics, puzzle"
   },
   {
     "slug": "basket-and-ball",
@@ -392,8 +392,8 @@
     "title": "BASKET AND BALL",
     "image": "/assets/upload/UCBGgames/basket-and-ball.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Simple basketball shooting game. Time your releases perfectly to score from various positions on the court.",
+    "groups": "basketball, sports"
   },
   {
     "slug": "basket-bros-io",
@@ -401,8 +401,8 @@
     "title": "BASKET BROS io",
     "image": "/assets/upload/UCBGgames/basket-bros-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Multiplayer basketball .io game. Compete in real-time matches with simple controls and competitive gameplay.",
+    "groups": "io, basketball, sports"
   },
   {
     "slug": "basket-random",
@@ -410,8 +410,8 @@
     "title": "BASKET RANDOM",
     "image": "/assets/upload/UCBGgames/basket-random.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Wacky basketball game with unpredictable elements. Random modifiers make each match hilariously unpredictable.",
+    "groups": "basketball, sports"
   },
   {
     "slug": "basketball-legends",
@@ -419,8 +419,8 @@
     "title": "BASKETBALL LEGENDS",
     "image": "/assets/upload/UCBGgames/basketball-legends.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Arcade basketball game featuring legendary players. Fast-paced 2v2 matches with special abilities and dunks.",
+    "groups": "basketball, sports"
   },
   {
     "slug": "basketball-stars",
@@ -428,8 +428,8 @@
     "title": "BASKETBALL STARS",
     "image": "/assets/upload/UCBGgames/basketball-stars.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Competitive one-on-one basketball game. Master dribble moves, shots, and blocks to dominate opponents.",
+    "groups": "basketball, sports"
   },
   {
     "slug": "battledudes-io",
@@ -437,8 +437,8 @@
     "title": "BATTLEDUDES io",
     "image": "/assets/upload/UCBGgames/battledudes-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Multiplayer shooter with customizable characters. Various game modes and weapons in this action-packed .io game.",
+    "groups": "io, shooter, multiplayer"
   },
   {
     "slug": "betrayal-io",
@@ -446,8 +446,8 @@
     "title": "BETRAYAL io",
     "image": "/assets/upload/UCBGgames/betrayal-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Social deduction .io game. Work together while watching for traitors in this multiplayer survival challenge.",
+    "groups": "io, multiplayer, social-deduction"
   },
   {
     "slug": "big-tower-tiny-square",
@@ -455,8 +455,8 @@
     "title": "Big Tower Tiny Square",
     "image": "/assets/upload/UCBGgames/big-tower-tiny-square.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Precision platformer with minimalist design. Navigate deadly traps as a small square climbing an enormous tower.",
+    "groups": "platformer, puzzle"
   },
   {
     "slug": "biker-street",
@@ -464,8 +464,8 @@
     "title": "BIKER STREET",
     "image": "/assets/upload/UCBGgames/biker-street.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Motorcycle racing through urban environments. Perform stunts and avoid traffic in this arcade-style racer.",
+    "groups": "racing, bike"
   },
   {
     "slug": "bitlife",
@@ -473,8 +473,8 @@
     "title": "BITLIFE",
     "image": "/assets/upload/UCBGgames/bitlife.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Life simulation text game. Make choices that shape your character's entire lifespan in this addictive simulator.",
+    "groups": "life-simulation, text-based"
   },
   {
     "slug": "block-tanks",
@@ -482,8 +482,8 @@
     "title": "BLOCK TANKS",
     "image": "/assets/upload/UCBGgames/block-tanks.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Multiplayer tank battle with blocky graphics. Customize your tank and compete in various battle modes.",
+    "groups": "shooter, tank"
   },
   {
     "slug": "block-world",
@@ -491,8 +491,8 @@
     "title": "BLOCK WORLD",
     "image": "/assets/upload/UCBGgames/block-world.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Creative sandbox building game. Construct anything imaginable with colorful blocks in this open-ended world.",
+    "groups": "sandbox, building"
   },
   {
     "slug": "blockpost",
@@ -500,8 +500,8 @@
     "title": "Blockpost",
     "image": "/assets/upload/UCBGgames/blockpost.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "First-person shooter with blocky aesthetics. Various weapons and maps in this competitive multiplayer experience.",
+    "groups": "shooter, fps"
   },
   {
     "slug": "blocky-snakes",
@@ -509,8 +509,8 @@
     "title": "BLOCKY SNAKES",
     "image": "/assets/upload/UCBGgames/blocky-snakes.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Modern take on the classic snake game. Colorful 3D graphics with multiplayer competition elements.",
+    "groups": "io, snake"
   },
   {
     "slug": "bloomgi-bloom",
@@ -518,8 +518,8 @@
     "title": "BLOOMGI BLOOM",
     "image": "/assets/upload/UCBGgames/bloomgi-bloom.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Colorful puzzle game about growing flowers. Match colors to make your garden bloom in this relaxing challenge.",
+    "groups": "puzzle, platformer"
   },
   {
     "slug": "bloons-td-2",
@@ -527,8 +527,8 @@
     "title": "BLOONS TD 2",
     "image": "/assets/upload/UCBGgames/bloons-td-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Tower defense sequel featuring monkeys vs balloons. Strategic placement and upgrades are key to popping all bloons.",
+    "groups": "tower-defense, strategy"
   },
   {
     "slug": "bloons-td4",
@@ -536,8 +536,8 @@
     "title": "BLOONS TD4",
     "image": "/assets/upload/UCBGgames/bloons-td4.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Classic tower defense installment. More monkeys, more tracks, and more balloon-popping strategic action.",
+    "groups": "tower-defense, strategy"
   },
   {
     "slug": "bloxd-io",
@@ -545,8 +545,8 @@
     "title": "BLOXD io",
     "image": "/assets/upload/UCBGgames/bloxd-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Multiplayer block-building .io game. Collaborate or compete in this voxel-based sandbox world.",
+    "groups": "io, sandbox"
   },
   {
     "slug": "bloxorz",
@@ -554,8 +554,8 @@
     "title": "BLOXORZ",
     "image": "/assets/upload/UCBGgames/bloxorz.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Iconic 3D block puzzle game. Roll your rectangular block to fit it into the designated hole through precise movements.",
+    "groups": "puzzle, physics"
   },
   {
     "slug": "blumgi-rocket",
@@ -563,8 +563,8 @@
     "title": "BLUMGI ROCKET",
     "image": "/assets/upload/UCBGgames/blumgi-rocket.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Physics-based rocket navigation game. Guide your unstable rocket through obstacle courses with careful boosts.",
+    "groups": "puzzle, physics"
   },
   {
     "slug": "blumgi-slime",
@@ -572,8 +572,8 @@
     "title": "BLUMGI SLIME",
     "image": "/assets/upload/UCBGgames/blumgi-slime.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Adorable slime platformer. Stretch, bounce, and ooze your way through challenging levels.",
+    "groups": "puzzle, physics"
   },
   {
     "slug": "bob-the-robber-2",
@@ -581,8 +581,8 @@
     "title": "BOB THE ROBBER 2",
     "image": "/assets/upload/UCBGgames/bob-the-robber-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Stealth puzzle sequel. Help Bob sneak past guards and security systems to pull off perfect heists.",
+    "groups": "stealth, puzzle"
   },
   {
     "slug": "booblehead-soccer",
@@ -590,8 +590,8 @@
     "title": "BOOBLEHEAD SOCCER",
     "image": "/assets/upload/UCBGgames/booblehead-soccer.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Hilarious soccer game with bobblehead physics. Wobbly characters create unpredictable and funny matches.",
+    "groups": "soccer, sports"
   },
   {
     "slug": "bottle-flip-3d",
@@ -599,8 +599,8 @@
     "title": "Bottle Flip 3D",
     "image": "/assets/upload/UCBGgames/bottle-flip-3d.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Satisfying bottle flipping simulator. Time your tosses perfectly to land bottles on various surfaces.",
+    "groups": "physics, simulation"
   },
   {
     "slug": "bouncy-woods",
@@ -608,8 +608,8 @@
     "title": "BOUNCY WOODS",
     "image": "/assets/upload/UCBGgames/bouncy-woods.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Colorful platformer with bouncy physics. Jump through vibrant forest levels with springy movement mechanics.",
+    "groups": "platformer, runner"
   },
   {
     "slug": "boxing-physics-2",
@@ -617,8 +617,8 @@
     "title": "BOXING PHYSICS 2",
     "image": "/assets/upload/UCBGgames/boxing-physics-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Ragdoll boxing sequel with exaggerated physics. Hilarious knockouts and over-the-top punch effects.",
+    "groups": "boxing, physics"
   },
   {
     "slug": "boxing-random",
@@ -626,8 +626,8 @@
     "title": "BOXING RANDOM",
     "image": "/assets/upload/UCBGgames/boxing-random.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Wacky boxing game with random modifiers. Each match introduces unpredictable elements that change gameplay.",
+    "groups": "boxing, sports"
   },
   {
     "slug": "braains-io",
@@ -635,8 +635,8 @@
     "title": "BRAAINS io",
     "image": "/assets/upload/UCBGgames/braains-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Zombie-themed multiplayer .io game. Infect humans or survive the outbreak in this social deduction battle.",
+    "groups": "io, zombie, multiplayer"
   },
   {
     "slug": "breaking-the-bank",
@@ -644,8 +644,8 @@
     "title": "BREAKING THE BANK",
     "image": "/assets/upload/UCBGgames/breaking-the-bank.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Heist puzzle game. Plan perfect robberies by solving security puzzles and avoiding detection.",
+    "groups": "stealth, heist"
   },
   {
     "slug": "browserfps-com",
@@ -653,8 +653,8 @@
     "title": "BROWSERFPS com",
     "image": "/assets/upload/UCBGgames/browserfps-com.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "First-person shooter running directly in browser. Fast-paced multiplayer action with various weapons and maps.",
+    "groups": "shooter, fps"
   },
   {
     "slug": "bubble-pop-adventures",
@@ -662,8 +662,8 @@
     "title": "BUBBLE POP ADVENTURES",
     "image": "/assets/upload/UCBGgames/bubble-pop-adventures.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Colorful bubble shooter with adventure elements. Travel through levels popping matching bubbles with strategic shots.",
+    "groups": "puzzle, bubble-shooter"
   },
   {
     "slug": "bullet-force",
@@ -671,8 +671,8 @@
     "title": "Bullet Force",
     "image": "/assets/upload/UCBGgames/bullet-force.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Advanced browser FPS with modern shooter mechanics. Customizable loadouts and competitive multiplayer matches.",
+    "groups": "shooter, fps"
   },
   {
     "slug": "bullet-party-2",
@@ -680,8 +680,8 @@
     "title": "BULLET PARTY 2",
     "image": "/assets/upload/UCBGgames/bullet-party-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Chaotic multiplayer shooter sequel. Fast-paced battles with various weapons and power-ups.",
+    "groups": "shooter, fps"
   },
   {
     "slug": "burger-clicker",
@@ -689,8 +689,8 @@
     "title": "BURGER CLICKER",
     "image": "/assets/upload/UCBGgames/burger-clicker.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Addictive idle clicker game. Build your burger empire by clicking and upgrading your fast food chain.",
+    "groups": "clicker, idle"
   },
   {
     "slug": "burrito-bison-launcha-libre",
@@ -698,8 +698,8 @@
     "title": "Burrito Bison Launcha Libre",
     "image": "/assets/upload/UCBGgames/burrito-bison-launcha-libre.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Wacky launch game featuring a wrestling bison. Smash through candy lands with satisfying physics and upgrades.",
+    "groups": "launcher, physics"
   },
   {
     "slug": "candy-crush-saga",
@@ -707,8 +707,8 @@
     "title": "CANDY CRUSH SAGA",
     "image": "/assets/upload/UCBGgames/candy-crush-saga.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Iconic match-3 puzzle game. Swap colorful candies to solve challenging levels in this classic mobile experience.",
+    "groups": "puzzle, match-3"
   },
   {
     "slug": "cannon-basketball-4",
@@ -716,8 +716,8 @@
     "title": "CANNON BASKETBALL 4",
     "image": "/assets/upload/UCBGgames/cannon-basketball-4.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Physics-based basketball sequel. Launch players from cannons for ridiculous dunks and trick shots.",
+    "groups": "basketball, physics"
   },
   {
     "slug": "car-rush",
@@ -725,8 +725,8 @@
     "title": "CAR RUSH",
     "image": "/assets/upload/UCBGgames/car-rush.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "High-speed traffic dodging game. Swerve through busy highways at breakneck speeds.",
+    "groups": "racing, driving"
   },
   {
     "slug": "cars-simulator",
@@ -734,8 +734,8 @@
     "title": "CARS SIMULATOR",
     "image": "/assets/upload/UCBGgames/cars-simulator.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Open-world driving simulator. Explore a city with realistic traffic and various vehicles to drive.",
+    "groups": "racing, simulation"
   },
   {
     "slug": "case-clicker",
@@ -743,8 +743,8 @@
     "title": "CASE CLICKER",
     "image": "/assets/upload/UCBGgames/case-clicker.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Virtual case unboxing simulator. Open loot boxes to collect rare items in this addictive collection game.",
+    "groups": "clicker, idle"
   },
   {
     "slug": "checkers",
@@ -752,8 +752,8 @@
     "title": "CHECKERS",
     "image": "/assets/upload/UCBGgames/checkers.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Classic board game brought to digital life. Play against AI or friends in this timeless strategy game.",
+    "groups": "board-game, strategy"
   },
   {
     "slug": "chicken-merge",
@@ -761,8 +761,8 @@
     "title": "CHICKEN MERGE",
     "image": "/assets/upload/UCBGgames/chicken-merge.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Adorable merging puzzle game. Combine chickens to create new breeds and expand your farm.",
+    "groups": "merge, puzzle"
   },
   {
     "slug": "choppy-orc",
@@ -770,8 +770,8 @@
     "title": "CHOPPY ORC",
     "image": "/assets/upload/UCBGgames/choppy-orc.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Side-scrolling hack-and-slash with RPG elements. Play as an orc warrior battling through fantasy levels.",
+    "groups": "action, platformer"
   },
   {
     "slug": "circlo0",
@@ -779,8 +779,8 @@
     "title": "CIRCLo0",
     "image": "/assets/upload/UCBGgames/circlo0.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Minimalist circular puzzle game. Rotate rings to connect colored dots in this meditative challenge.",
+    "groups": "puzzle, physics"
   },
   {
     "slug": "city-coach-bus-sim",
@@ -788,8 +788,8 @@
     "title": "CITY COACH BUS SIM",
     "image": "/assets/upload/UCBGgames/city-coach-bus-sim.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Realistic bus driving simulator. Follow routes, pick up passengers, and navigate city traffic.",
+    "groups": "simulation, driving"
   },
   {
     "slug": "clicker-heroes",
@@ -797,8 +797,8 @@
     "title": "CLICKER HEROES",
     "image": "/assets/upload/UCBGgames/clicker-heroes.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Legendary idle clicker RPG. Recruit heroes, defeat monsters, and earn infinite upgrades.",
+    "groups": "clicker, idle"
   },
   {
     "slug": "climb-over-it",
@@ -806,8 +806,8 @@
     "title": "CLIMB OVER IT",
     "image": "/assets/upload/UCBGgames/climb-over-it.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Frustratingly difficult climbing game. Precise controls test your patience as you attempt to scale a bizarre mountain.",
+    "groups": "platformer, difficult"
   },
   {
     "slug": "connect-3",
@@ -815,8 +815,8 @@
     "title": "CONNECT 3",
     "image": "/assets/upload/UCBGgames/connect-3.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Color-matching puzzle game. Clear the board by connecting three or more identical tiles.",
+    "groups": "puzzle, match-3"
   },
   {
     "slug": "cookie-clicker",
@@ -824,8 +824,8 @@
     "title": "COOKIE CLICKER",
     "image": "/assets/upload/UCBGgames/cookie-clicker.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "The original idle clicker phenomenon. Bake cookies, buy upgrades, and watch your numbers grow exponentially.",
+    "groups": "clicker, idle"
   },
   {
     "slug": "craftmine",
@@ -833,8 +833,8 @@
     "title": "CRAFTMINE",
     "image": "/assets/upload/UCBGgames/craftmine.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Browser-based block building game. Mine resources and craft items in this creative sandbox world.",
+    "groups": "sandbox, building"
   },
   {
     "slug": "crazy-cars",
@@ -842,8 +842,8 @@
     "title": "CRAZY CARS",
     "image": "/assets/upload/UCBGgames/crazy-cars.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Arcade-style racing with exaggerated physics. Perform stunts and crash through obstacles in wild vehicles.",
+    "groups": "racing, driving"
   },
   {
     "slug": "crazy-tunel-3d",
@@ -851,8 +851,8 @@
     "title": "CRAZY TUNEL 3D",
     "image": "/assets/upload/UCBGgames/crazy-tunel-3d.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "High-speed tunnel racing game. Dodge obstacles while moving at insane velocities through neon tunnels.",
+    "groups": "racing, driving"
   },
   {
     "slug": "creative-kill-chamber",
@@ -860,8 +860,8 @@
     "title": "CREATIVE KILL CHAMBER",
     "image": "/assets/upload/UCBGgames/creative-kill-chamber.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Brutal action-puzzle hybrid. Use the environment creatively to eliminate enemies in each room.",
+    "groups": "platformer, puzzle"
   },
   {
     "slug": "crossy-road",
@@ -869,8 +869,8 @@
     "title": "CROSSY ROAD",
     "image": "/assets/upload/UCBGgames/crossy-road.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Endless hopper inspired by Frogger. Dodge traffic and obstacles in this charming pixel-art adventure.",
+    "groups": "arcade, endless"
   },
   {
     "slug": "cubeshot-io",
@@ -878,8 +878,8 @@
     "title": "CUBESHOT io",
     "image": "/assets/upload/UCBGgames/cubeshot-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Multiplayer cube-based shooter. Simple controls with competitive arena battles in this .io game.",
+    "groups": "io, shooter"
   },
   {
     "slug": "cupcakes-2048",
@@ -887,8 +887,8 @@
     "title": "CUPCAKES 2048",
     "image": "/assets/upload/UCBGgames/cupcakes-2048.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Delicious twist on 2048. Merge matching cupcakes to create higher-value treats in this sweet puzzle game.",
+    "groups": "puzzle"
   },
   {
     "slug": "cut-the-rope",
@@ -896,8 +896,8 @@
     "title": "CUT THE ROPE",
     "image": "/assets/upload/UCBGgames/cut-the-rope.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Physics-based puzzle classic. Feed candy to Om Nom by cutting ropes at the right moments.",
+    "groups": "puzzle, physics"
   },
   {
     "slug": "dark-ninja",
@@ -905,8 +905,8 @@
     "title": "DARK NINJA",
     "image": "/assets/upload/UCBGgames/dark-ninja.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Stealth action game featuring a shadow ninja. Sneak past guards and eliminate targets silently.",
+    "groups": "platformer, action"
   },
   {
     "slug": "dashcraft-io",
@@ -914,8 +914,8 @@
     "title": "DASHCRAFT io",
     "image": "/assets/upload/UCBGgames/dashcraft-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Fast-paced multiplayer platformer. Race against others while using power-ups in this competitive .io game.",
+    "groups": "io, platformer"
   },
   {
     "slug": "dead-again",
@@ -923,8 +923,8 @@
     "title": "DEAD AGAIN",
     "image": "/assets/upload/UCBGgames/dead-again.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Horror puzzle game with time-loop mechanics. Solve your own murder by reliving your final moments.",
+    "groups": "horror, survival"
   },
   {
     "slug": "deadshot-io",
@@ -932,8 +932,8 @@
     "title": "DEADSHOT io",
     "image": "/assets/upload/UCBGgames/deadshot-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Precision shooting .io game. Compete against others in sniper battles requiring perfect aim.",
+    "groups": "io, shooter"
   },
   {
     "slug": "deal-or-no-deal",
@@ -941,8 +941,8 @@
     "title": "DEAL OR NO DEAL",
     "image": "/assets/upload/UCBGgames/deal-or-no-deal.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Digital adaptation of the popular game show. Choose briefcases and negotiate with the banker for big prizes.",
+    "groups": "game-show, luck"
   },
   {
     "slug": "death-run-3d",
@@ -950,8 +950,8 @@
     "title": "DEATH RUN 3D",
     "image": "/assets/upload/UCBGgames/death-run-3d.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Extreme obstacle course game. Race through deadly traps with precise timing and quick reflexes.",
+    "groups": "runner, obstacle-course"
   },
   {
     "slug": "deathcar-io",
@@ -959,8 +959,8 @@
     "title": "DEATHCAR io",
     "image": "/assets/upload/UCBGgames/deathcar-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Battle royale racing .io game. Outlast opponents in vehicular combat while the arena shrinks.",
+    "groups": "io, racing"
   },
   {
     "slug": "diebrary",
@@ -968,8 +968,8 @@
     "title": "DIEBRARY",
     "image": "/assets/upload/UCBGgames/diebrary.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Horror puzzle game set in a cursed library. Solve book-based puzzles to escape the haunted stacks.",
+    "groups": "horror, puzzle"
   },
   {
     "slug": "dino-chrome-io",
@@ -977,8 +977,8 @@
     "title": "DINO CHROME io",
     "image": "/assets/upload/UCBGgames/dino-chrome-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Multiplayer dinosaur survival game. Evolve your dino and dominate the prehistoric food chain.",
+    "groups": "io, runner"
   },
   {
     "slug": "dinosaurs-merge-master",
@@ -986,8 +986,8 @@
     "title": "DINOSAURS MERGE MASTER",
     "image": "/assets/upload/UCBGgames/dinosaurs-merge-master.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Merge dinosaurs to create prehistoric hybrids. Build your own Jurassic park in this creative puzzle game.",
+    "groups": "merge, puzzle"
   },
   {
     "slug": "dogeminer",
@@ -995,8 +995,8 @@
     "title": "DOGEMINER",
     "image": "/assets/upload/UCBGgames/dogeminer.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Meme-inspired idle clicker. Mine dogecoins, buy upgrades, and travel to the moon in this humorous game.",
+    "groups": "clicker, mining"
   },
   {
     "slug": "doodle-jump",
@@ -1004,8 +1004,8 @@
     "title": "DOODLE JUMP",
     "image": "/assets/upload/UCBGgames/doodle-jump.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Classic vertical platformer. Tilt to guide your doodle creature ever upward on increasingly challenging jumps.",
+    "groups": "platformer, endless"
   },
   {
     "slug": "down-the-hill",
@@ -1013,8 +1013,8 @@
     "title": "DOWN THE HILL",
     "image": "/assets/upload/UCBGgames/down-the-hill.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Physics-based downhill racer. Navigate treacherous slopes while maintaining control of your vehicle.",
+    "groups": "racing, downhill"
   },
   {
     "slug": "dreadhead-parkour",
@@ -1022,8 +1022,8 @@
     "title": "DreadHead Parkour",
     "image": "/assets/upload/UCBGgames/dreadhead-parkour.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Precision parkour platformer. Time your jumps perfectly through increasingly complex obstacle courses.",
+    "groups": "parkour, platformer"
   },
   {
     "slug": "drift-boss",
@@ -1031,8 +1031,8 @@
     "title": "DRIFT BOSS",
     "image": "/assets/upload/UCBGgames/drift-boss.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Addictive drifting challenge. Master cornering angles to complete courses with perfect drifts.",
+    "groups": "racing, drifting"
   },
   {
     "slug": "drift-hunters",
@@ -1040,8 +1040,8 @@
     "title": "DRIFT HUNTERS",
     "image": "/assets/upload/UCBGgames/drift-hunters.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Realistic drifting simulator. Tune your car and compete in drift competitions with authentic physics.",
+    "groups": "racing, drifting"
   },
   {
     "slug": "drive-mad",
@@ -1049,8 +1049,8 @@
     "title": "DRIVE MAD",
     "image": "/assets/upload/UCBGgames/drive-mad.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Chaotic driving game with ridiculous physics. Crash through obstacles in over-the-top vehicle destruction.",
+    "groups": "racing, stunt"
   },
   {
     "slug": "duke-dashington-remastered",
@@ -1058,8 +1058,8 @@
     "title": "DUKE DASHINGTON REMASTERED",
     "image": "/assets/upload/UCBGgames/duke-dashington-remastered.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Puzzle-platformer remake. Guide Duke through trap-filled temples with precise timing and quick thinking.",
+    "groups": "platformer, puzzle"
   },
   {
     "slug": "dunkers-2",
@@ -1067,8 +1067,8 @@
     "title": "DUNKERS 2",
     "image": "/assets/upload/UCBGgames/dunkers-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Arcade basketball sequel with exaggerated physics. Perform ridiculous dunks in this over-the-top sports game.",
+    "groups": "basketball, sports"
   },
   {
     "slug": "eggy-car",
@@ -1076,8 +1076,8 @@
     "title": "EGGY CAR",
     "image": "/assets/upload/UCBGgames/eggy-car.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Unique vehicle physics game. Balance an egg on your car while navigating challenging terrain.",
+    "groups": "racing, physics"
   },
   {
     "slug": "elastic-man",
@@ -1085,8 +1085,8 @@
     "title": "ELASTIC MAN",
     "image": "/assets/upload/UCBGgames/elastic-man.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Stretchy physics platformer. Use your elastic body to swing and reach impossible platforms.",
+    "groups": "physics, platformer"
   },
   {
     "slug": "electron-dash",
@@ -1094,8 +1094,8 @@
     "title": "ELECTRON DASH",
     "image": "/assets/upload/UCBGgames/electron-dash.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Neon-infused endless runner. Dodge obstacles while moving to the beat of electronic music.",
+    "groups": "runner, endless"
   },
   {
     "slug": "endless-tunnel",
@@ -1103,8 +1103,8 @@
     "title": "ENDLESS TUNNEL",
     "image": "/assets/upload/UCBGgames/endless-tunnel.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "First-person infinite runner. Navigate a twisting, turning tunnel that generates endlessly.",
+    "groups": "runner, endless"
   },
   {
     "slug": "endless-war-3",
@@ -1112,8 +1112,8 @@
     "title": "ENDLESS WAR 4",
     "image": "/assets/upload/UCBGgames/endless-war-3.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Action-packed tower defense sequel. Defend against endless waves of enemies with strategic unit placement.",
+    "groups": "shooter, action"
   },
   {
     "slug": "eparkour-io",
@@ -1121,8 +1121,8 @@
     "title": "EPARKOUR io",
     "image": "/assets/upload/UCBGgames/eparkour-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Multiplayer parkour competition. Race against others through urban obstacle courses in real-time.",
+    "groups": "io, parkour"
   },
   {
     "slug": "ev-io",
@@ -1130,8 +1130,8 @@
     "title": "EV io",
     "image": "/assets/upload/UCBGgames/ev-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Electric vehicle battle royale. Outlast opponents while managing battery life in this unique .io game.",
+    "groups": "io, racing"
   },
   {
     "slug": "fall-guys-ultimate-knockout",
@@ -1139,8 +1139,8 @@
     "title": "FALL GUYS Ultimate Knockout",
     "image": "/assets/upload/UCBGgames/fall-guys-ultimate-knockout.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Chaotic battle royale platformer. Compete in ridiculous obstacle courses against dozens of players.",
+    "groups": "battle-royale, party"
   },
   {
     "slug": "farm-match-seasons",
@@ -1148,8 +1148,8 @@
     "title": "FARM MATCH SEASONS",
     "image": "/assets/upload/UCBGgames/farm-match-seasons.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Agricultural match-3 game. Swap crops to solve puzzles that change with seasonal themes.",
+    "groups": "puzzle, match-3"
   },
   {
     "slug": "ferge-io",
@@ -1157,8 +1157,8 @@
     "title": "FERGE io",
     "image": "/assets/upload/UCBGgames/ferge-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Color-based multiplayer arena game. Absorb others of your hue while avoiding stronger colors.",
+    "groups": "io, shooter"
   },
   {
     "slug": "fightz-io",
@@ -1166,8 +1166,8 @@
     "title": "FIGHTZ io",
     "image": "/assets/upload/UCBGgames/fightz-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Brawler .io game with simple controls. Battle against numerous opponents in chaotic arena fights.",
+    "groups": "io, fighting"
   },
   {
     "slug": "fire-truck-rescue",
@@ -1175,8 +1175,8 @@
     "title": "FIRE TRUCK RESCUE",
     "image": "/assets/upload/UCBGgames/fire-truck-rescue.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Emergency vehicle simulator. Navigate city streets to reach fires and save lives.",
+    "groups": "simulation, driving"
   },
   {
     "slug": "fireboy-and-watergirl-6",
@@ -1184,8 +1184,8 @@
     "title": "FIREBOY AND WATERGIRL 6",
     "image": "/assets/upload/UCBGgames/fireboy-and-watergirl-6.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Latest co-op puzzle platformer. Control both characters simultaneously to solve elemental challenges.",
+    "groups": "puzzle, platformer"
   },
   {
     "slug": "fireboy-and-watergirl-forest-temple",
@@ -1193,8 +1193,8 @@
     "title": "FIREBOY AND WATERGIRL FOREST TEMPLE",
     "image": "/assets/upload/UCBGgames/fireboy-and-watergirl-forest-temple.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Classic co-op adventure. Work together to navigate the forest temple's elemental puzzles.",
+    "groups": "puzzle, platformer"
   },
   {
     "slug": "fishing-and-lines",
@@ -1202,8 +1202,8 @@
     "title": "FISHING AND LINES",
     "image": "/assets/upload/UCBGgames/fishing-and-lines.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Relaxing fishing puzzle hybrid. Match colored fish while enjoying serene aquatic visuals.",
+    "groups": "fishing, simulation"
   },
   {
     "slug": "fishing-frenzy",
@@ -1211,8 +1211,8 @@
     "title": "FISHING FRENZY",
     "image": "/assets/upload/UCBGgames/fishing-frenzy.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Arcade-style fishing game. Catch rare fish and complete challenges in various locations.",
+    "groups": "fishing, simulation"
   },
   {
     "slug": "five-nights-at-freddies-2",
@@ -1220,8 +1220,8 @@
     "title": "FIVE NIGHTS AT FREDDIES 2",
     "image": "/assets/upload/UCBGgames/five-nights-at-freddies-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Sequel to the iconic horror game. Survive against upgraded animatronics in this terrifying security simulator.",
+    "groups": "horror, survival"
   },
   {
     "slug": "five-nights-at-freddys-3",
@@ -1229,8 +1229,8 @@
     "title": "FIVE NIGHTS AT FREDDYS 3",
     "image": "/assets/upload/UCBGgames/five-nights-at-freddys-3.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Third chapter in the FNAF series. New mechanics and scares in this haunted attraction horror experience.",
+    "groups": "horror, survival"
   },
   {
     "slug": "flappy-bird",
@@ -1238,8 +1238,8 @@
     "title": "FLAPPY BIRD",
     "image": "/assets/upload/UCBGgames/flappy-bird.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Infamously difficult one-button game. Navigate pipes with precise taps in this classic mobile port.",
+    "groups": "arcade, endless"
   },
   {
     "slug": "fnaf-4",
@@ -1247,8 +1247,8 @@
     "title": "FNAF 4",
     "image": "/assets/upload/UCBGgames/fnaf-4.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Nightmare-fueled horror sequel. Defend against twisted animatronics from your childhood bedroom.",
+    "groups": "horror, survival"
   },
   {
     "slug": "fnaf-shooter",
@@ -1256,8 +1256,8 @@
     "title": "FNAF SHOOTER",
     "image": "/assets/upload/UCBGgames/fnaf-shooter.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Action twist on Five Nights at Freddy's. Fight back against animatronics with various weapons.",
+    "groups": "shooter, horror"
   },
   {
     "slug": "fnaf-web",
@@ -1265,8 +1265,8 @@
     "title": "FNAF WEB",
     "image": "/assets/upload/UCBGgames/fnaf-web.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Browser-based FNAF experience. Classic security office gameplay optimized for web play.",
+    "groups": "horror, survival"
   },
   {
     "slug": "fnf-online",
@@ -1274,8 +1274,8 @@
     "title": "FNF ONLINE",
     "image": "/assets/upload/UCBGgames/fnf-online.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Friday Night Funkin' browser version. Rap battle against colorful characters with rhythm game mechanics.",
+    "groups": "rhythm, music"
   },
   {
     "slug": "football-run",
@@ -1283,8 +1283,8 @@
     "title": "FOOTBALL RUN",
     "image": "/assets/upload/UCBGgames/football-run.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Endless runner with football mechanics. Dodge defenders and score touchdowns in this sports-themed game.",
+    "groups": "runner, football"
   },
   {
     "slug": "football-strike",
@@ -1292,8 +1292,8 @@
     "title": "FOOTBALL STRIKE",
     "image": "/assets/upload/UCBGgames/football-strike.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Penalty shootout simulator. Test your precision against world-class goalkeepers.",
+    "groups": "football, sports"
   },
   {
     "slug": "fortnite-made-in-china",
@@ -1301,8 +1301,8 @@
     "title": "FORTNITE MADE IN CHINA",
     "image": "/assets/upload/UCBGgames/fortnite-made-in-china.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Parody battle royale game. Humorous take on popular shooter mechanics with quirky visuals.",
+    "groups": "battle-royale, shooter"
   },
   {
     "slug": "funny-shooter-3d",
@@ -1310,8 +1310,8 @@
     "title": "FUNNY SHOOTER 3D",
     "image": "/assets/upload/UCBGgames/funny-shooter-3d.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Lighthearted FPS with cartoon violence. Various weapons and absurd physics create comedic firefights.",
+    "groups": "shooter, action"
   },
   {
     "slug": "gartic-io",
@@ -1319,8 +1319,8 @@
     "title": "GARTIC io",
     "image": "/assets/upload/UCBGgames/gartic-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Popular multiplayer drawing game. Guess what others are drawing or make them guess your artwork.",
+    "groups": "drawing, multiplayer"
   },
   {
     "slug": "gartic-phone-io",
@@ -1328,8 +1328,8 @@
     "title": "GARTIC PHONE io",
     "image": "/assets/upload/UCBGgames/gartic-phone-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Drawing-based telephone game. Alternate between drawing and describing in this creative social game.",
+    "groups": "drawing, multiplayer"
   },
   {
     "slug": "geodash-2",
@@ -1337,8 +1337,8 @@
     "title": "GEODASH 2",
     "image": "/assets/upload/UCBGgames/geodash-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Precision platformer sequel. Even more challenging obstacle courses requiring pixel-perfect jumps.",
+    "groups": "platformer, runner"
   },
   {
     "slug": "geometry-dash",
@@ -1346,8 +1346,8 @@
     "title": "GEOMETRY DASH",
     "image": "/assets/upload/UCBGgames/geometry-dash.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Rhythm-based platformer. Jump to the beat through devilishly difficult levels with iconic music.",
+    "groups": "platformer, rhythm"
   },
   {
     "slug": "geometry-monster-shell-shockers",
@@ -1355,8 +1355,8 @@
     "title": "GEOMETRY MONSTER (Shell Shockers)",
     "image": "/assets/upload/UCBGgames/geometry-monster-shell-shockers.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Egg-themed multiplayer shooter. Play as armed eggs in competitive first-person battles.",
+    "groups": "shooter, multiplayer"
   },
   {
     "slug": "get-on-top",
@@ -1364,8 +1364,8 @@
     "title": "GET ON TOP",
     "image": "/assets/upload/UCBGgames/get-on-top.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Physics-based wrestling game. Outmaneuver your opponent to climb on top in this two-player battle.",
+    "groups": "fighting, physics"
   },
   {
     "slug": "getaway-shootout",
@@ -1373,8 +1373,8 @@
     "title": "GETAWAY SHOOTOUT",
     "image": "/assets/upload/UCBGgames/getaway-shootout.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Chaotic two-player shooter. Battle with wacky weapons and physics in this competitive platformer.",
+    "groups": "shooter, platformer"
   },
   {
     "slug": "getting-over-it",
@@ -1382,8 +1382,8 @@
     "title": "GETTING OVER IT",
     "image": "/assets/upload/UCBGgames/getting-over-it.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Frustrating climbing simulator. Use a hammer to navigate an unforgiving mountain landscape.",
+    "groups": "platformer, difficult"
   },
   {
     "slug": "gigga-io",
@@ -1391,8 +1391,8 @@
     "title": "GIGGA io",
     "image": "/assets/upload/UCBGgames/gigga-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Massive multiplayer .io battle. Compete against hundreds in this expansive online arena.",
+    "groups": "io, shooter"
   },
   {
     "slug": "gobdun",
@@ -1400,8 +1400,8 @@
     "title": "GOBDUN",
     "image": "/assets/upload/UCBGgames/gobdun.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Abstract puzzle platformer. Unusual mechanics challenge your problem-solving skills.",
+    "groups": "puzzle, physics"
   },
   {
     "slug": "gold-digger-frvr",
@@ -1409,8 +1409,8 @@
     "title": "GOLD DIGGER FRVR",
     "image": "/assets/upload/UCBGgames/gold-digger-frvr.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Idle mining adventure. Dig deeper to find rare minerals and treasures in this endless excavation game.",
+    "groups": "mining, idle"
   },
   {
     "slug": "grand-vegas-simulator",
@@ -1418,8 +1418,8 @@
     "title": "GRAND VEGAS SIMULATOR",
     "image": "/assets/upload/UCBGgames/grand-vegas-simulator.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Open-world Vegas experience. Explore the strip, gamble, and enjoy virtual nightlife.",
+    "groups": "simulation, driving"
   },
   {
     "slug": "granny",
@@ -1427,8 +1427,8 @@
     "title": "GRANNY",
     "image": "/assets/upload/UCBGgames/granny.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Terrifying horror escape game. Sneak past a deadly grandmother to escape her haunted house.",
+    "groups": "horror, survival"
   },
   {
     "slug": "gravity-soccer",
@@ -1436,8 +1436,8 @@
     "title": "GRAVITY SOCCER",
     "image": "/assets/upload/UCBGgames/gravity-soccer.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Physics-defying sports game. Play soccer in zero-gravity environments with crazy ball trajectories.",
+    "groups": "soccer, physics"
   },
   {
     "slug": "grindcraft-remastered",
@@ -1445,8 +1445,8 @@
     "title": "GRINDCRAFT REMASTERED",
     "image": "/assets/upload/UCBGgames/grindcraft-remastered.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Enhanced crafting clicker game. Gather resources and progress through ages in this idle adventure.",
+    "groups": "crafting, idle"
   },
   {
     "slug": "gswitch-2",
@@ -1454,8 +1454,8 @@
     "title": "GSWITCH 2",
     "image": "/assets/upload/UCBGgames/gswitch-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Gravity-switching platformer sequel. New mechanics and challenges in this upside-down adventure.",
+    "groups": "platformer, puzzle"
   },
   {
     "slug": "gswitch-3",
@@ -1463,8 +1463,8 @@
     "title": "GSWITCH 3",
     "image": "/assets/upload/UCBGgames/gswitch-3.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Third installment of gravity puzzle series. Flip your orientation to solve increasingly complex levels.",
+    "groups": "platformer, puzzle"
   },
   {
     "slug": "gswitch-4",
@@ -1472,8 +1472,8 @@
     "title": "GSWITCH 4",
     "image": "/assets/upload/UCBGgames/gswitch-4.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Latest gravity manipulation game. Innovative new mechanics test your spatial reasoning.",
+    "groups": "platformer, puzzle"
   },
   {
     "slug": "gswitch",
@@ -1481,8 +1481,8 @@
     "title": "GSWITCH",
     "image": "/assets/upload/UCBGgames/gswitch.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Original gravity-flipping platformer. Switch between ceiling and floor to navigate challenging courses.",
+    "groups": "platformer, puzzle"
   },
   {
     "slug": "gulper-io",
@@ -1490,8 +1490,8 @@
     "title": "GULPER io",
     "image": "/assets/upload/UCBGgames/gulper-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Underwater .io survival game. Grow your aquatic creature by consuming smaller organisms.",
+    "groups": "io, multiplayer"
   },
   {
     "slug": "gun-mayhem-2",
@@ -1499,8 +1499,8 @@
     "title": "GUN MAYHEM 2",
     "image": "/assets/upload/UCBGgames/gun-mayhem-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Chaotic platform shooter sequel. More weapons, maps, and madness in this competitive battle game.",
+    "groups": "shooter, platformer"
   },
   {
     "slug": "gun-mayhem-redux",
@@ -1508,8 +1508,8 @@
     "title": "Gun Mayhem Redux",
     "image": "/assets/upload/UCBGgames/gun-mayhem-redux.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Remastered version of the classic shooter. Updated graphics and mechanics for modern browsers.",
+    "groups": "shooter, platformer"
   },
   {
     "slug": "gun-spin",
@@ -1517,8 +1517,8 @@
     "title": "GUN SPIN",
     "image": "/assets/upload/UCBGgames/gun-spin.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Precision shooting challenge. Time your spins perfectly to hit targets in this unique aim trainer.",
+    "groups": "shooter, action"
   },
   {
     "slug": "hammer-2",
@@ -1526,8 +1526,8 @@
     "title": "HAMMER 2",
     "image": "/assets/upload/UCBGgames/hammer-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Destruction physics sequel. Smash everything in sight with satisfying demolition mechanics.",
+    "groups": "fighting, physics"
   },
   {
     "slug": "hanger-2",
@@ -1535,8 +1535,8 @@
     "title": "HANGER 2",
     "image": "/assets/upload/UCBGgames/hanger-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Aerial combat sequel. Dogfight against enemy planes with improved flight physics.",
+    "groups": "puzzle, physics"
   },
   {
     "slug": "hanger",
@@ -1544,8 +1544,8 @@
     "title": "HANGER",
     "image": "/assets/upload/UCBGgames/hanger.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Classic airplane combat game. Take to the skies in intense aerial battles.",
+    "groups": "puzzle, physics"
   },
   {
     "slug": "happy-fishing",
@@ -1553,8 +1553,8 @@
     "title": "HAPPY FISHING",
     "image": "/assets/upload/UCBGgames/happy-fishing.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Relaxing fishing simulator. Catch diverse fish species in peaceful aquatic environments.",
+    "groups": "fishing, simulation"
   },
   {
     "slug": "happy-wheels",
@@ -1562,8 +1562,8 @@
     "title": "HAPPY WHEELS",
     "image": "/assets/upload/UCBGgames/happy-wheels.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Infamous physics-based obstacle course. Choose wacky characters and survive gruesome traps.",
+    "groups": "physics, platformer"
   },
   {
     "slug": "head-soccer-2023",
@@ -1571,8 +1571,8 @@
     "title": "HEAD SOCCER 2023",
     "image": "/assets/upload/UCBGgames/head-soccer-2023.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Latest version of the headbutt soccer game. Updated rosters and mechanics in this absurd sports title.",
+    "groups": "soccer, sports"
   },
   {
     "slug": "hexanaut-io",
@@ -1580,8 +1580,8 @@
     "title": "HEXANAUT io",
     "image": "/assets/upload/UCBGgames/hexanaut-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Hexagonal territory conquest game. Expand your colored zone while outmaneuvering opponents.",
+    "groups": "io, strategy"
   },
   {
     "slug": "hide-and-smash",
@@ -1589,8 +1589,8 @@
     "title": "HIDE AND SMASH",
     "image": "/assets/upload/UCBGgames/hide-and-smash.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Multiplayer hide-and-seek with destruction. Find hiding players or break the environment to reveal them.",
+    "groups": "fighting, multiplayer"
   },
   {
     "slug": "hill-climb-racing-2",
@@ -1598,8 +1598,8 @@
     "title": "HILL CLIMB RACING 2",
     "image": "/assets/upload/UCBGgames/hill-climb-racing-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Physics-based driving sequel. New vehicles and tracks in this addictive hill-climbing challenge.",
+    "groups": "racing, physics"
   },
   {
     "slug": "hole-io",
@@ -1607,8 +1607,8 @@
     "title": "HOLE io",
     "image": "/assets/upload/UCBGgames/hole-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Popular .io game where you play as a hole. Swallow objects to grow larger and consume entire cities.",
+    "groups": "io, multiplayer"
   },
   {
     "slug": "hop-and-pop-it",
@@ -1616,8 +1616,8 @@
     "title": "HOP AND POP IT",
     "image": "/assets/upload/UCBGgames/hop-and-pop-it.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Satisfying bubble-popping game. Jump on bubbles to burst them in this tactile physics experience.",
+    "groups": "puzzle, bubble-shooter"
   },
   {
     "slug": "house-of-hazards",
@@ -1625,8 +1625,8 @@
     "title": "House of Hazards",
     "image": "/assets/upload/UCBGgames/house-of-hazards.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Chaotic multiplayer party game. Sabotage friends in a house filled with ridiculous traps.",
+    "groups": "party, multiplayer"
   },
   {
     "slug": "icy-purple-head-2",
@@ -1634,8 +1634,8 @@
     "title": "ICY PURPLE HEAD 2",
     "image": "/assets/upload/UCBGgames/icy-purple-head-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Sequel to the cult platformer. More icy challenges with the bouncy purple character.",
+    "groups": "platformer, puzzle"
   },
   {
     "slug": "icy-purple-head-3",
@@ -1643,8 +1643,8 @@
     "title": "ICY PURPLE HEAD 3",
     "image": "/assets/upload/UCBGgames/icy-purple-head-3.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Third installment of the platforming series. New mechanics and obstacles test your bouncing skills.",
+    "groups": "platformer, puzzle"
   },
   {
     "slug": "idle-breakout",
@@ -1652,8 +1652,8 @@
     "title": "IDLE BREAKOUT",
     "image": "/assets/upload/UCBGgames/idle-breakout.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Innovative idle brick-breaker. Combine clicker mechanics with classic breakout gameplay.",
+    "groups": "idle, breakout"
   },
   {
     "slug": "idle-light-city",
@@ -1661,8 +1661,8 @@
     "title": "IDLE LIGHT CITY",
     "image": "/assets/upload/UCBGgames/idle-light-city.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "City-building clicker game. Grow your metropolis through strategic upgrades and management.",
+    "groups": "idle, city-builder"
   },
   {
     "slug": "idle-mining-empire",
@@ -1670,8 +1670,8 @@
     "title": "IDLE MINING EMPIRE",
     "image": "/assets/upload/UCBGgames/idle-mining-empire.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Resource management clicker. Expand your mining operation through automated systems.",
+    "groups": "idle, mining"
   },
   {
     "slug": "idle-restaurants",
@@ -1679,8 +1679,8 @@
     "title": "IDLE RESTAURANTS",
     "image": "/assets/upload/UCBGgames/idle-restaurants.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Culinary business simulator. Build a food empire through strategic upgrades and menu planning.",
+    "groups": "idle, restaurant"
   },
   {
     "slug": "idle-tree-city",
@@ -1688,8 +1688,8 @@
     "title": "IDLE TREE CITY",
     "image": "/assets/upload/UCBGgames/idle-tree-city.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Arborist clicker game. Grow your treehouse city with various upgrades and expansions.",
+    "groups": "idle, city-builder"
   },
   {
     "slug": "impossible-monster-truck",
@@ -1697,8 +1697,8 @@
     "title": "IMPOSSIBLE MONSTER TRUCK",
     "image": "/assets/upload/UCBGgames/impossible-monster-truck.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Extreme stunt driving challenge. Perform outrageous jumps and flips with massive trucks.",
+    "groups": "racing, stunt"
   },
   {
     "slug": "indian-truck",
@@ -1706,8 +1706,8 @@
     "title": "INDIAN TRUCK",
     "image": "/assets/upload/UCBGgames/indian-truck.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Authentic truck simulator. Navigate Indian roadways with colorful cargo and challenging traffic.",
+    "groups": "simulation, driving"
   },
   {
     "slug": "infinite-soccer",
@@ -1715,8 +1715,8 @@
     "title": "Infinite Soccer",
     "image": "/assets/upload/UCBGgames/infinite-soccer.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Endless football juggling game. Keep the ball airborne with precise kicks and headers.",
+    "groups": "soccer, sports"
   },
   {
     "slug": "iron-snout",
@@ -1724,8 +1724,8 @@
     "title": "IRON SNOUT",
     "image": "/assets/upload/UCBGgames/iron-snout.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Action-packed beat-em-up. Play as a pig warrior fighting through waves of enemies.",
+    "groups": "fighting, action"
   },
   {
     "slug": "jelly-truck",
@@ -1733,8 +1733,8 @@
     "title": "Jelly Truck",
     "image": "/assets/upload/UCBGgames/jelly-truck.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Wobbly physics driving game. Navigate treacherous terrain with your gelatinous vehicle.",
+    "groups": "racing, physics"
   },
   {
     "slug": "jetpack-joyride",
@@ -1742,8 +1742,8 @@
     "title": "JETPACK JOYRIDE",
     "image": "/assets/upload/UCBGgames/jetpack-joyride.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Classic endless runner. Dodge obstacles while flying a jetpack in this mobile favorite.",
+    "groups": "runner, endless"
   },
   {
     "slug": "jewels-blitz-5",
@@ -1751,8 +1751,8 @@
     "title": "Jewels Blitz 5",
     "image": "/assets/upload/UCBGgames/jewels-blitz-5.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Latest match-3 jewel game. Faster gameplay and new power-ups in this puzzle sequel.",
+    "groups": "puzzle, match-3"
   },
   {
     "slug": "johnny-trigger",
@@ -1760,8 +1760,8 @@
     "title": "JOHNNY TRIGGER",
     "image": "/assets/upload/UCBGgames/johnny-trigger.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Stylish action shooter. Slow-motion gunfights with cinematic flair.",
+    "groups": "shooter, action"
   },
   {
     "slug": "johnny-upgrade",
@@ -1769,8 +1769,8 @@
     "title": "Johnny Upgrade",
     "image": "/assets/upload/UCBGgames/johnny-upgrade.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Progressive platformer. Gain new abilities as you progress through challenging levels.",
+    "groups": "platformer, shooter"
   },
   {
     "slug": "johny-revenge",
@@ -1778,8 +1778,8 @@
     "title": "JOHNY REVENGE",
     "image": "/assets/upload/UCBGgames/johny-revenge.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Action-packed platform shooter. Battle through levels seeking vengeance.",
+    "groups": "shooter, action"
   },
   {
     "slug": "johny-trigger",
@@ -1787,8 +1787,8 @@
     "title": "Johny Trigger",
     "image": "/assets/upload/UCBGgames/johny-trigger.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Precision shooting platformer. Time your shots perfectly to eliminate all targets.",
+    "groups": "shooter, action"
   },
   {
     "slug": "jungle-td",
@@ -1796,8 +1796,8 @@
     "title": "JUNGLE TD",
     "image": "/assets/upload/UCBGgames/jungle-td.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Exotic tower defense game. Defend your base with jungle-themed units and traps.",
+    "groups": "tower-defense, strategy"
   },
   {
     "slug": "just-fall-lol",
@@ -1805,8 +1805,8 @@
     "title": "JUST FALL LOL",
     "image": "/assets/upload/UCBGgames/just-fall-lol.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Battle royale platformer. Be the last one standing as platforms collapse beneath you.",
+    "groups": "party, multiplayer"
   },
   {
     "slug": "kart-fight-io",
@@ -1814,8 +1814,8 @@
     "title": "KART FIGHT io",
     "image": "/assets/upload/UCBGgames/kart-fight-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Multiplayer kart racing battle. Use power-ups and weapons in this competitive .io racer.",
+    "groups": "io, racing"
   },
   {
     "slug": "kirka-io",
@@ -1823,8 +1823,8 @@
     "title": "KIRKA io",
     "image": "/assets/upload/UCBGgames/kirka-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Fast-paced multiplayer shooter. Various game modes and weapons in this browser FPS.",
+    "groups": "io, shooter"
   },
   {
     "slug": "knight-hero-adventure-rpg",
@@ -1832,8 +1832,8 @@
     "title": "KNIGHT HERO ADVENTURE RPG",
     "image": "/assets/upload/UCBGgames/knight-hero-adventure-rpg.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Medieval action RPG. Battle monsters, complete quests, and upgrade your knight.",
+    "groups": "rpg, adventure"
   },
   {
     "slug": "krunker-io",
@@ -1841,8 +1841,8 @@
     "title": "KRUNKER io",
     "image": "/assets/upload/UCBGgames/krunker-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Popular browser-based FPS. Fast-paced multiplayer shooting with various classes and maps.",
+    "groups": "io, shooter, fps"
   },
   {
     "slug": "leader-strike",
@@ -1850,8 +1850,8 @@
     "title": "Leader Strike",
     "image": "/assets/upload/UCBGgames/leader-strike.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Tactical shooter with squad mechanics. Command AI teammates in strategic firefights.",
+    "groups": "shooter, action"
   },
   {
     "slug": "learn-to-fly",
@@ -1859,8 +1859,8 @@
     "title": "LEARN TO FLY",
     "image": "/assets/upload/UCBGgames/learn-to-fly.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Progressive flight simulator. Upgrade your penguin's flying apparatus to soar further.",
+    "groups": "physics, launcher"
   },
   {
     "slug": "lol-shot-io",
@@ -1868,8 +1868,8 @@
     "title": "LOL SHOT io",
     "image": "/assets/upload/UCBGgames/lol-shot-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Multiplayer basketball .io game. Real-time competitive hoops with simple controls.",
+    "groups": "io, shooter"
   },
   {
     "slug": "lolbeans-io",
@@ -1877,8 +1877,8 @@
     "title": "LOLBEANS io",
     "image": "/assets/upload/UCBGgames/lolbeans-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Battle royale .io game. Compete in ridiculous obstacle courses against dozens of players.",
+    "groups": "io, party"
   },
   {
     "slug": "lurkers-io",
@@ -1886,8 +1886,8 @@
     "title": "LURKERS io",
     "image": "/assets/upload/UCBGgames/lurkers-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Stealth-based multiplayer game. Hide in shadows and ambush opponents in this unique .io experience.",
+    "groups": "io, shooter"
   },
   {
     "slug": "mad-gunz",
@@ -1895,8 +1895,8 @@
     "title": "MAD GUNZ",
     "image": "/assets/upload/UCBGgames/mad-gunz.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Over-the-top shooter. Crazy weapons and physics create chaotic firefights.",
+    "groups": "shooter, action"
   },
   {
     "slug": "mad-shark",
@@ -1904,8 +1904,8 @@
     "title": "MAD SHARK",
     "image": "/assets/upload/UCBGgames/mad-shark.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Underwater predator simulator. Play as a shark terrorizing beachgoers and boats.",
+    "groups": "shooter, action"
   },
   {
     "slug": "mad-truck-challenge",
@@ -1913,8 +1913,8 @@
     "title": "MAD TRUCK CHALLENGE",
     "image": "/assets/upload/UCBGgames/mad-truck-challenge.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Extreme off-road driving. Conquer impossible terrain with powerful trucks.",
+    "groups": "racing, stunt"
   },
   {
     "slug": "madalin-cars-multiplayer",
@@ -1922,8 +1922,8 @@
     "title": "MADALIN CARS MULTIPLAYER",
     "image": "/assets/upload/UCBGgames/madalin-cars-multiplayer.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Online car battling game. Customize vehicles and compete against others in destructive races.",
+    "groups": "racing, multiplayer"
   },
   {
     "slug": "madalin-stunt-cars-2",
@@ -1931,8 +1931,8 @@
     "title": "MADALIN STUNT CARS 2",
     "image": "/assets/upload/UCBGgames/madalin-stunt-cars-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Stunt driving sequel. More cars and tracks for performing insane aerial tricks.",
+    "groups": "racing, stunt"
   },
   {
     "slug": "madalin-stunt-cars-3",
@@ -1940,8 +1940,8 @@
     "title": "MADALIN STUNT CARS 3",
     "image": "/assets/upload/UCBGgames/madalin-stunt-cars-3.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Latest stunt racing installment. Enhanced physics and new vehicles for extreme driving.",
+    "groups": "racing, stunt"
   },
   {
     "slug": "marbles-sorting",
@@ -1949,8 +1949,8 @@
     "title": "MARBLES SORTING",
     "image": "/assets/upload/UCBGgames/marbles-sorting.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Color-matching puzzle. Organize marbles by hue in this satisfying logical challenge.",
+    "groups": "puzzle, sorting"
   },
   {
     "slug": "masked-forces",
@@ -1958,8 +1958,8 @@
     "title": "Masked Forces",
     "image": "/assets/upload/UCBGgames/masked-forces.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Tactical browser shooter. Various weapons and maps in this competitive FPS.",
+    "groups": "shooter, fps"
   },
   {
     "slug": "merc-zone",
@@ -1967,8 +1967,8 @@
     "title": "MERC ZONE",
     "image": "/assets/upload/UCBGgames/merc-zone.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Mercenary combat simulator. Complete contracts with various weapons and tactics.",
+    "groups": "shooter, action"
   },
   {
     "slug": "merge-harvest",
@@ -1976,8 +1976,8 @@
     "title": "MERGE HARVEST",
     "image": "/assets/upload/UCBGgames/merge-harvest.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Agricultural merging game. Combine crops to create rare hybrids and expand your farm.",
+    "groups": "merge, puzzle"
   },
   {
     "slug": "merge-round-racers",
@@ -1985,8 +1985,8 @@
     "title": "MERGE ROUND RACERS",
     "image": "/assets/upload/UCBGgames/merge-round-racers.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Racing and merging hybrid. Combine vehicles to unlock faster cars and win races.",
+    "groups": "merge, racing"
   },
   {
     "slug": "minecraft-case-simulator",
@@ -1994,8 +1994,8 @@
     "title": "MINECRAFT CASE SIMULATOR",
     "image": "/assets/upload/UCBGgames/minecraft-case-simulator.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Blocky loot box opener. Unlock rare Minecraft-inspired items in this collection game.",
+    "groups": "simulation, crafting"
   },
   {
     "slug": "minecraft-classic",
@@ -2003,8 +2003,8 @@
     "title": "MINECRAFT CLASSIC",
     "image": "/assets/upload/UCBGgames/minecraft-classic.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Original browser version of Minecraft. Creative building with basic blocks and mechanics.",
+    "groups": "sandbox, building"
   },
   {
     "slug": "money-movers-2",
@@ -2012,8 +2012,8 @@
     "title": "MONEY MOVERS 2",
     "image": "/assets/upload/UCBGgames/money-movers-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Heist puzzle sequel. Steal valuables while solving security puzzles with improved mechanics.",
+    "groups": "heist, action"
   },
   {
     "slug": "money-movers-guard-duty",
@@ -2021,8 +2021,8 @@
     "title": "Money Movers Guard Duty",
     "image": "/assets/upload/UCBGgames/money-movers-guard-duty.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Reverse heist perspective. Protect valuables from thieves in this unique puzzle game.",
+    "groups": "heist, action"
   },
   {
     "slug": "money-movers",
@@ -2030,8 +2030,8 @@
     "title": "Money Movers",
     "image": "/assets/upload/UCBGgames/money-movers.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Original heist puzzle game. Plan perfect robberies by outsmarting security systems.",
+    "groups": "heist, action"
   },
   {
     "slug": "money-roller",
@@ -2039,8 +2039,8 @@
     "title": "MONEY ROLLER",
     "image": "/assets/upload/UCBGgames/money-roller.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Coin-collecting platformer. Gather wealth while navigating challenging courses.",
+    "groups": "puzzle, physics"
   },
   {
     "slug": "monkey-mart",
@@ -2048,8 +2048,8 @@
     "title": "Monkey Mart",
     "image": "/assets/upload/UCBGgames/monkey-mart.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Grocery store management game. Play as a monkey running a supermarket chain.",
+    "groups": "management, simulation"
   },
   {
     "slug": "monster-truck-vs-zombie",
@@ -2057,8 +2057,8 @@
     "title": "MONSTER TRUCK VS ZOMBIE",
     "image": "/assets/upload/UCBGgames/monster-truck-vs-zombie.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Apocalyptic driving game. Crush zombies with your massive truck in this action-packed title.",
+    "groups": "racing, zombie"
   },
   {
     "slug": "moomoo-io-sandbox",
@@ -2066,8 +2066,8 @@
     "title": "MOOMOO io (SandBox)",
     "image": "/assets/upload/UCBGgames/moomoo-io-sandbox.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Survival .io game with building. Gather resources, construct bases, and defend against enemies.",
+    "groups": "io, sandbox"
   },
   {
     "slug": "moto-maniac-3",
@@ -2075,8 +2075,8 @@
     "title": "MOTO MANIAC 3",
     "image": "/assets/upload/UCBGgames/moto-maniac-3.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Extreme motorcycle stunts. Perform insane tricks across dangerous courses.",
+    "groups": "racing, bike"
   },
   {
     "slug": "moto-x3m-spooky-land",
@@ -2084,8 +2084,8 @@
     "title": "MOTO X3M Spooky Land",
     "image": "/assets/upload/UCBGgames/moto-x3m-spooky-land.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Halloween-themed bike racing. Navigate haunted obstacle courses with precise jumps.",
+    "groups": "racing, bike"
   },
   {
     "slug": "moto-x3m-winter",
@@ -2093,8 +2093,8 @@
     "title": "MOTO X3M WINTER",
     "image": "/assets/upload/UCBGgames/moto-x3m-winter.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Frozen bike racing challenge. Icy physics and winter obstacles test your skills.",
+    "groups": "racing, bike"
   },
   {
     "slug": "moto-x3m",
@@ -2102,8 +2102,8 @@
     "title": "MOTO X3M",
     "image": "/assets/upload/UCBGgames/moto-x3m.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Popular bike stunt game. Perfect your jumps through challenging obstacle courses.",
+    "groups": "racing, bike"
   },
   {
     "slug": "moto3xm-pool-party",
@@ -2111,8 +2111,8 @@
     "title": "MOTO3XM Pool Party",
     "image": "/assets/upload/UCBGgames/moto3xm-pool-party.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Water-themed bike racing. Splash through pools and perform aquatic stunts.",
+    "groups": "racing, bike"
   },
   {
     "slug": "mr-bullet",
@@ -2120,8 +2120,8 @@
     "title": "MR BULLET",
     "image": "/assets/upload/UCBGgames/mr-bullet.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Puzzle shooter game. Calculate ricochets to eliminate all targets with single shots.",
+    "groups": "puzzle, physics"
   },
   {
     "slug": "mutazone",
@@ -2129,8 +2129,8 @@
     "title": "MUTAZONE",
     "image": "/assets/upload/UCBGgames/mutazone.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Post-apocalyptic shooter. Battle mutants in this action-packed survival game.",
+    "groups": "shooter, action"
   },
   {
     "slug": "ninja-cat-exploit",
@@ -2138,8 +2138,8 @@
     "title": "NINJA CAT EXPLOIT",
     "image": "/assets/upload/UCBGgames/ninja-cat-exploit.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Stealth platformer. Guide a ninja cat through enemy territory using shadows and agility.",
+    "groups": "platformer, action"
   },
   {
     "slug": "noob-steve-parkour",
@@ -2147,8 +2147,8 @@
     "title": "Noob Steve Parkour",
     "image": "/assets/upload/UCBGgames/noob-steve-parkour.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Blocky parkour challenge. Navigate obstacle courses as a Minecraft-style character.",
+    "groups": "parkour, platformer"
   },
   {
     "slug": "offroad-ultimate",
@@ -2156,8 +2156,8 @@
     "title": "OFFROAD ULTIMATE",
     "image": "/assets/upload/UCBGgames/offroad-ultimate.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Extreme off-road driving. Conquer brutal terrain with powerful 4x4 vehicles.",
+    "groups": "racing, offroad"
   },
   {
     "slug": "only-up-2",
@@ -2165,8 +2165,8 @@
     "title": "ONLY UP 2",
     "image": "/assets/upload/UCBGgames/only-up-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Vertical climbing sequel. Scale impossible structures with improved mechanics.",
+    "groups": "platformer, climbing"
   },
   {
     "slug": "only-up-3d-parkour",
@@ -2174,8 +2174,8 @@
     "title": "Only Up 3D Parkour",
     "image": "/assets/upload/UCBGgames/only-up-3d-parkour.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Challenging 3D parkour game where you climb endless obstacles. Test your reflexes and precision in this vertical climbing adventure.",
+    "groups": "parkour, platformer"
   },
   {
     "slug": "ovo-2-144-version",
@@ -2183,8 +2183,8 @@
     "title": "OvO 1.4.4",
     "image": "/assets/upload/UCBGgames/ovo-2-144-version.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Updated version of the popular obstacle course game featuring new levels and challenges for the agile ball character.",
+    "groups": "platformer, parkour"
   },
   {
     "slug": "ovo-3-dimensions",
@@ -2192,8 +2192,8 @@
     "title": "OvO 3 DIMENSIONS",
     "image": "/assets/upload/UCBGgames/ovo-3-dimensions.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Three-dimensional take on the classic OvO game with new perspective challenges and spatial puzzles.",
+    "groups": "platformer, parkour"
   },
   {
     "slug": "ovo",
@@ -2201,8 +2201,8 @@
     "title": "OvO",
     "image": "/assets/upload/UCBGgames/ovo.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Classic obstacle course game where you control a bouncing ball through challenging platforming levels.",
+    "groups": "platformer, parkour"
   },
   {
     "slug": "pacman-remake",
@@ -2210,8 +2210,8 @@
     "title": "PACMAN REMAKE",
     "image": "/assets/upload/UCBGgames/pacman-remake.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Modern reinterpretation of the arcade classic with updated graphics while keeping the original maze-chase gameplay.",
+    "groups": "arcade, maze"
   },
   {
     "slug": "papas-burgeria",
@@ -2219,8 +2219,8 @@
     "title": "PAPAS BURGERIA",
     "image": "/assets/upload/UCBGgames/papas-burgeria.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Restaurant management game where you build the ultimate burger joint, taking orders and serving customers.",
+    "groups": "cooking, time-management"
   },
   {
     "slug": "papas-freezeria",
@@ -2228,8 +2228,8 @@
     "title": "PAPAS FREEZERIA",
     "image": "/assets/upload/UCBGgames/papas-freezeria.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Run an ice cream shop in this food service simulator, creating perfect desserts for demanding customers.",
+    "groups": "cooking, time-management"
   },
   {
     "slug": "papas-pizzaria",
@@ -2237,8 +2237,8 @@
     "title": "PAPA'S PIZZARIA",
     "image": "/assets/upload/UCBGgames/papas-pizzaria.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Popular pizza restaurant simulator where you take orders, make pizzas, and keep customers happy.",
+    "groups": "cooking, time-management"
   },
   {
     "slug": "paper-2-io",
@@ -2246,8 +2246,8 @@
     "title": "PAPER 2 io",
     "image": "/assets/upload/UCBGgames/paper-2-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Multiplayer .io game with paper-themed battles, where you cut opponents while avoiding being cut yourself.",
+    "groups": "io, multiplayer"
   },
   {
     "slug": "park-out",
@@ -2255,8 +2255,8 @@
     "title": "PARK OUT",
     "image": "/assets/upload/UCBGgames/park-out.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Reverse parking simulator that challenges your spatial awareness and vehicle control skills.",
+    "groups": "puzzle, parking"
   },
   {
     "slug": "parking-fury-2",
@@ -2264,8 +2264,8 @@
     "title": "PARKING FURY 2",
     "image": "/assets/upload/UCBGgames/parking-fury-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Sequel to the popular parking simulator with more challenging parking scenarios and new vehicles.",
+    "groups": "puzzle, parking"
   },
   {
     "slug": "parking-fury-3",
@@ -2273,8 +2273,8 @@
     "title": "PARKING FURY 3",
     "image": "/assets/upload/UCBGgames/parking-fury-3.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Third installment featuring extreme parking challenges in increasingly difficult environments.",
+    "groups": "puzzle, parking"
   },
   {
     "slug": "parking-fury",
@@ -2282,8 +2282,8 @@
     "title": "Parking Fury",
     "image": "/assets/upload/UCBGgames/parking-fury.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Classic parking simulation game that tests your precision driving skills in various scenarios.",
+    "groups": "puzzle, parking"
   },
   {
     "slug": "parkour-race",
@@ -2291,8 +2291,8 @@
     "title": "PARKOUR RACE",
     "image": "/assets/upload/UCBGgames/parkour-race.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Competitive parkour running game where you race against others through urban obstacle courses.",
+    "groups": "parkour, racing"
   },
   {
     "slug": "penalty-kick",
@@ -2300,8 +2300,8 @@
     "title": "PENALTY KICK",
     "image": "/assets/upload/UCBGgames/penalty-kick.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Soccer penalty shootout game where you aim carefully to beat the goalkeeper.",
+    "groups": "soccer, sports"
   },
   {
     "slug": "penalty-shooters-2",
@@ -2309,8 +2309,8 @@
     "title": "PENALTY SHOOTERS 2",
     "image": "/assets/upload/UCBGgames/penalty-shooters-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Improved sequel to the soccer penalty game with better physics and more challenging goalkeepers.",
+    "groups": "soccer, sports"
   },
   {
     "slug": "penalty-shooters-3",
@@ -2318,8 +2318,8 @@
     "title": "PENALTY SHOOTERS 3",
     "image": "/assets/upload/UCBGgames/penalty-shooters-3.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Latest version of the penalty shootout series with enhanced graphics and gameplay mechanics.",
+    "groups": "soccer, sports"
   },
   {
     "slug": "petz-lol",
@@ -2327,8 +2327,8 @@
     "title": "PETZ lol",
     "image": "/assets/upload/UCBGgames/petz-lol.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Fun virtual pet simulator where you care for and play with adorable digital pets.",
+    "groups": "virtual-pet, simulation"
   },
   {
     "slug": "pixel-gun-3d",
@@ -2336,8 +2336,8 @@
     "title": "PIXEL GUN 3D",
     "image": "/assets/upload/UCBGgames/pixel-gun-3d.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Blocky first-person shooter with multiplayer battles and various weapons to collect.",
+    "groups": "shooter, fps"
   },
   {
     "slug": "pixel-smash-duel",
@@ -2345,8 +2345,8 @@
     "title": "PIXEL SMASH DUEL",
     "image": "/assets/upload/UCBGgames/pixel-smash-duel.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Retro-style fighting game featuring pixel characters in intense one-on-one battles.",
+    "groups": "fighting, multiplayer"
   },
   {
     "slug": "pizza-tower",
@@ -2354,8 +2354,8 @@
     "title": "PIZZA TOWER",
     "image": "/assets/upload/UCBGgames/pizza-tower.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Wacky platformer where you race through a tower to save your pizza restaurant.",
+    "groups": "platformer, action"
   },
   {
     "slug": "poop-clicker-3",
@@ -2363,8 +2363,8 @@
     "title": "POOP CLICKER 3",
     "image": "/assets/upload/UCBGgames/poop-clicker-3.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Absurd clicker game with humorous poop-themed progression and upgrades.",
+    "groups": "clicker, idle"
   },
   {
     "slug": "pou",
@@ -2372,8 +2372,8 @@
     "title": "POU",
     "image": "/assets/upload/UCBGgames/pou.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Popular virtual pet game where you care for and customize your own alien pet.",
+    "groups": "virtual-pet, simulation"
   },
   {
     "slug": "president-simulator",
@@ -2381,8 +2381,8 @@
     "title": "PRESIDENT SIMULATOR",
     "image": "/assets/upload/UCBGgames/president-simulator.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Political simulation game where you make decisions as the leader of a nation.",
+    "groups": "simulation, politics"
   },
   {
     "slug": "pudding-monsters",
@@ -2390,8 +2390,8 @@
     "title": "PUDDING MONSTERS",
     "image": "/assets/upload/UCBGgames/pudding-monsters.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Puzzle game where you combine cute pudding creatures to solve challenging levels.",
+    "groups": "puzzle, strategy"
   },
   {
     "slug": "push-the-box-3d",
@@ -2399,8 +2399,8 @@
     "title": "PUSH THE BOX 3D",
     "image": "/assets/upload/UCBGgames/push-the-box-3d.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Three-dimensional sokoban-style puzzle game where you push boxes to their targets.",
+    "groups": "puzzle, sokoban"
   },
   {
     "slug": "rabbit-samurai-2",
@@ -2408,8 +2408,8 @@
     "title": "RABBIT SAMURAI 2",
     "image": "/assets/upload/UCBGgames/rabbit-samurai-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Sequel to the action game featuring a skilled rabbit warrior battling enemies.",
+    "groups": "platformer, action"
   },
   {
     "slug": "raft-wars-2",
@@ -2417,8 +2417,8 @@
     "title": "RAFT WARS 2",
     "image": "/assets/upload/UCBGgames/raft-wars-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Improved sequel to the physics-based combat game with new weapons and challenges.",
+    "groups": "shooter, physics"
   },
   {
     "slug": "raft-wars",
@@ -2426,8 +2426,8 @@
     "title": "RAFT WARS",
     "image": "/assets/upload/UCBGgames/raft-wars.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Original physics-based battle game where you fight from rafts using various weapons.",
+    "groups": "shooter, physics"
   },
   {
     "slug": "raft-warz-2",
@@ -2435,8 +2435,8 @@
     "title": "RAFT WARZ 2",
     "image": "/assets/upload/UCBGgames/raft-warz-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Alternative version of raft combat with different mechanics and level designs.",
+    "groups": "shooter, physics"
   },
   {
     "slug": "rainbow-parkour-kogama",
@@ -2444,8 +2444,8 @@
     "title": "Rainbow Parkour Kogama",
     "image": "/assets/upload/UCBGgames/rainbow-parkour-kogama.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Colorful parkour challenge set in a vibrant rainbow-themed obstacle course.",
+    "groups": "parkour, platformer"
   },
   {
     "slug": "real-flying-truck",
@@ -2453,8 +2453,8 @@
     "title": "REAL FLYING TRUCK",
     "image": "/assets/upload/UCBGgames/real-flying-truck.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Unrealistic but fun vehicle game where you make trucks fly through challenging courses.",
+    "groups": "simulation, flying"
   },
   {
     "slug": "real-garbage-truck",
@@ -2462,8 +2462,8 @@
     "title": "REAL GARBAGE TRUCK",
     "image": "/assets/upload/UCBGgames/real-garbage-truck.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Simulation game where you operate a garbage truck and complete collection routes.",
+    "groups": "simulation, driving"
   },
   {
     "slug": "recoil",
@@ -2471,8 +2471,8 @@
     "title": "RECOIL",
     "image": "/assets/upload/UCBGgames/recoil.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Physics-based shooter where weapon recoil affects your movement and strategy.",
+    "groups": "shooter, action"
   },
   {
     "slug": "red-driver-5",
@@ -2480,8 +2480,8 @@
     "title": "Red Driver 5",
     "image": "/assets/upload/UCBGgames/red-driver-5.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Fifth installment of the challenging driving simulator with realistic vehicle physics.",
+    "groups": "racing, driving"
   },
   {
     "slug": "repuls",
@@ -2489,8 +2489,8 @@
     "title": "REPULS",
     "image": "/assets/upload/UCBGgames/repuls.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Sci-fi shooter game featuring futuristic weapons and alien enemies.",
+    "groups": "shooter, action"
   },
   {
     "slug": "retro-bowl",
@@ -2498,8 +2498,8 @@
     "title": "RETRO BOWL",
     "image": "/assets/upload/UCBGgames/retro-bowl.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Pixel-style American football management game with simple but deep gameplay.",
+    "groups": "football, sports"
   },
   {
     "slug": "riddle-school-5",
@@ -2507,8 +2507,8 @@
     "title": "RIDDLE SCHOOL 5",
     "image": "/assets/upload/UCBGgames/riddle-school-5.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Final chapter in the classic escape puzzle series with challenging brain teasers.",
+    "groups": "puzzle, adventure"
   },
   {
     "slug": "riddle-transfer-2",
@@ -2516,8 +2516,8 @@
     "title": "RIDDLE TRANSFER 2",
     "image": "/assets/upload/UCBGgames/riddle-transfer-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Sequel to the popular puzzle game featuring more mind-bending challenges.",
+    "groups": "puzzle, adventure"
   },
   {
     "slug": "rise-of-neon-square",
@@ -2525,8 +2525,8 @@
     "title": "RISE OF NEON SQUARE",
     "image": "/assets/upload/UCBGgames/rise-of-neon-square.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Vibrant neon platformer with rhythmic elements and challenging obstacles.",
+    "groups": "platformer, action"
   },
   {
     "slug": "roblox",
@@ -2534,8 +2534,8 @@
     "title": "ROBLOX",
     "image": "/assets/upload/UCBGgames/roblox.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Massive multiplayer platform where users can create and play millions of 3D games.",
+    "groups": "sandbox, multiplayer"
   },
   {
     "slug": "rocket-league",
@@ -2543,8 +2543,8 @@
     "title": "ROCKET LEAGUE",
     "image": "/assets/upload/UCBGgames/rocket-league.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "High-octane hybrid of arcade soccer and vehicular mayhem with rocket-powered cars.",
+    "groups": "soccer, racing"
   },
   {
     "slug": "rolling-ball-3d",
@@ -2552,8 +2552,8 @@
     "title": "ROLLING BALL 3D",
     "image": "/assets/upload/UCBGgames/rolling-ball-3d.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Precision ball-rolling game with challenging 3D obstacle courses.",
+    "groups": "puzzle, physics"
   },
   {
     "slug": "rolly-vortex-ball",
@@ -2561,8 +2561,8 @@
     "title": "ROLLY VORTEX BALL",
     "image": "/assets/upload/UCBGgames/rolly-vortex-ball.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Fast-paced ball game where you navigate through a spinning vortex of obstacles.",
+    "groups": "puzzle, physics"
   },
   {
     "slug": "rooftop-snipers-2",
@@ -2570,8 +2570,8 @@
     "title": "ROOFTOP SNIPERS 2",
     "image": "/assets/upload/UCBGgames/rooftop-snipers-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Sequel to the popular dueling game with new characters and physics.",
+    "groups": "shooter, physics"
   },
   {
     "slug": "rooftop-snipers",
@@ -2579,8 +2579,8 @@
     "title": "ROOFTOP SNIPERS",
     "image": "/assets/upload/UCBGgames/rooftop-snipers.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Simple but addictive two-player sniper duel game set on rooftops.",
+    "groups": "shooter, physics"
   },
   {
     "slug": "roper",
@@ -2588,8 +2588,8 @@
     "title": "ROPER",
     "image": "/assets/upload/UCBGgames/roper.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Western-themed rope physics game where you lasso and pull objects.",
+    "groups": "puzzle, physics"
   },
   {
     "slug": "royale-dudes",
@@ -2597,8 +2597,8 @@
     "title": "ROYALE DUDES",
     "image": "/assets/upload/UCBGgames/royale-dudes.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Battle royale platformer featuring stick-figure characters in last-man-standing matches.",
+    "groups": "battle-royale, multiplayer"
   },
   {
     "slug": "run-3",
@@ -2606,8 +2606,8 @@
     "title": "RUN 3",
     "image": "/assets/upload/UCBGgames/run-3.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Popular endless runner set in space with gravity-defying mechanics.",
+    "groups": "runner, endless"
   },
   {
     "slug": "running-fred",
@@ -2615,8 +2615,8 @@
     "title": "Running Fred",
     "image": "/assets/upload/UCBGgames/running-fred.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Fast-paced endless runner with the iconic character dodging deadly traps.",
+    "groups": "runner, endless"
   },
   {
     "slug": "sandstrike-io",
@@ -2624,8 +2624,8 @@
     "title": "SANDSTRIKE io",
     "image": "/assets/upload/UCBGgames/sandstrike-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Multiplayer .io game set in desert environments with strategic combat.",
+    "groups": "io, shooter"
   },
   {
     "slug": "sausage-flip",
@@ -2633,8 +2633,8 @@
     "title": "Sausage Flip",
     "image": "/assets/upload/UCBGgames/sausage-flip.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Physics-based game where you flip sausages to complete ridiculous challenges.",
+    "groups": "physics, platformer"
   },
   {
     "slug": "save-the-doge",
@@ -2642,8 +2642,8 @@
     "title": "SAVE THE DOGE",
     "image": "/assets/upload/UCBGgames/save-the-doge.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Puzzle game featuring the famous doge meme that needs rescuing from various traps.",
+    "groups": "puzzle, physics"
   },
   {
     "slug": "scenexe-io",
@@ -2651,8 +2651,8 @@
     "title": "SCENEXE io",
     "image": "/assets/upload/UCBGgames/scenexe-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Space-themed .io game where you control a ship and battle against other players.",
+    "groups": "io, shooter"
   },
   {
     "slug": "scrap-metal-3-infernal-trap",
@@ -2660,8 +2660,8 @@
     "title": "SCRAP METAL 3 Infernal Trap",
     "image": "/assets/upload/UCBGgames/scrap-metal-3-infernal-trap.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Third installment of the vehicle combat series with deadly new arenas.",
+    "groups": "racing, stunt"
   },
   {
     "slug": "shell-shockers-io",
@@ -2669,8 +2669,8 @@
     "title": "SHELL SHOCKERS io",
     "image": "/assets/upload/UCBGgames/shell-shockers-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Popular multiplayer shooter where you play as armed eggs in online battles.",
+    "groups": "io, shooter"
   },
   {
     "slug": "ships-3d",
@@ -2678,8 +2678,8 @@
     "title": "SHIPS 3D",
     "image": "/assets/upload/UCBGgames/ships-3d.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Naval combat game featuring 3D ship battles with realistic physics.",
+    "groups": "simulation, driving"
   },
   {
     "slug": "short-ride",
@@ -2687,8 +2687,8 @@
     "title": "Short Ride",
     "image": "/assets/upload/UCBGgames/short-ride.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Quick-paced driving game with short but challenging courses.",
+    "groups": "racing, driving"
   },
   {
     "slug": "skibidi-toilet-attack",
@@ -2696,8 +2696,8 @@
     "title": "SKIBIDI TOILET ATTACK",
     "image": "/assets/upload/UCBGgames/skibidi-toilet-attack.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Bizarre action game based on the viral meme featuring attacking toilets.",
+    "groups": "shooter, action"
   },
   {
     "slug": "skibidi-toilet-rampage",
@@ -2705,8 +2705,8 @@
     "title": "SKIBIDI TOILET RAMPAGE",
     "image": "/assets/upload/UCBGgames/skibidi-toilet-rampage.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Chaotic game where you control the infamous toilet creature causing destruction.",
+    "groups": "shooter, action"
   },
   {
     "slug": "skiing-fred",
@@ -2714,8 +2714,8 @@
     "title": "Skiing Fred",
     "image": "/assets/upload/UCBGgames/skiing-fred.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Winter sports version of the Running Fred series with skiing challenges.",
+    "groups": "runner, endless"
   },
   {
     "slug": "skillfite-io",
@@ -2723,8 +2723,8 @@
     "title": "SKILLFITE io",
     "image": "/assets/upload/UCBGgames/skillfite-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Competitive multiplayer fighting game with various characters and abilities.",
+    "groups": "io, fighting"
   },
   {
     "slug": "skyblock",
@@ -2732,8 +2732,8 @@
     "title": "SKYBLOCK",
     "image": "/assets/upload/UCBGgames/skyblock.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Survival challenge game where you start on a small floating island with limited resources.",
+    "groups": "sandbox, survival"
   },
   {
     "slug": "slime-rush-td",
@@ -2741,8 +2741,8 @@
     "title": "SLIME RUSH TD",
     "image": "/assets/upload/UCBGgames/slime-rush-td.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Tower defense game featuring cute slime creatures defending against waves.",
+    "groups": "tower-defense, strategy"
   },
   {
     "slug": "slope-2-players",
@@ -2750,8 +2750,8 @@
     "title": "SLOPE 2 PLAYERS",
     "image": "/assets/upload/UCBGgames/slope-2-players.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Multiplayer version of the popular Slope game where you race against friends.",
+    "groups": "racing, multiplayer"
   },
   {
     "slug": "slope-ball",
@@ -2759,8 +2759,8 @@
     "title": "SLOPE BALL",
     "image": "/assets/upload/UCBGgames/slope-ball.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Variation of Slope featuring a ball instead of a cube for different physics.",
+    "groups": "puzzle, physics"
   },
   {
     "slug": "slope",
@@ -2768,8 +2768,8 @@
     "title": "SLOPE",
     "image": "/assets/upload/UCBGgames/slope.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Popular 3D running game where you control a cube down a neon slope.",
+    "groups": "racing, endless"
   },
   {
     "slug": "small-world-cup",
@@ -2777,8 +2777,8 @@
     "title": "SMALL WORLD CUP",
     "image": "/assets/upload/UCBGgames/small-world-cup.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Simplified soccer game with small teams and fast-paced matches.",
+    "groups": "soccer, sports"
   },
   {
     "slug": "smash-karts-io",
@@ -2786,8 +2786,8 @@
     "title": "SMASH KARTS io",
     "image": "/assets/upload/UCBGgames/smash-karts-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Multiplayer kart battle .io game with power-ups and chaotic races.",
+    "groups": "io, racing"
   },
   {
     "slug": "snail-bob-fantasy-story",
@@ -2795,8 +2795,8 @@
     "title": "SNAIL BOB FANTASY STORY",
     "image": "/assets/upload/UCBGgames/snail-bob-fantasy-story.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Adventure puzzle game featuring Snail Bob in a magical fantasy world.",
+    "groups": "puzzle, adventure"
   },
   {
     "slug": "snail-bob-island-story",
@@ -2804,8 +2804,8 @@
     "title": "SNAIL BOB ISLAND STORY",
     "image": "/assets/upload/UCBGgames/snail-bob-island-story.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Tropical version of the Snail Bob series with island-themed puzzles.",
+    "groups": "puzzle, adventure"
   },
   {
     "slug": "snail-bob-love-story",
@@ -2813,8 +2813,8 @@
     "title": "SNAIL BOB Love Story",
     "image": "/assets/upload/UCBGgames/snail-bob-love-story.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Romantic-themed installment of the Snail Bob puzzle adventure series.",
+    "groups": "puzzle, adventure"
   },
   {
     "slug": "snail-bob-winter-story",
@@ -2822,8 +2822,8 @@
     "title": "SNAIL BOB WINTER STORY",
     "image": "/assets/upload/UCBGgames/snail-bob-winter-story.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Snowy adventure featuring Snail Bob in challenging winter puzzles.",
+    "groups": "puzzle, adventure"
   },
   {
     "slug": "snake-io",
@@ -2831,8 +2831,8 @@
     "title": "SNAKE io",
     "image": "/assets/upload/UCBGgames/snake-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Modern multiplayer version of the classic Snake game with .io elements.",
+    "groups": "io, snake"
   },
   {
     "slug": "snay-io-agario",
@@ -2840,8 +2840,8 @@
     "title": "SNAY io (AGARIO)",
     "image": "/assets/upload/UCBGgames/snay-io-agario.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Snake and Agar.io hybrid where you grow longer while competing against others.",
+    "groups": "io, agar"
   },
   {
     "slug": "sniper-shot-bullet-time",
@@ -2849,8 +2849,8 @@
     "title": "SNIPER SHOT BULLET TIME",
     "image": "/assets/upload/UCBGgames/sniper-shot-bullet-time.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Sniper simulation with slow-motion mechanics for precise targeting.",
+    "groups": "shooter, sniper"
   },
   {
     "slug": "snipey-io",
@@ -2858,8 +2858,8 @@
     "title": "SNIPEY io",
     "image": "/assets/upload/UCBGgames/snipey-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Multiplayer sniper battle .io game requiring precision and patience.",
+    "groups": "io, shooter"
   },
   {
     "slug": "snow-battle-io",
@@ -2867,8 +2867,8 @@
     "title": "SNOW BATTLE io",
     "image": "/assets/upload/UCBGgames/snow-battle-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Winter-themed multiplayer battle game with snowball fights and icy terrain.",
+    "groups": "io, shooter"
   },
   {
     "slug": "snow-rider-3d",
@@ -2876,8 +2876,8 @@
     "title": "SNOW RIDER 3D",
     "image": "/assets/upload/UCBGgames/snow-rider-3d.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "3D snowmobile racing game with challenging mountain courses.",
+    "groups": "racing, snow"
   },
   {
     "slug": "soccer-heads",
@@ -2885,8 +2885,8 @@
     "title": "SOCCER HEADS",
     "image": "/assets/upload/UCBGgames/soccer-heads.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Simplified soccer game with big-headed characters and arcade physics.",
+    "groups": "soccer, sports"
   },
   {
     "slug": "soccer-random",
@@ -2894,8 +2894,8 @@
     "title": "SOCCER RANDOM",
     "image": "/assets/upload/UCBGgames/soccer-random.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Unpredictable soccer game where random elements affect each match.",
+    "groups": "soccer, sports"
   },
   {
     "slug": "soccer-skills-euro-cup-2021",
@@ -2903,8 +2903,8 @@
     "title": "Soccer Skills Euro Cup 2021",
     "image": "/assets/upload/UCBGgames/soccer-skills-euro-cup-2021.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Soccer skill challenge game based on the European championship tournament.",
+    "groups": "soccer, sports"
   },
   {
     "slug": "sonic-the-hedgehog-remastered",
@@ -2912,8 +2912,8 @@
     "title": "SONIC THE HEDGEHOG REMASTERED",
     "image": "/assets/upload/UCBGgames/sonic-the-hedgehog-remastered.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Updated version of the classic Sonic platformer with improved graphics.",
+    "groups": "platformer, action"
   },
   {
     "slug": "spider-solitaire",
@@ -2921,8 +2921,8 @@
     "title": "SPIDER SOLITAIRE",
     "image": "/assets/upload/UCBGgames/spider-solitaire.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Digital version of the classic card game with multiple difficulty levels.",
+    "groups": "card, solitaire"
   },
   {
     "slug": "sprinter",
@@ -2931,7 +2931,7 @@
     "image": "/assets/upload/UCBGgames/sprinter.png",
     "video": "",
     "description": "",
-    "groups": "action, adventure"
+    "groups": "runner, endless"
   },
   {
     "slug": "stabfish-2",
@@ -2939,8 +2939,8 @@
     "title": "STABFISH 2",
     "image": "/assets/upload/UCBGgames/stabfish-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Sequel to the underwater combat game with improved fish physics.",
+    "groups": "shooter, action"
   },
   {
     "slug": "stabfish-io",
@@ -2948,8 +2948,8 @@
     "title": "STABFISH io",
     "image": "/assets/upload/UCBGgames/stabfish-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Multiplayer version where you play as fish attacking others in an ocean arena.",
+    "groups": "io, shooter, multiplayer"
   },
   {
     "slug": "stack-bump-3d",
@@ -2957,8 +2957,8 @@
     "title": "STACK BUMP 3D",
     "image": "/assets/upload/UCBGgames/stack-bump-3d.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "3D stacking game where you carefully balance blocks to build towers.",
+    "groups": "puzzle, physics"
   },
   {
     "slug": "starblast-io",
@@ -2966,8 +2966,8 @@
     "title": "STARBLAST io",
     "image": "/assets/upload/UCBGgames/starblast-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Space shooter .io game where you upgrade your ship while battling others.",
+    "groups": "io, space, shooter"
   },
   {
     "slug": "stealing-the-diamond",
@@ -2975,8 +2975,8 @@
     "title": "STEALING THE DIAMOND",
     "image": "/assets/upload/UCBGgames/stealing-the-diamond.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Heist puzzle game where you plan and execute a museum diamond theft.",
+    "groups": "stealth, action"
   },
   {
     "slug": "stick-archers-battle",
@@ -2984,8 +2984,8 @@
     "title": "Stick Archers Battle",
     "image": "/assets/upload/UCBGgames/stick-archers-battle.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Stick-figure archery combat game with physics-based arrow mechanics.",
+    "groups": "archery, multiplayer"
   },
   {
     "slug": "stick-defenders",
@@ -2993,8 +2993,8 @@
     "title": "Stick Defenders",
     "image": "/assets/upload/UCBGgames/stick-defenders.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Tower defense game featuring stick-figure characters defending bases.",
+    "groups": "tower-defense, strategy"
   },
   {
     "slug": "stick-duel-battle",
@@ -3002,8 +3002,8 @@
     "title": "STICK DUEL BATTLE",
     "image": "/assets/upload/UCBGgames/stick-duel-battle.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "One-on-one stick figure fighting game with various weapons.",
+    "groups": "fighting, multiplayer"
   },
   {
     "slug": "stick-merge",
@@ -3011,8 +3011,8 @@
     "title": "STICK MERGE",
     "image": "/assets/upload/UCBGgames/stick-merge.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Merge game where you combine stick figures to create stronger versions.",
+    "groups": "merge, puzzle"
   },
   {
     "slug": "stickbattle-lol",
@@ -3020,8 +3020,8 @@
     "title": "STICKBATTLE lol",
     "image": "/assets/upload/UCBGgames/stickbattle-lol.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Humorous stick-figure fighting game with ridiculous physics.",
+    "groups": "fighting, multiplayer"
   },
   {
     "slug": "stickman-boost-2",
@@ -3029,8 +3029,8 @@
     "title": "Stickman Boost 2",
     "image": "/assets/upload/UCBGgames/stickman-boost-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Sequel to the momentum-based platformer with new boost mechanics.",
+    "groups": "platformer, physics"
   },
   {
     "slug": "stickman-boost",
@@ -3038,8 +3038,8 @@
     "title": "STICKMAN BOOST",
     "image": "/assets/upload/UCBGgames/stickman-boost.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Physics-based stickman game where you use boosts to navigate courses.",
+    "groups": "platformer, physics"
   },
   {
     "slug": "stickman-hook",
@@ -3047,8 +3047,8 @@
     "title": "STICKMAN HOOK",
     "image": "/assets/upload/UCBGgames/stickman-hook.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Swinging game where you control a stickman using grappling hook physics.",
+    "groups": "platformer, physics"
   },
   {
     "slug": "subway-princess-runner",
@@ -3056,8 +3056,8 @@
     "title": "SUBWAY PRINCESS RUNNER",
     "image": "/assets/upload/UCBGgames/subway-princess-runner.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Endless runner game with princess characters escaping through subway tunnels.",
+    "groups": "runner, endless"
   },
   {
     "slug": "subway-runner",
@@ -3065,8 +3065,8 @@
     "title": "SUBWAY RUNNER",
     "image": "/assets/upload/UCBGgames/subway-runner.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Classic endless runner inspired by subway tunnel escapes.",
+    "groups": "runner, endless"
   },
   {
     "slug": "subway-surfers-bali",
@@ -3074,8 +3074,8 @@
     "title": "SUBWAY SURFERS Bali",
     "image": "/assets/upload/UCBGgames/subway-surfers-bali.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Tropical version of the endless runner set in beautiful Bali locations.",
+    "groups": "runner, endless"
   },
   {
     "slug": "subway-surfers-hawaii",
@@ -3083,8 +3083,8 @@
     "title": "Subway Surfers Hawaii",
     "image": "/assets/upload/UCBGgames/subway-surfers-hawaii.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Hawaiian-themed edition featuring island backdrops and surf culture.",
+    "groups": "runner, endless"
   },
   {
     "slug": "subway-surfers-new-york",
@@ -3092,8 +3092,8 @@
     "title": "SUBWAY SURFERS New York",
     "image": "/assets/upload/UCBGgames/subway-surfers-new-york.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "New York City version with iconic landmarks as the running backdrop.",
+    "groups": "runner, endless"
   },
   {
     "slug": "subway-surfers-san-francisco",
@@ -3101,8 +3101,8 @@
     "title": "SUBWAY SURFERS San Francisco",
     "image": "/assets/upload/UCBGgames/subway-surfers-san-francisco.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "California edition featuring the Golden Gate Bridge and hilly streets.",
+    "groups": "runner, endless"
   },
   {
     "slug": "subway-surfers-zurich",
@@ -3110,8 +3110,8 @@
     "title": "Subway Surfers Zurich",
     "image": "/assets/upload/UCBGgames/subway-surfers-zurich.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Swiss version of the endless runner with alpine and city scenery.",
+    "groups": "runner, endless"
   },
   {
     "slug": "subway-surfers",
@@ -3119,8 +3119,8 @@
     "title": "SUBWAY SURFERS",
     "image": "/assets/upload/UCBGgames/subway-surfers.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "World-famous endless runner game with graffiti-inspired visuals.",
+    "groups": "runner, endless"
   },
   {
     "slug": "sugar-shock-io",
@@ -3128,8 +3128,8 @@
     "title": "SUGAR SHOCK io",
     "image": "/assets/upload/UCBGgames/sugar-shock-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Sweet-themed multiplayer battle game with candy-inspired power-ups.",
+    "groups": "io, shooter"
   },
   {
     "slug": "suika-game",
@@ -3137,8 +3137,8 @@
     "title": "SUIKA GAME",
     "image": "/assets/upload/UCBGgames/suika-game.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Japanese fruit-matching puzzle game (also known as Watermelon Game).",
+    "groups": "puzzle, fruit-merger"
   },
   {
     "slug": "super-falling-fred",
@@ -3146,8 +3146,8 @@
     "title": "SUPER FALLING FRED",
     "image": "/assets/upload/UCBGgames/super-falling-fred.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Extreme version of the falling game with more obstacles and speed.",
+    "groups": "runner, endless"
   },
   {
     "slug": "super-fowlst",
@@ -3155,8 +3155,8 @@
     "title": "SUPER FOWLST",
     "image": "/assets/upload/UCBGgames/super-fowlst.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Action-packed game where you play as a bird battling through levels.",
+    "groups": "platformer, action"
   },
   {
     "slug": "super-hexbee-merger",
@@ -3164,8 +3164,8 @@
     "title": "SUPER HEXBEE MERGER",
     "image": "/assets/upload/UCBGgames/super-hexbee-merger.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Hexagon-based merging game where you combine bees to create stronger ones.",
+    "groups": "merge, puzzle"
   },
   {
     "slug": "super-liquid-soccer",
@@ -3173,8 +3173,8 @@
     "title": "SUPER LIQUID SOCCER",
     "image": "/assets/upload/UCBGgames/super-liquid-soccer.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Physics-based soccer game with exaggerated liquid-like movements.",
+    "groups": "soccer, physics"
   },
   {
     "slug": "super-mario-64",
@@ -3182,8 +3182,8 @@
     "title": "SUPER MARIO 64",
     "image": "/assets/upload/UCBGgames/super-mario-64.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Classic 3D platformer that revolutionized Mario games in the N64 era.",
+    "groups": "platformer, adventure"
   },
   {
     "slug": "super-mario-bros",
@@ -3191,8 +3191,8 @@
     "title": "SUPER MARIO BROS",
     "image": "/assets/upload/UCBGgames/super-mario-bros.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Iconic side-scrolling platformer that defined a generation of gaming.",
+    "groups": "platformer, adventure"
   },
   {
     "slug": "superhot",
@@ -3200,8 +3200,8 @@
     "title": "SUPERHOT",
     "image": "/assets/upload/UCBGgames/superhot.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Innovative shooter where time moves only when you move.",
+    "groups": "shooter, action"
   },
   {
     "slug": "surviv-io",
@@ -3209,8 +3209,8 @@
     "title": "SURVIV io",
     "image": "/assets/upload/UCBGgames/surviv-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Battle royale .io game where you scavenge weapons and outlast opponents.",
+    "groups": "io, battle-royale"
   },
   {
     "slug": "survivor-in-rainbow-monster",
@@ -3218,8 +3218,8 @@
     "title": "SURVIVOR IN RAINBOW MONSTER",
     "image": "/assets/upload/UCBGgames/survivor-in-rainbow-monster.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Colorful survival game where you escape from a rainbow-colored monster.",
+    "groups": "horror, survival"
   },
   {
     "slug": "table-tennis-ultimate-tournament",
@@ -3227,8 +3227,8 @@
     "title": "TABLE TENNIS ULTIMATE TOURNAMENT",
     "image": "/assets/upload/UCBGgames/table-tennis-ultimate-tournament.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Realistic ping pong simulator with various opponents and tournaments.",
+    "groups": "sports, ping-pong"
   },
   {
     "slug": "taming-io",
@@ -3236,8 +3236,8 @@
     "title": "TAMING io",
     "image": "/assets/upload/UCBGgames/taming-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Multiplayer survival game where you tame creatures and build bases.",
+    "groups": "io, survival"
   },
   {
     "slug": "tank-trouble-2",
@@ -3245,8 +3245,8 @@
     "title": "TANK TROUBLE 2",
     "image": "/assets/upload/UCBGgames/tank-trouble-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Sequel to the popular tank battle game with new maps and weapons.",
+    "groups": "tank, shooter"
   },
   {
     "slug": "tank-trouble",
@@ -3254,8 +3254,8 @@
     "title": "TANK TROUBLE",
     "image": "/assets/upload/UCBGgames/tank-trouble.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Classic tank combat game with maze-like arenas and strategic gameplay.",
+    "groups": "tank, shooter"
   },
   {
     "slug": "tanuki-sunset",
@@ -3263,8 +3263,8 @@
     "title": "Tanuki Sunset",
     "image": "/assets/upload/UCBGgames/tanuki-sunset.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Stylish longboarding game featuring a raccoon dog surfing at sunset.",
+    "groups": "racing, skateboarding"
   },
   {
     "slug": "tap-tap-shots",
@@ -3272,8 +3272,8 @@
     "title": "TAP TAP SHOTS",
     "image": "/assets/upload/UCBGgames/tap-tap-shots.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Basketball shooting game requiring precise timing for perfect shots.",
+    "groups": "basketball, sports"
   },
   {
     "slug": "temple-run-2",
@@ -3281,8 +3281,8 @@
     "title": "TEMPLE RUN 2",
     "image": "/assets/upload/UCBGgames/temple-run-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Sequel to the iconic endless runner with improved graphics and mechanics.",
+    "groups": "runner, endless"
   },
   {
     "slug": "the-backrooms",
@@ -3290,8 +3290,8 @@
     "title": "THE BACKROOMS",
     "image": "/assets/upload/UCBGgames/the-backrooms.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Horror exploration game based on the creepy infinite office space concept.",
+    "groups": "horror, exploration"
   },
   {
     "slug": "the-bowling-club",
@@ -3299,8 +3299,8 @@
     "title": "THE BOWLING CLUB",
     "image": "/assets/upload/UCBGgames/the-bowling-club.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Realistic bowling simulator with physics-based pin action.",
+    "groups": "sports, bowling"
   },
   {
     "slug": "the-final-earth-2",
@@ -3308,8 +3308,8 @@
     "title": "THE FINAL EARTH 2",
     "image": "/assets/upload/UCBGgames/the-final-earth-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Space colony building sequel with more structures and challenges.",
+    "groups": "strategy, city-builder"
   },
   {
     "slug": "the-final-earth",
@@ -3317,8 +3317,8 @@
     "title": "THE FINAL EARTH",
     "image": "/assets/upload/UCBGgames/the-final-earth.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Original planet-building strategy game about creating a new home for humanity.",
+    "groups": "strategy, city-builder"
   },
   {
     "slug": "the-fish-master",
@@ -3326,8 +3326,8 @@
     "title": "THE FISH MASTER",
     "image": "/assets/upload/UCBGgames/the-fish-master.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Fishing simulator where you catch increasingly rare and valuable fish.",
+    "groups": "fishing, simulation"
   },
   {
     "slug": "the-heist",
@@ -3335,8 +3335,8 @@
     "title": "THE HEIST",
     "image": "/assets/upload/UCBGgames/the-heist.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Stealth puzzle game about planning and executing perfect robberies.",
+    "groups": "stealth, action"
   },
   {
     "slug": "the-impossible-quiz-2",
@@ -3344,8 +3344,8 @@
     "title": "THE IMPOSSIBLE QUIZ 2",
     "image": "/assets/upload/UCBGgames/the-impossible-quiz-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Sequel to the infamous trick question game with more mind-bending puzzles.",
+    "groups": "trivia, puzzle"
   },
   {
     "slug": "the-impossible-quiz",
@@ -3353,8 +3353,8 @@
     "title": "THE IMPOSSIBLE QUIZ",
     "image": "/assets/upload/UCBGgames/the-impossible-quiz.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Original absurd quiz game featuring illogical questions and surprising answers.",
+    "groups": "trivia, puzzle"
   },
   {
     "slug": "there-is-no-game",
@@ -3362,8 +3362,8 @@
     "title": "THERE IS NO GAME",
     "image": "/assets/upload/UCBGgames/there-is-no-game.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Meta puzzle adventure that plays with video game conventions and expectations.",
+    "groups": "puzzle, meta"
   },
   {
     "slug": "timber-man",
@@ -3371,8 +3371,8 @@
     "title": "TIMBER-MAN",
     "image": "/assets/upload/UCBGgames/timber-man.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Fast-paced lumberjack game where you chop trees while avoiding branches.",
+    "groups": "arcade, action"
   },
   {
     "slug": "time-shooter-2",
@@ -3380,8 +3380,8 @@
     "title": "TIME SHOOTER 2",
     "image": "/assets/upload/UCBGgames/time-shooter-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Sequel to the time-manipulation shooter with new weapons and enemies.",
+    "groups": "shooter, action"
   },
   {
     "slug": "time-shooter-3-swat",
@@ -3389,8 +3389,8 @@
     "title": "TIME SHOOTER 3 SWAT",
     "image": "/assets/upload/UCBGgames/time-shooter-3-swat.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Police-themed installment of the time-bending shooter series.",
+    "groups": "shooter, action"
   },
   {
     "slug": "tiny-fishing",
@@ -3398,8 +3398,8 @@
     "title": "TINY FISHING",
     "image": "/assets/upload/UCBGgames/tiny-fishing.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Relaxing fishing game with simple controls and progression system.",
+    "groups": "fishing, simulation"
   },
   {
     "slug": "tomb-runner",
@@ -3407,8 +3407,8 @@
     "title": "Tomb Runner",
     "image": "/assets/upload/UCBGgames/tomb-runner.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Adventure runner set in ancient tombs with traps and treasures.",
+    "groups": "runner, endless"
   },
   {
     "slug": "tower-crash-3d",
@@ -3416,8 +3416,8 @@
     "title": "TOWER CRASH 3D",
     "image": "/assets/upload/UCBGgames/tower-crash-3d.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Destruction game where you knock down towers with various methods.",
+    "groups": "puzzle, physics"
   },
   {
     "slug": "tower-defense-2d",
@@ -3425,8 +3425,8 @@
     "title": "TOWER DEFENSE 2D",
     "image": "/assets/upload/UCBGgames/tower-defense-2d.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Classic tower defense gameplay with 2D graphics and strategic elements.",
+    "groups": "tower-defense, strategy"
   },
   {
     "slug": "traffic-control",
@@ -3434,8 +3434,8 @@
     "title": "TRAFFIC CONTROL",
     "image": "/assets/upload/UCBGgames/traffic-control.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Simulation game where you manage busy intersections as a traffic controller.",
+    "groups": "simulation, puzzle"
   },
   {
     "slug": "traffic-run",
@@ -3443,8 +3443,8 @@
     "title": "TRAFFIC RUN",
     "image": "/assets/upload/UCBGgames/traffic-run.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Endless runner where you dodge traffic in busy city streets.",
+    "groups": "runner, endless"
   },
   {
     "slug": "trafficmania",
@@ -3452,8 +3452,8 @@
     "title": "TRAFFICMANIA",
     "image": "/assets/upload/UCBGgames/trafficmania.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Chaotic traffic management game with increasingly complex road systems.",
+    "groups": "simulation, puzzle"
   },
   {
     "slug": "tribals-io",
@@ -3461,8 +3461,8 @@
     "title": "TRIBALS io",
     "image": "/assets/upload/UCBGgames/tribals-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Primitive tribe battle .io game with resource gathering and village building.",
+    "groups": "io, strategy"
   },
   {
     "slug": "tricksplit",
@@ -3470,8 +3470,8 @@
     "title": "TRICKSPLIT",
     "image": "/assets/upload/UCBGgames/tricksplit.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Precision driving game where you perform perfect splits between obstacles.",
+    "groups": "puzzle, physics"
   },
   {
     "slug": "tube-clicker",
@@ -3479,8 +3479,8 @@
     "title": "TUBE CLICKER",
     "image": "/assets/upload/UCBGgames/tube-clicker.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Incremental game about growing a YouTube channel through strategic decisions.",
+    "groups": "clicker, idle"
   },
   {
     "slug": "tube-jumpers",
@@ -3488,8 +3488,8 @@
     "title": "TUBE JUMPERS",
     "image": "/assets/upload/UCBGgames/tube-jumpers.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Multiplayer platformer where you jump between floating tubes.",
+    "groups": "platformer, multiplayer"
   },
   {
     "slug": "tunnel-rush-2",
@@ -3497,8 +3497,8 @@
     "title": "TUNNEL RUSH 2",
     "image": "/assets/upload/UCBGgames/tunnel-rush-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Sequel to the fast-paced tunnel runner with new obstacles and visuals.",
+    "groups": "runner, endless"
   },
   {
     "slug": "tunnel-rush",
@@ -3506,8 +3506,8 @@
     "title": "TUNNEL RUSH",
     "image": "/assets/upload/UCBGgames/tunnel-rush.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Intense tunnel running game requiring quick reflexes to dodge obstacles.",
+    "groups": "runner, endless"
   },
   {
     "slug": "turn-turn",
@@ -3515,8 +3515,8 @@
     "title": "TURN TURN",
     "image": "/assets/upload/UCBGgames/turn-turn.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Rotation-based puzzle game where you spin platforms to solve levels.",
+    "groups": "puzzle, strategy"
   },
   {
     "slug": "two-ball-3d",
@@ -3524,8 +3524,8 @@
     "title": "TWO BALL 3D",
     "image": "/assets/upload/UCBGgames/two-ball-3d.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Dual-ball control challenge where you guide two spheres simultaneously.",
+    "groups": "puzzle, physics"
   },
   {
     "slug": "two-tunnel-3d",
@@ -3533,8 +3533,8 @@
     "title": "TWO TUNNEL 3D",
     "image": "/assets/upload/UCBGgames/two-tunnel-3d.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Split-screen tunnel game where you control two paths at once.",
+    "groups": "puzzle, maze"
   },
   {
     "slug": "uno-4-colors-multiplayer",
@@ -3542,8 +3542,8 @@
     "title": "UNO 4 COLORS MULTIPLAYER",
     "image": "/assets/upload/UCBGgames/uno-4-colors-multiplayer.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Digital version of the classic card game with online multiplayer support.",
+    "groups": "card, multiplayer"
   },
   {
     "slug": "venge-io",
@@ -3551,8 +3551,8 @@
     "title": "VENGE io",
     "image": "/assets/upload/UCBGgames/venge-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Multiplayer battle .io game focused on revenge mechanics after defeats.",
+    "groups": "io, shooter"
   },
   {
     "slug": "vex-3",
@@ -3560,8 +3560,8 @@
     "title": "VEX 3",
     "image": "/assets/upload/UCBGgames/vex-3.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Third installment of the challenging obstacle course platformer.",
+    "groups": "platformer, obstacle-course"
   },
   {
     "slug": "vex-4",
@@ -3569,8 +3569,8 @@
     "title": "VEX 4",
     "image": "/assets/upload/UCBGgames/vex-4.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Fourth version with new traps and parkour challenges for the stick character.",
+    "groups": "platformer, obstacle-course"
   },
   {
     "slug": "vex-5",
@@ -3578,8 +3578,8 @@
     "title": "VEX 5",
     "image": "/assets/upload/UCBGgames/vex-5.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Latest sequel featuring improved physics and more complex levels.",
+    "groups": "platformer, obstacle-course"
   },
   {
     "slug": "vex-6",
@@ -3587,8 +3587,8 @@
     "title": "VEX 6",
     "image": "/assets/upload/UCBGgames/vex-6.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Sixth installment with new mechanics and obstacles to overcome.",
+    "groups": "platformer, obstacle-course"
   },
   {
     "slug": "vex-7",
@@ -3596,8 +3596,8 @@
     "title": "VEX 7",
     "image": "/assets/upload/UCBGgames/vex-7.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Seventh version of the popular platformer with enhanced graphics.",
+    "groups": "platformer, obstacle-course"
   },
   {
     "slug": "vex-8",
@@ -3605,8 +3605,8 @@
     "title": "VEX 8",
     "image": "/assets/upload/UCBGgames/vex-8.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Eighth chapter in the Vex series with the most challenging courses yet.",
+    "groups": "platformer, obstacle-course"
   },
   {
     "slug": "volley-random",
@@ -3614,8 +3614,8 @@
     "title": "Volley Random",
     "image": "/assets/upload/UCBGgames/volley-random.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Unpredictable volleyball game where random elements affect each match.",
+    "groups": "volleyball, sports"
   },
   {
     "slug": "voxiom-io",
@@ -3623,8 +3623,8 @@
     "title": "VOXIOM io",
     "image": "/assets/upload/UCBGgames/voxiom-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Voxel-based shooter .io game with building and combat elements.",
+    "groups": "io, shooter"
   },
   {
     "slug": "war-brokers-io",
@@ -3632,8 +3632,8 @@
     "title": "WAR BROKERS io",
     "image": "/assets/upload/UCBGgames/war-brokers-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Tactical multiplayer shooter with various modern military weapons.",
+    "groups": "io, shooter"
   },
   {
     "slug": "wheelie-bike",
@@ -3641,8 +3641,8 @@
     "title": "WHEELIE BIKE",
     "image": "/assets/upload/UCBGgames/wheelie-bike.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Motorcycle stunt game focused on performing perfect wheelies.",
+    "groups": "racing, bike"
   },
   {
     "slug": "wheely-2",
@@ -3650,8 +3650,8 @@
     "title": "WHEELY 2",
     "image": "/assets/upload/UCBGgames/wheely-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Sequel to the car puzzle game with more challenging brain teasers.",
+    "groups": "puzzle, point-and-click"
   },
   {
     "slug": "wheely-3",
@@ -3659,8 +3659,8 @@
     "title": "WHEELY 3",
     "image": "/assets/upload/UCBGgames/wheely-3.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Third installment featuring the cute car in new puzzle adventures.",
+    "groups": "puzzle, point-and-click"
   },
   {
     "slug": "wheely-4-time-travel",
@@ -3668,8 +3668,8 @@
     "title": "WHEELY 4 TIME TRAVEL",
     "image": "/assets/upload/UCBGgames/wheely-4-time-travel.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Time-traveling edition with historical settings and new mechanics.",
+    "groups": "puzzle, point-and-click"
   },
   {
     "slug": "wheely-5",
@@ -3677,8 +3677,8 @@
     "title": "WHEELY 5",
     "image": "/assets/upload/UCBGgames/wheely-5.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Fifth adventure with improved graphics and more complex puzzles.",
+    "groups": "puzzle, point-and-click"
   },
   {
     "slug": "wheely-6-fairytale",
@@ -3686,8 +3686,8 @@
     "title": "WHEELY 6 FAIRYTALE",
     "image": "/assets/upload/UCBGgames/wheely-6-fairytale.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Fantasy-themed version set in a magical storybook world.",
+    "groups": "puzzle, point-and-click"
   },
   {
     "slug": "wheely-7-detective",
@@ -3695,8 +3695,8 @@
     "title": "WHEELY 7 DETECTIVE",
     "image": "/assets/upload/UCBGgames/wheely-7-detective.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Mystery edition where you solve cases as a detective car.",
+    "groups": "puzzle, point-and-click"
   },
   {
     "slug": "wizard-mike",
@@ -3704,8 +3704,8 @@
     "title": "WIZARD MIKE",
     "image": "/assets/upload/UCBGgames/wizard-mike.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Magical platformer where you play as a wizard named Mike.",
+    "groups": "platformer, action"
   },
   {
     "slug": "word-slide",
@@ -3713,8 +3713,8 @@
     "title": "WORD SLIDE",
     "image": "/assets/upload/UCBGgames/word-slide.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Word puzzle game where you slide letters to form hidden words.",
+    "groups": "word, puzzle"
   },
   {
     "slug": "wordle-infinite",
@@ -3722,8 +3722,8 @@
     "title": "WORDLE INFINITE",
     "image": "/assets/upload/UCBGgames/wordle-infinite.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Endless version of the popular word-guessing game with unlimited puzzles.",
+    "groups": "word, puzzle"
   },
   {
     "slug": "worlds-hardest-game-2",
@@ -3731,8 +3731,8 @@
     "title": "WORLD'S HARDEST GAME 2",
     "image": "/assets/upload/UCBGgames/worlds-hardest-game-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Even more challenging sequel to the notoriously difficult puzzle game.",
+    "groups": "puzzle, difficult"
   },
   {
     "slug": "worlds-hardest-game",
@@ -3740,8 +3740,8 @@
     "title": "WORLD's HARDEST GAME",
     "image": "/assets/upload/UCBGgames/worlds-hardest-game.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Original version of the extremely challenging precision puzzle game.",
+    "groups": "puzzle, difficult"
   },
   {
     "slug": "wormate-io",
@@ -3749,8 +3749,8 @@
     "title": "WORMATE io",
     "image": "/assets/upload/UCBGgames/wormate-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Multiplayer snake game where you grow by eating and outlasting others.",
+    "groups": "io, snake"
   },
   {
     "slug": "wrestle-bros-io",
@@ -3758,8 +3758,8 @@
     "title": "WRESTLE BROS io",
     "image": "/assets/upload/UCBGgames/wrestle-bros-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Wrestling battle .io game featuring exaggerated physics and moves.",
+    "groups": "io, fighting"
   },
   {
     "slug": "x-trial-racing",
@@ -3767,8 +3767,8 @@
     "title": "X TRIAL RACING",
     "image": "/assets/upload/UCBGgames/x-trial-racing.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Extreme motorcycle trial racing with challenging obstacle courses.",
+    "groups": "racing, bike"
   },
   {
     "slug": "yohoho-io",
@@ -3776,8 +3776,8 @@
     "title": "YOHOHO io",
     "image": "/assets/upload/UCBGgames/yohoho-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Pirate-themed multiplayer battle game with ship combat elements.",
+    "groups": "io, pirate"
   },
   {
     "slug": "zombie-shooter-2d",
@@ -3785,8 +3785,8 @@
     "title": "ZOMBIE SHOOTER 2D",
     "image": "/assets/upload/UCBGgames/zombie-shooter-2d.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Side-scrolling shooter where you battle waves of undead enemies.",
+    "groups": "shooter, zombie"
   },
   {
     "slug": "zombocalypse-shooter",
@@ -3794,8 +3794,8 @@
     "title": "ZOMBOCALYPSE SHOOTER",
     "image": "/assets/upload/UCBGgames/zombocalypse-shooter.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Top-down zombie survival game with various weapons and upgrades.",
+    "groups": "shooter, zombie"
   },
   {
     "slug": "zombs-royale-io",
@@ -3803,8 +3803,8 @@
     "title": "ZOMBS ROYALE io",
     "image": "/assets/upload/UCBGgames/zombs-royale-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Battle royale shooter with zombie elements and building mechanics.",
+    "groups": "io, battle-royale"
   },
   {
     "slug": "zuck-vs-musk-techbro-beatdown",
@@ -3812,8 +3812,8 @@
     "title": "Zuck vs Musk - Techbro beatdown",
     "image": "/assets/upload/UCBGgames/zuck-vs-musk-techbro-beatdown.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Satirical fighting game featuring tech billionaires in ridiculous combat.",
+    "groups": "fighting, satire"
   },
   {
     "slug": "18-wheeler-truck-parking-ez",
@@ -3821,8 +3821,8 @@
     "title": "18 WHEELER TRUCK PARKING EZ",
     "image": "/assets/upload/busqueda/18-wheeler-truck-parking-ez.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Simplified version of truck parking with easier controls for beginners.",
+    "groups": "simulation, driving"
   },
   {
     "slug": "18-wheeler-truck-parking-2",
@@ -3830,8 +3830,8 @@
     "title": "18 WHEELER TRUCK PARKING 2",
     "image": "/assets/upload/busqueda/18-wheeler-truck-parking-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Sequel to the truck parking simulator with more challenging spots.",
+    "groups": "simulation, driving"
   },
   {
     "slug": "18-wheeler-driving-sim",
@@ -3839,8 +3839,8 @@
     "title": "18 WHEELER DRIVING SIM",
     "image": "/assets/upload/busqueda/18-wheeler-driving-sim.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Realistic big rig driving simulation with highway routes.",
+    "groups": "simulation, driving"
   },
   {
     "slug": "18-wheeler-cargo-simulator",
@@ -3848,8 +3848,8 @@
     "title": "18 WHEELER CARGO SIMULATOR",
     "image": "/assets/upload/busqueda/18-wheeler-cargo-simulator.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Trucking game focused on properly securing and transporting cargo.",
+    "groups": "simulation, driving"
   },
   {
     "slug": "18-wheeler-cargo-simulator-2",
@@ -3857,18 +3857,17 @@
     "title": "18 WHEELER CARGO SIMULATOR 2",
     "image": "/assets/upload/busqueda/18-wheeler-cargo-simulator-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Improved sequel with more cargo types and delivery challenges.",
+    "groups": "simulation, driving"
   },
-
   {
     "slug": "a-small-world-cup",
     "url": "/game/a-small-world-cup.html",
     "title": "A SMALL WORLD CUP",
     "image": "/assets/upload/busqueda/a-small-world-cup.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Compact soccer game featuring small teams and fast matches.",
+    "groups": "soccer, sports"
   },
   {
     "slug": "amazing-rope-vice-spider-vegas",
@@ -3876,8 +3875,8 @@
     "title": "AMAZING ROPE VICE SPIDER VEGAS",
     "image": "/assets/upload/busqueda/amazing-rope-vice-spider-vegas.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Bizarre physics game combining rope mechanics with spider characters in Vegas.",
+    "groups": "physics, puzzle"
   },
   {
     "slug": "block-the-pig",
@@ -3885,8 +3884,8 @@
     "title": "BLOCK THE PIG",
     "image": "/assets/upload/busqueda/block-the-pig.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Strategy puzzle where you place blocks to prevent a pig from escaping.",
+    "groups": "puzzle, strategy"
   },
   {
     "slug": "blumgi-bloom",
@@ -3894,8 +3893,8 @@
     "title": "BLUMGI BLOOM",
     "image": "/assets/upload/busqueda/blumgi-bloom.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Colorful puzzle game about growing flowers by matching colors.",
+    "groups": "puzzle, platformer"
   },
   {
     "slug": "booblehead-soccer-royale",
@@ -3903,8 +3902,8 @@
     "title": "BOOBLEHEAD SOCCER ROYALE",
     "image": "/assets/upload/busqueda/booblehead-soccer-royale.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Battle royale version of the wobbly-headed soccer game.",
+    "groups": "soccer, sports"
   },
   {
     "slug": "boxing-phsyics-2",
@@ -3912,8 +3911,8 @@
     "title": "BOXING PHSYICS 2",
     "image": "/assets/upload/busqueda/boxing-phsyics-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Physics-based boxing sequel with exaggerated ragdoll knockouts.",
+    "groups": "boxing, physics"
   },
   {
     "slug": "burrito-bison",
@@ -3921,8 +3920,8 @@
     "title": "BURRITO BISON",
     "image": "/assets/upload/busqueda/burrito-bison.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Original version of the wacky launch game featuring a wrestling bison.",
+    "groups": "launcher, physics"
   },
   {
     "slug": "falling-fred",
@@ -3930,8 +3929,8 @@
     "title": "FALLING FRED",
     "image": "/assets/upload/busqueda/falling-fred.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Early version of the falling game series with deadly obstacles.",
+    "groups": "runner, endless"
   },
   {
     "slug": "flip-bottle",
@@ -3939,8 +3938,8 @@
     "title": "FLIP BOTTLE",
     "image": "/assets/upload/busqueda/flip-bottle.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Satisfying physics game about flipping bottles to land perfectly.",
+    "groups": "physics, simulation"
   },
   {
     "slug": "fnaf-2",
@@ -3948,8 +3947,8 @@
     "title": "FNAF 2",
     "image": "/assets/upload/busqueda/fnaf-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Second installment in the Five Nights at Freddy's horror series.",
+    "groups": "horror, survival"
   },
   {
     "slug": "fred-running",
@@ -3957,8 +3956,8 @@
     "title": "FRED RUNNING",
     "image": "/assets/upload/busqueda/fred-running.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Early endless runner featuring the character Fred dodging traps.",
+    "groups": "runner, endless"
   },
   {
     "slug": "free-kick-classic",
@@ -3966,8 +3965,8 @@
     "title": "FREE KICK CLASSIC",
     "image": "/assets/upload/busqueda/free-kick-classic.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Traditional soccer free kick simulator with simple mechanics.",
+    "groups": "soccer, sports"
   },
   {
     "slug": "funny-shooter-destroy-all",
@@ -3975,8 +3974,8 @@
     "title": "FUNNY SHOOTER DESTROY ALL",
     "image": "/assets/upload/busqueda/funny-shooter-destroy-all.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Chaotic shooter where you cause maximum destruction with crazy weapons.",
+    "groups": "shooter, action"
   },
   {
     "slug": "geodash",
@@ -3984,8 +3983,8 @@
     "title": "GEODASH",
     "image": "/assets/upload/busqueda/geodash.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Early version of the challenging platformer with geometric obstacles.",
+    "groups": "platformer, runner"
   },
   {
     "slug": "geometry-dash-2",
@@ -3993,8 +3992,8 @@
     "title": "GEOMETRY DASH 2",
     "image": "/assets/upload/busqueda/geometry-dash-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Second installment of the rhythm-based platforming challenge.",
+    "groups": "platformer, rhythm"
   },
   {
     "slug": "hammer-2-reloaded",
@@ -4002,8 +4001,8 @@
     "title": "HAMMER 2 RELOADED",
     "image": "/assets/upload/busqueda/hammer-2-reloaded.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Enhanced version of the destruction physics game with more objects.",
+    "groups": "fighting, physics"
   },
   {
     "slug": "hexbee-merger",
@@ -4011,8 +4010,8 @@
     "title": "HEXBEE MERGER",
     "image": "/assets/upload/busqueda/hexbee-merger.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Original hexagon-based merging game featuring bee creatures.",
+    "groups": "merge, puzzle"
   },
   {
     "slug": "idle-restaurants-tycoon",
@@ -4020,8 +4019,8 @@
     "title": "IDLE RESTAURANTS TYCOON",
     "image": "/assets/upload/busqueda/idle-restaurants-tycoon.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Business management game about building a restaurant empire.",
+    "groups": "idle, restaurant"
   },
   {
     "slug": "jetpack-joyride-browser",
@@ -4029,8 +4028,8 @@
     "title": "JETPACK JOYRIDE BROWSER",
     "image": "/assets/upload/busqueda/jetpack-joyride-browser.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Browser version of the popular mobile endless runner with jetpacks.",
+    "groups": "runner, endless"
   },
   {
     "slug": "johnny-revenge",
@@ -4038,8 +4037,8 @@
     "title": "JOHNNY REVENGE",
     "image": "/assets/upload/busqueda/johnny-revenge.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Action game about a character seeking vengeance through combat.",
+    "groups": "shooter, action"
   },
   {
     "slug": "jungle-tower-defense",
@@ -4047,8 +4046,8 @@
     "title": "JUNGLE TOWER DEFENSE",
     "image": "/assets/upload/busqueda/jungle-tower-defense.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "TD game set in jungle environments with exotic creatures.",
+    "groups": "tower-defense, strategy"
   },
   {
     "slug": "knight-hero-adventure",
@@ -4056,8 +4055,8 @@
     "title": "KNIGHT HERO ADVENTURE",
     "image": "/assets/upload/busqueda/knight-hero-adventure.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Original version of the medieval action RPG series.",
+    "groups": "rpg, adventure"
   },
   {
     "slug": "money-movers-3",
@@ -4065,8 +4064,8 @@
     "title": "MONEY MOVERS 3",
     "image": "/assets/upload/busqueda/money-movers-3.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Third installment of the heist puzzle game with new security systems.",
+    "groups": "heist, action"
   },
   {
     "slug": "money-rush",
@@ -4074,8 +4073,8 @@
     "title": "MONEY RUSH",
     "image": "/assets/upload/busqueda/money-rush.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Fast-paced game about collecting money while avoiding obstacles.",
+    "groups": "puzzle, physics"
   },
   {
     "slug": "moto-x3m-3-pool-party",
@@ -4083,8 +4082,8 @@
     "title": "MOTO X3M 3 POOL PARTY",
     "image": "/assets/upload/busqueda/moto-x3m-3-pool-party.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Water-themed bike stunts game with pool obstacles.",
+    "groups": "racing, bike"
   },
   {
     "slug": "moto-x3m-6-spooky-land",
@@ -4092,8 +4091,8 @@
     "title": "MOTO X3M 6 SPOOKY LAND",
     "image": "/assets/upload/busqueda/moto-x3m-6-spooky-land.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Halloween edition of the bike stunt game with creepy levels.",
+    "groups": "racing, bike"
   },
   {
     "slug": "moto-x3m-two",
@@ -4101,8 +4100,8 @@
     "title": "MOTO X3M TWO",
     "image": "/assets/upload/busqueda/moto-x3m-two.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Second version of the popular motorcycle obstacle course game.",
+    "groups": "racing, bike"
   },
   {
     "slug": "moto-x3m4-winter",
@@ -4110,8 +4109,8 @@
     "title": "MOTO X3M 4 WINTER",
     "image": "/assets/upload/busqueda/moto-x3m4-winter.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Snowy version featuring icy physics and winter-themed courses.",
+    "groups": "racing, bike"
   },
   {
     "slug": "noob-steve",
@@ -4119,8 +4118,8 @@
     "title": "NOOB STEVE",
     "image": "/assets/upload/busqueda/noob-steve.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Original platformer featuring a beginner character learning skills.",
+    "groups": "parkour, platformer"
   },
   {
     "slug": "only-up",
@@ -4128,8 +4127,8 @@
     "title": "ONLY UP",
     "image": "/assets/upload/busqueda/only-up.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "First version of the climbing game with endless vertical challenges.",
+    "groups": "platformer, climbing"
   },
   {
     "slug": "ovo-3",
@@ -4137,8 +4136,8 @@
     "title": "OvO 3",
     "image": "/assets/upload/busqueda/ovo-3.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Third main installment of the obstacle course ball game.",
+    "groups": "platformer, parkour"
   },
   {
     "slug": "penalty-kick-online",
@@ -4146,8 +4145,8 @@
     "title": "PENALTY KICK ONLINE",
     "image": "/assets/upload/busqueda/penalty-kick-online.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Multiplayer version of the soccer penalty shootout game.",
+    "groups": "soccer, sports"
   },
   {
     "slug": "pixel-gun-apocalypse-2",
@@ -4155,8 +4154,8 @@
     "title": "PIXEL GUN APOCALYPSE 2",
     "image": "/assets/upload/busqueda/pixel-gun-apocalypse-2.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Sequel to the blocky shooter set in a post-apocalyptic world.",
+    "groups": "shooter, action"
   },
   {
     "slug": "push-the-box",
@@ -4164,8 +4163,8 @@
     "title": "PUSH THE BOX",
     "image": "/assets/upload/busqueda/push-the-box.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Original version of the sokoban-style box pushing puzzle game.",
+    "groups": "puzzle, sokoban"
   },
   {
     "slug": "royale-dudes-io",
@@ -4173,8 +4172,8 @@
     "title": "ROYALE DUDES io",
     "image": "/assets/upload/busqueda/royale-dudes-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": ".io version of the battle royale stick-figure platformer.",
+    "groups": "io, battle-royale"
   },
   {
     "slug": "sausage-flipping",
@@ -4182,8 +4181,8 @@
     "title": "SAUSAGE FLIPPING",
     "image": "/assets/upload/busqueda/sausage-flipping.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Physics game about flipping sausages with perfect timing.",
+    "groups": "physics, platformer"
   },
   {
     "slug": "scrap-metal-infernal",
@@ -4191,8 +4190,8 @@
     "title": "SCRAP METAL INFERNAL",
     "image": "/assets/upload/busqueda/scrap-metal-infernal.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Vehicle combat game set in hellish arenas with destructive physics.",
+    "groups": "racing, stunt"
   },
   {
     "slug": "shell-shockers",
@@ -4200,8 +4199,8 @@
     "title": "SHELL SHOCKERS",
     "image": "/assets/upload/busqueda/shell-shockers.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Original egg-themed shooter with various game modes.",
+    "groups": "shooter, multiplayer"
   },
   {
     "slug": "slope-two-players-multiplayer",
@@ -4209,8 +4208,8 @@
     "title": "SLOPE TWO PLAYERS MULTIPLAYER",
     "image": "/assets/upload/busqueda/slope-two-players-multiplayer.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Online multiplayer version of the popular Slope running game.",
+    "groups": "racing, multiplayer"
   },
   {
     "slug": "smash-karts",
@@ -4218,8 +4217,8 @@
     "title": "SMASH KARTS",
     "image": "/assets/upload/busqueda/smash-karts.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Standalone version of the chaotic kart battle game.",
+    "groups": "racing, multiplayer"
   },
   {
     "slug": "snail-bob-5",
@@ -4227,8 +4226,8 @@
     "title": "SNAIL BOB 5",
     "image": "/assets/upload/busqueda/snail-bob-5.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Fifth main installment in the Snail Bob puzzle adventure series.",
+    "groups": "puzzle, adventure"
   },
   {
     "slug": "snail-bob-8",
@@ -4236,8 +4235,8 @@
     "title": "SNAIL BOB 8",
     "image": "/assets/upload/busqueda/snail-bob-8.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Eighth adventure featuring the slow but determined snail.",
+    "groups": "puzzle, adventure"
   },
   {
     "slug": "sniper-shot",
@@ -4245,8 +4244,8 @@
     "title": "SNIPER SHOT",
     "image": "/assets/upload/busqueda/sniper-shot.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Original version of the precision shooting game.",
+    "groups": "shooter, sniper"
   },
   {
     "slug": "soccer-skills-euro",
@@ -4254,8 +4253,8 @@
     "title": "SOCCER SKILLS EURO",
     "image": "/assets/upload/busqueda/soccer-skills-euro.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "European football skill challenge game.",
+    "groups": "soccer, sports"
   },
   {
     "slug": "suika",
@@ -4263,8 +4262,8 @@
     "title": "SUIKA",
     "image": "/assets/upload/busqueda/suika.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Japanese name for the popular watermelon merging puzzle game.",
+    "groups": "puzzle, fruit-merger"
   },
   {
     "slug": "tetris",
@@ -4272,8 +4271,8 @@
     "title": "TETRIS",
     "image": "/assets/upload/busqueda/tetris.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Classic tile-matching puzzle game that defined a genre.",
+    "groups": "puzzle, classic"
   },
   {
     "slug": "the-backrooms-3d",
@@ -4281,8 +4280,8 @@
     "title": "THE BACKROOMS 3D",
     "image": "/assets/upload/busqueda/the-backrooms-3d.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Three-dimensional version of the creepy infinite office space horror.",
+    "groups": "horror, exploration"
   },
   {
     "slug": "time-shooter-3",
@@ -4290,8 +4289,8 @@
     "title": "TIME SHOOTER 3",
     "image": "/assets/upload/busqueda/time-shooter-3.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Third main installment of the time-bending shooter series.",
+    "groups": "shooter, action"
   },
   {
     "slug": "tricksplit-io",
@@ -4299,8 +4298,8 @@
     "title": "TRICKSPLIT IO",
     "image": "/assets/upload/busqueda/tricksplit-io.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Multiplayer .io version of the precision driving game.",
+    "groups": "io, puzzle"
   },
   {
     "slug": "ultimate-offroad-simulator",
@@ -4308,8 +4307,8 @@
     "title": "ULTIMATE OFFROAD SIMULATOR",
     "image": "/assets/upload/busqueda/ultimate-offroad-simulator.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Comprehensive off-road driving experience with various terrains.",
+    "groups": "racing, offroad"
   },
   {
     "slug": "uno",
@@ -4317,8 +4316,8 @@
     "title": "UNO",
     "image": "/assets/upload/busqueda/uno.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Digital adaptation of the classic color-matching card game.",
+    "groups": "card, multiplayer"
   },
   {
     "slug": "wheely-8-aliens",
@@ -4326,8 +4325,8 @@
     "title": "WHEELY 8 ALIENS",
     "image": "/assets/upload/busqueda/wheely-8-aliens.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Sci-fi edition featuring the car character in space adventures.",
+    "groups": "puzzle, point-and-click"
   },
   {
     "slug": "wordle-plus",
@@ -4335,7 +4334,7 @@
     "title": "WORDLE PLUS",
     "image": "/assets/upload/busqueda/wordle-plus.png",
     "video": "",
-    "description": "",
-    "groups": "action, adventure"
+    "description": "Enhanced version of the word-guessing game with additional features.",
+    "groups": "word, puzzle"
   }
 ]
