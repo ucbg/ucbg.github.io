@@ -21,19 +21,13 @@ document.addEventListener("DOMContentLoaded", async function () {
     let cnt = 0;
 
     games.forEach((game) => {
-      // Oyunun groups string'ini virgülle ayır ve key'i ara
-      if (
-        game.groups &&
-        game.groups
-          .split(",")
-          .map((g) => g.trim())
-          .includes(groupKey) &&
-        cnt < 50
-      ) {
+      const groups = game.groups ? game.groups.split(",").map((g) => g.trim()) : [];
+      const categories = game.main_categories ? game.main_categories.split(",").map((c) => c.trim()) : [];
+
+      if ((groups.includes(groupKey) || categories.includes(groupKey)) && cnt < 50) {
         cnt++;
         found = true;
 
-        // Kartı oluştur
         const card = document.createElement("a");
         card.href = game.url;
         card.className = "card game-item visible";
