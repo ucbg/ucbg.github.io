@@ -5300,5 +5300,27 @@
     "groups": "puzzle, word",
     "keywords": "wordle plus game, enhanced word game, daily word puzzle game, online vocabulary game, word challenge",
     "main_categories": "adventure, kids, puzzle, school, strategy"
+  },
+  {
+    "slug": "cat-gunner-super-zombie-shoot",
+    "url": "/game/cat-gunner-super-zombie-shoot.html",
+    "title": "CAT GUNNER: SUPER ZOMBIE SHOOT",
+    "image": "/assets/upload/busqueda/cat-gunner-super-zombie-shoot.png",
+    "video": "",
+    "description": "Arm your feline hero in this intense zombie shooter! Battle undead hordes with powerful weapons and save the city from the zombie apocalypse.",
+    "groups": "shooter, zombie, action, runner, arcade",
+    "keywords": "cat gunner game, zombie shooter, cat hero game, animal shooter game, undead shooting game",
+    "main_categories": "action, shooting, halloween, kids, skill"
+  },
+  {
+    "slug": "cats",
+    "url": "/game/cats.html",
+    "title": "CATS: Crash Arena Turbo Stars",
+    "image": "/assets/upload/busqueda/cats.png",
+    "video": "",
+    "description": "A fast-paced multiplayer action game where you build battle bots from junk parts and fight against other players in real-time arenas.",
+    "groups": "action, multiplayer, strategy",
+    "keywords": "cats game, crash arena turbo stars, multiplayer battle bots, robot fighting game, real-time arena battles",
+    "main_categories": "action, multiplayer, strategy"
   }
 ]
