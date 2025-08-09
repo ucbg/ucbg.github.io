@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         if ((loadedIndex + 1) % 20 === 0) {
           const adElement = document.createElement("a");
           adElement.classList.add("card", "large");
-          adElement.innerHTML = `<ins class="adsbygoogle" style="display:inline-block; width:260px; height:260px" data-ad-client="ca-pub-7321073664976914" data-ad-slot="1811365994"></ins>`;
+          adElement.innerHTML = `<ins class="adsbygoogle" style="display:inline-block; width:260px; height:260px" data-ad-client="ca-pub-9429401123792626" data-ad-slot="1811365994"></ins>`;
           cardContainer.appendChild(adElement);
           (window.adsbygoogle = window.adsbygoogle || []).push({});
         } else {
@@ -184,7 +184,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     // Reklam kartı ekle
     const adElement = document.createElement("a");
     adElement.classList.add("card", "large");
-    adElement.innerHTML = `<ins class="adsbygoogle" style="display:inline-block; width:260px; height:260px" data-ad-client="ca-pub-7321073664976914" data-ad-slot="1811365994"></ins>`;
+    adElement.innerHTML = `<ins class="adsbygoogle" style="display:inline-block; width:260px; height:260px" data-ad-client="ca-pub-9429401123792626" data-ad-slot="1811365994"></ins>`;
     cardContainer.appendChild(adElement);
     (window.adsbygoogle = window.adsbygoogle || []).push({});
 
