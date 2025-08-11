@@ -24507,3 +24507,182 @@ strong {
 .custom-category-link:focus .custom-category-count {
   color: #b3aaff;
 }
+
+/* Sidebar Styles */
+/* Sidebar Styles */
+/* Sidebar Styles */
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 50px;
+  background-color: #1a1a1a;
+  color: white;
+  transition: width 0.3s ease;
+  z-index: 1000;
+  overflow: hidden;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar:hover {
+  width: 250px;
+}
+
+.sidebar-menu {
+  padding: 20px 0;
+  margin-top: 60px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex: 1;
+  scrollbar-width: thin;
+  scrollbar-color: #444 #1a1a1a;
+}
+
+/* Main content styles */
+.layout-section,
+.layout-header {
+  margin-left: 0px; /* Same as sidebar width */
+  transition: margin-left 0.3s ease;
+}
+
+@media (min-width: 992px) {
+  /* 992px ve daha büyük ekranlar için */
+ 
+  .layout-header {
+    position: fixed;
+    top: 0px;
+    padding: 0px;
+    height: 80px;
+    margin: 0px;
+    z-index: 999999;
+    width: 100%;
+    background-color: #1a1a1a;
+  }
+
+  #recent-games {
+    margin-top: 90px;
+    margin-left: 50px;
+  }
+
+  .layout-section {
+    margin-left: 50px;
+  }
+
+}
+
+/* When sidebar is hovered (expanded) */
+.sidebar:hover ~ .layout-section,
+.sidebar:hover ~ .layout-header {
+  margin-left: 50px; /* Same as expanded sidebar width */
+}
+
+/* For mobile, remove the margin when sidebar is hidden */
+@media (max-width: 992px) {
+  .layout-section,
+  .layout-header {
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+  }
+
+  .sidebar.mobile-open ~ .layout-section,
+  .sidebar.mobile-open ~ .layout-header {
+    margin-left: 0px;
+  }
+}
+
+/* Custom scrollbar for Webkit browsers */
+.sidebar-menu::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sidebar-menu::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+.sidebar-menu::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 4px;
+}
+
+.sidebar-menu::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 2px 15px;
+  color: #b3b3b3;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.sidebar-item:hover {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.sidebar-icon {
+  font-size: 20px;
+  min-width: 30px;
+  display: inline-block;
+}
+
+.sidebar-text {
+  margin-left: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+}
+
+.sidebar:hover .sidebar-text {
+  opacity: 1;
+}
+
+/* Mobile menu button */
+.mobile-menu-btn {
+  display: none;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1100;
+  background: #1a1a1a;
+  border: none;
+  color: white;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile styles */
+@media (max-width: 992px) {
+  .sidebar {
+    left: -250px;
+    width: 250px;
+    transition: left 0.3s ease;
+  }
+
+  .sidebar.mobile-open {
+    left: 0;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .sidebar:hover {
+    width: 250px;
+  }
+
+  .sidebar-text {
+    opacity: 1;
+  }
+}

