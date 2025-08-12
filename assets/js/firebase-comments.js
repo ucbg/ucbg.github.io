@@ -8,34 +8,34 @@ document.addEventListener("DOMContentLoaded", function () {
   // Inject the comment system HTML
   commentContainers.forEach((container) => {
     container.innerHTML = `
-        <div class="comment-header">
+        <div class="fc-comment-header">
           <h2><i class="fas fa-comments"></i> Comments</h2>
           <p class="subtitle">Share your thoughts about this page</p>
         </div>
         
-        <div id="comments-container">
-          <div id="comments">Loading comments...</div>
-          <div id="loading-message" class="info-message">Loading comments...</div>
+        <div class="fc-comments-container">
+          <div class="fc-comments">Loading comments...</div>
+          <div class="fc-info-message">Loading comments...</div>
         </div>
         
-        <div id="comment-form">
+        <div class="fc-comment-form">
           <h2><i class="fas fa-pen"></i> Add a Comment</h2>
-          <div class="form-group">
-            <label for="nickname">Nickname (optional)</label>
-            <input type="text" id="nickname" placeholder="Your name or nickname">
+          <div class="fc-form-group">
+            <label for="fc-nickname">Nickname (optional)</label>
+            <input type="text" id="fc-nickname" placeholder="Your name or nickname">
           </div>
           
-          <div class="form-group">
-            <label for="commentText">Your Comment <span style="color:var(--error-color)">*</span></label>
-            <textarea id="commentText" placeholder="Write your thoughts here..." required></textarea>
-            <div id="text-error" class="error-message">Please write your comment</div>
+          <div class="fc-form-group">
+            <label for="fc-commentText">Your Comment <span style="color:var(--fc-error-color)">*</span></label>
+            <textarea id="fc-commentText" placeholder="Write your thoughts here..." required></textarea>
+            <div class="fc-error-message">Please write your comment</div>
           </div>
           
-          <button id="sendBtn">
-            <div class="spinner"></div>
+          <button id="fc-sendBtn">
+            <div class="fc-spinner"></div>
             <span>Submit Comment</span>
           </button>
-          <div id="submit-message" class="message"></div>
+          <div class="fc-message"></div>
         </div>
       `;
 
@@ -46,17 +46,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function initCommentSystem(container) {
   // Select elements within the container
-  const commentsDiv = container.querySelector("#comments");
-  const textError = container.querySelector("#text-error");
-  const submitMessage = container.querySelector("#submit-message");
-  const loadingMessage = container.querySelector("#loading-message");
-  const sendBtn = container.querySelector("#sendBtn");
-  const commentText = container.querySelector("#commentText");
-  const nicknameInput = container.querySelector("#nickname");
+  const commentsDiv = container.querySelector(".fc-comments");
+  const textError = container.querySelector(".fc-error-message");
+  const submitMessage = container.querySelector(".fc-message");
+  const loadingMessage = container.querySelector(".fc-info-message");
+  const sendBtn = container.querySelector("#fc-sendBtn");
+  const commentText = container.querySelector("#fc-commentText");
+  const nicknameInput = container.querySelector("#fc-nickname");
 
   let spinner, buttonText;
   if (sendBtn) {
-    spinner = sendBtn.querySelector(".spinner");
+    spinner = sendBtn.querySelector(".fc-spinner");
     buttonText = sendBtn.querySelector("span");
   }
 
@@ -99,7 +99,7 @@ function initCommentSystem(container) {
     isLoading = true;
     loadingMessage.style.display = "block";
     loadingMessage.textContent = "Loading comments...";
-    loadingMessage.className = "message info-message";
+    loadingMessage.className = "fc-message fc-info-message";
 
     // Firestore query
     const q = db.collection("comments").where("page", "==", pageId).orderBy("date", "desc");
@@ -110,7 +110,7 @@ function initCommentSystem(container) {
         loadingMessage.style.display = "none";
 
         if (snapshot.empty) {
-          commentsDiv.innerHTML = '<div class="no-comments">No comments yet. Be the first to comment!</div>';
+          commentsDiv.innerHTML = '<div class="fc-no-comments">No comments yet. Be the first to comment!</div>';
           return;
         }
 
@@ -120,14 +120,14 @@ function initCommentSystem(container) {
           const commentDate = comment.date.toDate ? comment.date.toDate() : comment.date;
 
           html += `
-            <div class="comment">
-              <div class="comment-header-inner">
-                <span class="comment-author">${comment.nickname || "Anonymous"}</span>
-                <span class="comment-date">${formatDate(commentDate)}</span>
+              <div class="fc-comment">
+                <div class="fc-comment-header-inner">
+                  <span class="fc-comment-author">${comment.nickname || "Anonymous"}</span>
+                  <span class="fc-comment-date">${formatDate(commentDate)}</span>
+                </div>
+                <div class="fc-comment-content">${comment.text}</div>
               </div>
-              <div class="comment-content">${comment.text}</div>
-            </div>
-          `;
+            `;
         });
 
         commentsDiv.innerHTML = html;
@@ -136,7 +136,7 @@ function initCommentSystem(container) {
         console.error("Error loading comments:", error);
         isLoading = false;
         loadingMessage.textContent = "Error loading comments. Please try again.";
-        loadingMessage.className = "message error-message";
+        loadingMessage.className = "fc-message fc-error-message";
         loadingMessage.style.display = "block";
       }
     );
@@ -217,7 +217,7 @@ function initCommentSystem(container) {
           commentText.value = "";
           if (submitMessage) {
             submitMessage.textContent = "✓ Comment submitted successfully!";
-            submitMessage.className = "message success-message";
+            submitMessage.className = "fc-message fc-success-message";
             submitMessage.style.display = "block";
           }
 
@@ -235,7 +235,7 @@ function initCommentSystem(container) {
           const errorMsg = data.error || `HTTP Error: ${response.status}`;
           if (submitMessage) {
             submitMessage.textContent = "Error: " + errorMsg;
-            submitMessage.className = "message error-message";
+            submitMessage.className = "fc-message fc-error-message";
             submitMessage.style.display = "block";
           }
         }
@@ -244,7 +244,7 @@ function initCommentSystem(container) {
         console.error("Submission error:", err);
         if (submitMessage) {
           submitMessage.textContent = "Error: " + (err.message || "Could not connect to server");
-          submitMessage.className = "message error-message";
+          submitMessage.className = "fc-message fc-error-message";
           submitMessage.style.display = "block";
         }
       } finally {

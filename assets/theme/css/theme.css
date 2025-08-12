@@ -24551,7 +24551,7 @@ strong {
 
 @media (min-width: 992px) {
   /* 992px ve daha büyük ekranlar için */
- 
+
   .layout-header {
     position: fixed;
     top: 0px;
@@ -24571,7 +24571,6 @@ strong {
   .layout-section {
     margin-left: 50px;
   }
-
 }
 
 /* When sidebar is hovered (expanded) */
@@ -24687,8 +24686,6 @@ strong {
   }
 }
 
-
-
 /* Firebase Comment System */
 /* Firebase Yorum Sistemi için Özel Stiller */
 :root {
@@ -24700,6 +24697,7 @@ strong {
   --fc-border-dark: #333;
 }
 
+/* Firebase Yorum Sistemi için Özel Stiller */
 .fc-comment-container {
   margin-top: 40px;
   padding: 20px;
@@ -24730,7 +24728,7 @@ strong {
 .fc-comments-container {
   background: var(--fc-card-dark);
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   padding: 25px;
   margin-bottom: 30px;
   position: relative;
@@ -24796,7 +24794,7 @@ strong {
 .fc-comment-form {
   background: var(--fc-card-dark);
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   padding: 25px;
 }
 
@@ -24811,7 +24809,7 @@ strong {
   color: #ccc;
 }
 
-.fc-comment-form input, 
+.fc-comment-form input,
 .fc-comment-form textarea {
   width: 100%;
   padding: 12px 15px;
@@ -24823,7 +24821,7 @@ strong {
   color: var(--fc-text-color);
 }
 
-.fc-comment-form input:focus, 
+.fc-comment-form input:focus,
 .fc-comment-form textarea:focus {
   outline: none;
   border-color: var(--fc-primary-color);
@@ -24857,7 +24855,7 @@ strong {
 .fc-comment-form button:hover {
   background: #a970f4;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .fc-comment-form button:disabled {
@@ -24869,7 +24867,7 @@ strong {
 }
 
 .fc-spinner {
-  border: 2px solid rgba(0,0,0,0.3);
+  border: 2px solid rgba(0, 0, 0, 0.3);
   border-radius: 50%;
   border-top: 2px solid #121212;
   width: 20px;
@@ -24908,13 +24906,23 @@ strong {
 }
 
 @keyframes fc-spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes fc-fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Yorumlar için özel scrollbar */
@@ -24941,12 +24949,12 @@ strong {
   .fc-comment-container {
     padding: 15px;
   }
-  
-  .fc-comments-container, 
+
+  .fc-comments-container,
   .fc-comment-form {
     padding: 18px;
   }
-  
+
   .fc-comment-form button {
     padding: 12px 20px;
   }
