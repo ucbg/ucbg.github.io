@@ -24,34 +24,31 @@
         font-size: 0.8em;
         color: gray;
       }
+      .error-message {
+        color: red;
+        margin-top: 5px;
+      }
     </style>
   </head>
   <body>
     <h2>Yorumlar</h2>
     <div id="comments">Yükleniyor...</div>
 
-    <input type="text" id="nickname" placeholder="Takma adınızı girin..." />
-    <textarea id="commentText" placeholder="Yorumunuzu yazın..."></textarea><br />
+    <input type="text" id="nickname" placeholder="Takma adınız (isteğe bağlı)" />
+    <textarea id="commentText" placeholder="Yorumunuzu yazın..." required></textarea>
+    <div id="errorMessage" class="error-message"></div>
     <button id="sendBtn">Gönder</button>
 
     <script type="module">
       import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-      import {
-        getFirestore,
-        collection,
-        query,
-        where,
-        orderBy,
-        onSnapshot,
-        Timestamp,
-      } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+      import { getFirestore, collection, query, where, orderBy, onSnapshot } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
-      // Firebase config - kendi projene göre güncelle
+      // Firebase config
       const firebaseConfig = {
         apiKey: "AIzaSyDx101DUQr-LvhW8K7woVJ58_a74TkkgJM",
         authDomain: "ucbgcomment.firebaseapp.com",
         projectId: "ucbgcomment",
-        storageBucket: "ucbgcomment.firebasestorage.app",
+        storageBucket: "ucbgcomment.appspot.com",
         messagingSenderId: "1006694508007",
         appId: "1:1006694508007:web:9f3a4413dbdeacfeee0942",
       };
@@ -59,8 +56,9 @@
       const app = initializeApp(firebaseConfig);
       const db = getFirestore(app);
 
-      const pageId = window.location.pathname.replace(/\/$/, "");
+      const pageId = window.location.pathname.replace(/\/$/, "") || "/";
       const commentsDiv = document.getElementById("comments");
+      const errorDiv = document.getElementById("errorMessage");
 
       function formatDate(ts) {
         if (!ts) return "";
@@ -69,40 +67,48 @@
         return new Date(ts).toLocaleString("tr-TR");
       }
 
-      // Yorumları canlı dinle, en yeni en üstte olsun
+      // Yorumları canlı dinle
       function loadComments() {
         const q = query(collection(db, "comments"), where("page", "==", pageId), orderBy("date", "desc"));
 
-        onSnapshot(q, (snapshot) => {
-          if (snapshot.empty) {
-            commentsDiv.innerHTML = "<p>Henüz yorum yok.</p>";
-            return;
+        onSnapshot(
+          q,
+          (snapshot) => {
+            if (snapshot.empty) {
+              commentsDiv.innerHTML = "<p>Henüz yorum yok. İlk yorumu siz yazın!</p>";
+              return;
+            }
+
+            let html = "";
+            snapshot.forEach((doc) => {
+              const c = doc.data();
+              html += `
+              <p>
+                <strong>${c.nickname || "Anonim"}:</strong> ${c.text}<br>
+                <span class="comment-date">${formatDate(c.date)}</span>
+              </p>
+            `;
+            });
+
+            commentsDiv.innerHTML = html;
+          },
+          (error) => {
+            console.error("Yorumlar yüklenemedi:", error);
+            commentsDiv.innerHTML = "<p>Yorumlar yüklenirken hata oluştu.</p>";
           }
-
-          let html = "";
-          snapshot.forEach((doc) => {
-            const c = doc.data();
-            html += `
-            <p>
-              <strong>${c.nickname || "Anonim"}:</strong> ${c.text}<br>
-              <span class="comment-date">${formatDate(c.date)}</span>
-            </p>
-          `;
-          });
-
-          commentsDiv.innerHTML = html;
-        });
+        );
       }
 
-      // Cloud Function endpoint (kendin oluşturduğun URL)
+      // Cloud Function endpoint
       const functionUrl = "https://us-central1-ucbgcomment.cloudfunctions.net/addComment";
 
       document.getElementById("sendBtn").addEventListener("click", async () => {
         const nickname = document.getElementById("nickname").value.trim();
         const text = document.getElementById("commentText").value.trim();
+        errorDiv.textContent = "";
 
-        if (!nickname || !text) {
-          alert("Lütfen takma ad ve yorum girin.");
+        if (!text) {
+          errorDiv.textContent = "Lütfen yorumunuzu yazın.";
           return;
         }
 
@@ -110,23 +116,28 @@
           const res = await fetch(functionUrl, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ page: pageId, nickname, text }),
+            body: JSON.stringify({
+              pageId: pageId,
+              nickname: nickname || "",
+              text: text,
+            }),
+            mode: "cors", // CORS desteği için kritik
           });
 
           const data = await res.json();
 
           if (data.success) {
-            alert("Yorumunuz başarıyla gönderildi.");
             document.getElementById("commentText").value = "";
-            document.getElementById("nickname").value = "";
           } else {
-            alert("Yorum gönderilemedi: " + (data.error || "Bilinmeyen hata"));
+            errorDiv.textContent = "Hata: " + (data.error || "Bilinmeyen hata");
           }
         } catch (err) {
-          alert("Sunucu ile iletişimde hata: " + err.message);
+          console.error("Gönderme hatası:", err);
+          errorDiv.textContent = "Sunucu ile iletişimde hata: " + err.message;
         }
       });
 
+      // Sayfa yüklendiğinde yorumları getir
       loadComments();
     </script>
   </body>
