@@ -47,7 +47,7 @@ document["addEventListener"]("DOMContentLoaded", function (_0x1a2b3c) {
         window["innerWidth"] <= 992 &&
         _0x7a8b9c["classList"]["remove"]("mobile-open");
     });
-  const _0xdeadbeef = "https://silecekci.com/categorie_counts.js";
+  const _0xdeadbeef = "https://comment.silecekci.com/categorie_counts.js";
   fetch(_0xdeadbeef)
     .then((_0xresp) => {
       if (!_0xresp["ok"]) throw new Error("Dosya\x20yüklenemedi");

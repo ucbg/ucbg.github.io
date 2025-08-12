@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Yorumlar</title>
+    <style>
+      #comments p {
+        border-bottom: 1px solid #ccc;
+        padding: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Yorumlar</h2>
+    <div id="comments"></div>
+    <textarea id="commentText" placeholder="Yorumunuzu yazın..."></textarea><br />
+    <button id="sendBtn">Gönder</button>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js"></script>
+
+    <script>
+      // === Firebase ayarları ===
+      const firebaseConfig = {
+        apiKey: "AIzaSyDx101DUQr-LvhW8K7woVJ58_a74TkkgJM",
+        authDomain: "ucbgcomment.firebaseapp.com",
+        projectId: "ucbgcomment",
+        storageBucket: "ucbgcomment.firebasestorage.app",
+        messagingSenderId: "1006694508007",
+        appId: "1:1006694508007:web:9f3a4413dbdeacfeee0942",
+      };
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+
+      // Sayfa ID'si (her sayfa için farklı olacak)
+      const pageId = window.location.pathname;
+
+      // Yorumları yükle
+      function loadComments() {
+        db.collection("comments")
+          .where("page", "==", pageId)
+          .orderBy("date", "desc")
+          .onSnapshot((snapshot) => {
+            const html = snapshot.docs.map((doc) => `<p>${doc.data().text}</p>`).join("");
+            document.getElementById("comments").innerHTML = html;
+          });
+      }
+
+      // Yorum ekle
+      document.getElementById("sendBtn").onclick = () => {
+        const text = document.getElementById("commentText").value.trim();
+        if (!text) return;
+        db.collection("comments").add({
+          page: pageId,
+          text: text,
+          date: new Date(),
+        });
+        document.getElementById("commentText").value = "";
+      };
+
+      loadComments();
+    </script>
+  </body>
+</html>
