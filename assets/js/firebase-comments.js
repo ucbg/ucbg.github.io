@@ -1,66 +1,9 @@
-// Firebase Comment System Integration Script
 document.addEventListener("DOMContentLoaded", function () {
-  // Find all firebaseComment containers
-  const commentContainers = document.querySelectorAll(".firebaseComment");
+  // Yorum konteynırını bul
+  const commentContainer = document.querySelector(".fc-comment-container");
+  if (!commentContainer) return;
 
-  if (commentContainers.length === 0) return;
-
-  // Inject the comment system HTML
-  commentContainers.forEach((container) => {
-    container.innerHTML = `
-        <div class="comment-header">
-          <h2><i class="fas fa-comments"></i> Comments</h2>
-          <p class="subtitle">Share your thoughts about this page</p>
-        </div>
-        
-        <div id="comments-container">
-          <div id="comments">Loading comments...</div>
-          <div id="loading-message" class="info-message">Loading comments...</div>
-        </div>
-        
-        <div id="comment-form">
-          <h2><i class="fas fa-pen"></i> Add a Comment</h2>
-          <div class="form-group">
-            <label for="nickname">Nickname (optional)</label>
-            <input type="text" id="nickname" placeholder="Your name or nickname">
-          </div>
-          
-          <div class="form-group">
-            <label for="commentText">Your Comment <span style="color:var(--error-color)">*</span></label>
-            <textarea id="commentText" placeholder="Write your thoughts here..." required></textarea>
-            <div id="text-error" class="error-message">Please write your comment</div>
-          </div>
-          
-          <button id="sendBtn">
-            <div class="spinner"></div>
-            <span>Submit Comment</span>
-          </button>
-          <div id="submit-message" class="message"></div>
-        </div>
-      `;
-
-    // Initialize the comment system
-    initCommentSystem(container);
-  });
-});
-
-function initCommentSystem(container) {
-  // Select elements within the container
-  const commentsDiv = container.querySelector("#comments");
-  const textError = container.querySelector("#text-error");
-  const submitMessage = container.querySelector("#submit-message");
-  const loadingMessage = container.querySelector("#loading-message");
-  const sendBtn = container.querySelector("#sendBtn");
-  const commentText = container.querySelector("#commentText");
-  const nicknameInput = container.querySelector("#nickname");
-
-  let spinner, buttonText;
-  if (sendBtn) {
-    spinner = sendBtn.querySelector(".spinner");
-    buttonText = sendBtn.querySelector("span");
-  }
-
-  // Firebase configuration
+  // Firebase konfigürasyonu
   const firebaseConfig = {
     apiKey: "AIzaSyDx101DUQr-LvhW8K7woVJ58_a74TkkgJM",
     authDomain: "ucbgcomment.firebaseapp.com",
@@ -70,47 +13,37 @@ function initCommentSystem(container) {
     appId: "1:1006694508007:web:9f3a4413dbdeacfeee0942",
   };
 
-  // Initialize Firebase only once
+  // Firebase'i başlat
   if (!firebase.apps.length) {
     firebase.initializeApp(firebaseConfig);
   }
   const db = firebase.firestore();
 
-  // Get page ID from URL
+  // Element referansları
+  const commentsDiv = commentContainer.querySelector(".fc-comments");
+  const loadingMessage = commentContainer.querySelector(".fc-info-message");
+  const sendBtn = commentContainer.querySelector("#fc-sendBtn");
+  const commentText = commentContainer.querySelector("#fc-commentText");
+  const nicknameInput = commentContainer.querySelector("#fc-nickname");
+  const messageDiv = commentContainer.querySelector(".fc-message");
+  const textError = commentContainer.querySelector(".fc-error-message");
+  const spinner = commentContainer.querySelector(".fc-spinner");
+
+  // Sayfa ID'sini al
   const pageId = window.location.pathname.replace(/\/$/, "") || "/";
 
-  // Loading state
-  let isLoading = false;
-
-  // Format date
-  function formatDate(date) {
-    const options = {
-      year: "numeric",
-      month: "short",
-      day: "numeric",
-      hour: "2-digit",
-      minute: "2-digit",
-    };
-    return new Date(date).toLocaleDateString("en-US", options);
-  }
-
-  // Load comments
+  // Yorumları yükle
   function loadComments() {
-    isLoading = true;
-    loadingMessage.style.display = "block";
-    loadingMessage.textContent = "Loading comments...";
-    loadingMessage.className = "message info-message";
-
-    // Firestore query
     const q = db.collection("comments").where("page", "==", pageId).orderBy("date", "desc");
+
+    loadingMessage.style.display = "block";
 
     q.onSnapshot(
       (snapshot) => {
-        isLoading = false;
         loadingMessage.style.display = "none";
 
         if (snapshot.empty) {
-          commentsDiv.innerHTML = '<div class="no-comments">No comments yet. Be the first to comment!</div>';
+          commentsDiv.innerHTML = '<div class="fc-no-comments">No comments yet. Be the first to comment!</div>';
           return;
         }
 
@@ -120,75 +53,45 @@ function initCommentSystem(container) {
           const commentDate = comment.date.toDate ? comment.date.toDate() : comment.date;
 
           html += `
-            <div class="comment">
-              <div class="comment-header-inner">
-                <span class="comment-author">${comment.nickname || "Anonymous"}</span>
-                <span class="comment-date">${formatDate(commentDate)}</span>
-              </div>
-              <div class="comment-content">${comment.text}</div>
+          <div class="fc-comment">
+            <div class="fc-comment-header-inner">
+              <span class="fc-comment-author">${comment.nickname || "Anonymous"}</span>
+              <span class="fc-comment-date">${new Date(commentDate).toLocaleString()}</span>
             </div>
-          `;
+            <div class="fc-comment-content">${comment.text}</div>
+          </div>
+        `;
         });
 
         commentsDiv.innerHTML = html;
       },
       (error) => {
         console.error("Error loading comments:", error);
-        isLoading = false;
         loadingMessage.textContent = "Error loading comments. Please try again.";
-        loadingMessage.className = "message error-message";
-        loadingMessage.style.display = "block";
+        loadingMessage.className = "fc-error-message";
       }
     );
   }
 
-  // Form validation
-  function validateForm() {
-    let isValid = true;
-    if (submitMessage) {
-      submitMessage.textContent = "";
-      submitMessage.style.display = "none";
-    }
-
-    // Validate comment text
-    if (!commentText.value.trim()) {
-      textError.textContent = "Please write your comment";
-      textError.style.display = "block";
-      isValid = false;
-    } else {
-      textError.style.display = "none";
-    }
-
-    // Update button state
-    if (sendBtn) {
-      sendBtn.disabled = !isValid;
-    }
-
-    return isValid;
-  }
-
-  // Cloud Function URL
-  const functionUrl = "https://addcomment-rfkgsqj4ya-uc.a.run.app";
-
-  // Submit comment
+  // Yorum gönderme işlevi
   if (sendBtn) {
-    sendBtn.addEventListener("click", async () => {
-      if (!validateForm()) return;
-
+    sendBtn.addEventListener("click", async function () {
       const nickname = nicknameInput.value.trim();
       const text = commentText.value.trim();
 
-      // Set submitting state
-      sendBtn.disabled = true;
-      spinner.style.display = "block";
-      buttonText.textContent = "Submitting...";
-      if (submitMessage) {
-        submitMessage.textContent = "";
-        submitMessage.style.display = "none";
+      if (!text) {
+        textError.style.display = "block";
+        return;
       }
 
+      // Gönderim durumunu ayarla
+      sendBtn.disabled = true;
+      spinner.style.display = "inline-block";
+      sendBtn.querySelector("span").textContent = "Submitting...";
+
       try {
-        const response = await fetch(functionUrl, {
+        // Cloud Function URL
+        const response = await fetch("https://addcomment-rfkgsqj4ya-uc.a.run.app", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -199,80 +102,38 @@ function initCommentSystem(container) {
             nickname: nickname,
             text: text,
           }),
-          mode: "cors",
         });
 
-        // Process response
-        const responseText = await response.text();
-        let data;
-        try {
-          data = JSON.parse(responseText);
-        } catch (e) {
-          console.error("JSON parse error:", e, "Response:", responseText);
-          throw new Error(`Invalid server response: ${responseText.substring(0, 100)}`);
-        }
+        const data = await response.json();
 
-        if (response.ok && data.success) {
-          // Successful submission
+        if (data.success) {
+          // Başarılı gönderim
           commentText.value = "";
-          if (submitMessage) {
-            submitMessage.textContent = "✓ Comment submitted successfully!";
-            submitMessage.className = "message success-message";
-            submitMessage.style.display = "block";
-          }
+          messageDiv.textContent = "✓ Comment submitted successfully!";
+          messageDiv.className = "fc-message fc-success-message";
+          messageDiv.style.display = "block";
 
-          // Reload comments
+          // Yorumları yeniden yükle
           loadComments();
-
-          // Hide success message after 3 seconds
-          setTimeout(() => {
-            if (submitMessage) {
-              submitMessage.style.display = "none";
-            }
-          }, 3000);
         } else {
-          // Server error
-          const errorMsg = data.error || `HTTP Error: ${response.status}`;
-          if (submitMessage) {
-            submitMessage.textContent = "Error: " + errorMsg;
-            submitMessage.className = "message error-message";
-            submitMessage.style.display = "block";
-          }
+          // Hata durumu
+          messageDiv.textContent = "Error: " + (data.error || "Unknown error");
+          messageDiv.className = "fc-message fc-error-message";
+          messageDiv.style.display = "block";
         }
       } catch (err) {
-        // Network error
-        console.error("Submission error:", err);
-        if (submitMessage) {
-          submitMessage.textContent = "Error: " + (err.message || "Could not connect to server");
-          submitMessage.className = "message error-message";
-          submitMessage.style.display = "block";
-        }
+        messageDiv.textContent = "Error: " + err.message;
+        messageDiv.className = "fc-message fc-error-message";
+        messageDiv.style.display = "block";
       } finally {
-        // Reset state
-        if (sendBtn) {
-          sendBtn.disabled = false;
-        }
-        if (spinner) {
-          spinner.style.display = "none";
-        }
-        if (buttonText) {
-          buttonText.textContent = "Submit Comment";
-        }
+        // Durumu sıfırla
+        sendBtn.disabled = false;
+        spinner.style.display = "none";
+        sendBtn.querySelector("span").textContent = "Submit Comment";
       }
     });
   }
 
-  // Form input listeners
-  if (commentText) {
-    commentText.addEventListener("input", validateForm);
-  }
-  if (nicknameInput) {
-    nicknameInput.addEventListener("input", validateForm);
-  }
-
-  // Load comments on page load
+  // Yorumları yükle
   loadComments();
-
-  // Validate form on load
-  setTimeout(validateForm, 100);
-}
+});

@@ -24686,3 +24686,268 @@ strong {
     opacity: 1;
   }
 }
+
+
+
+/* Firebase Comment System */
+/* Firebase Yorum Sistemi için Özel Stiller */
+:root {
+  --fc-primary-color: #bb86fc;
+  --fc-success-color: #03dac6;
+  --fc-error-color: #cf6679;
+  --fc-text-color: #e0e0e0;
+  --fc-card-dark: #1e1e1e;
+  --fc-border-dark: #333;
+}
+
+.fc-comment-container {
+  margin-top: 40px;
+  padding: 20px;
+  background: rgba(30, 30, 30, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.fc-comment-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--fc-primary-color);
+}
+
+.fc-comment-header h2 {
+  color: var(--fc-primary-color);
+  margin-bottom: 8px;
+  font-size: 2.2rem;
+}
+
+.fc-comment-header .subtitle {
+  color: #aaa;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.fc-comments-container {
+  background: var(--fc-card-dark);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  padding: 25px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.fc-comments {
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 15px;
+  border: 1px solid var(--fc-border-dark);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background: rgba(30, 30, 30, 0.7);
+}
+
+.fc-comment {
+  padding: 15px;
+  border-bottom: 1px solid var(--fc-border-dark);
+  transition: background 0.3s;
+  animation: fc-fadeIn 0.5s ease-out;
+}
+
+.fc-comment:last-child {
+  border-bottom: none;
+}
+
+.fc-comment:hover {
+  background-color: rgba(55, 55, 55, 0.5);
+}
+
+.fc-comment-header-inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.fc-comment-author {
+  font-weight: bold;
+  color: var(--fc-primary-color);
+  font-size: 1.1rem;
+}
+
+.fc-comment-date {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+.fc-comment-content {
+  line-height: 1.6;
+  white-space: pre-wrap;
+  padding-left: 5px;
+  margin-left: 5px;
+}
+
+.fc-no-comments {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+  font-style: italic;
+}
+
+.fc-comment-form {
+  background: var(--fc-card-dark);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  padding: 25px;
+}
+
+.fc-form-group {
+  margin-bottom: 20px;
+}
+
+.fc-comment-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #ccc;
+}
+
+.fc-comment-form input, 
+.fc-comment-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid var(--fc-border-dark);
+  border-radius: 6px;
+  font-size: 16px;
+  transition: all 0.3s;
+  background: rgba(40, 40, 40, 0.5);
+  color: var(--fc-text-color);
+}
+
+.fc-comment-form input:focus, 
+.fc-comment-form textarea:focus {
+  outline: none;
+  border-color: var(--fc-primary-color);
+  box-shadow: 0 0 0 3px rgba(187, 134, 252, 0.2);
+}
+
+.fc-comment-form textarea {
+  min-height: 120px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.fc-comment-form button {
+  background: var(--fc-primary-color);
+  color: #121212;
+  border: none;
+  border-radius: 6px;
+  padding: 14px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.fc-comment-form button:hover {
+  background: #a970f4;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.fc-comment-form button:disabled {
+  background: #555;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+  color: #999;
+}
+
+.fc-spinner {
+  border: 2px solid rgba(0,0,0,0.3);
+  border-radius: 50%;
+  border-top: 2px solid #121212;
+  width: 20px;
+  height: 20px;
+  animation: fc-spin 1s linear infinite;
+  margin-right: 10px;
+  display: none;
+}
+
+.fc-message {
+  font-size: 0.95rem;
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 6px;
+  display: none;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.fc-error-message {
+  background-color: rgba(207, 102, 121, 0.15);
+  color: var(--fc-error-color);
+  border: 1px solid rgba(207, 102, 121, 0.3);
+}
+
+.fc-success-message {
+  background-color: rgba(3, 218, 198, 0.15);
+  color: var(--fc-success-color);
+  border: 1px solid rgba(3, 218, 198, 0.3);
+}
+
+.fc-info-message {
+  background-color: rgba(187, 134, 252, 0.15);
+  color: var(--fc-primary-color);
+  border: 1px solid rgba(187, 134, 252, 0.3);
+}
+
+@keyframes fc-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fc-fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Yorumlar için özel scrollbar */
+.fc-comments::-webkit-scrollbar {
+  width: 8px;
+}
+
+.fc-comments::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 4px;
+}
+
+.fc-comments::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+.fc-comments::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Responsive ayarlamalar */
+@media (max-width: 650px) {
+  .fc-comment-container {
+    padding: 15px;
+  }
+  
+  .fc-comments-container, 
+  .fc-comment-form {
+    padding: 18px;
+  }
+  
+  .fc-comment-form button {
+    padding: 12px 20px;
+  }
+}
