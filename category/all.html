@@ -16,9 +16,9 @@
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/Inter-Bold.woff2?v=3.19" crossorigin="anonymous" />
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/Inter-ExtraBold.woff2?v=3.19" crossorigin="anonymous" />
 
-    <link rel="preload" as="style" href="/assets/theme/css/theme.css?v=3.0.8" />
+    <link rel="preload" as="style" href="/assets/theme/css/theme.css?v=3.0.9" />
     <link rel="preload" as="script" href="/assets/theme/js/jquery.min.js?v=1.0.0" />
-    <link media="all" rel="stylesheet" href="/assets/theme/css/theme.css?v=3.0.8" type="text/css" />
+    <link media="all" rel="stylesheet" href="/assets/theme/css/theme.css?v=3.0.9" type="text/css" />
     <link rel="shortcut icon" href="/assets/static/favicon.svg?v=1.0.0" />
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
     <script src="/assets/js/load-games.js"></script>
@@ -225,12 +225,6 @@
             </div>
           </form>
           <ul class="navbar-nav mb-2 mb-lg-0 fw-semibold align-items-xl-center ms-xl-auto flex" style="display: flex; flex-direction: row">
-            <li class="nav-item">
-              <button class="theme-toggle" aria-label="Toggle theme">
-                <span class="sun-icon">☀️</span>
-                <span class="moon-icon">🌙</span>
-              </button>
-            </li>
             <li class="nav-item">
               <button class="theme-toggle" id="chat-button">
                 <span class=""><img src="/assets/icons/chat.svg" /></span>
@@ -8557,6 +8551,11 @@
     <script src="/assets/js/live-search.js"></script>
     <script src="/assets/js/categories_menu.js?v=1.0.7"></script>
     <script src="/assets/js/users.js"></script>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <!-- Firebase Comment System -->
+    <script src="/assets/js/firebase-comments.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function (event) {
         document.getElementById("search").focus();

@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
     container.innerHTML = `
         <div class="fc-comment-header">
           <h2><i class="fas fa-comments"></i> Comments</h2>
-          <p class="subtitle">Share your thoughts about this page</p>
         </div>
         
         <div class="fc-comments-container">
