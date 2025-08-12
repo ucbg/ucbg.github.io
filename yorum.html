@@ -15,6 +15,7 @@
         padding: 20px;
         background-color: #f9f9f9;
         color: #333;
+        line-height: 1.6;
       }
       header {
         text-align: center;
@@ -51,6 +52,10 @@
       .comment {
         padding: 15px;
         border-bottom: 1px solid #eee;
+        transition: background 0.3s;
+      }
+      .comment:hover {
+        background-color: #f5f9ff;
       }
       .comment:last-child {
         border-bottom: none;
@@ -59,6 +64,7 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 8px;
+        flex-wrap: wrap;
       }
       .comment-author {
         font-weight: bold;
@@ -70,6 +76,7 @@
       }
       .comment-content {
         line-height: 1.5;
+        white-space: pre-wrap;
       }
       .no-comments {
         text-align: center;
@@ -121,23 +128,40 @@
         font-size: 16px;
         font-weight: 500;
         cursor: pointer;
-        transition: background 0.3s;
-        display: block;
+        transition: all 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
       }
       button:hover {
         background: #3a76d8;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
       button:disabled {
         background: #aaa;
         cursor: not-allowed;
+        transform: none;
+        box-shadow: none;
+      }
+      .spinner {
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        border-top: 2px solid white;
+        width: 20px;
+        height: 20px;
+        animation: spin 1s linear infinite;
+        margin-right: 10px;
+        display: none;
       }
 
       /* Hata Mesajları */
       .error-message {
-        color: #e74c3c;
         font-size: 0.9rem;
         margin-top: 5px;
+        padding: 8px;
+        border-radius: 4px;
         display: none;
       }
       .error-visible {
@@ -152,6 +176,36 @@
         border-top: 1px solid #eee;
         color: #777;
         font-size: 0.9rem;
+      }
+
+      /* Animasyon */
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Responsive */
+      @media (max-width: 600px) {
+        body {
+          padding: 15px;
+        }
+        header {
+          margin-bottom: 20px;
+        }
+        #comments-container,
+        #comment-form {
+          padding: 15px;
+        }
+        .comment-header {
+          flex-direction: column;
+        }
+        .comment-date {
+          margin-top: 5px;
+        }
       }
     </style>
   </head>
@@ -180,7 +234,10 @@
           <div id="text-error" class="error-message">Lütfen yorumunuzu yazın</div>
         </div>
 
-        <button id="sendBtn" disabled>Yorumu Gönder</button>
+        <button id="sendBtn">
+          <div class="spinner"></div>
+          <span>Yorumu Gönder</span>
+        </button>
         <div id="submit-error" class="error-message"></div>
       </section>
     </main>
@@ -213,6 +270,8 @@
       const submitError = document.getElementById("submit-error");
       const sendBtn = document.getElementById("sendBtn");
       const commentText = document.getElementById("commentText");
+      const spinner = sendBtn.querySelector(".spinner");
+      const buttonText = sendBtn.querySelector("span");
 
       // Tarih formatlama
       function formatDate(date) {
@@ -264,13 +323,17 @@
       // Form doğrulama
       function validateForm() {
         let isValid = true;
+        submitError.textContent = "";
+        submitError.style.display = "none";
 
         // Yorum metni doğrulama
         if (!commentText.value.trim()) {
-          textError.classList.add("error-visible");
+          textError.textContent = "Lütfen yorumunuzu yazın";
+          textError.style.display = "block";
+          textError.style.color = "#e74c3c";
           isValid = false;
         } else {
-          textError.classList.remove("error-visible");
+          textError.style.display = "none";
         }
 
         // Butonu güncelle
@@ -279,8 +342,8 @@
         return isValid;
       }
 
-      // Cloud Function URL
-      const functionUrl = "https://us-central1-ucbgcomment.cloudfunctions.net/addComment";
+      // Cloud Function URL (GÜNCELLENDİ)
+      const functionUrl = "https://addcomment-rfkgsqj4ya-uc.a.run.app";
 
       // Yorum gönderme
       sendBtn.addEventListener("click", async () => {
@@ -289,14 +352,20 @@
         const nickname = document.getElementById("nickname").value.trim();
         const text = commentText.value.trim();
 
+        // Gönderim durumunu ayarla
         sendBtn.disabled = true;
-        sendBtn.textContent = "Gönderiliyor...";
+        spinner.style.display = "block";
+        buttonText.textContent = "Gönderiliyor...";
         submitError.textContent = "";
+        submitError.style.display = "none";
 
         try {
           const response = await fetch(functionUrl, {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
+            headers: {
+              "Content-Type": "application/json",
+              Origin: "https://ucbg.github.io",
+            },
             body: JSON.stringify({
               pageId: pageId,
               nickname: nickname,
@@ -305,29 +374,45 @@
             mode: "cors",
           });
 
-          // Yanıtı JSON olarak parse et
+          // Yanıtı işle
+          const responseText = await response.text();
           let data;
           try {
-            data = await response.json();
+            data = JSON.parse(responseText);
           } catch (e) {
-            throw new Error(`Sunucu yanıtı geçersiz: ${await response.text()}`);
+            console.error("JSON parse hatası:", e, "Response:", responseText);
+            throw new Error(`Sunucu yanıtı geçersiz: ${responseText.substring(0, 100)}`);
           }
 
-          if (data.success) {
+          if (response.ok && data.success) {
+            // Başarılı gönderim
             commentText.value = "";
-            submitError.textContent = "Yorumunuz başarıyla gönderildi!";
+            submitError.textContent = "✓ Yorumunuz başarıyla gönderildi!";
             submitError.style.color = "#27ae60";
+            submitError.style.display = "block";
+
+            // 3 saniye sonra başarı mesajını gizle
+            setTimeout(() => {
+              submitError.style.display = "none";
+            }, 3000);
           } else {
-            submitError.textContent = "Hata: " + (data.error || "Bilinmeyen hata");
+            // Sunucu hatası
+            const errorMsg = data.error || `HTTP Hatası: ${response.status}`;
+            submitError.textContent = "Hata: " + errorMsg;
             submitError.style.color = "#e74c3c";
+            submitError.style.display = "block";
           }
         } catch (err) {
+          // Ağ hatası
           console.error("Gönderme hatası:", err);
-          submitError.textContent = "Sunucu ile iletişimde hata: " + err.message;
+          submitError.textContent = "Hata: " + (err.message || "Sunucu ile bağlantı kurulamadı");
           submitError.style.color = "#e74c3c";
+          submitError.style.display = "block";
         } finally {
+          // Durumu sıfırla
           sendBtn.disabled = false;
-          sendBtn.textContent = "Yorumu Gönder";
+          spinner.style.display = "none";
+          buttonText.textContent = "Yorumu Gönder";
         }
       });
 
@@ -337,6 +422,9 @@
 
       // Sayfa yüklendiğinde yorumları getir
       loadComments();
+
+      // Sayfa yüklendiğinde formu doğrula
+      setTimeout(validateForm, 100);
     </script>
   </body>
 </html>
