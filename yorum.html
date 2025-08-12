@@ -2,48 +2,198 @@
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
-    <title>Yorumlar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yorum Sistemi</title>
     <style>
-      #comments p {
-        border-bottom: 1px solid #ccc;
-        padding: 5px 0;
-        margin: 0;
-      }
-      textarea,
-      input {
-        width: 100%;
-        margin-top: 10px;
-        padding: 6px;
+      * {
         box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       }
-      button {
-        margin-top: 5px;
-        padding: 6px 12px;
+      body {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+      header {
+        text-align: center;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #4a86e8;
+      }
+      h1 {
+        color: #4a86e8;
+        margin-bottom: 5px;
+      }
+      .subtitle {
+        color: #777;
+        font-size: 1.1rem;
+      }
+
+      /* Yorumlar Bölümü */
+      #comments-container {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 30px;
+      }
+      #comments {
+        max-height: 400px;
+        overflow-y: auto;
+        padding: 10px;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        background: #fafafa;
+      }
+      .comment {
+        padding: 15px;
+        border-bottom: 1px solid #eee;
+      }
+      .comment:last-child {
+        border-bottom: none;
+      }
+      .comment-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+      }
+      .comment-author {
+        font-weight: bold;
+        color: #4a86e8;
       }
       .comment-date {
-        font-size: 0.8em;
-        color: gray;
+        font-size: 0.85rem;
+        color: #777;
       }
+      .comment-content {
+        line-height: 1.5;
+      }
+      .no-comments {
+        text-align: center;
+        padding: 20px;
+        color: #777;
+      }
+
+      /* Form Bölümü */
+      #comment-form {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 25px;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+        color: #555;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: border 0.3s;
+      }
+      input:focus,
+      textarea:focus {
+        outline: none;
+        border-color: #4a86e8;
+        box-shadow: 0 0 0 2px rgba(74, 134, 232, 0.2);
+      }
+      textarea {
+        min-height: 100px;
+        resize: vertical;
+      }
+      button {
+        background: #4a86e8;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 12px 25px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background 0.3s;
+        display: block;
+        width: 100%;
+      }
+      button:hover {
+        background: #3a76d8;
+      }
+      button:disabled {
+        background: #aaa;
+        cursor: not-allowed;
+      }
+
+      /* Hata Mesajları */
       .error-message {
-        color: red;
+        color: #e74c3c;
+        font-size: 0.9rem;
         margin-top: 5px;
+        display: none;
+      }
+      .error-visible {
+        display: block;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+        color: #777;
+        font-size: 0.9rem;
       }
     </style>
   </head>
   <body>
-    <h2>Yorumlar</h2>
-    <div id="comments">Yükleniyor...</div>
+    <header>
+      <h1>Yorum Sistemi</h1>
+      <p class="subtitle">Düşüncelerinizi bizimle paylaşın</p>
+    </header>
 
-    <input type="text" id="nickname" placeholder="Takma adınız (isteğe bağlı)" />
-    <textarea id="commentText" placeholder="Yorumunuzu yazın..." required></textarea>
-    <div id="errorMessage" class="error-message"></div>
-    <button id="sendBtn">Gönder</button>
+    <main>
+      <section id="comments-container">
+        <h2>Yorumlar</h2>
+        <div id="comments">Yükleniyor...</div>
+      </section>
+
+      <section id="comment-form">
+        <h2>Yorum Ekle</h2>
+        <div class="form-group">
+          <label for="nickname">Takma Ad (isteğe bağlı)</label>
+          <input type="text" id="nickname" placeholder="İsminiz veya takma adınız" />
+        </div>
+
+        <div class="form-group">
+          <label for="commentText">Yorumunuz <span style="color: red">*</span></label>
+          <textarea id="commentText" placeholder="Düşüncelerinizi yazın..." required></textarea>
+          <div id="text-error" class="error-message">Lütfen yorumunuzu yazın</div>
+        </div>
+
+        <button id="sendBtn" disabled>Yorumu Gönder</button>
+        <div id="submit-error" class="error-message"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2023 Yorum Sistemi | Tüm hakları saklıdır</p>
+    </footer>
 
     <script type="module">
       import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
       import { getFirestore, collection, query, where, orderBy, onSnapshot } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
-      // Firebase config
+      // Firebase konfigürasyonu
       const firebaseConfig = {
         apiKey: "AIzaSyDx101DUQr-LvhW8K7woVJ58_a74TkkgJM",
         authDomain: "ucbgcomment.firebaseapp.com",
@@ -56,18 +206,27 @@
       const app = initializeApp(firebaseConfig);
       const db = getFirestore(app);
 
+      // URL'den sayfa ID'sini al (eğer yoksa ana sayfa olarak kabul et)
       const pageId = window.location.pathname.replace(/\/$/, "") || "/";
       const commentsDiv = document.getElementById("comments");
-      const errorDiv = document.getElementById("errorMessage");
+      const textError = document.getElementById("text-error");
+      const submitError = document.getElementById("submit-error");
+      const sendBtn = document.getElementById("sendBtn");
+      const commentText = document.getElementById("commentText");
 
-      function formatDate(ts) {
-        if (!ts) return "";
-        if (ts.toDate) return ts.toDate().toLocaleString("tr-TR");
-        if (ts.seconds) return new Date(ts.seconds * 1000).toLocaleString("tr-TR");
-        return new Date(ts).toLocaleString("tr-TR");
+      // Tarih formatlama
+      function formatDate(date) {
+        const options = {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+          hour: "2-digit",
+          minute: "2-digit",
+        };
+        return new Date(date).toLocaleDateString("tr-TR", options);
       }
 
-      // Yorumları canlı dinle
+      // Yorumları yükle
       function loadComments() {
         const q = query(collection(db, "comments"), where("page", "==", pageId), orderBy("date", "desc"));
 
@@ -75,67 +234,106 @@
           q,
           (snapshot) => {
             if (snapshot.empty) {
-              commentsDiv.innerHTML = "<p>Henüz yorum yok. İlk yorumu siz yazın!</p>";
+              commentsDiv.innerHTML = '<div class="no-comments">Henüz yorum yok. İlk yorumu siz yazın!</div>';
               return;
             }
 
             let html = "";
             snapshot.forEach((doc) => {
-              const c = doc.data();
+              const comment = doc.data();
               html += `
-              <p>
-                <strong>${c.nickname || "Anonim"}:</strong> ${c.text}<br>
-                <span class="comment-date">${formatDate(c.date)}</span>
-              </p>
-            `;
+            <div class="comment">
+              <div class="comment-header">
+                <span class="comment-author">${comment.nickname || "Anonim"}</span>
+                <span class="comment-date">${formatDate(comment.date.toDate ? comment.date.toDate() : comment.date)}</span>
+              </div>
+              <div class="comment-content">${comment.text}</div>
+            </div>
+          `;
             });
 
             commentsDiv.innerHTML = html;
           },
           (error) => {
             console.error("Yorumlar yüklenemedi:", error);
-            commentsDiv.innerHTML = "<p>Yorumlar yüklenirken hata oluştu.</p>";
+            commentsDiv.innerHTML = '<div class="no-comments">Yorumlar yüklenirken bir hata oluştu.</div>';
           }
         );
       }
 
-      // Cloud Function endpoint
-      const functionUrl = "https://us-central1-ucbgcomment.cloudfunctions.net/addComment";
+      // Form doğrulama
+      function validateForm() {
+        let isValid = true;
 
-      document.getElementById("sendBtn").addEventListener("click", async () => {
-        const nickname = document.getElementById("nickname").value.trim();
-        const text = document.getElementById("commentText").value.trim();
-        errorDiv.textContent = "";
-
-        if (!text) {
-          errorDiv.textContent = "Lütfen yorumunuzu yazın.";
-          return;
+        // Yorum metni doğrulama
+        if (!commentText.value.trim()) {
+          textError.classList.add("error-visible");
+          isValid = false;
+        } else {
+          textError.classList.remove("error-visible");
         }
 
+        // Butonu güncelle
+        sendBtn.disabled = !isValid;
+
+        return isValid;
+      }
+
+      // Cloud Function URL
+      const functionUrl = "https://us-central1-ucbgcomment.cloudfunctions.net/addComment";
+
+      // Yorum gönderme
+      sendBtn.addEventListener("click", async () => {
+        if (!validateForm()) return;
+
+        const nickname = document.getElementById("nickname").value.trim();
+        const text = commentText.value.trim();
+
+        sendBtn.disabled = true;
+        sendBtn.textContent = "Gönderiliyor...";
+        submitError.textContent = "";
+
         try {
-          const res = await fetch(functionUrl, {
+          const response = await fetch(functionUrl, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
               pageId: pageId,
-              nickname: nickname || "",
+              nickname: nickname,
               text: text,
             }),
-            mode: "cors", // CORS desteği için kritik
+            mode: "cors",
           });
 
-          const data = await res.json();
+          // Yanıtı JSON olarak parse et
+          let data;
+          try {
+            data = await response.json();
+          } catch (e) {
+            throw new Error(`Sunucu yanıtı geçersiz: ${await response.text()}`);
+          }
 
           if (data.success) {
-            document.getElementById("commentText").value = "";
+            commentText.value = "";
+            submitError.textContent = "Yorumunuz başarıyla gönderildi!";
+            submitError.style.color = "#27ae60";
           } else {
-            errorDiv.textContent = "Hata: " + (data.error || "Bilinmeyen hata");
+            submitError.textContent = "Hata: " + (data.error || "Bilinmeyen hata");
+            submitError.style.color = "#e74c3c";
           }
         } catch (err) {
           console.error("Gönderme hatası:", err);
-          errorDiv.textContent = "Sunucu ile iletişimde hata: " + err.message;
+          submitError.textContent = "Sunucu ile iletişimde hata: " + err.message;
+          submitError.style.color = "#e74c3c";
+        } finally {
+          sendBtn.disabled = false;
+          sendBtn.textContent = "Yorumu Gönder";
         }
       });
+
+      // Form değişikliklerini dinle
+      commentText.addEventListener("input", validateForm);
+      document.getElementById("nickname").addEventListener("input", validateForm);
 
       // Sayfa yüklendiğinde yorumları getir
       loadComments();
