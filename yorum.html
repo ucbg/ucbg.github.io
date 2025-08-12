@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yorum Sistemi</title>
+    <title>Comments by Kadir</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <style>
       :root {
-        --primary-color: #4a86e8;
-        --success-color: #27ae60;
-        --error-color: #e74c3c;
-        --text-color: #333;
-        --light-gray: #f5f5f5;
-        --border-color: #ddd;
+        --primary-color: #bb86fc;
+        --success-color: #03dac6;
+        --error-color: #cf6679;
+        --text-color: #e0e0e0;
+        --background-dark: #121212;
+        --card-dark: #1e1e1e;
+        --border-dark: #333;
       }
 
       * {
@@ -25,7 +27,7 @@
         max-width: 800px;
         margin: 0 auto;
         padding: 20px;
-        background-color: #f9f9f9;
+        background-color: var(--background-dark);
         color: var(--text-color);
         line-height: 1.6;
       }
@@ -44,55 +46,34 @@
       }
 
       .subtitle {
-        color: #777;
+        color: #aaa;
         font-size: 1.1rem;
+        font-weight: 300;
       }
 
-      /* Yorumlar Bölümü */
+      /* Comments Section */
       #comments-container {
-        background: white;
+        background: var(--card-dark);
         border-radius: 10px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         padding: 25px;
         margin-bottom: 30px;
         position: relative;
-      }
-
-      #comments-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
-      }
-
-      .refresh-btn {
-        background: var(--primary-color);
-        color: white;
-        border: none;
-        border-radius: 4px;
-        padding: 8px 15px;
-        font-size: 0.9rem;
-        cursor: pointer;
-        transition: background 0.3s;
-      }
-
-      .refresh-btn:hover {
-        background: #3a76d8;
       }
 
       #comments {
         max-height: 400px;
         overflow-y: auto;
         padding: 15px;
-        border: 1px solid var(--border-color);
+        border: 1px solid var(--border-dark);
         border-radius: 8px;
         margin-bottom: 20px;
-        background: var(--light-gray);
+        background: rgba(30, 30, 30, 0.7);
       }
 
       .comment {
         padding: 15px;
-        border-bottom: 1px solid var(--border-color);
+        border-bottom: 1px solid var(--border-dark);
         transition: background 0.3s;
         animation: fadeIn 0.5s ease-out;
       }
@@ -102,7 +83,7 @@
       }
 
       .comment:hover {
-        background-color: #edf4ff;
+        background-color: rgba(55, 55, 55, 0.5);
       }
 
       .comment-header {
@@ -120,14 +101,13 @@
 
       .comment-date {
         font-size: 0.85rem;
-        color: #777;
+        color: #999;
       }
 
       .comment-content {
         line-height: 1.6;
         white-space: pre-wrap;
         padding-left: 5px;
-        border-left: 2px solid var(--primary-color);
         margin-left: 5px;
       }
 
@@ -138,11 +118,11 @@
         font-style: italic;
       }
 
-      /* Form Bölümü */
+      /* Form Section */
       #comment-form {
-        background: white;
+        background: var(--card-dark);
         border-radius: 10px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         padding: 25px;
       }
 
@@ -154,24 +134,26 @@
         display: block;
         margin-bottom: 8px;
         font-weight: 500;
-        color: #555;
+        color: #ccc;
       }
 
       input,
       textarea {
         width: 100%;
         padding: 12px 15px;
-        border: 1px solid var(--border-color);
+        border: 1px solid var(--border-dark);
         border-radius: 6px;
         font-size: 16px;
         transition: all 0.3s;
+        background: rgba(40, 40, 40, 0.5);
+        color: var(--text-color);
       }
 
       input:focus,
       textarea:focus {
         outline: none;
         border-color: var(--primary-color);
-        box-shadow: 0 0 0 3px rgba(74, 134, 232, 0.2);
+        box-shadow: 0 0 0 3px rgba(187, 134, 252, 0.2);
       }
 
       textarea {
@@ -182,12 +164,12 @@
 
       button {
         background: var(--primary-color);
-        color: white;
+        color: #121212;
         border: none;
         border-radius: 6px;
         padding: 14px 25px;
         font-size: 16px;
-        font-weight: 500;
+        font-weight: 600;
         cursor: pointer;
         transition: all 0.3s;
         display: flex;
@@ -199,22 +181,23 @@
       }
 
       button:hover {
-        background: #3a76d8;
+        background: #a970f4;
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
       }
 
       button:disabled {
-        background: #aaa;
+        background: #555;
         cursor: not-allowed;
         transform: none;
         box-shadow: none;
+        color: #999;
       }
 
       .spinner {
-        border: 2px solid rgba(255, 255, 255, 0.3);
+        border: 2px solid rgba(0, 0, 0, 0.3);
         border-radius: 50%;
-        border-top: 2px solid white;
+        border-top: 2px solid #121212;
         width: 20px;
         height: 20px;
         animation: spin 1s linear infinite;
@@ -222,7 +205,7 @@
         display: none;
       }
 
-      /* Hata ve Başarı Mesajları */
+      /* Messages */
       .message {
         font-size: 0.95rem;
         margin-top: 15px;
@@ -234,24 +217,24 @@
       }
 
       .error-message {
-        background-color: rgba(231, 76, 60, 0.1);
+        background-color: rgba(207, 102, 121, 0.15);
         color: var(--error-color);
-        border: 1px solid rgba(231, 76, 60, 0.2);
+        border: 1px solid rgba(207, 102, 121, 0.3);
       }
 
       .success-message {
-        background-color: rgba(39, 174, 96, 0.1);
+        background-color: rgba(3, 218, 198, 0.15);
         color: var(--success-color);
-        border: 1px solid rgba(39, 174, 96, 0.2);
+        border: 1px solid rgba(3, 218, 198, 0.3);
       }
 
       .info-message {
-        background-color: rgba(52, 152, 219, 0.1);
-        color: #3498db;
-        border: 1px solid rgba(52, 152, 219, 0.2);
+        background-color: rgba(187, 134, 252, 0.15);
+        color: var(--primary-color);
+        border: 1px solid rgba(187, 134, 252, 0.3);
       }
 
-      /* Animasyonlar */
+      /* Animations */
       @keyframes spin {
         0% {
           transform: rotate(0deg);
@@ -272,17 +255,26 @@
         }
       }
 
-      /* Footer */
-      footer {
-        text-align: center;
-        margin-top: 40px;
-        padding-top: 20px;
-        border-top: 1px solid var(--border-color);
-        color: #777;
-        font-size: 0.9rem;
+      /* Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
       }
 
-      /* Responsive Tasarım */
+      ::-webkit-scrollbar-track {
+        background: #1a1a1a;
+        border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #444;
+        border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+
+      /* Responsive Design */
       @media (max-width: 650px) {
         body {
           padding: 15px;
@@ -297,15 +289,6 @@
           padding: 18px;
         }
 
-        .comment-header {
-          flex-direction: column;
-        }
-
-        .comment-date {
-          margin-top: 5px;
-          font-size: 0.8rem;
-        }
-
         button {
           padding: 12px 20px;
         }
@@ -314,50 +297,43 @@
   </head>
   <body>
     <header>
-      <h1>Yorum Sistemi</h1>
-      <p class="subtitle">Düşüncelerinizi bizimle paylaşın</p>
+      <h1>Comments by Kadir</h1>
+      <p class="subtitle">Share your thoughts</p>
     </header>
 
     <main>
       <section id="comments-container">
-        <div id="comments-header">
-          <h2>Yorumlar</h2>
-          <button id="refreshBtn" class="refresh-btn">Yenile</button>
-        </div>
-        <div id="comments">Yükleniyor...</div>
-        <div id="loading-message" class="info-message">Yorumlar yükleniyor...</div>
+        <h2><i class="fas fa-comments"></i> Comments</h2>
+        <div id="comments">Loading comments...</div>
+        <div id="loading-message" class="info-message">Loading comments...</div>
       </section>
 
       <section id="comment-form">
-        <h2>Yorum Ekle</h2>
+        <h2><i class="fas fa-pen"></i> Add a Comment</h2>
         <div class="form-group">
-          <label for="nickname">Takma Ad (isteğe bağlı)</label>
-          <input type="text" id="nickname" placeholder="İsminiz veya takma adınız" />
+          <label for="nickname">Nickname (optional)</label>
+          <input type="text" id="nickname" placeholder="Your name or nickname" />
         </div>
 
         <div class="form-group">
-          <label for="commentText">Yorumunuz <span style="color: var(--error-color)">*</span></label>
-          <textarea id="commentText" placeholder="Düşüncelerinizi yazın..." required></textarea>
-          <div id="text-error" class="error-message">Lütfen yorumunuzu yazın</div>
+          <label for="commentText">Your Comment <span style="color: var(--error-color)">*</span></label>
+          <textarea id="commentText" placeholder="Write your thoughts here..." required></textarea>
+          <div id="text-error" class="error-message">Please write your comment</div>
         </div>
 
         <button id="sendBtn">
           <div class="spinner"></div>
-          <span>Yorumu Gönder</span>
+          <span>Submit Comment</span>
         </button>
         <div id="submit-message" class="message"></div>
       </section>
     </main>
 
-    <footer>
-      <p>© 2023 Yorum Sistemi | Tüm hakları saklıdır</p>
-    </footer>
-
     <script type="module">
       import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
       import { getFirestore, collection, query, where, orderBy, onSnapshot } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
-      // Firebase konfigürasyonu
+      // Firebase configuration
       const firebaseConfig = {
         apiKey: "AIzaSyDx101DUQr-LvhW8K7woVJ58_a74TkkgJM",
         authDomain: "ucbgcomment.firebaseapp.com",
@@ -370,49 +346,44 @@
       const app = initializeApp(firebaseConfig);
       const db = getFirestore(app);
 
-      // Elementleri seç
+      // Select elements
       const commentsDiv = document.getElementById("comments");
       const textError = document.getElementById("text-error");
       const submitMessage = document.getElementById("submit-message");
       const loadingMessage = document.getElementById("loading-message");
       const sendBtn = document.getElementById("sendBtn");
-      const refreshBtn = document.getElementById("refreshBtn");
       const commentText = document.getElementById("commentText");
       const nicknameInput = document.getElementById("nickname");
       const spinner = sendBtn.querySelector(".spinner");
       const buttonText = sendBtn.querySelector("span");
 
-      // URL'den sayfa ID'sini al
+      // Get page ID from URL
       const pageId = window.location.pathname.replace(/\/$/, "") || "/";
 
-      // Yükleme durumu
+      // Loading state
       let isLoading = false;
 
-      // Tarih formatlama
+      // Format date
       function formatDate(date) {
         const options = {
           year: "numeric",
-          month: "long",
+          month: "short",
           day: "numeric",
           hour: "2-digit",
           minute: "2-digit",
         };
-        return new Date(date).toLocaleDateString("tr-TR", options);
+        return new Date(date).toLocaleDateString("en-US", options);
       }
 
-      // Yorumları yükle (YENİ İNDEKS DESTEKLİ)
+      // Load comments
       function loadComments() {
         isLoading = true;
         loadingMessage.style.display = "block";
-        loadingMessage.textContent = "Yorumlar yükleniyor...";
+        loadingMessage.textContent = "Loading comments...";
         loadingMessage.className = "message info-message";
 
-        // Firestore yeni indeksine uygun sorgu
-        const q = query(
-          collection(db, "comments"),
-          where("page", "==", pageId),
-          orderBy("date", "desc") // Yeni indeks bu sıralamayı destekliyor
-        );
+        // Firestore query with the new index
+        const q = query(collection(db, "comments"), where("page", "==", pageId), orderBy("date", "desc"));
 
         onSnapshot(
           q,
@@ -421,7 +392,7 @@
             loadingMessage.style.display = "none";
 
             if (snapshot.empty) {
-              commentsDiv.innerHTML = '<div class="no-comments">Henüz yorum yok. İlk yorumu siz yazın!</div>';
+              commentsDiv.innerHTML = '<div class="no-comments">No comments yet. Be the first to comment!</div>';
               return;
             }
 
@@ -433,7 +404,7 @@
               html += `
             <div class="comment">
               <div class="comment-header">
-                <span class="comment-author">${comment.nickname || "Anonim"}</span>
+                <span class="comment-author">${comment.nickname || "Anonymous"}</span>
                 <span class="comment-date">${formatDate(commentDate)}</span>
               </div>
               <div class="comment-content">${comment.text}</div>
@@ -444,31 +415,31 @@
             commentsDiv.innerHTML = html;
           },
           (error) => {
-            console.error("Yorumlar yüklenemedi:", error);
+            console.error("Error loading comments:", error);
             isLoading = false;
-            loadingMessage.textContent = "Yorumlar yüklenirken bir hata oluştu.";
+            loadingMessage.textContent = "Error loading comments. Please try again.";
             loadingMessage.className = "message error-message";
             loadingMessage.style.display = "block";
           }
         );
       }
 
-      // Form doğrulama
+      // Form validation
       function validateForm() {
         let isValid = true;
         submitMessage.textContent = "";
         submitMessage.style.display = "none";
 
-        // Yorum metni doğrulama
+        // Validate comment text
         if (!commentText.value.trim()) {
-          textError.textContent = "Lütfen yorumunuzu yazın";
+          textError.textContent = "Please write your comment";
           textError.style.display = "block";
           isValid = false;
         } else {
           textError.style.display = "none";
         }
 
-        // Butonu güncelle
+        // Update button state
         sendBtn.disabled = !isValid;
 
         return isValid;
@@ -477,17 +448,17 @@
       // Cloud Function URL
       const functionUrl = "https://addcomment-rfkgsqj4ya-uc.a.run.app";
 
-      // Yorum gönderme
+      // Submit comment
       sendBtn.addEventListener("click", async () => {
         if (!validateForm()) return;
 
         const nickname = nicknameInput.value.trim();
         const text = commentText.value.trim();
 
-        // Gönderim durumunu ayarla
+        // Set submitting state
         sendBtn.disabled = true;
         spinner.style.display = "block";
-        buttonText.textContent = "Gönderiliyor...";
+        buttonText.textContent = "Submitting...";
         submitMessage.textContent = "";
         submitMessage.style.display = "none";
 
@@ -506,66 +477,59 @@
             mode: "cors",
           });
 
-          // Yanıtı işle
+          // Process response
           const responseText = await response.text();
           let data;
           try {
             data = JSON.parse(responseText);
           } catch (e) {
-            console.error("JSON parse hatası:", e, "Response:", responseText);
-            throw new Error(`Sunucu yanıtı geçersiz: ${responseText.substring(0, 100)}`);
+            console.error("JSON parse error:", e, "Response:", responseText);
+            throw new Error(`Invalid server response: ${responseText.substring(0, 100)}`);
           }
 
           if (response.ok && data.success) {
-            // Başarılı gönderim
+            // Successful submission
             commentText.value = "";
-            submitMessage.textContent = "✓ Yorumunuz başarıyla gönderildi!";
+            submitMessage.textContent = "✓ Comment submitted successfully!";
             submitMessage.className = "message success-message";
             submitMessage.style.display = "block";
 
-            // Yorumları yeniden yükle
+            // Reload comments
             loadComments();
 
-            // 3 saniye sonra başarı mesajını gizle
+            // Hide success message after 3 seconds
             setTimeout(() => {
               submitMessage.style.display = "none";
             }, 3000);
           } else {
-            // Sunucu hatası
-            const errorMsg = data.error || `HTTP Hatası: ${response.status}`;
-            submitMessage.textContent = "Hata: " + errorMsg;
+            // Server error
+            const errorMsg = data.error || `HTTP Error: ${response.status}`;
+            submitMessage.textContent = "Error: " + errorMsg;
             submitMessage.className = "message error-message";
             submitMessage.style.display = "block";
           }
         } catch (err) {
-          // Ağ hatası
-          console.error("Gönderme hatası:", err);
-          submitMessage.textContent = "Hata: " + (err.message || "Sunucu ile bağlantı kurulamadı");
+          // Network error
+          console.error("Submission error:", err);
+          submitMessage.textContent = "Error: " + (err.message || "Could not connect to server");
           submitMessage.className = "message error-message";
           submitMessage.style.display = "block";
         } finally {
-          // Durumu sıfırla
+          // Reset state
           sendBtn.disabled = false;
           spinner.style.display = "none";
-          buttonText.textContent = "Yorumu Gönder";
+          buttonText.textContent = "Submit Comment";
         }
       });
 
-      // Yenile butonu
-      refreshBtn.addEventListener("click", () => {
-        if (!isLoading) {
-          loadComments();
-        }
-      });
-
-      // Form değişikliklerini dinle
+      // Form input listeners
       commentText.addEventListener("input", validateForm);
       nicknameInput.addEventListener("input", validateForm);
 
-      // Sayfa yüklendiğinde yorumları getir
+      // Load comments on page load
       loadComments();
 
-      // Sayfa yüklendiğinde formu doğrula
+      // Validate form on load
       setTimeout(validateForm, 100);
     </script>
   </body>
