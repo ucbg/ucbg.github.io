@@ -1,9 +1,66 @@
+// Firebase Comment System Integration Script
 document.addEventListener("DOMContentLoaded", function () {
-  // Yorum konteynırını bul
-  const commentContainer = document.querySelector(".fc-comment-container");
-  if (!commentContainer) return;
+  // Find all firebaseComment containers
+  const commentContainers = document.querySelectorAll(".firebaseComment");
 
-  // Firebase konfigürasyonu
+  if (commentContainers.length === 0) return;
+
+  // Inject the comment system HTML
+  commentContainers.forEach((container) => {
+    container.innerHTML = `
+        <div class="comment-header">
+          <h2><i class="fas fa-comments"></i> Comments</h2>
+          <p class="subtitle">Share your thoughts about this page</p>
+        </div>
+        
+        <div id="comments-container">
+          <div id="comments">Loading comments...</div>
+          <div id="loading-message" class="info-message">Loading comments...</div>
+        </div>
+        
+        <div id="comment-form">
+          <h2><i class="fas fa-pen"></i> Add a Comment</h2>
+          <div class="form-group">
+            <label for="nickname">Nickname (optional)</label>
+            <input type="text" id="nickname" placeholder="Your name or nickname">
+          </div>
+          
+          <div class="form-group">
+            <label for="commentText">Your Comment <span style="color:var(--error-color)">*</span></label>
+            <textarea id="commentText" placeholder="Write your thoughts here..." required></textarea>
+            <div id="text-error" class="error-message">Please write your comment</div>
+          </div>
+          
+          <button id="sendBtn">
+            <div class="spinner"></div>
+            <span>Submit Comment</span>
+          </button>
+          <div id="submit-message" class="message"></div>
+        </div>
+      `;
+
+    // Initialize the comment system
+    initCommentSystem(container);
+  });
+});
+
+function initCommentSystem(container) {
+  // Select elements within the container
+  const commentsDiv = container.querySelector("#comments");
+  const textError = container.querySelector("#text-error");
+  const submitMessage = container.querySelector("#submit-message");
+  const loadingMessage = container.querySelector("#loading-message");
+  const sendBtn = container.querySelector("#sendBtn");
+  const commentText = container.querySelector("#commentText");
+  const nicknameInput = container.querySelector("#nickname");
+
+  let spinner, buttonText;
+  if (sendBtn) {
+    spinner = sendBtn.querySelector(".spinner");
+    buttonText = sendBtn.querySelector("span");
+  }
+
+  // Firebase configuration
   const firebaseConfig = {
     apiKey: "AIzaSyDx101DUQr-LvhW8K7woVJ58_a74TkkgJM",
     authDomain: "ucbgcomment.firebaseapp.com",
@@ -13,37 +70,47 @@ document.addEventListener("DOMContentLoaded", function () {
     appId: "1:1006694508007:web:9f3a4413dbdeacfeee0942",
   };
 
-  // Firebase'i başlat
+  // Initialize Firebase only once
   if (!firebase.apps.length) {
     firebase.initializeApp(firebaseConfig);
   }
   const db = firebase.firestore();
 
-  // Element referansları
-  const commentsDiv = commentContainer.querySelector(".fc-comments");
-  const loadingMessage = commentContainer.querySelector(".fc-info-message");
-  const sendBtn = commentContainer.querySelector("#fc-sendBtn");
-  const commentText = commentContainer.querySelector("#fc-commentText");
-  const nicknameInput = commentContainer.querySelector("#fc-nickname");
-  const messageDiv = commentContainer.querySelector(".fc-message");
-  const textError = commentContainer.querySelector(".fc-error-message");
-  const spinner = commentContainer.querySelector(".fc-spinner");
-
-  // Sayfa ID'sini al
+  // Get page ID from URL
   const pageId = window.location.pathname.replace(/\/$/, "") || "/";
 
-  // Yorumları yükle
-  function loadComments() {
-    const q = db.collection("comments").where("page", "==", pageId).orderBy("date", "desc");
+  // Loading state
+  let isLoading = false;
 
+  // Format date
+  function formatDate(date) {
+    const options = {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+    };
+    return new Date(date).toLocaleDateString("en-US", options);
+  }
+
+  // Load comments
+  function loadComments() {
+    isLoading = true;
     loadingMessage.style.display = "block";
+    loadingMessage.textContent = "Loading comments...";
+    loadingMessage.className = "message info-message";
+
+    // Firestore query
+    const q = db.collection("comments").where("page", "==", pageId).orderBy("date", "desc");
 
     q.onSnapshot(
       (snapshot) => {
+        isLoading = false;
         loadingMessage.style.display = "none";
 
         if (snapshot.empty) {
-          commentsDiv.innerHTML = '<div class="fc-no-comments">No comments yet. Be the first to comment!</div>';
+          commentsDiv.innerHTML = '<div class="no-comments">No comments yet. Be the first to comment!</div>';
           return;
         }
 
@@ -53,45 +120,75 @@ document.addEventListener("DOMContentLoaded", function () {
           const commentDate = comment.date.toDate ? comment.date.toDate() : comment.date;
 
           html += `
-          <div class="fc-comment">
-            <div class="fc-comment-header-inner">
-              <span class="fc-comment-author">${comment.nickname || "Anonymous"}</span>
-              <span class="fc-comment-date">${new Date(commentDate).toLocaleString()}</span>
+            <div class="comment">
+              <div class="comment-header-inner">
+                <span class="comment-author">${comment.nickname || "Anonymous"}</span>
+                <span class="comment-date">${formatDate(commentDate)}</span>
+              </div>
+              <div class="comment-content">${comment.text}</div>
             </div>
-            <div class="fc-comment-content">${comment.text}</div>
-          </div>
-        `;
+          `;
         });
 
         commentsDiv.innerHTML = html;
       },
       (error) => {
         console.error("Error loading comments:", error);
+        isLoading = false;
         loadingMessage.textContent = "Error loading comments. Please try again.";
-        loadingMessage.className = "fc-error-message";
+        loadingMessage.className = "message error-message";
+        loadingMessage.style.display = "block";
       }
     );
   }
 
-  // Yorum gönderme işlevi
+  // Form validation
+  function validateForm() {
+    let isValid = true;
+    if (submitMessage) {
+      submitMessage.textContent = "";
+      submitMessage.style.display = "none";
+    }
+
+    // Validate comment text
+    if (!commentText.value.trim()) {
+      textError.textContent = "Please write your comment";
+      textError.style.display = "block";
+      isValid = false;
+    } else {
+      textError.style.display = "none";
+    }
+
+    // Update button state
+    if (sendBtn) {
+      sendBtn.disabled = !isValid;
+    }
+
+    return isValid;
+  }
+
+  // Cloud Function URL
+  const functionUrl = "https://addcomment-rfkgsqj4ya-uc.a.run.app";
+
+  // Submit comment
   if (sendBtn) {
-    sendBtn.addEventListener("click", async function () {
+    sendBtn.addEventListener("click", async () => {
+      if (!validateForm()) return;
+
       const nickname = nicknameInput.value.trim();
       const text = commentText.value.trim();
 
-      if (!text) {
-        textError.style.display = "block";
-        return;
+      // Set submitting state
+      sendBtn.disabled = true;
+      spinner.style.display = "block";
+      buttonText.textContent = "Submitting...";
+      if (submitMessage) {
+        submitMessage.textContent = "";
+        submitMessage.style.display = "none";
       }
 
-      // Gönderim durumunu ayarla
-      sendBtn.disabled = true;
-      spinner.style.display = "inline-block";
-      sendBtn.querySelector("span").textContent = "Submitting...";
-
       try {
-        // Cloud Function URL
-        const response = await fetch("https://addcomment-rfkgsqj4ya-uc.a.run.app", {
+        const response = await fetch(functionUrl, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -102,38 +199,80 @@ document.addEventListener("DOMContentLoaded", function () {
             nickname: nickname,
             text: text,
           }),
+          mode: "cors",
         });
 
-        const data = await response.json();
+        // Process response
+        const responseText = await response.text();
+        let data;
+        try {
+          data = JSON.parse(responseText);
+        } catch (e) {
+          console.error("JSON parse error:", e, "Response:", responseText);
+          throw new Error(`Invalid server response: ${responseText.substring(0, 100)}`);
+        }
 
-        if (data.success) {
-          // Başarılı gönderim
+        if (response.ok && data.success) {
+          // Successful submission
           commentText.value = "";
-          messageDiv.textContent = "✓ Comment submitted successfully!";
-          messageDiv.className = "fc-message fc-success-message";
-          messageDiv.style.display = "block";
+          if (submitMessage) {
+            submitMessage.textContent = "✓ Comment submitted successfully!";
+            submitMessage.className = "message success-message";
+            submitMessage.style.display = "block";
+          }
 
-          // Yorumları yeniden yükle
+          // Reload comments
           loadComments();
+
+          // Hide success message after 3 seconds
+          setTimeout(() => {
+            if (submitMessage) {
+              submitMessage.style.display = "none";
+            }
+          }, 3000);
         } else {
-          // Hata durumu
-          messageDiv.textContent = "Error: " + (data.error || "Unknown error");
-          messageDiv.className = "fc-message fc-error-message";
-          messageDiv.style.display = "block";
+          // Server error
+          const errorMsg = data.error || `HTTP Error: ${response.status}`;
+          if (submitMessage) {
+            submitMessage.textContent = "Error: " + errorMsg;
+            submitMessage.className = "message error-message";
+            submitMessage.style.display = "block";
+          }
         }
       } catch (err) {
-        messageDiv.textContent = "Error: " + err.message;
-        messageDiv.className = "fc-message fc-error-message";
-        messageDiv.style.display = "block";
+        // Network error
+        console.error("Submission error:", err);
+        if (submitMessage) {
+          submitMessage.textContent = "Error: " + (err.message || "Could not connect to server");
+          submitMessage.className = "message error-message";
+          submitMessage.style.display = "block";
+        }
       } finally {
-        // Durumu sıfırla
-        sendBtn.disabled = false;
-        spinner.style.display = "none";
-        sendBtn.querySelector("span").textContent = "Submit Comment";
+        // Reset state
+        if (sendBtn) {
+          sendBtn.disabled = false;
+        }
+        if (spinner) {
+          spinner.style.display = "none";
+        }
+        if (buttonText) {
+          buttonText.textContent = "Submit Comment";
+        }
       }
     });
   }
 
-  // Yorumları yükle
+  // Form input listeners
+  if (commentText) {
+    commentText.addEventListener("input", validateForm);
+  }
+  if (nicknameInput) {
+    nicknameInput.addEventListener("input", validateForm);
+  }
+
+  // Load comments on page load
   loadComments();
-});
+
+  // Validate form on load
+  setTimeout(validateForm, 100);
+}
