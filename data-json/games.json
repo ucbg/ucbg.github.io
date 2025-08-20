@@ -5399,5 +5399,16 @@
     "groups": "puzzle, point-and-click, logic, casual, cats",
     "keywords": "yarn untangle game, knot untying puzzle, relaxing puzzle game, kitten helper game, logic brain game, color-coding puzzle, online point-and-click, spatial reasoning game",
     "main_categories": "puzzle, kids, strategy"
+  },
+  {
+    "slug": "worlds-hardest-game-3",
+    "url": "/game/worlds-hardest-game-3.html",
+    "title": "WORLD'S HARDEST GAME 3",
+    "image": "/assets/upload/busqueda/worlds-hardest-game-3.png",
+    "video": "",
+    "description": "The third installment in the notoriously challenging puzzle series. Guide a red square through increasingly difficult maze-like levels filled with moving blue enemies. Collect all yellow coins in each stage to unlock the exit while avoiding instant-death contacts. Requires extreme precision, timing, and patience.",
+    "groups": "puzzle, arcade, obstacle-course, timing, precision",
+    "keywords": "worlds hardest game 3, difficult puzzle game, precision timing game, avoid blue enemies, collect coins, maze game, challenging browser game, skill testing game",
+    "main_categories": "kids, puzzle, skill, strategy"
   }
 ]
