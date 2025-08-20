@@ -23,7 +23,6 @@ const extraServers = [
   { name: "2", baseUrl: "https://unblockedgames67.gitlab.io" },
   { name: "3", baseUrl: "https://unblockedgames66.gitlab.io" },
   { name: "4", baseUrl: "https://ubgwtf.gitlab.io" },
-  { name: "5", baseUrl: "https://leveldevil.io/games" },
 ];
 
 // Sunucu listesini oluştur
