@@ -5384,9 +5384,20 @@
     "title": "ZEEPKIST: CRASH 2D",
     "image": "/assets/upload/busqueda/zeepkist-crash-2d.png",
     "video": "",
-    "description": "A humorous 2D soapbox car game where the goal is to create the most spectacular crashes possible for high scores. Select your vehicle and pose, launch with maximum power, and time your character's ejection to cause maximum chaos and destruction. Earn coins to unlock new cars, accessories, obstacles, and maps. 169",
+    "description": "A humorous 2D soapbox car game where the goal is to create the most spectacular crashes possible for high scores. Select your vehicle and pose, launch with maximum power, and time your character's ejection to cause maximum chaos and destruction. Earn coins to unlock new cars, accessories, obstacles, and maps.",
     "groups": "racing, arcade, physics, obstacle-course, customization",
     "keywords": "zeepkist crash 2d, soapbox car game, physics crash game, destructive racing game, vehicle crash simulation, arcade racing, unlockable cars, obstacle course game",
     "main_categories": "car, kids, racing, skill, strategy"
+  },
+  {
+    "slug": "yarn-untangle",
+    "url": "/game/yarn-untangle.html",
+    "title": "YARN UNTANGLE",
+    "image": "/assets/upload/busqueda/yarn-untangle.png",
+    "video": "",
+    "description": "A relaxing puzzle game where players untangle complicated formations of yarn by clicking and dragging strings until no overlaps remain. Features adorable kitten helpers, color-coded feedback (red for tangled, pink/purple for untangling, yellow for untangled), over 100 levels, and an endless mode.",
+    "groups": "puzzle, point-and-click, logic, casual, cats",
+    "keywords": "yarn untangle game, knot untying puzzle, relaxing puzzle game, kitten helper game, logic brain game, color-coding puzzle, online point-and-click, spatial reasoning game",
+    "main_categories": "puzzle, kids, strategy"
   }
 ]
