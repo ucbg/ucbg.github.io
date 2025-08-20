@@ -5333,5 +5333,60 @@
     "groups": "runner, obstacle-course, endless, arcade",
     "keywords": "zoom be 3 game, endless runner game, obstacle dodging game, fast-paced running game, arcade runner",
     "main_categories": "action, adventure, kids, skill, running"
+  },
+  {
+    "slug": "zombotag",
+    "url": "/game/zombotag.html",
+    "title": "ZOMBOTAG",
+    "image": "/assets/upload/busqueda/zombotag.png",
+    "video": "",
+    "description": "An arena battle game where you must infect every person on each level with your ever-growing army of zombies. Chase enemies, collect upgrades, and defeat bosses to strengthen your army and survive as long as possible in the arena. Your allies include jumpers (zombie boomerangs) and mobs that attack nearby enemies.",
+    "groups": "zombie, arena, battle, io, action",
+    "keywords": "zombotag game, zombie arena battle, infect game, army builder game, zombie boomerang, multiplayer zombie game, upgrade collection, boss battle",
+    "main_categories": "action, strategy, io, zombie"
+  },
+  {
+    "slug": "zombie-siege-outbreak",
+    "url": "/game/zombie-siege-outbreak.html",
+    "title": "ZOMBIE SIEGE OUTBREAK",
+    "image": "/assets/upload/busqueda/zombie-siege-outbreak.png",
+    "video": "",
+    "description": "A defensive first-person shooter where players must protect their city from zombie hordes by firing from behind barricades. Earn money from kills to upgrade weapons and equipment, and survive relentless waves of undead attackers.",
+    "groups": "shooter, defense, action, zombie, survival",
+    "keywords": "zombie siege outbreak game, fps zombie defense, barricade shooter game, undead wave survival, weapon upgrade game",
+    "main_categories": "action, shooting, horror"
+  },
+  {
+    "slug": "zombie-outbreak-arena",
+    "url": "/game/zombie-outbreak-arena.html",
+    "title": "ZOMBIE OUTBREAK ARENA",
+    "image": "/assets/upload/busqueda/zombie-outbreak-arena.png",
+    "video": "",
+    "description": "An intense top-down zombie shooter where players battle hordes of undead in dark, atmospheric environments using guns and flashlights. Features five challenging levels, day/night cycles with XP bonuses, and deep skill progression with 40 upgrades to enhance survival capabilities18.",
+    "groups": "shooter, survival, zombie, action, top-down",
+    "keywords": "zombie outbreak arena, top-down zombie shooter, survival horror game, skill upgrade game, flashlight zombie game, html5 shooter, dark atmosphere game",
+    "main_categories": "action, strategy, horror, skill"
+  },
+  {
+    "slug": "zombie-killer",
+    "url": "/game/zombie-killer.html",
+    "title": "ZOMBIE KILLER",
+    "image": "/assets/upload/busqueda/zombie-killer.png",
+    "video": "",
+    "description": "A tower defense game where you strategically place defenses and control a lone soldier across three horizontal rows to eliminate waves of zombies. Earn coins from each kill to upgrade weapons, barriers, and helicopter support across 20 challenging levels.",
+    "groups": "tower-defense, strategy, zombie, action, survival",
+    "keywords": "zombie killer game, tower defense game, plants vs zombies style, zombie wave survival, strategy defense game, upgrade weapons game, online zombie game",
+    "main_categories": "strategy, action, horror"
+  },
+  {
+    "slug": "zeepkist-crash-2d",
+    "url": "/game/zeepkist-crash-2d.html",
+    "title": "ZEEPKIST: CRASH 2D",
+    "image": "/assets/upload/busqueda/zeepkist-crash-2d.png",
+    "video": "",
+    "description": "A humorous 2D soapbox car game where the goal is to create the most spectacular crashes possible for high scores. Select your vehicle and pose, launch with maximum power, and time your character's ejection to cause maximum chaos and destruction. Earn coins to unlock new cars, accessories, obstacles, and maps. 169",
+    "groups": "racing, arcade, physics, obstacle-course, customization",
+    "keywords": "zeepkist crash 2d, soapbox car game, physics crash game, destructive racing game, vehicle crash simulation, arcade racing, unlockable cars, obstacle course game",
+    "main_categories": "car, kids, racing, skill, strategy"
   }
 ]
