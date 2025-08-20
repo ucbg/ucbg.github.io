@@ -5322,5 +5322,16 @@
     "groups": "action, multiplayer, strategy",
     "keywords": "cats game, crash arena turbo stars, multiplayer battle bots, robot fighting game, real-time arena battles",
     "main_categories": "action, multiplayer, strategy"
+  },
+  {
+    "slug": "zoom-be-3",
+    "url": "/game/zoom-be-3.html",
+    "title": "ZOOM BE 3",
+    "image": "/assets/upload/busqueda/zoom-be-3.png",
+    "video": "",
+    "description": "An exciting and fast-paced endless runner game where you control a character speeding through vibrant environments, dodging obstacles, and collecting power-ups.",
+    "groups": "runner, obstacle-course, endless, arcade",
+    "keywords": "zoom be 3 game, endless runner game, obstacle dodging game, fast-paced running game, arcade runner",
+    "main_categories": "action, adventure, kids, skill, running"
   }
 ]
