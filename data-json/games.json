@@ -5410,5 +5410,49 @@
     "groups": "puzzle, arcade, obstacle-course, timing, precision",
     "keywords": "worlds hardest game 3, difficult puzzle game, precision timing game, avoid blue enemies, collect coins, maze game, challenging browser game, skill testing game",
     "main_categories": "kids, puzzle, skill, strategy"
+  },
+  {
+    "slug": "words-search-classic-edition",
+    "url": "/game/words-search-classic-edition.html",
+    "title": "WORDS SEARCH CLASSIC EDITION",
+    "image": "/assets/upload/busqueda/words-search-classic-edition.png",
+    "video": "",
+    "description": "A classic word search puzzle game where players find hidden words in a letter grid before time runs out. Tests observation skills and intelligence with mingled words across multiple challenging levels.",
+    "groups": "word, puzzle, classic, observation",
+    "keywords": "words search classic edition, word puzzle game, hidden words game, observation test game, mobile word search, find words grid game",
+    "main_categories": "puzzle, kids, school"
+  },
+  {
+    "slug": "wordle-plus",
+    "url": "/game/wordle-plus.html",
+    "title": "WORDLE PLUS",
+    "image": "/assets/upload/busqueda/wordle-plus.png",
+    "video": "",
+    "description": "An enhanced version of the popular word-guessing game featuring additional modes, daily challenges, and extended puzzle options beyond the classic five-letter format.",
+    "groups": "word, puzzle, daily, challenge",
+    "keywords": "wordle plus game, enhanced wordle, daily word puzzle, expanded word game, word challenge modes",
+    "main_categories": "puzzle, kids, school, strategy"
+  },
+  {
+    "slug": "word-slide",
+    "url": "/game/word-slide.html",
+    "title": "WORD SLIDE",
+    "image": "/assets/upload/busqueda/word-slide.png",
+    "video": "",
+    "description": "A word puzzle game that enhances your vocabulary and puzzle-solving skills by sliding letters to reveal hidden words. Create meaningful words through horizontal and vertical slides on the letter grid, and complete levels by turning all tiles brown.",
+    "groups": "puzzle, word, logic, casual, education",
+    "keywords": "word slide game, vocabulary puzzle, letter sliding game, word formation game, educational word game, brain puzzle, online word puzzle",
+    "main_categories": "puzzle, kids, school"
+  },
+  {
+    "slug": "word-city-uncrossed",
+    "url": "/game/word-city-uncrossed.html",
+    "title": "WORD CITY UNCROSSED",
+    "image": "/assets/upload/busqueda/word-city-uncrossed.png",
+    "video": "",
+    "description": "A city-building word puzzle game where players connect adjacent letters to form valid words, unlocking new global cities and earning coins to purchase power-ups and hints. Features no time pressure, daily challenges, and offline playability.",
+    "groups": "word, puzzle, city-builder, education, casual",
+    "keywords": "word city uncrossed, word puzzle game, city builder word game, vocabulary builder, Unico Studio game, letter connecting game, offline word game, educational puzzle",
+    "main_categories": "puzzle, kids, school, strategy"
   }
 ]
