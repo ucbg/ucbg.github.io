@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ourhero.net/sitemaps.xml
+Sitemap: https://ucbg.github.io/sitemap.xml
