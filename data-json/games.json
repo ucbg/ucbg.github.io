@@ -1306,7 +1306,10 @@
     "description": "Arcade basketball sequel with exaggerated physics. Perform ridiculous dunks in this over-the-top sports game.",
     "groups": "basketball, sports",
     "keywords": "dunkers 2 game, basketball arcade game, simple sports game, one button game, online basketball",
-    "main_categories": "skill, sport"
+    "main_categories": "skill, sport",
+    "servers": {
+      "server1": "https://basketballstarsonline.github.io/file/"
+    }
   },
   {
     "slug": "eggy-car",
@@ -1757,7 +1760,10 @@
     "description": "Physics-defying sports game. Play soccer in zero-gravity environments with crazy ball trajectories.",
     "groups": "physics, soccer",
     "keywords": "gravity soccer game, physics football game, space soccer game, anti-gravity sports game, online soccer",
-    "main_categories": "kids, skill, soccer, sport, two-player"
+    "main_categories": "kids, skill, soccer, sport, two-player",
+    "servers": {
+      "server1": "https://unblockedgames66.gitlab.io/gravity-soccer/"
+    }
   },
   {
     "slug": "grindcraft-remastered",
@@ -5454,5 +5460,19 @@
     "groups": "word, puzzle, city-builder, education, casual",
     "keywords": "word city uncrossed, word puzzle game, city builder word game, vocabulary builder, Unico Studio game, letter connecting game, offline word game, educational puzzle",
     "main_categories": "puzzle, kids, school, strategy"
+  },
+  {
+    "slug": "escape-road",
+    "url": "/game/escape-road.html",
+    "title": "ESCAPE ROAD",
+    "image": "/assets/upload/busqueda/escape-road.png",
+    "video": "",
+    "description": "A thrilling driving game where you play as a bank robber escaping relentless police pursuit through a chaotic 3D city. Master drifting, sharp turns, and quick decisions to avoid obstacles, outsmart chasers, and survive as long as possible while unlocking new vehicles.",
+    "groups": "driving, action, police, escape, arcade",
+    "keywords": "escape road game, police chase game, car escape game, driving simulator, unlockable cars, 3d driving game, online arcade game, skill driving game",
+    "main_categories": "action, car, racing, skill",
+    "servers": {
+      "server1": "https://unblockedgames76.org/embed/escape-road"
+    }
   }
 ]
