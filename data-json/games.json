@@ -5474,5 +5474,27 @@
     "servers": {
       "server1": "https://game.azgame.io/escape-road-city-2/"
     }
+  },
+  {
+    "slug": "wood-blocks-3d",
+    "url": "/game/wood-blocks-3d.html",
+    "title": "WOOD BLOCKS 3D",
+    "image": "/assets/upload/busqueda/wood-blocks-3d.png",
+    "video": "",
+    "description": "A block puzzle game that revitalizes the classic Tetris experience by allowing players to place given blocks anywhere on the grid. The goal is to strategically drag and drop pieces to fill complete rows or columns, clearing them for points. Features power-ups, combo opportunities, and daily challenges to test strategic skills in a minimalist 3D environment.",
+    "groups": "puzzle, block, strategy, logic, casual",
+    "keywords": "wood blocks 3d, block puzzle game, infinity games, tetris-like puzzle, spatial reasoning game, strategy puzzle, daily challenges, brain teaser game",
+    "main_categories": "puzzle, kids, strategy"
+  },
+  {
+    "slug": "wizard-mike",
+    "url": "/game/wizard-mike.html",
+    "title": "WIZARD MIKE",
+    "image": "/assets/upload/busqueda/wizard-mike.png",
+    "video": "",
+    "description": "A magical adventure game where players help Mike the Wizard master spells, solve puzzles, and explore enchanting realms. Features spell-casting mechanics, potion brewing, and mystical creature companions across multiple challenging levels.",
+    "groups": "adventure, puzzle, magic, fantasy, point-and-click",
+    "keywords": "wizard mike game, magical adventure game, spell casting puzzle, wizard fantasy game, potion brewing game, mystical adventure, point-and-click magic",
+    "main_categories": "adventure, kids, puzzle, strategy"
   }
 ]
