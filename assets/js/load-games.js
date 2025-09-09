@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   const cardContainer = document.querySelector(".index-page-games-list");
   if (!cardContainer) return;
 
+  // Reklam kapatma kontrolü
+  const noAds = cardContainer.hasAttribute("data-no-ads");
+
   // Filtreleri al
   const filterAttr = cardContainer.getAttribute("data-filter");
   const filters = filterAttr
@@ -95,13 +98,15 @@ document.addEventListener("DOMContentLoaded", async () => {
       for (let i = 0; i < batchSize && loadedIndex < games.length; i++, loadedIndex++) {
         const game = games[loadedIndex];
 
-        if ((loadedIndex + 1) % 20 === 0) {
+        if (!noAds && (loadedIndex + 1) % 20 === 0) {
+          // Adsense reklamı
           const adElement = document.createElement("a");
           adElement.classList.add("card", "large");
           adElement.innerHTML = `<ins class="adsbygoogle" style="display:inline-block; width:260px; height:260px" data-ad-client="ca-pub-9429401123792626" data-ad-slot="3411930037"></ins>`;
           cardContainer.appendChild(adElement);
           (window.adsbygoogle = window.adsbygoogle || []).push({});
         } else {
+          // Normal oyun kartı
           const isLarge = loadedIndex % 12 === 0 || Math.random() < 0.3;
           cardContainer.insertAdjacentHTML(
             "beforeend",
