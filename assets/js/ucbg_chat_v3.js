@@ -16,6 +16,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let roomName = getCookie("roomName") || "ChatRoom";
 
+  // Sunucu seçimi zaman dilimine göre
+  function getServerByTime() {
+    const servers = ["https://unblockedgame.unblockedgame.workers.dev/", "https://durable-chat-new-new.hamidogs22.workers.dev/"];
+    const hour = new Date().getHours();
+    const segment = Math.floor(hour / 4); // 0-5 arası segment
+    return servers[segment % servers.length];
+  }
+
   // Drawer container
   const drawer = document.createElement("div");
   drawer.style.position = "fixed";
@@ -23,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
   drawer.style.bottom = "0px";
   drawer.style.right = "0";
   drawer.style.width = "320px";
-  drawer.style.backgroundColor = "#fff"; // beyaz tema
+  drawer.style.backgroundColor = "#fff";
   drawer.style.boxShadow = "-4px 0 12px rgba(0,0,0,0.2)";
   drawer.style.borderRadius = "10px 0 0 10px";
   drawer.style.transform = "translateX(100%)";
@@ -31,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
   drawer.style.zIndex = "1000";
   drawer.style.padding = "10px";
   drawer.style.boxSizing = "border-box";
-  drawer.style.color = "#000"; // yazılar siyah
+  drawer.style.color = "#000";
   drawer.style.display = "flex";
   drawer.style.flexDirection = "column";
 
@@ -69,10 +77,18 @@ document.addEventListener("DOMContentLoaded", function () {
     resetButton.style.backgroundColor = "#f8f8f8";
   });
 
+  // Drawer ve iframe için oluşturulacak
+  const iframe = document.createElement("iframe");
+  iframe.src = `${getServerByTime()}${roomName}`;
+  iframe.style.width = "100%";
+  iframe.style.flex = "1";
+  iframe.style.border = "none";
+  iframe.style.backgroundColor = "#fff";
+
   resetButton.addEventListener("click", () => {
     input.value = "ChatRoom";
     roomName = "ChatRoom";
-    iframe.src = `https://unblockedgame.unblockedgame.workers.dev/${roomName}`;
+    iframe.src = `${getServerByTime()}${roomName}`;
     setCookie("roomName", roomName);
   });
 
@@ -80,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const newRoom = input.value.trim();
     if (newRoom) {
       roomName = newRoom;
-      iframe.src = `https://unblockedgame.unblockedgame.workers.dev/${roomName}`;
+      iframe.src = `${getServerByTime()}${roomName}`;
       setCookie("roomName", roomName);
     }
   });
@@ -88,14 +104,6 @@ document.addEventListener("DOMContentLoaded", function () {
   inputContainer.appendChild(input);
   inputContainer.appendChild(resetButton);
   drawer.appendChild(inputContainer);
-
-  // iframe
-  const iframe = document.createElement("iframe");
-  iframe.src = `https://unblockedgame.unblockedgame.workers.dev/${roomName}`;
-  iframe.style.width = "100%";
-  iframe.style.flex = "1";
-  iframe.style.border = "none";
-  iframe.style.backgroundColor = "#fff";
   drawer.appendChild(iframe);
 
   document.body.appendChild(drawer);
