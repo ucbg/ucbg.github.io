@@ -14,65 +14,69 @@ document.addEventListener("DOMContentLoaded", function () {
     }, "");
   }
 
-  // Varsayılan room name
   let roomName = getCookie("roomName") || "ChatRoom";
 
-  // Konteyner div (hem input hem iframe burada)
-  const container = document.createElement("div");
-  container.style.position = "absolute";
-  container.style.zIndex = "1000";
-  container.style.display = "none";
+  // Drawer container
+  const drawer = document.createElement("div");
+  drawer.style.position = "fixed";
+  drawer.style.top = "80px";
+  drawer.style.bottom = "0px";
+  drawer.style.right = "0";
+  drawer.style.width = "320px";
+  drawer.style.backgroundColor = "#fff"; // beyaz tema
+  drawer.style.boxShadow = "-4px 0 12px rgba(0,0,0,0.2)";
+  drawer.style.borderRadius = "10px 0 0 10px";
+  drawer.style.transform = "translateX(100%)";
+  drawer.style.transition = "transform 0.3s ease-in-out";
+  drawer.style.zIndex = "1000";
+  drawer.style.padding = "10px";
+  drawer.style.boxSizing = "border-box";
+  drawer.style.color = "#000"; // yazılar siyah
+  drawer.style.display = "flex";
+  drawer.style.flexDirection = "column";
 
-  // Room name input container (input ve reset butonunu burada yerleştireceğiz)
+  // Room input ve reset
   const inputContainer = document.createElement("div");
   inputContainer.style.display = "flex";
   inputContainer.style.alignItems = "center";
-  inputContainer.style.marginBottom = "5px";
+  inputContainer.style.marginBottom = "10px";
 
-  // Room name input
   const input = document.createElement("input");
   input.type = "text";
   input.value = roomName;
   input.placeholder = "Enter room name";
-  input.style.width = "218px";
+  input.style.flex = "1";
   input.style.padding = "6px";
   input.style.marginRight = "5px";
   input.style.border = "1px solid #ccc";
   input.style.borderRadius = "6px";
-  input.style.boxSizing = "border-box";
-  input.style.display = "block";
-  input.style.textAlign = "center";
+  input.style.backgroundColor = "#fff";
+  input.style.color = "#000";
 
-  // Reset button
   const resetButton = document.createElement("button");
   resetButton.textContent = "Default";
   resetButton.style.padding = "6px 12px";
   resetButton.style.border = "1px solid #ccc";
   resetButton.style.borderRadius = "6px";
-  resetButton.style.backgroundColor = "#f8f8f8";
   resetButton.style.cursor = "pointer";
+  resetButton.style.backgroundColor = "#f8f8f8";
+  resetButton.style.color = "#000";
 
-  // Reset button click event
-  resetButton.addEventListener("click", () => {
-    input.value = "ChatRoom"; // Reset the input value to DefaultChatRoom
-    roomName = "ChatRoom"; // Set roomName to DefaultChatRoom
-    iframe.src = `https://unblockedgame.unblockedgame.workers.dev/${roomName}`; // Update iframe src
-    setCookie("roomName", roomName); // Update the cookie
+  resetButton.addEventListener("mouseover", () => {
+    resetButton.style.backgroundColor = "#e0e0e0";
+  });
+  resetButton.addEventListener("mouseout", () => {
+    resetButton.style.backgroundColor = "#f8f8f8";
   });
 
-  // iframe
-  const iframe = document.createElement("iframe");
-  iframe.src = `https://unblockedgame.unblockedgame.workers.dev/${roomName}`;
-  iframe.style.width = "300px";
-  iframe.style.height = "500px";
-  iframe.style.border = "none";
-  iframe.style.borderRadius = "10px";
-  iframe.style.boxShadow = "0 4px 8px rgba(0,0,0,0.2)";
-  iframe.style.backgroundColor = "white";
-  iframe.style.display = "block";
+  resetButton.addEventListener("click", () => {
+    input.value = "ChatRoom";
+    roomName = "ChatRoom";
+    iframe.src = `https://unblockedgame.unblockedgame.workers.dev/${roomName}`;
+    setCookie("roomName", roomName);
+  });
 
-  // Input değişince iframe ve cookie güncelle
-  input.addEventListener("input", function () {
+  input.addEventListener("input", () => {
     const newRoom = input.value.trim();
     if (newRoom) {
       roomName = newRoom;
@@ -81,31 +85,36 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Input ve reset button'ı konteynere ekleyelim
   inputContainer.appendChild(input);
   inputContainer.appendChild(resetButton);
+  drawer.appendChild(inputContainer);
 
-  container.appendChild(inputContainer);
-  container.appendChild(iframe);
-  document.body.appendChild(container);
+  // iframe
+  const iframe = document.createElement("iframe");
+  iframe.src = `https://unblockedgame.unblockedgame.workers.dev/${roomName}`;
+  iframe.style.width = "100%";
+  iframe.style.flex = "1";
+  iframe.style.border = "none";
+  iframe.style.backgroundColor = "#fff";
+  drawer.appendChild(iframe);
 
-  // Butona tıklanınca iframe’i göster/gizle
+  document.body.appendChild(drawer);
+
+  // Buton tıklayınca drawer aç/kapa
+  let isOpen = false;
   chatButton.addEventListener("click", (e) => {
     e.stopPropagation();
-    const isVisible = container.style.display === "block";
-    const rect = chatButton.getBoundingClientRect();
-    container.style.right = `10px`;
-    container.style.top = `${rect.bottom + window.scrollY}px`;
-    container.style.display = isVisible ? "none" : "block";
+    isOpen = !isOpen;
+    drawer.style.transform = isOpen ? "translateX(0)" : "translateX(100%)";
   });
 
-  // Dışarı tıklanınca kapat
+  // Dış tıklama ile drawer kapanır
   document.addEventListener("click", () => {
-    container.style.display = "none";
+    if (isOpen) {
+      isOpen = false;
+      drawer.style.transform = "translateX(100%)";
+    }
   });
 
-  // İçeride tıklanırsa kapanma
-  container.addEventListener("click", (e) => {
-    e.stopPropagation();
-  });
+  drawer.addEventListener("click", (e) => e.stopPropagation());
 });
