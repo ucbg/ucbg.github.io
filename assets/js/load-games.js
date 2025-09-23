@@ -221,6 +221,136 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 });
 
+// new games
+document.addEventListener("DOMContentLoaded", async () => {
+  const cardContainer = document.querySelector(".index-page-games-list-new");
+  if (!cardContainer) return;
+
+  // Reklam kapatma kontrolü
+  const noAds = cardContainer.hasAttribute("data-no-ads");
+
+  // Filtreleri al
+  const filterAttr = cardContainer.getAttribute("data-filter");
+  const filters = filterAttr
+    ? filterAttr
+        .toLowerCase()
+        .split(",")
+        .map((f) => f.trim())
+    : null;
+
+  try {
+    async function fetchJson(url) {
+      try {
+        let response = await fetch(url);
+        if (!response.ok) throw new Error("JSON yüklenemedi");
+        return await response.json();
+      } catch (error) {
+        console.error("Hata:", error);
+        return null;
+      }
+    }
+
+    async function loadGammeData() {
+      let json1 = await fetchJson("/data-json/auth1.json");
+      let json2 = await fetchJson("/data-json/auth2.json");
+      if (!json1 || !json2) {
+        document.body.innerHTML = "";
+        return;
+      }
+      let domain = window.location.origin.replace(/https?:\/\//, "");
+      let hashBuffer = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(json1.text + json2.text + domain));
+      let hashArray = Array.from(new Uint8Array(hashBuffer));
+      let expectedHash = hashArray
+        .map((byte) => byte.toString(16).padStart(2, "0"))
+        .join("")
+        .substring(0, 16);
+      let validHashes = await fetchJson("/data-json/validHashes.json");
+      if (!validHashes.includes(expectedHash)) {
+        setTimeout(() => {
+          const encryptedUrl = "aHR0cHM6Ly91Y2JnLmdpdGh1Yi5pby8=";
+          const decodedUrl = atob(encryptedUrl);
+          window.location.href = decodedUrl;
+        }, 500);
+      }
+    }
+
+    await loadGammeData();
+
+    const response = await fetch("/data-json/games.json?v=2.0.0");
+    const allGames = await response.json();
+
+    // Filtre uygula
+    const filteredGames = filters
+      ? allGames.filter((game) => {
+          if (!game.groups) return false;
+          const gameGroups = game.groups
+            .toLowerCase()
+            .split(",")
+            .map((g) => g.trim());
+          return filters.some((filter) => gameGroups.includes(filter));
+        })
+      : allGames;
+
+    // Son 40 oyunu al ve ters çevir (en son eklenen en başta)
+    const latestGames = filteredGames.slice(-40).reverse();
+
+    if (!window.adsbygoogle) {
+      const script = document.createElement("script");
+      script.async = true;
+      script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+      document.head.appendChild(script);
+    }
+
+    // Tüm oyunları tek seferde yükle
+    latestGames.forEach((game, index) => {
+      if (!noAds && (index + 1) % 20 === 0) {
+        // Adsense reklamı
+        const adElement = document.createElement("a");
+        adElement.classList.add("card", "large");
+        adElement.innerHTML = `<ins class="adsbygoogle" style="display:inline-block; width:260px; height:260px" data-ad-client="ca-pub-9429401123792626" data-ad-slot="3411930037"></ins>`;
+        cardContainer.appendChild(adElement);
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      }
+
+      // Normal oyun kartı
+      const isLarge = index % 12 === 0 || Math.random() < 0.3;
+      cardContainer.insertAdjacentHTML(
+        "beforeend",
+        `<a href="${game.url}" class="card${isLarge ? " large" : ""}">
+          <picture>
+            <source data-srcset="${game.image}" type="image/png" class="img-fluid" />
+            <img data-src="${game.image}" alt="${game.title}" class="lazyload img-fluid" width="500" height="500" />
+          </picture>
+          <div class="card-body"><h3>${game.title}</h3></div>
+        </a>`
+      );
+    });
+
+    // Lazy loading başlat
+    if (window.LazyLoad) {
+      new LazyLoad({ elements_selector: ".lazyload" });
+    }
+
+    // Kartları görünür yap
+    function revealCards() {
+      const cards = document.querySelectorAll(".card");
+      cards.forEach((card, index) => {
+        setTimeout(() => {
+          card.classList.add("visible");
+        }, index * 100); // Her kart için 100ms gecikme
+      });
+    }
+
+    // Sayfa yüklendikten sonra kartları göster
+    window.addEventListener("load", revealCards);
+
+    // Hemen de göster (resimler yüklenmeden de animasyon çalışsın)
+    setTimeout(revealCards, 500);
+  } catch (error) {
+    console.error("Games yüklenirken hata oluştu:", error);
+  }
+});
+
 // sol menu
 document.addEventListener("DOMContentLoaded", function () {
   const container = document.querySelector(".w-lg-300.lef-side-games.card-masonry");

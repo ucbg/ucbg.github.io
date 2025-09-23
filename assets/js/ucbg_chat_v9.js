@@ -194,7 +194,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   let isOpen = false;
   let unseenCount = 0;
-  let lastSent = 0; // Her kullanıcı için ayrı
+  let lastSent = 0;
 
   chatButton.addEventListener("click", (e) => {
     e.stopPropagation();
@@ -223,73 +223,87 @@ document.addEventListener("DOMContentLoaded", async () => {
     updateBlurState();
   });
 
-  // Firestore - ESKİ HALİNE DÖNDÜRÜYORUM
+  // Firestore - TEK BİR onSnapshot KULLANIYORUM
   const messagesRef = collection(db, "messages");
   const q = query(messagesRef, orderBy("timestamp", "desc"), limit(200));
 
-  // Mesajları yükleme fonksiyonu
-  function loadMessages(snapshot) {
-    messagesDiv.innerHTML = ""; // Önce temizle
+  let isFirstLoad = true;
+  let initialMessagesLoaded = false;
 
-    // Ters çevirip ekle (en eskiden en yeniye)
-    const messages = [];
-    snapshot.forEach((doc) => {
-      messages.push({ id: doc.id, ...doc.data() });
-    });
+  const unsubscribe = onSnapshot(q, (snapshot) => {
+    // İlk yüklemede tüm mesajları yükle
+    if (!initialMessagesLoaded) {
+      messagesDiv.innerHTML = "";
+      snapshot.docs.reverse().forEach((docu) => {
+        const data = docu.data();
+        addMessageToUI(data, docu.id);
+      });
+      initialMessagesLoaded = true;
+      messagesDiv.scrollTop = messagesDiv.scrollHeight;
+    } else {
+      // Sonraki değişikliklerde sadece yeni mesajları ekle
+      snapshot.docChanges().forEach((change) => {
+        if (change.type === "added") {
+          const data = change.doc.data();
+          addMessageToUI(data, change.doc.id);
 
-    messages.reverse().forEach((data) => {
-      const msgWrapper = document.createElement("div");
-      msgWrapper.style.display = "flex";
-      msgWrapper.style.flexDirection = "column";
-      msgWrapper.style.marginBottom = "8px";
-      msgWrapper.style.maxWidth = "80%";
-
-      const userEl = document.createElement("div");
-      userEl.textContent = escapeHtml(data.user);
-      userEl.style.fontSize = "12px";
-      userEl.style.marginBottom = "2px";
-      userEl.style.color = "#555";
-
-      const msgEl = document.createElement("div");
-      msgEl.textContent = escapeHtml(data.text);
-      msgEl.style.padding = "6px 10px";
-      msgEl.style.borderRadius = "12px";
-      msgEl.style.fontSize = "14px";
-      msgEl.style.wordWrap = "break-word";
-
-      if (data.user === user) {
-        msgWrapper.style.alignSelf = "flex-end";
-        userEl.style.textAlign = "right";
-        msgEl.style.backgroundColor = "#1976d2";
-        msgEl.style.color = "#fff";
-      } else {
-        msgWrapper.style.alignSelf = "flex-start";
-        userEl.style.textAlign = "left";
-        msgEl.style.backgroundColor = "#e0e0e0";
-        msgEl.style.color = "#000";
-      }
-
-      msgWrapper.appendChild(userEl);
-      msgWrapper.appendChild(msgEl);
-      messagesDiv.appendChild(msgWrapper);
-    });
-
-    messagesDiv.scrollTop = messagesDiv.scrollHeight;
-  }
-
-  // İlk yükleme
-  onSnapshot(q, (snapshot) => {
-    loadMessages(snapshot);
-
-    // Sadece yeni mesaj geldiğinde ve chat kapalıysa badge artır
-    if (!isOpen && snapshot.docChanges().some((change) => change.type === "added")) {
-      unseenCount++;
-      badge.textContent = unseenCount;
-      badge.style.display = "block";
+          // Sadece başkalarının mesajları ve chat kapalıysa badge artır
+          if (!isOpen && data.user !== user) {
+            unseenCount++;
+            badge.textContent = unseenCount;
+            badge.style.display = "block";
+          }
+        }
+      });
+      messagesDiv.scrollTop = messagesDiv.scrollHeight;
     }
+
+    isFirstLoad = false;
   });
 
-  // Cleanup - düzgün çalışacak şekilde
+  // Mesaj ekleme fonksiyonu
+  function addMessageToUI(data, messageId) {
+    // Aynı mesajı tekrar eklemeyi önle
+    if (document.getElementById(`msg-${messageId}`)) return;
+
+    const msgWrapper = document.createElement("div");
+    msgWrapper.id = `msg-${messageId}`;
+    msgWrapper.style.display = "flex";
+    msgWrapper.style.flexDirection = "column";
+    msgWrapper.style.marginBottom = "8px";
+    msgWrapper.style.maxWidth = "80%";
+
+    const userEl = document.createElement("div");
+    userEl.textContent = escapeHtml(data.user);
+    userEl.style.fontSize = "12px";
+    userEl.style.marginBottom = "2px";
+    userEl.style.color = "#555";
+
+    const msgEl = document.createElement("div");
+    msgEl.textContent = escapeHtml(data.text);
+    msgEl.style.padding = "6px 10px";
+    msgEl.style.borderRadius = "12px";
+    msgEl.style.fontSize = "14px";
+    msgEl.style.wordWrap = "break-word";
+
+    if (data.user === user) {
+      msgWrapper.style.alignSelf = "flex-end";
+      userEl.style.textAlign = "right";
+      msgEl.style.backgroundColor = "#1976d2";
+      msgEl.style.color = "#fff";
+    } else {
+      msgWrapper.style.alignSelf = "flex-start";
+      userEl.style.textAlign = "left";
+      msgEl.style.backgroundColor = "#e0e0e0";
+      msgEl.style.color = "#000";
+    }
+
+    msgWrapper.appendChild(userEl);
+    msgWrapper.appendChild(msgEl);
+    messagesDiv.appendChild(msgWrapper);
+  }
+
+  // Cleanup
   async function cleanupOldMessages() {
     try {
       const snap = await getDocs(query(messagesRef, orderBy("timestamp", "asc")));
@@ -314,12 +328,12 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   // Sayfa yüklendiğinde bir kere temizlik yap
-  setTimeout(cleanupOldMessages, 2000);
+  setTimeout(cleanupOldMessages, 3000);
 
-  // Send message - DÜZELTTİM
+  // Send message - BASİT VE ÇALIŞAN VERSİYON
   sendButton.addEventListener("click", async () => {
     if (!user) {
-      updateBlurState();
+      alert("Please enter a nickname first!");
       return;
     }
 
@@ -332,6 +346,11 @@ document.addEventListener("DOMContentLoaded", async () => {
       return;
     }
 
+    // Hemen butonu devre dışı bırak ve mesajı temizle
+    sendButton.disabled = true;
+    const originalText = sendButton.textContent;
+    sendButton.textContent = "Sending...";
+
     lastSent = now;
 
     try {
@@ -341,12 +360,14 @@ document.addEventListener("DOMContentLoaded", async () => {
         timestamp: serverTimestamp(),
       });
       msgInput.value = "";
-
-      // Başarılı gönderimden sonra temizlik yap
-      setTimeout(cleanupOldMessages, 1000);
+      console.log("Message sent successfully!");
     } catch (error) {
       console.error("Message send error:", error);
-      alert("Message could not be sent. Please try again.");
+      alert("Error sending message: " + error.message);
+    } finally {
+      // Butonu tekrar aktif et
+      sendButton.disabled = false;
+      sendButton.textContent = originalText;
     }
   });
 
@@ -355,5 +376,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (e.key === "Enter") {
       sendButton.click();
     }
+  });
+
+  // Sayfadan ayrılırken listener'ı temizle
+  window.addEventListener("beforeunload", () => {
+    if (unsubscribe) unsubscribe();
   });
 });
