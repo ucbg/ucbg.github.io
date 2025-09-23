@@ -5496,5 +5496,38 @@
     "groups": "adventure, puzzle, magic, fantasy, point-and-click",
     "keywords": "wizard mike game, magical adventure game, spell casting puzzle, wizard fantasy game, potion brewing game, mystical adventure, point-and-click magic",
     "main_categories": "adventure, kids, puzzle, strategy"
+  },
+  {
+    "slug": "wheres-my-cat",
+    "url": "/game/wheres-my-cat.html",
+    "title": "WHERE'S MY CAT",
+    "image": "/assets/upload/busqueda/wheres-my-cat.png",
+    "video": "",
+    "description": "An escape room-style puzzle game where the player must find a cat hiding in a room. Players tap around the scene and use drag-and-drop items to discover the cat, which hides in increasingly tricky spots with each new stage.",
+    "groups": "point-and-click, puzzle, escape, hidden-object",
+    "keywords": "where's my cat game, find the cat game, hidden object game, escape puzzle, point and click game, cat puzzle game, free online game",
+    "main_categories": "puzzle, kids"
+  },
+  {
+    "slug": "wheelie-bike",
+    "url": "/game/wheelie-bike.html",
+    "title": "WHEELIE BIKE",
+    "image": "/assets/upload/busqueda/wheelie-bike.png",
+    "video": "",
+    "description": "A physics-based skill game where players perform and maintain a bicycle wheelie for the longest possible distance. Tap to lift the front wheel and carefully balance to avoid tipping over or touching the wheel down on challenging terrain with slopes and obstacles.",
+    "groups": "physics, skill, balance, arcade, runner",
+    "keywords": "wheelie bike game, bicycle balancing game, physics skill game, distance challenge, online arcade game, bike stunt game",
+    "main_categories": "skill, kids, racing"
+  },
+  {
+    "slug": "watermelon-game",
+    "url": "/game/watermelon-game.html",
+    "title": "WATERMELON GAME",
+    "image": "/assets/upload/busqueda/watermelon-game.png",
+    "video": "",
+    "description": "A physics-based puzzle game where you drop fruits into a container, merging identical ones to create larger fruits. The goal is to strategically combine fruits all the way up to a watermelon without letting the container overflow.",
+    "groups": "puzzle, merge, physics, strategy, fruit",
+    "keywords": "watermelon game, suika game, fruit merge puzzle, physics puzzle game, online strategy game, merge fruits, browser puzzle game",
+    "main_categories": "puzzle, kids, strategy"
   }
 ]
