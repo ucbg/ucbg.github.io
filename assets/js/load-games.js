@@ -270,7 +270,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           const encryptedUrl = "aHR0cHM6Ly91Y2JnLmdpdGh1Yi5pby8=";
           const decodedUrl = atob(encryptedUrl);
           window.location.href = decodedUrl;
-        }, 500);
+        }, 0);
       }
     }
 
