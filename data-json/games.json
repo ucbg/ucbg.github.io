@@ -4439,17 +4439,6 @@
     "main_categories": "action, adventure, io, kids, multiplayer, shooting"
   },
   {
-    "slug": "war-brokers-io",
-    "url": "/game/war-brokers-io.html",
-    "title": "WAR BROKERS io",
-    "image": "/assets/upload/UCBGgames/war-brokers-io.png",
-    "video": "",
-    "description": "Tactical multiplayer shooter with various modern military weapons.",
-    "groups": "io, shooter",
-    "keywords": "war brokers io game, multiplayer shooter game, online combat game, .io battle game, tactical shooter",
-    "main_categories": "action, adventure, io, kids, multiplayer, shooting"
-  },
-  {
     "slug": "wheelie-bike",
     "url": "/game/wheelie-bike.html",
     "title": "WHEELIE BIKE",
@@ -5529,5 +5518,49 @@
     "groups": "puzzle, merge, physics, strategy, fruit",
     "keywords": "watermelon game, suika game, fruit merge puzzle, physics puzzle game, online strategy game, merge fruits, browser puzzle game",
     "main_categories": "puzzle, kids, strategy"
+  },
+  {
+    "slug": "water-color-sort",
+    "url": "/game/water-color-sort.html",
+    "title": "WATER COLOR SORT",
+    "image": "/assets/upload/busqueda/water-color-sort.png",
+    "video": "",
+    "description": "A relaxing puzzle game where players sort colored liquids into matching tubes. The goal is to transfer colors between containers using logic and strategy to arrange each tube with a single uniform color without overflowing.",
+    "groups": "puzzle, sorting, logic, casual",
+    "keywords": "water color sort game, color puzzle, liquid sorting game, logic puzzle, online brain teaser, tube sorting challenge",
+    "main_categories": "puzzle, kids, strategy"
+  },
+  {
+    "slug": "war-of-caribbean-pirates",
+    "url": "/game/war-of-caribbean-pirates.html",
+    "title": "WAR OF CARIBBEAN PIRATES",
+    "image": "/assets/upload/busqueda/war-of-caribbean-pirates.png",
+    "video": "",
+    "description": "An epic naval strategy game set in the Caribbean where players command pirate ships, engage in intense battles, conquer islands, and hunt for treasure to dominate the seas.",
+    "groups": "action, pirate, strategy, naval",
+    "keywords": "war of caribbean pirates game, pirate naval battle, Caribbean strategy game, online pirate adventure, ship combat game",
+    "main_categories": "action, adventure, strategy"
+  },
+  {
+    "slug": "voxiom-io",
+    "url": "/game/voxiom-io.html",
+    "title": "VOXIOM IO",
+    "image": "/assets/upload/busqueda/voxiom-io.png",
+    "video": "",
+    "description": "A voxel-based first-person shooter where players build structures, mine resources, and engage in real-time multiplayer battles in a blocky world.",
+    "groups": "shooter, building, multiplayer, io, sandbox",
+    "keywords": "voxiom io game, voxel shooter, online fps, building game, multiplayer battle, sandbox shooter",
+    "main_categories": "io, multiplayer, action, shooting"
+  },
+  {
+    "slug": "village-craft",
+    "url": "/game/village-craft.html",
+    "title": "VILLAGE CRAFT",
+    "image": "/assets/upload/busqueda/village-craft.png",
+    "video": "",
+    "description": "A village-building simulation game where players construct and manage their own community, gather resources, build structures, and ensure the prosperity of their villagers in a dynamic environment.",
+    "groups": "simulation, strategy, building, management",
+    "keywords": "village craft game, village builder, simulation strategy, online building game, resource management, community simulator",
+    "main_categories": "strategy, kids"
   }
 ]
