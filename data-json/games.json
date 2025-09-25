@@ -5565,5 +5565,27 @@
     "groups": "simulation, strategy, building, management",
     "keywords": "village craft game, village builder, simulation strategy, online building game, resource management, community simulator",
     "main_categories": "strategy, kids"
+  },
+  {
+    "slug": "two-neon-boxes",
+    "url": "/game/two-neon-boxes.html",
+    "title": "TWO NEON BOXES",
+    "image": "/assets/upload/busqueda/two-neon-boxes.png",
+    "video": "",
+    "description": "A vibrant puzzle game where players strategically move two neon-colored boxes through challenging levels, aligning them with targets while avoiding obstacles to solve each stage.",
+    "groups": "puzzle, strategy, arcade, logic",
+    "keywords": "two neon boxes game, neon puzzle challenge, online strategy game, box alignment puzzle, brain teaser game",
+    "main_categories": "puzzle, strategy, skill"
+  },
+  {
+    "slug": "two-ball-3d-dark",
+    "url": "/game/two-ball-3d-dark.html",
+    "title": "TWO BALL 3D DARK",
+    "image": "/assets/upload/busqueda/two-ball-3d-dark.png",
+    "video": "",
+    "description": "A challenging 3D puzzle game where players control two balls simultaneously through a dark, obstacle-filled environment. Use precision and timing to navigate traps and guide both balls to the finish line.",
+    "groups": "puzzle, skill, arcade, obstacle-course",
+    "keywords": "two ball 3d dark game, dual ball puzzle, 3d obstacle game, online skill challenge, dark theme puzzle",
+    "main_categories": "puzzle, skill, kids"
   }
 ]
