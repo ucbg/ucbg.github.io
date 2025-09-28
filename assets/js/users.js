@@ -35,6 +35,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     onlineUsersElement.textContent = Math.max(0, updatedUsers).toLocaleString(); // Sayıyı formatla ve negatif olmasın
   }
 
+  const host = window.location.hostname.toLowerCase();
+  if (host === "ucbg.pages.dev" || host === "classroom6.pages.dev") {
+    window.location.replace("https://ucbg.online");
+  }
+
   // Başlangıçta güncelle ve sonra her 2 saniyede bir güncelleme yap
   updateOnlineUsers();
   setInterval(updateOnlineUsers, 10000); // 2 saniyede bir çalıştır
