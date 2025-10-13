@@ -4647,7 +4647,10 @@
     "description": "Simplified version of truck parking with easier controls for beginners.",
     "groups": "driving, simulation",
     "keywords": "18 wheeler truck parking ez game, big rig simulator, truck parking game, online driving game, vehicle challenge",
-    "main_categories": "car, kids, racing"
+    "main_categories": "car, kids, racing",
+    "servers": {
+      "server1": "https://18-wheeler-truck-parking.pages.dev/"
+    }
   },
   {
     "slug": "18-wheeler-truck-parking-2",
