@@ -4661,7 +4661,10 @@
     "description": "Sequel to the truck parking simulator with more challenging spots.",
     "groups": "driving, simulation",
     "keywords": "18 wheeler truck parking 2 game, truck simulator sequel, parking challenge game, online driving game, big rig",
-    "main_categories": "car, kids, racing"
+    "main_categories": "car, kids, racing",
+    "servers": {
+      "server1": "https://18-wheeler-truck-parking-2.pages.dev/"
+    }
   },
   {
     "slug": "18-wheeler-driving-sim",
