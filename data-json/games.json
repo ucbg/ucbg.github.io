@@ -173,7 +173,8 @@
     "description": "Off-road driving simulator with realistic physics. Conquer challenging terrain in powerful 4x4 vehicles.",
     "groups": "racing, simulation",
     "keywords": "4x4 offroad driving game, truck simulator, offroad challenge, terrain driving game, vehicle physics game",
-    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player"
+    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player",
+    "featured": true
   },
   {
     "slug": "adventure-drivers",
@@ -338,7 +339,8 @@
     "description": "Action-packed tank battle sequel. Destroy enemies across diverse maps with upgraded weapons and armor.",
     "groups": "bonus, shooter, tank",
     "keywords": "awesome tanks 2 game, tank battle game, artillery shooting game, strategy combat game, online tank game",
-    "main_categories": "action, adventure, bonus, shooting"
+    "main_categories": "action, adventure, bonus, shooting",
+    "featured": true
   },
   {
     "slug": "backflipper",
@@ -734,7 +736,8 @@
     "description": "Satisfying bottle flipping simulator. Time your tosses perfectly to land bottles on various surfaces.",
     "groups": "physics, simulation",
     "keywords": "bottle flip 3d game, physics challenge game, bottle flipping game, precision game, online skill game",
-    "main_categories": "kids"
+    "main_categories": "kids",
+    "featured": true
   },
   {
     "slug": "bouncy-woods",
@@ -1273,7 +1276,8 @@
     "description": "Realistic drifting simulator. Tune your car and compete in drift competitions with authentic physics.",
     "groups": "drifting, racing",
     "keywords": "drift hunters game, car drifting simulator, realistic drift game, tuning cars game, online racing",
-    "main_categories": "action, adventure, car, kids, racing, running, skill, sport, two-player"
+    "main_categories": "action, adventure, car, kids, racing, running, skill, sport, two-player",
+    "featured": true
   },
   {
     "slug": "drive-mad",
@@ -1606,7 +1610,10 @@
     "description": "Lighthearted FPS with cartoon violence. Various weapons and absurd physics create comedic firefights.",
     "groups": "action, shooter",
     "keywords": "funny shooter 3d game, wacky combat game, cartoon shooter game, online fps game, humorous shooting",
-    "main_categories": "action, adventure, shooting, trending"
+    "main_categories": "action, adventure, shooting, trending",
+    "servers": {
+      "server1": "https://funnyshooter3.pages.dev/"
+    }
   },
   {
     "slug": "gartic-io",
@@ -1797,7 +1804,8 @@
     "description": "Latest gravity manipulation game. Innovative new mechanics test your spatial reasoning.",
     "groups": "platformer, puzzle",
     "keywords": "gswitch 4 game, latest gravity game, platformer challenge game, online physics puzzle, indie platformer",
-    "main_categories": "adventure, kids, platform, puzzle, school, skill, stickman, strategy"
+    "main_categories": "adventure, kids, platform, puzzle, school, skill, stickman, strategy",
+    "featured": true
   },
   {
     "slug": "gswitch",
@@ -1885,7 +1893,8 @@
     "description": "Classic airplane combat game. Take to the skies in intense aerial battles.",
     "groups": "physics, puzzle",
     "keywords": "hanger game, original physics game, hanging puzzle game, online balance challenge, precision game",
-    "main_categories": "adventure, kids, puzzle, school, strategy"
+    "main_categories": "adventure, kids, puzzle, school, strategy",
+    "featured": true
   },
   {
     "slug": "happy-fishing",
@@ -1962,7 +1971,8 @@
     "description": "Popular .io game where you play as a hole. Swallow objects to grow larger and consume entire cities.",
     "groups": "io, multiplayer",
     "keywords": "hole io game, city swallowing game, black hole game, online multiplayer .io, competitive .io",
-    "main_categories": "adventure, io, kids, multiplayer, two-player"
+    "main_categories": "adventure, io, kids, multiplayer, two-player",
+    "featured": true
   },
   {
     "slug": "hop-and-pop-it",
@@ -2017,7 +2027,8 @@
     "description": "Innovative idle brick-breaker. Combine clicker mechanics with classic breakout gameplay.",
     "groups": "breakout, idle",
     "keywords": "idle breakout game, brick breaker game, incremental arcade game, online idle game, clicker game",
-    "main_categories": "clicker, kids"
+    "main_categories": "clicker, kids",
+    "featured": true
   },
   {
     "slug": "idle-light-city",
@@ -2127,7 +2138,8 @@
     "description": "Classic endless runner. Dodge obstacles while flying a jetpack in this mobile favorite.",
     "groups": "endless, runner",
     "keywords": "jetpack joyride game, endless runner game, flying adventure game, online arcade game, mobile classic",
-    "main_categories": "kids, running"
+    "main_categories": "kids, running",
+    "featured": true
   },
   {
     "slug": "jewels-blitz-5",
@@ -2227,7 +2239,8 @@
     "description": "Medieval action RPG. Battle monsters, complete quests, and upgrade your knight.",
     "groups": "adventure, rpg",
     "keywords": "knight hero rpg game, adventure roleplaying game, fantasy combat game, online rpg game, indie adventure",
-    "main_categories": "action, adventure"
+    "main_categories": "action, adventure",
+    "featured": true
   },
   {
     "slug": "krunker-io",
@@ -4625,7 +4638,8 @@
     "description": "Battle royale shooter with zombie elements and building mechanics.",
     "groups": "battle-royale, io",
     "keywords": "zombs royale io game, zombie battle royale game, multiplayer .io game, online survival game, last man standing",
-    "main_categories": "action, adventure, io, kids, multiplayer, strategy, two-player"
+    "main_categories": "action, adventure, io, kids, multiplayer, strategy, two-player",
+    "featured": true
   },
   {
     "slug": "zuck-vs-musk-techbro-beatdown",
@@ -4636,14 +4650,15 @@
     "description": "Satirical fighting game featuring tech billionaires in ridiculous combat.",
     "groups": "fighting, satire",
     "keywords": "zuck vs musk game, billionaire battle game, funny fighting game, online brawler game, tech mogul fight",
-    "main_categories": "fighting, strategy"
+    "main_categories": "fighting, strategy",
+    "featured": true
   },
   {
     "slug": "18-wheeler-truck-parking-ez",
     "url": "/game/18-wheeler-truck-parking-ez.html",
     "title": "18 WHEELER TRUCK PARKING EZ",
     "image": "/assets/upload/busqueda/18-wheeler-truck-parking-ez.png",
-    "video": "",
+    "video": "/assets/video/18-wheeler-truck-parking-ez-landscape-611x343_30fps.mp4",
     "description": "Simplified version of truck parking with easier controls for beginners.",
     "groups": "driving, simulation",
     "keywords": "18 wheeler truck parking ez game, big rig simulator, truck parking game, online driving game, vehicle challenge",
@@ -4719,7 +4734,8 @@
     "description": "Bizarre physics game combining rope mechanics with spider characters in Vegas.",
     "groups": "physics, puzzle",
     "keywords": "amazing rope vice spider vegas game, physics puzzle game, grappling hook game, online skill game, vegas theme",
-    "main_categories": "adventure, kids, puzzle, school, strategy"
+    "main_categories": "adventure, kids, puzzle, school, strategy",
+    "featured": true
   },
   {
     "slug": "block-the-pig",
@@ -4840,7 +4856,10 @@
     "description": "Chaotic shooter where you cause maximum destruction with crazy weapons.",
     "groups": "action, shooter",
     "keywords": "funny shooter destroy all game, wacky combat game, cartoon shooter game, online fps game, humorous action",
-    "main_categories": "action, adventure, shooting, trending"
+    "main_categories": "action, adventure, shooting, trending",
+    "servers": {
+      "server1": "https://funnyshooter3.pages.dev/"
+    }
   },
   {
     "slug": "geodash",
