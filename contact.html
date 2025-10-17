@@ -196,11 +196,18 @@
           <span class="sidebar-icon">⭐</span>
           <span class="sidebar-text">Trending Games</span>
         </a>
-        <hr />
+        <hr style="border: none; height: 1px; background-color: rgba(98, 77, 227, 0.2); margin: 10px 15px" />
         <a href="/category/tags.html" class="sidebar-item">
           <span class="sidebar-icon">🗂️</span>
           <span class="sidebar-text">Tags</span>
         </a>
+        <div class="sidebar-footer-links" style="margin-top: 20px; padding: 0 15px">
+          <a href="/privacy-policy.html" class="sidebar-footer-link">Privacy Policy</a>
+          <a href="/terms-and-conditions.html" class="sidebar-footer-link">Terms and Conditions</a>
+          <a href="/contact.html" class="sidebar-footer-link">Contact</a>
+          <a href="/submit-your-game.html" class="sidebar-footer-link">Submit Your Game</a>
+          <div style="margin-top: 100px; font-size: 11px; opacity: 0.2; text-align: center">© 2025 Unblocked Cool Browser Games</div>
+        </div>
       </div>
     </div>
 
@@ -214,6 +221,7 @@
           aria-controls="navbar"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style="visibility: hidden"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -295,14 +303,259 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-10">
-            <h1 class="h2 mb-3">Contact</h1>
-            <div class="text-editor">
-              <p>All suggestion, complaints, content removal or everything regarding the site please send to : ucbg_unblocked_games@gmail.com</p>
+            <h1 class="h2 mb-3 mt-9">Contact Us</h1>
+
+            <!-- Instructions -->
+            <div
+              class="alert alert-info mb-4"
+              style="background-color: rgba(98, 77, 227, 0.1); border: 1px solid rgba(98, 77, 227, 0.3); border-radius: 8px; padding: 15px"
+            >
+              <h5 style="color: var(--bs-primary); margin-bottom: 10px">📧 Get in Touch</h5>
+              <p style="margin-bottom: 0; font-size: 14px">
+                Have a question, suggestion, or concern? Fill out the form below and we'll get back to you as soon as possible. For urgent matters,
+                you can also email us directly at
+                <a href="mailto:cricoverteam@gmail.com" style="color: var(--bs-primary); text-decoration: none; font-weight: 600"
+                  >cricoverteam@gmail.com</a
+                >
+              </p>
+            </div>
+
+            <!-- Contact Form -->
+            <div
+              class="card"
+              style="
+                background-color: var(--bs-gray-100);
+                border: 1px solid var(--bs-gray-300);
+                border-radius: 12px;
+                padding: 30px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+              "
+            >
+              <form id="contactForm">
+                <!-- Name -->
+                <div class="form-group mb-4">
+                  <label for="contactName" class="form-label" style="font-weight: 600; margin-bottom: 8px; color: var(--bs-gray-900)">
+                    Your Name <span style="color: var(--bs-danger)">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="contactName"
+                    name="contactName"
+                    placeholder="Enter your name"
+                    required
+                    style="padding: 12px; border-radius: 8px; border: 1px solid var(--bs-gray-400); background-color: #073858; color: white"
+                  />
+                </div>
+
+                <!-- Email -->
+                <div class="form-group mb-4">
+                  <label for="contactEmail" class="form-label" style="font-weight: 600; margin-bottom: 8px; color: var(--bs-gray-900)">
+                    Your Email <span style="color: var(--bs-danger)">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="contactEmail"
+                    name="contactEmail"
+                    placeholder="your.email@example.com"
+                    required
+                    style="padding: 12px; border-radius: 8px; border: 1px solid var(--bs-gray-400); background-color: #073858; color: white"
+                  />
+                </div>
+
+                <!-- Request Type -->
+                <div class="form-group mb-4">
+                  <label for="requestType" class="form-label" style="font-weight: 600; margin-bottom: 8px; color: var(--bs-gray-900)">
+                    Request Type <span style="color: var(--bs-danger)">*</span>
+                  </label>
+                  <select
+                    class="form-control"
+                    id="requestType"
+                    name="requestType"
+                    required
+                    style="padding: 12px; border-radius: 8px; border: 1px solid var(--bs-gray-400); background-color: #073858; color: white"
+                  >
+                    <option value="" disabled selected>Select a request type</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="suggestion">Suggestion</option>
+                    <option value="bug">Report a Problem</option>
+                    <option value="copyright">Copyright/DMCA Notice</option>
+                    <option value="content-removal">Content Removal Request</option>
+                    <option value="partnership">Partnership Opportunity</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <!-- Message -->
+                <div class="form-group mb-4">
+                  <label for="message" class="form-label" style="font-weight: 600; margin-bottom: 8px; color: var(--bs-gray-900)">
+                    Message <span style="color: var(--bs-danger)">*</span>
+                  </label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Please provide details about your request..."
+                    required
+                    style="
+                      padding: 12px;
+                      border-radius: 8px;
+                      border: 1px solid var(--bs-gray-400);
+                      resize: vertical;
+                      background-color: #073858;
+                      color: white;
+                    "
+                  ></textarea>
+                  <small class="form-text text-muted" style="font-size: 12px"> <span id="messageCount">0</span> characters </small>
+                </div>
+
+                <!-- Response Message -->
+                <div id="contactResponseMessage" style="display: none; padding: 15px; border-radius: 8px; margin-bottom: 20px"></div>
+
+                <!-- Submit Button -->
+                <div class="text-center">
+                  <button
+                    type="submit"
+                    id="contactSubmitButton"
+                    class="btn btn-primary"
+                    style="
+                      padding: 14px 40px;
+                      border-radius: 8px;
+                      background-color: var(--bs-primary);
+                      border: none;
+                      color: white;
+                      font-weight: 600;
+                      font-size: 16px;
+                      cursor: pointer;
+                      transition: all 0.3s ease;
+                      min-width: 200px;
+                    "
+                  >
+                    <span id="contactSubmitButtonText">Send Message</span>
+                    <span id="contactSubmitButtonSpinner" style="display: none">
+                      <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                      Sending...
+                    </span>
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Alternative Contact Info -->
+            <div class="text-center mt-4 mb-5" style="padding: 20px; background-color: rgba(98, 77, 227, 0.05); border-radius: 8px">
+              <p style="margin: 0; font-size: 14px; color: var(--bs-gray-700)">
+                You can also reach us directly at:
+                <a href="mailto:cricoverteam@gmail.com" style="color: var(--bs-primary); text-decoration: none; font-weight: 600"
+                  >cricoverteam@gmail.com</a
+                >
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Contact Form Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("contactForm");
+        const submitButton = document.getElementById("contactSubmitButton");
+        const submitButtonText = document.getElementById("contactSubmitButtonText");
+        const submitButtonSpinner = document.getElementById("contactSubmitButtonSpinner");
+        const responseMessage = document.getElementById("contactResponseMessage");
+        const messageTextarea = document.getElementById("message");
+        const messageCount = document.getElementById("messageCount");
+
+        // Character counter for message
+        messageTextarea.addEventListener("input", function () {
+          messageCount.textContent = this.value.length;
+        });
+
+        // Form submission
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Validate form
+          if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+          }
+
+          // Prepare form data
+          const formData = {
+            name: document.getElementById("contactName").value.trim(),
+            email: document.getElementById("contactEmail").value.trim(),
+            requestType: document.getElementById("requestType").value,
+            message: document.getElementById("message").value.trim(),
+            timestamp: new Date().toISOString(),
+          };
+
+          // Show loading state
+          submitButton.disabled = true;
+          submitButtonText.style.display = "none";
+          submitButtonSpinner.style.display = "inline-block";
+          responseMessage.style.display = "none";
+
+          // AJAX request - ADD YOUR BACKEND URL HERE
+          const BACKEND_URL = "/api/contact"; // <-- Replace with your actual backend URL
+
+          fetch(BACKEND_URL, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          })
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error("Network response was not ok");
+              }
+              return response.json();
+            })
+            .then((data) => {
+              // Success
+              showMessage(data.message || "Thank you for contacting us! We have received your message and will get back to you soon.", "success");
+              form.reset();
+              messageCount.textContent = "0";
+            })
+            .catch((error) => {
+              // Error
+              console.error("Error:", error);
+              showMessage(
+                "An error occurred while sending your message. Please try again later or contact us directly at cricoverteam@gmail.com",
+                "error"
+              );
+            })
+            .finally(() => {
+              // Reset button state
+              submitButton.disabled = false;
+              submitButtonText.style.display = "inline-block";
+              submitButtonSpinner.style.display = "none";
+            });
+        });
+
+        // Show message function
+        function showMessage(message, type) {
+          responseMessage.textContent = message;
+          responseMessage.style.display = "block";
+
+          if (type === "success") {
+            responseMessage.style.backgroundColor = "rgba(28, 189, 100, 0.1)";
+            responseMessage.style.border = "1px solid rgba(28, 189, 100, 0.3)";
+            responseMessage.style.color = "var(--bs-success)";
+          } else {
+            responseMessage.style.backgroundColor = "rgba(223, 50, 92, 0.1)";
+            responseMessage.style.border = "1px solid rgba(223, 50, 92, 0.3)";
+            responseMessage.style.color = "var(--bs-danger)";
+          }
+
+          // Scroll to message
+          responseMessage.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+      });
+    </script>
 
     <script defer="" src="/assets/theme/js/jquery.min.js?v=1.0.0"></script>
     <script defer="" src="/assets/theme/js/bootstrap.js?v=1.0.0"></script>
@@ -314,7 +567,7 @@
         <div class="row align-items-center no-gutters py-2 fs-14">
           <!-- Desc -->
           <div class="col-lg-4 col-md-5 col-12">
-            <div class="fs-xs text-muted">
+            <div class="fs-xs text-muted" style="margin-left: 40px">
               Copyright © 2024 Unblocked Cool Browser Games (UCBG). All rights reserved.<br />
               Play Beyond Limits / OurHero Games
             </div>
@@ -355,11 +608,12 @@
     <script src="/assets/js/analytics_ucbg_v1.js"></script>
     <script src="/assets/js/adsense_ucbg_v1.js"></script>
     <script src="/assets/js/fullscreen.js?v=2.0.2"></script>
+    <script src="/assets/js/favorite.js"></script>
     <script src="/assets/js/video_on_card.js"></script>
     <script type="module" src="/assets/js/ucbg_chat_v4.js?v=2.0.2"></script>
     <script src="/assets/js/live-search.js"></script>
     <script src="/assets/js/categories_menu.js?v=1.0.7"></script>
-    <script src="/assets/js/users.js?v=1.0.7"></script>
+    <script src="/assets/js/users.js"></script>
     <!-- Firebase SDK -->
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>

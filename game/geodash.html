@@ -38,8 +38,8 @@
     },
     "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "3.6",
-        "ratingCount": "479"
+        "ratingValue": "4.4",
+        "ratingCount": "360"
     }
 }
     </script>
@@ -191,11 +191,18 @@
           <span class="sidebar-icon">⭐</span>
           <span class="sidebar-text">Trending Games</span>
         </a>
-        <hr />
+        <hr style="border: none; height: 1px; background-color: rgba(98, 77, 227, 0.2); margin: 10px 15px" />
         <a href="/category/tags.html" class="sidebar-item">
           <span class="sidebar-icon">🗂️</span>
           <span class="sidebar-text">Tags</span>
         </a>
+        <div class="sidebar-footer-links" style="margin-top: 20px; padding: 0 15px">
+          <a href="/privacy-policy.html" class="sidebar-footer-link">Privacy Policy</a>
+          <a href="/terms-and-conditions.html" class="sidebar-footer-link">Terms and Conditions</a>
+          <a href="/contact.html" class="sidebar-footer-link">Contact</a>
+          <a href="/submit-your-game.html" class="sidebar-footer-link">Submit Your Game</a>
+          <div style="margin-top: 100px; font-size: 11px; opacity: 0.2; text-align: center">© 2025 Unblocked Cool Browser Games</div>
+        </div>
       </div>
     </div>
 <nav class="navbar navbar-expand-lg layout-header navbar-light">
@@ -208,6 +215,7 @@
             aria-controls="navbar"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            style="visibility: hidden"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -270,6 +278,19 @@
                 <span class="tooltip">New Games.</span>
               </button>
             </li>
+              <li class="nav-item">
+                <button class="theme-toggle" id="favoriteDrawerBtn" onclick="toggleFavoritesDrawer()" title="Favorilerim">
+                  <svg id="favoriteDrawerIcon" width="20" height="20" viewBox="0 0 24 24" fill="hotpink" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                             C2 6 4 4 6.5 4
+                             c1.74 0 3.41 1.01 4.13 2.44h.75
+                             C14.09 5.01 15.76 4 17.5 4
+                             C20 4 22 6 22 8.5
+                             c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                  </svg>
+                  <span class="tooltip">Favorilerim</span>
+                </button>
+              </li>
               <li class="nav-item">
                 <button class="theme-toggle" style="width: 150px; border-radius: 10px">
                   <span class="sun-icon"><img src="/assets/icons/classroom-black.svg" /></span>
@@ -836,6 +857,16 @@
               <div class="game-controls text-center rounded-bottom-3 mb-4" style="border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem">
                 Servers
                 <div id="server-buttons" class="btn-group"></div>
+                <button id="favoriteBtn" class="btn btn-square btn-ghost rounded-circle" onclick="toggleFavorite()" title="Favoriye ekle">
+                  <svg id="favoriteIcon" width="20" height="20" viewBox="0 0 24 24" fill="gray" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                             C2 6 4 4 6.5 4
+                             c1.74 0 3.41 1.01 4.13 2.44h.75
+                             C14.09 5.01 15.76 4 17.5 4
+                             C20 4 22 6 22 8.5
+                             c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                  </svg>
+                </button>
                 <button class="btn btn-square btn-ghost rounded-circle dropdown-toggle" onclick="openFullscreen();">
                   <svg width="16" height="16" fill="currentColor">
                     <use xlink:href="/assets/sprite/sprite.svg#fullscreen"></use>
@@ -975,6 +1006,23 @@
 
             <div class="col-lg-auto">
               <div class="w-lg-300 right-side-games card-masonry">
+                <a class="card large">
+                  <script
+                    async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9429401123792626"
+                    crossorigin="anonymous"
+                  ></script>
+                  <!-- oyun aralari -->
+                  <ins
+                    class="adsbygoogle"
+                    style="display: inline-block; width: 260px; height: 260px"
+                    data-ad-client="ca-pub-9429401123792626"
+                    data-ad-slot="3411930037"
+                  ></ins>
+                  <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                  </script>
+              </a>
                 <a class="card large">
                   <script
                     async
@@ -1629,7 +1677,9 @@
         <div class="row align-items-center no-gutters py-2 fs-14">
           <!-- Desc -->
           <div class="col-lg-4 col-md-5 col-12">
-            <div class="fs-xs text-muted">
+            <div class="fs-xs text-muted" style="
+    margin-left: 40px;
+">
               Copyright © 2024 Unblocked Cool Browser Games (UCBG). All rights reserved.<br />
               Play Beyond Limits / OurHero Games
             </div>
@@ -1670,11 +1720,12 @@
     <script src="/assets/js/analytics_ucbg_v1.js"></script>
     <script src="/assets/js/adsense_ucbg_v1.js"></script>
     <script src="/assets/js/fullscreen.js?v=2.0.2"></script>
+    <script src="/assets/js/favorite.js"></script>
     <script src="/assets/js/video_on_card.js"></script>
     <script type="module" src="/assets/js/ucbg_chat_v4.js?v=2.0.2"></script>
     <script src="/assets/js/live-search.js"></script>
     <script src="/assets/js/categories_menu.js?v=1.0.7"></script>
-    <script src="/assets/js/users.js?v=1.0.7"></script>
+    <script src="/assets/js/users.js"></script>
     <!-- Firebase SDK -->
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>

@@ -292,7 +292,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       : allGames;
 
     // Son 40 oyunu al ve ters çevir (en son eklenen en başta)
-    const latestGames = filteredGames.slice(-40).reverse();
+    const latestGames = filteredGames.slice(-70).reverse();
 
     if (!window.adsbygoogle) {
       const script = document.createElement("script");
@@ -350,6 +350,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     console.error("Games yüklenirken hata oluştu:", error);
   }
 });
+
+// Featured
 
 // sol menu
 document.addEventListener("DOMContentLoaded", function () {

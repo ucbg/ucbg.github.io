@@ -103,7 +103,7 @@ async function showRecentGames() {
     headerCard.className = "recent-played-header card visible";
     headerCard.innerHTML = `
         <div class="card-body">
-          <h2>Recently Played</h2>
+          <h2>Recently<br>Played</h2>
           <span class="arrow-icon">→</span>
         </div>
       `;
@@ -116,7 +116,6 @@ async function showRecentGames() {
         let card = document.createElement("a");
         card.href = hostPrefix + game.url;
         card.className = "card visible";
-        card.style.height = "70px";
 
         card.innerHTML = `
                       <picture>

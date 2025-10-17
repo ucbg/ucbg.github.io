@@ -23943,7 +23943,7 @@ strong {
   padding-right: 1rem;
 }
 .layout-header .form-search {
-  background-color: var(--bs-gray-200);
+  background-color: #093857;
   padding: 0.25rem 1.5rem;
   border-radius: 100px;
 }
@@ -24142,8 +24142,8 @@ strong {
 /* Recently Played Games Başlığı için stil */
 .recent-played-header {
   position: relative; /* İçerik pozisyonunu ayarla */
-  width: 100%; /* Genişliği tam kapla */
-  height: 70px; /* Yükseklik sabit kalacak */
+  width: 50%; /* Genişliği yarı yap */
+  height: 50px; /* Yüksekliği artır */
   background-color: #333; /* Koyu gri arka plan */
   border-radius: 8px; /* Yuvarlak köşeler */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif gölge */
@@ -24152,7 +24152,7 @@ strong {
   display: flex; /* İçerikleri düzenli hale getir */
   align-items: center; /* Dikey hizalama */
   justify-content: space-between; /* İçerikleri aralarında boşluk bırakarak dağıt */
-  padding: 0 10px; /* Yan boşluklar */
+  padding: 0 5px; /* Yan boşlukları yarı yap */
   cursor: default; /* Üzerine tıklanamaz */
   pointer-events: none; /* Tıklanmayı engelle */
 }
@@ -24165,15 +24165,15 @@ strong {
 }
 
 .recent-played-header h2 {
-  font-size: 16px; /* Yazı boyutu */
+  font-size: 11px; /* Yazı boyutunu ayarla */
   font-weight: bold; /* Kalın yazı */
   margin: 0; /* Margin sıfırla */
-  white-space: nowrap; /* Metnin alt satıra geçmesini engelle */
+  line-height: 1.2; /* Satır yüksekliği */
   color: white;
 }
 
 .recent-played-header .arrow-icon {
-  font-size: 20px; /* Ok simgesi boyutu */
+  font-size: 12px; /* Ok simgesi boyutunu yarı yap */
   color: white; /* Ok simgesi rengi (beyaz) */
   transition: transform 0.3s ease; /* Tıklanınca animasyon ekle */
 }
@@ -24197,8 +24197,8 @@ strong {
 /* Her bir kart için stil */
 .masonry-horizontal-scroll .card {
   position: relative; /* Alt elemanların pozisyonunu ayarlamak için */
-  width: 200px; /* Her bir kartın genişliği */
-  height: 70px; /* Yükseklik sabit kalacak */
+  width: 100px; /* Her bir kartın genişliğini yarı yap */
+  height: 50px; /* Yüksekliği artır */
   flex-shrink: 0; /* Kartların daralmamasını sağla */
   border-radius: 8px; /* Yuvarlak köşeler */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif gölge */
@@ -24231,7 +24231,7 @@ strong {
 
 /* Başlık için stil */
 .masonry-horizontal-scroll .card h3 {
-  font-size: 16px; /* Yazı boyutu */
+  font-size: 9px; /* Yazı boyutunu ayarla */
   margin: 0; /* Margin sıfırla */
   text-align: center; /* Metni ortala */
   white-space: nowrap; /* Metnin alt satıra geçmesini engelle */
@@ -24650,7 +24650,7 @@ strong {
   top: 10px;
   left: 10px;
   z-index: 1100;
-  background: #1a1a1a;
+  background: #121317;
   border: none;
   color: white;
   font-size: 24px;
@@ -24957,5 +24957,272 @@ strong {
 
   .fc-comment-form button {
     padding: 12px 20px;
+  }
+}
+
+/* Sol menu altindaki iconsuz dugmeler ayarlamalar */
+.sidebar-footer-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 8px;
+  font-size: 14px;
+  opacity: 0.4;
+  transition: opacity 0.2s ease;
+}
+.sidebar-footer-link:hover {
+  opacity: 1;
+}
+.sidebar:not(:hover) .sidebar-footer-links {
+  display: none;
+}
+
+/* featured games */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.card-carousel {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease;
+  scroll-behavior: smooth;
+}
+
+.card_featured {
+  flex: 0 0 200px;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: var(--bs-gray-200);
+  text-align: center;
+  transition: transform 0.3s ease;
+  border: 1px solid var(--bs-gray-300);
+}
+
+.card_featured:hover {
+  transform: scale(1.05);
+}
+
+.card_featured img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #624de3;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.arrow:hover {
+  background: #4d3ac2;
+}
+.card-carousel {
+  user-select: none; /* Metin seçimini engeller */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.card-carousel:active {
+  cursor: grabbing;
+}
+
+.card-carousel {
+  will-change: transform;
+}
+
+/* favorites drawer */
+/* Favorites Drawer Styling */
+/* Favorites Drawer Styling */
+/* Favorites Drawer Styling */
+.favorites-drawer {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #20232c !important;
+}
+
+.favorites-drawer-title {
+  font-weight: 600;
+  color: #ffffff;
+  margin: 15px 0;
+  text-align: center;
+  padding: 0 10px;
+  font-size: 18px;
+}
+
+.favorites-list-container {
+  scrollbar-width: thin;
+  scrollbar-color: #4a5568 #20232c;
+}
+
+.favorites-list-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.favorites-list-container::-webkit-scrollbar-track {
+  background: #20232c;
+}
+
+.favorites-list-container::-webkit-scrollbar-thumb {
+  background-color: #4a5568;
+  border-radius: 3px;
+}
+
+/* Masonry Grid - 3 columns */
+.favorites-masonry-grid {
+  column-count: 3;
+  column-gap: 10px;
+}
+
+/* Game Card Styling */
+.favourite-game-card {
+  break-inside: avoid;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: transparent;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  width: 100px;
+}
+
+.favourite-game-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.favourite-game-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.favourite-game-image-container {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+}
+
+.favourite-game-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+  border-radius: 15px 15px 0 0;
+}
+
+.favourite-game-card:hover .favourite-game-image {
+  transform: scale(1.08);
+}
+
+.favourite-game-placeholder {
+  font-size: 32px;
+  color: #a0aec0;
+}
+
+.favourite-game-info {
+  padding: 8px 5px;
+  text-align: center;
+  background: #2d3748;
+  border-radius: 0 0 15px 15px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favourite-game-title {
+  font-size: 10px;
+  font-weight: 600;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* Empty State */
+.favorites-empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #a0aec0;
+  grid-column: 1 / -1;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .favorites-drawer {
+    width: 280px !important;
+  }
+
+  .favorites-masonry-grid {
+    column-count: 2;
+  }
+
+  .favourite-game-card {
+    width: 90px;
+  }
+
+  .favourite-game-image-container {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+/* Future-proof masonry with CSS Grid */
+@supports (grid-template-rows: masonry) {
+  .favorites-masonry-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: masonry;
+    grid-gap: 10px;
+    column-count: initial;
+  }
+
+  .favourite-game-card {
+    margin-bottom: 0;
+  }
+}
+
+/* Animation for drawer */
+.favorites-drawer {
+  animation: drawerSlideIn 0.3s ease-out;
+}
+
+@keyframes drawerSlideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
   }
 }
