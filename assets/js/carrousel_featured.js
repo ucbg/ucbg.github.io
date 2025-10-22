@@ -1,21 +1,17 @@
 document.addEventListener("DOMContentLoaded", async () => {
-  const carouselContainer = document.querySelector(".carousel-container");
-  if (!carouselContainer) return;
+  // İki carousel container'ı seç
+  const newGamesContainer = document.querySelector(".index-page-games-list-new");
+  const featuredGamesContainer = document.querySelector(".index-page-games-list-featured");
 
-  const cardContainer = document.querySelector(".card-carousel");
-  if (!cardContainer) return;
+  if (!newGamesContainer || !featuredGamesContainer) return;
+
+  const newGamesCardContainer = newGamesContainer.querySelector(".card-carousel");
+  const featuredGamesCardContainer = featuredGamesContainer.querySelector(".card-carousel");
+
+  if (!newGamesCardContainer || !featuredGamesCardContainer) return;
 
   // Reklam kapatma kontrolü
-  const noAds = cardContainer.hasAttribute("data-no-ads");
-
-  // Filtreleri al
-  const filterAttr = cardContainer.getAttribute("data-filter");
-  const filters = filterAttr
-    ? filterAttr
-        .toLowerCase()
-        .split(",")
-        .map((f) => f.trim())
-    : null;
+  const noAds = newGamesCardContainer.hasAttribute("data-no-ads");
 
   try {
     async function fetchJson(url) {
@@ -58,10 +54,22 @@ document.addEventListener("DOMContentLoaded", async () => {
     const response = await fetch("/data-json/games.json?v=2.0.0");
     const allGames = await response.json();
 
-    // featured = true olan oyunları filtrele
+    // NEW GAMES: Son 20 oyunu al ve tersine çevir
+    const newGames = allGames.slice(-20).reverse();
+
+    // FEATURED GAMES: featured = true olan oyunları filtrele
     let featuredGames = allGames.filter((game) => game.featured === true);
 
-    // Filtreler varsa uygula
+    // Filtreleri kontrol et (eğer varsa)
+    const filterAttr = featuredGamesCardContainer.getAttribute("data-filter");
+    const filters = filterAttr
+      ? filterAttr
+          .toLowerCase()
+          .split(",")
+          .map((f) => f.trim())
+      : null;
+
+    // Filtreler varsa featured games'e uygula
     if (filters) {
       featuredGames = featuredGames.filter((game) => {
         if (!game.groups) return false;
@@ -73,7 +81,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       });
     }
 
-    // En son eklenenlerden 15 tanesini al
+    // En son eklenen 15 featured oyunu al
     const latestFeaturedGames = featuredGames.slice(-15).reverse();
 
     if (!window.adsbygoogle) {
@@ -83,31 +91,32 @@ document.addEventListener("DOMContentLoaded", async () => {
       document.head.appendChild(script);
     }
 
-    // Kartları ekle
+    // NEW GAMES kartlarını ekle
+    newGames.forEach((game, index) => {
+      newGamesCardContainer.insertAdjacentHTML(
+        "beforeend",
+        `<a href="${game.url}" class="card card_featured">
+            <picture>
+              <source data-srcset="${game.image}" type="image/png" class="img-fluid" />
+              <img data-src="${game.image}" alt="${game.title}" class="lazyload img-fluid" width="500" height="500" style="height: 200px; object-fit: cover;"/>
+            </picture>
+            <div class="card-body"><h3 style=" height: 28px; top: 155px; -webkit-line-clamp: 2;">${game.title}</h3></div>
+          </a>`
+      );
+    });
+
+    // FEATURED GAMES kartlarını ekle
     latestFeaturedGames.forEach((game, index) => {
-      if (1 === 0) {
-        cardContainer.insertAdjacentHTML(
-          "beforeend",
-          `<a href="${game.url}" class="card large">
-              <picture>
-                <source data-srcset="${game.image}" type="image/png" class="img-fluid" />
-                <img data-src="${game.image}" alt="${game.title}" class="lazyload img-fluid" width="500" height="500" />
-              </picture>
-              <div class="card-body"><h3 >${game.title}</h3></div>
-            </a>`
-        );
-      } else {
-        cardContainer.insertAdjacentHTML(
-          "beforeend",
-          `<a href="${game.url}" class="card card_featured">
-              <picture>
-                <source data-srcset="${game.image}" type="image/png" class="img-fluid" />
-                <img data-src="${game.image}" alt="${game.title}" class="lazyload img-fluid" width="500" height="500" style="height: 200px; object-fit: cover;"/>
-              </picture>
-              <div class="card-body"><h3 style=" height: 28px; top: 155px; -webkit-line-clamp: 2;">${game.title}</h3></div>
-            </a>`
-        );
-      }
+      featuredGamesCardContainer.insertAdjacentHTML(
+        "beforeend",
+        `<a href="${game.url}" class="card card_featured">
+            <picture>
+              <source data-srcset="${game.image}" type="image/png" class="img-fluid" />
+              <img data-src="${game.image}" alt="${game.title}" class="lazyload img-fluid" width="500" height="500" style="height: 200px; object-fit: cover;"/>
+            </picture>
+            <div class="card-body"><h3 style=" height: 28px; top: 155px; -webkit-line-clamp: 2;">${game.title}</h3></div>
+          </a>`
+      );
     });
 
     // Lazy loading başlat
@@ -128,13 +137,14 @@ document.addEventListener("DOMContentLoaded", async () => {
     window.addEventListener("load", revealCards);
     setTimeout(revealCards, 500);
 
-    // Carousel'ı başlat (kartlar yüklendikten sonra)
-    initCarousel();
+    // Her iki carousel'ı da başlat
+    initCarousel(newGamesContainer);
+    initCarousel(featuredGamesContainer);
   } catch (error) {
     console.error("Games yüklenirken hata oluştu:", error);
   }
 
-  function initCarousel() {
+  function initCarousel(carouselContainer) {
     const carousel = carouselContainer.querySelector(".card-carousel");
     const rightArrow = carouselContainer.querySelector(".arrow.right");
     const leftArrow = carouselContainer.querySelector(".arrow.left");
