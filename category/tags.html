@@ -21,9 +21,13 @@
     <link media="all" rel="stylesheet" href="/assets/theme/css/theme.css?v=3.1.9" type="text/css" />
     <link rel="shortcut icon" href="/favicon.ico?v=1.1.0" />
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
-    <script src="/assets/js/load-games-v2.js?v=3.1.9"></script>
     <script src="/assets/js/recent_games.js"></script>
     <script src="/assets/js/theme.js?v=3.6.0"></script>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9429401123792626"
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript">
       var Base = "/";
       var Assets = "/assets";
@@ -40,56 +44,10 @@
     <script type="text/javascript">
       document.addEventListener("keydown", function (event) {
         if (event.keyCode === 38 || event.keyCode === 40) {
-          // up or down arrow key
-          event.preventDefault(); // prevent default scrolling behavior
+          event.preventDefault();
         }
       });
     </script>
-    <style type="text/css">
-      :root {
-        --theme-color: #300a8a;
-        --xp-color: #4d8ef7;
-      }
-
-      .social-button {
-        display: inline-block;
-        margin: 10px;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .social-button img {
-        width: 20px;
-        height: 20px;
-        transition: transform 0.3s ease-in-out;
-        border: 1px black;
-      }
-
-      .social-button:hover img {
-        transform: scale(1.1);
-      }
-
-      .social-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .social-button:hover .social-overlay {
-        opacity: 1;
-      }
-
-      .social-icon {
-        color: white;
-        font-size: 14px;
-      }
-    </style>
   </head>
 
   <body class="min-vh-100 layout d-flex flex-column">
@@ -97,23 +55,23 @@
     <div class="sidebar" id="sidebar">
       <div class="sidebar-menu">
         <a href="/category/action.html" class="sidebar-item">
-          <span class="sidebar-icon">🔥</span>
+          <span class="sidebar-icon"><img src="/assets/icons/categories/Action.svg" alt="Action" /></span>
           <span class="sidebar-text">Action Games</span>
         </a>
         <a href="/category/adventure.html" class="sidebar-item">
-          <span class="sidebar-icon">🗺️</span>
+          <span class="sidebar-icon"><img src="/assets/icons/categories/Adventure.svg" alt="Adventure" /></span>
           <span class="sidebar-text">Adventure Games</span>
         </a>
         <a href="/category/car.html" class="sidebar-item">
-          <span class="sidebar-icon">🚗</span>
+          <span class="sidebar-icon"><img src="/assets/icons/categories/Car.svg" alt="Car" /></span>
           <span class="sidebar-text">Car Games</span>
         </a>
         <a href="/category/clicker.html" class="sidebar-item">
-          <span class="sidebar-icon">🖱️</span>
+          <span class="sidebar-icon"><img src="/assets/icons/categories/Clicker.svg" alt="Clicker" /></span>
           <span class="sidebar-text">Clicker Games</span>
         </a>
         <a href="/category/io.html" class="sidebar-item">
-          <span class="sidebar-icon">🌐</span>
+          <span class="sidebar-icon"><img src="/assets/icons/categories/io.svg" alt="IO" /></span>
           <span class="sidebar-text">.IO Games</span>
         </a>
         <a href="/category/parkour.html" class="sidebar-item">
@@ -129,19 +87,19 @@
           <span class="sidebar-text">Running Games</span>
         </a>
         <a href="/category/target.html" class="sidebar-item">
-          <span class="sidebar-icon">🎯</span>
+          <span class="sidebar-icon"><img src="/assets/icons/categories/Shooting.svg" alt="Shooting" /></span>
           <span class="sidebar-text">Shooting Games</span>
         </a>
         <a href="/category/soccer.html" class="sidebar-item">
-          <span class="sidebar-icon">⚽</span>
+          <span class="sidebar-icon"><img src="/assets/icons/categories/Soccer.svg" alt="Soccer" /></span>
           <span class="sidebar-text">Soccer Games</span>
         </a>
         <a href="/category/stickman.html" class="sidebar-item">
-          <span class="sidebar-icon">🧍</span>
+          <span class="sidebar-icon"><img src="/assets/icons/categories/Stickman.svg" alt="Stickman" /></span>
           <span class="sidebar-text">Stickman Games</span>
         </a>
         <a href="/category/two-player.html" class="sidebar-item">
-          <span class="sidebar-icon">👥</span>
+          <span class="sidebar-icon"><img src="/assets/icons/categories/2players.svg" alt="Two Player" /></span>
           <span class="sidebar-text">Two Player Games</span>
         </a>
         <a href="/category/fighting.html" class="sidebar-item">
@@ -153,11 +111,11 @@
           <span class="sidebar-text">Kids Games</span>
         </a>
         <a href="/category/multiplayer.html" class="sidebar-item">
-          <span class="sidebar-icon">👥</span>
+          <span class="sidebar-icon"><img src="/assets/icons/categories/Multiplayer.svg" alt="Multiplayer" /></span>
           <span class="sidebar-text">Multiplayer Games</span>
         </a>
         <a href="/category/puzzle.html" class="sidebar-item">
-          <span class="sidebar-icon">🧩</span>
+          <span class="sidebar-icon"><img src="/assets/icons/categories/Puzzle.svg" alt="Puzzle" /></span>
           <span class="sidebar-text">Puzzle Games</span>
         </a>
         <a href="/category/racing.html" class="sidebar-item">
@@ -185,7 +143,7 @@
           <span class="sidebar-text">Snake Games</span>
         </a>
         <a href="/category/sport.html" class="sidebar-item">
-          <span class="sidebar-icon">🏀</span>
+          <span class="sidebar-icon"><img src="/assets/icons/categories/Sports.svg" alt="Sport" /></span>
           <span class="sidebar-text">Sport Games</span>
         </a>
         <a href="/category/strategy.html" class="sidebar-item">
@@ -193,12 +151,12 @@
           <span class="sidebar-text">Strategy Games</span>
         </a>
         <a href="/category/trending.html" class="sidebar-item">
-          <span class="sidebar-icon">⭐</span>
+          <span class="sidebar-icon"><img src="/assets/icons/categories/Trending.svg" alt="Trending" /></span>
           <span class="sidebar-text">Trending Games</span>
         </a>
         <hr style="border: none; height: 1px; background-color: rgba(98, 77, 227, 0.2); margin: 10px 15px" />
         <a href="/category/tags.html" class="sidebar-item">
-          <span class="sidebar-icon">🗂️</span>
+          <span class="sidebar-icon"><img src="/assets/icons/categories/Tags.svg" alt="Tags" /></span>
           <span class="sidebar-text">Tags</span>
         </a>
         <div class="sidebar-footer-links" style="margin-top: 20px; padding: 0 15px">
@@ -265,6 +223,7 @@
               />
             </div>
           </form>
+
           <ul class="navbar-nav mb-2 mb-lg-0 fw-semibold align-items-xl-center ms-xl-auto flex" style="display: flex; flex-direction: row">
             <li class="nav-item">
               <button class="theme-toggle" id="chat-button">
@@ -282,6 +241,21 @@
               <button class="theme-toggle" onclick="window.open('https://ucbg.github.io/category/new.html', '_blank');">
                 <img src="/assets/icons/new.svg" alt="New Games" style="height: 38px" />
                 <span class="tooltip">New Games.</span>
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="theme-toggle" id="favoriteDrawerBtn" onclick="toggleFavoritesDrawer()" title="Favorilerim">
+                <svg id="favoriteDrawerIcon" width="20" height="20" viewBox="0 0 24 24" fill="hotpink" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                           C2 6 4 4 6.5 4
+                           c1.74 0 3.41 1.01 4.13 2.44h.75
+                           C14.09 5.01 15.76 4 17.5 4
+                           C20 4 22 6 22 8.5
+                           c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  />
+                </svg>
+                <span class="tooltip">Favorilerim</span>
               </button>
             </li>
             <li class="nav-item">
@@ -322,7 +296,7 @@
     Agar <span class="custom-category-count">1</span>
   </a>
   <a href="/group.html?key=arcade" class="custom-category-link">
-    Arcade <span class="custom-category-count">12</span>
+    Arcade <span class="custom-category-count">13</span>
   </a>
   <a href="/group.html?key=archery" class="custom-category-link">
     Archery <span class="custom-category-count">3</span>
@@ -373,10 +347,13 @@
     Building <span class="custom-category-count">5</span>
   </a>
   <a href="/category/car.html" class="custom-category-link">
-    Car <span class="custom-category-count">64</span>
+    Car <span class="custom-category-count">65</span>
   </a>
   <a href="/group.html?key=card" class="custom-category-link">
     Card <span class="custom-category-count">3</span>
+  </a>
+  <a href="/group.html?key=cars" class="custom-category-link">
+    Cars <span class="custom-category-count">2</span>
   </a>
   <a href="/group.html?key=casual" class="custom-category-link">
     Casual <span class="custom-category-count">5</span>
@@ -430,7 +407,7 @@
     Drifting <span class="custom-category-count">2</span>
   </a>
   <a href="/group.html?key=driving" class="custom-category-link">
-    Driving <span class="custom-category-count">17</span>
+    Driving <span class="custom-category-count">18</span>
   </a>
   <a href="/group.html?key=education" class="custom-category-link">
     Education <span class="custom-category-count">2</span>
@@ -480,7 +457,7 @@
   <a href="/group.html?key=hidden-object" class="custom-category-link">
     Hidden-object <span class="custom-category-count">1</span>
   </a>
-  <a href="/category/horror.html" class="custom-category-link">
+  <a href="/group.html?key=horror" class="custom-category-link">
     Horror <span class="custom-category-count">19</span>
   </a>
   <a href="/group.html?key=idle" class="custom-category-link">
@@ -490,7 +467,7 @@
     Io <span class="custom-category-count">136</span>
   </a>
   <a href="/category/kids.html" class="custom-category-link">
-    Kids <span class="custom-category-count">388</span>
+    Kids <span class="custom-category-count">391</span>
   </a>
   <a href="/group.html?key=launcher" class="custom-category-link">
     Launcher <span class="custom-category-count">3</span>
@@ -538,7 +515,7 @@
     Observation <span class="custom-category-count">1</span>
   </a>
   <a href="/group.html?key=obstacle-course" class="custom-category-link">
-    Obstacle-course <span class="custom-category-count">11</span>
+    Obstacle-course <span class="custom-category-count">12</span>
   </a>
   <a href="/group.html?key=offroad" class="custom-category-link">
     Offroad <span class="custom-category-count">2</span>
@@ -553,7 +530,7 @@
     Party <span class="custom-category-count">4</span>
   </a>
   <a href="/group.html?key=physics" class="custom-category-link">
-    Physics <span class="custom-category-count">58</span>
+    Physics <span class="custom-category-count">60</span>
   </a>
   <a href="/group.html?key=ping-pong" class="custom-category-link">
     Ping-pong <span class="custom-category-count">1</span>
@@ -568,7 +545,7 @@
     Platformer <span class="custom-category-count">66</span>
   </a>
   <a href="/group.html?key=point-and-click" class="custom-category-link">
-    Point-and-click <span class="custom-category-count">10</span>
+    Point-and-click <span class="custom-category-count">12</span>
   </a>
   <a href="/group.html?key=police" class="custom-category-link">
     Police <span class="custom-category-count">1</span>
@@ -580,7 +557,7 @@
     Precision <span class="custom-category-count">1</span>
   </a>
   <a href="/category/puzzle.html" class="custom-category-link">
-    Puzzle <span class="custom-category-count">249</span>
+    Puzzle <span class="custom-category-count">253</span>
   </a>
   <a href="/category/racing.html" class="custom-category-link">
     Racing <span class="custom-category-count">117</span>
@@ -625,7 +602,7 @@
     Skateboarding <span class="custom-category-count">1</span>
   </a>
   <a href="/category/skill.html" class="custom-category-link">
-    Skill <span class="custom-category-count">169</span>
+    Skill <span class="custom-category-count">171</span>
   </a>
   <a href="/category/snake.html" class="custom-category-link">
     Snake <span class="custom-category-count">6</span>
@@ -667,7 +644,7 @@
     Stickman <span class="custom-category-count">66</span>
   </a>
   <a href="/category/strategy.html" class="custom-category-link">
-    Strategy <span class="custom-category-count">216</span>
+    Strategy <span class="custom-category-count">218</span>
   </a>
   <a href="/group.html?key=stunt" class="custom-category-link">
     Stunt <span class="custom-category-count">8</span>
@@ -711,9 +688,17 @@
   <a href="/group.html?key=word" class="custom-category-link">
     Word <span class="custom-category-count">7</span>
   </a>
-  <a href="/category/zombie.html" class="custom-category-link">
+  <a href="/group.html?key=zombie" class="custom-category-link">
     Zombie <span class="custom-category-count">10</span>
   </a>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>

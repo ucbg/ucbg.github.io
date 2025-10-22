@@ -5612,5 +5612,38 @@
     "groups": "puzzle, skill, arcade, obstacle-course",
     "keywords": "two ball 3d dark game, dual ball puzzle, 3d obstacle game, online skill challenge, dark theme puzzle",
     "main_categories": "puzzle, skill, kids"
+  },
+  {
+    "slug": "truck-traffic",
+    "url": "/game/truck-traffic.html",
+    "title": "TRUCK TRAFFIC",
+    "image": "/assets/upload/busqueda/truck-traffic.png",
+    "video": "",
+    "description": "A 2D obstacle avoidance driving game where you drive a truck down the road and avoid cars and other oncoming obstacles. Try to reach your destination without causing too much damage, earning star ratings based on your performance across 18 levels.",
+    "groups": "driving, obstacle-course, arcade, skill",
+    "keywords": "truck traffic game, 2d driving game, obstacle avoidance, online arcade game, traffic dodging, skill driving game",
+    "main_categories": "car, kids, skill"
+  },
+  {
+    "slug": "truck-loader-5",
+    "url": "/game/truck-loader-5.html",
+    "title": "TRUCK LOADER 5",
+    "image": "/assets/upload/busqueda/truck-loader-5.png",
+    "video": "",
+    "description": "A physics-based puzzle game where you operate a forklift with a magnetic arm to load all the cargo onto a truck. Solve environmental puzzles, activate buttons, open gates, and navigate obstacles and ramps to complete each level.",
+    "groups": "physics, puzzle, cars, point-and-click",
+    "keywords": "truck loader 5, forklift puzzle game, physics puzzle game, online brain game, cargo loading game, magnetic crane puzzle",
+    "main_categories": "puzzle, kids, strategy"
+  },
+  {
+    "slug": "truck-loader-2",
+    "url": "/game/truck-loader-2.html",
+    "title": "TRUCK LOADER 2",
+    "image": "/assets/upload/busqueda/truck-loader-2.png",
+    "video": "",
+    "description": "A physics-based puzzle game where you control a magnetic forklift to load all cargo boxes into a truck. Navigate challenging levels with obstacles, elevators, and fragile boxes that require careful planning and precision to complete.",
+    "groups": "physics, puzzle, cars, point-and-click",
+    "keywords": "truck loader 2, forklift puzzle game, physics puzzle game, magnetic crane, cargo loading, online brain game",
+    "main_categories": "puzzle, kids, strategy"
   }
 ]

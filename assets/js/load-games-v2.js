@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       : allGames;
 
     let loadedIndex = 0;
-    const batchSize = 40;
+    const batchSize = 20;
 
     const scrollArrow = document.createElement("div");
     scrollArrow.innerHTML = "&#x2193;";
