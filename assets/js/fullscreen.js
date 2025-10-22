@@ -71,7 +71,7 @@ function createServerButtons() {
 async function loadGameData() {
   try {
     console.log("JSON yükleniyor...");
-    const response = await fetch("/data-json/games.json");
+    const response = await fetch("/data-json/games.json?v=1.2.3");
     const games = await response.json();
     console.log("JSON yüklendi:", games.length, "oyun bulundu.");
 
