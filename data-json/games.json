@@ -5622,8 +5622,12 @@
     "description": "A 2D obstacle avoidance driving game where you drive a truck down the road and avoid cars and other oncoming obstacles. Try to reach your destination without causing too much damage, earning star ratings based on your performance across 18 levels.",
     "groups": "driving, obstacle-course, arcade, skill",
     "keywords": "truck traffic game, 2d driving game, obstacle avoidance, online arcade game, traffic dodging, skill driving game",
-    "main_categories": "car, kids, skill"
+    "main_categories": "car, kids, skill",
+    "servers": {
+      "server1": "https://truck-traffic.pages.dev/"
+    }
   },
+
   {
     "slug": "truck-loader-5",
     "url": "/game/truck-loader-5.html",
