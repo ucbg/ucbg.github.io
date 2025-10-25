@@ -5649,5 +5649,126 @@
     "groups": "physics, puzzle, cars, point-and-click",
     "keywords": "truck loader 2, forklift puzzle game, physics puzzle game, magnetic crane, cargo loading, online brain game",
     "main_categories": "puzzle, kids, strategy"
+  },
+  {
+    "slug": "traffic-rush",
+    "url": "/game/traffic-rush.html",
+    "title": "TRAFFIC RUSH",
+    "image": "/assets/upload/busqueda/traffic-rush.png",
+    "video": "",
+    "description": "A traffic management puzzle game where players control traffic lights to direct the flow of vehicles and prevent collisions at busy intersections. Test your timing and strategic planning in increasingly challenging levels.",
+    "groups": "puzzle, strategy, traffic, management",
+    "keywords": "traffic rush game, traffic management puzzle, online puzzle game, car traffic control, strategy timing game",
+    "main_categories": "puzzle, kids, strategy"
+  },
+  {
+    "slug": "traffic-rider",
+    "url": "/game/traffic-rider.html",
+    "title": "TRAFFIC RIDER",
+    "image": "/assets/upload/busqueda/traffic-rider.png",
+    "video": "",
+    "description": "A first-person motorcycle racing game where players ride through dynamic traffic, complete missions, and avoid collisions while upgrading bikes for better performance.",
+    "groups": "racing, simulation, motorcycle, mission",
+    "keywords": "traffic rider game, motorcycle racing, first-person bike game, traffic dodging, mission-based racing, bike upgrade game",
+    "main_categories": "racing, skill, action"
+  },
+  {
+    "slug": "traffic-escape",
+    "url": "/game/traffic-escape.html",
+    "title": "TRAFFIC ESCAPE",
+    "image": "/assets/upload/busqueda/traffic-escape.png",
+    "video": "",
+    "description": "A logic puzzle game where players slide cars and trucks in a gridlocked parking lot or road to clear a path for the red escape vehicle to exit. Test your problem-solving skills across multiple challenging levels.",
+    "groups": "puzzle, logic, sliding, strategy",
+    "keywords": "traffic escape game, sliding puzzle game, car escape puzzle, online logic game, parking lot puzzle, brain teaser",
+    "main_categories": "puzzle, kids, strategy"
+  },
+  {
+    "slug": "tower-of-destiny",
+    "url": "/game/tower-of-destiny.html",
+    "title": "TOWER OF DESTINY",
+    "image": "/assets/upload/busqueda/tower-of-destiny.png",
+    "video": "",
+    "description": "A fantasy RPG adventure where players climb a mysterious tower, battling monsters, collecting loot, and developing their character's abilities to reach the top and uncover ancient secrets.",
+    "groups": "rpg, adventure, fantasy, action",
+    "keywords": "tower of destiny game, fantasy rpg, adventure game, character development, online rpg, tower climbing game",
+    "main_categories": "adventure, rpg, strategy"
+  },
+  {
+    "slug": "touchdowners",
+    "url": "/game/touchdowners.html",
+    "title": "TOUCHDOWNERS",
+    "image": "/assets/upload/busqueda/touchdowners.png",
+    "video": "",
+    "description": "A chaotic multiplayer sports game with physics-based gameplay where players control wobbly characters trying to score touchdowns. Features simple controls, cartoon violence, and intense team-based matches.",
+    "groups": "sports, physics, multiplayer, arcade, fighting",
+    "keywords": "touchdowners game, physics sports game, multiplayer football, chaotic sports game, online multiplayer, wobbly characters, touchdown game",
+    "main_categories": "sport, multiplayer, action"
+  },
+  {
+    "slug": "total-recoil",
+    "url": "/game/total-recoil.html",
+    "title": "TOTAL RECOIL",
+    "image": "/assets/upload/busqueda/total-recoil.png",
+    "video": "",
+    "description": "A fast-paced top-down shooter where players engage in intense combat against waves of enemies, using a variety of powerful weapons and strategic positioning to survive.",
+    "groups": "shooter, action, arcade, survival",
+    "keywords": "total recoil game, top-down shooter, wave survival game, online action game, combat shooter",
+    "main_categories": "action, shooting, skill"
+  },
+  {
+    "slug": "top-speed-racing-3d",
+    "url": "/game/top-speed-racing-3d.html",
+    "title": "TOP SPEED RACING 3D",
+    "image": "/assets/upload/busqueda/top-speed-racing-3d.png",
+    "video": "",
+    "description": "An immersive 3D racing game featuring high-speed competitions across various tracks. Players can unlock multiple cars, upgrade their vehicles, and compete in thrilling races with realistic driving physics.",
+    "groups": "racing, simulation, car, driving",
+    "keywords": "top speed racing 3d, 3d racing game, car racing simulator, online racing game, vehicle upgrade, realistic driving",
+    "main_categories": "car, racing, skill"
+  },
+  {
+    "slug": "tomb-of-the-mask",
+    "url": "/game/tomb-of-the-mask.html",
+    "title": "TOMB OF THE MASK",
+    "image": "/assets/upload/busqueda/tomb-of-the-mask.png",
+    "video": "",
+    "description": "A fast-paced arcade game where players explore randomly generated vertical labyrinths, collect power-ups, and avoid enemies while wearing a mysterious mask that grants special abilities.",
+    "groups": "arcade, maze, retro, action, platformer",
+    "keywords": "tomb of the mask game, arcade maze game, retro platformer, online arcade game, vertical labyrinth, mask power-ups",
+    "main_categories": "action, adventure, kids"
+  },
+  {
+    "slug": "tinytown-racing",
+    "url": "/game/tinytown-racing.html",
+    "title": "TINYTOWN RACING",
+    "image": "/assets/upload/busqueda/tinytown-racing.png",
+    "video": "",
+    "description": "A charming racing game set in a miniature town where players drive small cars through tiny streets, avoiding obstacles, collecting power-ups, and competing for the fastest time in colorful, compact environments.",
+    "groups": "racing, car, arcade, kids, obstacle-course",
+    "keywords": "tinytown racing game, miniature car racing, online racing game, kids racing game, tiny town adventure, arcade driving",
+    "main_categories": "car, racing, kids, skill"
+  },
+  {
+    "slug": "tictactoe",
+    "url": "/game/tictactoe.html",
+    "title": "TIC TAC TOE",
+    "image": "/assets/upload/busqueda/tictactoe.png",
+    "video": "",
+    "description": "A classic paper-and-pencil game where two players take turns marking X and O in a 3x3 grid, aiming to get three of their marks in a row horizontally, vertically, or diagonally.",
+    "groups": "puzzle, strategy, classic, two-player",
+    "keywords": "tic tac toe game, classic puzzle game, two-player strategy, online tic tac toe, X and O game, paper and pencil game",
+    "main_categories": "puzzle, kids, two-player, strategy"
+  },
+  {
+    "slug": "thumb-fighter",
+    "url": "/game/thumb-fighter.html",
+    "title": "THUMB FIGHTER",
+    "image": "/assets/upload/busqueda/thumb-fighter.png",
+    "video": "",
+    "description": "A fast-paced fighting game designed for quick thumb-controlled combat. Choose your character and engage in intense battles using simple touch controls to punch, kick and perform special moves against opponents.",
+    "groups": "fighting, arcade, casual, action",
+    "keywords": "thumb fighter game, mobile fighting game, touch combat game, casual fighter, online fighting game, thumb-controlled battles",
+    "main_categories": "action, multiplayer, skill"
   }
 ]
