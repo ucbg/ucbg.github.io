@@ -191,7 +191,7 @@ function initCommentSystem(container) {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            Origin: "https://ucbg.github.io",
+            Origin: "https://ucbg.online",
           },
           body: JSON.stringify({
             pageId: pageId,
