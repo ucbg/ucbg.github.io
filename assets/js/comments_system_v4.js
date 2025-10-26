@@ -151,7 +151,7 @@
     // Şifrelenmiş hedef domain listesi (Base64 ile kodlanmış)
     var ENCRYPTED_HOSTS = [
       "dWNiZy5naXRodWIuaW8=", // "ucbg.github.io"
-      "dWNiZy5vbmxpbmU="      // "ucbg.online"
+      "dWNiZy5vbmxpbmU="      // "ucbg.github.io"
     ];
     
     // Çözme fonksiyonu ve domain listesini çöz

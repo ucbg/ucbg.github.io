@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://ucbg.github.io/sitemap.xml
