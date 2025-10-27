@@ -4035,28 +4035,7 @@
     "keywords": "the bowling club game, sports simulation game, bowling alley game, online sports game, pin bowling",
     "main_categories": ""
   },
-  {
-    "slug": "the-final-earth-2",
-    "url": "/game/the-final-earth-2.html",
-    "title": "THE FINAL EARTH 2",
-    "image": "/assets/upload/UCBGgames/the-final-earth-2.png",
-    "video": "",
-    "description": "Space colony building sequel with more structures and challenges.",
-    "groups": "city-builder, strategy",
-    "keywords": "the final earth 2 game, city building sequel, space colony game, online strategy game, simulation sequel",
-    "main_categories": "kids, strategy"
-  },
-  {
-    "slug": "the-final-earth",
-    "url": "/game/the-final-earth.html",
-    "title": "THE FINAL EARTH",
-    "image": "/assets/upload/UCBGgames/the-final-earth.png",
-    "video": "",
-    "description": "Original planet-building strategy game about creating a new home for humanity.",
-    "groups": "city-builder, strategy",
-    "keywords": "the final earth game, original city builder, space colony game, online strategy game, simulation game",
-    "main_categories": "kids, strategy"
-  },
+
   {
     "slug": "the-fish-master",
     "url": "/game/the-fish-master.html",
@@ -5770,5 +5749,33 @@
     "groups": "fighting, arcade, casual, action",
     "keywords": "thumb fighter game, mobile fighting game, touch combat game, casual fighter, online fighting game, thumb-controlled battles",
     "main_categories": "action, multiplayer, skill"
+  },
+  {
+    "slug": "the-final-earth-2",
+    "url": "/game/the-final-earth-2.html",
+    "title": "THE FINAL EARTH 2",
+    "image": "/assets/upload/UCBGgames/the-final-earth-2.png",
+    "video": "",
+    "description": "Space colony building sequel with more structures and challenges.",
+    "groups": "city-builder, strategy",
+    "keywords": "the final earth 2 game, city building sequel, space colony game, online strategy game, simulation sequel",
+    "main_categories": "kids, strategy",
+    "servers": {
+      "server1": "https://the-final-earth-2.pages.dev/"
+    }
+  },
+  {
+    "slug": "the-final-earth",
+    "url": "/game/the-final-earth.html",
+    "title": "THE FINAL EARTH",
+    "image": "/assets/upload/UCBGgames/the-final-earth.png",
+    "video": "",
+    "description": "Original planet-building strategy game about creating a new home for humanity.",
+    "groups": "city-builder, strategy",
+    "keywords": "the final earth game, original city builder, space colony game, online strategy game, simulation game",
+    "main_categories": "kids, strategy",
+    "servers": {
+      "server1": "https://the-final-earth.pages.dev/"
+    }
   }
 ]
