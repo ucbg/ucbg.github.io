@@ -3937,17 +3937,6 @@
     "main_categories": "action, adventure, halloween"
   },
   {
-    "slug": "table-tennis-ultimate-tournament",
-    "url": "/game/table-tennis-ultimate-tournament.html",
-    "title": "TABLE TENNIS ULTIMATE TOURNAMENT",
-    "image": "/assets/upload/UCBGgames/table-tennis-ultimate-tournament.png",
-    "video": "",
-    "description": "Realistic ping pong simulator with various opponents and tournaments.",
-    "groups": "ping-pong, sports",
-    "keywords": "table tennis tournament game, ping pong game, sports competition game, online tennis game, paddle sports",
-    "main_categories": "skill, sport"
-  },
-  {
     "slug": "taming-io",
     "url": "/game/taming-io.html",
     "title": "TAMING io",
@@ -5854,5 +5843,33 @@
     "groups": "multiplayer, chase, casual, two-player",
     "keywords": "tag 2 game, two-player tag, online chase game, casual multiplayer, kids tag game, arena tag",
     "main_categories": "multiplayer, kids, two-player"
+  },
+  {
+    "slug": "dots-and-boxes",
+    "url": "/game/dots-and-boxes.html",
+    "title": "DOTS AND BOXES",
+    "image": "/assets/upload/busqueda/dots-and-boxes.png",
+    "video": "",
+    "description": "A classic strategy game where players take turns connecting dots on a grid to form boxes. Complete the most squares to win this simple yet challenging pencil-and-paper game brought to digital life.",
+    "groups": "strategy, puzzle, classic, two-player",
+    "keywords": "dots and boxes game, classic strategy game, online puzzle game, two-player game, pencil and paper game, box completion game",
+    "main_categories": "puzzle, kids, two-player, strategy",
+    "servers": {
+      "server1": "https://dots-and-boxes.pages.dev/"
+    }
+  },
+  {
+    "slug": "table-tennis-ultimate-tournament",
+    "url": "/game/table-tennis-ultimate-tournament.html",
+    "title": "TABLE TENNIS ULTIMATE TOURNAMENT",
+    "image": "/assets/upload/UCBGgames/table-tennis-ultimate-tournament.png",
+    "video": "",
+    "description": "Realistic ping pong simulator with various opponents and tournaments.",
+    "groups": "ping-pong, sports",
+    "keywords": "table tennis tournament game, ping pong game, sports competition game, online tennis game, paddle sports",
+    "main_categories": "skill, sport",
+    "servers": {
+      "server1": "https://table-tennis-ultimate.pages.dev/"
+    }
   }
 ]

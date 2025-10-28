@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     await loadGammeData();
 
-    const response = await fetch("/data-json/games.json?v=2.0.25");
+    const response = await fetch("/data-json/games.json?v=2.0.26");
     const allGames = await response.json();
 
     // Filtre uygula
@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     // Oyunları yükle ve rastgele seç
-    const response = await fetch("/data-json/games.json?v=2.0.25");
+    const response = await fetch("/data-json/games.json?v=2.0.26");
     const games = await response.json();
 
     // Oyunları rastgele seçmek için yardımcı fonksiyon
@@ -276,7 +276,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     await loadGammeData();
 
-    const response = await fetch("/data-json/games.json?v=2.0.25");
+    const response = await fetch("/data-json/games.json?v=2.0.26");
     const allGames = await response.json();
 
     // Filtre uygula
