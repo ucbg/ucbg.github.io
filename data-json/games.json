@@ -3967,8 +3967,12 @@
     "description": "Sequel to the popular tank battle game with new maps and weapons.",
     "groups": "shooter, tank",
     "keywords": "tank trouble 2 game, artillery battle sequel, tank combat game, online shooter game, multiplayer tanks",
-    "main_categories": "action, adventure, shooting"
+    "main_categories": "action, adventure, shooting",
+    "servers": {
+      "server1": "https://tank-trouble-2.pages.dev"
+    }
   },
+
   {
     "slug": "tank-trouble",
     "url": "/game/tank-trouble.html",
@@ -3978,7 +3982,10 @@
     "description": "Classic tank combat game with maze-like arenas and strategic gameplay.",
     "groups": "shooter, tank",
     "keywords": "tank trouble game, original tank game, artillery battle game, online shooter game, multiplayer tanks",
-    "main_categories": "action, adventure, shooting"
+    "main_categories": "action, adventure, shooting",
+    "servers": {
+      "server1": "https://tank-trouble-2.pages.dev"
+    }
   },
   {
     "slug": "tanuki-sunset",
@@ -5781,5 +5788,82 @@
     "servers": {
       "server1": "https://the-final-earth.pages.dev/"
     }
+  },
+  {
+    "slug": "the-spear-stickman",
+    "url": "/game/the-spear-stickman.html",
+    "title": "THE SPEAR STICKMAN",
+    "image": "/assets/upload/busqueda/the-spear-stickman.png",
+    "video": "",
+    "description": "A dynamic stickman platformer where players control a spear-wielding warrior to defeat enemies, navigate obstacles, and complete challenging levels with precise combat and movement skills.",
+    "groups": "platformer, action, fighting",
+    "keywords": "the spear stickman game, stickman platformer, spear combat game, online action game, stickman warrior, fighting game",
+    "main_categories": "stickman, action, fighting"
+  },
+  {
+    "slug": "the-little-giant",
+    "url": "/game/the-little-giant.html",
+    "title": "THE LITTLE GIANT",
+    "image": "/assets/upload/busqueda/the-little-giant.png",
+    "video": "",
+    "description": "An adventure platformer where players control a tiny hero in a massive world, climbing obstacles, solving puzzles, and battling enemies to grow stronger and overcome giant challenges.",
+    "groups": "platformer, adventure, puzzle, action",
+    "keywords": "the little giant game, adventure platformer, puzzle adventure, online platform game, giant world exploration",
+    "main_categories": "adventure, kids, platform"
+  },
+  {
+    "slug": "tetris-99",
+    "url": "/game/tetris-99.html",
+    "title": "TETRIS 99",
+    "image": "/assets/upload/busqueda/tetris-99.png",
+    "video": "",
+    "description": "A battle royale puzzle game where 99 players compete simultaneously in Tetris, targeting opponents to send garbage lines and be the last player standing.",
+    "groups": "puzzle, battle-royale, multiplayer",
+    "keywords": "tetris 99 game, battle royale tetris, multiplayer puzzle game, nintendo switch, online competition, last man standing",
+    "main_categories": "puzzle, multiplayer"
+  },
+  {
+    "slug": "tetra-blocks",
+    "url": "/game/tetra-blocks.html",
+    "title": "TETRA BLOCKS",
+    "image": "/assets/upload/busqueda/tetra-blocks.png",
+    "video": "",
+    "description": "A colorful block puzzle game where players arrange falling tetromino shapes to complete lines and clear the board. Features multiple game modes and increasing difficulty levels.",
+    "groups": "puzzle, block, arcade, classic",
+    "keywords": "tetra blocks game, block puzzle game, tetris-like puzzle, online block game, tile matching puzzle, classic puzzle",
+    "main_categories": "puzzle, kids, strategy"
+  },
+  {
+    "slug": "tennis-masters",
+    "url": "/game/tennis-masters.html",
+    "title": "TENNIS MASTERS",
+    "image": "/assets/upload/busqueda/tennis-masters.png",
+    "video": "",
+    "description": "A realistic tennis simulation game where players compete in intense matches, master various shots, and rise through the ranks to become the ultimate tennis champion.",
+    "groups": "sports, tennis, action, multiplayer",
+    "keywords": "tennis masters game, online tennis simulation, sports game, multiplayer tennis, championship tennis",
+    "main_categories": "sport, skill, multiplayer"
+  },
+  {
+    "slug": "tag-2-3-4-players",
+    "url": "/game/tag-2-3-4-players.html",
+    "title": "TAG 2 3 4 PLAYERS",
+    "image": "/assets/upload/busqueda/tag-2-3-4-players.png",
+    "video": "",
+    "description": "A multiplayer tag game where 2-4 players chase each other in a virtual playground. One player becomes 'it' and tries to tag others, passing the role when successful in this classic playground game brought online.",
+    "groups": "multiplayer, party, chase, casual",
+    "keywords": "tag 2 3 4 players game, multiplayer tag game, online tag game, party game, chase game, kids multiplayer game",
+    "main_categories": "multiplayer, kids, two-player"
+  },
+  {
+    "slug": "tag-2",
+    "url": "/game/tag-2.html",
+    "title": "TAG 2",
+    "image": "/assets/upload/busqueda/tag-2.png",
+    "video": "",
+    "description": "A fast-paced two-player tag game where one player chases the other in an arena. The chaser must tag the runner to score points, with roles switching after each successful tag in this casual competitive game.",
+    "groups": "multiplayer, chase, casual, two-player",
+    "keywords": "tag 2 game, two-player tag, online chase game, casual multiplayer, kids tag game, arena tag",
+    "main_categories": "multiplayer, kids, two-player"
   }
 ]
