@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     await loadGammeData();
 
-    const response = await fetch("/data-json/games.json?v=2.0.19");
+    const response = await fetch("/data-json/games.json?v=2.0.20");
     const allGames = await response.json();
 
     // NEW GAMES: Son 20 oyunu al ve tersine çevir
@@ -151,7 +151,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     if (!carousel || !rightArrow || !leftArrow) return;
 
-    // Kartların yüklenmesini beklemek için küçük bir gecikme
     setTimeout(() => {
       const card = carousel.querySelector(".card_featured");
       if (!card) {
@@ -166,115 +165,191 @@ document.addEventListener("DOMContentLoaded", async () => {
       let isDragging = false;
       let startX = 0;
       let startScroll = 0;
+      let hasMoved = false;
+      let velocity = 0;
+      let momentumID = null;
+      let prevScrollAmount = 0;
+
       const totalCards = carousel.children.length;
       const containerWidth = carouselContainer.offsetWidth;
       const maxScroll = cardWidth * totalCards - containerWidth;
 
-      // Sürükleme için cursor stilleri
       carousel.style.cursor = "grab";
-
-      // Okları başlangıçta doğru şekilde göster/gizle
       updateArrowVisibility();
 
-      // Sağ ok
+      // BROWSER'IN DEFAULT DRAG DAVRANIŞINI ENGELLE (ÖNEMLİ!)
+      carousel.addEventListener("dragstart", (e) => {
+        e.preventDefault();
+        return false;
+      });
+
+      // TÜM LİNK VE RESİMLERİN DRAG'İNİ ENGELLE
+      carousel.querySelectorAll("a, img").forEach((element) => {
+        element.ondragstart = () => false;
+      });
+
+      // SAĞ OK
       rightArrow.addEventListener("click", () => {
+        cancelMomentum();
         scrollAmount += cardWidth;
-
-        // Maksimum kaydırma sınırını kontrol et
-        if (scrollAmount > maxScroll) {
-          scrollAmount = maxScroll;
-        }
-
+        if (scrollAmount > maxScroll) scrollAmount = maxScroll;
         carousel.style.transform = `translateX(-${scrollAmount}px)`;
         updateArrowVisibility();
       });
 
-      // Sol ok
+      // SOL OK
       leftArrow.addEventListener("click", () => {
+        cancelMomentum();
         scrollAmount -= cardWidth;
-
-        // Minimum kaydırma sınırını kontrol et
-        if (scrollAmount < 0) {
-          scrollAmount = 0;
-        }
-
+        if (scrollAmount < 0) scrollAmount = 0;
         carousel.style.transform = `translateX(-${scrollAmount}px)`;
         updateArrowVisibility();
       });
 
-      // Mouse sürükleme olayları
-      carousel.addEventListener("mousedown", dragStart);
-      carousel.addEventListener("touchstart", dragStart);
-
-      carousel.addEventListener("mousemove", dragMove);
-      carousel.addEventListener("touchmove", dragMove);
-
-      carousel.addEventListener("mouseup", dragEnd);
-      carousel.addEventListener("touchend", dragEnd);
-      carousel.addEventListener("mouseleave", dragEnd);
-
-      function dragStart(e) {
-        isDragging = true;
-        startX = e.pageX || e.touches[0].pageX;
-        startScroll = scrollAmount;
-        carousel.style.cursor = "grabbing";
-        carousel.style.transition = "none";
+      // MOMENTUM FONKSİYONLARI
+      function beginMomentum() {
+        cancelMomentum();
+        momentumID = requestAnimationFrame(momentumLoop);
       }
 
+      function cancelMomentum() {
+        if (momentumID) {
+          cancelAnimationFrame(momentumID);
+          momentumID = null;
+        }
+      }
+
+      function momentumLoop() {
+        scrollAmount += velocity;
+
+        if (scrollAmount < 0) {
+          scrollAmount = 0;
+          velocity = 0;
+        }
+        if (scrollAmount > maxScroll) {
+          scrollAmount = maxScroll;
+          velocity = 0;
+        }
+
+        carousel.style.transform = `translateX(-${scrollAmount}px)`;
+        updateArrowVisibility();
+
+        velocity *= 0.95;
+
+        if (Math.abs(velocity) > 0.5) {
+          momentumID = requestAnimationFrame(momentumLoop);
+        }
+      }
+
+      // DRAG BAŞLATMA
+      function dragStart(e) {
+        isDragging = true;
+        hasMoved = false;
+        startX = e.pageX || e.touches[0].pageX;
+        startScroll = scrollAmount;
+        prevScrollAmount = scrollAmount;
+        velocity = 0;
+        carousel.style.cursor = "grabbing";
+        carousel.style.transition = "none";
+        cancelMomentum();
+      }
+
+      // DRAG HAREKETI
       function dragMove(e) {
         if (!isDragging) return;
-        e.preventDefault();
 
         const x = e.pageX || e.touches[0].pageX;
-        const walk = (x - startX) * 1.5; // Sürükleme hassasiyeti
+        const walk = (x - startX) * 1.5;
+
+        if (Math.abs(walk) > 5) {
+          hasMoved = true;
+          e.preventDefault();
+        }
 
         let newScroll = startScroll - walk;
-
-        // Sınırları kontrol et
         if (newScroll < 0) newScroll = 0;
         if (newScroll > maxScroll) newScroll = maxScroll;
+
+        velocity = prevScrollAmount - newScroll;
+        prevScrollAmount = newScroll;
 
         scrollAmount = newScroll;
         carousel.style.transform = `translateX(-${scrollAmount}px)`;
       }
 
+      // DRAG BİTİŞİ
       function dragEnd() {
         if (!isDragging) return;
         isDragging = false;
         carousel.style.cursor = "grab";
         carousel.style.transition = "transform 0.3s ease-in-out";
         updateArrowVisibility();
+
+        if (Math.abs(velocity) > 2) {
+          beginMomentum();
+        }
       }
 
-      // Mouse wheel ile kaydırma
-      carousel.addEventListener("wheel", (e) => {
-        e.preventDefault();
-        scrollAmount += e.deltaY * 0.5;
+      // DRAG EVENT'LERİ
+      carousel.addEventListener("mousedown", dragStart);
+      carousel.addEventListener("touchstart", dragStart, { passive: true });
 
-        // Sınırları kontrol et
-        if (scrollAmount < 0) scrollAmount = 0;
-        if (scrollAmount > maxScroll) scrollAmount = maxScroll;
+      document.addEventListener("mousemove", dragMove);
+      document.addEventListener("touchmove", dragMove, { passive: false });
 
-        carousel.style.transform = `translateX(-${scrollAmount}px)`;
-        updateArrowVisibility();
+      document.addEventListener("mouseup", dragEnd);
+      document.addEventListener("touchend", dragEnd);
+      carousel.addEventListener("mouseleave", dragEnd);
+
+      // LİNKLERİN AÇILMASINI ENGELLE (DRAG SIRASINDA)
+      carousel.querySelectorAll(".card").forEach((card) => {
+        card.addEventListener("click", (e) => {
+          if (hasMoved) {
+            e.preventDefault();
+            e.stopPropagation();
+          }
+        });
       });
 
-      // Okları görünürlüğünü güncelle
+      // WHEEL EVENT
+      carousel.addEventListener(
+        "wheel",
+        (e) => {
+          const deltaX = Math.abs(e.deltaX);
+          const deltaY = Math.abs(e.deltaY);
+
+          cancelMomentum();
+
+          if (deltaX > deltaY && deltaX > 0) {
+            e.preventDefault();
+            scrollAmount += e.deltaX * 0.5;
+          } else if (deltaY > deltaX * 2) {
+            return;
+          }
+
+          if (scrollAmount < 0) scrollAmount = 0;
+          if (scrollAmount > maxScroll) scrollAmount = maxScroll;
+
+          carousel.style.transform = `translateX(-${scrollAmount}px)`;
+          updateArrowVisibility();
+        },
+        { passive: false }
+      );
+
+      // OK GÖRÜNÜRLÜKLERİ
       function updateArrowVisibility() {
-        // Başlangıçta sol ok gizli
         leftArrow.style.opacity = scrollAmount > 0 ? "1" : "0.3";
         leftArrow.style.pointerEvents = scrollAmount > 0 ? "auto" : "none";
 
-        // Sona gelince sağ ok gizli
         rightArrow.style.opacity = scrollAmount < maxScroll ? "1" : "0.3";
         rightArrow.style.pointerEvents = scrollAmount < maxScroll ? "auto" : "none";
       }
 
-      // İlk yüklemede transition'ı etkinleştir
       carousel.style.transition = "transform 0.3s ease-in-out";
 
-      // Pencere boyutu değiştiğinde maxScroll'u güncelle
+      // RESIZE
       window.addEventListener("resize", () => {
+        cancelMomentum();
         const newContainerWidth = carouselContainer.offsetWidth;
         const newMaxScroll = cardWidth * totalCards - newContainerWidth;
 
@@ -282,9 +357,8 @@ document.addEventListener("DOMContentLoaded", async () => {
           scrollAmount = newMaxScroll;
           carousel.style.transform = `translateX(-${scrollAmount}px)`;
         }
-
         updateArrowVisibility();
       });
-    }, 100); // Kartların render olması için kısa bekleme
+    }, 100);
   }
 });
