@@ -3912,7 +3912,10 @@
     "description": "Innovative shooter where time moves only when you move.",
     "groups": "action, shooter",
     "keywords": "superhot game, time shooter game, fps puzzle game, bullet time game, online action game",
-    "main_categories": "action, adventure, shooting, trending"
+    "main_categories": "action, adventure, shooting, trending",
+    "servers": {
+      "server1": "https://scrap-metal.github.io/s8/super-hot/"
+    }
   },
   {
     "slug": "surviv-io",
@@ -5871,5 +5874,27 @@
     "servers": {
       "server1": "https://table-tennis-ultimate.pages.dev/"
     }
+  },
+  {
+    "slug": "swatforce-vs-terrorists",
+    "url": "/game/swatforce-vs-terrorists.html",
+    "title": "SWATFORCE VS TERRORISTS",
+    "image": "/assets/upload/busqueda/swatforce-vs-terrorists.png",
+    "video": "",
+    "description": "A tactical shooter game where players command a SWAT team in high-stakes missions to eliminate terrorists, rescue hostages, and secure objectives across various challenging scenarios.",
+    "groups": "shooter, action, tactical, fps",
+    "keywords": "swatforce vs terrorists game, tactical shooter, swat simulation, anti-terror game, online fps, hostage rescue, combat missions",
+    "main_categories": "action, shooting, strategy"
+  },
+  {
+    "slug": "supernova",
+    "url": "/game/supernova.html",
+    "title": "SUPERNOVA",
+    "image": "/assets/upload/busqueda/supernova.png",
+    "video": "",
+    "description": "An intense space arcade shooter where players pilot a starship through asteroid fields and enemy fleets, using powerful weapons and upgrades to survive and trigger devastating supernova explosions.",
+    "groups": "shooter, space, action, arcade",
+    "keywords": "supernova game, space shooter, arcade space game, online shooter, cosmic battles, starship combat",
+    "main_categories": "action, shooting, skill"
   }
 ]
