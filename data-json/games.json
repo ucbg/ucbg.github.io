@@ -5616,7 +5616,8 @@
     "description": "A physics-based puzzle game where you operate a forklift with a magnetic arm to load all the cargo onto a truck. Solve environmental puzzles, activate buttons, open gates, and navigate obstacles and ramps to complete each level.",
     "groups": "physics, puzzle, cars, point-and-click",
     "keywords": "truck loader 5, forklift puzzle game, physics puzzle game, online brain game, cargo loading game, magnetic crane puzzle",
-    "main_categories": "puzzle, kids, strategy"
+    "main_categories": "puzzle, kids, strategy",
+    "featured": true
   },
   {
     "slug": "truck-loader-2",
@@ -5671,7 +5672,10 @@
     "description": "A fantasy RPG adventure where players climb a mysterious tower, battling monsters, collecting loot, and developing their character's abilities to reach the top and uncover ancient secrets.",
     "groups": "rpg, adventure, fantasy, action",
     "keywords": "tower of destiny game, fantasy rpg, adventure game, character development, online rpg, tower climbing game",
-    "main_categories": "adventure, rpg, strategy"
+    "main_categories": "adventure, rpg, strategy",
+    "special_state": {
+      "new_window": true
+    }
   },
   {
     "slug": "touchdowners",
