@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const nickInput = document.createElement("input");
   nickInput.type = "text";
-  nickInput.placeholder = "Takma adınızı girin...";
+  nickInput.placeholder = "Enter your nickname...";
   nickInput.style.cssText = `
     padding: 10px;
     border: 1px solid #ccc;
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   `;
 
   const nickSaveButton = document.createElement("button");
-  nickSaveButton.textContent = "Kaydet";
+  nickSaveButton.textContent = "Save";
   nickSaveButton.style.cssText = `
     padding: 10px;
     border: none;
