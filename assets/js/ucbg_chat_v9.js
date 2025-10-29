@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const msgInput = document.createElement("input");
   msgInput.type = "text";
-  msgInput.placeholder = "Mesaj yazın...";
+  msgInput.placeholder = "Type a message...";
   msgInput.style.cssText = `
     padding: 8px;
     border: 1px solid #ccc;
@@ -516,7 +516,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       const data = await response.json();
 
       if (!data.success) {
-        alert(data.error || "Mesaj gönderilemedi");
+        alert(data.error || "Message could not be sent.");
         return;
       }
 
@@ -525,7 +525,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       scrollToBottom(true);
     } catch (error) {
       console.error("Error sending message:", error);
-      alert("Mesaj gönderilemedi. Lütfen tekrar deneyin.");
+      alert("Message could not be sent. Please try again.");
     }
   };
 
