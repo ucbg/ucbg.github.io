@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   async function fetchGames() {
     if (gamesCache) return gamesCache;
-    const response = await fetch("/data-json/games.json?v=2.0.32");
+    const response = await fetch("/data-json/games.json?v=2.0.34");
     gamesCache = await response.json();
     return gamesCache;
   }

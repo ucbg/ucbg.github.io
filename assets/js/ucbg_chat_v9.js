@@ -337,13 +337,18 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   // Load older messages
+  // Load older messages
   async function loadOlderMessages() {
     if (isLoadingOlder || !hasMoreMessages || oldestTimestamp === 0) {
       return;
     }
 
     isLoadingOlder = true;
-    const beforeHeight = messagesDiv.scrollHeight;
+
+    // İlk görünen mesajı bul ve offset'ini kaydet
+    const firstVisibleMsg = messagesDiv.querySelector("[data-msg-id]");
+    const firstMsgId = firstVisibleMsg ? firstVisibleMsg.getAttribute("data-msg-id") : null;
+    const scrollTopBefore = messagesDiv.scrollTop;
 
     try {
       const response = await fetch(`${API_BASE_URL}/fetch-older.php?before=${oldestTimestamp}&limit=20`);
@@ -368,8 +373,18 @@ document.addEventListener("DOMContentLoaded", async () => {
           }
         });
 
+        // Yüksekliği kaydet
+        const heightBefore = messagesDiv.scrollHeight;
+
+        // Mesajları ekle
         messagesDiv.insertBefore(fragment, messagesDiv.firstChild);
-        preserveScrollPosition(beforeHeight);
+
+        // Yeni yüksekliği hesapla ve scroll pozisyonunu koru
+        const heightAfter = messagesDiv.scrollHeight;
+        const heightDiff = heightAfter - heightBefore;
+
+        // Scroll pozisyonunu güncelle (animasyon yok)
+        messagesDiv.scrollTop = scrollTopBefore + heightDiff;
       } else {
         hasMoreMessages = false;
         console.log("No more older messages");
@@ -486,7 +501,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const now = Date.now();
     if (now - lastSent < 15000) {
-      alert("Mesaj göndermek için 15 saniye beklemelisiniz.");
+      alert("You must wait 15 seconds before sending a message.");
       return;
     }
     lastSent = now;
