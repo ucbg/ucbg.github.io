@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   `;
 
   const sendButton = document.createElement("button");
-  sendButton.textContent = "Gönder";
+  sendButton.textContent = "Send";
   sendButton.style.cssText = `
     padding: 8px;
     border: none;
