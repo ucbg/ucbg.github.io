@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     width: 320px;
     background-color: #fff;
     box-shadow: -4px 0 12px rgba(0,0,0,0.2);
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px 0 0 0;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     z-index: 1000;
@@ -57,6 +57,21 @@ document.addEventListener("DOMContentLoaded", async () => {
     flex-direction: column;
     overflow: hidden;
   `;
+
+  // TROLLBOX Header
+  const header = document.createElement("div");
+  header.textContent = "TROLLBOX";
+  header.style.cssText = `
+    background: #e8e8e8;
+    color: #555;
+    padding: 6px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #ccc;
+  `;
+  drawer.appendChild(header);
 
   // Nick container
   const nickContainer = document.createElement("div");
@@ -120,14 +135,25 @@ document.addEventListener("DOMContentLoaded", async () => {
     gap: 5px;
   `;
 
-  const msgInput = document.createElement("input");
-  msgInput.type = "text";
-  msgInput.placeholder = "Type a message...";
+  const msgInput = document.createElement("textarea");
+  msgInput.placeholder = "Message… (Shift+Enter = new line)";
+  msgInput.rows = 1;
   msgInput.style.cssText = `
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 8px;
+    resize: none;
+    font-family: inherit;
+    font-size: 14px;
+    max-height: 120px;
+    overflow-y: auto;
   `;
+
+  // Textarea otomatik boyutlandırma
+  msgInput.addEventListener("input", () => {
+    msgInput.style.height = "auto";
+    msgInput.style.height = Math.min(msgInput.scrollHeight, 120) + "px";
+  });
 
   const sendButton = document.createElement("button");
   sendButton.textContent = "Send";
@@ -234,6 +260,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       border-radius: 12px;
       font-size: 14px;
       word-wrap: break-word;
+      white-space: pre-wrap;
     `;
 
     if (data.user === currentUser) {
@@ -264,14 +291,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         top: messagesDiv.scrollHeight,
         behavior: smooth ? "smooth" : "auto",
       });
-    });
-  }
-
-  function preserveScrollPosition(beforeHeight) {
-    requestAnimationFrame(() => {
-      const afterHeight = messagesDiv.scrollHeight;
-      const delta = afterHeight - beforeHeight;
-      messagesDiv.scrollTop += delta;
     });
   }
 
@@ -337,7 +356,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   // Load older messages
-  // Load older messages
   async function loadOlderMessages() {
     if (isLoadingOlder || !hasMoreMessages || oldestTimestamp === 0) {
       return;
@@ -345,9 +363,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     isLoadingOlder = true;
 
-    // İlk görünen mesajı bul ve offset'ini kaydet
-    const firstVisibleMsg = messagesDiv.querySelector("[data-msg-id]");
-    const firstMsgId = firstVisibleMsg ? firstVisibleMsg.getAttribute("data-msg-id") : null;
     const scrollTopBefore = messagesDiv.scrollTop;
 
     try {
@@ -373,17 +388,11 @@ document.addEventListener("DOMContentLoaded", async () => {
           }
         });
 
-        // Yüksekliği kaydet
         const heightBefore = messagesDiv.scrollHeight;
-
-        // Mesajları ekle
         messagesDiv.insertBefore(fragment, messagesDiv.firstChild);
-
-        // Yeni yüksekliği hesapla ve scroll pozisyonunu koru
         const heightAfter = messagesDiv.scrollHeight;
         const heightDiff = heightAfter - heightBefore;
 
-        // Scroll pozisyonunu güncelle (animasyon yok)
         messagesDiv.scrollTop = scrollTopBefore + heightDiff;
       } else {
         hasMoreMessages = false;
@@ -484,8 +493,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (e.key === "Enter") nickSaveButton.click();
   });
 
-  msgInput.addEventListener("keypress", (e) => {
-    if (e.key === "Enter") sendButton.click();
+  // Enter tuşu - Shift+Enter = yeni satır, Enter = gönder
+  msgInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" && !e.shiftKey) {
+      e.preventDefault();
+      sendButton.click();
+    }
   });
 
   // Send message
@@ -521,6 +534,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
 
       msgInput.value = "";
+      msgInput.style.height = "auto";
       await fetchMessages(false);
       scrollToBottom(true);
     } catch (error) {
