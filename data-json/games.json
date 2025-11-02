@@ -5292,6 +5292,17 @@
     "main_categories": "action, multiplayer, strategy"
   },
   {
+    "slug": "super-mx-the-champion",
+    "url": "/game/super-mx-the-champion.html",
+    "title": "SUPER MX THE CHAMPION",
+    "image": "/assets/upload/busqueda/super-mx-the-champion.png",
+    "video": "",
+    "description": "An exciting motocross racing game where players perform stunts, master challenging tracks, and compete to become the ultimate off-road motorcycle champion.",
+    "groups": "racing, motorcycle, stunt, offroad, skill",
+    "keywords": "super mx the champion game, motocross racing, motorcycle stunts, off-road racing, online racing game, bike championship",
+    "main_categories": "racing, skill, action"
+  },
+  {
     "slug": "zoom-be-3",
     "url": "/game/zoom-be-3.html",
     "title": "ZOOM BE 3",
@@ -5896,5 +5907,52 @@
     "groups": "shooter, space, action, arcade",
     "keywords": "supernova game, space shooter, arcade space game, online shooter, cosmic battles, starship combat",
     "main_categories": "action, shooting, skill"
+  },
+  {
+    "slug": "superbike-hero",
+    "url": "/game/superbike-hero.html",
+    "title": "SUPERBIKE HERO",
+    "image": "/assets/upload/busqueda/superbike-hero.png",
+    "video": "",
+    "description": "A high-speed motorcycle racing game where players perform stunts, drift through corners, and compete in intense races across challenging tracks to become the ultimate bike champion.",
+    "groups": "racing, motorcycle, stunt, skill",
+    "keywords": "superbike hero game, motorcycle racing, stunt bike game, online racing game, bike drifting, racing champion",
+    "main_categories": "racing, skill, action"
+  },
+  {
+    "slug": "superbattle-2",
+    "url": "/game/superbattle-2.html",
+    "title": "SUPERBATTLE 2",
+    "image": "/assets/upload/busqueda/superbattle-2.png",
+    "video": "",
+    "description": "An action-packed fighting game featuring intense battles between powerful characters. Choose your fighter and engage in dynamic combat with special moves and combos across various arenas.",
+    "groups": "fighting, action, arcade, multiplayer",
+    "keywords": "superbattle 2 game, fighting game, multiplayer combat, online battle game, arcade fighter, character combat",
+    "main_categories": "action, fighting, multiplayer"
+  },
+  {
+    "slug": "super-tunnel-rush",
+    "url": "/game/super-tunnel-rush.html",
+    "title": "SUPER TUNNEL RUSH",
+    "image": "/assets/upload/busqueda/super-tunnel-rush.png",
+    "video": "",
+    "description": "A high-speed endless runner game where players navigate through a vibrant, twisting tunnel, dodging obstacles and reacting quickly to survive as long as possible in this reflex-testing arcade challenge.",
+    "groups": "runner, obstacle-course, arcade, skill",
+    "keywords": "super tunnel rush game, endless runner, tunnel dodging game, online arcade game, reflex test, fast-paced action",
+    "main_categories": "action, kids, skill, running"
+  },
+  {
+    "slug": "super-santa-kicker",
+    "url": "/game/super-santa-kicker.html",
+    "title": "SUPER SANTA KICKER",
+    "image": "/assets/upload/busqueda/super-santa-kicker.png",
+    "video": "",
+    "description": "A festive sports game where Santa becomes a soccer star! Kick presents, snowballs, and holiday items to score goals in this merry football challenge with physics-based gameplay.",
+    "groups": "sports, football, holiday, physics, arcade",
+    "keywords": "super santa kicker game, christmas soccer, santa football, holiday sports game, physics soccer, festive arcade game",
+    "main_categories": "sport, kids, skill",
+    "special_state": {
+      "new_window": true
+    }
   }
 ]
