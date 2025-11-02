@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comments by Kadir</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+      :root {
+        --primary-color: #bb86fc;
+        --success-color: #03dac6;
+        --error-color: #cf6679;
+        --text-color: #e0e0e0;
+        --background-dark: #121212;
+        --card-dark: #1e1e1e;
+        --border-dark: #333;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: var(--background-dark);
+        color: var(--text-color);
+        line-height: 1.6;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid var(--primary-color);
+      }
+
+      h1 {
+        color: var(--primary-color);
+        margin-bottom: 8px;
+        font-size: 2.2rem;
+      }
+
+      .subtitle {
+        color: #aaa;
+        font-size: 1.1rem;
+        font-weight: 300;
+      }
+
+      /* Comments Section */
+      #comments-container {
+        background: var(--card-dark);
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        padding: 25px;
+        margin-bottom: 30px;
+        position: relative;
+      }
+
+      #comments {
+        max-height: 400px;
+        overflow-y: auto;
+        padding: 15px;
+        border: 1px solid var(--border-dark);
+        border-radius: 8px;
+        margin-bottom: 20px;
+        background: rgba(30, 30, 30, 0.7);
+      }
+
+      .comment {
+        padding: 15px;
+        border-bottom: 1px solid var(--border-dark);
+        transition: background 0.3s;
+        animation: fadeIn 0.5s ease-out;
+      }
+
+      .comment:last-child {
+        border-bottom: none;
+      }
+
+      .comment:hover {
+        background-color: rgba(55, 55, 55, 0.5);
+      }
+
+      .comment-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+      }
+
+      .comment-author {
+        font-weight: bold;
+        color: var(--primary-color);
+        font-size: 1.1rem;
+      }
+
+      .comment-date {
+        font-size: 0.85rem;
+        color: #999;
+      }
+
+      .comment-content {
+        line-height: 1.6;
+        white-space: pre-wrap;
+        padding-left: 5px;
+        margin-left: 5px;
+      }
+
+      .no-comments {
+        text-align: center;
+        padding: 30px;
+        color: #777;
+        font-style: italic;
+      }
+
+      /* Form Section */
+      #comment-form {
+        background: var(--card-dark);
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        padding: 25px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+        color: #ccc;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid var(--border-dark);
+        border-radius: 6px;
+        font-size: 16px;
+        transition: all 0.3s;
+        background: rgba(40, 40, 40, 0.5);
+        color: var(--text-color);
+      }
+
+      input:focus,
+      textarea:focus {
+        outline: none;
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 3px rgba(187, 134, 252, 0.2);
+      }
+
+      textarea {
+        min-height: 120px;
+        resize: vertical;
+        line-height: 1.5;
+      }
+
+      button {
+        background: var(--primary-color);
+        color: #121212;
+        border: none;
+        border-radius: 6px;
+        padding: 14px 25px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+      }
+
+      button:hover {
+        background: #a970f4;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+
+      button:disabled {
+        background: #555;
+        cursor: not-allowed;
+        transform: none;
+        box-shadow: none;
+        color: #999;
+      }
+
+      .spinner {
+        border: 2px solid rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+        border-top: 2px solid #121212;
+        width: 20px;
+        height: 20px;
+        animation: spin 1s linear infinite;
+        margin-right: 10px;
+        display: none;
+      }
+
+      /* Messages */
+      .message {
+        font-size: 0.95rem;
+        margin-top: 15px;
+        padding: 12px;
+        border-radius: 6px;
+        display: none;
+        text-align: center;
+        transition: all 0.3s;
+      }
+
+      .error-message {
+        background-color: rgba(207, 102, 121, 0.15);
+        color: var(--error-color);
+        border: 1px solid rgba(207, 102, 121, 0.3);
+      }
+
+      .success-message {
+        background-color: rgba(3, 218, 198, 0.15);
+        color: var(--success-color);
+        border: 1px solid rgba(3, 218, 198, 0.3);
+      }
+
+      .info-message {
+        background-color: rgba(187, 134, 252, 0.15);
+        color: var(--primary-color);
+        border: 1px solid rgba(187, 134, 252, 0.3);
+      }
+
+      /* Animations */
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #1a1a1a;
+        border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #444;
+        border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 650px) {
+        body {
+          padding: 15px;
+        }
+
+        header {
+          margin-bottom: 20px;
+        }
+
+        #comments-container,
+        #comment-form {
+          padding: 18px;
+        }
+
+        button {
+          padding: 12px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section id="comments-container">
+        <h2><i class="fas fa-comments"></i> Comments</h2>
+        <div id="comments">Loading comments...</div>
+        <div id="loading-message" class="info-message">Loading comments...</div>
+      </section>
+
+      <section id="comment-form">
+        <h2><i class="fas fa-pen"></i> Add a Comment</h2>
+        <div class="form-group">
+          <label for="nickname">Nickname (optional)</label>
+          <input type="text" id="nickname" placeholder="Your name or nickname" />
+        </div>
+
+        <div class="form-group">
+          <label for="commentText">Your Comment <span style="color: var(--error-color)">*</span></label>
+          <textarea id="commentText" placeholder="Write your thoughts here..." required></textarea>
+          <div id="text-error" class="error-message">Please write your comment</div>
+        </div>
+
+        <button id="sendBtn">
+          <div class="spinner"></div>
+          <span>Submit Comment</span>
+        </button>
+        <div id="submit-message" class="message"></div>
+      </section>
+    </main>
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+      import { getFirestore, collection, query, where, orderBy, onSnapshot } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+
+      // Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyDx101DUQr-LvhW8K7woVJ58_a74TkkgJM",
+        authDomain: "ucbgcomment.firebaseapp.com",
+        projectId: "ucbgcomment",
+        storageBucket: "ucbgcomment.appspot.com",
+        messagingSenderId: "1006694508007",
+        appId: "1:1006694508007:web:9f3a4413dbdeacfeee0942",
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
+
+      // Select elements
+      const commentsDiv = document.getElementById("comments");
+      const textError = document.getElementById("text-error");
+      const submitMessage = document.getElementById("submit-message");
+      const loadingMessage = document.getElementById("loading-message");
+      const sendBtn = document.getElementById("sendBtn");
+      const commentText = document.getElementById("commentText");
+      const nicknameInput = document.getElementById("nickname");
+      const spinner = sendBtn.querySelector(".spinner");
+      const buttonText = sendBtn.querySelector("span");
+
+      // Get page ID from URL
+      const pageId = window.location.pathname.replace(/\/$/, "") || "/";
+
+      // Loading state
+      let isLoading = false;
+
+      // Format date
+      function formatDate(date) {
+        const options = {
+          year: "numeric",
+          month: "short",
+          day: "numeric",
+          hour: "2-digit",
+          minute: "2-digit",
+        };
+        return new Date(date).toLocaleDateString("en-US", options);
+      }
+
+      // Load comments
+      function loadComments() {
+        isLoading = true;
+        loadingMessage.style.display = "block";
+        loadingMessage.textContent = "Loading comments...";
+        loadingMessage.className = "message info-message";
+
+        // Firestore query with the new index
+        const q = query(collection(db, "comments"), where("page", "==", pageId), orderBy("date", "desc"));
+
+        onSnapshot(
+          q,
+          (snapshot) => {
+            isLoading = false;
+            loadingMessage.style.display = "none";
+
+            if (snapshot.empty) {
+              commentsDiv.innerHTML = '<div class="no-comments">No comments yet. Be the first to comment!</div>';
+              return;
+            }
+
+            let html = "";
+            snapshot.forEach((doc) => {
+              const comment = doc.data();
+              const commentDate = comment.date.toDate ? comment.date.toDate() : comment.date;
+
+              html += `
+            <div class="comment">
+              <div class="comment-header">
+                <span class="comment-author">${comment.nickname || "Anonymous"}</span>
+                <span class="comment-date">${formatDate(commentDate)}</span>
+              </div>
+              <div class="comment-content">${comment.text}</div>
+            </div>
+          `;
+            });
+
+            commentsDiv.innerHTML = html;
+          },
+          (error) => {
+            console.error("Error loading comments:", error);
+            isLoading = false;
+            loadingMessage.textContent = "Error loading comments. Please try again.";
+            loadingMessage.className = "message error-message";
+            loadingMessage.style.display = "block";
+          }
+        );
+      }
+
+      // Form validation
+      function validateForm() {
+        let isValid = true;
+        submitMessage.textContent = "";
+        submitMessage.style.display = "none";
+
+        // Validate comment text
+        if (!commentText.value.trim()) {
+          textError.textContent = "Please write your comment";
+          textError.style.display = "block";
+          isValid = false;
+        } else {
+          textError.style.display = "none";
+        }
+
+        // Update button state
+        sendBtn.disabled = !isValid;
+
+        return isValid;
+      }
+
+      // Cloud Function URL
+      const functionUrl = "https://addcomment-rfkgsqj4ya-uc.a.run.app";
+
+      // Submit comment
+      sendBtn.addEventListener("click", async () => {
+        if (!validateForm()) return;
+
+        const nickname = nicknameInput.value.trim();
+        const text = commentText.value.trim();
+
+        // Set submitting state
+        sendBtn.disabled = true;
+        spinner.style.display = "block";
+        buttonText.textContent = "Submitting...";
+        submitMessage.textContent = "";
+        submitMessage.style.display = "none";
+
+        try {
+          const response = await fetch(functionUrl, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Origin: "https://ucbg.github.io",
+            },
+            body: JSON.stringify({
+              pageId: pageId,
+              nickname: nickname,
+              text: text,
+            }),
+            mode: "cors",
+          });
+
+          // Process response
+          const responseText = await response.text();
+          let data;
+          try {
+            data = JSON.parse(responseText);
+          } catch (e) {
+            console.error("JSON parse error:", e, "Response:", responseText);
+            throw new Error(`Invalid server response: ${responseText.substring(0, 100)}`);
+          }
+
+          if (response.ok && data.success) {
+            // Successful submission
+            commentText.value = "";
+            submitMessage.textContent = "✓ Comment submitted successfully!";
+            submitMessage.className = "message success-message";
+            submitMessage.style.display = "block";
+
+            // Reload comments
+            loadComments();
+
+            // Hide success message after 3 seconds
+            setTimeout(() => {
+              submitMessage.style.display = "none";
+            }, 3000);
+          } else {
+            // Server error
+            const errorMsg = data.error || `HTTP Error: ${response.status}`;
+            submitMessage.textContent = "Error: " + errorMsg;
+            submitMessage.className = "message error-message";
+            submitMessage.style.display = "block";
+          }
+        } catch (err) {
+          // Network error
+          console.error("Submission error:", err);
+          submitMessage.textContent = "Error: " + (err.message || "Could not connect to server");
+          submitMessage.className = "message error-message";
+          submitMessage.style.display = "block";
+        } finally {
+          // Reset state
+          sendBtn.disabled = false;
+          spinner.style.display = "none";
+          buttonText.textContent = "Submit Comment";
+        }
+      });
+
+      // Form input listeners
+      commentText.addEventListener("input", validateForm);
+      nicknameInput.addEventListener("input", validateForm);
+
+      // Load comments on page load
+      loadComments();
+
+      // Validate form on load
+      setTimeout(validateForm, 100);
+    </script>
+  </body>
+</html>
