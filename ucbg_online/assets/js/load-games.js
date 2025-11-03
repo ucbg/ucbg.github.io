@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     await loadGammeData();
 
-    const response = await fetch("/data-json/games.json?v=2.0.45");
+    const response = await fetch("/data-json/games.json?v=2.0.46");
     const allGames = await response.json();
 
     const games = filters
@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
     }
 
-    const response = await fetch("/data-json/games.json?v=2.0.45");
+    const response = await fetch("/data-json/games.json?v=2.0.46");
     const games = await response.json();
 
     function getRandomGames(games, count) {

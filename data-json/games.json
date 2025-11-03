@@ -262,7 +262,11 @@
     "description": "Hilarious endless runner featuring an angry grandma. Dodge obstacles and collect coins in this mobile-style browser game.",
     "groups": "endless, runner",
     "keywords": "Angry Gran Run game, endless runner game, funny mobile game, obstacle dodging game, casual runner",
-    "main_categories": "kids, running"
+    "main_categories": "kids, running",
+    "featured": true,
+    "servers": {
+      "server1": "https://angry-gran-run.netlify.app/"
+    }
   },
   {
     "slug": "apple-shooter",
