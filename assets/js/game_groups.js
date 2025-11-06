@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   try {
     // Oyunları JSON'dan çek
-    const response = await fetch("/data-json/games.json?v=2.0.51");
+    const response = await fetch("/data-json/games.json?v=2.0.52");
     const games = await response.json();
 
     let found = false;
