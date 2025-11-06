@@ -5967,8 +5967,12 @@
     "description": "An intense motorcycle racing game where players compete in high-speed championships, perform daring stunts, and customize their bikes to become the ultimate racing champion across various challenging tracks.",
     "groups": "racing, motorcycle, stunt, championship, skill",
     "keywords": "super bike the champion game, motorcycle racing, bike championship, online racing game, stunt bike, racing competition",
-    "main_categories": "racing, skill, action"
+    "main_categories": "racing, skill, action",
+    "servers": {
+      "server1": "https://port-bike-stunt.pages.dev"
+    }
   },
+
   {
     "slug": "sumo-party",
     "url": "/game/sumo-party.html",
