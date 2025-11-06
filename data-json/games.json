@@ -2684,7 +2684,8 @@
     "description": "Three-dimensional take on the classic OvO game with new perspective challenges and spatial puzzles.",
     "groups": "parkour, platformer",
     "keywords": "ovo 3 dimensions game, 3D platformer game, jumping puzzle game, obstacle course, indie adventure",
-    "main_categories": "adventure, kids, parkour, platform, skill, stickman, strategy"
+    "main_categories": "adventure, kids, parkour, platform, skill, stickman, strategy",
+    "featured": true
   },
   {
     "slug": "ovo",
@@ -3740,7 +3741,8 @@
     "description": "Endless runner game with princess characters escaping through subway tunnels.",
     "groups": "endless, runner",
     "keywords": "subway princess runner game, endless runner game, train dodging game, online platformer, mobile runner",
-    "main_categories": "kids, running"
+    "main_categories": "kids, running",
+    "featured": true
   },
   {
     "slug": "subway-runner",
@@ -4620,8 +4622,7 @@
     "description": "Battle royale shooter with zombie elements and building mechanics.",
     "groups": "battle-royale, io",
     "keywords": "zombs royale io game, zombie battle royale game, multiplayer .io game, online survival game, last man standing",
-    "main_categories": "action, adventure, io, kids, multiplayer, strategy, two-player",
-    "featured": true
+    "main_categories": "action, adventure, io, kids, multiplayer, strategy, two-player"
   },
   {
     "slug": "zuck-vs-musk-techbro-beatdown",
@@ -4632,8 +4633,7 @@
     "description": "Satirical fighting game featuring tech billionaires in ridiculous combat.",
     "groups": "fighting, satire",
     "keywords": "zuck vs musk game, billionaire battle game, funny fighting game, online brawler game, tech mogul fight",
-    "main_categories": "fighting, strategy",
-    "featured": true
+    "main_categories": "fighting, strategy"
   },
   {
     "slug": "18-wheeler-truck-parking-ez",
@@ -4716,8 +4716,7 @@
     "description": "Bizarre physics game combining rope mechanics with spider characters in Vegas.",
     "groups": "physics, puzzle",
     "keywords": "amazing rope vice spider vegas game, physics puzzle game, grappling hook game, online skill game, vegas theme",
-    "main_categories": "adventure, kids, puzzle, school, strategy",
-    "featured": true
+    "main_categories": "adventure, kids, puzzle, school, strategy"
   },
   {
     "slug": "block-the-pig",
@@ -5958,5 +5957,49 @@
     "special_state": {
       "new_window": true
     }
+  },
+  {
+    "slug": "super-bike-the-champion",
+    "url": "/game/super-bike-the-champion.html",
+    "title": "SUPER BIKE THE CHAMPION",
+    "image": "/assets/upload/busqueda/super-bike-the-champion.png",
+    "video": "",
+    "description": "An intense motorcycle racing game where players compete in high-speed championships, perform daring stunts, and customize their bikes to become the ultimate racing champion across various challenging tracks.",
+    "groups": "racing, motorcycle, stunt, championship, skill",
+    "keywords": "super bike the champion game, motorcycle racing, bike championship, online racing game, stunt bike, racing competition",
+    "main_categories": "racing, skill, action"
+  },
+  {
+    "slug": "sumo-party",
+    "url": "/game/sumo-party.html",
+    "title": "SUMO PARTY",
+    "image": "/assets/upload/busqueda/sumo-party.png",
+    "video": "",
+    "description": "A fun multiplayer party game where players control sumo wrestlers and try to push each other out of the ring. Features colorful characters, various arenas, and chaotic physics-based gameplay perfect for group play.",
+    "groups": "fighting, multiplayer, party, physics",
+    "keywords": "sumo party game, multiplayer fighting game, party game, online sumo wrestling, physics battle game, group party game",
+    "main_categories": "multiplayer, fighting, kids"
+  },
+  {
+    "slug": "stupid-zombies-2",
+    "url": "/game/stupid-zombies-2.html",
+    "title": "STUPID ZOMBIES 2",
+    "image": "/assets/upload/busqueda/stupid-zombies-2.png",
+    "video": "",
+    "description": "A physics-based puzzle shooter where players use ricochet shots to eliminate zombies with limited ammunition. Plan your angles carefully to take out multiple zombies with single shots across hundreds of challenging levels.",
+    "groups": "puzzle, shooter, zombie, physics, strategy",
+    "keywords": "stupid zombies 2 game, zombie puzzle shooter, ricochet shooting game, physics puzzle game, online zombie game, brain teaser shooter",
+    "main_categories": "puzzle, shooting, strategy"
+  },
+  {
+    "slug": "stock-car-hero",
+    "url": "/game/stock-car-hero.html",
+    "title": "STOCK CAR HERO",
+    "image": "/assets/upload/busqueda/stock-car-hero.png",
+    "video": "",
+    "description": "A racing game where players collect cards to build and upgrade their stock cars, then compete in championships and time trials to become the ultimate racing hero.",
+    "groups": "racing, strategy, card-collecting, upgrade",
+    "keywords": "stock car hero game, racing card game, car upgrade game, online racing championship, stock car collection, racing strategy game",
+    "main_categories": "car, racing, strategy"
   }
 ]
