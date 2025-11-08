@@ -1,5 +1,5 @@
 yeni oyun ekelem:
-https://github.com/gameinclassroom?page=5&tab=repositories
+https://github.com/gameinclassroom?page=6&tab=repositories
 
 oyun resimini hazirla assets/upload/busqueda klasorune yukle
 data-json/games.json dosyasina yeni oyun bilgilerini ekle

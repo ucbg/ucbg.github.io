@@ -6072,5 +6072,49 @@
     "groups": "physics, ragdoll, comedy, arcade, action",
     "keywords": "stickman crazy box game, physics comedy, ragdoll stickman, box interaction game, chaotic physics, stickman mayhem",
     "main_categories": "stickman, action, kids"
+  },
+  {
+    "slug": "stickman-army-the-resistance",
+    "url": "/game/stickman-army-the-resistance.html",
+    "title": "STICKMAN ARMY THE RESISTANCE",
+    "image": "/assets/upload/busqueda/stickman-army-the-resistance.png",
+    "video": "",
+    "description": "A strategic action game where you lead a stickman resistance army against oppressive forces. Command your troops, plan tactical assaults, and engage in intense battles to reclaim freedom across various combat zones.",
+    "groups": "strategy, action, fighting, army",
+    "keywords": "stickman army the resistance game, stickman strategy game, online army battle, resistance fighter game, tactical stickman combat",
+    "main_categories": "stickman, action, strategy"
+  },
+  {
+    "slug": "stair-race-3d",
+    "url": "/game/stair-race-3d.html",
+    "title": "STAIR RACE 3D",
+    "image": "/assets/upload/busqueda/stair-race-3d.png",
+    "video": "",
+    "description": "A competitive 3D runner game where players race up endless stairs against other characters. Tap to move faster and avoid obstacles while climbing as high as possible to beat opponents and reach the top.",
+    "groups": "runner, obstacle-course, arcade, racing, multiplayer",
+    "keywords": "stair race 3d game, 3d runner game, endless stairs, online racing game, obstacle avoidance, climbing game",
+    "main_categories": "action, running, skill, multiplayer"
+  },
+  {
+    "slug": "space-major-miner",
+    "url": "/game/space-major-miner.html",
+    "title": "SPACE MAJOR MINER",
+    "image": "/assets/upload/busqueda/space-major-miner.png",
+    "video": "",
+    "description": "A space mining adventure where players explore asteroids, extract valuable resources, and manage their mining operation while navigating the challenges of deep space exploration.",
+    "groups": "mining, space, exploration, management, adventure",
+    "keywords": "space major miner game, asteroid mining, space exploration, resource management, online mining game, space adventure",
+    "main_categories": "adventure, strategy"
+  },
+  {
+    "slug": "soccer-skills-champions-league",
+    "url": "/game/soccer-skills-champions-league.html",
+    "title": "SOCCER SKILLS CHAMPIONS LEAGUE",
+    "image": "/assets/upload/busqueda/soccer-skills-champions-league.png",
+    "video": "",
+    "description": "A soccer training game where players practice advanced football skills, tricks, and techniques to become champions. Master ball control, dribbling, shooting, and other essential skills in this comprehensive soccer training simulation.",
+    "groups": "sports, soccer, skill, training, football",
+    "keywords": "soccer skills champions league game, football training game, soccer tricks, ball control practice, online soccer skills, football champion training",
+    "main_categories": "sport, skill, kids"
   }
 ]
