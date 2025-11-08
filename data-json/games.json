@@ -6093,7 +6093,10 @@
     "description": "A competitive 3D runner game where players race up endless stairs against other characters. Tap to move faster and avoid obstacles while climbing as high as possible to beat opponents and reach the top.",
     "groups": "runner, obstacle-course, arcade, racing, multiplayer",
     "keywords": "stair race 3d game, 3d runner game, endless stairs, online racing game, obstacle avoidance, climbing game",
-    "main_categories": "action, running, skill, multiplayer"
+    "main_categories": "action, running, skill, multiplayer",
+    "special_state": {
+      "new_window": true
+    }
   },
   {
     "slug": "space-major-miner",
