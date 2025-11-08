@@ -6006,5 +6006,71 @@
     "groups": "racing, strategy, card-collecting, upgrade",
     "keywords": "stock car hero game, racing card game, car upgrade game, online racing championship, stock car collection, racing strategy game",
     "main_categories": "car, racing, strategy"
+  },
+  {
+    "slug": "stickman-warriors",
+    "url": "/game/stickman-warriors.html",
+    "title": "STICKMAN WARRIORS",
+    "image": "/assets/upload/busqueda/stickman-warriors.png",
+    "video": "",
+    "description": "An intense fighting game where stick figure warriors battle each other with various weapons and special moves in dynamic arenas. Features fast-paced combat and multiple game modes.",
+    "groups": "fighting, action, arcade",
+    "keywords": "stickman warriors game, stick figure fighting, online combat game, warrior battle, fighting game",
+    "main_categories": "stickman, action, fighting"
+  },
+  {
+    "slug": "stickman-ragdoll-crash-fun",
+    "url": "/game/stickman-ragdoll-crash-fun.html",
+    "title": "STICKMAN RAGDOLL CRASH FUN",
+    "image": "/assets/upload/busqueda/stickman-ragdoll-crash-fun.png",
+    "video": "",
+    "description": "A hilarious ragdoll physics game where stickman characters crash, tumble, and bounce in various scenarios. Create chaotic situations and watch the funny physics-based reactions of the stick figures.",
+    "groups": "physics, ragdoll, crash, comedy, arcade",
+    "keywords": "stickman ragdoll crash fun, physics comedy game, ragdoll stickman, online physics game, funny crash game, stickman comedy",
+    "main_categories": "stickman, kids, skill"
+  },
+  {
+    "slug": "stickman-golf",
+    "url": "/game/stickman-golf.html",
+    "title": "STICKMAN GOLF",
+    "image": "/assets/upload/busqueda/stickman-golf.png",
+    "video": "",
+    "description": "A fun physics-based golf game featuring stickman characters. Players aim and swing to hit golf balls into holes across various challenging courses with obstacles and different terrain types.",
+    "groups": "sports, physics, skill, arcade",
+    "keywords": "stickman golf game, physics golf, online sports game, stickman sports, precision game, mini golf",
+    "main_categories": "sport, kids, skill"
+  },
+  {
+    "slug": "stickman-fighter-mega-brawl",
+    "url": "/game/stickman-fighter-mega-brawl.html",
+    "title": "STICKMAN FIGHTER MEGA BRAWL",
+    "image": "/assets/upload/busqueda/stickman-fighter-mega-brawl.png",
+    "video": "",
+    "description": "An epic stickman fighting game featuring intense mega brawls with multiple characters, special attacks, and chaotic arena battles for ultimate combat supremacy.",
+    "groups": "fighting, action, arcade, brawl",
+    "keywords": "stickman fighter mega brawl, stickman fighting game, online brawl game, arcade combat, mega brawl battle",
+    "main_categories": "stickman, action, fighting"
+  },
+  {
+    "slug": "stickman-fight-ragdoll",
+    "url": "/game/stickman-fight-ragdoll.html",
+    "title": "STICKMAN FIGHT RAGDOLL",
+    "image": "/assets/upload/busqueda/stickman-fight-ragdoll.png",
+    "video": "",
+    "description": "A chaotic physics-based fighting game where stickman characters battle with ragdoll effects, creating hilarious and intense combat situations with floppy, realistic movements.",
+    "groups": "fighting, ragdoll, physics, action, arcade",
+    "keywords": "stickman fight ragdoll game, physics fighting game, ragdoll combat, online brawl, stickman battle, chaotic fighting",
+    "main_categories": "stickman, action, fighting"
+  },
+  {
+    "slug": "stickman-crazy-box",
+    "url": "/game/stickman-crazy-box.html",
+    "title": "STICKMAN CRAZY BOX",
+    "image": "/assets/upload/busqueda/stickman-crazy-box.png",
+    "video": "",
+    "description": "A chaotic physics-based game where stickman characters interact with various boxes in crazy environments. Features ragdoll effects, explosive scenarios, and hilarious stickman reactions to the unpredictable box interactions.",
+    "groups": "physics, ragdoll, comedy, arcade, action",
+    "keywords": "stickman crazy box game, physics comedy, ragdoll stickman, box interaction game, chaotic physics, stickman mayhem",
+    "main_categories": "stickman, action, kids"
   }
 ]

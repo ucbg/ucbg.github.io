@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   try {
     // Fetch games data
-    const response = await fetch("/data-json/games.json?v=2.0.53");
+    const response = await fetch("/data-json/games.json?v=2.0.54");
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
