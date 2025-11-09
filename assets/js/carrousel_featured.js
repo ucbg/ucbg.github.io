@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     await loadGammeData();
 
-    const response = await fetch("/data-json/games.json?v=2.0.61");
+    const response = await fetch("/data-json/games.json?v=2.0.62");
     const allGames = await response.json();
 
     // NEW GAMES: Son 20 oyunu al ve tersine çevir
