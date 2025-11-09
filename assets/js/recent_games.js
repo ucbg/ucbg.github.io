@@ -92,7 +92,7 @@ async function showRecentGames() {
   }
 
   try {
-    let response = await fetch("/data-json/games.json?v=2.0.60");
+    let response = await fetch("/data-json/games.json?v=2.0.61");
     let gamesData = await response.json();
 
     let cardsContainer = document.createElement("div");
