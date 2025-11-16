@@ -6274,5 +6274,27 @@
     "groups": "shooter, arcade, precision, action, skill",
     "keywords": "shootz game, online shooter, precision shooting game, arcade action, target practice, reflex game",
     "main_categories": "action, shooting, skill, kids"
+  },
+  {
+    "slug": "shoot-stickman",
+    "url": "/game/shoot-stickman.html",
+    "title": "SHOOT STICKMAN",
+    "image": "/assets/upload/busqueda/shoot-stickman.png",
+    "video": "",
+    "description": "A fast-paced shooting game where players aim and eliminate stickman targets in various challenging scenarios. Test your precision and reflexes in this addictive arcade-style shooter.",
+    "groups": "shooter, action, arcade, stickman",
+    "keywords": "shoot stickman game, stickman shooter, online shooting game, arcade action, target practice, precision game",
+    "main_categories": "action, shooting, stickman"
+  },
+  {
+    "slug": "sharkio",
+    "url": "/game/sharkio.html",
+    "title": "SHARKIO",
+    "image": "/assets/upload/busqueda/sharkio.png",
+    "video": "",
+    "description": "A multiplayer .io game where you play as a shark hunting for food and other players in the ocean. Eat smaller creatures and players to grow larger while avoiding bigger predators in this underwater battle for survival.",
+    "groups": "io, multiplayer, action, survival, arcade",
+    "keywords": "sharkio game, .io shark game, multiplayer shark game, online survival game, ocean predator game, eat and grow",
+    "main_categories": "io, multiplayer, action, kids"
   }
 ]
