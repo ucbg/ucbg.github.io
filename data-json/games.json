@@ -6119,5 +6119,93 @@
     "groups": "sports, soccer, skill, training, football",
     "keywords": "soccer skills champions league game, football training game, soccer tricks, ball control practice, online soccer skills, football champion training",
     "main_categories": "sport, skill, kids"
+  },
+  {
+    "slug": "slopey",
+    "url": "/game/slopey.html",
+    "title": "SLOPEY",
+    "image": "/assets/upload/busqueda/slopey.png",
+    "video": "",
+    "description": "A challenging puzzle game where players navigate a ball through sloping platforms and obstacles. Use precise timing and angle calculations to guide the ball to the goal while avoiding traps and pits.",
+    "groups": "puzzle, physics, skill, arcade",
+    "keywords": "slopey game, ball puzzle game, physics puzzle, online skill game, slope navigation, precision game",
+    "main_categories": "puzzle, kids, skill"
+  },
+  {
+    "slug": "snail-bob-6",
+    "url": "/game/snail-bob-6.html",
+    "title": "SNAIL BOB 6",
+    "image": "/assets/upload/busqueda/snail-bob-6.png",
+    "video": "",
+    "description": "A puzzle adventure game where players help Snail Bob navigate through challenging levels by solving environmental puzzles, avoiding obstacles, and using various tools to progress through his slow but steady journey.",
+    "groups": "puzzle, adventure, point-and-click, platformer",
+    "keywords": "snail bob 6 game, puzzle adventure, online puzzle game, snail bob series, point and click adventure, environmental puzzle",
+    "main_categories": "adventure, kids, puzzle"
+  },
+  {
+    "slug": "snake-is-mlg-edition",
+    "url": "/game/snake-is-mlg-edition.html",
+    "title": "SNAKE IS MLG EDITION",
+    "image": "/assets/upload/busqueda/snake-is-mlg-edition.png",
+    "video": "",
+    "description": "A hilarious MLG (Major League Gaming) parody of the classic Snake game featuring epic montage parodies, air horns, doritos, and mountain dew power-ups. Grow your snake while enjoying over-the-top gaming meme culture.",
+    "groups": "snake, arcade, meme, parody, retro",
+    "keywords": "snake is mlg edition, mlg snake game, gaming meme game, parody snake, online retro game, montage parody, air horn game",
+    "main_categories": "snake, kids"
+  },
+  {
+    "slug": "slope-tunnel",
+    "url": "/game/slope-tunnel.html",
+    "title": "SLOPE TUNNEL",
+    "image": "/assets/upload/busqueda/slope-tunnel.png",
+    "video": "",
+    "description": "A high-speed 3D running game where players navigate through a colorful tunnel with slopes and obstacles. Control your ball through twisting paths while avoiding obstacles and maintaining speed in this fast-paced arcade challenge.",
+    "groups": "runner, arcade, obstacle-course, skill",
+    "keywords": "slope tunnel game, 3d runner, online arcade game, obstacle avoidance, fast-paced running, tunnel navigation",
+    "main_categories": "action, kids, skill, running"
+  },
+  {
+    "slug": "slope-game",
+    "url": "/game/slope-game.html",
+    "title": "SLOPE GAME",
+    "image": "/assets/upload/busqueda/slope-game.png",
+    "video": "",
+    "description": "A fast-paced 3D running game where players control a ball rolling down a steep slope, avoiding obstacles and pitfalls while trying to survive as long as possible. Features simple controls but challenging gameplay that tests reflexes and precision.",
+    "groups": "runner, obstacle-course, arcade, skill",
+    "keywords": "slope game, 3d runner, online arcade game, obstacle avoidance, fast-paced running, slope ball game",
+    "main_categories": "action, kids, skill, running"
+  },
+  {
+    "slug": "slope-city",
+    "url": "/game/slope-city.html",
+    "title": "SLOPE CITY",
+    "image": "/assets/upload/busqueda/slope-city.png",
+    "video": "",
+    "description": "A fast-paced 3D running game set in an urban environment where players control a ball rolling through city-themed slopes, navigating between skyscrapers and avoiding obstacles in this high-speed arcade challenge.",
+    "groups": "runner, obstacle-course, arcade, skill",
+    "keywords": "slope city game, 3d runner, urban slope game, online arcade game, city obstacle course, fast-paced running",
+    "main_categories": "action, kids, skill, running"
+  },
+  {
+    "slug": "slope-3",
+    "url": "/game/slope-3.html",
+    "title": "SLOPE 3",
+    "image": "/assets/upload/busqueda/slope-3.png",
+    "video": "",
+    "description": "The third installment in the popular Slope series, featuring enhanced 3D graphics and more challenging gameplay. Control a ball rolling down a steep slope at high speeds, navigating through obstacles, sharp turns, and treacherous drops while trying to survive as long as possible.",
+    "groups": "runner, obstacle-course, arcade, skill",
+    "keywords": "slope 3 game, 3d runner, online arcade game, obstacle avoidance, fast-paced running, slope ball game, slope series",
+    "main_categories": "action, kids, skill, running"
+  },
+  {
+    "slug": "slope-2-multiplayer",
+    "url": "/game/slope-2-multiplayer.html",
+    "title": "SLOPE 2 MULTIPLAYER",
+    "image": "/assets/upload/busqueda/slope-2-multiplayer.png",
+    "video": "",
+    "description": "A multiplayer version of the popular Slope game where you can race against other players in real-time. Control your ball down steep slopes while competing to be the first to finish or survive the longest in this fast-paced 3D racing challenge.",
+    "groups": "runner, obstacle-course, arcade, skill, multiplayer",
+    "keywords": "slope 2 multiplayer game, 3d runner, online multiplayer racing, obstacle avoidance, competitive slope game, real-time racing",
+    "main_categories": "action, kids, skill, running, multiplayer"
   }
 ]
