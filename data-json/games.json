@@ -5295,6 +5295,17 @@
     "main_categories": "action, multiplayer, strategy"
   },
   {
+    "slug": "slope-3",
+    "url": "/game/slope-3.html",
+    "title": "SLOPE 3",
+    "image": "/assets/upload/busqueda/slope-3.png",
+    "video": "",
+    "description": "The third installment in the popular Slope series, featuring enhanced 3D graphics and more challenging gameplay. Control a ball rolling down a steep slope at high speeds, navigating through obstacles, sharp turns, and treacherous drops while trying to survive as long as possible.",
+    "groups": "runner, obstacle-course, arcade, skill",
+    "keywords": "slope 3 game, 3d runner, online arcade game, obstacle avoidance, fast-paced running, slope ball game, slope series",
+    "main_categories": "action, kids, skill, running"
+  },
+  {
     "slug": "super-mx-the-champion",
     "url": "/game/super-mx-the-champion.html",
     "title": "SUPER MX THE CHAMPION",
@@ -6186,17 +6197,7 @@
     "keywords": "slope city game, 3d runner, urban slope game, online arcade game, city obstacle course, fast-paced running",
     "main_categories": "action, kids, skill, running"
   },
-  {
-    "slug": "slope-3",
-    "url": "/game/slope-3.html",
-    "title": "SLOPE 3",
-    "image": "/assets/upload/busqueda/slope-3.png",
-    "video": "",
-    "description": "The third installment in the popular Slope series, featuring enhanced 3D graphics and more challenging gameplay. Control a ball rolling down a steep slope at high speeds, navigating through obstacles, sharp turns, and treacherous drops while trying to survive as long as possible.",
-    "groups": "runner, obstacle-course, arcade, skill",
-    "keywords": "slope 3 game, 3d runner, online arcade game, obstacle avoidance, fast-paced running, slope ball game, slope series",
-    "main_categories": "action, kids, skill, running"
-  },
+
   {
     "slug": "slope-2-multiplayer",
     "url": "/game/slope-2-multiplayer.html",
@@ -6207,5 +6208,71 @@
     "groups": "runner, obstacle-course, arcade, skill, multiplayer",
     "keywords": "slope 2 multiplayer game, 3d runner, online multiplayer racing, obstacle avoidance, competitive slope game, real-time racing",
     "main_categories": "action, kids, skill, running, multiplayer"
+  },
+  {
+    "slug": "sling-kong",
+    "url": "/game/sling-kong.html",
+    "title": "SLING KONG",
+    "image": "/assets/upload/busqueda/sling-kong.png",
+    "video": "",
+    "description": "A vertical climbing game where players help Kong the gorilla swing upward using stretchy vines, avoiding obstacles and collecting bananas while ascending as high as possible in this physics-based arcade challenge.",
+    "groups": "climbing, physics, arcade, skill, adventure",
+    "keywords": "sling kong game, gorilla climbing game, vine swinging game, physics arcade, online climbing game, banana collection, vertical adventure",
+    "main_categories": "adventure, kids, skill, running"
+  },
+  {
+    "slug": "slime-road",
+    "url": "/game/slime-road.html",
+    "title": "SLIME ROAD",
+    "image": "/assets/upload/busqueda/slime-road.png",
+    "video": "",
+    "description": "A vibrant arcade game where you control a slime character sliding down a colorful road, dodging obstacles and collecting gems to achieve the highest score in this fast-paced challenge.",
+    "groups": "runner, obstacle-course, arcade, skill",
+    "keywords": "slime road game, online arcade, obstacle dodging, slime adventure, running game, fast-paced action",
+    "main_categories": "action, kids, skill, running"
+  },
+  {
+    "slug": "slime-laboratory",
+    "url": "/game/slime-laboratory.html",
+    "title": "SLIME LABORATORY",
+    "image": "/assets/upload/busqueda/slime-laboratory.png",
+    "video": "",
+    "description": "A fun science puzzle game where you mix different chemicals and ingredients in the laboratory to create various types of colorful slimes. Experiment with recipes and discover new slime variations in this educational chemistry-inspired game.",
+    "groups": "puzzle, science, education, chemistry, simulation",
+    "keywords": "slime laboratory game, science puzzle, chemistry game, online educational game, slime creation, experiment game",
+    "main_categories": "puzzle, kids, strategy"
+  },
+  {
+    "slug": "skibidi-shooter",
+    "url": "/game/skibidi-shooter.html",
+    "title": "SKIBIDI SHOOTER",
+    "image": "/assets/upload/busqueda/skibidi-shooter.png",
+    "video": "",
+    "description": "A comedic first-person shooter based on the popular Skibidi Toilet meme series. Battle against animated toilet enemies in this parody FPS game featuring meme-inspired humor and fast-paced action.",
+    "groups": "shooter, action, comedy, meme, fps",
+    "keywords": "skibidi shooter game, skibidi toilet game, meme shooter, parody fps, online comedy game, toilet enemy game",
+    "main_categories": "action, shooting"
+  },
+  {
+    "slug": "sink-it",
+    "url": "/game/sink-it.html",
+    "title": "SINK IT",
+    "image": "/assets/upload/busqueda/sink-it.png",
+    "video": "",
+    "description": "A fun basketball shooting game where players aim and throw balls to sink baskets from various positions and angles. Test your precision and timing to score points in this addictive arcade sports challenge.",
+    "groups": "sports, basketball, skill, arcade, precision",
+    "keywords": "sink it game, basketball shooter, online sports game, precision shooting, arcade basketball, ball throwing game",
+    "main_categories": "sport, skill, kids"
+  },
+  {
+    "slug": "shootz",
+    "url": "/game/shootz.html",
+    "title": "SHOOTZ",
+    "image": "/assets/upload/busqueda/shootz.png",
+    "video": "",
+    "description": "A fast-paced shooting game where players aim and fire at targets with precision timing. Test your reflexes and accuracy in this challenging arcade-style shooter with various levels and increasing difficulty.",
+    "groups": "shooter, arcade, precision, action, skill",
+    "keywords": "shootz game, online shooter, precision shooting game, arcade action, target practice, reflex game",
+    "main_categories": "action, shooting, skill, kids"
   }
 ]
