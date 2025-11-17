@@ -44,8 +44,10 @@
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/Inter-ExtraBold.woff2?v=3.19" crossorigin="anonymous" />
 
     <link rel="preload" as="style" href="/assets/theme/css/theme.css?v=3.1.9" />
+    <link rel="preload" as="style" href="/assets/theme/css/navbar-modern.css?v=1.0.0" />
     <link rel="preload" as="script" href="/assets/theme/js/jquery.min.js?v=1.0.0" />
     <link media="all" rel="stylesheet" href="/assets/theme/css/theme.css?v=3.1.9" type="text/css" />
+    <link media="all" rel="stylesheet" href="/assets/theme/css/navbar-modern.css?v=1.0.0" type="text/css" />
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="shortcut icon" href="/favicon.ico" />
@@ -197,105 +199,119 @@
       </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg layout-header navbar-light">
+    <nav class="navbar-modern">
       <div class="container-fluid">
-        <button
-          class="navbar-toggler border-0 shadow-none px-0"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbar"
-          aria-controls="navbar"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-          style="visibility: hidden"
-        >
-          <span class="navbar-toggler-icon"></span>
+        <!-- Menu Toggle Button -->
+        <button class="navbar-menu-toggle" id="navbarMenuToggle" aria-label="Toggle sidebar">
+          <svg class="menu-icon-open" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M19 4C19.5523 4 20 3.55229 20 3C20 2.44772 19.5523 2 19 2L3 2C2.44772 2 2 2.44772 2 3C2 3.55228 2.44772 4 3 4L19 4ZM20.47 7.95628L15.3568 11.152C14.7301 11.5437 14.7301 12.4564 15.3568 12.848L20.47 16.0438C21.136 16.4601 22 15.9812 22 15.1958V8.80427C22 8.01884 21.136 7.54 20.47 7.95628ZM11 13C11.5523 13 12 12.5523 12 12C12 11.4477 11.5523 11 11 11L3 11C2.44771 11 2 11.4477 2 12C2 12.5523 2.44771 13 3 13L11 13ZM20 21C20 21.5523 19.5523 22 19 22L3 22C2.44771 22 2 21.5523 2 21C2 20.4477 2.44771 20 3 20L19 20C19.5523 20 20 20.4477 20 21Z"/>
+          </svg>
+          <svg class="menu-icon-close" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M21 4C21.5523 4 22 3.55229 22 3C22 2.44772 21.5523 2 21 2L5 2C4.44772 2 4 2.44772 4 3C4 3.55228 4.44772 4 5 4L21 4ZM3.53 16.0438L8.6432 12.848C9.26987 12.4563 9.26987 11.5437 8.6432 11.152L3.53 7.95625C2.86395 7.53997 2 8.01881 2 8.80425V15.1958C2 15.9812 2.86395 16.46 3.53 16.0438ZM21 13C21.5523 13 22 12.5523 22 12C22 11.4477 21.5523 11 21 11L13 11C12.4477 11 12 11.4477 12 12C12 12.5523 12.4477 13 13 13L21 13ZM22 21C22 21.5523 21.5523 22 21 22L5 22C4.44771 22 4 21.5523 4 21C4 20.4477 4.44771 20 5 20L21 20C21.5523 20 22 20.4477 22 21Z"/>
+          </svg>
         </button>
-        <a href="/index.html" class="navbar-brand dark-logo me-lg-4">
-          <img src="/assets/static/logo.png" height="30" alt="Unblocked Cool Browser Games (UCBG)" />
+        
+        <!-- Logo -->
+        <a href="/index.html" class="navbar-logo">
+          <img src="/assets/static/logo.png" alt="UCBG Logo" class="dark-logo" />
+          <img src="/assets/static/dark_logo.png" alt="UCBG Logo" class="light-logo" />
         </a>
-        <a href="/index.html" class="navbar-brand light-logo me-lg-4">
-          <img src="/assets/static/dark_logo.png" height="30" alt="Unblocked Cool Browser Games (UCBG)" />
-        </a>
-        <button
-          class="navbar-toggler border-0 shadow-none px-0"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbar"
-          aria-controls="navbar"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <svg width="24" height="24" stroke="currentColor" stroke-width="1.75" fill="none">
+
+        <!-- Search Bar -->
+        <form class="navbar-search" action="/search.html" method="get" autocomplete="off">
+          <div class="search-input-wrapper">
+            <svg width="18" height="18" stroke="currentColor" stroke-width="1.75" fill="none">
+              <use xlink:href="/assets/sprite/sprite.svg#search"></use>
+            </svg>
+            <input
+              type="text"
+              name="q"
+              id="search"
+              placeholder="Search games..."
+              required="true"
+              minlength="3"
+              autocomplete="off"
+            />
+          </div>
+        </form>
+
+        <!-- Action Buttons -->
+        <ul class="navbar-actions">
+          <li>
+            <button class="nav-action-btn" id="theme-toggle-btn" title="Toggle Theme">
+              <svg id="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="5"/>
+                <line x1="12" y1="1" x2="12" y2="3"/>
+                <line x1="12" y1="21" x2="12" y2="23"/>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                <line x1="1" y1="12" x2="3" y2="12"/>
+                <line x1="21" y1="12" x2="23" y2="12"/>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+              </svg>
+              <svg id="theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+              </svg>
+              <span class="nav-tooltip">Toggle Theme</span>
+            </button>
+          </li>
+          <li>
+            <button class="nav-action-btn" id="chat-button" title="Chat" style="position: relative;">
+              <img src="/assets/icons/chat.svg" alt="Chat" />
+              <span class="nav-tooltip">Chat</span>
+              <span class="nav-badge" id="chat-badge" style="display: none;">1</span>
+            </button>
+          </li>
+          <li>
+            <button class="nav-action-btn" id="favoriteDrawerBtn" onclick="toggleFavoritesDrawer(event)" title="Favorites" style="position: relative;">
+              <svg id="favoriteDrawerIcon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 C2 6 4 4 6.5 4 c1.74 0 3.41 1.01 4.13 2.44h.75 C14.09 5.01 15.76 4 17.5 4 C20 4 22 6 22 8.5 c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+              </svg>
+              <span class="nav-tooltip">Favorites</span>
+              <span class="nav-badge favorites-badge" id="favorites-badge" style="display: none;">0</span>
+            </button>
+          </li>
+          <li>
+            <button class="nav-action-btn" id="recentGamesBtn" onclick="toggleRecentGamesDrawer(event)" title="Recently Played" style="position: relative;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+              <span class="nav-tooltip">Recently Played</span>
+              <span class="nav-badge recent-badge" id="recent-badge" style="display: none;">0</span>
+            </button>
+          </li>
+          <li>
+            <button class="nav-action-btn" onclick="window.open('https://www.youtube.com/@unblocked-game', '_blank');" title="YouTube">
+              <img src="/assets/icons/youtube.svg" alt="YouTube" />
+              <span class="nav-tooltip">Follow us</span>
+            </button>
+          </li>
+          <li>
+            <button class="nav-action-btn" onclick="window.open('/category/new.html', '_blank');" title="New Games">
+              <img src="/assets/icons/new.svg" alt="New Games" />
+              <span class="nav-tooltip">New Games</span>
+            </button>
+          </li>
+          <li>
+            <button class="nav-action-btn online-users" title="Online Players" onclick="toggleOnlineUsersDropdown(event)">
+              <span class="online-users-icon">
+                <img src="/assets/icons/classroom-black.svg" alt="Players" class="sun-icon" />
+                <img src="/assets/icons/classroom-white.svg" alt="Players" class="moon-icon" />
+              </span>
+              <span class="online-users-count" id="online-users">0</span>
+              <span class="nav-tooltip">Online Players</span>
+            </button>
+          </li>
+        </ul>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="navbar-mobile-toggle" title="Toggle Search">
+          <svg width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
             <use xlink:href="/assets/sprite/sprite.svg#search"></use>
           </svg>
         </button>
-        <div class="collapse navbar-collapse" id="navbar">
-          <form class="form-search w-xxl-300 w-xl-250 ms-xl-4 mb-3 mb-lg-0" action="/search.html" method="get" autocomplete="off">
-            <div class="input-group input-group-inline shadow-none">
-              <span class="input-group-text bg-transparent border-0 text-gray-500 shadow-none ps-0 pe-3">
-                <svg width="18" height="18" stroke="currentColor" stroke-width="1.75" fill="none">
-                  <use xlink:href="/assets/sprite/sprite.svg#search"></use>
-                </svg>
-              </span>
-              <input
-                type="text"
-                name="q"
-                class="form-control form-control-flush bg-transparent border-0 ps-0"
-                id="search"
-                placeholder="Text to search..."
-                aria-label="Search"
-                required="true"
-                minlength="3"
-                autocomplete="off"
-              />
-            </div>
-          </form>
-
-          <ul class="navbar-nav mb-2 mb-lg-0 fw-semibold align-items-xl-center ms-xl-auto flex" style="display: flex; flex-direction: row">
-            <li class="nav-item">
-              <button class="theme-toggle" id="chat-button">
-                <span class=""><img src="/assets/icons/chat.svg" /></span>
-                <span class="tooltip">Chat</span>
-              </button>
-            </li>
-            <li>
-              <button class="theme-toggle" onclick="window.open('https://www.youtube.com/@unblocked-game', '_blank');">
-                <img src="/assets/icons/youtube.svg" alt="YouTube Icon" style="height: 38px" />
-                <span class="tooltip">Follow us to access the latest unblocked site.</span>
-              </button>
-            </li>
-            <li>
-              <button class="theme-toggle" onclick="window.open('https://ucbg.github.io/category/new.html', '_blank');">
-                <img src="/assets/icons/new.svg" alt="New Games" style="height: 38px" />
-                <span class="tooltip">New Games</span>
-              </button>
-            </li>
-            <li class="nav-item">
-              <button class="theme-toggle" id="favoriteDrawerBtn" onclick="toggleFavoritesDrawer()" title="Favorites">
-                <svg id="favoriteDrawerIcon" width="20" height="20" viewBox="0 0 24 24" fill="hotpink" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
-                           C2 6 4 4 6.5 4
-                           c1.74 0 3.41 1.01 4.13 2.44h.75
-                           C14.09 5.01 15.76 4 17.5 4
-                           C20 4 22 6 22 8.5
-                           c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-                  />
-                </svg>
-                <span class="tooltip">Favorites</span>
-              </button>
-            </li>
-            <li class="nav-item">
-              <button class="theme-toggle" style="width: 150px; border-radius: 10px">
-                <span class="sun-icon"><img src="/assets/icons/classroom-black.svg" /></span>
-                <span class="moon-icon"><img src="/assets/icons/classroom-white.svg" /></span>
-                &nbsp;<span id="online-users">&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                <span class="tooltip">Online Players: Pretending to learn, but actually leveling up.</span>
-              </button>
-            </li>
-          </ul>
-        </div>
       </div>
     </nav>
 
@@ -333,476 +349,6 @@
             </div>
           </a>
         </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card large game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card large game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card large game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card large game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card large game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <a class="card large">
-            <ins
-              class="adsbygoogle"
-              style="display: inline-block; width: 260px; height: 260px"
-              data-ad-client="ca-pub-9429401123792626"
-              data-ad-slot="3411930037"
-            ></ins>
-          </a>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
           <div class="card large game-card">
           <a href="#" class="card-link">
             <picture>
@@ -870,6 +416,28 @@
           </a>
         </div>
           <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
           <a href="#" class="card-link">
             <picture>
               <source
@@ -1023,7 +591,7 @@
             </div>
           </a>
         </div>
-          <div class="card game-card">
+          <div class="card large game-card">
           <a href="#" class="card-link">
             <picture>
               <source
@@ -1045,7 +613,7 @@
             </div>
           </a>
         </div>
-          <div class="card large game-card">
+          <div class="card game-card">
           <a href="#" class="card-link">
             <picture>
               <source
@@ -1251,454 +819,6 @@
             </div>
           </a>
         </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card large game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card large game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card large game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card large game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card large game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <a class="card large">
-            <ins
-              class="adsbygoogle"
-              style="display: inline-block; width: 260px; height: 260px"
-              data-ad-client="ca-pub-9429401123792626"
-              data-ad-slot="3411930037"
-            ></ins>
-          </a>
-          <div class="card large game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
           <div class="card large game-card">
           <a href="#" class="card-link">
             <picture>
@@ -1788,946 +908,6 @@
           </a>
         </div>
           <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card large game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card large game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card large game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <a class="card large">
-            <ins
-              class="adsbygoogle"
-              style="display: inline-block; width: 260px; height: 260px"
-              data-ad-client="ca-pub-9429401123792626"
-              data-ad-slot="3411930037"
-            ></ins>
-          </a>
-          <div class="card large game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card large game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card large game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card large game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card large game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card large game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card large game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card large game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <a class="card large">
-            <ins
-              class="adsbygoogle"
-              style="display: inline-block; width: 260px; height: 260px"
-              data-ad-client="ca-pub-9429401123792626"
-              data-ad-slot="3411930037"
-            ></ins>
-          </a>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card large game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card game-card">
-          <a href="#" class="card-link">
-            <picture>
-              <source
-                data-src=""
-                type="image/png"
-                class="img-fluid"
-                srcset=""
-              />
-              <img
-                data-src=""
-                alt=""
-                class="lazyload img-fluid"
-                width="500"
-                height="500"
-              />
-            </picture>
-            <div class="card-body">
-              <h3></h3>
-            </div>
-          </a>
-        </div>
-          <div class="card large game-card">
           <a href="#" class="card-link">
             <picture>
               <source
@@ -2904,6 +1084,50 @@
           </a>
         </div>
           <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
           <a href="#" class="card-link">
             <picture>
               <source
@@ -3021,6 +1245,270 @@
             </div>
           </a>
         </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
           <div class="card large game-card">
           <a href="#" class="card-link">
             <picture>
@@ -3175,6 +1663,212 @@
             </div>
           </a>
         </div>
+          <a class="card large">
+            <ins
+              class="adsbygoogle"
+              style="display: inline-block; width: 260px; height: 260px"
+              data-ad-client="ca-pub-9429401123792626"
+              data-ad-slot="3411930037"
+            ></ins>
+          </a>
+          <div class="card large game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
           <div class="card game-card">
           <a href="#" class="card-link">
             <picture>
@@ -3220,6 +1914,1328 @@
           </a>
         </div>
           <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <a class="card large">
+            <ins
+              class="adsbygoogle"
+              style="display: inline-block; width: 260px; height: 260px"
+              data-ad-client="ca-pub-9429401123792626"
+              data-ad-slot="3411930037"
+            ></ins>
+          </a>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <a class="card large">
+            <ins
+              class="adsbygoogle"
+              style="display: inline-block; width: 260px; height: 260px"
+              data-ad-client="ca-pub-9429401123792626"
+              data-ad-slot="3411930037"
+            ></ins>
+          </a>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <a class="card large">
+            <ins
+              class="adsbygoogle"
+              style="display: inline-block; width: 260px; height: 260px"
+              data-ad-client="ca-pub-9429401123792626"
+              data-ad-slot="3411930037"
+            ></ins>
+          </a>
+          <div class="card large game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card game-card">
+          <a href="#" class="card-link">
+            <picture>
+              <source
+                data-src=""
+                type="image/png"
+                class="img-fluid"
+                srcset=""
+              />
+              <img
+                data-src=""
+                alt=""
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3></h3>
+            </div>
+          </a>
+        </div>
+          <div class="card large game-card">
           <a href="#" class="card-link">
             <picture>
               <source
@@ -3288,6 +3304,8 @@
     <script defer="" src="/assets/theme/js/bootstrap.js?v=1.0.1"></script>
     <script defer="" src="/assets/theme/js/lazysizes.js?v=1.0.0"></script>
     <script defer="" src="/assets/theme/js/main.js?v=1.0.0"></script>
+    <script src="/assets/js/favorite.js"></script>
+    <script defer="" src="/assets/theme/js/navbar-modern.js?v=1.0.0"></script>
     <script src="https://comment.silecekci.com/embed.js"></script>
     <div class="footer py-2 mt-auto">
       <div class="container-fluid">
@@ -3336,7 +3354,6 @@
     <script src="/assets/js/analytics_ucbg_v1.js"></script>
     <script src="/assets/js/adsense_ucbg_v1.js"></script>
     <script src="/assets/js/fullscreen.js?v=2.0.2"></script>
-    <script src="/assets/js/favorite.js"></script>
     <script src="/assets/js/video_on_card.js"></script>
     <script type="module" src="/assets/js/ucbg_chat_v12.js?v=2.0.2"></script>
     <script src="/assets/js/live-search.js"></script>
