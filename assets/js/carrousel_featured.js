@@ -1,1 +1,389 @@
-document.addEventListener("DOMContentLoaded",async()=>{const e=document.querySelector(".index-page-games-list-new"),t=document.querySelector(".index-page-games-list-featured");if(!e||!t)return;const a=e.querySelector(".card-carousel"),n=t.querySelector(".card-carousel");if(!a||!n)return;a.hasAttribute("data-no-ads");try{async function fetchJson(e){try{let t=await fetch(e);if(!t.ok)throw new Error("JSON yüklenemedi");return await t.json()}catch(e){return console.error("Hata:",e),null}}await async function loadGammeData(){let e=await fetchJson("/data-json/auth1.json"),t=await fetchJson("/data-json/auth2.json");if(!e||!t)return void(document.body.innerHTML="");let a=window.location.origin.replace(/https?:\/\//,""),n=await crypto.subtle.digest("SHA-256",(new TextEncoder).encode(e.text+t.text+a)),r=Array.from(new Uint8Array(n)).map(e=>e.toString(16).padStart(2,"0")).join("").substring(0,16);(await fetchJson("/data-json/validHashes.json")).includes(r)||setTimeout(()=>{const e=atob("aHR0cHM6Ly91Y2JnLmdpdGh1Yi5pby8=");window.location.href=e},0)}();const r=await fetch("/data-json/games.json?v=2.0.80"),o=await r.json(),s=o.slice(-20).reverse();let i=o.filter(e=>!0===e.featured);const l=n.getAttribute("data-filter"),d=l?l.toLowerCase().split(",").map(e=>e.trim()):null;d&&(i=i.filter(e=>{if(!e.groups)return!1;const t=e.groups.toLowerCase().split(",").map(e=>e.trim());return d.some(e=>t.includes(e))}));const c=i.slice(-15).reverse();if(!window.adsbygoogle){const u=document.createElement("script");u.async=!0,u.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",document.head.appendChild(u)}function revealCards(){document.querySelectorAll(".card").forEach((e,t)=>{setTimeout(()=>{e.classList.add("visible")},10*t)})}s.forEach((e,t)=>{a.insertAdjacentHTML("beforeend",`<a href="${e.url}" class="card card_featured">\n            <picture>\n              <source data-srcset="${e.image}" type="image/png" class="img-fluid" />\n              <img data-src="${e.image}" alt="${e.title}" class="lazyload img-fluid" width="500" height="500" style="height: 200px; object-fit: cover;"/>\n            </picture>\n            <div class="card-body"><h3 style=" height: 28px; top: 155px; -webkit-line-clamp: 2;">${e.title}</h3></div>\n          </a>`)}),c.forEach((e,t)=>{n.insertAdjacentHTML("beforeend",`<a href="${e.url}" class="card card_featured">\n            <picture>\n              <source data-srcset="${e.image}" type="image/png" class="img-fluid" />\n              <img data-src="${e.image}" alt="${e.title}" class="lazyload img-fluid" width="500" height="500" style="height: 200px; object-fit: cover;"/>\n            </picture>\n            <div class="card-body"><h3 style=" height: 28px; top: 155px; -webkit-line-clamp: 2;">${e.title}</h3></div>\n          </a>`)}),window.LazyLoad&&new LazyLoad({elements_selector:".lazyload"}),window.addEventListener("load",revealCards),setTimeout(revealCards,500),initCarousel(e),initCarousel(t)}catch(m){console.error("Games yüklenirken hata oluştu:",m)}function initCarousel(e){const t=e.querySelector(".card-carousel"),a=e.querySelector(".arrow.right"),n=e.querySelector(".arrow.left");t&&a&&n&&setTimeout(()=>{const r=t.querySelector(".card_featured");if(!r)return void console.error("Kart bulunamadı!");const o=window.getComputedStyle(r),s=r.offsetWidth+parseInt(o.marginRight)+parseInt(o.marginLeft);let i=0,l=!1,d=0,c=0,u=!1,m=0,p=null,y=0;const f=t.children.length,g=e.offsetWidth,h=s*f-g;function cancelMomentum(){p&&(cancelAnimationFrame(p),p=null)}function momentumLoop(){i+=m,i<0&&(i=0,m=0),i>h&&(i=h,m=0),t.style.transform=`translateX(-${i}px)`,updateArrowVisibility(),m*=.95,Math.abs(m)>.5&&(p=requestAnimationFrame(momentumLoop))}function dragStart(e){l=!0,u=!1,d=e.pageX||e.touches[0].pageX,c=i,y=i,m=0,t.style.cursor="grabbing",t.style.transition="none",cancelMomentum()}function dragMove(e){if(!l)return;const a=1.5*((e.pageX||e.touches[0].pageX)-d);Math.abs(a)>5&&(u=!0,e.preventDefault());let n=c-a;n<0&&(n=0),n>h&&(n=h),m=y-n,y=n,i=n,t.style.transform=`translateX(-${i}px)`}function dragEnd(){l&&(l=!1,t.style.cursor="grab",t.style.transition="transform 0.3s ease-out",updateArrowVisibility(),Math.abs(m)>2&&function beginMomentum(){cancelMomentum(),p=requestAnimationFrame(momentumLoop)}())}t.style.cursor="grab",updateArrowVisibility(),t.addEventListener("dragstart",e=>(e.preventDefault(),!1)),t.querySelectorAll("a, img").forEach(e=>{e.ondragstart=()=>!1}),a.addEventListener("click",()=>{cancelMomentum(),i+=3*s,i>h&&(i=h),t.style.transform=`translateX(-${i}px)`,updateArrowVisibility()}),n.addEventListener("click",()=>{cancelMomentum(),i-=3*s,i<0&&(i=0),t.style.transform=`translateX(-${i}px)`,updateArrowVisibility()}),t.addEventListener("mousedown",dragStart),t.addEventListener("touchstart",dragStart,{passive:!0}),document.addEventListener("mousemove",dragMove),document.addEventListener("touchmove",dragMove,{passive:!1}),document.addEventListener("mouseup",dragEnd),document.addEventListener("touchend",dragEnd),t.addEventListener("mouseleave",dragEnd),t.querySelectorAll(".card").forEach(e=>{e.addEventListener("click",e=>{u&&(e.preventDefault(),e.stopPropagation())})});let w,v=!1;function updateArrowVisibility(){i>0?(n.style.display="flex",n.style.opacity="1"):n.style.display="none",i<h?(a.style.display="flex",a.style.opacity="1"):a.style.display="none"}t.addEventListener("wheel",e=>{const a=e.deltaX,n=Math.abs(e.deltaY),r=Math.abs(a);r>0&&r>.5*n&&(e.preventDefault(),v||(t.style.transition="none",v=!0),clearTimeout(w),i+=a,i<0&&(i=0),i>h&&(i=h),t.style.transform=`translateX(-${i}px)`,updateArrowVisibility(),w=setTimeout(()=>{t.style.transition="transform 0.3s ease-out",v=!1},150))},{passive:!1}),t.style.transition="transform 0.3s ease-in-out",window.addEventListener("resize",()=>{cancelMomentum();const a=e.offsetWidth,n=s*f-a;i>n&&(i=n,t.style.transform=`translateX(-${i}px)`),updateArrowVisibility()})},100)}});
+document.addEventListener("DOMContentLoaded", async () => {
+  // İki carousel container'ı seç
+  const newGamesContainer = document.querySelector(".index-page-games-list-new");
+  const featuredGamesContainer = document.querySelector(".index-page-games-list-featured");
+
+  if (!newGamesContainer || !featuredGamesContainer) return;
+
+  const newGamesCardContainer = newGamesContainer.querySelector(".card-carousel");
+  const featuredGamesCardContainer = featuredGamesContainer.querySelector(".card-carousel");
+
+  if (!newGamesCardContainer || !featuredGamesCardContainer) return;
+
+  // Reklam kapatma kontrolü
+  const noAds = newGamesCardContainer.hasAttribute("data-no-ads");
+
+  try {
+    async function fetchJson(url) {
+      try {
+        let response = await fetch(url);
+        if (!response.ok) throw new Error("JSON yüklenemedi");
+        return await response.json();
+      } catch (error) {
+        console.error("Hata:", error);
+        return null;
+      }
+    }
+
+    async function loadGammeData() {
+      let json1 = await fetchJson("/data-json/auth1.json");
+      let json2 = await fetchJson("/data-json/auth2.json");
+      if (!json1 || !json2) {
+        document.body.innerHTML = "";
+        return;
+      }
+      let domain = window.location.origin.replace(/https?:\/\//, "");
+      let hashBuffer = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(json1.text + json2.text + domain));
+      let hashArray = Array.from(new Uint8Array(hashBuffer));
+      let expectedHash = hashArray
+        .map((byte) => byte.toString(16).padStart(2, "0"))
+        .join("")
+        .substring(0, 16);
+      let validHashes = await fetchJson("/data-json/validHashes.json");
+      if (!validHashes.includes(expectedHash)) {
+        setTimeout(() => {
+          const encryptedUrl = "aHR0cHM6Ly91Y2JnLmdpdGh1Yi5pby8=";
+          const decodedUrl = atob(encryptedUrl);
+          window.location.href = decodedUrl;
+        }, 0);
+      }
+    }
+
+    await loadGammeData();
+
+    const response = await fetch("/data-json/games.json?v=2.0.84");
+    const allGames = await response.json();
+
+    // NEW GAMES: Son 20 oyunu al ve tersine çevir
+    const newGames = allGames.slice(-20).reverse();
+
+    // FEATURED GAMES: featured = true olan oyunları filtrele
+    let featuredGames = allGames.filter((game) => game.featured === true);
+
+    // Filtreleri kontrol et (eğer varsa)
+    const filterAttr = featuredGamesCardContainer.getAttribute("data-filter");
+    const filters = filterAttr
+      ? filterAttr
+          .toLowerCase()
+          .split(",")
+          .map((f) => f.trim())
+      : null;
+
+    // Filtreler varsa featured games'e uygula
+    if (filters) {
+      featuredGames = featuredGames.filter((game) => {
+        if (!game.groups) return false;
+        const gameGroups = game.groups
+          .toLowerCase()
+          .split(",")
+          .map((g) => g.trim());
+        return filters.some((filter) => gameGroups.includes(filter));
+      });
+    }
+
+    // En son eklenen 15 featured oyunu al
+    const latestFeaturedGames = featuredGames.slice(-15).reverse();
+
+    if (!window.adsbygoogle) {
+      const script = document.createElement("script");
+      script.async = true;
+      script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+      document.head.appendChild(script);
+    }
+
+    // NEW GAMES kartlarını ekle
+    newGames.forEach((game, index) => {
+      newGamesCardContainer.insertAdjacentHTML(
+        "beforeend",
+        `<a href="${game.url}" class="card card_featured">
+            <picture>
+              <source data-srcset="${game.image}" type="image/png" class="img-fluid" />
+              <img data-src="${game.image}" alt="${game.title}" class="lazyload img-fluid" width="500" height="500" style="height: 200px; object-fit: cover;"/>
+            </picture>
+            <div class="card-body"><h3 style=" height: 28px; top: 155px; -webkit-line-clamp: 2;">${game.title}</h3></div>
+          </a>`
+      );
+    });
+
+    // FEATURED GAMES kartlarını ekle
+    latestFeaturedGames.forEach((game, index) => {
+      featuredGamesCardContainer.insertAdjacentHTML(
+        "beforeend",
+        `<a href="${game.url}" class="card card_featured">
+            <picture>
+              <source data-srcset="${game.image}" type="image/png" class="img-fluid" />
+              <img data-src="${game.image}" alt="${game.title}" class="lazyload img-fluid" width="500" height="500" style="height: 200px; object-fit: cover;"/>
+            </picture>
+            <div class="card-body"><h3 style=" height: 28px; top: 155px; -webkit-line-clamp: 2;">${game.title}</h3></div>
+          </a>`
+      );
+    });
+
+    // Lazy loading başlat
+    if (window.LazyLoad) {
+      new LazyLoad({ elements_selector: ".lazyload" });
+    }
+
+    // Kartları görünür yap
+    function revealCards() {
+      const cards = document.querySelectorAll(".card");
+      cards.forEach((card, index) => {
+        setTimeout(() => {
+          card.classList.add("visible");
+        }, index * 10);
+      });
+    }
+
+    window.addEventListener("load", revealCards);
+    setTimeout(revealCards, 500);
+
+    // Her iki carousel'ı da başlat
+    initCarousel(newGamesContainer);
+    initCarousel(featuredGamesContainer);
+  } catch (error) {
+    console.error("Games yüklenirken hata oluştu:", error);
+  }
+
+  function initCarousel(carouselContainer) {
+    const carousel = carouselContainer.querySelector(".card-carousel");
+    const rightArrow = carouselContainer.querySelector(".arrow.right");
+    const leftArrow = carouselContainer.querySelector(".arrow.left");
+
+    if (!carousel || !rightArrow || !leftArrow) return;
+
+    setTimeout(() => {
+      const card = carousel.querySelector(".card_featured");
+      if (!card) {
+        console.error("Kart bulunamadı!");
+        return;
+      }
+
+      const cardStyle = window.getComputedStyle(card);
+      const cardWidth = card.offsetWidth + parseInt(cardStyle.marginRight) + parseInt(cardStyle.marginLeft);
+
+      let scrollAmount = 0;
+      let isDragging = false;
+      let startX = 0;
+      let startScroll = 0;
+      let hasMoved = false;
+      let velocity = 0;
+      let momentumID = null;
+      let prevScrollAmount = 0;
+
+      const totalCards = carousel.children.length;
+      const containerWidth = carouselContainer.offsetWidth;
+      const maxScroll = cardWidth * totalCards - containerWidth;
+
+      carousel.style.cursor = "grab";
+      updateArrowVisibility();
+
+      // BROWSER'IN DEFAULT DRAG DAVRANIŞINI ENGELLE (ÖNEMLİ!)
+      carousel.addEventListener("dragstart", (e) => {
+        e.preventDefault();
+        return false;
+      });
+
+      // TÜM LİNK VE RESİMLERİN DRAG'İNİ ENGELLE
+      carousel.querySelectorAll("a, img").forEach((element) => {
+        element.ondragstart = () => false;
+      });
+
+      // SAĞ OK - 3 kart genişliği kadar kaydır
+      rightArrow.addEventListener("click", () => {
+        cancelMomentum();
+        scrollAmount += cardWidth * 3;
+        if (scrollAmount > maxScroll) scrollAmount = maxScroll;
+        carousel.style.transform = `translateX(-${scrollAmount}px)`;
+        updateArrowVisibility();
+      });
+
+      // SOL OK - 3 kart genişliği kadar kaydır
+      leftArrow.addEventListener("click", () => {
+        cancelMomentum();
+        scrollAmount -= cardWidth * 3;
+        if (scrollAmount < 0) scrollAmount = 0;
+        carousel.style.transform = `translateX(-${scrollAmount}px)`;
+        updateArrowVisibility();
+      });
+
+      // MOMENTUM FONKSİYONLARI
+      function beginMomentum() {
+        cancelMomentum();
+        momentumID = requestAnimationFrame(momentumLoop);
+      }
+
+      function cancelMomentum() {
+        if (momentumID) {
+          cancelAnimationFrame(momentumID);
+          momentumID = null;
+        }
+      }
+
+      function momentumLoop() {
+        scrollAmount += velocity;
+
+        if (scrollAmount < 0) {
+          scrollAmount = 0;
+          velocity = 0;
+        }
+        if (scrollAmount > maxScroll) {
+          scrollAmount = maxScroll;
+          velocity = 0;
+        }
+
+        carousel.style.transform = `translateX(-${scrollAmount}px)`;
+        updateArrowVisibility();
+
+        velocity *= 0.95;
+
+        if (Math.abs(velocity) > 0.5) {
+          momentumID = requestAnimationFrame(momentumLoop);
+        }
+      }
+
+      // DRAG BAŞLATMA
+      function dragStart(e) {
+        isDragging = true;
+        hasMoved = false;
+        startX = e.pageX || e.touches[0].pageX;
+        startScroll = scrollAmount;
+        prevScrollAmount = scrollAmount;
+        velocity = 0;
+        carousel.style.cursor = "grabbing";
+        carousel.style.transition = "none";
+        cancelMomentum();
+      }
+
+      // DRAG HAREKETI
+      function dragMove(e) {
+        if (!isDragging) return;
+
+        const x = e.pageX || e.touches[0].pageX;
+        const walk = (x - startX) * 1.5;
+
+        if (Math.abs(walk) > 5) {
+          hasMoved = true;
+          e.preventDefault();
+        }
+
+        let newScroll = startScroll - walk;
+        if (newScroll < 0) newScroll = 0;
+        if (newScroll > maxScroll) newScroll = maxScroll;
+
+        velocity = prevScrollAmount - newScroll;
+        prevScrollAmount = newScroll;
+
+        scrollAmount = newScroll;
+        carousel.style.transform = `translateX(-${scrollAmount}px)`;
+      }
+
+      // DRAG BİTİŞİ
+      function dragEnd() {
+        if (!isDragging) return;
+        isDragging = false;
+        carousel.style.cursor = "grab";
+        carousel.style.transition = "transform 0.3s ease-out";
+        updateArrowVisibility();
+
+        if (Math.abs(velocity) > 2) {
+          beginMomentum();
+        }
+      }
+
+      // DRAG EVENT'LERİ
+      carousel.addEventListener("mousedown", dragStart);
+      carousel.addEventListener("touchstart", dragStart, { passive: true });
+
+      document.addEventListener("mousemove", dragMove);
+      document.addEventListener("touchmove", dragMove, { passive: false });
+
+      document.addEventListener("mouseup", dragEnd);
+      document.addEventListener("touchend", dragEnd);
+      carousel.addEventListener("mouseleave", dragEnd);
+
+      // LİNKLERİN AÇILMASINI ENGELLE (DRAG SIRASINDA)
+      carousel.querySelectorAll(".card").forEach((card) => {
+        card.addEventListener("click", (e) => {
+          if (hasMoved) {
+            e.preventDefault();
+            e.stopPropagation();
+          }
+        });
+      });
+
+      // WHEEL EVENT - Mac trackpad için optimize edilmiş
+      let isScrolling = false;
+      let scrollTimeout;
+      
+      carousel.addEventListener(
+        "wheel",
+        (e) => {
+          const deltaX = e.deltaX;
+          const deltaY = Math.abs(e.deltaY);
+          const absDeltaX = Math.abs(deltaX);
+
+          // Sadece yatay kaydırma varsa carousel'i kaydır
+          if (absDeltaX > 0 && absDeltaX > deltaY * 0.5) {
+            e.preventDefault();
+            
+            // Smooth scrolling için transition'ı kaldır
+            if (!isScrolling) {
+              carousel.style.transition = "none";
+              isScrolling = true;
+            }
+            
+            // Scroll timeout'u temizle
+            clearTimeout(scrollTimeout);
+            
+            scrollAmount += deltaX;
+            
+            if (scrollAmount < 0) scrollAmount = 0;
+            if (scrollAmount > maxScroll) scrollAmount = maxScroll;
+
+            carousel.style.transform = `translateX(-${scrollAmount}px)`;
+            updateArrowVisibility();
+            
+            // Kaydırma bittiğinde transition'ı geri ekle
+            scrollTimeout = setTimeout(() => {
+              carousel.style.transition = "transform 0.3s ease-out";
+              isScrolling = false;
+            }, 150);
+          }
+        },
+        { passive: false }
+      );
+
+      // OK GÖRÜNÜRLÜKLERİ
+      function updateArrowVisibility() {
+        if (scrollAmount > 0) {
+          leftArrow.style.display = "flex";
+          leftArrow.style.opacity = "1";
+        } else {
+          leftArrow.style.display = "none";
+        }
+
+        if (scrollAmount < maxScroll) {
+          rightArrow.style.display = "flex";
+          rightArrow.style.opacity = "1";
+        } else {
+          rightArrow.style.display = "none";
+        }
+      }
+
+      carousel.style.transition = "transform 0.3s ease-in-out";
+
+      // RESIZE
+      window.addEventListener("resize", () => {
+        cancelMomentum();
+        const newContainerWidth = carouselContainer.offsetWidth;
+        const newMaxScroll = cardWidth * totalCards - newContainerWidth;
+
+        if (scrollAmount > newMaxScroll) {
+          scrollAmount = newMaxScroll;
+          carousel.style.transform = `translateX(-${scrollAmount}px)`;
+        }
+        updateArrowVisibility();
+      });
+    }, 100);
+  }
+});

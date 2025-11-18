@@ -146,26 +146,7 @@
   text-align: center;
 }
 
-/* Tooltip */
-.nav-tooltip {
-  position: absolute;
-  bottom: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--bs-gray-900);
-  color: white;
-  font-size: 11px;
-  padding: 4px 8px;
-  border-radius: 4px;
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.2s;
-}
-
-.nav-action-btn:hover .nav-tooltip {
-  opacity: 1;
-}
+/* Tooltip - Styles moved to navbar-modern.css to avoid conflicts */
 
 /* Online Users */
 .online-users {

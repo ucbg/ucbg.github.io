@@ -1,1 +1,104 @@
-document.addEventListener("DOMContentLoaded",function(){const e=document.getElementById("search");if(!e)return;const n=document.createElement("div");n.id="live-search-dropdown",n.className="search-results-dropdown";const t=e.closest("form")||e.closest(".navbar-search");t?t.appendChild(n):e.parentNode.appendChild(n);let s=null;e.addEventListener("input",async function(){const t=e.value.trim().toLowerCase();if(n.innerHTML="",t.length<2)return void n.classList.remove("visible");const a=await async function fetchGames(){if(s)return s;const e=await fetch("/data-json/games.json?v=2.0.80");return s=await e.json(),s}();let i=[];for(const e of a){if(i.length>=8)break;(e.title.toLowerCase().includes(t)||e.description&&e.description.toLowerCase().includes(t))&&i.push(e)}if(0===i.length)return n.innerHTML='\n        <div class="search-empty-state">\n          <div style="font-size: 48px; margin-bottom: 12px;">🔍</div>\n          <div>No games found</div>\n        </div>\n      ',void n.classList.add("visible");n.innerHTML=`\n      <div class="search-results-header">\n        <span>Search Results</span>\n        <span class="search-results-count">${i.length} game${i.length>1?"s":""}</span>\n      </div>\n      <div class="search-results-grid">\n        ${i.map(e=>`\n          <a href="${e.url}" class="recent-game-card">\n            <div class="recent-game-image-container">\n              <img src="${e.image}" alt="${e.title}" class="recent-game-image" onerror="this.style.display='none'; this.parentNode.innerHTML='&lt;div class=\\'recent-game-placeholder\\'&gt;🎮&lt;/div&gt;'">\n            </div>\n            <div class="recent-game-info">\n              <div class="recent-game-title">${e.title}</div>\n            </div>\n          </a>\n        `).join("")}\n      </div>\n      ${8===i.length?'<div class="search-more-results">Press Enter to see all results...</div>':""}\n    `,n.classList.add("visible")}),e.addEventListener("keydown",function(n){if("Enter"===n.key){const n=e.value.trim();n.length>=2&&(window.location.href=`/search.html?q=${encodeURIComponent(n)}`)}}),e.addEventListener("focus",async function(){e.value.trim().toLowerCase().length>=2&&e.dispatchEvent(new Event("input"))}),document.addEventListener("click",function(t){e.contains(t.target)||n.contains(t.target)||n.classList.remove("visible")})});
+// assets/js/live-search.js
+
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.getElementById("search");
+  if (!searchInput) return;
+
+  const resultsBox = document.createElement("div");
+  resultsBox.id = "live-search-dropdown";
+  resultsBox.className = "search-results-dropdown";
+  
+  // Append to the form (navbar-search) instead of input wrapper
+  const searchForm = searchInput.closest('form') || searchInput.closest('.navbar-search');
+  if (searchForm) {
+    searchForm.appendChild(resultsBox);
+  } else {
+    searchInput.parentNode.appendChild(resultsBox);
+  }
+
+  let gamesCache = null;
+
+  async function fetchGames() {
+    if (gamesCache) return gamesCache;
+    const response = await fetch("/data-json/games.json?v=2.0.84");
+    gamesCache = await response.json();
+    return gamesCache;
+  }
+
+  searchInput.addEventListener("input", async function () {
+    const query = searchInput.value.trim().toLowerCase();
+    resultsBox.innerHTML = "";
+    
+    if (query.length < 2) {
+      resultsBox.classList.remove('visible');
+      return;
+    }
+    
+    const games = await fetchGames();
+    let results = [];
+    
+    for (const game of games) {
+      if (results.length >= 8) break;
+      if (game.title.toLowerCase().includes(query) || 
+          (game.description && game.description.toLowerCase().includes(query))) {
+        results.push(game);
+      }
+    }
+    
+    if (results.length === 0) {
+      resultsBox.innerHTML = `
+        <div class="search-empty-state">
+          <div style="font-size: 48px; margin-bottom: 12px;">🔍</div>
+          <div>No games found</div>
+        </div>
+      `;
+      resultsBox.classList.add('visible');
+      return;
+    }
+    
+    resultsBox.innerHTML = `
+      <div class="search-results-header">
+        <span>Search Results</span>
+        <span class="search-results-count">${results.length} game${results.length > 1 ? 's' : ''}</span>
+      </div>
+      <div class="search-results-grid">
+        ${results.map((game) => `
+          <a href="${game.url}" class="recent-game-card">
+            <div class="recent-game-image-container">
+              <img src="${game.image}" alt="${game.title}" class="recent-game-image" onerror="this.style.display='none'; this.parentNode.innerHTML='&lt;div class=\\'recent-game-placeholder\\'&gt;🎮&lt;/div&gt;'">
+            </div>
+            <div class="recent-game-info">
+              <div class="recent-game-title">${game.title}</div>
+            </div>
+          </a>
+        `).join('')}
+      </div>
+      ${results.length === 8 ? '<div class="search-more-results">Press Enter to see all results...</div>' : ''}
+    `;
+    
+    resultsBox.classList.add('visible');
+  });
+
+  searchInput.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+      const query = searchInput.value.trim();
+      if (query.length >= 2) {
+        window.location.href = `/search.html?q=${encodeURIComponent(query)}`;
+      }
+    }
+  });
+
+  // Show dropdown on focus if there's text
+  searchInput.addEventListener("focus", async function () {
+    const query = searchInput.value.trim().toLowerCase();
+    if (query.length >= 2) {
+      searchInput.dispatchEvent(new Event('input'));
+    }
+  });
+
+  document.addEventListener("click", function (e) {
+    if (!searchInput.contains(e.target) && !resultsBox.contains(e.target)) {
+      resultsBox.classList.remove('visible');
+    }
+  });
+});
