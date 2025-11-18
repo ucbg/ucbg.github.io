@@ -8,7 +8,8 @@
     "description": "Survive a relentless 10-minute onslaught of monsters in this fast-paced action roguelike. Collect upgrades and fend off waves of enemies before dawn arrives.",
     "groups": "roguelike, shooter, survival",
     "keywords": "10 minutes till dawn game, survival shooter game, action horror game, indie roguelike game, top-down shooter",
-    "main_categories": "action, adventure, shooting, strategy"
+    "main_categories": "action, adventure, shooting, strategy",
+    "featured": true
   },
   {
     "slug": "1010-color-match",
@@ -41,8 +42,7 @@
     "description": "Innovative twist on the classic 2048 game. Merge matching numbers with new power-ups and strategic gameplay elements.",
     "groups": "puzzle, strategy",
     "keywords": "2048 fusion game, number merging puzzle, addictive math game, tile combining game, brain training puzzle",
-    "main_categories": "adventure, kids, puzzle, school, strategy",
-    "featured": true
+    "main_categories": "adventure, kids, puzzle, school, strategy"
   },
   {
     "slug": "2048",
@@ -75,8 +75,7 @@
     "description": "Realistic 3D bowling simulation with physics-based gameplay. Perfect your strike in this authentic alley experience.",
     "groups": "simulation, sports",
     "keywords": "3D bowling game, realistic bowling simulator, strike challenge game, sports simulation game, online bowling",
-    "main_categories": "kids",
-    "featured": true
+    "main_categories": "kids"
   },
   {
     "slug": "3d-free-kick",
@@ -208,8 +207,7 @@
     "description": "Classic run-and-gun shooter featuring a yellow alien battling government agents. Packed with humor and intense action.",
     "groups": "platformer, shooter",
     "keywords": "Alien Hominid game, classic flash shooter, run and gun game, alien shooter game, side-scrolling action",
-    "main_categories": "action, adventure, kids, platform, shooting, skill, stickman",
-    "featured": true
+    "main_categories": "action, adventure, kids, platform, shooting, skill, stickman"
   },
   {
     "slug": "amazing-strange-rope-police",
@@ -399,7 +397,8 @@
     "description": "Multiplayer .io game where you play as a rolling egg. Bump others off platforms while growing larger.",
     "groups": "io, multiplayer",
     "keywords": "bad egg io game, egg battle game, multiplayer .io game, funny fighting game, online egg combat",
-    "main_categories": "adventure, io, kids, multiplayer, two-player"
+    "main_categories": "adventure, io, kids, multiplayer, two-player",
+    "featured": true
   },
   {
     "slug": "bad-ice-cream-2",
@@ -421,7 +420,8 @@
     "description": "Latest installment of the ice-carving puzzle series. New levels, power-ups, and cooperative gameplay challenges.",
     "groups": "maze, puzzle",
     "keywords": "bad ice cream 3 game, ice cream maze game, puzzle adventure game, multiplayer flash game, online puzzle",
-    "main_categories": "adventure, kids, puzzle, school, strategy"
+    "main_categories": "adventure, kids, puzzle, school, strategy",
+    "featured": true
   },
   {
     "slug": "baldis-basics-field-trip",
@@ -773,7 +773,8 @@
     "description": "Wacky boxing game with random modifiers. Each match introduces unpredictable elements that change gameplay.",
     "groups": "boxing, sports",
     "keywords": "boxing random game, wacky boxing game, funny fighting game, random sports game, online boxing fun",
-    "main_categories": "action, fighting, skill, trending"
+    "main_categories": "action, fighting, skill, trending",
+    "featured": true
   },
   {
     "slug": "braains-io",
@@ -927,8 +928,7 @@
     "description": "Classic board game brought to digital life. Play against AI or friends in this timeless strategy game.",
     "groups": "board-game, strategy",
     "keywords": "checkers game, classic board game, online draughts game, strategy board game, two player game",
-    "main_categories": "strategy",
-    "featured": true
+    "main_categories": "strategy"
   },
   {
     "slug": "chicken-merge",
@@ -1226,7 +1226,8 @@
     "description": "Meme-inspired idle clicker. Mine dogecoins, buy upgrades, and travel to the moon in this humorous game.",
     "groups": "clicker, mining",
     "keywords": "dogeminer game, dogecoin clicker game, space mining game, cryptocurrency game, online idle game",
-    "main_categories": "adventure, clicker, kids, puzzle, strategy"
+    "main_categories": "adventure, clicker, kids, puzzle, strategy",
+    "featured": true
   },
   {
     "slug": "doodle-jump",
@@ -1684,8 +1685,7 @@
     "description": "Chaotic two-player shooter. Battle with wacky weapons and physics in this competitive platformer.",
     "groups": "platformer, shooter",
     "keywords": "getaway shootout game, multiplayer shooter game, ragdoll physics game, online battle game, funny combat",
-    "main_categories": "action, adventure, kids, platform, shooting, skill, stickman",
-    "featured": true
+    "main_categories": "action, adventure, kids, platform, shooting, skill, stickman"
   },
   {
     "slug": "getting-over-it",
@@ -2447,8 +2447,7 @@
     "description": "Original browser version of Minecraft. Creative building with basic blocks and mechanics.",
     "groups": "building, sandbox",
     "keywords": "minecraft classic game, original minecraft game, block building game, online sandbox game, creative mode",
-    "main_categories": "adventure, kids",
-    "featured": true
+    "main_categories": "adventure, kids"
   },
   {
     "slug": "money-movers-2",
@@ -2591,8 +2590,7 @@
     "description": "Puzzle shooter game. Calculate ricochets to eliminate all targets with single shots.",
     "groups": "physics, puzzle",
     "keywords": "mr bullet game, physics puzzle game, ricochet shooting game, online puzzle game, trajectory game",
-    "main_categories": "adventure, kids, puzzle, school, strategy",
-    "featured": true
+    "main_categories": "adventure, kids, puzzle, school, strategy"
   },
   {
     "slug": "mutazone",
@@ -3164,8 +3162,7 @@
     "description": "Western-themed rope physics game where you lasso and pull objects.",
     "groups": "physics, puzzle",
     "keywords": "roper game, cowboy lasso game, physics puzzle game, rope swinging game, online skill game",
-    "main_categories": "adventure, kids, puzzle, school, strategy",
-    "featured": true
+    "main_categories": "adventure, kids, puzzle, school, strategy"
   },
   {
     "slug": "royale-dudes",
@@ -3363,7 +3360,8 @@
     "description": "Multiplayer version of the popular Slope game where you race against friends.",
     "groups": "multiplayer, racing",
     "keywords": "slope 2 players game, multiplayer racing game, ball rolling game, competitive slope game, online racing",
-    "main_categories": "action, adventure, car, io, kids, multiplayer, racing, skill, sport, two-player"
+    "main_categories": "action, adventure, car, io, kids, multiplayer, racing, skill, sport, two-player",
+    "featured": true
   },
   {
     "slug": "slope-ball",
@@ -3693,8 +3691,7 @@
     "description": "Humorous stick-figure fighting game with ridiculous physics.",
     "groups": "fighting, multiplayer",
     "keywords": "stickbattle lol game, funny fighting game, stick figure combat game, online brawler game, multiplayer battle",
-    "main_categories": "fighting, io, multiplayer, strategy, two-player",
-    "featured": true
+    "main_categories": "fighting, io, multiplayer, strategy, two-player"
   },
   {
     "slug": "stickman-boost-2",
@@ -3950,8 +3947,7 @@
     "description": "Multiplayer survival game where you tame creatures and build bases.",
     "groups": "io, survival",
     "keywords": "taming io game, animal training game, multiplayer .io game, online pet game, creature collection",
-    "main_categories": "action, adventure, io, kids, multiplayer",
-    "featured": true
+    "main_categories": "action, adventure, io, kids, multiplayer"
   },
   {
     "slug": "tank-trouble-2",
@@ -3979,7 +3975,8 @@
     "main_categories": "action, adventure, shooting",
     "servers": {
       "server1": "https://tank-trouble-2.pages.dev"
-    }
+    },
+    "featured": true
   },
   {
     "slug": "tanuki-sunset",
@@ -4133,7 +4130,8 @@
     "description": "Relaxing fishing game with simple controls and progression system.",
     "groups": "fishing, simulation",
     "keywords": "tiny fishing game, casual fishing game, relaxing angling game, online fishing simulator, arcade fishing",
-    "main_categories": "adventure, kids"
+    "main_categories": "adventure, kids",
+    "featured": true
   },
   {
     "slug": "tomb-runner",
@@ -4144,7 +4142,8 @@
     "description": "Adventure runner set in ancient tombs with traps and treasures.",
     "groups": "endless, runner",
     "keywords": "tomb runner game, endless runner game, obstacle dodging game, online platformer, adventure runner",
-    "main_categories": "kids, running"
+    "main_categories": "kids, running",
+    "featured": true
   },
   {
     "slug": "tower-crash-3d",
@@ -4177,8 +4176,7 @@
     "description": "Simulation game where you manage busy intersections as a traffic controller.",
     "groups": "puzzle, simulation",
     "keywords": "traffic control game, intersection management game, vehicle directing game, online puzzle game, traffic simulator",
-    "main_categories": "adventure, kids, puzzle, school, strategy",
-    "featured": true
+    "main_categories": "adventure, kids, puzzle, school, strategy"
   },
   {
     "slug": "traffic-run",
@@ -4277,8 +4275,7 @@
     "description": "Rotation-based puzzle game where you spin platforms to solve levels.",
     "groups": "puzzle, strategy",
     "keywords": "turn turn game, rotation puzzle game, brain teaser game, online logic game, spatial puzzle",
-    "main_categories": "adventure, kids, puzzle, school, strategy",
-    "featured": true
+    "main_categories": "adventure, kids, puzzle, school, strategy"
   },
   {
     "slug": "two-ball-3d",
@@ -4289,7 +4286,8 @@
     "description": "Dual-ball control challenge where you guide two spheres simultaneously.",
     "groups": "physics, puzzle",
     "keywords": "two ball 3d game, dual ball game, physics puzzle game, online skill game, balance challenge",
-    "main_categories": "adventure, kids, puzzle, school, strategy"
+    "main_categories": "adventure, kids, puzzle, school, strategy",
+    "featured": true
   },
   {
     "slug": "two-tunnel-3d",
@@ -4311,7 +4309,8 @@
     "description": "Digital version of the classic card game with online multiplayer support.",
     "groups": "card, multiplayer",
     "keywords": "uno 4 colors game, card game, multiplayer uno game, online card game, classic uno",
-    "main_categories": "io, kids, multiplayer, puzzle, two-player"
+    "main_categories": "io, kids, multiplayer, puzzle, two-player",
+    "featured": true
   },
   {
     "slug": "venge-io",
@@ -4487,7 +4486,8 @@
     "description": "Mystery edition where you solve cases as a detective car.",
     "groups": "point-and-click, puzzle",
     "keywords": "wheely 7 detective game, mystery car game, vehicle puzzle game, online adventure game, detective story",
-    "main_categories": "adventure, kids, puzzle, school, strategy"
+    "main_categories": "adventure, kids, puzzle, school, strategy",
+    "featured": true
   },
   {
     "slug": "wizard-mike",
@@ -4520,7 +4520,8 @@
     "description": "Endless version of the popular word-guessing game with unlimited puzzles.",
     "groups": "puzzle, word",
     "keywords": "wordle infinite game, unlimited word game, daily word puzzle game, online word game, vocabulary challenge",
-    "main_categories": "adventure, kids, puzzle, school, strategy"
+    "main_categories": "adventure, kids, puzzle, school, strategy",
+    "featured": true
   },
   {
     "slug": "worlds-hardest-game-2",
@@ -4542,7 +4543,8 @@
     "description": "Original version of the extremely challenging precision puzzle game.",
     "groups": "difficult, puzzle",
     "keywords": "world's hardest game, original challenge game, difficult puzzle game, online skill game, hardcore platformer",
-    "main_categories": "action, adventure, kids, puzzle, school, strategy"
+    "main_categories": "action, adventure, kids, puzzle, school, strategy",
+    "featured": true
   },
   {
     "slug": "wormate-io",
@@ -4790,8 +4792,7 @@
     "description": "Satisfying physics game about flipping bottles to land perfectly.",
     "groups": "physics, simulation",
     "keywords": "flip bottle game, bottle flipping challenge, physics skill game, online arcade game, precision game",
-    "main_categories": "kids",
-    "featured": true
+    "main_categories": "kids"
   },
   {
     "slug": "fnaf-2",
@@ -4802,7 +4803,8 @@
     "description": "Second installment in the Five Nights at Freddy's horror series.",
     "groups": "horror, survival",
     "keywords": "fnaf 2 game, five nights at freddy's 2, horror survival game, animatronic terror game, online scary",
-    "main_categories": "action, adventure, halloween"
+    "main_categories": "action, adventure, halloween",
+    "featured": true
   },
   {
     "slug": "fred-running",
@@ -5069,8 +5071,7 @@
     "description": "Original version of the sokoban-style box pushing puzzle game.",
     "groups": "puzzle, sokoban",
     "keywords": "push the box game, sokoban puzzle game, box moving challenge, online brain game, logic puzzle",
-    "main_categories": "adventure, kids, puzzle, school, strategy",
-    "featured": true
+    "main_categories": "adventure, kids, puzzle, school, strategy"
   },
   {
     "slug": "royale-dudes-io",
@@ -5378,8 +5379,7 @@
     "description": "A humorous 2D soapbox car game where the goal is to create the most spectacular crashes possible for high scores. Select your vehicle and pose, launch with maximum power, and time your character's ejection to cause maximum chaos and destruction. Earn coins to unlock new cars, accessories, obstacles, and maps.",
     "groups": "racing, arcade, physics, obstacle-course, customization",
     "keywords": "zeepkist crash 2d, soapbox car game, physics crash game, destructive racing game, vehicle crash simulation, arcade racing, unlockable cars, obstacle course game",
-    "main_categories": "car, kids, racing, skill, strategy",
-    "featured": true
+    "main_categories": "car, kids, racing, skill, strategy"
   },
   {
     "slug": "yarn-untangle",
@@ -5459,7 +5459,8 @@
     "main_categories": "action, car, racing, skill",
     "servers": {
       "server1": "https://escape-road-115.pages.dev/"
-    }
+    },
+    "featured": true
   },
   {
     "slug": "wood-blocks-3d",
@@ -5823,8 +5824,7 @@
     "description": "An adventure platformer where players control a tiny hero in a massive world, climbing obstacles, solving puzzles, and battling enemies to grow stronger and overcome giant challenges.",
     "groups": "platformer, adventure, puzzle, action",
     "keywords": "the little giant game, adventure platformer, puzzle adventure, online platform game, giant world exploration",
-    "main_categories": "adventure, kids, platform",
-    "featured": true
+    "main_categories": "adventure, kids, platform"
   },
   {
     "slug": "tetris-99",
@@ -5965,8 +5965,7 @@
     "main_categories": "sport, kids, skill",
     "special_state": {
       "new_window": true
-    },
-    "featured": true
+    }
   },
   {
     "slug": "super-bike-the-champion",
@@ -6292,7 +6291,8 @@
     "description": "A multiplayer .io game where you play as a shark hunting for food and other players in the ocean. Eat smaller creatures and players to grow larger while avoiding bigger predators in this underwater battle for survival.",
     "groups": "io, multiplayer, action, survival, arcade",
     "keywords": "sharkio game, .io shark game, multiplayer shark game, online survival game, ocean predator game, eat and grow",
-    "main_categories": "io, multiplayer, action, kids"
+    "main_categories": "io, multiplayer, action, kids",
+    "featured": true
   },
   {
     "slug": "shape-fold-html5",

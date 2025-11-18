@@ -43,11 +43,14 @@
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/Inter-Bold.woff2?v=3.19" crossorigin="anonymous" />
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/Inter-ExtraBold.woff2?v=3.19" crossorigin="anonymous" />
 
-    <link rel="preload" as="style" href="/assets/theme/css/theme.css?v=3.2.9" />
-    <link rel="preload" as="style" href="/assets/theme/css/navbar-modern.css?v=1.0.1" />
-    <link rel="preload" as="script" href="/assets/theme/js/jquery.min.js?v=1.0.0" />
-    <link media="all" rel="stylesheet" href="/assets/theme/css/theme.css?v=3.2.9" type="text/css" />
-    <link media="all" rel="stylesheet" href="/assets/theme/css/navbar-modern.css?v=1.0.1" type="text/css" />
+    <link rel="preload" as="style" href="/assets/theme/css/theme.css?v=3.3.9" />
+    <link rel="preload" as="style" href="/assets/theme/css/navbar-modern.css?v=1.1.1" />
+    <link rel="preload" as="style" href="/assets/css/navbar-responsive.css?v=1.1.0" />
+    <link rel="preload" as="script" href="/assets/theme/js/jquery.min.js?v=1.1.0" />
+    <link media="all" rel="stylesheet" href="/assets/theme/css/theme.css?v=3.3.9" type="text/css" />
+    <link media="all" rel="stylesheet" href="/assets/theme/css/navbar-modern.css?v=1.1.1" type="text/css" />
+    <link media="all" rel="stylesheet" href="/assets/css/navbar-responsive.css?v=1.1.0" type="text/css" />
+    <link media="all" rel="stylesheet" href="/assets/css/category-carousel.css?v=1.1.0" type="text/css" />
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="shortcut icon" href="/favicon.ico" />
@@ -86,7 +89,7 @@
   </head>
 
   <body class="min-vh-100 layout d-flex flex-column">
-    <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
     <div class="sidebar" id="sidebar">
       <div class="sidebar-menu">
         <a href="/category/action.html" class="sidebar-item">
@@ -222,8 +225,15 @@
           <img src="/assets/static/dark_logo.png" alt="UCBG Logo" class="light-logo" />
         </a>
 
+        <!-- Mobile Search Toggle Button -->
+        <button class="navbar-mobile-search-toggle" id="mobileSearchToggle" title="Search">
+          <svg width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+            <use xlink:href="/assets/sprite/sprite.svg#search"></use>
+          </svg>
+        </button>
+
         <!-- Search Bar -->
-        <form class="navbar-search" action="/search.html" method="get" autocomplete="off">
+        <form class="navbar-search" id="navbarSearch" action="/search.html" method="get" autocomplete="off">
           <div class="search-input-wrapper">
             <svg width="18" height="18" stroke="currentColor" stroke-width="1.75" fill="none">
               <use xlink:href="/assets/sprite/sprite.svg#search"></use>
@@ -237,11 +247,17 @@
               minlength="3"
               autocomplete="off"
             />
+            <button type="button" class="search-close-btn" id="searchCloseBtn" aria-label="Close search">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
           </div>
         </form>
 
         <!-- Action Buttons -->
-        <ul class="navbar-actions">
+        <ul class="navbar-actions"></ul>
           <li>
             <button class="nav-action-btn" id="theme-toggle-btn" title="Toggle Theme">
               <svg id="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
@@ -343,64 +359,73 @@
             <div class="tags-groups-best">
   <div class="custom-category-group">
     <a href="/category/kids.html" class="custom-category-link">
-      Kids <span class="custom-category-count">408</span>
+      Kids <span class="custom-category-count">425</span>
     </a>
     <a href="/category/adventure.html" class="custom-category-link">
-      Adventure <span class="custom-category-count">384</span>
+      Adventure <span class="custom-category-count">389</span>
     </a>
     <a href="/category/action.html" class="custom-category-link">
-      Action <span class="custom-category-count">295</span>
+      Action <span class="custom-category-count">310</span>
     </a>
     <a href="/category/puzzle.html" class="custom-category-link">
-      Puzzle <span class="custom-category-count">268</span>
+      Puzzle <span class="custom-category-count">279</span>
     </a>
     <a href="/category/strategy.html" class="custom-category-link">
-      Strategy <span class="custom-category-count">236</span>
+      Strategy <span class="custom-category-count">240</span>
     </a>
     <a href="/category/skill.html" class="custom-category-link">
-      Skill <span class="custom-category-count">193</span>
+      Skill <span class="custom-category-count">213</span>
     </a>
     <a href="/category/io.html" class="custom-category-link">
-      Io <span class="custom-category-count">136</span>
+      Io <span class="custom-category-count">138</span>
+    </a>
+    <a href="/category/multiplayer.html" class="custom-category-link">
+      Multiplayer <span class="custom-category-count">134</span>
     </a>
     <a href="/category/racing.html" class="custom-category-link">
       Racing <span class="custom-category-count">132</span>
     </a>
-    <a href="/category/multiplayer.html" class="custom-category-link">
-      Multiplayer <span class="custom-category-count">130</span>
-    </a>
     <a href="/category/school.html" class="custom-category-link">
-      School <span class="custom-category-count">110</span>
+      School <span class="custom-category-count">112</span>
     </a>
     <a href="/category/two-player.html" class="custom-category-link">
       Two-player <span class="custom-category-count">109</span>
     </a>
     <a href="/category/sport.html" class="custom-category-link">
-      Sport <span class="custom-category-count">87</span>
+      Sport <span class="custom-category-count">88</span>
     </a>
     <a href="/group.html?key=shooter" class="custom-category-link">
-      Shooter <span class="custom-category-count">82</span>
+      Shooter <span class="custom-category-count">85</span>
     </a>
     <a href="/category/shooting.html" class="custom-category-link">
-      Shooting <span class="custom-category-count">81</span>
+      Shooting <span class="custom-category-count">84</span>
     </a>
     <a href="/category/stickman.html" class="custom-category-link">
-      Stickman <span class="custom-category-count">73</span>
+      Stickman <span class="custom-category-count">75</span>
+    </a>
+    <a href="/group.html?key=physics" class="custom-category-link">
+      Physics <span class="custom-category-count">70</span>
+    </a>
+    <a href="/group.html?key=platformer" class="custom-category-link">
+      Platformer <span class="custom-category-count">70</span>
     </a>
     <a href="/category/car.html" class="custom-category-link">
       Car <span class="custom-category-count">70</span>
     </a>
-    <a href="/group.html?key=platformer" class="custom-category-link">
-      Platformer <span class="custom-category-count">69</span>
-    </a>
-    <a href="/group.html?key=physics" class="custom-category-link">
-      Physics <span class="custom-category-count">68</span>
-    </a>
     <a href="/category/platform.html" class="custom-category-link">
       Platform <span class="custom-category-count">67</span>
     </a>
+    <a href="/category/running.html" class="custom-category-link">
+      Running <span class="custom-category-count">46</span>
+    </a>
     <a href="/category/trending.html" class="custom-category-link">
       Trending <span class="custom-category-count">44</span>
+    </a>
+    <a href="/group.html?key=arcade" class="custom-category-link">
+      Arcade <span class="custom-category-count">43</span>
+    </a>
+    <a href="/group.html?key=runner" class="custom-category-link">
+      Runner <span class="custom-category-count">42</span>
     </a>
     <a href="/category/fighting.html" class="custom-category-link">
       Fighting <span class="custom-category-count">42</span>
@@ -408,23 +433,14 @@
     <a href="/category/soccer.html" class="custom-category-link">
       Soccer <span class="custom-category-count">39</span>
     </a>
-    <a href="/category/running.html" class="custom-category-link">
-      Running <span class="custom-category-count">39</span>
-    </a>
     <a href="/group.html?key=sports" class="custom-category-link">
-      Sports <span class="custom-category-count">36</span>
-    </a>
-    <a href="/group.html?key=runner" class="custom-category-link">
-      Runner <span class="custom-category-count">36</span>
+      Sports <span class="custom-category-count">37</span>
     </a>
     <a href="/group.html?key=simulation" class="custom-category-link">
-      Simulation <span class="custom-category-count">33</span>
+      Simulation <span class="custom-category-count">34</span>
     </a>
     <a href="/group.html?key=endless" class="custom-category-link">
       Endless <span class="custom-category-count">30</span>
-    </a>
-    <a href="/group.html?key=arcade" class="custom-category-link">
-      Arcade <span class="custom-category-count">30</span>
     </a>
     <a href="/category/parkour.html" class="custom-category-link">
       Parkour <span class="custom-category-count">29</span>
@@ -432,22 +448,113 @@
     <a href="/category/clicker.html" class="custom-category-link">
       Clicker <span class="custom-category-count">26</span>
     </a>
+    <a href="/category/halloween.html" class="custom-category-link">
+      Halloween <span class="custom-category-count">21</span>
+    </a>
+    <a href="/group.html?key=obstacle-course" class="custom-category-link">
+      Obstacle-course <span class="custom-category-count">21</span>
+    </a>
+    <a href="/group.html?key=horror" class="custom-category-link">
+      Horror <span class="custom-category-count">19</span>
+    </a>
+    <a href="/group.html?key=driving" class="custom-category-link">
+      Driving <span class="custom-category-count">19</span>
+    </a>
+    <a href="/group.html?key=survival" class="custom-category-link">
+      Survival <span class="custom-category-count">16</span>
+    </a>
+    <a href="/group.html?key=idle" class="custom-category-link">
+      Idle <span class="custom-category-count">14</span>
+    </a>
+    <a href="/group.html?key=point-and-click" class="custom-category-link">
+      Point-and-click <span class="custom-category-count">13</span>
+    </a>
+    <a href="/group.html?key=bike" class="custom-category-link">
+      Bike <span class="custom-category-count">12</span>
+    </a>
+    <a href="/group.html?key=stunt" class="custom-category-link">
+      Stunt <span class="custom-category-count">11</span>
+    </a>
+    <a href="/group.html?key=zombie" class="custom-category-link">
+      Zombie <span class="custom-category-count">11</span>
+    </a>
+    <a href="/group.html?key=basketball" class="custom-category-link">
+      Basketball <span class="custom-category-count">9</span>
+    </a>
+    <a href="/group.html?key=fps" class="custom-category-link">
+      Fps <span class="custom-category-count">9</span>
+    </a>
+    <a href="/group.html?key=battle-royale" class="custom-category-link">
+      Battle-royale <span class="custom-category-count">8</span>
+    </a>
+    <a href="/group.html?key=sandbox" class="custom-category-link">
+      Sandbox <span class="custom-category-count">8</span>
+    </a>
+    <a href="/category/snake.html" class="custom-category-link">
+      Snake <span class="custom-category-count">8</span>
+    </a>
+    <a href="/group.html?key=tower-defense" class="custom-category-link">
+      Tower-defense <span class="custom-category-count">8</span>
+    </a>
+    <a href="/group.html?key=merge" class="custom-category-link">
+      Merge <span class="custom-category-count">8</span>
+    </a>
+    <a href="/group.html?key=word" class="custom-category-link">
+      Word <span class="custom-category-count">7</span>
+    </a>
+    <a href="/group.html?key=logic" class="custom-category-link">
+      Logic <span class="custom-category-count">7</span>
+    </a>
+    <a href="/group.html?key=casual" class="custom-category-link">
+      Casual <span class="custom-category-count">7</span>
+    </a>
+    <a href="/group.html?key=maze" class="custom-category-link">
+      Maze <span class="custom-category-count">5</span>
+    </a>
+    <a href="/group.html?key=building" class="custom-category-link">
+      Building <span class="custom-category-count">5</span>
+    </a>
+    <a href="/group.html?key=stealth" class="custom-category-link">
+      Stealth <span class="custom-category-count">5</span>
+    </a>
+    <a href="/group.html?key=heist" class="custom-category-link">
+      Heist <span class="custom-category-count">5</span>
+    </a>
+    <a href="/group.html?key=party" class="custom-category-link">
+      Party <span class="custom-category-count">5</span>
+    </a>
+    <a href="/group.html?key=fishing" class="custom-category-link">
+      Fishing <span class="custom-category-count">5</span>
+    </a>
+    <a href="/group.html?key=football" class="custom-category-link">
+      Football <span class="custom-category-count">5</span>
+    </a>
+    <a href="/group.html?key=city-builder" class="custom-category-link">
+      City-builder <span class="custom-category-count">5</span>
+    </a>
+    <a href="/group.html?key=classic" class="custom-category-link">
+      Classic <span class="custom-category-count">5</span>
+    </a>
+    <a href="/group.html?key=education" class="custom-category-link">
+      Education <span class="custom-category-count">5</span>
+    </a>
     <a href="/category/tags.html" class="custom-category-link">
-      Other Tags <span class="custom-category-count">152</span>
+      Other Tags <span class="custom-category-count">159</span>
     </a>
   </div>
 </div>
 </div>
+</div>
           </div>
         </div>
-        <div class="layout-heading mb-4">
+        <div class="layout-heading m-3">
           <div>
             <h1 class="h2">ALL GAMES</h1>
             <div></div>
           </div>
         </div>
 
-        <div class="card-masonry index-page-games-list">
+        <div class="m-3 card-masonry index-page-games-list">
            
           <a href="/category/car.html" class="card card-collection visible visible">
             <div class="card-collection-body" style="background-color: #deb87a">
@@ -1994,11 +2101,11 @@
     </div>
 
     <script defer="" src="/assets/theme/js/jquery.min.js?v=1.0.0"></script>
-    <script defer="" src="/assets/theme/js/bootstrap.js?v=1.0.9"></script>
+    <script defer="" src="/assets/theme/js/bootstrap.js?v=1.0.10"></script>
     <script defer="" src="/assets/theme/js/lazysizes.js?v=1.0.0"></script>
     <script defer="" src="/assets/theme/js/main.js?v=1.0.0"></script>
     <script src="/assets/js/favorite.js"></script>
-    <script defer="" src="/assets/theme/js/navbar-modern.js?v=1.0.0"></script>
+    <script defer="" src="/assets/theme/js/navbar-modern.js?v=1.1.0"></script>
     <script src="https://comment.silecekci.com/embed.js"></script>
     <div class="footer py-2 mt-auto">
       <div class="container-fluid">
@@ -2050,14 +2157,15 @@
     <script src="/assets/js/video_on_card.js"></script>
     <script type="module" src="/assets/js/ucbg_chat_v12.js?v=2.0.2"></script>
     <script src="/assets/js/live-search.js"></script>
-    <script src="/assets/js/categories_menu.js?v=1.0.7"></script>
+    <script src="/assets/js/categories_menu.js?v=1.1.7"></script>
     <script src="/assets/js/users.js?v=1.0.7"></script>
     <!-- Firebase SDK -->
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
     <!-- Firebase Comment System -->
     <script src="/assets/js/firebase-comments.js"></script>
-    <script src="/assets/js/carrousel_featured.js?v=1.1.1"></script>
+    <script src="/assets/js/carrousel_featured.js?v=1.2.1"></script>
+    <script src="/assets/js/category-carousel.js?v=1.2.0"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function (event) {
         document.getElementById("search").focus();

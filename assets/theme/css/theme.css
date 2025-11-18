@@ -23272,7 +23272,7 @@ body.colored {
   .container-lg,
   .container-xl,
   .container-xxl {
-    max-width: 1800px;
+    
   }
 }
 @media (max-width: 1399.98px) {
@@ -23282,7 +23282,7 @@ body.colored {
   .container-lg,
   .container-xl,
   .container-xxl {
-    max-width: 1300px;
+    
   }
 }
 .layout-section {
@@ -24525,7 +24525,7 @@ strong {
   width: 50px;
   background-color: #1a1a1a;
   color: white;
-  transition: width 0.3s ease;
+  transition: left 0.3s ease, width 0.3s ease, transform 0.3s ease;
   z-index: 1000;
   overflow: hidden;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
@@ -24533,13 +24533,14 @@ strong {
   flex-direction: column;
 }
 
+/* Hover - genişler */
 .sidebar:hover {
   width: 250px;
 }
 
 .sidebar-menu {
   padding: 20px 0;
-  margin-top: 60px;
+  margin-top: 10px;
   overflow-y: auto;
   overflow-x: hidden;
   flex: 1;
@@ -24547,16 +24548,20 @@ strong {
   scrollbar-color: #444 #1a1a1a;
 }
 
+@media (min-width: 993px) {
+  .sidebar-menu {
+    margin-top: 70px;
+  }
+}
+
 /* Main content styles */
 .layout-section,
 .layout-header {
-  margin-left: 0px; /* Same as sidebar width */
+  margin-left: 0px;
   transition: margin-left 0.3s ease;
 }
 
-@media (min-width: 992px) {
-  /* 992px ve daha büyük ekranlar için */
-
+@media (min-width: 993px) {
   .layout-header {
     position: fixed;
     top: 0px;
@@ -24568,23 +24573,54 @@ strong {
     background-color: #1a1a1a;
   }
 
-  #recent-games {
-    
+  /* Desktop - Sidebar varsayılan olarak görünür (50px) */
+  .sidebar {
+    left: 0;
+    width: 50px;
+  }
+
+  /* Sayfa içeriği ve footer 50px kayar */
+  .sidebar ~ #recent-games,
+  .sidebar ~ .layout-section,
+  .sidebar ~ .footer {
+    margin-left: 50px;
+    transition: margin-left 0.3s ease;
+  }
+
+  /* Sidebar kapalı - gizlenir */
+  .sidebar.sidebar-closed {
+    left: -50px;
+  }
+
+  /* Sidebar kapalı - sayfa kayması kaldırılır */
+  .sidebar.sidebar-closed ~ #recent-games,
+  .sidebar.sidebar-closed ~ .layout-section,
+  .sidebar.sidebar-closed ~ .footer {
+    margin-left: 0px;
+  }
+
+  /* Hover - sidebar genişler ama sayfa kaymaz */
+  .sidebar:hover {
+    width: 250px;
+  }
+
+  .sidebar:hover ~ .layout-section,
+  .sidebar:hover ~ #recent-games,
+  .sidebar:hover ~ .footer {
     margin-left: 50px;
   }
 
-  .layout-section {
-    margin-left: 50px;
+  /* Eski collapsed class'ını override et */
+  .sidebar.collapsed {
+    left: 0 !important;
+    width: 50px !important;
+  }
+
+  .sidebar.collapsed:hover {
+    width: 250px !important;
   }
 }
 
-/* When sidebar is hovered (expanded) */
-.sidebar:hover ~ .layout-section,
-.sidebar:hover ~ .layout-header {
-  margin-left: 50px; /* Same as expanded sidebar width */
-}
-
-/* For mobile, remove the margin when sidebar is hidden */
 @media (max-width: 992px) {
   .layout-section,
   .layout-header {
@@ -24668,27 +24704,61 @@ strong {
 
 /* Mobile styles */
 @media (max-width: 992px) {
-  .sidebar {
-    left: -250px;
-    width: 250px;
-    transition: left 0.3s ease;
+  .sidebar,
+  .sidebar.collapsed {
+    left: -250px !important;
+    width: 250px !important;
+    transition: left 0.3s ease !important;
+    z-index: 99;
+    top: 0;
+    height: 100vh;
   }
 
-  .sidebar.mobile-open {
-    left: 0;
+  .sidebar.mobile-open,
+  .sidebar.collapsed.mobile-open {
+    left: 0 !important;
+    width: 250px !important;
+    z-index: 101 !important;
   }
 
   .mobile-menu-btn {
     display: block;
   }
 
-  .sidebar:hover {
-    width: 250px;
-  }
-
   .sidebar-text {
     opacity: 1;
   }
+
+  .sidebar-menu {
+    margin-top: 70px;
+  }
+
+  /* Mobile'da sayfa hiç kaymaz */
+  .layout-section,
+  .layout-header,
+  #recent-games {
+    margin-left: 0 !important;
+  }
+}
+
+/* Sidebar overlay for mobile */
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar-overlay.active {
+  display: block;
+  opacity: 1;
+  z-index: 100;
 }
 
 /* Firebase Comment System */
@@ -24978,8 +25048,10 @@ strong {
 .sidebar-footer-link:hover {
   opacity: 1;
 }
-.sidebar:not(:hover) .sidebar-footer-links {
-  display: none;
+@media (min-width: 993px) {
+  .sidebar:not(:hover) .sidebar-footer-links {
+    display: none;
+  }
 }
 
 /* featured games */
@@ -25233,3 +25305,150 @@ strong {
   }
 }
 
+
+/* Custom Category Links */
+.custom-category-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  margin: 4px;
+  background: rgba(98, 77, 227, 0.1);
+  border: 1px solid rgba(98, 77, 227, 0.2);
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.custom-category-link:hover {
+  background: rgba(98, 77, 227, 0.2);
+  border-color: rgba(98, 77, 227, 0.4);
+  color: rgba(255, 255, 255, 1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(98, 77, 227, 0.2);
+}
+
+.custom-category-count {
+  background: rgba(98, 77, 227, 0.3);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Light Theme */
+[data-theme="light"] .custom-category-link {
+  background: rgba(98, 77, 227, 0.08);
+  border: 1px solid rgba(98, 77, 227, 0.15);
+  color: rgba(0, 0, 0, 0.85);
+}
+
+[data-theme="light"] .custom-category-link:hover {
+  background: rgba(98, 77, 227, 0.15);
+  border-color: rgba(98, 77, 227, 0.3);
+  color: rgba(0, 0, 0, 0.95);
+  box-shadow: 0 4px 12px rgba(98, 77, 227, 0.15);
+}
+
+[data-theme="light"] .custom-category-count {
+  background: rgba(98, 77, 227, 0.15);
+  color: rgba(98, 77, 227, 1);
+}
+
+/* Carousel Container & Arrows */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+
+.card-carousel {
+  display: flex;
+  gap: 16px;
+  transition: transform 0.3s ease-out;
+  will-change: transform;
+}
+
+.carousel-container .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(98, 77, 227, 0.9);
+  border: 2px solid rgba(98, 77, 227, 0.3);
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  user-select: none;
+  box-shadow: 0 4px 12px rgba(98, 77, 227, 0.3);
+}
+
+.carousel-container .arrow:hover {
+  background: rgba(98, 77, 227, 1);
+  border-color: rgba(98, 77, 227, 0.5);
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 6px 16px rgba(98, 77, 227, 0.4);
+}
+
+.carousel-container .arrow:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.carousel-container .arrow.left {
+  left: 5px;
+}
+
+.carousel-container .arrow.right {
+  right: 5px;
+}
+
+/* Light Theme Arrows */
+[data-theme="light"] .carousel-container .arrow {
+  background: rgba(98, 77, 227, 0.85);
+  border: 2px solid rgba(98, 77, 227, 0.2);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(98, 77, 227, 0.25);
+}
+
+[data-theme="light"] .carousel-container .arrow:hover {
+  background: rgba(98, 77, 227, 1);
+  border-color: rgba(98, 77, 227, 0.4);
+  box-shadow: 0 6px 16px rgba(98, 77, 227, 0.35);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .carousel-container .arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+  }
+  
+  .carousel-container .arrow.left {
+    left: 2px;
+  }
+  
+  .carousel-container .arrow.right {
+    right: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container .arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+  }
+}
