@@ -81,6 +81,11 @@
   box-sizing: border-box;
 }
 
+/* Fix for unwanted bullet point at top-left */
+body, body * {
+  list-style: none !important;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
