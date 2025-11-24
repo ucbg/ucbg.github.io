@@ -151,7 +151,8 @@
     "description": "Latest chapter in the beloved puzzle adventure series. New environments, creative challenges, and charming visuals.",
     "groups": "adventure, puzzle",
     "keywords": "Adam and Eve 6 game, puzzle adventure series, point and click escape, biblical puzzle game, online adventure",
-    "main_categories": "action, adventure, kids, puzzle, school, strategy"
+    "main_categories": "action, adventure, kids, puzzle, school, strategy",
+    "featured": true
   },
   {
     "slug": "adam-and-eve-7",
@@ -267,8 +268,7 @@
     "main_categories": "kids, running",
     "servers": {
       "server1": "https://angry-gran-run.netlify.app/"
-    },
-    "featured": true
+    }
   },
   {
     "slug": "apple-shooter",
@@ -571,7 +571,8 @@
     "description": "Precision platformer with minimalist design. Navigate deadly traps as a small square climbing an enormous tower.",
     "groups": "platformer, puzzle",
     "keywords": "big tower tiny square game, platformer challenge game, precision jumping game, hardcore platformer, indie game",
-    "main_categories": "adventure, kids, platform, puzzle, school, skill, stickman, strategy"
+    "main_categories": "adventure, kids, platform, puzzle, school, skill, stickman, strategy",
+    "featured": true
   },
   {
     "slug": "biker-street",
@@ -604,8 +605,7 @@
     "description": "Multiplayer tank battle with blocky graphics. Customize your tank and compete in various battle modes.",
     "groups": "shooter, tank",
     "keywords": "block tanks game, pixel tank game, multiplayer shooter game, online tank battle, blocky combat game",
-    "main_categories": "action, adventure, shooting",
-    "featured": true
+    "main_categories": "action, adventure, shooting"
   },
   {
     "slug": "block-world",
@@ -737,7 +737,8 @@
     "description": "Hilarious soccer game with bobblehead physics. Wobbly characters create unpredictable and funny matches.",
     "groups": "soccer, sports",
     "keywords": "booblehead soccer game, funny football game, wobbly soccer game, physics sports game, online soccer fun",
-    "main_categories": "skill, soccer, sport, two-player"
+    "main_categories": "skill, soccer, sport, two-player",
+    "featured": true
   },
   {
     "slug": "bottle-flip-3d",
@@ -814,8 +815,7 @@
     "description": "First-person shooter running directly in browser. Fast-paced multiplayer action with various weapons and maps.",
     "groups": "fps, shooter",
     "keywords": "browserfps game, online shooter game, web-based fps, multiplayer shooting game, browser first person shooter",
-    "main_categories": "action, adventure, shooting",
-    "featured": true
+    "main_categories": "action, adventure, shooting"
   },
   {
     "slug": "bubble-pop-adventures",
@@ -1415,8 +1415,7 @@
     "description": "Chaotic battle royale platformer. Compete in ridiculous obstacle courses against dozens of players.",
     "groups": "battle-royale, party",
     "keywords": "fall guys game, battle royale game, obstacle course game, multiplayer party game, online knockout",
-    "main_categories": "action, adventure, kids, strategy, two-player",
-    "featured": true
+    "main_categories": "action, adventure, kids, strategy, two-player"
   },
   {
     "slug": "farm-match-seasons",
@@ -1493,8 +1492,7 @@
     "description": "Relaxing fishing puzzle hybrid. Match colored fish while enjoying serene aquatic visuals.",
     "groups": "fishing, simulation",
     "keywords": "fishing and lines game, fishing puzzle game, line drawing game, underwater strategy game, online fishing",
-    "main_categories": "adventure, kids",
-    "featured": true
+    "main_categories": "adventure, kids"
   },
   {
     "slug": "fishing-frenzy",
@@ -1538,8 +1536,7 @@
     "description": "Infamously difficult one-button game. Navigate pipes with precise taps in this classic mobile port.",
     "groups": "arcade, endless",
     "keywords": "flappy bird game, classic mobile game, difficult flier game, pipe dodging game, online arcade game",
-    "main_categories": "kids",
-    "featured": true
+    "main_categories": "kids"
   },
   {
     "slug": "fnaf-4",
@@ -1594,7 +1591,8 @@
     "description": "Endless runner with football mechanics. Dodge defenders and score touchdowns in this sports-themed game.",
     "groups": "football, runner",
     "keywords": "football run game, soccer runner game, sports endless runner, obstacle dodging game, online sports game",
-    "main_categories": "action, kids, running, skill, sport"
+    "main_categories": "action, kids, running, skill, sport",
+    "featured": true
   },
   {
     "slug": "football-strike",
@@ -1666,8 +1664,7 @@
     "description": "Precision platformer sequel. Even more challenging obstacle courses requiring pixel-perfect jumps.",
     "groups": "platformer, runner",
     "keywords": "geodash 2 game, geometric platformer game, precision jumping game, difficult runner game, online platformer",
-    "main_categories": "adventure, kids, platform, running, skill, stickman",
-    "featured": true
+    "main_categories": "adventure, kids, platform, running, skill, stickman"
   },
   {
     "slug": "geometry-dash",
@@ -1711,8 +1708,7 @@
     "description": "Frustrating climbing simulator. Use a hammer to navigate an unforgiving mountain landscape.",
     "groups": "difficult, platformer",
     "keywords": "getting over it game, difficult climbing game, physics challenge game, frustrating platformer, online climbing",
-    "main_categories": "action, adventure, kids, platform, skill, stickman, strategy",
-    "featured": true
+    "main_categories": "action, adventure, kids, platform, skill, stickman, strategy"
   },
   {
     "slug": "gigga-io",
@@ -1756,7 +1752,8 @@
     "description": "Open-world Vegas experience. Explore the strip, gamble, and enjoy virtual nightlife.",
     "groups": "driving, simulation",
     "keywords": "grand vegas simulator game, casino life game, gambling simulation game, online vegas game, casino tycoon",
-    "main_categories": "car, kids, racing"
+    "main_categories": "car, kids, racing",
+    "featured": true
   },
   {
     "slug": "granny",
@@ -1869,7 +1866,8 @@
     "description": "Remastered version of the classic shooter. Updated graphics and mechanics for modern browsers.",
     "groups": "platformer, shooter",
     "keywords": "gun mayhem redux game, updated shooter game, weapon combat game, online battle game, flash shooter",
-    "main_categories": "action, adventure, kids, platform, shooting, skill, stickman"
+    "main_categories": "action, adventure, kids, platform, shooting, skill, stickman",
+    "featured": true
   },
   {
     "slug": "gun-spin",
@@ -2111,7 +2109,8 @@
     "description": "Authentic truck simulator. Navigate Indian roadways with colorful cargo and challenging traffic.",
     "groups": "driving, simulation",
     "keywords": "indian truck game, truck simulator game, india driving game, online vehicle game, transport simulator",
-    "main_categories": "car, kids, racing"
+    "main_categories": "car, kids, racing",
+    "featured": true
   },
   {
     "slug": "infinite-soccer",
@@ -2166,7 +2165,8 @@
     "description": "Latest match-3 jewel game. Faster gameplay and new power-ups in this puzzle sequel.",
     "groups": "match-3, puzzle",
     "keywords": "jewels blitz 5 game, match-3 puzzle game, gem matching game, online puzzle game, jewel blitz",
-    "main_categories": "adventure, clicker, kids, puzzle, school, strategy"
+    "main_categories": "adventure, clicker, kids, puzzle, school, strategy",
+    "featured": true
   },
   {
     "slug": "johnny-trigger",
@@ -2221,8 +2221,7 @@
     "description": "Exotic tower defense game. Defend your base with jungle-themed units and traps.",
     "groups": "strategy, tower-defense",
     "keywords": "jungle td game, tower defense game, jungle theme game, online strategy game, defense challenge",
-    "main_categories": "strategy",
-    "featured": true
+    "main_categories": "strategy"
   },
   {
     "slug": "just-fall-lol",
@@ -2431,8 +2430,7 @@
     "description": "Agricultural merging game. Combine crops to create rare hybrids and expand your farm.",
     "groups": "merge, puzzle",
     "keywords": "merge harvest game, farming puzzle game, crop merging game, online farming game, agricultural puzzle",
-    "main_categories": "adventure, kids, puzzle, school, strategy",
-    "featured": true
+    "main_categories": "adventure, kids, puzzle, school, strategy"
   },
   {
     "slug": "merge-round-racers",
@@ -2443,7 +2441,8 @@
     "description": "Racing and merging hybrid. Combine vehicles to unlock faster cars and win races.",
     "groups": "merge, racing",
     "keywords": "merge round racers game, car merging game, vehicle puzzle game, online racing game, merge puzzle",
-    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player"
+    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player",
+    "featured": true
   },
   {
     "slug": "minecraft-case-simulator",
@@ -2586,8 +2585,7 @@
     "description": "Popular bike stunt game. Perfect your jumps through challenging obstacle courses.",
     "groups": "bike, racing",
     "keywords": "moto x3m game, bike racing game, obstacle course game, online racing game, physics bike",
-    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player",
-    "featured": true
+    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player"
   },
   {
     "slug": "moto3xm-pool-party",
@@ -2719,8 +2717,7 @@
     "description": "Modern reinterpretation of the arcade classic with updated graphics while keeping the original maze-chase gameplay.",
     "groups": "arcade, maze",
     "keywords": "pacman remake game, classic arcade remake, maze chase game, ghost eating game, retro gaming",
-    "main_categories": "adventure, kids, puzzle",
-    "featured": true
+    "main_categories": "adventure, kids, puzzle"
   },
   {
     "slug": "papas-burgeria",
@@ -2907,7 +2904,8 @@
     "description": "Absurd clicker game with humorous poop-themed progression and upgrades.",
     "groups": "clicker, idle",
     "keywords": "poop clicker 3 game, toilet humor game, incremental clicker game, gross-out game, online idle game",
-    "main_categories": "clicker, kids, puzzle, strategy"
+    "main_categories": "clicker, kids, puzzle, strategy",
+    "featured": true
   },
   {
     "slug": "pou",
@@ -2918,7 +2916,8 @@
     "description": "Popular virtual pet game where you care for and customize your own alien pet.",
     "groups": "simulation, virtual-pet",
     "keywords": "pou game, virtual pet game, alien care simulator, mobile pet game, online pet raising",
-    "main_categories": "kids, strategy"
+    "main_categories": "kids, strategy",
+    "featured": true
   },
   {
     "slug": "president-simulator",
@@ -2951,8 +2950,7 @@
     "description": "Three-dimensional sokoban-style puzzle game where you push boxes to their targets.",
     "groups": "puzzle, sokoban",
     "keywords": "push the box 3d game, 3D puzzle game, box moving challenge, sokoban style game, brain teaser",
-    "main_categories": "adventure, kids, puzzle, school, strategy",
-    "featured": true
+    "main_categories": "adventure, kids, puzzle, school, strategy"
   },
   {
     "slug": "rabbit-samurai-2",
@@ -3098,7 +3096,8 @@
     "description": "Sequel to the popular puzzle game featuring more mind-bending challenges.",
     "groups": "adventure, puzzle",
     "keywords": "riddle transfer 2 game, puzzle sequel game, brain teaser game, logic challenge game, online puzzle",
-    "main_categories": "action, adventure, kids, puzzle, school, strategy"
+    "main_categories": "action, adventure, kids, puzzle, school, strategy",
+    "featured": true
   },
   {
     "slug": "rise-of-neon-square",
@@ -3153,7 +3152,8 @@
     "description": "Fast-paced ball game where you navigate through a spinning vortex of obstacles.",
     "groups": "physics, puzzle",
     "keywords": "rolly vortex ball game, endless runner game, ball rolling game, obstacle dodging game, online arcade",
-    "main_categories": "adventure, kids, puzzle, school, strategy"
+    "main_categories": "adventure, kids, puzzle, school, strategy",
+    "featured": true
   },
   {
     "slug": "rooftop-snipers-2",
@@ -3497,7 +3497,8 @@
     "description": "Snake and Agar.io hybrid where you grow longer while competing against others.",
     "groups": "agar, io",
     "keywords": "snay io game, agar.io style game, cell eating game, multiplayer growth game, online .io game",
-    "main_categories": "adventure, io, kids, multiplayer"
+    "main_categories": "adventure, io, kids, multiplayer",
+    "featured": true
   },
   {
     "slug": "sniper-shot-bullet-time",
@@ -3541,7 +3542,8 @@
     "description": "3D snowmobile racing game with challenging mountain courses.",
     "groups": "racing, snow",
     "keywords": "snow rider 3d game, snowmobile racing game, winter sports game, online racing game, snow driving",
-    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player"
+    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player",
+    "featured": true
   },
   {
     "slug": "soccer-heads",
@@ -3585,8 +3587,7 @@
     "description": "Updated version of the classic Sonic platformer with improved graphics.",
     "groups": "action, platformer",
     "keywords": "sonic remastered game, classic platformer remake, speed running game, hedgehog adventure game, online platformer",
-    "main_categories": "action, adventure, kids, platform, skill, stickman, trending",
-    "featured": true
+    "main_categories": "action, adventure, kids, platform, skill, stickman, trending"
   },
   {
     "slug": "spider-solitaire",
@@ -3619,8 +3620,7 @@
     "description": "Sequel to the underwater combat game with improved fish physics.",
     "groups": "action, shooter",
     "keywords": "stabfish 2 game, underwater combat sequel, fish stabbing game, ocean battle game, online action",
-    "main_categories": "action, adventure, shooting, trending",
-    "featured": true
+    "main_categories": "action, adventure, shooting, trending"
   },
   {
     "slug": "stabfish-io",
@@ -4036,7 +4036,8 @@
     "description": "Sequel to the iconic endless runner with improved graphics and mechanics.",
     "groups": "endless, runner",
     "keywords": "temple run 2 game, endless runner sequel, obstacle dodging game, online platformer, mobile runner",
-    "main_categories": "kids, running"
+    "main_categories": "kids, running",
+    "featured": true
   },
   {
     "slug": "the-backrooms",
@@ -4146,8 +4147,7 @@
     "description": "Police-themed installment of the time-bending shooter series.",
     "groups": "action, shooter",
     "keywords": "time shooter 3 swat game, tactical fps game, police shooter game, online action game, time manipulation",
-    "main_categories": "action, adventure, shooting, trending",
-    "featured": true
+    "main_categories": "action, adventure, shooting, trending"
   },
   {
     "slug": "tiny-fishing",
@@ -4202,8 +4202,7 @@
     "description": "Simulation game where you manage busy intersections as a traffic controller.",
     "groups": "puzzle, simulation",
     "keywords": "traffic control game, intersection management game, vehicle directing game, online puzzle game, traffic simulator",
-    "main_categories": "adventure, kids, puzzle, school, strategy",
-    "featured": true
+    "main_categories": "adventure, kids, puzzle, school, strategy"
   },
   {
     "slug": "traffic-run",
@@ -5260,7 +5259,8 @@
     "description": "Comprehensive off-road driving experience with various terrains.",
     "groups": "offroad, racing",
     "keywords": "ultimate offroad simulator game, 4x4 driving game, terrain challenge game, online racing game, extreme driving",
-    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player"
+    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player",
+    "featured": true
   },
   {
     "slug": "uno",
@@ -5337,7 +5337,8 @@
     "description": "An exciting motocross racing game where players perform stunts, master challenging tracks, and compete to become the ultimate off-road motorcycle champion.",
     "groups": "racing, motorcycle, stunt, offroad, skill",
     "keywords": "super mx the champion game, motocross racing, motorcycle stunts, off-road racing, online racing game, bike championship",
-    "main_categories": "racing, skill, action"
+    "main_categories": "racing, skill, action",
+    "featured": true
   },
   {
     "slug": "zoom-be-3",
@@ -5516,8 +5517,7 @@
     "description": "An escape room-style puzzle game where the player must find a cat hiding in a room. Players tap around the scene and use drag-and-drop items to discover the cat, which hides in increasingly tricky spots with each new stage.",
     "groups": "point-and-click, puzzle, escape, hidden-object",
     "keywords": "where's my cat game, find the cat game, hidden object game, escape puzzle, point and click game, cat puzzle game, free online game",
-    "main_categories": "puzzle, kids",
-    "featured": true
+    "main_categories": "puzzle, kids"
   },
   {
     "slug": "wheelie-bike",
@@ -5696,7 +5696,8 @@
     "description": "A first-person motorcycle racing game where players ride through dynamic traffic, complete missions, and avoid collisions while upgrading bikes for better performance.",
     "groups": "racing, simulation, motorcycle, mission",
     "keywords": "traffic rider game, motorcycle racing, first-person bike game, traffic dodging, mission-based racing, bike upgrade game",
-    "main_categories": "racing, skill, action"
+    "main_categories": "racing, skill, action",
+    "featured": true
   },
   {
     "slug": "traffic-escape",
@@ -5721,7 +5722,8 @@
     "main_categories": "adventure, rpg, strategy",
     "special_state": {
       "new_window": true
-    }
+    },
+    "featured": true
   },
   {
     "slug": "touchdowners",
@@ -5906,8 +5908,7 @@
     "main_categories": "puzzle, kids, two-player, strategy",
     "servers": {
       "server1": "https://dots-and-boxes.pages.dev/"
-    },
-    "featured": true
+    }
   },
   {
     "slug": "table-tennis-ultimate-tournament",
@@ -6549,8 +6550,7 @@
     "main_categories": "adventure, strategy, horror",
     "servers": {
       "server1": "https://99-nights-in-the-forest-1.pages.dev"
-    },
-    "featured": true
+    }
   },
   {
     "slug": "parking-fury-3d-night-thief",
