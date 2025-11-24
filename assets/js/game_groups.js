@@ -1,1 +1,66 @@
-document.addEventListener("DOMContentLoaded",async function(){const e=document.getElementById("games-container"),t=document.getElementById("searchError"),n=new URLSearchParams(window.location.search).get("key");if(!n)return t.style.display="block",void(t.textContent="No group specified!");try{const a=await fetch("/data-json/games.json?v=2.0.91"),i=await a.json();let s=!1,c=0;i.forEach(t=>{const a=t.groups?t.groups.split(",").map(e=>e.trim()):[],i=t.main_categories?t.main_categories.split(",").map(e=>e.trim()):[];if((a.includes(n)||i.includes(n))&&c<50){c++,s=!0;const n=document.createElement("a");n.href=t.url,n.className="card game-item visible",n.style.display="block",n.innerHTML=`\n            <picture>\n              <source\n                data-srcset="${t.image}"\n                type="image/png"\n                class="img-fluid"\n                srcset="${t.image}"\n              />\n              <img\n                data-src="${t.image}"\n                alt="${t.title}"\n                class="lazyload img-fluid"\n                width="500"\n                height="500"\n              />\n            </picture>\n            <div class="card-body">\n              <h3>${t.title}</h3>\n            </div>\n          `,e.appendChild(n)}}),s||(t.style.display="block")}catch(e){t.style.display="block",t.textContent="Error loading games!"}});
+document.addEventListener("DOMContentLoaded", async function () {
+  const container = document.getElementById("games-container");
+  const searchError = document.getElementById("searchError");
+
+  // URL'den key parametresini al
+  const urlParams = new URLSearchParams(window.location.search);
+  const groupKey = urlParams.get("key");
+
+  if (!groupKey) {
+    searchError.style.display = "block";
+    searchError.textContent = "No group specified!";
+    return;
+  }
+
+  try {
+    // Oyunları JSON'dan çek
+    const response = await fetch("/data-json/games.json?v=2.0.92");
+    const games = await response.json();
+
+    let found = false;
+    let cnt = 0;
+
+    games.forEach((game) => {
+      const groups = game.groups ? game.groups.split(",").map((g) => g.trim()) : [];
+      const categories = game.main_categories ? game.main_categories.split(",").map((c) => c.trim()) : [];
+
+      if ((groups.includes(groupKey) || categories.includes(groupKey)) && cnt < 50) {
+        cnt++;
+        found = true;
+
+        const card = document.createElement("a");
+        card.href = game.url;
+        card.className = "card game-item visible";
+        card.style.display = "block";
+        card.innerHTML = `
+            <picture>
+              <source
+                data-srcset="${game.image}"
+                type="image/png"
+                class="img-fluid"
+                srcset="${game.image}"
+              />
+              <img
+                data-src="${game.image}"
+                alt="${game.title}"
+                class="lazyload img-fluid"
+                width="500"
+                height="500"
+              />
+            </picture>
+            <div class="card-body">
+              <h3>${game.title}</h3>
+            </div>
+          `;
+        container.appendChild(card);
+      }
+    });
+
+    if (!found) {
+      searchError.style.display = "block";
+    }
+  } catch (error) {
+    searchError.style.display = "block";
+    searchError.textContent = "Error loading games!";
+  }
+});
