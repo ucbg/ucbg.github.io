@@ -180,13 +180,26 @@
           <img src="/assets/static/dark_logo.png" alt="UCBG Logo" class="light-logo" />
         </a>
 
+        <!-- Mobile Search Toggle Button -->
+        <button class="navbar-mobile-search-toggle" id="mobileSearchToggle" title="Search">
+          <svg width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+            <use xlink:href="/assets/sprite/sprite.svg#search"></use>
+          </svg>
+        </button>
+
         <!-- Search Bar -->
-        <form class="navbar-search" action="/search.html" method="get" autocomplete="off">
+        <form class="navbar-search" id="navbarSearch" action="/search.html" method="get" autocomplete="off">
           <div class="search-input-wrapper">
             <svg width="18" height="18" stroke="currentColor" stroke-width="1.75" fill="none">
               <use xlink:href="/assets/sprite/sprite.svg#search"></use>
             </svg>
             <input type="text" name="q" id="search" placeholder="Search games..." required="true" minlength="3" autocomplete="off" />
+            <button type="button" class="search-close-btn" id="searchCloseBtn" aria-label="Close search">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
           </div>
         </form>
 
@@ -259,6 +272,17 @@
               <span class="nav-tooltip">Online Players</span>
             </button>
           </li>
+          <li>
+            <button class="nav-action-btn server-btn" title="Servers" onclick="toggleServerDropdown(event)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+              <span class="nav-tooltip">Servers</span>
+            </button>
+          </li>
         </ul>
 
         <!-- Mobile Menu Toggle -->
@@ -278,7 +302,197 @@
             <div class="fs-sm text-muted"></div>
           </div>
         </div>
-        <div id="searchError" class="card-masonry mb-4" style="display: none">No games found in this group!</div>
+        <div id="searchError" class="card-masonry mb-4" style="display: none">
+          <main class="no-games-card" role="main" aria-labelledby="title">
+            <section>
+              <h1 id="title">No games found in this group — yo yo!</h1>
+              <p class="no-games-sub">Short story time for the squad. Keep it chill, keep it funny.</p>
+
+              <article class="no-games-story" aria-label="Funny server story">
+                <p><strong>Okay, listen up:</strong> UCBG is like a whole neighborhood of servers. But only one server is the real "Boss" — the one that does its morning stretch, reads the update notes, and stays on top of things. It's the cool kid who actually shows up on time. 😎</p>
+
+                <p>All the other servers are basically its followers — they run after the Boss saying, "Wait up! What's the newest game?!" They copy its homework five minutes before class and try to catch up. Cute, but slow. 🦆🦆🦆</p>
+
+                <p>So — if you want to see <em>all</em> the games (and not miss the rare epic ones), you gotta visit the Boss Server — the most updated address. That's where the freshest stuff hangs out.</p>
+
+                <div class="no-games-cta" role="group" aria-label="Call to action">
+                  <a id="visit-btn" class="no-games-btn" href="#" target="_blank" rel="noopener">Go to the Boss Server</a>
+                  <span class="no-games-hint">Or check the top-right menu for quick links.</span>
+                </div>
+              </article>
+            </section>
+
+            <aside class="no-games-mascot" aria-hidden="false">
+              <div class="no-games-boss" title="Main / Boss Server">BOSS</div>
+              <div style="font-weight: 700">Main Server</div>
+              <div style="color: #9ca3af; font-size: 13px">All the other servers: "Bro, wait for me!"</div>
+              <div class="no-games-ducks" aria-hidden="true">
+                <div class="no-games-duck">1</div>
+                <div class="no-games-duck">2</div>
+                <div class="no-games-duck">3</div>
+              </div>
+            </aside>
+          </main>
+          <style>
+            /* Scoped styles for no-games section */
+            .no-games-card {
+              --no-games-bg: #0f1724;
+              --no-games-card: #111827;
+              --no-games-accent: #7c3aed;
+              --no-games-muted: #9ca3af;
+              --no-games-neon: #a78bfa;
+              --no-games-glass: rgba(255, 255, 255, 0.03);
+            }
+
+            .no-games-card {
+              width: min(920px, 96%);
+              background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.04));
+              border-radius: 16px;
+              padding: 28px;
+              box-shadow: 0 10px 40px rgba(2, 6, 23, 0.6);
+              display: grid;
+              grid-template-columns: 1fr 320px;
+              gap: 20px;
+              align-items: center;
+              border: 1px solid rgba(255, 255, 255, 0.03);
+            }
+
+            .no-games-card h1 {
+              margin: 0 0 8px 0;
+              font-size: 26px;
+              letter-spacing: 0.2px;
+            }
+            
+            .no-games-sub {
+              color: var(--no-games-muted);
+              margin: 0 0 18px 0;
+            }
+
+            .no-games-story {
+              font-size: 15px;
+              line-height: 1.45;
+              background: linear-gradient(90deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0));
+              padding: 16px;
+              border-radius: 12px;
+              border: 1px dashed rgba(255, 255, 255, 0.03);
+            }
+
+            .no-games-cta {
+              margin-top: 14px;
+              display: flex;
+              gap: 10px;
+              align-items: center;
+            }
+            
+            .no-games-btn {
+              background: linear-gradient(90deg, var(--no-games-accent), #4f46e5);
+              color: white;
+              border: 0;
+              padding: 10px 14px;
+              border-radius: 10px;
+              font-weight: 700;
+              cursor: pointer;
+              text-decoration: none;
+              box-shadow: 0 8px 24px rgba(92, 72, 255, 0.12);
+              display: inline-block;
+            }
+            
+            .no-games-hint {
+              color: var(--no-games-muted);
+              font-size: 13px;
+            }
+
+            .no-games-mascot {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 14px;
+              text-align: center;
+              padding: 12px;
+              background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), rgba(0, 0, 0, 0.03));
+              border-radius: 12px;
+              border: 1px solid rgba(255, 255, 255, 0.02);
+            }
+            
+            .no-games-boss {
+              width: 140px;
+              height: 140px;
+              border-radius: 18px;
+              background: linear-gradient(135deg, var(--no-games-neon), #4f46e5);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: 900;
+              font-size: 44px;
+              color: #07121a;
+              box-shadow: 0 10px 30px rgba(124, 58, 237, 0.18);
+              transform: rotate(-6deg);
+              animation: no-games-bob 3s ease-in-out infinite;
+            }
+            
+            @keyframes no-games-bob {
+              0% {
+                transform: translateY(0) rotate(-6deg);
+              }
+              50% {
+                transform: translateY(-8px) rotate(-3deg);
+              }
+              100% {
+                transform: translateY(0) rotate(-6deg);
+              }
+            }
+
+            .no-games-ducks {
+              display: flex;
+              gap: 8px;
+              justify-content: center;
+            }
+            
+            .no-games-duck {
+              width: 44px;
+              height: 44px;
+              border-radius: 10px;
+              background: linear-gradient(180deg, #ffd166, #ff9f1c);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: #2b2b2b;
+              font-weight: 800;
+              transform: translateY(0);
+              animation: no-games-waddles 2.2s ease-in-out infinite;
+            }
+            
+            .no-games-duck:nth-child(2) {
+              animation-delay: 0.18s;
+            }
+            
+            .no-games-duck:nth-child(3) {
+              animation-delay: 0.36s;
+            }
+            
+            @keyframes no-games-waddles {
+              0% {
+                transform: translateY(0) rotate(-6deg);
+              }
+              50% {
+                transform: translateY(-6px) rotate(6deg);
+              }
+              100% {
+                transform: translateY(0) rotate(-6deg);
+              }
+            }
+
+            @media (max-width: 880px) {
+              .no-games-card {
+                grid-template-columns: 1fr;
+                text-align: center;
+              }
+              .no-games-mascot {
+                order: -1;
+              }
+            }
+          </style>
+        </div>
         <div id="games-container" class="card-masonry mb-4"></div>
       </div>
     </div>
@@ -306,7 +520,7 @@
       </div>
     </div>
     <script defer="" src="/assets/theme/js/jquery.min.js?v=1.0.0"></script>
-    <script defer="" src="/assets/theme/js/bootstrap.js?v=1.0.31"></script>
+    <script defer="" src="/assets/theme/js/bootstrap.js?v=1.0.32"></script>
     <script defer="" src="/assets/theme/js/lazysizes.js?v=1.0.0"></script>
     <script defer="" src="/assets/theme/js/main.js?v=1.0.0"></script>
     <script src="/assets/js/favorite.js"></script>
@@ -320,11 +534,13 @@
     <script src="/assets/js/live-search.js"></script>
     <script src="/assets/js/categories_menu.js?v=1.1.7"></script>
     <script src="/assets/js/users.js?v=1.0.7"></script>
+    <script src="/assets/js/servers.js?v=1.0.0"></script>
     <!-- Firebase SDK -->
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
     <!-- Firebase Comment System -->
     <script src="/assets/js/firebase-comments.js"></script>
+    <script src="/assets/js/latest_server.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function (event) {
         document.getElementById("search").focus();
