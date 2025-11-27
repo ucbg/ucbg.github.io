@@ -53,7 +53,8 @@
     "title": "3D BOWLING",
     "image": "/assets/upload/UCBGgames/3d-bowling.png",
     "groups": "simulation, sports",
-    "main_categories": "kids"
+    "main_categories": "kids",
+    "featured": true
   },
   {
     "slug": "3d-free-kick",
@@ -297,8 +298,7 @@
     "main_categories": "adventure, io, kids, multiplayer, two-player",
     "servers": {
       "server1": "https://amazom.gitlab.io/bad-egg-io/"
-    },
-    "featured": true
+    }
   },
   {
     "slug": "bad-ice-cream-2",
@@ -661,7 +661,8 @@
     "title": "CAR RUSH",
     "image": "/assets/upload/UCBGgames/car-rush.png",
     "groups": "driving, racing",
-    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player"
+    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player",
+    "featured": true
   },
   {
     "slug": "cars-simulator",
@@ -781,8 +782,7 @@
     "title": "CREATIVE KILL CHAMBER",
     "image": "/assets/upload/UCBGgames/creative-kill-chamber.png",
     "groups": "platformer, puzzle",
-    "main_categories": "adventure, kids, platform, puzzle, school, skill, stickman, strategy",
-    "featured": true
+    "main_categories": "adventure, kids, platform, puzzle, school, skill, stickman, strategy"
   },
   {
     "slug": "crossy-road",
@@ -970,7 +970,8 @@
     "main_categories": "skill, sport",
     "servers": {
       "server1": "https://basketballstarsonline.github.io/file/"
-    }
+    },
+    "featured": true
   },
   {
     "slug": "eggy-car",
@@ -1130,8 +1131,7 @@
     "title": "FNAF 4",
     "image": "/assets/upload/UCBGgames/fnaf-4.png",
     "groups": "horror, survival",
-    "main_categories": "action, adventure, halloween",
-    "featured": true
+    "main_categories": "action, adventure, halloween"
   },
   {
     "slug": "fnaf-shooter",
@@ -1163,8 +1163,7 @@
     "title": "FOOTBALL RUN",
     "image": "/assets/upload/UCBGgames/football-run.png",
     "groups": "football, runner",
-    "main_categories": "action, kids, running, skill, sport",
-    "featured": true
+    "main_categories": "action, kids, running, skill, sport"
   },
   {
     "slug": "football-strike",
@@ -1242,8 +1241,7 @@
     "title": "GETAWAY SHOOTOUT",
     "image": "/assets/upload/UCBGgames/getaway-shootout.png",
     "groups": "platformer, shooter",
-    "main_categories": "action, adventure, kids, platform, shooting, skill, stickman",
-    "featured": true
+    "main_categories": "action, adventure, kids, platform, shooting, skill, stickman"
   },
   {
     "slug": "getting-over-it",
@@ -1638,7 +1636,8 @@
     "title": "KART FIGHT io",
     "image": "/assets/upload/UCBGgames/kart-fight-io.png",
     "groups": "io, racing",
-    "main_categories": "action, adventure, car, io, kids, multiplayer, racing, skill, sport, two-player"
+    "main_categories": "action, adventure, car, io, kids, multiplayer, racing, skill, sport, two-player",
+    "featured": true
   },
   {
     "slug": "knight-hero-adventure-rpg",
@@ -1838,8 +1837,7 @@
     "title": "Monkey Mart",
     "image": "/assets/upload/UCBGgames/monkey-mart.png",
     "groups": "management, simulation",
-    "main_categories": "adventure, kids, strategy",
-    "featured": true
+    "main_categories": "adventure, kids, strategy"
   },
   {
     "slug": "monster-truck-vs-zombie",
@@ -1927,7 +1925,8 @@
     "title": "Noob Steve Parkour",
     "image": "/assets/upload/UCBGgames/noob-steve-parkour.png",
     "groups": "parkour, platformer",
-    "main_categories": "adventure, kids, parkour, platform, skill, stickman, strategy"
+    "main_categories": "adventure, kids, parkour, platform, skill, stickman, strategy",
+    "featured": true
   },
   {
     "slug": "offroad-ultimate",
@@ -1999,7 +1998,8 @@
     "title": "PAPAS FREEZERIA",
     "image": "/assets/upload/UCBGgames/papas-freezeria.png",
     "groups": "cooking, time-management",
-    "main_categories": "action, adventure, kids"
+    "main_categories": "action, adventure, kids",
+    "featured": true
   },
   {
     "slug": "papas-pizzaria",
@@ -2023,8 +2023,7 @@
     "title": "PARK OUT",
     "image": "/assets/upload/UCBGgames/park-out.png",
     "groups": "parking, puzzle",
-    "main_categories": "adventure, kids, puzzle, school, strategy",
-    "featured": true
+    "main_categories": "adventure, kids, puzzle, school, strategy"
   },
   {
     "slug": "parking-fury-2",
@@ -2211,7 +2210,8 @@
     "title": "REAL GARBAGE TRUCK",
     "image": "/assets/upload/UCBGgames/real-garbage-truck.png",
     "groups": "driving, simulation",
-    "main_categories": "car, kids, racing"
+    "main_categories": "car, kids, racing",
+    "featured": true
   },
   {
     "slug": "recoil",
@@ -2251,7 +2251,8 @@
     "title": "RIDDLE SCHOOL 5",
     "image": "/assets/upload/UCBGgames/riddle-school-5.png",
     "groups": "adventure, puzzle",
-    "main_categories": "action, adventure, kids, puzzle, school, strategy"
+    "main_categories": "action, adventure, kids, puzzle, school, strategy",
+    "featured": true
   },
   {
     "slug": "riddle-transfer-2",
@@ -2766,8 +2767,7 @@
     "title": "Subway Surfers Hawaii",
     "image": "/assets/upload/UCBGgames/subway-surfers-hawaii.png",
     "groups": "endless, runner",
-    "main_categories": "kids, running",
-    "featured": true
+    "main_categories": "kids, running"
   },
   {
     "slug": "subway-surfers-new-york",
@@ -2898,8 +2898,7 @@
     "title": "TAMING io",
     "image": "/assets/upload/UCBGgames/taming-io.png",
     "groups": "io, survival",
-    "main_categories": "action, adventure, io, kids, multiplayer",
-    "featured": true
+    "main_categories": "action, adventure, io, kids, multiplayer"
   },
   {
     "slug": "tank-trouble-2",
@@ -2945,7 +2944,8 @@
     "title": "TEMPLE RUN 2",
     "image": "/assets/upload/UCBGgames/temple-run-2.png",
     "groups": "endless, runner",
-    "main_categories": "kids, running"
+    "main_categories": "kids, running",
+    "featured": true
   },
   {
     "slug": "the-backrooms",
@@ -3033,7 +3033,8 @@
     "title": "TINY FISHING",
     "image": "/assets/upload/UCBGgames/tiny-fishing.png",
     "groups": "fishing, simulation",
-    "main_categories": "adventure, kids"
+    "main_categories": "adventure, kids",
+    "featured": true
   },
   {
     "slug": "tomb-runner",
@@ -3073,7 +3074,8 @@
     "title": "TRAFFIC RUN",
     "image": "/assets/upload/UCBGgames/traffic-run.png",
     "groups": "endless, runner",
-    "main_categories": "kids, running"
+    "main_categories": "kids, running",
+    "featured": true
   },
   {
     "slug": "trafficmania",
@@ -3081,8 +3083,7 @@
     "title": "TRAFFICMANIA",
     "image": "/assets/upload/UCBGgames/trafficmania.png",
     "groups": "puzzle, simulation",
-    "main_categories": "adventure, kids, puzzle, school, strategy",
-    "featured": true
+    "main_categories": "adventure, kids, puzzle, school, strategy"
   },
   {
     "slug": "tribals-io",
@@ -3090,8 +3091,7 @@
     "title": "TRIBALS io",
     "image": "/assets/upload/UCBGgames/tribals-io.png",
     "groups": "io, strategy",
-    "main_categories": "adventure, io, kids, multiplayer, strategy",
-    "featured": true
+    "main_categories": "adventure, io, kids, multiplayer, strategy"
   },
   {
     "slug": "tricksplit",
@@ -3267,7 +3267,8 @@
     "title": "WHEELY 4 TIME TRAVEL",
     "image": "/assets/upload/UCBGgames/wheely-4-time-travel.png",
     "groups": "point-and-click, puzzle",
-    "main_categories": "adventure, kids, puzzle, school, strategy"
+    "main_categories": "adventure, kids, puzzle, school, strategy",
+    "featured": true
   },
   {
     "slug": "wheely-5",
@@ -3347,8 +3348,7 @@
     "title": "WRESTLE BROS io",
     "image": "/assets/upload/UCBGgames/wrestle-bros-io.png",
     "groups": "fighting, io",
-    "main_categories": "adventure, fighting, io, kids, multiplayer, strategy",
-    "featured": true
+    "main_categories": "adventure, fighting, io, kids, multiplayer, strategy"
   },
   {
     "slug": "x-trial-racing",
@@ -3442,8 +3442,7 @@
     "title": "18 WHEELER CARGO SIMULATOR 2",
     "image": "/assets/upload/busqueda/18-wheeler-cargo-simulator-2.png",
     "groups": "driving, simulation",
-    "main_categories": "car, kids, racing",
-    "featured": true
+    "main_categories": "car, kids, racing"
   },
   {
     "slug": "a-small-world-cup",
@@ -3462,7 +3461,8 @@
     "main_categories": "adventure, kids, puzzle, school, strategy",
     "servers": {
       "server1": "https://amazom.gitlab.io/amazing-rope-vice-spider-vegas/"
-    }
+    },
+    "featured": true
   },
   {
     "slug": "block-the-pig",
@@ -3665,7 +3665,8 @@
     "title": "MOTO X3M TWO",
     "image": "/assets/upload/busqueda/moto-x3m-two.png",
     "groups": "bike, racing",
-    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player"
+    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player",
+    "featured": true
   },
   {
     "slug": "moto-x3m4-winter",
@@ -3697,7 +3698,8 @@
     "title": "OvO 3",
     "image": "/assets/upload/busqueda/ovo-3.png",
     "groups": "parkour, platformer",
-    "main_categories": "adventure, kids, parkour, platform, skill, stickman, strategy"
+    "main_categories": "adventure, kids, parkour, platform, skill, stickman, strategy",
+    "featured": true
   },
   {
     "slug": "penalty-kick-online",
@@ -3705,8 +3707,7 @@
     "title": "PENALTY KICK ONLINE",
     "image": "/assets/upload/busqueda/penalty-kick-online.png",
     "groups": "soccer, sports",
-    "main_categories": "skill, soccer, sport, two-player",
-    "featured": true
+    "main_categories": "skill, soccer, sport, two-player"
   },
   {
     "slug": "pixel-gun-apocalypse-2",
@@ -3842,8 +3843,7 @@
     "title": "ULTIMATE OFFROAD SIMULATOR",
     "image": "/assets/upload/busqueda/ultimate-offroad-simulator.png",
     "groups": "offroad, racing",
-    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player",
-    "featured": true
+    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player"
   },
   {
     "slug": "uno",
@@ -3883,7 +3883,8 @@
     "title": "CATS: Crash Arena Turbo Stars",
     "image": "/assets/upload/busqueda/cats.png",
     "groups": "action, multiplayer, strategy",
-    "main_categories": "action, multiplayer, strategy"
+    "main_categories": "action, multiplayer, strategy",
+    "featured": true
   },
   {
     "slug": "slope-3",
@@ -4030,8 +4031,7 @@
     "title": "WHERE'S MY CAT",
     "image": "/assets/upload/busqueda/wheres-my-cat.png",
     "groups": "point-and-click, puzzle, escape, hidden-object",
-    "main_categories": "puzzle, kids",
-    "featured": true
+    "main_categories": "puzzle, kids"
   },
   {
     "slug": "wheelie-bike",
@@ -4181,7 +4181,8 @@
     "main_categories": "adventure, rpg, strategy",
     "special_state": {
       "new_window": true
-    }
+    },
+    "featured": true
   },
   {
     "slug": "touchdowners",
@@ -4562,8 +4563,7 @@
     "title": "SLOPE 2 MULTIPLAYER",
     "image": "/assets/upload/busqueda/slope-2-multiplayer.png",
     "groups": "runner, obstacle-course, arcade, skill, multiplayer",
-    "main_categories": "action, kids, skill, running, multiplayer",
-    "featured": true
+    "main_categories": "action, kids, skill, running, multiplayer"
   },
   {
     "slug": "sling-kong",
@@ -4611,7 +4611,8 @@
     "title": "SHOOTZ",
     "image": "/assets/upload/busqueda/shootz.png",
     "groups": "shooter, arcade, precision, action, skill",
-    "main_categories": "action, shooting, skill, kids"
+    "main_categories": "action, shooting, skill, kids",
+    "featured": true
   },
   {
     "slug": "shoot-stickman",
@@ -4683,7 +4684,8 @@
     "title": "RUGBY RUSH",
     "image": "/assets/upload/busqueda/rugby-rush.png",
     "groups": "sports, rugby, action, multiplayer",
-    "main_categories": "sport, action, multiplayer"
+    "main_categories": "sport, action, multiplayer",
+    "featured": true
   },
   {
     "slug": "rolly-vortex",
@@ -4841,8 +4843,7 @@
     "title": "PAPER FIGHTER 3D",
     "image": "/assets/upload/busqueda/paper-fighter-3d.png",
     "groups": "fighting, action, 3d, paper-craft",
-    "main_categories": "action, fighting",
-    "featured": true
+    "main_categories": "action, fighting"
   },
   {
     "slug": "panda-simulator-3d",
@@ -5050,8 +5051,7 @@
     "title": "MINECRAFT BUILDER",
     "image": "/assets/upload/busqueda/minecraft-builder.png",
     "groups": "building, sandbox, creativity, exploration",
-    "main_categories": "adventure, kids, strategy",
-    "featured": true
+    "main_categories": "adventure, kids, strategy"
   },
   {
     "slug": "mine-craftio",
