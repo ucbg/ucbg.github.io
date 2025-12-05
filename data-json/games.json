@@ -13,7 +13,8 @@
     "title": "1010 COLOR MATCH",
     "image": "/assets/upload/UCBGgames/1010-color-match.png",
     "groups": "puzzle, strategy",
-    "main_categories": "adventure, kids, puzzle, school, strategy"
+    "main_categories": "adventure, kids, puzzle, school, strategy",
+    "featured": true
   },
   {
     "slug": "1v1-lol",
@@ -53,7 +54,8 @@
     "title": "3D BOWLING",
     "image": "/assets/upload/UCBGgames/3d-bowling.png",
     "groups": "simulation, sports",
-    "main_categories": "kids"
+    "main_categories": "kids",
+    "featured": true
   },
   {
     "slug": "3d-free-kick",
@@ -369,8 +371,7 @@
     "title": "BASKET BROS io",
     "image": "/assets/upload/UCBGgames/basket-bros-io.png",
     "groups": "basketball, io, sports",
-    "main_categories": "adventure, io, kids, multiplayer, skill, sport",
-    "featured": true
+    "main_categories": "adventure, io, kids, multiplayer, skill, sport"
   },
   {
     "slug": "basket-random",
@@ -669,8 +670,7 @@
     "title": "CARS SIMULATOR",
     "image": "/assets/upload/UCBGgames/cars-simulator.png",
     "groups": "racing, simulation",
-    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player",
-    "featured": true
+    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player"
   },
   {
     "slug": "case-clicker",
@@ -678,8 +678,7 @@
     "title": "CASE CLICKER",
     "image": "/assets/upload/UCBGgames/case-clicker.png",
     "groups": "clicker, idle",
-    "main_categories": "clicker, kids, puzzle, strategy",
-    "featured": true
+    "main_categories": "clicker, kids, puzzle, strategy"
   },
   {
     "slug": "checkers",
@@ -767,7 +766,8 @@
     "title": "CRAZY CARS",
     "image": "/assets/upload/UCBGgames/crazy-cars.png",
     "groups": "driving, racing",
-    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player"
+    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player",
+    "featured": true
   },
   {
     "slug": "crazy-tunel-3d",
@@ -815,7 +815,8 @@
     "title": "CUT THE ROPE",
     "image": "/assets/upload/UCBGgames/cut-the-rope.png",
     "groups": "physics, puzzle",
-    "main_categories": "adventure, kids, puzzle, school, strategy"
+    "main_categories": "adventure, kids, puzzle, school, strategy",
+    "featured": true
   },
   {
     "slug": "dark-ninja",
@@ -919,7 +920,8 @@
     "title": "DOWN THE HILL",
     "image": "/assets/upload/UCBGgames/down-the-hill.png",
     "groups": "downhill, racing",
-    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player"
+    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player",
+    "featured": true
   },
   {
     "slug": "dreadhead-parkour",
@@ -994,8 +996,7 @@
     "title": "ELECTRON DASH",
     "image": "/assets/upload/UCBGgames/electron-dash.png",
     "groups": "endless, runner",
-    "main_categories": "kids, running",
-    "featured": true
+    "main_categories": "kids, running"
   },
   {
     "slug": "endless-tunnel",
@@ -1091,7 +1092,8 @@
     "title": "FISHING AND LINES",
     "image": "/assets/upload/UCBGgames/fishing-and-lines.png",
     "groups": "fishing, simulation",
-    "main_categories": "adventure, kids"
+    "main_categories": "adventure, kids",
+    "featured": true
   },
   {
     "slug": "fishing-frenzy",
@@ -1115,8 +1117,7 @@
     "title": "FIVE NIGHTS AT FREDDYS 3",
     "image": "/assets/upload/UCBGgames/five-nights-at-freddys-3.png",
     "groups": "horror, survival",
-    "main_categories": "action, adventure, halloween",
-    "featured": true
+    "main_categories": "action, adventure, halloween"
   },
   {
     "slug": "flappy-bird",
@@ -1218,8 +1219,7 @@
     "title": "GEODASH 2",
     "image": "/assets/upload/UCBGgames/geodash-2.png",
     "groups": "platformer, runner",
-    "main_categories": "adventure, kids, platform, running, skill, stickman",
-    "featured": true
+    "main_categories": "adventure, kids, platform, running, skill, stickman"
   },
   {
     "slug": "geometry-dash",
@@ -1243,8 +1243,7 @@
     "title": "GETAWAY SHOOTOUT",
     "image": "/assets/upload/UCBGgames/getaway-shootout.png",
     "groups": "platformer, shooter",
-    "main_categories": "action, adventure, kids, platform, shooting, skill, stickman",
-    "featured": true
+    "main_categories": "action, adventure, kids, platform, shooting, skill, stickman"
   },
   {
     "slug": "getting-over-it",
@@ -1407,7 +1406,8 @@
     "title": "HAPPY FISHING",
     "image": "/assets/upload/UCBGgames/happy-fishing.png",
     "groups": "fishing, simulation",
-    "main_categories": "adventure, kids"
+    "main_categories": "adventure, kids",
+    "featured": true
   },
   {
     "slug": "happy-wheels",
@@ -1447,7 +1447,8 @@
     "title": "HILL CLIMB RACING 2",
     "image": "/assets/upload/UCBGgames/hill-climb-racing-2.png",
     "groups": "physics, racing",
-    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player"
+    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player",
+    "featured": true
   },
   {
     "slug": "hole-io",
@@ -1599,7 +1600,8 @@
     "title": "Johnny Upgrade",
     "image": "/assets/upload/UCBGgames/johnny-upgrade.png",
     "groups": "platformer, shooter",
-    "main_categories": "action, adventure, kids, platform, shooting, skill, stickman"
+    "main_categories": "action, adventure, kids, platform, shooting, skill, stickman",
+    "featured": true
   },
   {
     "slug": "johny-revenge",
@@ -1847,7 +1849,8 @@
     "title": "MONSTER TRUCK VS ZOMBIE",
     "image": "/assets/upload/UCBGgames/monster-truck-vs-zombie.png",
     "groups": "racing, zombie",
-    "main_categories": "action, adventure, car, halloween, kids, racing, skill, sport, two-player"
+    "main_categories": "action, adventure, car, halloween, kids, racing, skill, sport, two-player",
+    "featured": true
   },
   {
     "slug": "moomoo-io-sandbox",
@@ -1935,8 +1938,7 @@
     "title": "OFFROAD ULTIMATE",
     "image": "/assets/upload/UCBGgames/offroad-ultimate.png",
     "groups": "offroad, racing",
-    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player",
-    "featured": true
+    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player"
   },
   {
     "slug": "only-up-2",
@@ -2096,7 +2098,8 @@
     "title": "PIXEL GUN 3D",
     "image": "/assets/upload/UCBGgames/pixel-gun-3d.png",
     "groups": "fps, shooter",
-    "main_categories": "action, adventure, shooting"
+    "main_categories": "action, adventure, shooting",
+    "featured": true
   },
   {
     "slug": "pixel-smash-duel",
@@ -2494,8 +2497,7 @@
     "title": "SMALL WORLD CUP",
     "image": "/assets/upload/UCBGgames/small-world-cup.png",
     "groups": "soccer, sports",
-    "main_categories": "skill, soccer, sport, two-player",
-    "featured": true
+    "main_categories": "skill, soccer, sport, two-player"
   },
   {
     "slug": "smash-karts-io",
@@ -2535,8 +2537,7 @@
     "title": "SNAIL BOB WINTER STORY",
     "image": "/assets/upload/UCBGgames/snail-bob-winter-story.png",
     "groups": "adventure, puzzle",
-    "main_categories": "action, adventure, kids, puzzle, school, strategy",
-    "featured": true
+    "main_categories": "action, adventure, kids, puzzle, school, strategy"
   },
   {
     "slug": "snake-io",
@@ -2712,8 +2713,7 @@
     "title": "STICKBATTLE lol",
     "image": "/assets/upload/UCBGgames/stickbattle-lol.png",
     "groups": "fighting, multiplayer",
-    "main_categories": "fighting, io, multiplayer, strategy, two-player",
-    "featured": true
+    "main_categories": "fighting, io, multiplayer, strategy, two-player"
   },
   {
     "slug": "stickman-boost-2",
@@ -2994,8 +2994,7 @@
     "title": "THE IMPOSSIBLE QUIZ",
     "image": "/assets/upload/UCBGgames/the-impossible-quiz.png",
     "groups": "puzzle, trivia",
-    "main_categories": "adventure, kids, puzzle, school, strategy",
-    "featured": true
+    "main_categories": "adventure, kids, puzzle, school, strategy"
   },
   {
     "slug": "there-is-no-game",
@@ -3083,7 +3082,8 @@
     "title": "TRAFFICMANIA",
     "image": "/assets/upload/UCBGgames/trafficmania.png",
     "groups": "puzzle, simulation",
-    "main_categories": "adventure, kids, puzzle, school, strategy"
+    "main_categories": "adventure, kids, puzzle, school, strategy",
+    "featured": true
   },
   {
     "slug": "tribals-io",
@@ -3243,8 +3243,7 @@
     "title": "WHEELIE BIKE",
     "image": "/assets/upload/UCBGgames/wheelie-bike.png",
     "groups": "bike, racing",
-    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player",
-    "featured": true
+    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player"
   },
   {
     "slug": "wheely-2",
@@ -3316,7 +3315,8 @@
     "title": "WORDLE INFINITE",
     "image": "/assets/upload/UCBGgames/wordle-infinite.png",
     "groups": "puzzle, word",
-    "main_categories": "adventure, kids, puzzle, school, strategy"
+    "main_categories": "adventure, kids, puzzle, school, strategy",
+    "featured": true
   },
   {
     "slug": "worlds-hardest-game-2",
@@ -3372,8 +3372,7 @@
     "title": "ZOMBIE SHOOTER 2D",
     "image": "/assets/upload/UCBGgames/zombie-shooter-2d.png",
     "groups": "shooter, zombie",
-    "main_categories": "action, adventure, halloween, shooting",
-    "featured": true
+    "main_categories": "action, adventure, halloween, shooting"
   },
   {
     "slug": "zombocalypse-shooter",
@@ -3419,8 +3418,7 @@
     "main_categories": "car, kids, racing",
     "servers": {
       "server1": "https://18-wheeler-truck-parking-2.pages.dev/"
-    },
-    "featured": true
+    }
   },
   {
     "slug": "18-wheeler-driving-sim",
@@ -3842,7 +3840,8 @@
     "title": "ULTIMATE OFFROAD SIMULATOR",
     "image": "/assets/upload/busqueda/ultimate-offroad-simulator.png",
     "groups": "offroad, racing",
-    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player"
+    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player",
+    "featured": true
   },
   {
     "slug": "uno",
@@ -3898,7 +3897,8 @@
     "title": "SUPER MX THE CHAMPION",
     "image": "/assets/upload/busqueda/super-mx-the-champion.png",
     "groups": "racing, motorcycle, stunt, offroad, skill",
-    "main_categories": "racing, skill, action"
+    "main_categories": "racing, skill, action",
+    "featured": true
   },
   {
     "slug": "zoom-be-3",
@@ -3970,8 +3970,7 @@
     "title": "WORDS SEARCH CLASSIC EDITION",
     "image": "/assets/upload/busqueda/words-search-classic-edition.png",
     "groups": "word, puzzle, classic, observation",
-    "main_categories": "puzzle, kids, school",
-    "featured": true
+    "main_categories": "puzzle, kids, school"
   },
   {
     "slug": "wordle-plus",
@@ -4014,8 +4013,7 @@
     "title": "WOOD BLOCKS 3D",
     "image": "/assets/upload/busqueda/wood-blocks-3d.png",
     "groups": "puzzle, block, strategy, logic, casual",
-    "main_categories": "puzzle, kids, strategy",
-    "featured": true
+    "main_categories": "puzzle, kids, strategy"
   },
   {
     "slug": "wizard-mike",
@@ -4031,7 +4029,8 @@
     "title": "WHERE'S MY CAT",
     "image": "/assets/upload/busqueda/wheres-my-cat.png",
     "groups": "point-and-click, puzzle, escape, hidden-object",
-    "main_categories": "puzzle, kids"
+    "main_categories": "puzzle, kids",
+    "featured": true
   },
   {
     "slug": "wheelie-bike",
@@ -4146,8 +4145,7 @@
     "title": "TRUCK LOADER 2",
     "image": "/assets/upload/busqueda/truck-loader-2.png",
     "groups": "physics, puzzle, cars, point-and-click",
-    "main_categories": "puzzle, kids, strategy",
-    "featured": true
+    "main_categories": "puzzle, kids, strategy"
   },
   {
     "slug": "traffic-rush",
@@ -4547,8 +4545,7 @@
     "title": "SLOPE GAME",
     "image": "/assets/upload/busqueda/slope-game.png",
     "groups": "runner, obstacle-course, arcade, skill",
-    "main_categories": "action, kids, skill, running",
-    "featured": true
+    "main_categories": "action, kids, skill, running"
   },
   {
     "slug": "slope-city",
@@ -4556,8 +4553,7 @@
     "title": "SLOPE CITY",
     "image": "/assets/upload/busqueda/slope-city.png",
     "groups": "runner, obstacle-course, arcade, skill",
-    "main_categories": "action, kids, skill, running",
-    "featured": true
+    "main_categories": "action, kids, skill, running"
   },
   {
     "slug": "slope-2-multiplayer",
@@ -4597,7 +4593,8 @@
     "title": "SKIBIDI SHOOTER",
     "image": "/assets/upload/busqueda/skibidi-shooter.png",
     "groups": "shooter, action, comedy, meme, fps",
-    "main_categories": "action, shooting"
+    "main_categories": "action, shooting",
+    "featured": true
   },
   {
     "slug": "sink-it",
@@ -4645,7 +4642,8 @@
     "title": "SHAPE FOLD ANIMALS",
     "image": "/assets/upload/busqueda/shape-fold-animals.png",
     "groups": "puzzle, animals, geometry, spatial, education",
-    "main_categories": "puzzle, kids, school"
+    "main_categories": "puzzle, kids, school",
+    "featured": true
   },
   {
     "slug": "shady-bears",
@@ -4781,7 +4779,8 @@
     "title": "PEPPA PIG BASKETBALL",
     "image": "/assets/upload/busqueda/peppa-pig-basketball.png",
     "groups": "basketball, sports, kids, casual, animals",
-    "main_categories": "sport, kids, multiplayer"
+    "main_categories": "sport, kids, multiplayer",
+    "featured": true
   },
   {
     "slug": "99-nights-in-the-forest",
@@ -5019,7 +5018,8 @@
     "title": "MONSTERS WHEELS SPECIAL",
     "image": "/assets/upload/busqueda/monsters-wheels-special.png",
     "groups": "racing, monster-truck, stunt, offroad, arcade",
-    "main_categories": "car, racing, action, kids"
+    "main_categories": "car, racing, action, kids",
+    "featured": true
   },
   {
     "slug": "monster-truck-racing-arena",
@@ -5212,5 +5212,53 @@
     "image": "/assets/upload/busqueda/kart-fight-io.png",
     "groups": "racing, io, multiplayer, combat, arcade",
     "main_categories": "io, multiplayer, action, racing"
+  },
+  {
+    "slug": "just-park-it-12",
+    "url": "/game/just-park-it-12.html",
+    "title": "JUST PARK IT 12",
+    "image": "/assets/upload/busqueda/just-park-it-12.png",
+    "groups": "driving, parking, simulation, skill",
+    "main_categories": "car, kids, skill"
+  },
+  {
+    "slug": "just-park-it-11",
+    "url": "/game/just-park-it-11.html",
+    "title": "JUST PARK IT 11",
+    "image": "/assets/upload/busqueda/just-park-it-11.png",
+    "groups": "driving, parking, simulation, skill, precision",
+    "main_categories": "car, kids, skill"
+  },
+  {
+    "slug": "jollyworld",
+    "url": "/game/jollyworld.html",
+    "title": "JOLLYWORLD",
+    "image": "/assets/upload/busqueda/jollyworld.png",
+    "groups": "platformer, adventure, puzzle, kids, happy",
+    "main_categories": "adventure, kids, platform"
+  },
+  {
+    "slug": "johnny-upgrade",
+    "url": "/game/johnny-upgrade.html",
+    "title": "JOHNNY UPGRADE",
+    "image": "/assets/upload/busqueda/johnny-upgrade.png",
+    "groups": "action, upgrade, shooter, platformer, arcade",
+    "main_categories": "action, shooting, skill, kids"
+  },
+  {
+    "slug": "james-gun",
+    "url": "/game/james-gun.html",
+    "title": "JAMES GUN",
+    "image": "/assets/upload/busqueda/james-gun.png",
+    "groups": "shooter, action, spy, adventure, mission",
+    "main_categories": "action, shooting, adventure"
+  },
+  {
+    "slug": "impossible-tic-tac-toe",
+    "url": "/game/impossible-tic-tac-toe.html",
+    "title": "IMPOSSIBLE TIC TAC TOE",
+    "image": "/assets/upload/busqueda/impossible-tic-tac-toe.png",
+    "groups": "puzzle, strategy, logic, difficult, classic",
+    "main_categories": "puzzle, strategy, kids"
   }
 ]
