@@ -1,1 +1,25 @@
-function loadGoogleAnalytics(e){var a=document.getElementsByTagName("script")[0];let o=document.createElement("script");function gtag(){dataLayer.push(arguments)}o.async=!0,o.src="https://www.googletagmanager.com/gtag/js?id="+e,a.parentNode.insertBefore(o,a),window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config",e)}window.addEventListener("load",function(){navigator.webdriver?(console.log("Bot Browser"),loadGoogleAnalytics("G-31Y2TCV8JL")):(console.log("Human Browser"),loadGoogleAnalytics("G-31Y2TCV8JL"))});
+function loadGoogleAnalytics(id) {
+  // Google tag (gtag.js)
+  var firstScript = document.getElementsByTagName("script")[0];
+  let newScript = document.createElement("script");
+  newScript.async = true;
+  newScript.src = "https://www.googletagmanager.com/gtag/js?id=" + id;
+  firstScript.parentNode.insertBefore(newScript, firstScript);
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+  gtag("config", id);
+}
+
+window.addEventListener("load", function () {
+  if (navigator.webdriver) {
+    console.log("Bot Browser");
+    loadGoogleAnalytics("G-31Y2TCV8JL");
+  } else {
+    console.log("Human Browser");
+    loadGoogleAnalytics("G-31Y2TCV8JL");
+  }
+});

@@ -1,1 +1,169 @@
-!function(){"use strict";let t=[],e=[],n=new Map,o=!1;function initCategoryCarousel(){const e=document.querySelector(".custom-category-group");if(!e)return;const n=Array.from(e.querySelectorAll(".custom-category-link"));t=n.map(t=>({html:t.outerHTML,element:t})),0!==t.length&&(updateVisibleCategories(),window.addEventListener("resize",function debounce(t,e){let n;return function executedFunction(...o){const later=()=>{clearTimeout(n),t(...o)};clearTimeout(n),n=setTimeout(later,e)}}(updateVisibleCategories,250)),startRandomRotation())}function updateVisibleCategories(){const n=document.querySelector(".custom-category-group");if(!n)return;const o=function calculateMaxItems(t){const e=140,n=Math.floor(t/e);return Math.max(4,Math.min(n,10))}(n.offsetWidth);n.innerHTML="",e=[];[...t].sort(()=>Math.random()-.5).slice(0,o).forEach((t,o)=>{const a=document.createElement("div");a.innerHTML=t.html;const r=a.firstElementChild;r.style.animationDelay=.1*o+"s",r.dataset.buttonIndex=o,n.appendChild(r),e.push(r)})}function scheduleButtonRotation(a){n.has(a)&&clearTimeout(n.get(a));const r=5e3*Math.random()+5e3,i=setTimeout(()=>{!function rotateButton(n){if(o)return;const a=e[n];a&&(a.classList.add("fade-out"),setTimeout(()=>{const o=e.map(t=>t.textContent.trim()),r=t.filter(t=>{const e=document.createElement("div");e.innerHTML=t.html;const n=e.textContent.trim();return!o.includes(n)}),i=r.length>0?r[Math.floor(Math.random()*r.length)]:t[Math.floor(Math.random()*t.length)],c=document.createElement("div");c.innerHTML=i.html;const u=c.firstElementChild;u.dataset.buttonIndex=n,a.replaceWith(u),e[n]=u,scheduleButtonRotation(n)},700))}(a)},r);n.set(a,i)}function startRandomRotation(){e.forEach((t,e)=>{scheduleButtonRotation(e)})}document.addEventListener("DOMContentLoaded",function(){const t=document.querySelector(".custom-category-group");t&&(t.addEventListener("mouseenter",()=>{o=!0,function stopRandomRotation(){n.forEach(t=>clearTimeout(t)),n.clear()}()}),t.addEventListener("mouseleave",()=>{o=!1,startRandomRotation()}))}),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",initCategoryCarousel):initCategoryCarousel()}();
+// Kategori Carousel JavaScript - Random Individual Rotation
+(function() {
+  'use strict';
+  
+  let categories = [];
+  let visibleButtons = [];
+  let buttonTimers = new Map();
+  let isPaused = false;
+  
+  function initCategoryCarousel() {
+    const container = document.querySelector('.custom-category-group');
+    if (!container) return;
+    
+    // Tüm kategorileri al
+    const allLinks = Array.from(container.querySelectorAll('.custom-category-link'));
+    categories = allLinks.map(link => ({
+      html: link.outerHTML,
+      element: link
+    }));
+    
+    if (categories.length === 0) return;
+    
+    // Başlangıçta gösterilecek kategori sayısını hesapla
+    updateVisibleCategories();
+    
+    // Pencere boyutu değiştiğinde yeniden hesapla
+    window.addEventListener('resize', debounce(updateVisibleCategories, 250));
+    
+    // Her buton için rastgele zamanlama başlat
+    startRandomRotation();
+  }
+  
+  function updateVisibleCategories() {
+    const container = document.querySelector('.custom-category-group');
+    if (!container) return;
+    
+    const containerWidth = container.offsetWidth;
+    const maxItemsToShow = calculateMaxItems(containerWidth);
+    
+    // Mevcut kategorileri temizle
+    container.innerHTML = '';
+    visibleButtons = [];
+    
+    // Rastgele kategoriler seç
+    const shuffled = [...categories].sort(() => Math.random() - 0.5);
+    const itemsToShow = shuffled.slice(0, maxItemsToShow);
+    
+    itemsToShow.forEach((cat, index) => {
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = cat.html;
+      const link = tempDiv.firstElementChild;
+      link.style.animationDelay = `${index * 0.1}s`;
+      link.dataset.buttonIndex = index;
+      container.appendChild(link);
+      visibleButtons.push(link);
+    });
+  }
+  
+  function calculateMaxItems(containerWidth) {
+    // Ortalama bir kategori genişliği (padding + margin dahil)
+    const avgItemWidth = 140;
+    const maxItems = Math.floor(containerWidth / avgItemWidth);
+    return Math.max(4, Math.min(maxItems, 10)); // En az 4, en fazla 10 kategori
+  }
+  
+  function rotateButton(buttonIndex) {
+    if (isPaused) return;
+    
+    const button = visibleButtons[buttonIndex];
+    if (!button) return;
+    
+    // Butonu fade out yap
+    button.classList.add('fade-out');
+    
+    // Animasyon bitince yeni kategori göster
+    setTimeout(() => {
+      // Kullanılmayan bir kategori seç
+      const usedCategories = visibleButtons.map(btn => btn.textContent.trim());
+      const availableCategories = categories.filter(cat => {
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = cat.html;
+        const text = tempDiv.textContent.trim();
+        return !usedCategories.includes(text);
+      });
+      
+      // Yeni kategori seç (yoksa rastgele)
+      const newCat = availableCategories.length > 0 
+        ? availableCategories[Math.floor(Math.random() * availableCategories.length)]
+        : categories[Math.floor(Math.random() * categories.length)];
+      
+      // Yeni butonu oluştur
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = newCat.html;
+      const newButton = tempDiv.firstElementChild;
+      newButton.dataset.buttonIndex = buttonIndex;
+      
+      // Eski butonu değiştir
+      button.replaceWith(newButton);
+      visibleButtons[buttonIndex] = newButton;
+      
+      // Bu buton için yeni rastgele zamanlama ayarla
+      scheduleButtonRotation(buttonIndex);
+    }, 700);
+  }
+  
+  function scheduleButtonRotation(buttonIndex) {
+    // Önceki timer'ı temizle
+    if (buttonTimers.has(buttonIndex)) {
+      clearTimeout(buttonTimers.get(buttonIndex));
+    }
+    
+    // 5-10 saniye arası rastgele süre
+    const randomDelay = Math.random() * 5000 + 5000; // 5000-10000ms
+    
+    const timerId = setTimeout(() => {
+      rotateButton(buttonIndex);
+    }, randomDelay);
+    
+    buttonTimers.set(buttonIndex, timerId);
+  }
+  
+  function startRandomRotation() {
+    // Her buton için rastgele zamanlama başlat
+    visibleButtons.forEach((_, index) => {
+      scheduleButtonRotation(index);
+    });
+  }
+  
+  function stopRandomRotation() {
+    // Tüm timer'ları temizle
+    buttonTimers.forEach(timerId => clearTimeout(timerId));
+    buttonTimers.clear();
+  }
+  
+  // Debounce fonksiyonu
+  function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+      const later = () => {
+        clearTimeout(timeout);
+        func(...args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
+  }
+  
+  // Mouse hover'da carousel'i durdur
+  document.addEventListener('DOMContentLoaded', function() {
+    const container = document.querySelector('.custom-category-group');
+    if (container) {
+      container.addEventListener('mouseenter', () => {
+        isPaused = true;
+        stopRandomRotation();
+      });
+      container.addEventListener('mouseleave', () => {
+        isPaused = false;
+        startRandomRotation();
+      });
+    }
+  });
+  
+  // Sayfa yüklendiğinde başlat
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCategoryCarousel);
+  } else {
+    initCategoryCarousel();
+  }
+})();

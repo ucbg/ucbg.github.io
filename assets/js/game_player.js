@@ -1,1 +1,885 @@
-const CONFIG={defaultServers:["https://gameinclassroom.github.io","https://unblockedgames67.gitlab.io","https://unblockedgames66.gitlab.io","https://ubgwtf.gitlab.io"],jsonUrl:"/data-json/games.json?v=2.0.74",theme:{bg:"#0b1220",panel:"#0f172a",text:"#e5e7eb",accent:"#06b6d4",accentActive:"#22d3ee",btn:"#111827",btnActive:"#1f2937",border:"rgba(148,163,184,0.2)"},fullscreenMode:"together"};function el(e,t={},n=[]){const r=document.createElement(e);for(const[e,n]of Object.entries(t))"style"===e&&n&&"object"==typeof n?Object.assign(r.style,n):e.startsWith("on")&&"function"==typeof n?r.addEventListener(e.slice(2),n):r.setAttribute(e,n);for(const e of n)r.appendChild("string"==typeof e?document.createTextNode(e):e);return r}function insertAfter(e,t){e.parentNode.insertBefore(t,e.nextSibling)}function requestFullscreen(e){return e.requestFullscreen?e.requestFullscreen():e.webkitRequestFullscreen?e.webkitRequestFullscreen():e.msRequestFullscreen?e.msRequestFullscreen():void 0}function exitFullscreen(){return document.exitFullscreen?document.exitFullscreen():document.webkitExitFullscreen?document.webkitExitFullscreen():document.msExitFullscreen?document.msExitFullscreen():void 0}function isFullscreen(){return!!(document.fullscreenElement||document.webkitFullscreenElement||document.msFullscreenElement)}function allowFullscreen(e){e.setAttribute("allowfullscreen",""),e.allowFullscreen=!0}function ratioWrap(){const e=el("div",{class:"game-embed-wrapper"});Object.assign(e.style,{position:"relative",width:"100%",background:CONFIG.theme.bg,borderRadius:"16px",overflow:"hidden",boxShadow:`0 1px 0 0 ${CONFIG.theme.border} inset`});const t=el("div");Object.assign(t.style,{width:"100%",paddingTop:"56.25%"});const n=el("div");return Object.assign(n.style,{position:"absolute",inset:"0",display:"flex",alignItems:"stretch",justifyContent:"stretch",background:CONFIG.theme.bg,zIndex:"1"}),e.appendChild(t),e.appendChild(n),{wrapper:e,inner:n}}function joinUrl(e,t){return`${String(e).replace(/\/$/,"")}/${String(t).replace(/^\//,"")}`}function buildMirrorCandidates(e,t){return[joinUrl(e,`${t}/`),joinUrl(e,`${t}/index.html`)]}function heartButton(e){const t="http://www.w3.org/2000/svg",n=document.createElementNS(t,"svg");n.setAttribute("id","favoriteIcon"),n.setAttribute("width","20"),n.setAttribute("height","20"),n.setAttribute("viewBox","0 0 24 24"),n.setAttribute("overflow","visible");const r=document.createElementNS(t,"path");r.setAttribute("d","M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 C2 6 4 4 6.5 4 c1.74 0 3.41 1.01 4.13 2.44h.75 C14.09 5.01 15.76 4 17.5 4 C20 4 22 6 22 8.5 c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"),r.setAttribute("fill",e?"#ef4444":"gray"),n.appendChild(r);const s=el("button",{type:"button",title:"Favorite","aria-pressed":e?"true":"false"},[n]);function render(e){r.setAttribute("fill",e?"#ef4444":"gray"),s.style.color=e?"#ef4444":CONFIG.theme.text,s.setAttribute("aria-pressed",e?"true":"false")}return Object.assign(s.style,{width:"34px",height:"34px",display:"inline-flex",alignItems:"center",justifyContent:"center",background:CONFIG.theme.btn,color:e?"#ef4444":CONFIG.theme.text,border:`1px solid ${CONFIG.theme.border}`,borderRadius:"8px",cursor:"pointer",transition:"background .2s, color .2s",lineHeight:"1"}),s.addEventListener("mouseenter",()=>s.style.background=CONFIG.theme.btnActive),s.addEventListener("mouseleave",()=>s.style.background=CONFIG.theme.btn),render(e),s.addEventListener("click",()=>{render(e=!e);try{toggleFavorite?.()}catch(e){}}),{btn:s,render:render}}const LOGO_SVG='<?xml version="1.0" encoding="UTF-8"?>\n<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60.48 13.68">\n  <image width="252" height="57" transform="scale(.24)" xlink:href="data:image/png;base64,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"/>\n</svg>';function createNewWindowMessage(e,t){const n=el("div",{class:"new-window-message"});Object.assign(n.style,{width:"100%",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",gap:"20px",padding:"40px 20px",textAlign:"center",background:CONFIG.theme.panel,borderRadius:"12px",border:`1px solid ${CONFIG.theme.border}`});const r=el("div");r.innerHTML=`<svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="${CONFIG.theme.accent}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">\n    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>\n    <polyline points="15 3 21 3 21 9"/>\n    <line x1="10" y1="14" x2="21" y2="3"/>\n  </svg>`;const s=el("p",{},["You must open this game in a new tab"]);Object.assign(s.style,{fontSize:"18px",fontWeight:"500",color:CONFIG.theme.text,margin:"0"});const i=el("button",{type:"button"},["Open in New Tab"]);return Object.assign(i.style,{padding:"12px 24px",fontSize:"16px",fontWeight:"600",color:"#fff",background:CONFIG.theme.accent,border:"none",borderRadius:"8px",cursor:"pointer",transition:"background .2s, transform .05s"}),i.addEventListener("mouseenter",()=>i.style.background=CONFIG.theme.accentActive),i.addEventListener("mouseleave",()=>i.style.background=CONFIG.theme.accent),i.addEventListener("mousedown",()=>i.style.transform="scale(0.98)"),i.addEventListener("mouseup",()=>i.style.transform="scale(1)"),i.addEventListener("click",()=>{window.open(e,"_blank","noopener,noreferrer")}),n.appendChild(r),n.appendChild(s),n.appendChild(i),n}function buildControls({onFavorite:e,onFullscreen:t,onShare:n,servers:r,onSwitch:s,initialServerIndex:i,hideServerButtons:o=!1}){const a=el("div",{class:"game-controls"});Object.assign(a.style,{position:"relative",display:"flex",alignItems:"center",gap:"12px",background:CONFIG.theme.panel,color:CONFIG.theme.text,padding:"10px 12px",borderRadius:"12px",border:`1px solid ${CONFIG.theme.border}`,marginTop:"10px",marginBottom:"20px"});const l=el("a",{class:"logo-box",href:"https://ucbg.github.io",target:"_blank",rel:"noopener noreferrer",title:"ucbg.github.io"});if(Object.assign(l.style,{width:"80px",height:"24px",display:"flex",alignItems:"center",justifyContent:"center",overflow:"hidden",textDecoration:"none",cursor:"pointer",transition:"opacity .2s"}),l.addEventListener("mouseenter",()=>l.style.opacity="0.8"),l.addEventListener("mouseleave",()=>l.style.opacity="1"),l.insertAdjacentHTML("afterbegin",LOGO_SVG),a.appendChild(l),!o){const e=el("span",{},["Servers"]);Object.assign(e.style,{fontSize:"13px",opacity:"0.85",marginLeft:"8px",marginRight:"2px"});const t=el("div",{class:"server-group",role:"group","aria-label":"Servers"});Object.assign(t.style,{display:"flex",gap:"6px",marginLeft:"4px",flexWrap:"wrap"});const n=[];r.forEach((e,r)=>{const o=function makeBtn(e,t=!1){const n=el("button",{type:"button"},[e]);return Object.assign(n.style,{background:t?CONFIG.theme.btnActive:CONFIG.theme.btn,color:CONFIG.theme.text,border:`1px solid ${CONFIG.theme.border}`,borderRadius:"8px",padding:"6px 10px",cursor:"pointer",fontSize:"13px",lineHeight:"1",transition:"background .2s, color .2s, transform .05s"}),n.addEventListener("mouseenter",()=>n.style.background=CONFIG.theme.btnActive),n.addEventListener("mouseleave",()=>n.style.background="1"===n.dataset.active?CONFIG.theme.btnActive:CONFIG.theme.btn),n.addEventListener("mousedown",()=>n.style.transform="scale(0.98)"),n.addEventListener("mouseup",()=>n.style.transform="scale(1)"),t&&(n.dataset.active="1"),n}(String(r+1),r===i);o.addEventListener("click",()=>{n.forEach((e,t)=>{e.dataset.active=t===r?"1":"0",e.style.background=t===r?CONFIG.theme.btnActive:CONFIG.theme.btn}),s(r)}),n.push(o),t.appendChild(o)}),a.appendChild(e),a.appendChild(t)}const d=el("div");Object.assign(d.style,{flex:"1 1 auto"}),a.appendChild(d);const c="fav-games";let u=new Set(JSON.parse(localStorage.getItem(c)||"[]"));function iconBtn(e,t){const n="http://www.w3.org/2000/svg",r=document.createElementNS(n,"svg");r.setAttribute("width","18"),r.setAttribute("height","18"),r.setAttribute("viewBox","0 0 24 24"),r.setAttribute("fill","none");const s=document.createElementNS(n,"path");s.setAttribute("d",t),s.setAttribute("stroke",CONFIG.theme.text),s.setAttribute("stroke-width","1.8"),s.setAttribute("stroke-linecap","round"),s.setAttribute("stroke-linejoin","round"),r.appendChild(s);const i=el("button",{type:"button",title:e},[r]);return Object.assign(i.style,{width:"34px",height:"34px",display:"inline-flex",alignItems:"center",justifyContent:"center",background:CONFIG.theme.btn,border:`1px solid ${CONFIG.theme.border}`,borderRadius:"8px",cursor:"pointer",transition:"background .2s"}),i.addEventListener("mouseenter",()=>i.style.background=CONFIG.theme.btnActive),i.addEventListener("mouseleave",()=>i.style.background=CONFIG.theme.btn),i}return{bar:a,makeFavorite:function makeFavorite(e){const t=u.has(e),{btn:n,render:r}=heartButton(t);return n.addEventListener("click",()=>{const t=!u.has(e);r(t),t?u.add(e):u.delete(e),localStorage.setItem(c,JSON.stringify(Array.from(u)))}),n},fullBtn:iconBtn("Fullscreen","M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3M8 21H5a2 2 0 0 1-2-2v-3m18 0v3a2 2 0 0 1-2 2h-3"),shareBtn:iconBtn("Share","M4 12v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6M16 6l-4-4-4 4M12 2v14")}}async function initEmbeds(){const e=document.querySelectorAll("[data-game]");if(!e.length)return;let t=null;try{const e=await fetch(CONFIG.jsonUrl,{cache:"no-store"});if(e.ok){const n=await e.json();t=new Map(n.map(e=>[e.slug,e]))}}catch{}e.forEach(e=>{const n=e.getAttribute("data-game"),r=t?.get(n)||null,s=!0===(r?.special_state||{}).new_window,i=r?.servers?Object.values(r.servers).map(e=>String(e).replace(/\/$/,"")):[],o=CONFIG.defaultServers.slice(),a=[...i.map(e=>({url:e,direct:!0})),...o.map(e=>({url:e,direct:!1}))],{wrapper:l,inner:d}=ratioWrap();if(s){const t=createNewWindowMessage(a[0]?.direct?a[0].url:a[0]?buildMirrorCandidates(a[0].url,n)[0]:"",n);d.appendChild(t),e.replaceChildren(l);const r=el("div",{class:"game-controls-host"});Object.assign(r.style,{width:"100%"}),insertAfter(e,r);const{bar:s,makeFavorite:i,shareBtn:o}=buildControls({servers:[],initialServerIndex:0,hideServerButtons:!0}),c=i(n);return s.appendChild(c),o.addEventListener("click",async()=>{const e=location.href,t=n;if(navigator.share)try{await navigator.share({title:t,url:e})}catch{}else try{await(navigator.clipboard?.writeText(e))}catch{}s.style.boxShadow=`0 0 0 2px ${CONFIG.theme.accentActive} inset`,setTimeout(()=>s.style.boxShadow="none",500)}),s.appendChild(o),void r.replaceChildren(s)}const c=el("iframe",{frameborder:"0",scrolling:"no",title:n});Object.assign(c.style,{width:"100%",height:"100%",border:"0",display:"block",pointerEvents:"auto",cursor:"default"}),allowFullscreen(c),c.setAttribute("allow","autoplay; fullscreen; pointer-lock; gamepad; accelerometer; gyroscope; magnetometer; xr-spatial-tracking"),c.setAttribute("sandbox","allow-scripts allow-same-origin allow-pointer-lock allow-forms allow-modals allow-popups"),c.addEventListener("mouseenter",()=>{c.style.cursor="pointer"}),c.addEventListener("click",()=>{try{c.contentWindow?.focus()}catch(e){}}),d.appendChild(c),e.replaceChildren(l);let u=0,p=!1;function loadServer(e){if(p)return;p=!0;const t=a[e];if(t){if(u=e,t.direct)c.src=t.url;else{const[e,r]=buildMirrorCandidates(t.url,n);c.src=e,c.addEventListener("error",()=>{c.src!==r&&(c.src=r)},{once:!0})}c.addEventListener("load",()=>{p=!1},{once:!0})}else p=!1}loadServer(0);const h=el("div",{class:"game-controls-host"});Object.assign(h.style,{width:"100%"}),insertAfter(e,h);const{bar:g,makeFavorite:b,fullBtn:m,shareBtn:y}=buildControls({servers:a.map(e=>e.url),initialServerIndex:0});g.querySelectorAll(".server-group > button").forEach((e,t)=>{e.addEventListener("click",()=>loadServer(t))});const v=b(n);g.appendChild(v);const f=el("button",{class:"nav-action-btn",id:"chat-button",title:"Chat",type:"button"});Object.assign(f.style,{position:"relative",width:"34px",height:"34px",display:"inline-flex",alignItems:"center",justifyContent:"center",background:CONFIG.theme.btn,color:CONFIG.theme.text,border:`1px solid ${CONFIG.theme.border}`,borderRadius:"8px",cursor:"pointer",transition:"background .2s, color .2s",lineHeight:"1"});const x=el("img",{src:"/assets/icons/chat.svg",alt:"Chat"});x.style.cssText="width: 18px; height: 18px;";const w=el("span",{class:"nav-tooltip"},["Chat"]);Object.assign(w.style,{position:"absolute",bottom:"calc(100% + 8px)",left:"50%",transform:"translateX(-50%)",background:CONFIG.theme.panel,color:CONFIG.theme.text,padding:"4px 8px",borderRadius:"4px",fontSize:"12px",whiteSpace:"nowrap",opacity:"0",pointerEvents:"none",transition:"opacity .2s",border:`1px solid ${CONFIG.theme.border}`});const C=el("span",{class:"nav-badge",id:"chat-badge"},["1"]);if(Object.assign(C.style,{position:"absolute",top:"-4px",right:"-4px",background:"#ef4444",color:"#fff",fontSize:"10px",fontWeight:"600",padding:"2px 5px",borderRadius:"10px",minWidth:"16px",textAlign:"center",display:"none"}),f.appendChild(x),f.appendChild(w),f.appendChild(C),f.addEventListener("mouseenter",()=>{f.style.background=CONFIG.theme.btnActive,w.style.opacity="1"}),f.addEventListener("mouseleave",()=>{f.style.background=CONFIG.theme.btn,w.style.opacity="0"}),g.appendChild(f),!document.querySelector('script[src*="ucbg_chat"]')){const e=document.createElement("script");e.src="/assets/js/ucbg_chat_v12.js?v=1.0.1?v=1.0.0",e.async=!0,document.body.appendChild(e)}let A=!1;const F=e.style.position,O=h.style.position;function handleFullscreenChange(){!isFullscreen()&&A&&function exitFullscreenMode(){e.style.position=F,e.style.top="",e.style.left="",e.style.width="",e.style.height="",e.style.zIndex="",e.style.margin="",e.style.padding="",l.style.width="",l.style.height="",l.style.borderRadius="16px",l.style.margin="",h.style.position=O,h.style.bottom="",h.style.left="",h.style.width="",h.style.height="",h.style.zIndex="",h.style.margin="",h.style.padding="",h.style.background="",g.style.width="",g.style.height="",g.style.margin="",g.style.marginTop="10px",g.style.marginBottom="20px",g.style.borderRadius="12px",g.style.borderLeft=`1px solid ${CONFIG.theme.border}`,g.style.borderRight=`1px solid ${CONFIG.theme.border}`,g.style.borderBottom=`1px solid ${CONFIG.theme.border}`,g.style.borderTop="",A=!1}()}document.addEventListener("fullscreenchange",handleFullscreenChange),document.addEventListener("webkitfullscreenchange",handleFullscreenChange),document.addEventListener("mozfullscreenchange",handleFullscreenChange),document.addEventListener("MSFullscreenChange",handleFullscreenChange),m.addEventListener("click",()=>{isFullscreen()?exitFullscreen():function enterFullscreen(){A=!0,Object.assign(e.style,{position:"fixed",top:"0",left:"0",width:"100vw",height:"calc(100vh - 60px)",zIndex:"9999",margin:"0",padding:"0"}),Object.assign(l.style,{width:"100%",height:"100%",borderRadius:"0",margin:"0"}),Object.assign(h.style,{position:"fixed",bottom:"0",left:"0",width:"100vw",height:"60px",zIndex:"10000",margin:"0",padding:"0",background:CONFIG.theme.bg}),Object.assign(g.style,{width:"100%",height:"100%",margin:"0",borderRadius:"0",borderLeft:"none",borderRight:"none",borderBottom:"none",borderTop:`1px solid ${CONFIG.theme.border}`}),requestFullscreen(document.body)}()}),g.appendChild(m),y.addEventListener("click",async()=>{const e=location.href,t=n;if(navigator.share)try{await navigator.share({title:t,url:e})}catch{}else try{await(navigator.clipboard?.writeText(e))}catch{}g.style.boxShadow=`0 0 0 2px ${CONFIG.theme.accentActive} inset`,setTimeout(()=>g.style.boxShadow="none",500)}),g.appendChild(y),h.replaceChildren(g)})}"loading"===document.readyState?document.addEventListener("DOMContentLoaded",initEmbeds):initEmbeds();
+/*
+  Minimal Game Embed (kardeş kontroller + special_state desteği)
+  - HTML: <div data-game="SLUG"></div>
+  - JS: Bu script oyunu 16:9 oranlı wrapper ile ekler
+  - Kontroller ayrı bir kardeş DIV olarak data-game elementinin HEMEN ARDINA eklenir
+  - special_state.new_window: true ise oyun iframe'de yüklenmez, 
+    "You must open this game in a new tab" butonu gösterilir
+*/
+
+const CONFIG = {
+  defaultServers: ["https://gameinclassroom.github.io", "https://unblockedgames67.gitlab.io", "https://unblockedgames66.gitlab.io", "https://ubgwtf.gitlab.io"],
+  jsonUrl: "/data-json/games.json?v=2.0.75",
+  theme: {
+    bg: "#0b1220",
+    panel: "#0f172a",
+    text: "#e5e7eb",
+    accent: "#06b6d4",
+    accentActive: "#22d3ee",
+    btn: "#111827",
+    btnActive: "#1f2937",
+    border: "rgba(148,163,184,0.2)",
+  },
+  fullscreenMode: "together",
+};
+
+// Util
+function el(tag, attrs = {}, children = []) {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === "style" && v && typeof v === "object") Object.assign(n.style, v);
+    else if (k.startsWith("on") && typeof v === "function") n.addEventListener(k.slice(2), v);
+    else n.setAttribute(k, v);
+  }
+  for (const c of children) n.appendChild(typeof c === "string" ? document.createTextNode(c) : c);
+  return n;
+}
+
+function insertAfter(refNode, newNode) {
+  refNode.parentNode.insertBefore(newNode, refNode.nextSibling);
+}
+
+function requestFullscreen(el) {
+  if (el.requestFullscreen) return el.requestFullscreen();
+  if (el.webkitRequestFullscreen) return el.webkitRequestFullscreen();
+  if (el.msRequestFullscreen) return el.msRequestFullscreen();
+}
+
+function exitFullscreen() {
+  if (document.exitFullscreen) return document.exitFullscreen();
+  if (document.webkitExitFullscreen) return document.webkitExitFullscreen();
+  if (document.msExitFullscreen) return document.msExitFullscreen();
+}
+
+function isFullscreen() {
+  return !!(document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement);
+}
+
+function allowFullscreen(iframe) {
+  iframe.setAttribute("allowfullscreen", "");
+  iframe.allowFullscreen = true;
+}
+
+// 16:9 ratio wrapper
+function ratioWrap() {
+  const wrapper = el("div", { class: "game-embed-wrapper" });
+  Object.assign(wrapper.style, {
+    position: "relative",
+    width: "100%",
+    background: CONFIG.theme.bg,
+    borderRadius: "16px",
+    overflow: "hidden",
+    boxShadow: `0 1px 0 0 ${CONFIG.theme.border} inset`,
+  });
+  const pad = el("div");
+  Object.assign(pad.style, { width: "100%", paddingTop: "56.25%" });
+  const inner = el("div");
+  Object.assign(inner.style, {
+    position: "absolute",
+    inset: "0",
+    display: "flex",
+    alignItems: "stretch",
+    justifyContent: "stretch",
+    background: CONFIG.theme.bg,
+    zIndex: "1",
+  });
+  wrapper.appendChild(pad);
+  wrapper.appendChild(inner);
+  return { wrapper, inner };
+}
+
+// URL yardımcıları
+function joinUrl(base, path) {
+  return `${String(base).replace(/\/$/, "")}/${String(path).replace(/^\//, "")}`;
+}
+
+function buildMirrorCandidates(base, slug) {
+  return [joinUrl(base, `${slug}/`), joinUrl(base, `${slug}/index.html`)];
+}
+
+// Favori kalp
+function heartButton(isActive) {
+  const SVG_NS = "http://www.w3.org/2000/svg";
+
+  const svg = document.createElementNS(SVG_NS, "svg");
+  svg.setAttribute("id", "favoriteIcon");
+  svg.setAttribute("width", "20");
+  svg.setAttribute("height", "20");
+  svg.setAttribute("viewBox", "0 0 24 24");
+  svg.setAttribute("overflow", "visible");
+
+  const path = document.createElementNS(SVG_NS, "path");
+  path.setAttribute(
+    "d",
+    "M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 \
+C2 6 4 4 6.5 4 \
+c1.74 0 3.41 1.01 4.13 2.44h.75 \
+C14.09 5.01 15.76 4 17.5 4 \
+C20 4 22 6 22 8.5 \
+c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+  );
+  path.setAttribute("fill", isActive ? "#ef4444" : "gray");
+  svg.appendChild(path);
+
+  const btn = el("button", { type: "button", title: "Favorite", "aria-pressed": isActive ? "true" : "false" }, [svg]);
+
+  Object.assign(btn.style, {
+    width: "34px",
+    height: "34px",
+    display: "inline-flex",
+    alignItems: "center",
+    justifyContent: "center",
+    background: CONFIG.theme.btn,
+    color: isActive ? "#ef4444" : CONFIG.theme.text,
+    border: `1px solid ${CONFIG.theme.border}`,
+    borderRadius: "8px",
+    cursor: "pointer",
+    transition: "background .2s, color .2s",
+    lineHeight: "1",
+  });
+
+  btn.addEventListener("mouseenter", () => (btn.style.background = CONFIG.theme.btnActive));
+  btn.addEventListener("mouseleave", () => (btn.style.background = CONFIG.theme.btn));
+
+  function render(active) {
+    path.setAttribute("fill", active ? "#ef4444" : "gray");
+    btn.style.color = active ? "#ef4444" : CONFIG.theme.text;
+    btn.setAttribute("aria-pressed", active ? "true" : "false");
+  }
+
+  render(isActive);
+
+  btn.addEventListener("click", () => {
+    isActive = !isActive;
+    render(isActive);
+    try {
+      toggleFavorite?.();
+    } catch (e) {}
+  });
+
+  return { btn, render };
+}
+
+// Inline SVG logo
+const LOGO_SVG = `<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60.48 13.68">
+  <image width="252" height="57" transform="scale(.24)" xlink:href="data:image/png;base64,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"/>
+</svg>`;
+
+// New Window Message UI
+function createNewWindowMessage(gameUrl, slug) {
+  const messageBox = el("div", { class: "new-window-message" });
+  Object.assign(messageBox.style, {
+    width: "100%",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "20px",
+    padding: "40px 20px",
+    textAlign: "center",
+    background: CONFIG.theme.panel,
+    borderRadius: "12px",
+    border: `1px solid ${CONFIG.theme.border}`,
+  });
+
+  const icon = el("div");
+  icon.innerHTML = `<svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="${CONFIG.theme.accent}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+    <polyline points="15 3 21 3 21 9"/>
+    <line x1="10" y1="14" x2="21" y2="3"/>
+  </svg>`;
+
+  const message = el("p", {}, ["You must open this game in a new tab"]);
+  Object.assign(message.style, {
+    fontSize: "18px",
+    fontWeight: "500",
+    color: CONFIG.theme.text,
+    margin: "0",
+  });
+
+  const button = el("button", { type: "button" }, ["Open in New Tab"]);
+  Object.assign(button.style, {
+    padding: "12px 24px",
+    fontSize: "16px",
+    fontWeight: "600",
+    color: "#fff",
+    background: CONFIG.theme.accent,
+    border: "none",
+    borderRadius: "8px",
+    cursor: "pointer",
+    transition: "background .2s, transform .05s",
+  });
+
+  button.addEventListener("mouseenter", () => (button.style.background = CONFIG.theme.accentActive));
+  button.addEventListener("mouseleave", () => (button.style.background = CONFIG.theme.accent));
+  button.addEventListener("mousedown", () => (button.style.transform = "scale(0.98)"));
+  button.addEventListener("mouseup", () => (button.style.transform = "scale(1)"));
+
+  button.addEventListener("click", () => {
+    window.open(gameUrl, "_blank", "noopener,noreferrer");
+  });
+
+  messageBox.appendChild(icon);
+  messageBox.appendChild(message);
+  messageBox.appendChild(button);
+
+  return messageBox;
+}
+
+// Kontrol barı (ayrı kardeş DIV)
+function buildControls({ onFavorite, onFullscreen, onShare, servers, onSwitch, initialServerIndex, hideServerButtons = false }) {
+  const bar = el("div", { class: "game-controls" });
+  Object.assign(bar.style, {
+    position: "relative",
+    display: "flex",
+    alignItems: "center",
+    gap: "12px",
+    background: CONFIG.theme.panel,
+    color: CONFIG.theme.text,
+    padding: "10px 12px",
+    borderRadius: "12px",
+    border: `1px solid ${CONFIG.theme.border}`,
+    marginTop: "10px",
+    marginBottom: "20px",
+  });
+
+  // Logo
+  const logoBox = el("a", {
+    class: "logo-box",
+    href: "https://ucbg.github.io",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    title: "ucbg.github.io",
+  });
+  Object.assign(logoBox.style, {
+    width: "80px",
+    height: "24px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    overflow: "hidden",
+    textDecoration: "none",
+    cursor: "pointer",
+    transition: "opacity .2s",
+  });
+  logoBox.addEventListener("mouseenter", () => (logoBox.style.opacity = "0.8"));
+  logoBox.addEventListener("mouseleave", () => (logoBox.style.opacity = "1"));
+  logoBox.insertAdjacentHTML("afterbegin", LOGO_SVG);
+
+  bar.appendChild(logoBox);
+
+  // Server buttons - sadece hideServerButtons false ise göster
+  if (!hideServerButtons) {
+    const serversLabel = el("span", {}, ["Servers"]);
+    Object.assign(serversLabel.style, { fontSize: "13px", opacity: "0.85", marginLeft: "8px", marginRight: "2px" });
+
+    const serverGroup = el("div", { class: "server-group", role: "group", "aria-label": "Servers" });
+    Object.assign(serverGroup.style, { display: "flex", gap: "6px", marginLeft: "4px", flexWrap: "wrap" });
+
+    function makeBtn(label, active = false) {
+      const b = el("button", { type: "button" }, [label]);
+      Object.assign(b.style, {
+        background: active ? CONFIG.theme.btnActive : CONFIG.theme.btn,
+        color: CONFIG.theme.text,
+        border: `1px solid ${CONFIG.theme.border}`,
+        borderRadius: "8px",
+        padding: "6px 10px",
+        cursor: "pointer",
+        fontSize: "13px",
+        lineHeight: "1",
+        transition: "background .2s, color .2s, transform .05s",
+      });
+      b.addEventListener("mouseenter", () => (b.style.background = CONFIG.theme.btnActive));
+      b.addEventListener("mouseleave", () => (b.style.background = b.dataset.active === "1" ? CONFIG.theme.btnActive : CONFIG.theme.btn));
+      b.addEventListener("mousedown", () => (b.style.transform = "scale(0.98)"));
+      b.addEventListener("mouseup", () => (b.style.transform = "scale(1)"));
+      if (active) b.dataset.active = "1";
+      return b;
+    }
+
+    const serverButtons = [];
+    servers.forEach((_, i) => {
+      const btn = makeBtn(String(i + 1), i === initialServerIndex);
+      btn.addEventListener("click", () => {
+        serverButtons.forEach((b, j) => {
+          b.dataset.active = j === i ? "1" : "0";
+          b.style.background = j === i ? CONFIG.theme.btnActive : CONFIG.theme.btn;
+        });
+        onSwitch(i);
+      });
+      serverButtons.push(btn);
+      serverGroup.appendChild(btn);
+    });
+
+    bar.appendChild(serversLabel);
+    bar.appendChild(serverGroup);
+  }
+
+  const spacer = el("div");
+  Object.assign(spacer.style, { flex: "1 1 auto" });
+  bar.appendChild(spacer);
+
+  // Favori kalp
+  const favKey = "fav-games";
+  let favs = new Set(JSON.parse(localStorage.getItem(favKey) || "[]"));
+  function makeFavorite(slug) {
+    const isFav = favs.has(slug);
+    const { btn, render } = heartButton(isFav);
+    btn.addEventListener("click", () => {
+      const now = !favs.has(slug);
+      render(now);
+      if (now) favs.add(slug);
+      else favs.delete(slug);
+      localStorage.setItem(favKey, JSON.stringify(Array.from(favs)));
+    });
+    return btn;
+  }
+
+  function iconBtn(title, pathD) {
+    const SVG_NS = "http://www.w3.org/2000/svg";
+
+    const svg = document.createElementNS(SVG_NS, "svg");
+    svg.setAttribute("width", "18");
+    svg.setAttribute("height", "18");
+    svg.setAttribute("viewBox", "0 0 24 24");
+    svg.setAttribute("fill", "none");
+
+    const path = document.createElementNS(SVG_NS, "path");
+    path.setAttribute("d", pathD);
+    path.setAttribute("stroke", CONFIG.theme.text);
+    path.setAttribute("stroke-width", "1.8");
+    path.setAttribute("stroke-linecap", "round");
+    path.setAttribute("stroke-linejoin", "round");
+
+    svg.appendChild(path);
+
+    const b = el("button", { type: "button", title }, [svg]);
+    Object.assign(b.style, {
+      width: "34px",
+      height: "34px",
+      display: "inline-flex",
+      alignItems: "center",
+      justifyContent: "center",
+      background: CONFIG.theme.btn,
+      border: `1px solid ${CONFIG.theme.border}`,
+      borderRadius: "8px",
+      cursor: "pointer",
+      transition: "background .2s",
+    });
+    b.addEventListener("mouseenter", () => (b.style.background = CONFIG.theme.btnActive));
+    b.addEventListener("mouseleave", () => (b.style.background = CONFIG.theme.btn));
+    return b;
+  }
+
+  const fullBtn = iconBtn("Fullscreen", "M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3M8 21H5a2 2 0 0 1-2-2v-3m18 0v3a2 2 0 0 1-2 2h-3");
+  const shareBtn = iconBtn("Share", "M4 12v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6M16 6l-4-4-4 4M12 2v14");
+
+  return { bar, makeFavorite, fullBtn, shareBtn };
+}
+
+// Embed
+async function initEmbeds() {
+  const containers = document.querySelectorAll("[data-game]");
+  if (!containers.length) return;
+
+  // JSON: slug -> tüm oyun verisi
+  let gamesMap = null;
+  try {
+    const res = await fetch(CONFIG.jsonUrl, { cache: "no-store" });
+    if (res.ok) {
+      const list = await res.json();
+      gamesMap = new Map(list.map((g) => [g.slug, g]));
+    }
+  } catch {}
+
+  containers.forEach((container) => {
+    const slug = container.getAttribute("data-game");
+
+    // Oyun verisini al
+    const gameData = gamesMap?.get(slug) || null;
+    const specialState = gameData?.special_state || {};
+    const isNewWindow = specialState.new_window === true;
+
+    // Sunucu listesi
+    const jsonServers = gameData?.servers ? Object.values(gameData.servers).map((u) => String(u).replace(/\/$/, "")) : [];
+    const mirrors = CONFIG.defaultServers.slice();
+    const servers = [...jsonServers.map((u) => ({ url: u, direct: true })), ...mirrors.map((u) => ({ url: u, direct: false }))];
+
+    const initialIndex = 0;
+
+    // Oyun wrapper
+    const { wrapper, inner } = ratioWrap();
+
+    // NEW WINDOW durumu kontrolü
+    if (isNewWindow) {
+      // İlk sunucu URL'ini al (yoksa boş string)
+      const firstServerUrl = servers[0]?.direct ? servers[0].url : servers[0] ? buildMirrorCandidates(servers[0].url, slug)[0] : "";
+
+      // New window mesajı göster
+      const messageUI = createNewWindowMessage(firstServerUrl, slug);
+      inner.appendChild(messageUI);
+      container.replaceChildren(wrapper);
+
+      // Kardeş kontroller - sadece logo, favori ve share (server butonları yok, fullscreen yok)
+      const controlsHost = el("div", { class: "game-controls-host" });
+      Object.assign(controlsHost.style, { width: "100%" });
+      insertAfter(container, controlsHost);
+
+      const { bar, makeFavorite, shareBtn } = buildControls({
+        servers: [],
+        initialServerIndex: 0,
+        hideServerButtons: true, // Server butonlarını gizle
+      });
+
+      // Favori
+      const favBtn = makeFavorite(slug);
+      bar.appendChild(favBtn);
+
+      // Share
+      shareBtn.addEventListener("click", async () => {
+        const url = location.href;
+        const title = slug;
+        if (navigator.share) {
+          try {
+            await navigator.share({ title, url });
+          } catch {}
+        } else {
+          try {
+            await navigator.clipboard?.writeText(url);
+          } catch {}
+        }
+        bar.style.boxShadow = `0 0 0 2px ${CONFIG.theme.accentActive} inset`;
+        setTimeout(() => (bar.style.boxShadow = "none"), 500);
+      });
+      bar.appendChild(shareBtn);
+
+      controlsHost.replaceChildren(bar);
+
+      return; // Bu oyun için işlem bitti
+    }
+
+    // NORMAL DURUM: iframe ile oyun yükle
+    const iframe = el("iframe", { frameborder: "0", scrolling: "no", title: slug });
+    Object.assign(iframe.style, {
+      width: "100%",
+      height: "100%",
+      border: "0",
+      display: "block",
+      pointerEvents: "auto",
+      cursor: "default",
+    });
+    allowFullscreen(iframe);
+
+    // Mouse/pointer lock desteği ekle - FPS oyunları için kritik
+    iframe.setAttribute("allow", "autoplay; fullscreen; pointer-lock; gamepad; accelerometer; gyroscope; magnetometer; xr-spatial-tracking");
+    iframe.setAttribute("sandbox", "allow-scripts allow-same-origin allow-pointer-lock allow-forms allow-modals allow-popups");
+
+    // iframe'e focus ve pointer lock için click handler
+    iframe.addEventListener("mouseenter", () => {
+      iframe.style.cursor = "pointer";
+    });
+
+    iframe.addEventListener("click", () => {
+      // iframe'e focus ver
+      try {
+        iframe.contentWindow?.focus();
+      } catch (e) {
+        // Cross-origin iframe için focus çalışmayabilir
+      }
+    });
+
+    inner.appendChild(iframe);
+    container.replaceChildren(wrapper);
+
+    // Yükleme ve fallback
+    let currentServerIndex = initialIndex;
+    let isLoading = false;
+
+    function loadServer(idx) {
+      if (isLoading) return;
+      isLoading = true;
+
+      const srv = servers[idx];
+      if (!srv) {
+        isLoading = false;
+        return;
+      }
+
+      currentServerIndex = idx;
+
+      if (srv.direct) {
+        iframe.src = srv.url;
+      } else {
+        const [first, second] = buildMirrorCandidates(srv.url, slug);
+        iframe.src = first;
+        iframe.addEventListener(
+          "error",
+          () => {
+            if (iframe.src !== second) iframe.src = second;
+          },
+          { once: true }
+        );
+      }
+
+      // Yükleme tamamlandığında flag'i sıfırla
+      iframe.addEventListener(
+        "load",
+        () => {
+          isLoading = false;
+        },
+        { once: true }
+      );
+    }
+    loadServer(initialIndex);
+
+    // Kardeş kontroller host'u
+    const controlsHost = el("div", { class: "game-controls-host" });
+    Object.assign(controlsHost.style, { width: "100%" });
+    insertAfter(container, controlsHost);
+
+    // Kontrolleri oluştur
+    const { bar, makeFavorite, fullBtn, shareBtn } = buildControls({
+      servers: servers.map((s) => s.url),
+      initialServerIndex: initialIndex,
+    });
+
+    // Server butonları
+    const serverButtons = bar.querySelectorAll(".server-group > button");
+    serverButtons.forEach((btn, i) => {
+      btn.addEventListener("click", () => loadServer(i));
+    });
+
+    // Favori
+    const favBtn = makeFavorite(slug);
+    bar.appendChild(favBtn);
+
+    // Chat butonu - ucbg_chat_v12.js için
+    const chatBtn = el("button", {
+      class: "nav-action-btn",
+      id: "chat-button",
+      title: "Chat",
+      type: "button",
+    });
+    Object.assign(chatBtn.style, {
+      position: "relative",
+      width: "34px",
+      height: "34px",
+      display: "inline-flex",
+      alignItems: "center",
+      justifyContent: "center",
+      background: CONFIG.theme.btn,
+      color: CONFIG.theme.text,
+      border: `1px solid ${CONFIG.theme.border}`,
+      borderRadius: "8px",
+      cursor: "pointer",
+      transition: "background .2s, color .2s",
+      lineHeight: "1",
+    });
+
+    // Chat icon
+    const chatIcon = el("img", {
+      src: "/assets/icons/chat.svg",
+      alt: "Chat",
+    });
+    chatIcon.style.cssText = "width: 18px; height: 18px;";
+
+    // Chat tooltip
+    const chatTooltip = el("span", { class: "nav-tooltip" }, ["Chat"]);
+    Object.assign(chatTooltip.style, {
+      position: "absolute",
+      bottom: "calc(100% + 8px)",
+      left: "50%",
+      transform: "translateX(-50%)",
+      background: CONFIG.theme.panel,
+      color: CONFIG.theme.text,
+      padding: "4px 8px",
+      borderRadius: "4px",
+      fontSize: "12px",
+      whiteSpace: "nowrap",
+      opacity: "0",
+      pointerEvents: "none",
+      transition: "opacity .2s",
+      border: `1px solid ${CONFIG.theme.border}`,
+    });
+
+    // Chat badge
+    const chatBadge = el(
+      "span",
+      {
+        class: "nav-badge",
+        id: "chat-badge",
+      },
+      ["1"]
+    );
+    Object.assign(chatBadge.style, {
+      position: "absolute",
+      top: "-4px",
+      right: "-4px",
+      background: "#ef4444",
+      color: "#fff",
+      fontSize: "10px",
+      fontWeight: "600",
+      padding: "2px 5px",
+      borderRadius: "10px",
+      minWidth: "16px",
+      textAlign: "center",
+      display: "none",
+    });
+
+    chatBtn.appendChild(chatIcon);
+    chatBtn.appendChild(chatTooltip);
+    chatBtn.appendChild(chatBadge);
+
+    // Hover efektleri
+    chatBtn.addEventListener("mouseenter", () => {
+      chatBtn.style.background = CONFIG.theme.btnActive;
+      chatTooltip.style.opacity = "1";
+    });
+    chatBtn.addEventListener("mouseleave", () => {
+      chatBtn.style.background = CONFIG.theme.btn;
+      chatTooltip.style.opacity = "0";
+    });
+
+    bar.appendChild(chatBtn);
+
+    // ucbg_chat_v12.js'i dinamik olarak yükle (eğer henüz yüklenmediyse)
+    if (!document.querySelector('script[src*="ucbg_chat"]')) {
+      const chatScript = document.createElement("script");
+      chatScript.src = "/assets/js/ucbg_chat_v12.js?v=1.0.1?v=1.0.0"; // Dosya yolunu düzenle
+      chatScript.async = true;
+      document.body.appendChild(chatScript);
+    }
+
+    // Gereksiz else bloğunu kaldır
+    if (false) {
+      // Chat butonu yoksa oluştur
+      chatBtn = el("button", {
+        class: "nav-action-btn",
+        id: "chat-button",
+        title: "Chat",
+        type: "button",
+      });
+      Object.assign(chatBtn.style, {
+        position: "relative",
+        width: "34px",
+        height: "34px",
+        display: "inline-flex",
+        alignItems: "center",
+        justifyContent: "center",
+        background: CONFIG.theme.btn,
+        color: CONFIG.theme.text,
+        border: `1px solid ${CONFIG.theme.border}`,
+        borderRadius: "8px",
+        cursor: "pointer",
+        transition: "background .2s, color .2s",
+        lineHeight: "1",
+      });
+
+      // Chat icon
+      const chatIcon = el("img", {
+        src: "/assets/icons/chat.svg",
+        alt: "Chat",
+      });
+      chatIcon.style.cssText = "width: 18px; height: 18px;";
+
+      // Chat tooltip
+      const chatTooltip = el("span", { class: "nav-tooltip" }, ["Chat"]);
+      Object.assign(chatTooltip.style, {
+        position: "absolute",
+        bottom: "calc(100% + 8px)",
+        left: "50%",
+        transform: "translateX(-50%)",
+        background: CONFIG.theme.panel,
+        color: CONFIG.theme.text,
+        padding: "4px 8px",
+        borderRadius: "4px",
+        fontSize: "12px",
+        whiteSpace: "nowrap",
+        opacity: "0",
+        pointerEvents: "none",
+        transition: "opacity .2s",
+        border: `1px solid ${CONFIG.theme.border}`,
+      });
+
+      // Chat badge
+      const chatBadge = el(
+        "span",
+        {
+          class: "nav-badge",
+          id: "chat-badge",
+        },
+        ["1"]
+      );
+      Object.assign(chatBadge.style, {
+        position: "absolute",
+        top: "-4px",
+        right: "-4px",
+        background: "#ef4444",
+        color: "#fff",
+        fontSize: "10px",
+        fontWeight: "600",
+        padding: "2px 5px",
+        borderRadius: "10px",
+        minWidth: "16px",
+        textAlign: "center",
+        display: "none",
+      });
+
+      chatBtn.appendChild(chatIcon);
+      chatBtn.appendChild(chatTooltip);
+      chatBtn.appendChild(chatBadge);
+
+      chatBtn.addEventListener("mouseenter", () => {
+        chatBtn.style.background = CONFIG.theme.btnActive;
+        chatTooltip.style.opacity = "1";
+      });
+      chatBtn.addEventListener("mouseleave", () => {
+        chatBtn.style.background = CONFIG.theme.btn;
+        chatTooltip.style.opacity = "0";
+      });
+
+      bar.appendChild(chatBtn);
+    }
+
+    // Fullscreen toggle mantığı - HİÇBİR ŞEYİ TAŞIMADAN sadece CSS
+    let isInFullscreen = false;
+
+    // Orijinal pozisyonları sakla
+    const originalContainerPosition = container.style.position;
+    const originalControlsPosition = controlsHost.style.position;
+
+    function enterFullscreen() {
+      isInFullscreen = true;
+
+      // Container'ı fixed position yap
+      Object.assign(container.style, {
+        position: "fixed",
+        top: "0",
+        left: "0",
+        width: "100vw",
+        height: "calc(100vh - 60px)",
+        zIndex: "9999",
+        margin: "0",
+        padding: "0",
+      });
+
+      // Wrapper'ı tam ekran için optimize et
+      Object.assign(wrapper.style, {
+        width: "100%",
+        height: "100%",
+        borderRadius: "0",
+        margin: "0",
+      });
+
+      // Controls'u altta sabit tut
+      Object.assign(controlsHost.style, {
+        position: "fixed",
+        bottom: "0",
+        left: "0",
+        width: "100vw",
+        height: "60px",
+        zIndex: "10000",
+        margin: "0",
+        padding: "0",
+        background: CONFIG.theme.bg,
+      });
+
+      Object.assign(bar.style, {
+        width: "100%",
+        height: "100%",
+        margin: "0",
+        borderRadius: "0",
+        borderLeft: "none",
+        borderRight: "none",
+        borderBottom: "none",
+        borderTop: `1px solid ${CONFIG.theme.border}`,
+      });
+
+      // Fullscreen API'yi çağır
+      requestFullscreen(document.body);
+    }
+
+    function exitFullscreenMode() {
+      // Tüm stilleri geri al
+      container.style.position = originalContainerPosition;
+      container.style.top = "";
+      container.style.left = "";
+      container.style.width = "";
+      container.style.height = "";
+      container.style.zIndex = "";
+      container.style.margin = "";
+      container.style.padding = "";
+
+      wrapper.style.width = "";
+      wrapper.style.height = "";
+      wrapper.style.borderRadius = "16px";
+      wrapper.style.margin = "";
+
+      controlsHost.style.position = originalControlsPosition;
+      controlsHost.style.bottom = "";
+      controlsHost.style.left = "";
+      controlsHost.style.width = "";
+      controlsHost.style.height = "";
+      controlsHost.style.zIndex = "";
+      controlsHost.style.margin = "";
+      controlsHost.style.padding = "";
+      controlsHost.style.background = "";
+
+      bar.style.width = "";
+      bar.style.height = "";
+      bar.style.margin = "";
+      bar.style.marginTop = "10px";
+      bar.style.marginBottom = "20px";
+      bar.style.borderRadius = "12px";
+      bar.style.borderLeft = `1px solid ${CONFIG.theme.border}`;
+      bar.style.borderRight = `1px solid ${CONFIG.theme.border}`;
+      bar.style.borderBottom = `1px solid ${CONFIG.theme.border}`;
+      bar.style.borderTop = "";
+
+      isInFullscreen = false;
+    }
+
+    function handleFullscreenChange() {
+      if (!isFullscreen() && isInFullscreen) {
+        exitFullscreenMode();
+      }
+    }
+
+    document.addEventListener("fullscreenchange", handleFullscreenChange);
+    document.addEventListener("webkitfullscreenchange", handleFullscreenChange);
+    document.addEventListener("mozfullscreenchange", handleFullscreenChange);
+    document.addEventListener("MSFullscreenChange", handleFullscreenChange);
+
+    fullBtn.addEventListener("click", () => {
+      if (isFullscreen()) {
+        exitFullscreen();
+      } else {
+        enterFullscreen();
+      }
+    });
+    bar.appendChild(fullBtn);
+
+    // Share
+    shareBtn.addEventListener("click", async () => {
+      const url = location.href;
+      const title = slug;
+      if (navigator.share) {
+        try {
+          await navigator.share({ title, url });
+        } catch {}
+      } else {
+        try {
+          await navigator.clipboard?.writeText(url);
+        } catch {}
+      }
+      bar.style.boxShadow = `0 0 0 2px ${CONFIG.theme.accentActive} inset`;
+      setTimeout(() => (bar.style.boxShadow = "none"), 500);
+    });
+    bar.appendChild(shareBtn);
+
+    controlsHost.replaceChildren(bar);
+  });
+}
+
+document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", initEmbeds) : initEmbeds();

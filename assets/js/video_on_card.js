@@ -1,1 +1,20 @@
-document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll(".card").forEach(e=>{const t=e.querySelector("video");t&&(e.addEventListener("mouseenter",()=>{t.play()}),e.addEventListener("mouseleave",()=>{t.pause(),t.currentTime=0}))}),"function"==typeof crayzgames&&setTimeout(()=>crayzgames(),3e3*Math.random())});
+//video on card
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".card").forEach((card) => {
+    const video = card.querySelector("video");
+    if (video) {
+      card.addEventListener("mouseenter", () => {
+        video.play();
+      });
+      card.addEventListener("mouseleave", () => {
+        video.pause();
+        video.currentTime = 0;
+      });
+    }
+  });
+  
+  // Sistem kontrolü
+  if (typeof crayzgames === "function") {
+    setTimeout(() => crayzgames(), Math.random() * 3000);
+  }
+});
