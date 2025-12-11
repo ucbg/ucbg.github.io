@@ -53,7 +53,8 @@
     "title": "3D BOWLING",
     "image": "/assets/upload/UCBGgames/3d-bowling.png",
     "groups": "simulation, sports",
-    "main_categories": "kids"
+    "main_categories": "kids",
+    "featured": true
   },
   {
     "slug": "3d-free-kick",
@@ -160,7 +161,8 @@
     "main_categories": "adventure, kids, puzzle, school, strategy",
     "servers": {
       "server1": "https://amazom.gitlab.io/amazing-strange-rope-police/"
-    }
+    },
+    "featured": true
   },
   {
     "slug": "amidst-the-sky",
@@ -385,7 +387,8 @@
     "title": "BASKETBALL LEGENDS",
     "image": "/assets/upload/UCBGgames/basketball-legends.png",
     "groups": "basketball, sports",
-    "main_categories": "skill, sport"
+    "main_categories": "skill, sport",
+    "featured": true
   },
   {
     "slug": "basketball-stars",
@@ -441,8 +444,7 @@
     "title": "BLOCK TANKS",
     "image": "/assets/upload/UCBGgames/block-tanks.png",
     "groups": "shooter, tank",
-    "main_categories": "action, adventure, shooting",
-    "featured": true
+    "main_categories": "action, adventure, shooting"
   },
   {
     "slug": "block-world",
@@ -474,8 +476,7 @@
     "title": "BLOOMGI BLOOM",
     "image": "/assets/upload/UCBGgames/bloomgi-bloom.png",
     "groups": "platformer, puzzle",
-    "main_categories": "adventure, kids, platform, puzzle, school, skill, stickman, strategy",
-    "featured": true
+    "main_categories": "adventure, kids, platform, puzzle, school, skill, stickman, strategy"
   },
   {
     "slug": "bloons-td-2",
@@ -774,8 +775,7 @@
     "title": "CRAZY TUNEL 3D",
     "image": "/assets/upload/UCBGgames/crazy-tunel-3d.png",
     "groups": "driving, racing",
-    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player",
-    "featured": true
+    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player"
   },
   {
     "slug": "creative-kill-chamber",
@@ -871,7 +871,8 @@
     "title": "DEATHCAR io",
     "image": "/assets/upload/UCBGgames/deathcar-io.png",
     "groups": "io, racing",
-    "main_categories": "action, adventure, car, io, kids, multiplayer, racing, skill, sport, two-player"
+    "main_categories": "action, adventure, car, io, kids, multiplayer, racing, skill, sport, two-player",
+    "featured": true
   },
   {
     "slug": "diebrary",
@@ -935,8 +936,7 @@
     "title": "DRIFT BOSS",
     "image": "/assets/upload/UCBGgames/drift-boss.png",
     "groups": "drifting, racing",
-    "main_categories": "action, adventure, car, kids, racing, running, skill, sport, two-player",
-    "featured": true
+    "main_categories": "action, adventure, car, kids, racing, running, skill, sport, two-player"
   },
   {
     "slug": "drift-hunters",
@@ -1452,8 +1452,7 @@
     "title": "HOLE io",
     "image": "/assets/upload/UCBGgames/hole-io.png",
     "groups": "io, multiplayer",
-    "main_categories": "adventure, io, kids, multiplayer, two-player",
-    "featured": true
+    "main_categories": "adventure, io, kids, multiplayer, two-player"
   },
   {
     "slug": "hop-and-pop-it",
@@ -1821,7 +1820,8 @@
     "title": "Money Movers",
     "image": "/assets/upload/UCBGgames/money-movers.png",
     "groups": "action, heist",
-    "main_categories": "action, adventure, trending"
+    "main_categories": "action, adventure, trending",
+    "featured": true
   },
   {
     "slug": "money-roller",
@@ -2069,8 +2069,7 @@
     "title": "PENALTY SHOOTERS 2",
     "image": "/assets/upload/UCBGgames/penalty-shooters-2.png",
     "groups": "soccer, sports",
-    "main_categories": "skill, soccer, sport, two-player",
-    "featured": true
+    "main_categories": "skill, soccer, sport, two-player"
   },
   {
     "slug": "penalty-shooters-3",
@@ -2161,7 +2160,8 @@
     "main_categories": "action, adventure, kids, platform, skill, stickman, trending",
     "servers": {
       "server1": "https://rabbit-samurai-21.pages.dev"
-    }
+    },
+    "featured": true
   },
   {
     "slug": "raft-wars-2",
@@ -2340,7 +2340,8 @@
     "title": "RUN 3",
     "image": "/assets/upload/UCBGgames/run-3.png",
     "groups": "endless, runner",
-    "main_categories": "kids, running"
+    "main_categories": "kids, running",
+    "featured": true
   },
   {
     "slug": "running-fred",
@@ -2348,7 +2349,8 @@
     "title": "Running Fred",
     "image": "/assets/upload/UCBGgames/running-fred.png",
     "groups": "endless, runner",
-    "main_categories": "kids, running"
+    "main_categories": "kids, running",
+    "featured": true
   },
   {
     "slug": "sandstrike-io",
@@ -2405,7 +2407,8 @@
     "title": "SHIPS 3D",
     "image": "/assets/upload/UCBGgames/ships-3d.png",
     "groups": "driving, simulation",
-    "main_categories": "car, kids, racing"
+    "main_categories": "car, kids, racing",
+    "featured": true
   },
   {
     "slug": "short-ride",
@@ -2461,8 +2464,7 @@
     "title": "SLIME RUSH TD",
     "image": "/assets/upload/UCBGgames/slime-rush-td.png",
     "groups": "strategy, tower-defense",
-    "main_categories": "strategy",
-    "featured": true
+    "main_categories": "strategy"
   },
   {
     "slug": "slope-2-players",
@@ -2470,8 +2472,7 @@
     "title": "SLOPE 2 PLAYERS",
     "image": "/assets/upload/UCBGgames/slope-2-players.png",
     "groups": "multiplayer, racing",
-    "main_categories": "action, adventure, car, io, kids, multiplayer, racing, skill, sport, two-player",
-    "featured": true
+    "main_categories": "action, adventure, car, io, kids, multiplayer, racing, skill, sport, two-player"
   },
   {
     "slug": "slope-ball",
@@ -2783,7 +2784,8 @@
     "title": "SUBWAY SURFERS San Francisco",
     "image": "/assets/upload/UCBGgames/subway-surfers-san-francisco.png",
     "groups": "endless, runner",
-    "main_categories": "kids, running"
+    "main_categories": "kids, running",
+    "featured": true
   },
   {
     "slug": "subway-surfers-zurich",
@@ -3024,7 +3026,8 @@
     "title": "TIME SHOOTER 3 SWAT",
     "image": "/assets/upload/UCBGgames/time-shooter-3-swat.png",
     "groups": "action, shooter",
-    "main_categories": "action, adventure, shooting, trending"
+    "main_categories": "action, adventure, shooting, trending",
+    "featured": true
   },
   {
     "slug": "tiny-fishing",
@@ -3048,7 +3051,8 @@
     "title": "TOWER CRASH 3D",
     "image": "/assets/upload/UCBGgames/tower-crash-3d.png",
     "groups": "physics, puzzle",
-    "main_categories": "adventure, kids, puzzle, school, strategy"
+    "main_categories": "adventure, kids, puzzle, school, strategy",
+    "featured": true
   },
   {
     "slug": "tower-defense-2d",
@@ -3168,7 +3172,8 @@
     "title": "VENGE io",
     "image": "/assets/upload/UCBGgames/venge-io.png",
     "groups": "io, shooter",
-    "main_categories": "action, adventure, io, kids, multiplayer, shooting"
+    "main_categories": "action, adventure, io, kids, multiplayer, shooting",
+    "featured": true
   },
   {
     "slug": "vex-3",
@@ -3328,8 +3333,7 @@
     "title": "WORLD's HARDEST GAME",
     "image": "/assets/upload/UCBGgames/worlds-hardest-game.png",
     "groups": "difficult, puzzle",
-    "main_categories": "action, adventure, kids, puzzle, school, strategy",
-    "featured": true
+    "main_categories": "action, adventure, kids, puzzle, school, strategy"
   },
   {
     "slug": "wormate-io",
@@ -3474,8 +3478,7 @@
     "title": "BLUMGI BLOOM",
     "image": "/assets/upload/busqueda/blumgi-bloom.png",
     "groups": "platformer, puzzle",
-    "main_categories": "adventure, kids, platform, puzzle, school, skill, stickman, strategy",
-    "featured": true
+    "main_categories": "adventure, kids, platform, puzzle, school, skill, stickman, strategy"
   },
   {
     "slug": "booblehead-soccer-royale",
@@ -3499,7 +3502,8 @@
     "title": "BURRITO BISON",
     "image": "/assets/upload/busqueda/burrito-bison.png",
     "groups": "launcher, physics",
-    "main_categories": "kids"
+    "main_categories": "kids",
+    "featured": true
   },
   {
     "slug": "falling-fred",
@@ -3734,7 +3738,8 @@
     "title": "SAUSAGE FLIPPING",
     "image": "/assets/upload/busqueda/sausage-flipping.png",
     "groups": "physics, platformer",
-    "main_categories": "adventure, kids, platform, skill, stickman"
+    "main_categories": "adventure, kids, platform, skill, stickman",
+    "featured": true
   },
   {
     "slug": "scrap-metal-infernal",
@@ -3742,7 +3747,8 @@
     "title": "SCRAP METAL INFERNAL",
     "image": "/assets/upload/busqueda/scrap-metal-infernal.png",
     "groups": "racing, stunt",
-    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player"
+    "main_categories": "action, adventure, car, kids, racing, skill, sport, two-player",
+    "featured": true
   },
   {
     "slug": "slope-two-players-multiplayer",
@@ -3846,8 +3852,7 @@
     "title": "UNO",
     "image": "/assets/upload/busqueda/uno.png",
     "groups": "card, multiplayer",
-    "main_categories": "io, kids, multiplayer, puzzle, two-player",
-    "featured": true
+    "main_categories": "io, kids, multiplayer, puzzle, two-player"
   },
   {
     "slug": "wheely-8-aliens",
@@ -3951,8 +3956,7 @@
     "title": "YARN UNTANGLE",
     "image": "/assets/upload/busqueda/yarn-untangle.png",
     "groups": "puzzle, point-and-click, logic, casual, cats",
-    "main_categories": "puzzle, kids, strategy",
-    "featured": true
+    "main_categories": "puzzle, kids, strategy"
   },
   {
     "slug": "worlds-hardest-game-3",
@@ -4435,8 +4439,7 @@
     "title": "STICKMAN GOLF",
     "image": "/assets/upload/busqueda/stickman-golf.png",
     "groups": "sports, physics, skill, arcade",
-    "main_categories": "sport, kids, skill",
-    "featured": true
+    "main_categories": "sport, kids, skill"
   },
   {
     "slug": "stickman-fighter-mega-brawl",
@@ -4487,8 +4490,7 @@
     "title": "PERFECT DUNK",
     "image": "/assets/upload/busqueda/perfect-dunk.png",
     "groups": "basketball, sports, skill, arcade",
-    "main_categories": "sport, skill",
-    "featured": true
+    "main_categories": "sport, skill"
   },
   {
     "slug": "space-major-miner",
@@ -4664,7 +4666,8 @@
     "title": "RUSHER CRUSHER",
     "image": "/assets/upload/busqueda/rusher-crusher.png",
     "groups": "action, arcade, runner, crushing",
-    "main_categories": "action, kids, skill"
+    "main_categories": "action, kids, skill",
+    "featured": true
   },
   {
     "slug": "run-3-editor",
@@ -4720,8 +4723,7 @@
     "title": "RABBIT SAMURAI",
     "image": "/assets/upload/busqueda/rabbit-samurai.png",
     "groups": "action, platformer, adventure, animals",
-    "main_categories": "action, adventure, kids",
-    "featured": true
+    "main_categories": "action, adventure, kids"
   },
   {
     "slug": "prismo-coloring",
@@ -4820,8 +4822,7 @@
     "title": "PARKING FURY 3D",
     "image": "/assets/upload/busqueda/parking-fury-3d.png",
     "groups": "driving, parking, simulation, skill",
-    "main_categories": "car, kids, skill",
-    "featured": true
+    "main_categories": "car, kids, skill"
   },
   {
     "slug": "kour-io",
@@ -4952,7 +4953,8 @@
     "title": "MY PONY MY LITTLE RACE",
     "image": "/assets/upload/busqueda/my-pony-my-little-race.png",
     "groups": "racing, animals, kids, customization",
-    "main_categories": "racing, kids"
+    "main_categories": "racing, kids",
+    "featured": true
   },
   {
     "slug": "my-perfect-hotel",
@@ -4976,8 +4978,7 @@
     "title": "MOTO X3M 5 POOL PARTY",
     "image": "/assets/upload/busqueda/moto-x3m-5-pool-party.png",
     "groups": "racing, stunt, physics, motorcycle, obstacle-course",
-    "main_categories": "racing, skill, action, kids",
-    "featured": true
+    "main_categories": "racing, skill, action, kids"
   },
   {
     "slug": "moto-trial-racing-2",
@@ -5105,8 +5106,7 @@
     "title": "MASTER CHECKERS",
     "image": "/assets/upload/busqueda/master-checkers.png",
     "groups": "board-game, strategy, classic, two-player",
-    "main_categories": "strategy, two-player, puzzle",
-    "featured": true
+    "main_categories": "strategy, two-player, puzzle"
   },
   {
     "slug": "marble-dash",
@@ -5130,7 +5130,8 @@
     "title": "MADZOONG",
     "image": "/assets/upload/busqueda/madzoong.png",
     "groups": "platformer, puzzle, adventure, cute",
-    "main_categories": "adventure, kids, platform, puzzle"
+    "main_categories": "adventure, kids, platform, puzzle",
+    "featured": true
   },
   {
     "slug": "mad-day",
@@ -5250,8 +5251,7 @@
     "title": "JAMES GUN",
     "image": "/assets/upload/busqueda/james-gun.png",
     "groups": "shooter, action, spy, adventure, mission",
-    "main_categories": "action, shooting, adventure",
-    "featured": true
+    "main_categories": "action, shooting, adventure"
   },
   {
     "slug": "impossible-tic-tac-toe",
@@ -5287,5 +5287,38 @@
     "image": "/assets/upload/busqueda/idle-gold-miner.png",
     "groups": "idle, clicker, mining, management",
     "main_categories": "clicker, kids, strategy"
+  },
+  {
+    "slug": "12-mini-battles",
+    "url": "/game/12-mini-battles.html",
+    "title": "12 MINI BATTLES",
+    "image": "/assets/upload/busqueda/12-mini-battles.png",
+    "groups": "multiplayer, party, mini-games, competition",
+    "main_categories": "multiplayer, kids, two-player",
+    "servers": {
+      "server1": "https://12-mini-battles.pages.dev"
+    }
+  },
+  {
+    "slug": "ancient-sins",
+    "url": "/game/ancient-sins.html",
+    "title": "ANCIENT SINS",
+    "image": "/assets/upload/busqueda/ancient-sins.png",
+    "groups": "adventure, puzzle, rpg, historical, quest",
+    "main_categories": "adventure, strategy",
+    "servers": {
+      "server1": "https://ancient-sins.pages.dev"
+    }
+  },
+  {
+    "slug": "arsonate",
+    "url": "/game/arsonate.html",
+    "title": "ARSONATE",
+    "image": "/assets/upload/busqueda/arsonate.png",
+    "groups": "action, puzzle, strategy, fire, adventure",
+    "main_categories": "action, strategy, puzzle",
+    "servers": {
+      "server1": "https://arsonate.pages.dev"
+    }
   }
 ]
