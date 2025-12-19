@@ -21,8 +21,7 @@
   margin: 20px auto;
   width: 100%;
   max-width: 100%;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12), 
-              inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .custom-category-link {
@@ -42,8 +41,8 @@
   transition: all 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.15);
   opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.6s ease forwards;
+  transform: translateY(10px);
+  animation: tagFadeIn 0.45s ease-out forwards;
   flex-shrink: 0;
 }
 
@@ -70,52 +69,35 @@
   opacity: 0.8;
 }
 
-/* Animasyonlar - Blur & Zoom (Modern Web) */
-@keyframes blurZoomIn {
+/* Daha sade slide + fade animasyonları */
+@keyframes tagFadeIn {
   0% {
     opacity: 0;
-    transform: scale(0.5);
-    filter: blur(20px);
-  }
-  50% {
-    opacity: 0.5;
-    filter: blur(8px);
+    transform: translateY(12px);
   }
   100% {
     opacity: 1;
-    transform: scale(1);
-    filter: blur(0px);
+    transform: translateY(0);
   }
 }
 
-@keyframes blurZoomOut {
+@keyframes tagFadeOut {
   0% {
     opacity: 1;
-    transform: scale(1);
-    filter: blur(0px);
-  }
-  50% {
-    opacity: 0.5;
-    filter: blur(8px);
+    transform: translateY(0);
   }
   100% {
     opacity: 0;
-    transform: scale(1.5);
-    filter: blur(20px);
+    transform: translateY(-10px);
   }
 }
 
 .custom-category-link {
-  will-change: transform, opacity, filter;
+  will-change: transform, opacity;
 }
 
 .custom-category-link.fade-out {
-  animation: blurZoomOut 0.6s ease-out forwards;
-}
-
-/* İlk yüklemede blur & zoom animasyonu */
-.custom-category-link {
-  animation: blurZoomIn 0.7s ease-out forwards;
+  animation: tagFadeOut 0.45s ease-out forwards;
 }
 
 /* Responsive tasarım */
@@ -124,13 +106,13 @@
     height: 45px;
     padding: 0 15px;
   }
-  
+
   .custom-category-link {
     padding: 6px 12px;
     margin: 0 5px;
     font-size: 13px;
   }
-  
+
   .custom-category-count {
     min-width: 24px;
     height: 20px;
@@ -145,13 +127,13 @@
     height: 40px;
     padding: 0 10px;
   }
-  
+
   .custom-category-link {
     padding: 5px 10px;
     margin: 0 4px;
     font-size: 12px;
   }
-  
+
   .custom-category-count {
     min-width: 22px;
     height: 18px;
